@@ -5,10 +5,9 @@
       {
         "name": "Boss Arena Chest",
         "access_rules": [
-          "$canAccessAct|chapter2_toiletboss",
           "$canAccessAct|snatcher_boss",
-          "hookshot, paintings_off, $canAccessMainSubcon",
-          "hookshot, paintings_on, yellow, $canAccessMainSubcon",
+          "hookshot, paintings_off, $canAccessAct|chapter2_toiletboss",
+          "hookshot, paintings_on, yellow, $canAccessAct|chapter2_toiletboss",
           "hard, nobonk, paintings_off, $canAccessMainSubcon",
           "hard, nobonk, paintings_on, yellow, $canAccessMainSubcon",
           "expert, paintings_off, $canAccessMainSubcon",
