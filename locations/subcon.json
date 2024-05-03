@@ -598,7 +598,7 @@
             "name": "Relic",
             "access_rules": [
               "hookshot",
-              "expert"
+              "hard"
             ]
           }
         ],
