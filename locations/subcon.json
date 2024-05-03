@@ -827,7 +827,7 @@
           {
             "name": "Yarn",
             "access_rules": [
-              "expert",
+              "hard",
               "dweller, hookshot"
             ]
           }
