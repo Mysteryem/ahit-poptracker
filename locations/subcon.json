@@ -1,16 +1,16 @@
 [
   {
     "name": "Boss Arena Area",
+    "access_rules": [
+      "$canAccessAct|snatcher_boss",
+      "hookshot, paintings_off, $canAccessAct|chapter2_toiletboss",
+      "hookshot, paintings_on, yellow, $canAccessAct|chapter2_toiletboss",
+      "hard, paintings_off, $canAccessMainSubcon",
+      "hard, paintings_on, yellow, $canAccessMainSubcon"
+    ],
     "children": [
       {
         "name": "Boss Arena Chest",
-        "access_rules": [
-          "$canAccessAct|snatcher_boss",
-          "hookshot, paintings_off, $canAccessAct|chapter2_toiletboss",
-          "hookshot, paintings_on, yellow, $canAccessAct|chapter2_toiletboss",
-          "hard, paintings_off, $canAccessMainSubcon",
-          "hard, paintings_on, yellow, $canAccessMainSubcon"
-        ],
         "sections": [
           {
             "name": "Yarn"
