@@ -411,14 +411,14 @@
           {
             "name": "On Pipe",
             "access_rules": [
-              "expert",
+              "moderate",
               "hookshot"
             ]
           },
           {
             "name": "Time Piece",
             "access_rules": [
-              "expert",
+              "moderate",
               "hookshot"
             ]
           }
