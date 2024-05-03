@@ -394,7 +394,6 @@
         "access_rules": [
           "moderate, $canAccessAct|subcon_cave",
           "brewer, $canAccessAct|subcon_cave",
-          "dweller, $canAccessAct|subcon_cave",
           "umbrella_off, $canAccessAct|subcon_cave",
           "umbrella_on, umbrella, $canAccessAct|subcon_cave"
         ],
