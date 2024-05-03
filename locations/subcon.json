@@ -230,8 +230,7 @@
     "access_rules": [
       "paintings_off, $canAccessMainSubcon",
       "paintings_on, yellow, $canAccessMainSubcon",
-      "moderate, nobonk, $canAccessMainSubcon, painting_skips_off",
-      "expert, $canAccessMainSubcon, painting_skips_off"
+      "moderate, $canAccessMainSubcon, painting_skips_off"
     ],
     "children": [
       {
@@ -491,8 +490,7 @@
     "access_rules": [
       "paintings_off, $canAccessMainSubcon",
       "paintings_on, blue, $canAccessMainSubcon",
-      "moderate, nobonk, $canAccessMainSubcon, painting_skips_off",
-      "expert, $canAccessMainSubcon, painting_skips_off"
+      "moderate, $canAccessMainSubcon, painting_skips_off"
     ],
     "children": [
       {
