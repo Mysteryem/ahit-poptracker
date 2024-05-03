@@ -26,21 +26,20 @@
       },
       {
         "name": "Boss Arena",
-        "access_rules": [
-          "umbrella_off",
-          "umbrella_on, umbrella"
-        ],
         "sections": [
           {
             "name": "Your Contract has Expired",
             "access_rules": [
-              "$canAccessAct|snatcher_boss"
+              "umbrella_off, $canAccessAct|snatcher_boss",
+              "umbrella_on, umbrella, $canAccessAct|snatcher_boss"
             ]
           },
           {
             "name": "Toilet of Doom",
             "access_rules": [
-              "hookshot, $canAccessAct|chapter2_toiletboss"
+              "umbrella_off, hookshot, $canAccessAct|chapter2_toiletboss",
+              "umbrella_on, umbrella, hookshot, $canAccessAct|chapter2_toiletboss",
+              "umbrella_on, brewer, hookshot, $canAccessAct|chapter2_toiletboss"
             ]
           }
         ],
