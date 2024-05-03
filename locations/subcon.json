@@ -812,7 +812,8 @@
           {
             "name": "Badge",
             "access_rules": [
-              "brewer"
+              "brewer",
+              "expert"
             ]
           }
         ],
