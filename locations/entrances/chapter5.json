@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Chapter5 Entrances",
+    "access_rules": [
+      "$hasTimePiecesForChapter|5"
+    ],
+    "children": [
+      {
+        "name": "Acts",
+        "access_rules": [
+          "dweller,brewing",
+          "hard,ice",
+          "expert"
+        ],
+        "sections": [
+          {
+            "name": "TheFinale_FinalBoss"
+          }
+        ]
+      }
+    ]
+  }
+]

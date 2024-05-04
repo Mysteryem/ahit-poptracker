@@ -1,0 +1,19 @@
+[
+  {
+    "name": "The Lab Entrances",
+    "parent": "Chapter4 Entrances",
+    "access_rules": [
+      "dweller"
+    ],
+    "children": [
+      {
+        "name": "Time Rifts",
+        "sections": [
+          {
+            "name": "Spaceship_WaterRift_MailRoom"
+          }
+        ]
+      }
+    ]
+  }
+]

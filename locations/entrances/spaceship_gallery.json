@@ -1,0 +1,19 @@
+[
+  {
+    "name": "The Gallery Entrances",
+    "parent": "Chapter2 Entrances",
+    "access_rules": [
+      "brewer"
+    ],
+    "children": [
+      {
+        "name": "Time Rifts",
+        "sections": [
+          {
+            "name": "Spaceship_WaterRift_MailRoom"
+          }
+        ]
+      }
+    ]
+  }
+]

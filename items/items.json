@@ -347,5 +347,60 @@
     "name": "Force Update",
     "type": "toggle",
     "codes": "update"
+  },
+  {
+    "name": "Exclude Tour Rift",
+    "type": "progressive",
+    "codes": "tour_option",
+    "allow_disabled": false,
+    "loop": false,
+    "stages": [
+      {
+        "img": "images/settings/pages.png",
+        "img_mods": "@disabled",
+        "codes": "tour_enabled",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/pages.png",
+        "codes": "tour_disabled",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Chapter 1 Cost",
+    "type": "consumable",
+    "codes": "chapter_1_cost"
+  },
+  {
+    "name": "Chapter 2 Cost",
+    "type": "consumable",
+    "codes": "chapter_2_cost"
+  },
+  {
+    "name": "Chapter 3 Cost",
+    "type": "consumable",
+    "codes": "chapter_3_cost"
+  },
+  {
+    "name": "Chapter 4 Cost",
+    "type": "consumable",
+    "codes": "chapter_4_cost"
+  },
+  {
+    "name": "Chapter 5 Cost",
+    "type": "consumable",
+    "codes": "chapter_5_cost"
+  },
+  {
+    "name": "Chapter 6 Cost",
+    "type": "consumable",
+    "codes": "chapter_6_cost"
+  },
+  {
+    "name": "Chapter 7 Cost",
+    "type": "consumable",
+    "codes": "chapter_7_cost"
   }
 ]

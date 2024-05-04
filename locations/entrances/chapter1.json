@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Chapter1 Entrances",
+    "access_rules": [
+      "$hasTimePiecesForChapter|1"
+    ],
+    "children": [
+      {
+        "name": "Acts",
+        "sections": [
+          {
+            "name": "chapter1_tutorial"
+          },
+          {
+            "name": "chapter1_barrelboss",
+            "access_rules": [
+              "$completedActAt|chapter1_tutorial"
+            ]
+          },
+          {
+            "name": "chapter1_cannon_repair",
+            "access_rules": [
+              "@Chapter1 Entrances/Acts/chapter1_barrelboss"
+            ]
+          },
+          {
+            "name": "chapter1_boss",
+            "access_rules": [
+              "$completedAllActsAt|chapter1_barrelboss|chapter1_cannon_repair,"
+            ]
+          },
+          {
+            "name": "harbor_impossible_race",
+            "access_rules": [
+              "$completedAllActsAt|mafiatown_lava|mafiatown_goldenvault,"
+            ]
+          },
+          {
+            "name": "mafiatown_lava",
+            "access_rules": [
+              "$completedActAt|chapter1_boss"
+            ]
+          },
+          {
+            "name": "mafiatown_goldenvault",
+            "access_rules": [
+              "@Chapter1 Entrances/Acts/mafiatown_lava"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

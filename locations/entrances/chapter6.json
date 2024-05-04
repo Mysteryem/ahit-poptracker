@@ -1,0 +1,31 @@
+[
+  {
+    "name": "Chapter6 Entrances",
+    "parent": "Chapter4 Entrances",
+    "access_rules": [
+      "$hasTimePiecesForChapter|6"
+    ],
+    "children": [
+      {
+        "name": "Acts",
+        "sections": [
+          {
+            "name": "Cruise_Boarding"
+          },
+          {
+            "name": "Cruise_Working",
+            "access_rules": [
+              "$completedActAt|Cruise_Boarding"
+            ]
+          },
+          {
+            "name": "Cruise_Sinking",
+            "access_rules": [
+              "$completedActAt|Cruise_Working"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

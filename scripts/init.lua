@@ -15,7 +15,6 @@ end
 ScriptHost:LoadScript("scripts/utils.lua")
 
 -- Logic
-ScriptHost:LoadScript("scripts/logic/logic_but_different.lua")
 ScriptHost:LoadScript("scripts/logic/logic.lua")
 
 -- Items
@@ -31,7 +30,19 @@ Tracker:AddLocations("locations/deadbirdstudio.json")
 Tracker:AddLocations("locations/basement.json")
 Tracker:AddLocations("locations/subcon.json")
 Tracker:AddLocations("locations/alpineskyline.json")
+Tracker:AddLocations("locations/cruise.json")
 Tracker:AddLocations("locations/nyakuza.json")
+Tracker:AddLocations("locations/entrances/chapter1.json")
+Tracker:AddLocations("locations/entrances/chapter2.json")
+Tracker:AddLocations("locations/entrances/chapter3.json")
+Tracker:AddLocations("locations/entrances/chapter4.json")
+Tracker:AddLocations("locations/entrances/spaceship_attic.json")
+Tracker:AddLocations("locations/entrances/chapter5.json")
+Tracker:AddLocations("locations/entrances/chapter6.json")
+Tracker:AddLocations("locations/entrances/spaceship_lab.json")
+Tracker:AddLocations("locations/entrances/chapter7.json")
+Tracker:AddLocations("locations/entrances/chapter_time_rifts.json")
+Tracker:AddLocations("locations/entrances/spaceship_gallery.json")
 
 -- Layout
 Tracker:AddLayouts("layouts/items.json")

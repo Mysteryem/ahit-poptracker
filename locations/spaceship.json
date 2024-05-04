@@ -35,6 +35,20 @@
           },
           {
             "name": "Time Piece"
+          },
+          {
+            "name": "Tour",
+            "visibility_rules": [
+              "tour_enabled"
+            ]
+          },
+          {
+            "name": "Tour Pages",
+            "item_count": 9,
+            "clear_as_group": false,
+            "visibility_rules": [
+              "tour_enabled,pages"
+            ]
           }
         ],
         "map_locations": [

@@ -1,0 +1,148 @@
+[
+  {
+    "name": "The Arctic Cruise",
+    "children": [
+      {
+        "name": "Bon Voyage!",
+        "access_rules": [
+          "$canAccessAct|Cruise_Boarding"
+        ],
+        "sections": [
+          {
+            "name": "Lamp Post Top"
+          },
+          {
+            "name": "Mafia Cargo Ship"
+          },
+          {
+            "name": "Time Piece",
+            "access_rules": [
+              "hookshot"
+            ]
+          },
+          {
+            "name": "Time Rift - Deep Sea",
+            "access_rules": [
+              "hookshot,dweller,ice",
+              "moderate,hookshot,dweller",
+              "hard,hookshot"
+            ]
+          },
+          {
+            "name": "Deep Sea Pages (Starfish, Mini Castle, Urchins)",
+            "item_count": 3,
+            "clear_as_group": false,
+            "visibility_rules": [
+              "pages"
+            ]
+          },
+          {
+            "name": "Deep Sea Pages (Other)",
+            "item_count": 6,
+            "clear_as_group": false,
+            "access_rules": [
+              "hookshot"
+            ],
+            "visibility_rules": [
+              "pages"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Cruise Ship",
+        "access_rules": [
+          "$canAccessChapter|6"
+        ],
+        "sections": [
+          {
+            "name": "Toilet",
+            "access_rules": [
+              "$canAccessAnyAct|Cruise_Boarding|Cruise_Working"
+            ]
+          },
+          {
+            "name": "Bar"
+          },
+          {
+            "name": "Dive Board Ledge"
+          },
+          {
+            "name": "Top Balcony"
+          },
+          {
+            "name": "Octopus Room"
+          },
+          {
+            "name": "Octopus Room Top"
+          },
+          {
+            "name": "Laundry Room"
+          },
+          {
+            "name": "Ship Side"
+          },
+          {
+            "name": "Silver Ring"
+          },
+          {
+            "name": "Time Rift - Balcony",
+            "access_rules": [
+              "hookshot"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ship Shape",
+        "access_rules": [
+          "$canAccessAct|Cruise_Working"
+        ],
+        "sections": [
+          {
+            "name": "Time Piece"
+          },
+          {
+            "name": "Tasksanity Check",
+            "item_count": 30,
+            "clear_as_group": false,
+            "visibility_rules": [
+              "tasksanity"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Rock the Boat",
+        "sections": [
+          {
+            "name": "Reception Room - Suitcase"
+          },
+          {
+            "name": "Reception Room - Under Desk"
+          },
+          {
+            "name": "Lamp Post"
+          },
+          {
+            "name": "Iceberg Top"
+          },
+          {
+            "name": "Post Captain Rescue",
+            "access_rules": [
+              "ice",
+              "moderate"
+            ]
+          },
+          {
+            "name": "Time Piece",
+            "access_rules": [
+              "ice",
+              "moderate"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -3,19 +3,32 @@
 
 local Act = {
     chapter = -1,
-    act_requirements = {},
+--     act_requirements = {},
+    -- act_name is set to the act that has been randomized to this entrance, when connecting to AP.
     act_name = "",
-    isAccessible = false
+--     isAccessible = false,
+    -- Entrance location for logic
+    entrance_location_section = "",
+    -- Vanilla completion logic
+    -- `nil` implies a free roam act which is always considered complete
+    vanilla_act_completion_location_section = nil
 }
 
 Act.__index = Act
 
-function Act.new(chapter, act_requirements, act_name, isAccessible)
+--function Act.new(chapter, act_requirements, act_name, isAccessible, entrance_location, vanilla_act_completion_location_section)
+function Act.new(chapter, act_name, entrance_location, vanilla_act_completion_location_section)
     local self = setmetatable({}, Act)
     self.chapter = chapter or -1
-    self.act_requirements = act_requirements or {""}
+--     self.act_requirements = act_requirements or {""}
     self.act_name = act_name or ""
-    self.isAccessible = isAccessible or false
+--     self.isAccessible = isAccessible or false
+    self.entrance_location_section = "@" .. entrance_location .. "/" .. act_name
+    if vanilla_act_completion_location_section == nil then
+        self.vanilla_act_completion_location_section = nil
+    else
+        self.vanilla_act_completion_location_section = "@" .. vanilla_act_completion_location_section
+    end
     return self
 end
 
@@ -27,13 +40,13 @@ function Act:setChapter(chapter)
     self.chapter = chapter
 end
 
-function Act:getActRequirements()
-    return self.act_requirements
-end
-
-function Act:setActRequirements(act_requirements)
-    self.act_requirements = act_requirements
-end
+-- function Act:getActRequirements()
+--     return self.act_requirements
+-- end
+--
+-- function Act:setActRequirements(act_requirements)
+--     self.act_requirements = act_requirements
+-- end
 
 function Act:getActName()
     return self.act_name
@@ -44,12 +57,12 @@ function Act:setActName(act_name)
 end
 
 
-function Act:getIsAccessible()
-    return self.isAccessible
-end
-
-function Act:setIsAccessible(isAccessible)
-    self.isAccessible = isAccessible
-end
+-- function Act:getIsAccessible()
+--     return self.isAccessible
+-- end
+--
+-- function Act:setIsAccessible(isAccessible)
+--     self.isAccessible = isAccessible
+-- end
 
 return Act

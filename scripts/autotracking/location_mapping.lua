@@ -160,6 +160,23 @@ LOCATION_MAPPING = {
 
     [2000304108] = {"@Spaceship/Time's End/Frozen Item"},
 
+    [2000305321] = {"@The Arctic Cruise/Bon Voyage!/Lamp Post Top"},
+    [2000304313] = {"@The Arctic Cruise/Bon Voyage!/Mafia Cargo Ship"},
+    [2000305109] = {"@The Arctic Cruise/Cruise Ship/Toilet"},
+    [2000304251] = {"@The Arctic Cruise/Cruise Ship/Bar"},
+    [2000304254] = {"@The Arctic Cruise/Cruise Ship/Dive Board Ledge"},
+    [2000304255] = {"@The Arctic Cruise/Cruise Ship/Top Balcony"},
+    [2000305253] = {"@The Arctic Cruise/Cruise Ship/Octopus Room"},
+    [2000304249] = {"@The Arctic Cruise/Cruise Ship/Octopus Room Top"},
+    [2000304250] = {"@The Arctic Cruise/Cruise Ship/Laundry Room"},
+    [2000304247] = {"@The Arctic Cruise/Cruise Ship/Ship Side"},
+    [2000305252] = {"@The Arctic Cruise/Cruise Ship/Silver Ring"},
+    [2000304045] = {"@The Arctic Cruise/Rock the Boat/Reception Room - Suitcase"},
+    [2000304047] = {"@The Arctic Cruise/Rock the Boat/Reception Room - Under Desk"},
+    [2000304048] = {"@The Arctic Cruise/Rock the Boat/Lamp Post"},
+    [2000304046] = {"@The Arctic Cruise/Rock the Boat/Iceberg Top"},
+    [2000304049] = {"@The Arctic Cruise/Rock the Boat/Post Captain Rescue"},
+
     -- 304000 range - Nyakuza Metro
     [2000304105] = {"@Nyakuza Metro/Main Station Dining Area/Rift Token"},
     [2000304104] = {"@Nyakuza Metro/Top of the Ramen Shop/Rift Token"},
@@ -216,6 +233,13 @@ LOCATION_MAPPING = {
     [2000311777] = {"@Goat Village/Alpine Skyline (Rift)/Time Rift"},
 
     [2000311872] = {"@Spaceship/Time's End/Time Piece"},
+    [2000311803] = {"@Spaceship/Time's End/Tour"},
+
+    [2000311520] = {"@The Arctic Cruise/Bon Voyage!/Time Piece"},
+    [2000311451] = {"@The Arctic Cruise/Ship Shape/Time Piece"},
+    [2000311437] = {"@The Arctic Cruise/Rock the Boat/Time Piece"},
+    [2000312226] = {"@The Arctic Cruise/Cruise Ship/Time Rift - Balcony"},
+    [2000312434] = {"@The Arctic Cruise/Bon Voyage!/Time Rift - Deep Sea"},
 
     [2000311138] = {"@Nyakuza Metro/Nyakuza Metro Intro/Time Piece"},
     [2000311206] = {"@Nyakuza Metro/Yellow Overpass Station/Time Piece"},
@@ -260,6 +284,58 @@ LOCATION_MAPPING = {
     [2000345015] = {"@Goat Village/Alpine Skyline (Rift)/Pages"}, --Page: Waterfall Wooden Pillar
     [2000345014] = {"@Goat Village/Alpine Skyline (Rift)/Pages"}, --Page: Lonely Birdhouse Top
     [2000345013] = {"@Goat Village/Alpine Skyline (Rift)/Pages"}, --Page: Below Aqueduct
+
+    [2000345038] = {"@Spaceship/Time's End/Tour Pages"}, --Page: Mafia Town - Ledge
+    [2000345039] = {"@Spaceship/Time's End/Tour Pages"}, --Page: Mafia Town - Beach
+    [2000345040] = {"@Spaceship/Time's End/Tour Pages"}, --Page: Dead Bird Studio - C.A.W. Agents
+    [2000345041] = {"@Spaceship/Time's End/Tour Pages"}, --Page: Dead Bird Studio - Fragile Box
+    [2000345042] = {"@Spaceship/Time's End/Tour Pages"}, --Page: Subcon Forest - Giant Frozen Tree
+    [2000345043] = {"@Spaceship/Time's End/Tour Pages"}, --Page: Subcon Forest - Top of Pillar
+    [2000345044] = {"@Spaceship/Time's End/Tour Pages"}, --Page: Alpine Skyline - Birdhouse
+    [2000345047] = {"@Spaceship/Time's End/Tour Pages"}, --Page: Alpine Skyline - Behind Lava Isle
+    [2000345087] = {"@Spaceship/Time's End/Tour Pages"}, --Page: The Finale - Near Entrance
+
+    [2000346454] = {"@The Arctic Cruise/Bon Voyage!/Deep Sea Pages (Starfish, Mini Castle, Urchins)"}, --Page: Starfish
+    [2000346452] = {"@The Arctic Cruise/Bon Voyage!/Deep Sea Pages (Starfish, Mini Castle, Urchins)"}, --Page: Mini Castle
+    [2000346449] = {"@The Arctic Cruise/Bon Voyage!/Deep Sea Pages (Starfish, Mini Castle, Urchins)"}, --Page: Urchins
+    [2000346450] = {"@The Arctic Cruise/Bon Voyage!/Deep Sea Pages (Other)"}, --Page: Big Castle
+    [2000304850] = {"@The Arctic Cruise/Bon Voyage!/Deep Sea Pages (Other)"}, --Page: Castle Top Chest
+    [2000346451] = {"@The Arctic Cruise/Bon Voyage!/Deep Sea Pages (Other)"}, --Page: Urchin Ledge
+    [2000304849] = {"@The Arctic Cruise/Bon Voyage!/Deep Sea Pages (Other)"}, --Page: Hidden Castle Chest
+    [2000346456] = {"@The Arctic Cruise/Bon Voyage!/Deep Sea Pages (Other)"}, --Page: Falling Platform
+    [2000346453] = {"@The Arctic Cruise/Bon Voyage!/Deep Sea Pages (Other)"}, --Page: Lava Starfish
+
+    [2000300204] = {"@The Arctic Cruise/Ship Shape/Tasksanity Check"},
+    [2000300205] = {"@The Arctic Cruise/Ship Shape/Tasksanity Check"},
+    [2000300206] = {"@The Arctic Cruise/Ship Shape/Tasksanity Check"},
+    [2000300207] = {"@The Arctic Cruise/Ship Shape/Tasksanity Check"},
+    [2000300208] = {"@The Arctic Cruise/Ship Shape/Tasksanity Check"},
+    [2000300209] = {"@The Arctic Cruise/Ship Shape/Tasksanity Check"},
+    [2000300210] = {"@The Arctic Cruise/Ship Shape/Tasksanity Check"},
+    [2000300211] = {"@The Arctic Cruise/Ship Shape/Tasksanity Check"},
+    [2000300212] = {"@The Arctic Cruise/Ship Shape/Tasksanity Check"},
+    [2000300213] = {"@The Arctic Cruise/Ship Shape/Tasksanity Check"},
+    [2000300214] = {"@The Arctic Cruise/Ship Shape/Tasksanity Check"},
+    [2000300215] = {"@The Arctic Cruise/Ship Shape/Tasksanity Check"},
+    [2000300216] = {"@The Arctic Cruise/Ship Shape/Tasksanity Check"},
+    [2000300217] = {"@The Arctic Cruise/Ship Shape/Tasksanity Check"},
+    [2000300218] = {"@The Arctic Cruise/Ship Shape/Tasksanity Check"},
+    [2000300219] = {"@The Arctic Cruise/Ship Shape/Tasksanity Check"},
+    [2000300220] = {"@The Arctic Cruise/Ship Shape/Tasksanity Check"},
+    [2000300221] = {"@The Arctic Cruise/Ship Shape/Tasksanity Check"},
+    [2000300222] = {"@The Arctic Cruise/Ship Shape/Tasksanity Check"},
+    [2000300223] = {"@The Arctic Cruise/Ship Shape/Tasksanity Check"},
+    [2000300224] = {"@The Arctic Cruise/Ship Shape/Tasksanity Check"},
+    [2000300225] = {"@The Arctic Cruise/Ship Shape/Tasksanity Check"},
+    [2000300226] = {"@The Arctic Cruise/Ship Shape/Tasksanity Check"},
+    [2000300227] = {"@The Arctic Cruise/Ship Shape/Tasksanity Check"},
+    [2000300228] = {"@The Arctic Cruise/Ship Shape/Tasksanity Check"},
+    [2000300229] = {"@The Arctic Cruise/Ship Shape/Tasksanity Check"},
+    [2000300230] = {"@The Arctic Cruise/Ship Shape/Tasksanity Check"},
+    [2000300231] = {"@The Arctic Cruise/Ship Shape/Tasksanity Check"},
+    [2000300232] = {"@The Arctic Cruise/Ship Shape/Tasksanity Check"},
+    [2000300233] = {"@The Arctic Cruise/Ship Shape/Tasksanity Check"},
+    [2000300234] = {"@The Arctic Cruise/Ship Shape/Tasksanity Check"},
 
     [2000345891] = {"@Nyakuza Metro/Rumbi Factory/Pages"},
     [2000345888] = {"@Nyakuza Metro/Rumbi Factory/Pages"},

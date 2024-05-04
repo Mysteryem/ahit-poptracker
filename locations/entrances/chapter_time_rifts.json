@@ -1,0 +1,130 @@
+[
+  {
+    "name": "Chapter Time Rift Entrances",
+    "children": [
+      {
+        "name": "Chapter1",
+        "access_rules": [
+          "$canAccessAnyAct|chapter1_tutorial|chapter1_barrelboss|chapter1_cannon_repair|chapter1_boss|harbor_impossible_race|mafiatown_lava|mafiatown_goldenvault"
+        ],
+        "sections": [
+          {
+            "name": "TimeRift_Cave_Mafia",
+            "access_rules": [
+              "burgerrelic:2"
+            ]
+          },
+          {
+            "name": "TimeRift_Water_Mafia_Easy",
+            "access_rules": [
+              "$completedActAt|chapter1_boss"
+            ]
+          },
+          {
+            "name": "TimeRift_Water_Mafia_Hard",
+            "access_rules": [
+              "$completedActAt|mafiatown_lava"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chapter2",
+        "sections": [
+          {
+            "name": "TimeRift_Cave_BirdBasement",
+            "access_rules": [
+              "trainrelic:2,$canAccessAnyAct|DeadBirdStudio|chapter3_secret_finale"
+            ]
+          },
+          {
+            "name": "TimeRift_Water_TWreck_Panels",
+            "access_rules": [
+              "$completedAllActsAt|chapter3_murder|moon_camerasnap,$canAccessActAt|chapter3_murder"
+            ]
+          },
+          {
+            "name": "TimeRift_Water_TWreck_Parade",
+            "access_rules": [
+              "$completedAllActsAt|trainwreck_selfdestruct|moon_parade,$canAccessAnyAct|moon_camerasnap|moon_parade"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chapter3",
+        "sections": [
+          {
+            "name": "TimeRift_Cave_Raccoon",
+            "access_rules": [
+              "uforelic:4,@Green Firewall/Giant Time Piece/Relic"
+            ]
+          },
+          {
+            "name": "TimeRift_Water_Subcon_Hookshot",
+            "access_rules": [
+              "@Blue Firewall/Burning House/Yarn,$completedActAt|subcon_cave"
+            ]
+          },
+          {
+            "name": "TimeRift_Water_Subcon_Dwellers",
+            "access_rules": [
+              "@Blue Firewall/Burning House/Yarn,$completedActAt|vanessa_manor_attic"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chapter4",
+        "sections": [
+          {
+            "name": "TimeRift_Cave_Alps",
+            "access_rules": [
+              "crayonrelic:4,@Goat Village/Goat Village/Hidden Branch"
+            ]
+          },
+          {
+            "name": "TimeRift_Water_Alp_Goats",
+            "access_rules": [
+              "@Twilight Bell Zipline/The Twilight Bell/Time Piece,$clearedAnyLocationIfActRando|@Twilight Bell Zipline/The Twilight Bell/Time Piece"
+            ]
+          },
+          {
+            "name": "TimeRift_Water_AlpineSkyline_Cats",
+            "access_rules": [
+              "@Windmill Zipline/The Windmill/Time Piece,$clearedAnyLocationIfActRando|@Windmill Zipline/The Windmill/Time Piece"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chapter6",
+        "sections": [
+          {
+            "name": "Cruise_CaveRift_Aquarium",
+            "access_rules": [
+              "cakerelic:4,$canAccessAct|Cruise_Boarding"
+            ]
+          },
+          {
+            "name": "Cruise_WaterRift_Slide",
+            "access_rules": [
+              "$completedActAt|Cruise_Sinking,$canAccessAnyAct|Cruise_Boarding|Cruise_Working|Cruise_Sinking"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chapter7",
+        "sections": [
+          {
+            "name": "Metro_CaveRift_RumbiFactory",
+            "access_rules": [
+              "jewelryrelic:2,$canAccessAct|MetroFreeRoam"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

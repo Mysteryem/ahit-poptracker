@@ -1,0 +1,48 @@
+[
+  {
+    "name": "Chapter3 Entrances",
+    "access_rules": [
+      "$hasTimePiecesForChapter|3"
+    ],
+    "children": [
+      {
+        "name": "Acts",
+        "sections": [
+          {
+            "name": "subcon_village_icewall"
+          },
+          {
+            "name": "subcon_cave",
+            "access_rules": [
+              "wellcontract"
+            ]
+          },
+          {
+            "name": "chapter2_toiletboss",
+            "access_rules": [
+              "toiletcontract"
+            ]
+          },
+          {
+            "name": "vanessa_manor_attic",
+            "access_rules": [
+              "manorcontract"
+            ]
+          },
+          {
+            "name": "subcon_maildelivery",
+            "access_rules": [
+              "mailcontract"
+            ]
+          },
+          {
+            "name": "snatcher_boss",
+            "access_rules": [
+              "$completedAnyActsAt|subcon_village_icewall|subcon_cave|chapter2_toiletboss|vanessa_manor_attic|subcon_maildelivery,$canCompleteActsAt|subcon_village_icewall|subcon_cave|chapter2_toiletboss|vanessa_manor_attic|subcon_maildelivery",
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "name": "Chapter2 Entrances",
+    "access_rules": [
+      "$hasTimePiecesForChapter|2"
+    ],
+    "children": [
+      {
+        "name": "Acts",
+        "sections": [
+          {
+            "name": "DeadBirdStudio"
+          },
+          {
+            "name": "chapter3_murder",
+            "access_rules": [
+              "$completedActAt|DeadBirdStudio"
+            ]
+          },
+          {
+            "name": "moon_camerasnap",
+            "access_rules": [
+              "@Chapter2 Entrances/Acts/chapter3_murder"
+            ]
+          },
+          {
+            "name": "trainwreck_selfdestruct",
+            "access_rules": [
+              "$completedAllActsAt|chapter3_murder|moon_camerasnap"
+            ]
+          },
+          {
+            "name": "moon_parade",
+            "access_rules": [
+              "@Chapter2 Entrances/Acts/trainwreck_selfdestruct"
+            ]
+          },
+          {
+            "name": "award_ceremony",
+            "access_rules": [
+              "$canCompleteActsAt|trainwreck_selfdestruct|moon_parade"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

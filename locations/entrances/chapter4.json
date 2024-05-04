@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Chapter4 Entrances",
+    "access_rules": [
+      "$hasTimePiecesForChapter|4"
+    ],
+    "children": [
+      {
+        "name": "Acts",
+        "sections": [
+          {
+            "name": "AlpineFreeRoam"
+          },
+          {
+            "name": "AlpineSkyline_Finale",
+            "access_rules": [
+              "@Birdhouse Zipline/Bird House/Time Piece,@Twilight Bell Zipline/The Twilight Bell/Time Piece,@Lava Cake Zipline/Lava Cake/Time Piece,@Windmill Zipline/The Windmill/Time Piece,$clearedAnyLocationIfActRando|@Birdhouse Zipline/Bird House/Time Piece|@Twilight Bell Zipline/The Twilight Bell/Time Piece|@Lava Cake Zipline/Lava Cake/Time Piece|@Windmill Zipline/The Windmill/Time Piece"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
