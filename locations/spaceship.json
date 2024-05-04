@@ -24,30 +24,17 @@
       {
         "name": "Time's End",
         "access_rules": [
-          "brewer, dweller, hookshot, $canAccessChapter|5",
-          "brewer, dweller, moderate, $canAccessChapter|5",
-          "ice, dweller, hard, $canAccessChapter|5",
-          "expert, $canAccessChapter|5"
+          "$canAccessAct|TheFinale_FinalBoss"
         ],
         "sections": [
           {
             "name": "Frozen Item"
           },
           {
-            "name": "Time Piece"
-          },
-          {
-            "name": "Tour",
-            "visibility_rules": [
-              "tour_enabled"
-            ]
-          },
-          {
-            "name": "Tour Pages",
-            "item_count": 9,
-            "clear_as_group": false,
-            "visibility_rules": [
-              "tour_enabled,pages"
+            "name": "Time Piece",
+            "access_rules": [
+              "dweller,hookshot",
+              "moderate,dweller"
             ]
           }
         ],
@@ -56,6 +43,35 @@
             "map": "spaceship",
             "x": 675,
             "y": 640
+          }
+        ]
+      },
+      {
+        "name": "Tour",
+        "access_rules": [
+          "$canAccessAct|TimeRift_Cave_Tour"
+        ],
+        "visibility_rules": [
+          "tour_enabled"
+        ],
+        "sections": [
+          {
+            "name": "Time Rift"
+          },
+          {
+            "name": "Pages",
+            "item_count": 9,
+            "clear_as_group": false,
+            "visibility_rules": [
+              "pages"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "spaceship",
+            "x": 710,
+            "y": 655
           }
         ]
       }

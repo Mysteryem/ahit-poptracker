@@ -233,7 +233,7 @@ LOCATION_MAPPING = {
     [2000311777] = {"@Goat Village/Alpine Skyline (Rift)/Time Rift"},
 
     [2000311872] = {"@Spaceship/Time's End/Time Piece"},
-    [2000311803] = {"@Spaceship/Time's End/Tour"},
+    [2000311803] = {"@Spaceship/Tour/Time Rift"},
 
     [2000311520] = {"@The Arctic Cruise/Bon Voyage!/Time Piece"},
     [2000311451] = {"@The Arctic Cruise/Ship Shape/Time Piece"},
@@ -285,15 +285,15 @@ LOCATION_MAPPING = {
     [2000345014] = {"@Goat Village/Alpine Skyline (Rift)/Pages"}, --Page: Lonely Birdhouse Top
     [2000345013] = {"@Goat Village/Alpine Skyline (Rift)/Pages"}, --Page: Below Aqueduct
 
-    [2000345038] = {"@Spaceship/Time's End/Tour Pages"}, --Page: Mafia Town - Ledge
-    [2000345039] = {"@Spaceship/Time's End/Tour Pages"}, --Page: Mafia Town - Beach
-    [2000345040] = {"@Spaceship/Time's End/Tour Pages"}, --Page: Dead Bird Studio - C.A.W. Agents
-    [2000345041] = {"@Spaceship/Time's End/Tour Pages"}, --Page: Dead Bird Studio - Fragile Box
-    [2000345042] = {"@Spaceship/Time's End/Tour Pages"}, --Page: Subcon Forest - Giant Frozen Tree
-    [2000345043] = {"@Spaceship/Time's End/Tour Pages"}, --Page: Subcon Forest - Top of Pillar
-    [2000345044] = {"@Spaceship/Time's End/Tour Pages"}, --Page: Alpine Skyline - Birdhouse
-    [2000345047] = {"@Spaceship/Time's End/Tour Pages"}, --Page: Alpine Skyline - Behind Lava Isle
-    [2000345087] = {"@Spaceship/Time's End/Tour Pages"}, --Page: The Finale - Near Entrance
+    [2000345038] = {"@Spaceship/Tour/Pages"}, --Page: Mafia Town - Ledge
+    [2000345039] = {"@Spaceship/Tour/Pages"}, --Page: Mafia Town - Beach
+    [2000345040] = {"@Spaceship/Tour/Pages"}, --Page: Dead Bird Studio - C.A.W. Agents
+    [2000345041] = {"@Spaceship/Tour/Pages"}, --Page: Dead Bird Studio - Fragile Box
+    [2000345042] = {"@Spaceship/Tour/Pages"}, --Page: Subcon Forest - Giant Frozen Tree
+    [2000345043] = {"@Spaceship/Tour/Pages"}, --Page: Subcon Forest - Top of Pillar
+    [2000345044] = {"@Spaceship/Tour/Pages"}, --Page: Alpine Skyline - Birdhouse
+    [2000345047] = {"@Spaceship/Tour/Pages"}, --Page: Alpine Skyline - Behind Lava Isle
+    [2000345087] = {"@Spaceship/Tour/Pages"}, --Page: The Finale - Near Entrance
 
     [2000346454] = {"@The Arctic Cruise/Bon Voyage!/Deep Sea Pages (Starfish, Mini Castle, Urchins)"}, --Page: Starfish
     [2000346452] = {"@The Arctic Cruise/Bon Voyage!/Deep Sea Pages (Starfish, Mini Castle, Urchins)"}, --Page: Mini Castle

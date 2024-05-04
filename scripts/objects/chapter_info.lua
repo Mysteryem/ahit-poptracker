@@ -46,7 +46,7 @@ chapter_act_info = {
     TimeRift_Water_AlpineSkyline_Cats = Act.new(-4, "TimeRift_Water_AlpineSkyline_Cats", "Chapter Time Rift Entrances/Chapter4", "Windmill Zipline/Curly Tail Trail/Time Rift"),
 
     TheFinale_FinalBoss = Act.new(5, "TheFinale_FinalBoss", "Chapter5 Entrances/Acts", "Spaceship/Time's End/Time Piece"),
-    TimeRift_Cave_Tour = Act.new(-5, "TimeRift_Cave_Tour", "The Attic Entrances/Time Rifts", "Spaceship/Time's End/Tour"),
+    TimeRift_Cave_Tour = Act.new(-5, "TimeRift_Cave_Tour", "The Attic Entrances/Time Rifts", "Spaceship/Tour/Time Rift"),
 
     Cruise_Boarding = Act.new(6, "Cruise_Boarding", "Chapter6 Entrances/Acts", "The Arctic Cruise/Bon Voyage!/Time Piece"),
     Cruise_Working = Act.new(6, "Cruise_Working", "Chapter6 Entrances/Acts", "The Arctic Cruise/Ship Shape/Time Piece"),
