@@ -5,7 +5,7 @@
       {
         "name": "Chapter1",
         "access_rules": [
-          "canAccessChapter|1"
+          "$canAccessChapter|1"
         ],
         "map_locations": [
           {
