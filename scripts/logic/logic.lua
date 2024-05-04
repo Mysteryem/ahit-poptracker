@@ -48,6 +48,12 @@ function hasTimePiecesForChapter(chapter_to_access)
     return timePieces.AcquiredCount >= chapter_costs[tonumber(chapter_to_access)]
 end
 
+-- Return if the act at the entrance has been completed (AccessibilityLevel.Cleared).
+-- This is used because a player using act randomization won't know what new act/rift will unlock after they complete an
+-- act, so the tracker should not display the act/rift that will unlock as accessible until the player has beaten the
+-- act.
+-- When act randomization is disabled, the player knows what act/rift will unlock, so then this function returns whether
+-- the act at the entrance can be completed instead.
 function completedActAt(entrance)
     if not act_rando_enabled then
         -- The player knows which acts are where in advance when there is no act rando, so the tracker should know too.
