@@ -112,7 +112,7 @@
           {
             "name": "Scammed",
             "access_rules": [
-              "timepiece:12"
+              "timepiece:12,$hasTimePiecesForChapter|2"
             ]
           }
         ],
