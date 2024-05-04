@@ -23,15 +23,12 @@ function canAccessMainSubcon()
   return false
 end
 
-
+-- An optional exception act name can be specified. This is used for the Mafia Geek Platform location, which is present
+-- in every Chapter 1 Act except She Came from Outer Space.
 function canAccessChapter(chapter_to_access, exception)
-  if not exception then
-    exception = ""
-  end
-
   local chapter = tonumber(chapter_to_access)
   for vanilla_act_name, act_info in pairs(chapter_act_info) do
-    if act_info.chapter == chapter and canAccessAct(vanilla_act_name) then
+    if act_info.chapter == chapter and vanilla_act_name ~= exception and canAccessAct(vanilla_act_name) then
         return true
     end
   end
