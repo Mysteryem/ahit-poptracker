@@ -134,6 +134,7 @@
             "access_rules": [
               "$canAccessChapter|1",
               "$canAccessAct|DeadBirdStudio",
+              "$canAccessAct|trainwreck_selfdestruct",
               "$canAccessMainSubcon",
               "$canAccessChapter|4",
               "$canAccessChapter|6"
