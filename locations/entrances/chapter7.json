@@ -7,14 +7,29 @@
     ],
     "children": [
       {
-        "Acts": [
+        "name": "Acts",
+        "sections": [
           {
             "name": "MetroFreeRoam"
-          },
+          }
+        ]
+      },
+      {
+        "name": "Boss",
+        "access_rules": [
+          "$clearedLocationIfActRando|@Nyakuza Metro/Yellow Overpass Station/Time Piece",
+          "$clearedLocationIfActRando|@Nyakuza Metro/Yellow Overpass Manhole/Time Piece",
+          "$clearedLocationIfActRando|@Nyakuza Metro/Green Clean Station/Time Piece",
+          "$clearedLocationIfActRando|@Nyakuza Metro/Green Clean Manhole/Time Piece",
+          "$clearedLocationIfActRando|@Nyakuza Metro/Bluefin Tunnel/Time Piece",
+          "$clearedLocationIfActRando|@Nyakuza Metro/Pink Paw Station/Time Piece",
+          "$clearedLocationIfActRando|@Nyakuza Metro/Pink Paw Manhole/Time Piece"
+        ],
+        "sections": [
           {
             "name": "Metro_Escape",
             "access_rules": [
-              "@Nyakuza Metro/Yellow Overpass Station/Time Piece,@Nyakuza Metro/Yellow Overpass Manhole/Time Piece,@Nyakuza Metro/Green Clean Station/Time Piece,@Nyakuza Metro/Green Clean Manhole/Time Piece,@Nyakuza Metro/Bluefin Tunnel/Time Piece,@Nyakuza Metro/Pink Paw Station/Time Piece,@Nyakuza Metro/Pink Paw Manhole/Time Piece,$clearedAnyLocationIfActRando|@Nyakuza Metro/Yellow Overpass Station/Time Piece|@Nyakuza Metro/Yellow Overpass Manhole/Time Piece|@Nyakuza Metro/Green Clean Station/Time Piece|@Nyakuza Metro/Green Clean Manhole/Time Piece|@Nyakuza Metro/Bluefin Tunnel/Time Piece|@Nyakuza Metro/Pink Paw Station/Time Piece|@Nyakuza Metro/Pink Paw Manhole/Time Piece"
+              "@Nyakuza Metro/Yellow Overpass Station/Time Piece,@Nyakuza Metro/Yellow Overpass Manhole/Time Piece,@Nyakuza Metro/Green Clean Station/Time Piece,@Nyakuza Metro/Green Clean Manhole/Time Piece,@Nyakuza Metro/Bluefin Tunnel/Time Piece,@Nyakuza Metro/Pink Paw Station/Time Piece,@Nyakuza Metro/Pink Paw Manhole/Time Piece"
             ]
           }
         ]

@@ -66,15 +66,6 @@ function canAccessAct(act_to_access)
   return entrance_accessibility == AccessibilityLevel.Normal or entrance_accessibility == AccessibilityLevel.Cleared
 end
 
-function canAccessAnyAct(...)
-    for _, v in ipairs(arg) do
-        if canAccessAct(v) then
-            return true
-        end
-    end
-    return false
-end
-
 function hasTimePiecesForChapter(chapter_to_access)
     local timePieces = Tracker:FindObjectForCode("timepiece")
     return timePieces.AcquiredCount >= chapter_costs[tonumber(chapter_to_access)]
@@ -100,26 +91,6 @@ function completedActAt(entrance)
     --       What about when there are other logic conditions to be considered, such as subcon paintings?
     local completion_accessibility = completion_location.AccessibilityLevel
     return completion_accessibility == AccessibilityLevel.Cleared
-end
-
--- Boss chapters don't show up until an act in the chapter has been beaten.
-function completedAnyActsAt(...)
-    for _, v in ipairs(arg) do
-        if completedActAt(v) then
-            return true
-        end
-    end
-    return false
-end
-
--- Some act entrances requiring beating multiple other acts to show up.
-function completedAllActsAt(...)
-    for _, v in ipairs(arg) do
-        if not completedActAt(v) then
-            return false
-        end
-    end
-    return true
 end
 
 -- TODO: Instead of *can* beat act, keep a table of beaten acts as the messages for beating acts are received from AP,
@@ -166,40 +137,13 @@ function canCompleteActAt(entrance)
 --     return completion_accessibility == AccessibilityLevel.Cleared
 end
 
-function canCompleteActsAt(...)
-    for _, v in ipairs(arg) do
-        if not canCompleteActAt(v) then
-            return false
-        end
-    end
-    return true
-end
-
-function canBeatActsAtWithMinCompletionCount(min_completion_count, ...)
-    -- With act rando enabled, the player sometimes won't know what a level is if a minimum number of acts haven't been
-    -- completed. E.g. Boss acts don't show up until 1 act is completed.
-    -- With act rando disabled, then the acts are known in advance, so there's only a need to check whether acts *can*
-    -- be completed.
-    local completion_count = 0
-    for _, v in ipairs(arg) do
-        if act_rando_enabled and completedActAt(v) then
-            completion_count = completion_count + 1
-        elseif not canBeatActAt(v) then
-            return false
-        end
-    end
-    return not act_rando_enabled or completion_count >= min_completion_count
-end
-
-function clearedAnyLocationIfActRando(...)
+function clearedLocationIfActRando(location_name)
     if not act_rando_enabled then
         return true
     end
 
-    for _, v in ipairs(args) do
-        local loc = Tracker:FindObjectForCode(v)
-        if loc.AccessibilityLevel == AccessibilityLevel.Cleared then
-            return true
-        end
+    local loc = Tracker:FindObjectForCode(location_name)
+    if loc.AccessibilityLevel == AccessibilityLevel.Cleared then
+        return true
     end
 end

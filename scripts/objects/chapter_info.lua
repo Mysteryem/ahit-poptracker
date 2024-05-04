@@ -25,22 +25,22 @@ chapter_act_info = {
     moon_parade = Act.new(2, "moon_parade", "Chapter2 Entrances/Acts", "Films/DJ Groove's Films/The Big Parade"),
     award_ceremony = Act.new(2, "award_ceremony", "Chapter2 Entrances/Acts", "Act Completions/Act Completion/Award Ceremony"),
     chapter3_secret_finale = Act.new(2, "chapter3_secret_finale", "Chapter2 Entrances/Acts", "Dead Bird Basement/Act Completion/Time Piece"),
-    TimeRift_Cave_BirdBasement = Act.new(-2, "TimeRift_Cave_BirdBasement", "Chapter Time Rift Entrances/Chapter2", "Before Lever/Dead Bird Studio (Rift)/Time Piece"),
-    TimeRift_Water_TWreck_Panels = Act.new(-2, "TimeRift_Water_TWreck_Panels", "Chapter Time Rift Entrances/Chapter2", "Films/The Conductor's Films/Time Rift"),
-    TimeRift_Water_TWreck_Parade = Act.new(-2, "TimeRift_Water_TWreck_Parade", "Chapter Time Rift Entrances/Chapter2", "Films/DJ Groove's Films/Time Rift"),
+    TimeRift_Cave_BirdBasement = Act.new(-2, "TimeRift_Cave_BirdBasement", "Chapter Time Rift Entrances/Chapter2 - Dead Bird Studio", "Before Lever/Dead Bird Studio (Rift)/Time Piece"),
+    TimeRift_Water_TWreck_Panels = Act.new(-2, "TimeRift_Water_TWreck_Panels", "Chapter Time Rift Entrances/Chapter2 - Murder on the Owl Express", "Films/The Conductor's Films/Time Rift"),
+    TimeRift_Water_TWreck_Parade = Act.new(-2, "TimeRift_Water_TWreck_Parade", "Chapter Time Rift Entrances/Chapter2 - The Moon", "Films/DJ Groove's Films/Time Rift"),
 
     subcon_village_icewall = Act.new(3, "subcon_village_icewall", "Chapter3 Entrances/Acts", "Yellow Firewall/Contractual Obligations/Time Piece"),
     subcon_cave = Act.new(3, "subcon_cave", "Chapter3 Entrances/Acts", "Yellow Firewall/Subcon Well/Time Piece"),
     chapter2_toiletboss = Act.new(3, "chapter2_toiletboss", "Chapter3 Entrances/Acts", "Boss Arena Area/Boss Arena/Toilet of Doom"),
     vanessa_manor_attic = Act.new(3, "vanessa_manor_attic", "Chapter3 Entrances/Acts", "Yellow Firewall/Queen Vanessa's Manor/Time Piece"),
     subcon_maildelivery = Act.new(3, "subcon_maildelivery", "Chapter3 Entrances/Acts", "Subcon Forest/Snatcher/Mail Delivery Service"),
-    snatcher_boss = Act.new(3, "snatcher_boss", "Chapter3 Entrances/Acts", "Boss Arena Area/Boss Arena/Your Contract has Expired"),
+    snatcher_boss = Act.new(3, "snatcher_boss", "Chapter3 Entrances/Boss", "Boss Arena Area/Boss Arena/Your Contract has Expired"),
     TimeRift_Cave_Raccoon = Act.new(-3, "TimeRift_Cave_Raccoon", "Chapter Time Rift Entrances/Chapter3", "Green Firewall/Sleepy Subcon/Time Rift"),
     TimeRift_Water_Subcon_Hookshot = Act.new(-3, "TimeRift_Water_Subcon_Hookshot", "Chapter Time Rift Entrances/Chapter3", "Blue Firewall/Pipe/Time Rift"),
     TimeRift_Water_Subcon_Dwellers = Act.new(-3, "TimeRift_Water_Subcon_Dwellers", "Chapter Time Rift Entrances/Chapter3", "Blue Firewall/Village/Time Rift"),
 
     AlpineFreeRoam = Act.new(4, "AlpineFreeRoam", "Chapter4 Entrances/Acts", nil),
-    AlpineSkyline_Finale = Act.new(4, "AlpineSkyline_Finale", "Chapter4 Entrances/Acts", "Alpine Skyline/The Illness has Spread/Time Piece"),
+    AlpineSkyline_Finale = Act.new(4, "AlpineSkyline_Finale", "Chapter4 Entrances/Boss", "Alpine Skyline/The Illness has Spread/Time Piece"),
     TimeRift_Cave_Alps = Act.new(-4, "TimeRift_Cave_Alps", "Chapter Time Rift Entrances/Chapter4", "Goat Village/Alpine Skyline (Rift)/Time Rift"),
     TimeRift_Water_Alp_Goats = Act.new(-4, "TimeRift_Water_Alp_Goats", "Chapter Time Rift Entrances/Chapter4", "Twilight Bell Zipline/The Twilight Bell (Rift)/Time Rift"),
     TimeRift_Water_AlpineSkyline_Cats = Act.new(-4, "TimeRift_Water_AlpineSkyline_Cats", "Chapter Time Rift Entrances/Chapter4", "Windmill Zipline/Curly Tail Trail/Time Rift"),
@@ -55,7 +55,7 @@ chapter_act_info = {
     Cruise_WaterRift_Slide = Act.new(-6, "Cruise_WaterRift_Slide", "Chapter Time Rift Entrances/Chapter6", "The Arctic Cruise/Cruise Ship/Time Rift - Balcony"),
 
     MetroFreeRoam = Act.new(7, "MetroFreeRoam", "Chapter7 Entrances/Acts", nil),
-    Metro_Escape = Act.new(7, "Metro_Escape", "Chapter7 Entrances/Acts", "Finale/Rush Hour/Time Piece"),
+    Metro_Escape = Act.new(7, "Metro_Escape", "Chapter7 Entrances/Boss", "Finale/Rush Hour/Time Piece"),
     Metro_CaveRift_RumbiFactory = Act.new(-7, "Metro_CaveRift_RumbiFactory", "Chapter Time Rift Entrances/Chapter7", "Nyakuza Metro/Rumbi Factory/Time Rift")
 }
 

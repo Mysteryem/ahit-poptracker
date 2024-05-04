@@ -26,7 +26,7 @@
           {
             "name": "trainwreck_selfdestruct",
             "access_rules": [
-              "$completedAllActsAt|chapter3_murder|moon_camerasnap"
+              "$completedActAt|chapter3_murder,$completedActAt|moon_camerasnap"
             ]
           },
           {
@@ -38,7 +38,13 @@
           {
             "name": "award_ceremony",
             "access_rules": [
-              "$canCompleteActsAt|trainwreck_selfdestruct|moon_parade"
+              "$canCompleteActAt|trainwreck_selfdestruct,$canCompleteActAt|moon_parade"
+            ]
+          },
+          {
+            "name": "chapter3_secret_finale",
+            "access_rules": [
+              "@Chapter2 Entrances/Acts/award_ceremony"
             ]
           }
         ]

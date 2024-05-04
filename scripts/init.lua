@@ -36,12 +36,12 @@ Tracker:AddLocations("locations/entrances/chapter1.json")
 Tracker:AddLocations("locations/entrances/chapter2.json")
 Tracker:AddLocations("locations/entrances/chapter3.json")
 Tracker:AddLocations("locations/entrances/chapter4.json")
-Tracker:AddLocations("locations/entrances/spaceship_attic.json")
 Tracker:AddLocations("locations/entrances/chapter5.json")
 Tracker:AddLocations("locations/entrances/chapter6.json")
 Tracker:AddLocations("locations/entrances/spaceship_lab.json")
 Tracker:AddLocations("locations/entrances/chapter7.json")
 Tracker:AddLocations("locations/entrances/chapter_time_rifts.json")
+Tracker:AddLocations("locations/entrances/spaceship_attic.json")
 Tracker:AddLocations("locations/entrances/spaceship_gallery.json")
 
 -- Layout

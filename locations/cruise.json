@@ -58,7 +58,8 @@
           {
             "name": "Toilet",
             "access_rules": [
-              "$canAccessAnyAct|Cruise_Boarding|Cruise_Working"
+              "$canAccessAct|Cruise_Boarding",
+              "$canAccessAct|Cruise_Working"
             ]
           },
           {
