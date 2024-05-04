@@ -8,7 +8,7 @@
       {
         "name": "Acts",
         "access_rules": [
-          "dweller,brewing",
+          "dweller,brewer",
           "hard,ice",
           "expert"
         ],
