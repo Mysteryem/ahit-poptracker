@@ -96,7 +96,7 @@ function canCompleteActAt(entrance)
     -- First check if the entrance is accessible.
     local entrance_location = Tracker:FindObjectForCode(entrance_info.entrance_location_section)
     local entrance_accessibility = entrance_location.AccessibilityLevel
-    if entrance_accessibility ~= AccessibilityLevel.Normal or entrance_accessibility ~= AccessibilityLevel.Cleared then
+    if entrance_accessibility ~= AccessibilityLevel.Normal and entrance_accessibility ~= AccessibilityLevel.Cleared then
         return false
     end
 
