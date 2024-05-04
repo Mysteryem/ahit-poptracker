@@ -10,19 +10,7 @@ function has(item, amount)
   end
 end
 
-function isApConnected()
-  if AutoTracker:GetConnectionState("AP") == 3 then
-    return true
-  else
-    return false
-  end
-end
-
 function canAccessMainSubcon()
-  if not isApConnected() then
-    return true
-  end
-
   local difficulty = Tracker:FindObjectForCode("difficulty")
 
   for vanilla_act_name, act_info in pairs(chapter_act_info) do
@@ -37,10 +25,6 @@ end
 
 
 function canAccessChapter(chapter_to_access, exception)
-  if not isApConnected() then
-    return true
-  end
-
   if not exception then
     exception = ""
   end
@@ -56,10 +40,6 @@ function canAccessChapter(chapter_to_access, exception)
 end
 
 function canAccessAct(act_to_access)
-  if not isApConnected() then
-    return true
-  end
-
   local act_info = getActInfo(act_to_access)
   local location = Tracker:FindObjectForCode(act_info.entrance_location_section)
   local entrance_accessibility = location.AccessibilityLevel
