@@ -27,8 +27,8 @@ end
 -- in every Chapter 1 Act except She Came from Outer Space.
 function canAccessChapter(chapter_to_access, exception)
   local chapter = tonumber(chapter_to_access)
-  for vanilla_act_name, act_info in pairs(chapter_act_info) do
-    if act_info.chapter == chapter and vanilla_act_name ~= exception and canAccessAct(vanilla_act_name) then
+  for _, vanilla_act_name in ipairs(chapter_entrance_names[chapter]) do
+    if vanilla_act_name ~= exception and canAccessAct(vanilla_act_name) then
         return true
     end
   end

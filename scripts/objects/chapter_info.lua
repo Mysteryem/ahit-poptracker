@@ -59,16 +59,15 @@ chapter_act_info = {
     Metro_CaveRift_RumbiFactory = Act.new(-7, "Metro_CaveRift_RumbiFactory", "Chapter Time Rift Entrances/Chapter7", "Nyakuza Metro/Rumbi Factory/Time Rift")
 }
 
-chapter_to_entrances = {}
-
+chapter_entrance_names = {}
 for entrance, act in pairs(chapter_act_info) do
     local chapter = act.chapter
-    local chapter_entrances = chapter_to_entrances[chapter]
+    local chapter_entrances = chapter_entrance_names[chapter]
     if chapter_entrances == nil then
         chapter_entrances = {}
-        chapter_to_entrances[chapter] = chapter_entrances
+        chapter_entrance_names[chapter] = chapter_entrances
     end
-    table.insert(chapter_entrances, act)
+    table.insert(chapter_entrances, entrance)
 end
 
 act_to_entrance = {}
