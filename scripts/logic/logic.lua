@@ -70,26 +70,15 @@ function completedActAt(entrance)
     return completion_accessibility == AccessibilityLevel.Cleared
 end
 
--- TODO: Instead of *can* beat act, keep a table of beaten acts as the messages for beating acts are received from AP,
---       that way, the accessible locations should open up more naturally.
---       ALTERNATIVE: (temporarily enabled) Only return `entrance_accessibility == AccessibilityLevel.Cleared` and not `AccessibilityLevel.Normal`?
 function canCompleteActAt(entrance)
---     if act_rando_enabled then
---         return completedActAt(entrance)
---     end
     local entrance_info = chapter_act_info[entrance]
 
-    -- TODO: When act rando is enabled, only check beaten acts, when act rando is disabled, instead check if the act
-    --       can be beaten. Even with act rando, boss acts should check if the act at the chapter intro *has* been
-    --       beaten and that the acts at the other entrances *can* be beaten (that the entrances are accessible and that
-    --       the acts can be beaten) because Boss entrances show up after beating the a single act in that chapter
-    --       (usually the intro act because that's the only initially accessible act, but Subcon can occur in any order
-    --       due to contract shuffle)
     -- TODO: Instead of checking the entrance accessibility here, we could instead include the checks in the .json:
-    --   `$canBeatActsAt|chapter3_murder|moon_camerasnap`
+    --   `$canCompleteActAt|chapter3_murder,$canCompleteActAt|moon_camerasnap`
     -- becomes
-    --   `"@Chapter2 Entrances/Acts/chapter3_murder,@Chapter2 Entrances/Acts/moon_camerasnap,$canBeatActsAt|chapter3_murder|moon_camerasnap"`
+    --   `"@Chapter2 Entrances/Acts/chapter3_murder,@Chapter2 Entrances/Acts/moon_camerasnap,$canCompleteActAt|chapter3_murder,$canCompleteActAt|moon_camerasnap"`
     -- Which would be more performant?
+
     -- First check if the entrance is accessible.
     local entrance_location = Tracker:FindObjectForCode(entrance_info.entrance_location_section)
     local entrance_accessibility = entrance_location.AccessibilityLevel
@@ -111,7 +100,6 @@ function canCompleteActAt(entrance)
     --       What about when there is other logic to be considered, such as subcon paintings?
     local completion_accessibility = completion_location.AccessibilityLevel
     return completion_accessibility == AccessibilityLevel.Normal or completion_accessibility == AccessibilityLevel.Cleared
---     return completion_accessibility == AccessibilityLevel.Cleared
 end
 
 function clearedLocationIfActRando(location_name)
