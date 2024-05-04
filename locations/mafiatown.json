@@ -353,6 +353,9 @@
       },
       {
         "name": "On Scaffolding",
+        "access_rules": [
+          "$canAccessChapter|1|chapter1_boss"
+        ],
         "sections": [
           {
             "name": "Yarn"
