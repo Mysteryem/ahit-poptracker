@@ -7,6 +7,13 @@
     "children": [
       {
         "name": "Acts",
+        "map_locations": [
+          {
+            "map": "entrances",
+            "x": 122,
+            "y": 150
+          }
+        ],
         "sections": [
           {
             "name": "DeadBirdStudio"

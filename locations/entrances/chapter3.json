@@ -7,6 +7,13 @@
     "children": [
       {
         "name": "Acts",
+        "map_locations": [
+          {
+            "map": "entrances",
+            "x": 186,
+            "y": 150
+          }
+        ],
         "sections": [
           {
             "name": "subcon_village_icewall"
@@ -45,6 +52,13 @@
           "$completedActAt|chapter2_toiletboss",
           "$completedActAt|vanessa_manor_attic",
           "$completedActAt|subcon_maildelivery"
+        ],
+        "map_locations": [
+          {
+            "map": "entrances",
+            "x": 186,
+            "y": 210
+          }
         ],
         "sections": [
           {

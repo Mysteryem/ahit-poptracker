@@ -7,6 +7,13 @@
         "access_rules": [
           "canAccessChapter|1"
         ],
+        "map_locations": [
+          {
+            "map": "entrances",
+            "x": 54,
+            "y": 190
+          }
+        ],
         "sections": [
           {
             "name": "TimeRift_Cave_Mafia",
@@ -34,6 +41,13 @@
           "$canAccessAct|DeadBirdStudio",
           "$canAccessAct|chapter3_secret_finale"
         ],
+        "map_locations": [
+          {
+            "map": "entrances",
+            "x": 104,
+            "y": 190
+          }
+        ],
         "sections": [
           {
             "name": "TimeRift_Cave_BirdBasement",
@@ -47,6 +61,13 @@
         "name": "Chapter2 - Murder on the Owl Express",
         "access_rules": [
           "$canAccessAct|chapter3_murder"
+        ],
+        "map_locations": [
+          {
+            "map": "entrances",
+            "x": 122,
+            "y": 190
+          }
         ],
         "sections": [
           {
@@ -63,6 +84,13 @@
           "$canAccessAct|moon_camerasnap",
           "$canAccessAct|moon_parade"
         ],
+        "map_locations": [
+          {
+            "map": "entrances",
+            "x": 140,
+            "y": 190
+          }
+        ],
         "sections": [
           {
             "name": "TimeRift_Water_TWreck_Parade",
@@ -74,6 +102,13 @@
       },
       {
         "name": "Chapter3",
+        "map_locations": [
+          {
+            "map": "entrances",
+            "x": 186,
+            "y": 170
+          }
+        ],
         "sections": [
           {
             "name": "TimeRift_Cave_Raccoon",
@@ -97,6 +132,13 @@
       },
       {
         "name": "Chapter4",
+        "map_locations": [
+          {
+            "map": "entrances",
+            "x": 257,
+            "y": 170
+          }
+        ],
         "sections": [
           {
             "name": "TimeRift_Cave_Alps",
@@ -120,6 +162,13 @@
       },
       {
         "name": "Chapter6",
+        "map_locations": [
+          {
+            "map": "entrances",
+            "x": 392,
+            "y": 190
+          }
+        ],
         "sections": [
           {
             "name": "Cruise_CaveRift_Aquarium",
@@ -137,6 +186,13 @@
       },
       {
         "name": "Chapter7",
+        "map_locations": [
+          {
+            "map": "entrances",
+            "x": 458,
+            "y": 170
+          }
+        ],
         "sections": [
           {
             "name": "Metro_CaveRift_RumbiFactory",

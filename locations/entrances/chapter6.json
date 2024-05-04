@@ -8,6 +8,13 @@
     "children": [
       {
         "name": "Acts",
+        "map_locations": [
+          {
+            "map": "entrances",
+            "x": 392,
+            "y": 150
+          }
+        ],
         "sections": [
           {
             "name": "Cruise_Boarding"

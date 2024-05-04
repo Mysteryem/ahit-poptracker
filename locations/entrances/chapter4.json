@@ -7,6 +7,13 @@
     "children": [
       {
         "name": "Acts",
+        "map_locations": [
+          {
+            "map": "entrances",
+            "x": 257,
+            "y": 150
+          }
+        ],
         "sections": [
           {
             "name": "AlpineFreeRoam"
@@ -20,6 +27,13 @@
           "$clearedLocationIfActRando|@Twilight Bell Zipline/The Twilight Bell/Time Piece",
           "$clearedLocationIfActRando|@Lava Cake Zipline/Lava Cake/Time Piece",
           "$clearedLocationIfActRando|@Windmill Zipline/The Windmill/Time Piece"
+        ],
+        "map_locations": [
+          {
+            "map": "entrances",
+            "x": 257,
+            "y": 210
+          }
         ],
         "sections": [
           {

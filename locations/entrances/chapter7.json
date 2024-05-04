@@ -8,6 +8,13 @@
     "children": [
       {
         "name": "Acts",
+        "map_locations": [
+          {
+            "map": "entrances",
+            "x": 458,
+            "y": 150
+          }
+        ],
         "sections": [
           {
             "name": "MetroFreeRoam"
@@ -24,6 +31,13 @@
           "$clearedLocationIfActRando|@Nyakuza Metro/Bluefin Tunnel/Time Piece",
           "$clearedLocationIfActRando|@Nyakuza Metro/Pink Paw Station/Time Piece",
           "$clearedLocationIfActRando|@Nyakuza Metro/Pink Paw Manhole/Time Piece"
+        ],
+        "map_locations": [
+          {
+            "map": "entrances",
+            "x": 458,
+            "y": 210
+          }
         ],
         "sections": [
           {

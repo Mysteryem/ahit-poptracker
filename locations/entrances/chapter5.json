@@ -12,6 +12,13 @@
           "hard,ice",
           "expert"
         ],
+        "map_locations": [
+          {
+            "map": "entrances",
+            "x": 320,
+            "y": 150
+          }
+        ],
         "sections": [
           {
             "name": "TheFinale_FinalBoss"

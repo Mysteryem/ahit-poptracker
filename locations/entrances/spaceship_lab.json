@@ -8,6 +8,13 @@
     "children": [
       {
         "name": "Time Rifts",
+        "map_locations": [
+          {
+            "map": "entrances",
+            "x": 71,
+            "y": 270
+          }
+        ],
         "sections": [
           {
             "name": "Spaceship_WaterRift_MailRoom"

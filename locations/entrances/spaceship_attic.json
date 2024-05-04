@@ -8,6 +8,13 @@
         "access_rules": [
           "@Chapter5 Entrances/Acts/TheFinale_FinalBoss"
         ],
+        "map_locations": [
+          {
+            "map": "entrances",
+            "x": 71,
+            "y": 444
+          }
+        ],
         "sections": [
           {
             "name": "TimeRift_Cave_Tour",
