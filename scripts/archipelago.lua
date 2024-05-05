@@ -105,6 +105,15 @@ function onClear(slot_data)
     --SLOT_DATA = slot_data
     CUR_INDEX = -1
 
+    for _, v in pairs(chapter_act_info) do
+        local entrance_location = Tracker:FindObjectForCode(v.entrance_location_section)
+        if entrance_location then
+            entrance_location.AvailableChestCount = entrance_location.ChestCount
+        else
+            print(string.format("onClear: Could not find entrance location '%s'", v.entrance_location_section))
+        end
+    end
+
     -- reset locations
     for _, v in pairs(LOCATION_MAPPING) do
         local obj = Tracker:FindObjectForCode(v)
@@ -478,6 +487,13 @@ function onLocation(location_id, location_name)
     -- Trigger an update if the location is an act completion location because it could result in an entrance becoming
     -- accessible.
     if unlock_timepieces[v] then
+        local entrance = getEntranceFromTimePieceLocation(v)
+        -- If the timepiece belongs to a specific act, then clear the entrance the act is at.
+        if entrance then
+            local entrance_loc = Tracker:FindObjectForCode(entrance.entrance_location_section)
+            entrance_loc.AvailableChestCount = entrance_loc.AvailableChestCount - 1
+            print("Acquired time piece " .. v .. ", so clearing entrance " .. entrance.entrance_location_section)
+        end
         forceUpdate()
     end
 end

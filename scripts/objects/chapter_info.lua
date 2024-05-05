@@ -59,6 +59,16 @@ chapter_act_info = {
     Metro_CaveRift_RumbiFactory = Act.new(-7, "Metro_CaveRift_RumbiFactory", "Chapter Time Rift Entrances/Chapter7", "Nyakuza Metro/Rumbi Factory/Time Rift")
 }
 
+time_piece_location_to_vanilla_entrance = {}
+for entrance, act in pairs(chapter_act_info) do
+    local time_piece_loc = act.vanilla_act_completion_location_section
+    -- Free roam acts are considered cleared automatically, though the tracker will show them as accessible and
+    -- uncleared.
+    if time_piece_loc ~= nil then
+        time_piece_location_to_vanilla_entrance[time_piece_loc] = entrance
+    end
+end
+
 chapter_entrance_names = {}
 for entrance, act in pairs(chapter_act_info) do
     local chapter = act.chapter
@@ -80,6 +90,16 @@ function updateActToEntrance()
 end
 
 updateActToEntrance()
+
+-- Given a time piece location, get the act, get the entrance of the act and return the entrance's location.
+function getEntranceFromTimePieceLocation(time_piece_loc)
+    local vanilla_act = time_piece_location_to_vanilla_entrance[time_piece_loc]
+    if vanilla_act then
+        return getActInfo(vanilla_act)
+    end
+
+    return nil
+end
 
 function getActInfo(act_name)
     return chapter_act_info[act_to_entrance[act_name]]
