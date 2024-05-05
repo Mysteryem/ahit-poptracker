@@ -23,10 +23,7 @@
       {
         "name": "Boss",
         "access_rules": [
-          "$clearedLocationIfActRando|@Birdhouse Zipline/Bird House/Time Piece",
-          "$clearedLocationIfActRando|@Twilight Bell Zipline/The Twilight Bell/Time Piece",
-          "$clearedLocationIfActRando|@Lava Cake Zipline/Lava Cake/Time Piece",
-          "$clearedLocationIfActRando|@Windmill Zipline/The Windmill/Time Piece"
+          "$hasClearedLocation|@Birdhouse Zipline/Bird House/Time Piece,$hasClearedLocation|@Twilight Bell Zipline/The Twilight Bell/Time Piece,$hasClearedLocation|@Lava Cake Zipline/Lava Cake/Time Piece,$hasClearedLocation|@Windmill Zipline/The Windmill/Time Piece"
         ],
         "map_locations": [
           {
@@ -37,10 +34,7 @@
         ],
         "sections": [
           {
-            "name": "AlpineSkyline_Finale",
-            "access_rules": [
-              "@Birdhouse Zipline/Bird House/Time Piece,@Twilight Bell Zipline/The Twilight Bell/Time Piece,@Lava Cake Zipline/Lava Cake/Time Piece,@Windmill Zipline/The Windmill/Time Piece"
-            ]
+            "name": "AlpineSkyline_Finale"
           }
         ]
       }

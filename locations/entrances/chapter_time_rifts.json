@@ -149,13 +149,13 @@
           {
             "name": "TimeRift_Water_Alp_Goats",
             "access_rules": [
-              "@Twilight Bell Zipline/The Twilight Bell/Time Piece,$clearedLocationIfActRando|@Twilight Bell Zipline/The Twilight Bell/Time Piece"
+              "$hasClearedLocation|@Twilight Bell Zipline/The Twilight Bell/Time Piece"
             ]
           },
           {
             "name": "TimeRift_Water_AlpineSkyline_Cats",
             "access_rules": [
-              "@Windmill Zipline/The Windmill/Time Piece,$clearedLocationIfActRando|@Windmill Zipline/The Windmill/Time Piece"
+              "$hasClearedLocation|@Windmill Zipline/The Windmill/Time Piece"
             ]
           }
         ]

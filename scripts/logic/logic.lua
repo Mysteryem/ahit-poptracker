@@ -52,13 +52,15 @@ end
 -- This is used because a player using act randomization won't know what new act/rift will unlock after they complete an
 -- act, so the tracker should not display the act/rift that will unlock as accessible until the player has beaten the
 -- act.
--- When act randomization is disabled, the player knows what act/rift will unlock, so then this function returns whether
--- the act at the entrance can be completed instead.
+-- DISABLED PENDING FEEDBACK
+---- When act randomization is disabled, the player knows what act/rift will unlock, so then this function returns whether
+---- the act at the entrance can be completed instead.
 function completedActAt(entrance)
-    if not act_rando_enabled then
-        -- The player knows which acts are where in advance when there is no act rando, so the tracker should know too.
-        return canCompleteActAt(entrance)
-    end
+    -- DISABLED PENDING FEEDBACK
+--     if not act_rando_enabled then
+--         -- The player knows which acts are where in advance when there is no act rando, so the tracker should know too.
+--         return canCompleteActAt(entrance)
+--     end
     local entrance_info = chapter_act_info[entrance]
 
     local act_at_entrance = chapter_act_info[entrance_info.act_name]
@@ -108,13 +110,7 @@ function canCompleteActAt(entrance)
     return completion_accessibility == AccessibilityLevel.Normal or completion_accessibility == AccessibilityLevel.Cleared
 end
 
-function clearedLocationIfActRando(location_name)
-    if not act_rando_enabled then
-        return true
-    end
-
+function hasClearedLocation(location_name)
     local loc = Tracker:FindObjectForCode(location_name)
-    if loc.AccessibilityLevel == AccessibilityLevel.Cleared then
-        return true
-    end
+    return loc.AccessibilityLevel == AccessibilityLevel.Cleared
 end
