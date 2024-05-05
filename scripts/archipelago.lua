@@ -100,15 +100,11 @@ function onClear(slot_data)
 
     -- reset locations
     for _, v in pairs(LOCATION_MAPPING) do
-        if v[1] then
-            local obj = Tracker:FindObjectForCode(v[1])
-            if obj then
-                if v[1]:sub(1, 1) == "@" then
-                    obj.AvailableChestCount = obj.ChestCount
-                else
-                    obj.Active = false
-                end
-            end
+        local obj = Tracker:FindObjectForCode(v)
+        if obj then
+            obj.AvailableChestCount = obj.ChestCount
+        else
+            print(string.format("onClear: Could not find location '%s'", v))
         end
     end
     -- reset items
@@ -471,28 +467,28 @@ end
 --called when a location gets cleared
 function onLocation(location_id, location_name)
     local v = LOCATION_MAPPING[location_id]
-    if not v or not v[1] then
+    if not v then
         print(string.format("onLocation: could not find location mapping for id %s", location_id))
         return
     end
-    local obj = Tracker:FindObjectForCode(v[1])
+    local obj = Tracker:FindObjectForCode(v)
 
     --handle check for Chapter 4/7 boss entrances and Chapter 4 Time Rifts because clearing locations does not otherwise
     --cause the tracker to update.
     --TODO: Is this already handled by onEvent forcing updates after completing an act?
-    if unlock_timepieces[v[1]] then
+    if unlock_timepieces[v] then
         forceUpdate()
     end
 
     if obj then
-        if v[1]:sub(1, 1) == "@" then
+        if v:sub(1, 1) == "@" then
             obj.AvailableChestCount = obj.AvailableChestCount - 1
         else
             obj.Active = true
         end
         --print("onLocation: checked spot "..v[1])
     else
-        print(string.format("onLocation: could not find object for code %s", v[1]))
+        print(string.format("onLocation: could not find object for code %s", v))
     end
 end
 
