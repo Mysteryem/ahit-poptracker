@@ -1,14 +1,17 @@
 {
-  "name": "ahit Randomizer - AP - development",
-  "game_name": "A Hat in Time",
-  "package_version": "0.9",
-  "package_uid": "ahit-nep",
+  "name": "A Hat in Time AP Tracker",
+  "package_uid": "ahit-mysteryem",
+  "package_version": "0.0.1",
   "platform": "pc",
-  "author": "hoppel16",
   "variants": {
     "standard": {
       "display_name": "Map Tracker",
       "flags": "ap"
     }
-  }
+  },
+  "min_poptracker_version": "0.26.0",
+  "target_poptracker_version": "0.26.0",
+  "game_name": "A Hat in Time",
+  "author": "Mysteryem",
+  "versions_url": "https://raw.githubusercontent.com/Mysteryem/ahit-poptracker/main/versions.json"
 }
