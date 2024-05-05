@@ -45,7 +45,7 @@
           {
             "name": "award_ceremony",
             "access_rules": [
-              "$canCompleteActAt|trainwreck_selfdestruct,$canCompleteActAt|moon_parade"
+              "$completedActAt|trainwreck_selfdestruct,$completedActAt|moon_parade"
             ]
           },
           {
