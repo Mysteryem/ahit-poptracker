@@ -117,15 +117,13 @@
           {
             "name": "Behind Badge Seller",
             "access_rules": [
-              "$canAccessAct|moon_camerasnap",
-              "$canAccessAct|moon_parade"
+              "$canAccessAct|moon_camerasnap"
             ]
           },
           {
             "name": "Hats Buy Building",
             "access_rules": [
-              "$canAccessAct|moon_camerasnap",
-              "$canAccessAct|moon_parade"
+              "$canAccessAct|moon_camerasnap"
             ]
           },
           {
