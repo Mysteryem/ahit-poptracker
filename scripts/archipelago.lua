@@ -473,13 +473,6 @@ function onLocation(location_id, location_name)
     end
     local obj = Tracker:FindObjectForCode(v)
 
-    --handle check for Chapter 4/7 boss entrances and Chapter 4 Time Rifts because clearing locations does not otherwise
-    --cause the tracker to update.
-    --TODO: Is this already handled by onEvent forcing updates after completing an act?
-    if unlock_timepieces[v] then
-        forceUpdate()
-    end
-
     if obj then
         if v:sub(1, 1) == "@" then
             obj.AvailableChestCount = obj.AvailableChestCount - 1
@@ -489,6 +482,12 @@ function onLocation(location_id, location_name)
         --print("onLocation: checked spot "..v[1])
     else
         print(string.format("onLocation: could not find object for code %s", v))
+    end
+
+    -- Trigger an update if the location is an act completion location because it could result in an entrance becoming
+    -- accessible.
+    if unlock_timepieces[v] then
+        forceUpdate()
     end
 end
 
