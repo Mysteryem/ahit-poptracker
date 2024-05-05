@@ -119,7 +119,8 @@
           {
             "name": "Heating Up Mafia Town",
             "access_rules": [
-              "umbrella, $canAccessAct|mafiatown_lava"
+              "umbrella, umbrella_on, $canAccessAct|mafiatown_lava",
+              "umbrella_off, $canAccessAct|mafiatown_lava"
             ]
           },
           {
