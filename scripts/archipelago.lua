@@ -8,12 +8,13 @@ CUR_INDEX = -1
 
 -- Locations for time pieces that need to be collected to unlock entrances.
 -- Clearing these locations must cause the tracker to update its logic.
+-- The initial set of locations are accessed through a free roam act, so do not get randomized.
 local unlock_timepieces = {
-    -- Chapter 4 boss entrance unlock
+    -- Chapter 4 boss entrance unlock and Chapter 4 Time rift unlocks
     ["@Birdhouse Zipline/Bird House/Time Piece"] = true,
     ["@Lava Cake Zipline/Lava Cake/Time Piece"] = true,
-    ["@Twilight Bell Zipline/The Twilight Bell/Time Piece"] = true,
-    ["@Windmill Zipline/The Windmill/Time Piece"] = true,
+    ["@Twilight Bell Zipline/The Twilight Bell/Time Piece"] = true, -- Also unlocks a Time Rift entrance
+    ["@Windmill Zipline/The Windmill/Time Piece"] = true, -- Also unlocks a Time Rift entrance
     -- Chapter 7 boss entrance unlock
     -- The intro is not technically required
     ["@Nyakuza Metro/Nyakuza Metro Intro/Time Piece"] = true,
@@ -24,10 +25,16 @@ local unlock_timepieces = {
     ["@Nyakuza Metro/Bluefin Tunnel/Time Piece"] = true,
     ["@Nyakuza Metro/Pink Paw Station/Time Piece"] = true,
     ["@Nyakuza Metro/Pink Paw Manhole/Time Piece"] = true,
-    -- Chapter 4 Time Rift entrance unlocks
-    ["@Twilight Bell Zipline/The Twilight Bell/Time Piece"] = true,
-    ["@Windmill Zipline/The Windmill/Time Piece"] = true,
 }
+-- Add all the act completion locations of acts that can be randomized.
+for _, v in pairs(chapter_act_info) do
+    local act_completion_location = v.vanilla_act_completion_location_section
+    -- Free roam acts have no completion location.
+    if act_completion_location ~= nil then
+        -- Add the location.
+        unlock_timepieces[act_completion_location] = true
+    end
+end
 
 -- Setup for auto map switching
 local map_table = {
