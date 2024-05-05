@@ -435,15 +435,6 @@ function onItem(index, item_id, item_name, player_number)
     if obj then
         if v[2] == "toggle" then
             obj.Active = true
-            -- TODO: Are these forceUpdates necessary? Doesn't receiving and toggling/incrementing the item cause an
-            --       update?
-            if string.find(v[1], "Contract") then
-                -- Contracts unlock entrances of Chapter 3 Acts
-                forceUpdate()
-            elseif v[1] == 'dweller' or v[1] == 'brewer' then
-                -- Dweller/brewer may unlock Lab/Gallery entrances
-                forceUpdate()
-            end
         elseif v[2] == "progressive" then
             if obj.Active then
                 obj.CurrentStage = obj.CurrentStage + 1
@@ -454,12 +445,6 @@ function onItem(index, item_id, item_name, player_number)
             obj.AcquiredCount = obj.AcquiredCount + obj.Increment
             if v[1] == 'yarn' then --extra handling for hat autotracking
                 updateYarn(obj)
-            elseif v[1] == 'timepiece' then
-                -- Getting timepieces may unlock entrances behind chapter doors
-                forceUpdate()
-            elseif string.find(v[1], "relic") then
-                -- Relics may unlock entrances of Purple Time Rifts
-                forceUpdate()
             end
         elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
             print(string.format("onItem: unknown item type %s for code %s", v[2], v[1]))
@@ -501,7 +486,8 @@ function onEvent(key, new_value, old_value)
     if key == map_key then
         changedMap(new_value, old_value)
     elseif key == completed_acts_key then
-        forceUpdate()
+        print("Received completed acts event")
+        --forceUpdate()
     end
 end
 
