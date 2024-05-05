@@ -366,7 +366,7 @@
       "hookshot, ziplines_off, $canAccessAct|AlpineFreeRoam",
       "hookshot, ziplines_on, windmillzipline, $canAccessAct|AlpineFreeRoam",
       "hookshot, ziplines_off, $canAccessAct|AlpineSkyline_Finale",
-      "hookshot, ziplines_on, birdzipline, $canAccessAct|AlpineSkyline_Finale"
+      "hookshot, ziplines_on, windmillzipline, $canAccessAct|AlpineSkyline_Finale"
     ],
     "children": [
       {
