@@ -87,7 +87,7 @@
           {
             "name": "Time Rift",
             "access_rules": [
-              "$canAccessAct|chapter3_murder"
+              "$canAccessAct|TimeRift_Water_TWreck_Panels"
             ]
           }
         ],
@@ -129,8 +129,7 @@
           {
             "name": "Time Rift",
             "access_rules": [
-              "$canAccessAct|moon_camerasnap",
-              "$canAccessAct|moon_parade"
+              "$canAccessAct|TimeRift_Water_TWreck_Parade"
             ]
           }
         ],
