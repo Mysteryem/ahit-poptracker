@@ -6,7 +6,8 @@
       "hookshot, paintings_off, $canAccessAct|chapter2_toiletboss",
       "hookshot, paintings_on, yellow, $canAccessAct|chapter2_toiletboss",
       "hard, paintings_off, $canAccessMainSubcon",
-      "hard, paintings_on, yellow, $canAccessMainSubcon"
+      "hard, paintings_on, yellow, $canAccessMainSubcon",
+      "expert, painting_skips_off, $canAccessMainSubcon"
     ],
     "children": [
       {
