@@ -6,15 +6,16 @@ ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
 CUR_INDEX = -1
 --SLOT_DATA = nil
 
--- Locations for time pieces that need to be collected to unlock finales
-local apline_timepieces = {
+-- Locations for time pieces that need to be collected to unlock entrances.
+-- Clearing these locations must cause the tracker to update its logic.
+local unlock_timepieces = {
+    -- Chapter 4 boss entrance unlock
     ["@Birdhouse Zipline/Bird House/Time Piece"] = true,
     ["@Lava Cake Zipline/Lava Cake/Time Piece"] = true,
     ["@Twilight Bell Zipline/The Twilight Bell/Time Piece"] = true,
-    ["@Windmill Zipline/The Windmill/Time Piece"] = true
-}
-
-local nyakuza_timepieces = {
+    ["@Windmill Zipline/The Windmill/Time Piece"] = true,
+    -- Chapter 7 boss entrance unlock
+    -- The intro is not technically required
     ["@Nyakuza Metro/Nyakuza Metro Intro/Time Piece"] = true,
     ["@Nyakuza Metro/Yellow Overpass Station/Time Piece"] = true,
     ["@Nyakuza Metro/Yellow Overpass Manhole/Time Piece"] = true,
@@ -22,7 +23,10 @@ local nyakuza_timepieces = {
     ["@Nyakuza Metro/Green Clean Manhole/Time Piece"] = true,
     ["@Nyakuza Metro/Bluefin Tunnel/Time Piece"] = true,
     ["@Nyakuza Metro/Pink Paw Station/Time Piece"] = true,
-    ["@Nyakuza Metro/Pink Paw Manhole/Time Piece]"] = true
+    ["@Nyakuza Metro/Pink Paw Manhole/Time Piece"] = true,
+    -- Chapter 4 Time Rift entrance unlocks
+    ["@Twilight Bell Zipline/The Twilight Bell/Time Piece"] = true,
+    ["@Windmill Zipline/The Windmill/Time Piece"] = true,
 }
 
 -- Setup for auto map switching
@@ -429,9 +433,13 @@ function onItem(index, item_id, item_name, player_number)
     if obj then
         if v[2] == "toggle" then
             obj.Active = true
+            -- TODO: Are these forceUpdates necessary? Doesn't receiving and toggling/incrementing the item cause an
+            --       update?
             if string.find(v[1], "Contract") then
+                -- Contracts unlock entrances of Chapter 3 Acts
                 forceUpdate()
-            elseif v[1] == 'dweller' or v[1] == 'brewing' then
+            elseif v[1] == 'dweller' or v[1] == 'brewer' then
+                -- Dweller/brewer may unlock Lab/Gallery entrances
                 forceUpdate()
             end
         elseif v[2] == "progressive" then
@@ -445,8 +453,10 @@ function onItem(index, item_id, item_name, player_number)
             if v[1] == 'yarn' then --extra handling for hat autotracking
                 updateYarn(obj)
             elseif v[1] == 'timepiece' then
+                -- Getting timepieces may unlock entrances behind chapter doors
                 forceUpdate()
             elseif string.find(v[1], "relic") then
+                -- Relics may unlock entrances of Purple Time Rifts
                 forceUpdate()
             end
         elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
@@ -467,10 +477,10 @@ function onLocation(location_id, location_name)
     end
     local obj = Tracker:FindObjectForCode(v[1])
 
-    --handle check for rush hour
-    if apline_timepieces[v[1]] then
-        forceUpdate()
-    elseif nyakuza_timepieces[v[1]] then
+    --handle check for Chapter 4/7 boss entrances and Chapter 4 Time Rifts because clearing locations does not otherwise
+    --cause the tracker to update.
+    --TODO: Is this already handled by onEvent forcing updates after completing an act?
+    if unlock_timepieces[v[1]] then
         forceUpdate()
     end
 
