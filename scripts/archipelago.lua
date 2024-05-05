@@ -383,7 +383,6 @@ end
 -- for each hat on Clear, then here I count how many yarn has been received
 function updateYarn(yarn)
     count = yarn.AcquiredCount
-    local timepieces = Tracker:FindObjectForCode("timepiece")
     --print("Yarn: "..(yarn.AcquiredCount))
     for k,v in ipairs(HatOrder) do
         for l,w in pairs(v) do
