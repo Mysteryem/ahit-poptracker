@@ -47,11 +47,7 @@
       {
         "name": "Boss",
         "access_rules": [
-          "$completedActAt|subcon_village_icewall",
-          "$completedActAt|subcon_cave",
-          "$completedActAt|chapter2_toiletboss",
-          "$completedActAt|vanessa_manor_attic",
-          "$completedActAt|subcon_maildelivery"
+          "$completedActAt|subcon_village_icewall,$completedActAt|subcon_cave,$completedActAt|chapter2_toiletboss,$completedActAt|vanessa_manor_attic,$completedActAt|subcon_maildelivery"
         ],
         "map_locations": [
           {
@@ -62,10 +58,7 @@
         ],
         "sections": [
           {
-            "name": "snatcher_boss",
-            "access_rules": [
-              "$canCompleteActAt|subcon_village_icewall,$canCompleteActAt|subcon_cave,$canCompleteActAt|chapter2_toiletboss,$canCompleteActAt|vanessa_manor_attic,$canCompleteActAt|subcon_maildelivery"
-            ]
+            "name": "snatcher_boss"
           }
         ]
       }
