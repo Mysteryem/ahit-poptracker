@@ -23,7 +23,7 @@
       {
         "name": "Boss",
         "access_rules": [
-          "$hasClearedLocation|@Birdhouse Zipline/Bird House/Time Piece,$hasClearedLocation|@Twilight Bell Zipline/The Twilight Bell/Time Piece,$hasClearedLocation|@Lava Cake Zipline/Lava Cake/Time Piece,$hasClearedLocation|@Windmill Zipline/The Windmill/Time Piece"
+          "$completedAlpineFreeRoamActs"
         ],
         "map_locations": [
           {

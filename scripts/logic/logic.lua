@@ -48,6 +48,32 @@ function hasTimePiecesForChapter(chapter_to_access)
     return timePieces.AcquiredCount >= chapter_costs[tonumber(chapter_to_access)]
 end
 
+-- todo: If AP is disabled, should we get act completion state from locations instead?
+function completedNyakuzaFreeRoamActs()
+    for _, act_name in ipairs(nyakuza_free_roam_act_names) do
+        if completed_entrances[act_name] == nil then
+            return false
+        end
+    end
+
+    return true
+end
+
+-- todo: If AP is disabled, should we get act completion state from locations instead?
+function completedAlpineFreeRoamActs()
+    for _, act_name in ipairs(alpine_free_roam_act_names) do
+        if completed_entrances[act_name] == nil then
+            return false
+        end
+    end
+
+    return true
+end
+
+function completedFreeRoamAct(act_name)
+    return completed_entrances[act_name] ~= nil
+end
+
 -- Return if the act at the entrance has been completed (AccessibilityLevel.Cleared).
 -- This is used because a player using act randomization won't know what new act/rift will unlock after they complete an
 -- act, so the tracker should not display the act/rift that will unlock as accessible until the player has beaten the
@@ -71,11 +97,34 @@ function completedActAt(entrance)
         return true
     end
 
-    local completion_location = Tracker:FindObjectForCode(act_at_entrance.vanilla_act_completion_location_section)
-    -- TODO: Can we prefix the function use with "^" and then return an AccessibilityLevel constant directly?
-    --       What about when there are other logic conditions to be considered, such as subcon paintings?
-    local completion_accessibility = completion_location.AccessibilityLevel
-    return completion_accessibility == AccessibilityLevel.Cleared
+    -- todo: If AP is disabled, should we get act completion state from location instead?
+    --
+    -- archipelago.lua updates the global set of completed entrances
+    if completed_entrances[entrance] ~= nil then
+        return true
+    else
+        -- Note: This workaround is unused because there is currently no reason to check for having completed the act at
+        -- either the Alpine Free Roam entrance or the Nyakuza Metro Free Roam entrance.
+        -- Workaround for bug in AHIT-APRandomizer Mod:
+        -- Free roam entrances receive `""` as the act completion from archipelago, so get the time piece for the act's
+        -- location and check if it's been cleared instead.
+        if entrance_info.vanilla_act_completion_location_section == nil then
+            if completed_entrances[""] == nil then
+                -- If no act at a free roam entrance has been completed, then we can be sure that the act at this free
+                -- roam entrance has not been completed.
+                -- TODO: If DLC2 is disabled then we can be sure that `""` is always completion of the act at Alpine
+                --       Skyline free roam.
+                return false
+            else
+                -- Get the act completion time piece for the act at the entrance and return if the time piece location
+                -- has been cleared.
+                local completion_location = Tracker:FindObjectForCode(act_at_entrance.vanilla_act_completion_location_section)
+                return completion_location.AccessibilityLevel == AccessibilityLevel.Cleared
+            end
+        end
+
+        return false
+    end
 end
 
 function canCompleteActAt(entrance)
@@ -108,9 +157,4 @@ function canCompleteActAt(entrance)
     --       What about when there is other logic to be considered, such as subcon paintings?
     local completion_accessibility = completion_location.AccessibilityLevel
     return completion_accessibility == AccessibilityLevel.Normal or completion_accessibility == AccessibilityLevel.Cleared
-end
-
-function hasClearedLocation(location_name)
-    local loc = Tracker:FindObjectForCode(location_name)
-    return loc.AccessibilityLevel == AccessibilityLevel.Cleared
 end

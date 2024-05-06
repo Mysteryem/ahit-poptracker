@@ -59,6 +59,25 @@ chapter_act_info = {
     Metro_CaveRift_RumbiFactory = Act.new(-7, "Metro_CaveRift_RumbiFactory", "Chapter Time Rift Entrances/Chapter7", "Nyakuza Metro/Rumbi Factory/Time Rift")
 }
 
+-- There is also a `Metro_Intro` time piece, but it is not actually required to unlock the boss act, nor does it show up
+-- as a separate act in the telescope.
+nyakuza_free_roam_act_names = {
+    "Metro_RouteA",
+    "Metro_RouteB",
+    "Metro_RouteC",
+    "Metro_RouteD",
+    "Metro_ManholeA",
+    "Metro_ManholeB",
+    "Metro_ManholeC"
+}
+
+alpine_free_roam_act_names = {
+    "Alpine_Twilight",
+    "Alps_Birdhouse",
+    "AlpineSkyline_Windmill",
+    "AlpineSkyline_WeddingCake"
+}
+
 time_piece_location_to_vanilla_entrance = {}
 for entrance, act in pairs(chapter_act_info) do
     local time_piece_loc = act.vanilla_act_completion_location_section
@@ -107,3 +126,6 @@ end
 
 -- To be updated by archipelago. The default values are for vanilla.
 chapter_costs = {0, 4, 7, 14, 25, 35, 20}
+
+-- To be updated by archipelago.
+completed_entrances = {}

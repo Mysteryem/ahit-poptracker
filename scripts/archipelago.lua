@@ -6,36 +6,6 @@ ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
 CUR_INDEX = -1
 --SLOT_DATA = nil
 
--- Locations for time pieces that need to be collected to unlock entrances.
--- Clearing these locations must cause the tracker to update its logic.
--- The initial set of locations are accessed through a free roam act, so do not get randomized.
-local unlock_timepieces = {
-    -- Chapter 4 boss entrance unlock and Chapter 4 Time rift unlocks
-    ["@Birdhouse Zipline/Bird House/Time Piece"] = true,
-    ["@Lava Cake Zipline/Lava Cake/Time Piece"] = true,
-    ["@Twilight Bell Zipline/The Twilight Bell/Time Piece"] = true, -- Also unlocks a Time Rift entrance
-    ["@Windmill Zipline/The Windmill/Time Piece"] = true, -- Also unlocks a Time Rift entrance
-    -- Chapter 7 boss entrance unlock
-    -- The intro is not technically required
-    ["@Nyakuza Metro/Nyakuza Metro Intro/Time Piece"] = true,
-    ["@Nyakuza Metro/Yellow Overpass Station/Time Piece"] = true,
-    ["@Nyakuza Metro/Yellow Overpass Manhole/Time Piece"] = true,
-    ["@Nyakuza Metro/Green Clean Station/Time Piece"] = true,
-    ["@Nyakuza Metro/Green Clean Manhole/Time Piece"] = true,
-    ["@Nyakuza Metro/Bluefin Tunnel/Time Piece"] = true,
-    ["@Nyakuza Metro/Pink Paw Station/Time Piece"] = true,
-    ["@Nyakuza Metro/Pink Paw Manhole/Time Piece"] = true,
-}
--- Add all the act completion locations of acts that can be randomized.
-for _, v in pairs(chapter_act_info) do
-    local act_completion_location = v.vanilla_act_completion_location_section
-    -- Free roam acts have no completion location.
-    if act_completion_location ~= nil then
-        -- Add the location.
-        unlock_timepieces[act_completion_location] = true
-    end
-end
-
 -- Setup for auto map switching
 local map_table = {
     hub_spaceship = "Spaceship",
@@ -104,6 +74,9 @@ end
 function onClear(slot_data)
     --SLOT_DATA = slot_data
     CUR_INDEX = -1
+
+    -- Reset completed entrances
+    completed_entrances = {}
 
     for _, v in pairs(chapter_act_info) do
         local entrance_location = Tracker:FindObjectForCode(v.entrance_location_section)
@@ -422,6 +395,33 @@ function changedMap(current_map, previous_map)
     Tracker:UiHint("ActivateTab", internal_map_name)
 end
 
+function changedCompletedEntrances(current, previous)
+    local new_completions = false
+
+    -- todo: Find out if `current` is guaranteed to be the same as `previous` but with extra elements. Then the
+    --       iteration could skip immediately to the new elements. Note that `previous` is initially `nil` at the start.
+    for _, entrance_name in ipairs(current) do
+        if completed_entrances[entrance_name] == nil then
+            new_completions = true
+            completed_entrances[entrance_name] = true
+            entrance = chapter_act_info[entrance_name]
+            if entrance then
+                local entrance_loc = Tracker:FindObjectForCode(entrance.entrance_location_section)
+                entrance_loc.AvailableChestCount = entrance_loc.AvailableChestCount - 1
+                --print("Player has completed the act at entrance '" .. entrance_name .. "', so the entrance has been cleared")
+            else
+                --print("Player has completed the act at entrance '" .. entrance_name .. "'")
+            end
+        else
+            --print("Player has re-completed the act at entrance '" .. entrance_name .. "'")
+        end
+    end
+
+    if new_completions then
+        forceUpdate()
+    end
+end
+
 function forceUpdate()
     local update = Tracker:FindObjectForCode("update")
     update.Active = not update.Active
@@ -483,27 +483,15 @@ function onLocation(location_id, location_name)
     else
         print(string.format("onLocation: could not find object for code %s", v))
     end
-
-    -- Trigger an update if the location is an act completion location because it could result in an entrance becoming
-    -- accessible.
-    if unlock_timepieces[v] then
-        local entrance = getEntranceFromTimePieceLocation(v)
-        -- If the timepiece belongs to a specific act, then clear the entrance the act is at.
-        if entrance then
-            local entrance_loc = Tracker:FindObjectForCode(entrance.entrance_location_section)
-            entrance_loc.AvailableChestCount = entrance_loc.AvailableChestCount - 1
-            print("Acquired time piece " .. v .. ", so clearing entrance " .. entrance.entrance_location_section)
-        end
-        forceUpdate()
-    end
 end
 
 function onEvent(key, new_value, old_value)
     if key == map_key then
         changedMap(new_value, old_value)
     elseif key == completed_acts_key then
-        print("Received completed acts event")
-        --forceUpdate()
+        -- `old_value` may be `nil` initially.
+        -- Values are expected to be a list of strings, e.g. {"chapter1_tutorial", "chapter1_cannon_repair"}
+        changedCompletedEntrances(new_value, old_value)
     end
 end
 

@@ -24,7 +24,7 @@
       {
         "name": "Boss",
         "access_rules": [
-          "$hasClearedLocation|@Nyakuza Metro/Yellow Overpass Station/Time Piece,$hasClearedLocation|@Nyakuza Metro/Yellow Overpass Manhole/Time Piece,$hasClearedLocation|@Nyakuza Metro/Green Clean Station/Time Piece,$hasClearedLocation|@Nyakuza Metro/Green Clean Manhole/Time Piece,$hasClearedLocation|@Nyakuza Metro/Bluefin Tunnel/Time Piece,$hasClearedLocation|@Nyakuza Metro/Pink Paw Station/Time Piece,$hasClearedLocation|@Nyakuza Metro/Pink Paw Manhole/Time Piece"
+          "$completedNyakuzaFreeRoamActs"
         ],
         "map_locations": [
           {
