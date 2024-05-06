@@ -376,8 +376,20 @@ function onClear(slot_data)
     if act_completion_location_for_act then
         act_completion_time_pieces_at_free_roam_entrances[act_completion_location_for_act] = free_roam_entrance.entrance_location_section
     end
+end
 
-    forceUpdate()
+function onClearHandler(slot_data)
+    -- Disable tracker updates.
+    Tracker.BulkUpdate = true
+    -- Use a protected call so that tracker updates always get enabled again, even if an error occurred.
+    local ok, err = pcall(onClear, slot_data)
+    -- Enable tracker updates.
+    Tracker.BulkUpdate = false
+    if ok then
+        forceUpdate()
+    else
+        print(err)
+    end
 end
 
 -- There's no explicit event on receiving hats so I fetched the hat order and cost
@@ -545,7 +557,7 @@ function onEvent(key, new_value, old_value)
     end
 end
 
-Archipelago:AddClearHandler("clear handler", onClear)
+Archipelago:AddClearHandler("clear handler", onClearHandler)
 Archipelago:AddRetrievedHandler("event handler", onEvent)
 Archipelago:AddSetReplyHandler("event launch handler", onEvent)
 Archipelago:AddItemHandler("item handler", onItem)
