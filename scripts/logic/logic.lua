@@ -50,7 +50,7 @@ end
 
 -- todo: If AP is disabled, should we get act completion state from locations instead?
 function completedNyakuzaFreeRoamActs()
-    for _, act_name in ipairs(nyakuza_free_roam_act_names) do
+    for act_name, _ in pairs(nyakuza_free_roam_act_names) do
         if completed_entrances[act_name] == nil then
             return false
         end
@@ -61,7 +61,7 @@ end
 
 -- todo: If AP is disabled, should we get act completion state from locations instead?
 function completedAlpineFreeRoamActs()
-    for _, act_name in ipairs(alpine_free_roam_act_names) do
+    for act_name, _ in pairs(alpine_free_roam_act_names) do
         if completed_entrances[act_name] == nil then
             return false
         end

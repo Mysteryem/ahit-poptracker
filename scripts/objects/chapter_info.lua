@@ -62,20 +62,20 @@ chapter_act_info = {
 -- There is also a `Metro_Intro` time piece, but it is not actually required to unlock the boss act, nor does it show up
 -- as a separate act in the telescope.
 nyakuza_free_roam_act_names = {
-    "Metro_RouteA",
-    "Metro_RouteB",
-    "Metro_RouteC",
-    "Metro_RouteD",
-    "Metro_ManholeA",
-    "Metro_ManholeB",
-    "Metro_ManholeC"
+    Metro_RouteA = true,
+    Metro_RouteB = true,
+    Metro_RouteC = true,
+    Metro_RouteD = true,
+    Metro_ManholeA = true,
+    Metro_ManholeB = true,
+    Metro_ManholeC = true
 }
 
 alpine_free_roam_act_names = {
-    "Alpine_Twilight",
-    "Alps_Birdhouse",
-    "AlpineSkyline_Windmill",
-    "AlpineSkyline_WeddingCake"
+    Alpine_Twilight = true,
+    Alps_Birdhouse = true,
+    AlpineSkyline_Windmill = true,
+    AlpineSkyline_WeddingCake = true
 }
 
 time_piece_location_to_vanilla_entrance = {}

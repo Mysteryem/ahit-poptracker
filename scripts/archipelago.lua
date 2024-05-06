@@ -395,6 +395,20 @@ function changedMap(current_map, previous_map)
     Tracker:UiHint("ActivateTab", internal_map_name)
 end
 
+function tryCompleteEntranceWithFreeRoamAct(act_name, free_roam_acts)
+    for free_roam_act, _ in pairs(free_roam_acts) do
+        if completed_entrances[free_roam_act] == nil then
+            -- Not all of the free roam's acts have been completed.
+            return
+        end
+    end
+
+    -- Clear the location of the entrance whose act is `act_name`.
+    local entrance_with_free_roam_act = getActInfo(act_name)
+    local entrance_loc = Tracker:FindObjectForCode(entrance_with_free_roam_act.entrance_location_section)
+    entrance_loc.AvailableChestCount = entrance_loc.AvailableChestCount - 1
+end
+
 function changedCompletedEntrances(current, previous)
     local new_completions = false
 
@@ -410,6 +424,13 @@ function changedCompletedEntrances(current, previous)
                 entrance_loc.AvailableChestCount = entrance_loc.AvailableChestCount - 1
                 --print("Player has completed the act at entrance '" .. entrance_name .. "', so the entrance has been cleared")
             else
+                -- Most likely, it is an act within a free roam act, so has no chapter_act_info entry.
+                -- Clear the entrance that has a free roam act if all of the free roam's acts have been completed.
+                if nyakuza_free_roam_act_names[entrance_name] then
+                    tryCompleteEntranceWithFreeRoamAct("MetroFreeRoam", nyakuza_free_roam_act_names)
+                elseif alpine_free_roam_act_names[entrance_name] then
+                    tryCompleteEntranceWithFreeRoamAct("AlpineFreeRoam", alpine_free_roam_act_names)
+                end
                 --print("Player has completed the act at entrance '" .. entrance_name .. "'")
             end
         else
