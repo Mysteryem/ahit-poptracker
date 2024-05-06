@@ -1,3 +1,37 @@
 {
-  "versions": []
+    "versions": [
+        {
+            "package_version": "1.0.1",
+            "download_url": "https://github.com/Mysteryem/ahit-poptracker/archive/refs/tags/v1.0.1.zip",
+            "sha256": "fbf7555c19013cd205b46eb34c50643709d031770542ac5d4ea5eb21c99b73dc",
+            "changelog": [
+                "Determining if acts have been completed now uses the ahit_clearedacts_<player number> list, which should be more reliable.",
+                "Entrance locations are now cleared when the act at that entrance is completed, or, for free roam acts, when all the acts within the free roam are completed.",
+                "Connecting to a slot that has already received many items should be much faster.",
+                "All images have been recompressed, reducing the pack size by about 6MB.",
+                "General fixes:",
+                " - Fixed the Gallery and Lab entrances being around the wrong way on the map.",
+                " - Fixed act completion not updating logic in some cases.",
+                "Logic fixes:",
+                " - Fixed Picture Perfect-specific locations being accessible from The Big Parade.",
+                " - Fixed Chapter 2 Blue Time rifts checking for access to the wrong acts.",
+                " - Fixed Chapter 2 and 3 boss entrances checking if the prerequisite acts can be completed instead of if the acts have been completed.",
+                " - Fixed Windmill Zipline checking for the wrong zipline unlock when accessed from The Illness has Spread."
+            ]
+        },
+        {
+            "package_version": "1.0.0",
+            "download_url": "https://github.com/Mysteryem/ahit-poptracker/archive/refs/tags/v1.0.0.zip",
+            "sha256": "01c3ba6e46b171db40f5029c2ee47f72ededd719c5657ae02607ede25079844c",
+            "changelog": [
+                "Act Randomization support has been rewritten.",
+                "There is a new work-in-progress Entrances map.",
+                "Item sizes have been decreased slightly",
+                "Added Nyakuza Metro map icon",
+                "Added autotracking for metro tickets",
+                "Tour Rift + Pages added to the Spaceship map",
+                "Many fixes to Subcon logic and other logic fixes"
+            ]
+        }
+    ]
 }
