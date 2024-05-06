@@ -104,14 +104,16 @@ function completedActAt(entrance)
         return true
     else
         -- Note: This workaround is unused because there is currently no reason to check for having completed the act at
-        -- either the Alpine Free Roam entrance or the Nyakuza Metro Free Roam entrance.
+        -- either the Alpine Free Roam entrance, the Nyakuza Metro Free Roam entrance or the Rush Hour entrance.
+        --
         -- Workaround for bug in AHIT-APRandomizer Mod:
-        -- Free roam entrances receive `""` as the act completion from archipelago, so get the time piece for the act's
-        -- location and check if it's been cleared instead.
-        if entrance_info.vanilla_act_completion_location_section == nil then
+        -- Free roam entrances and the Rush Hour entrance receive `""` as the act completion from archipelago when
+        -- completing the act at that location, so get the time piece for the act's location and check if it's been
+        -- cleared instead.
+        if entrance_info.vanilla_act_completion_location_section == nil or entrance == "Metro_Escape" then
             if completed_entrances[""] == nil then
-                -- If no act at a free roam entrance has been completed, then we can be sure that the act at this free
-                -- roam entrance has not been completed.
+                -- If no entrance that reports itself as `""` has been completed, then we can be sure that the act at
+                -- this entrance has not been completed.
                 -- TODO: If DLC2 is disabled then we can be sure that `""` is always completion of the act at Alpine
                 --       Skyline free roam.
                 return false
