@@ -75,7 +75,7 @@
             "name": "Behind HQ Chest",
             "access_rules": [
               "$canAccessAct|chapter1_boss",
-              "$canAccessAct|mafiatown_lava",
+              "@Mafia Town/Mafia Geek/Heating Up Mafia Town",
               "$canAccessAct|harbor_impossible_race",
               "$canAccessAct|mafiatown_goldenvault"
             ]
