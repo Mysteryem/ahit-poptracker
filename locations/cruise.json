@@ -115,6 +115,9 @@
       },
       {
         "name": "Rock the Boat",
+        "access_rules": [
+          "$canAccessAct|Cruise_Sinking"
+        ],
         "sections": [
           {
             "name": "Reception Room - Suitcase"
