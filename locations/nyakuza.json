@@ -1,551 +1,551 @@
 [
-    {
-        "name": "Nyakuza Metro",
-        "access_rules": [
-            "$canAccessAct|MetroFreeRoam"
+  {
+    "name": "Nyakuza Metro",
+    "access_rules": [
+      "$canAccessAct|MetroFreeRoam"
+    ],
+    "children": [
+      {
+        "name": "Nyakuza Metro Intro",
+        "sections": [
+          {
+            "name": "Time Piece"
+          }
         ],
-        "children": [
-            {
-                "name": "Nyakuza Metro Intro",
-                "sections": [
-                    {
-                        "name": "Time Piece"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "nyakuza",
-                        "x": 680,
-                        "y": 670
-                    }
-                ]
-            },
-            {
-                "name": "Yellow Overpass Station",
-                "access_rules": [
-                    "hookshot",
-                    "moderate"
-                ],
-                "sections": [
-                    {
-                        "name": "Time Piece"
-                    },
-                    {
-                        "name": "Yellow Metro Ticket"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "nyakuza",
-                        "x": 370,
-                        "y": 800
-                    }
-                ]
-            },
-            {
-                "name": "Yellow Overpass Manhole",
-                "access_rules": [
-                    "ice"
-                ],
-                "sections": [
-                    {
-                        "name": "Time Piece"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "nyakuza",
-                        "x": 225,
-                        "y": 370
-                    }
-                ]
-            },
-            {
-                "name": "Green Clean Station",
-                "sections": [
-                    {
-                        "name": "Time Piece"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "nyakuza",
-                        "x": 895,
-                        "y": 775
-                    }
-                ]
-            },
-            {
-                "name": "Green Clean Manhole",
-                "access_rules": [
-                    "ice, dweller",
-                    "ice, hard"
-                ],
-                "sections": [
-                    {
-                        "name": "Time Piece"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "nyakuza",
-                        "x": 690,
-                        "y": 845
-                    }
-                ]
-            },
-            {
-                "name": "Bluefin Tunnel",
-                "access_rules": [
-                    "blueticket",
-                    "greenticket",
-                    "moderate"
-                ],
-                "sections": [
-                    {
-                        "name": "Time Piece"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "nyakuza",
-                        "x": 1200,
-                        "y": 150
-                    }
-                ]
-            },
-            {
-                "name": "Pink Paw Station",
-                "access_rules": [
-                    "hookshot, dweller, pinkticket",
-                    "hookshot, dweller, blueticket",
-                    "hookshot, dweller, yellowticket",
-                    "hookshot, dweller, moderate"
-                ],
-                "sections": [
-                    {
-                        "name": "Time Piece"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "nyakuza",
-                        "x": 515,
-                        "y": 1180
-                    }
-                ]
-            },
-            {
-                "name": "Pink Paw Manhole",
-                "access_rules": [
-                    "ice, pinkticket",
-                    "ice, yellowticket",
-                    "ice, blueticket",
-                    "ice, moderate"
-                ],
-                "sections": [
-                    {
-                        "name": "Time Piece"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "nyakuza",
-                        "x": 610,
-                        "y": 1180
-                    }
-                ]
-            },
-            {
-                "name": "Rumbi Factory",
-                "access_rules": [
-                    "$canAccessAct|Metro_CaveRift_RumbiFactory"
-                ],
-                "sections": [
-                    {
-                    "name": "Time Rift"
-                    },
-                    {
-                    "name": "Pages",
-                    "item_count": 10,
-                    "clear_as_group": false,
-                    "visibility_rules": [
-                        "pages"
-                    ]
-                    }
-                ],
-                "map_locations": [
-                    {
-                    "map": "nyakuza",
-                    "x": 1090,
-                    "y": 360
-                    }
-                ]
-                },
-            {
-                "name": "Main Station Dining Area",
-                "sections": [
-                    {
-                        "name": "Rift Token"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "nyakuza",
-                        "x": 287,
-                        "y": 480
-                    }
-                ]
-            },
-            {
-                "name": "Top of the Ramen Shop",
-                "sections": [
-                    {
-                        "name": "Rift Token"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "nyakuza",
-                        "x": 225,
-                        "y": 570
-                    }
-                ]
-            },
-            {
-                "name": "Yellow Overpass Station - Brewing Crate",
-                "access_rules": [
-                    "brewer"
-                ],
-                "sections": [
-                    {
-                        "name": "Relic"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "nyakuza",
-                        "x": 735,
-                        "y": 570
-                    }
-                ]
-            },
-            {
-                "name": "Bluefin Tunnel - Cat Vacuum",
-                "access_rules": [
-                    "blueticket",
-                    "greenticket",
-                    "moderate"
-                ],
-                "sections": [
-                    {
-                        "name": "Relic"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "nyakuza",
-                        "x": 550,
-                        "y": 670
-                    }
-                ]
-            },
-            {
-                "name": "Pink Paw Station - Cat Vacuum",
-                "access_rules": [
-                    "dweller, hookshot, pinkticket",
-                    "dweller, hookshot, blueticket",
-                    "dweller, hookshot, yellowticket",
-                    "moderate"
-                ],
-                "sections": [
-                    {
-                        "name": "Rift Token"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "nyakuza",
-                        "x": 333,
-                        "y": 1058
-                    }
-                ]
-            },
-            {
-                "name": "Pink Paw Station - Behind Fan",
-                "access_rules": [
-                    "dweller, timestop, hookshot, pinkticket",
-                    "dweller, timestop, hookshot, blueticket",
-                    "dweller, timestop, hookshot, yellowticket",
-                    "moderate"
-                ],
-                "sections": [
-                    {
-                        "name": "Rift Token"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "nyakuza",
-                        "x": 552,
-                        "y": 858
-                    }
-                ]
-            }
+        "map_locations": [
+          {
+            "map": "nyakuza",
+            "x": 680,
+            "y": 670
+          }
         ]
-    },
-    {
-        "name": "Finale",
+      },
+      {
+        "name": "Yellow Overpass Station",
         "access_rules": [
-            "$canAccessAct|Metro_Escape"
+          "hookshot",
+          "moderate"
         ],
-        "children": [
-            {
-                "name": "Rush Hour",
-                "access_rules": [
-                    "ice, brewer, hookshot, pinkticket, yellowticket, blueticket",
-                    "ice, brewer, pinkticket, yellowticket, blueticket, moderate",
-                    "brewer, pinkticket, yellowticket, blueticket, hard",
-                    "brewer, hard, ticket_skips_off",
-                    "expert, pinkticket, yellowticket, blueticket",
-                    "expert, ticket_skips_off"
-                ],
-                "sections": [
-                    {
-                        "name": "Time Piece"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "nyakuza",
-                        "x": 940,
-                        "y": 615
-                    }
-                ]
-            }
+        "sections": [
+          {
+            "name": "Time Piece"
+          },
+          {
+            "name": "Yellow Metro Ticket"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "nyakuza",
+            "x": 370,
+            "y": 800
+          }
         ]
-    },
-    {
-        "name": "Nyakuza Shops",
+      },
+      {
+        "name": "Yellow Overpass Manhole",
         "access_rules": [
-            "$canAccessAct|MetroFreeRoam"
+          "ice"
         ],
-        "children": [
-            {
-                "name": "Pink Ticket Booth",
-                "access_rules": [
-                    "dweller, hookshot, pinkticket",
-                    "moderate"
-                ],
-                "sections": [
-                    {
-                        "name": "Pink Ticket"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "nyakuza",
-                        "x": 440,
-                        "y": 860
-                    }
-                ]
-            },
-            {
-                "name": "Green Ticket Booth",
-                "sections": [
-                    {
-                        "name": "Green Ticket"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "nyakuza",
-                        "x": 1160,
-                        "y": 560
-                    }
-                ]
-            },
-            {
-                "name": "Blue Ticket Booth",
-                "access_rules": [
-                    "blueticket",
-                    "greenticket",
-                    "moderate"
-                ],
-                "sections": [
-                    {
-                        "name": "Blue Ticket"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "nyakuza",
-                        "x": 810,
-                        "y": 150
-                    }
-                ]
-            },
-            {
-                "name": "Main Station Thugs",
-                "sections": [
-                    {
-                        "name": "Thug A",
-                        "item_count": 5,
-                        "clear_as_group": false
-                    },
-                    {
-                        "name": "Thug B",
-                        "item_count": 5,
-                        "clear_as_group": false
-                    },
-                    {
-                        "name": "Thug C",
-                        "item_count": 5,
-                        "clear_as_group": false
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "nyakuza",
-                        "x": 870,
-                        "y": 510
-                    }
-                ]
-            },
-            {
-                "name": "Yellow Overpass Thug A",
-                "sections": [
-                    {
-                        "name": "Scammed",
-                        "item_count": 5,
-                        "clear_as_group": false
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "nyakuza",
-                        "x": 450,
-                        "y": 480
-                    }
-                ]
-            },
-            {
-                "name": "Yellow Overpass Thug B",
-                "sections": [
-                    {
-                        "name": "Scammed",
-                        "item_count": 5,
-                        "clear_as_group": false
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "nyakuza",
-                        "x": 720,
-                        "y": 280
-                    }
-                ]
-            },
-            {
-                "name": "Yellow Overpass Thug C",
-                "sections": [
-                    {
-                        "name": "Scammed",
-                        "item_count": 5,
-                        "clear_as_group": false
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "nyakuza",
-                        "x": 430,
-                        "y": 260
-                    }
-                ]
-            },
-            {
-                "name": "Green Clean Thug A",
-                "sections": [
-                    {
-                        "name": "Scammed",
-                        "item_count": 5,
-                        "clear_as_group": false
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "nyakuza",
-                        "x": 800,
-                        "y": 845
-                    }
-                ]
-            },
-            {
-                "name": "Green Clean Thug B",
-                "access_rules": [
-                    "ice",
-                    "yellowticket"
-                ],
-                "sections": [
-                    {
-                        "name": "Scammed",
-                        "item_count": 5,
-                        "clear_as_group": false
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "nyakuza",
-                        "x": 1190,
-                        "y": 500
-                    }
-                ]
-            },
-            {
-                "name": "Bluefin Tunnel Thug",
-                "access_rules": [
-                    "blueticket",
-                    "greenticket",
-                    "moderate"
-                ],
-                "sections": [
-                    {
-                        "name": "Scammed",
-                        "item_count": 5,
-                        "clear_as_group": false
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "nyakuza",
-                        "x": 610,
-                        "y": 150
-                    }
-                ]
-            },
-            {
-                "name": "Pink Paw Station Thug",
-                "access_rules": [
-                    "dweller, hookshot, pinkticket",
-                    "dweller, hookshot, blueticket",
-                    "dweller, hookshot, yellowticket",
-                    "moderate"
-                ],
-                "sections": [
-                    {
-                        "name": "Scammed",
-                        "item_count": 5,
-                        "clear_as_group": false
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "nyakuza",
-                        "x": 480,
-                        "y": 800
-                    }
-                ]
-            }
+        "sections": [
+          {
+            "name": "Time Piece"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "nyakuza",
+            "x": 225,
+            "y": 370
+          }
         ]
-    }
+      },
+      {
+        "name": "Green Clean Station",
+        "sections": [
+          {
+            "name": "Time Piece"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "nyakuza",
+            "x": 895,
+            "y": 775
+          }
+        ]
+      },
+      {
+        "name": "Green Clean Manhole",
+        "access_rules": [
+          "ice, dweller",
+          "ice, hard"
+        ],
+        "sections": [
+          {
+            "name": "Time Piece"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "nyakuza",
+            "x": 690,
+            "y": 845
+          }
+        ]
+      },
+      {
+        "name": "Bluefin Tunnel",
+        "access_rules": [
+          "blueticket",
+          "greenticket",
+          "moderate"
+        ],
+        "sections": [
+          {
+            "name": "Time Piece"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "nyakuza",
+            "x": 1200,
+            "y": 150
+          }
+        ]
+      },
+      {
+        "name": "Pink Paw Station",
+        "access_rules": [
+          "hookshot, dweller, pinkticket",
+          "hookshot, dweller, blueticket",
+          "hookshot, dweller, yellowticket",
+          "hookshot, dweller, moderate"
+        ],
+        "sections": [
+          {
+            "name": "Time Piece"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "nyakuza",
+            "x": 515,
+            "y": 1180
+          }
+        ]
+      },
+      {
+        "name": "Pink Paw Manhole",
+        "access_rules": [
+          "ice, pinkticket",
+          "ice, yellowticket",
+          "ice, blueticket",
+          "ice, moderate"
+        ],
+        "sections": [
+          {
+            "name": "Time Piece"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "nyakuza",
+            "x": 610,
+            "y": 1180
+          }
+        ]
+      },
+      {
+        "name": "Rumbi Factory",
+        "access_rules": [
+          "$canAccessAct|Metro_CaveRift_RumbiFactory"
+        ],
+        "sections": [
+          {
+            "name": "Time Rift"
+          },
+          {
+            "name": "Pages",
+            "item_count": 10,
+            "clear_as_group": false,
+            "visibility_rules": [
+              "pages"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "nyakuza",
+            "x": 1090,
+            "y": 360
+          }
+        ]
+      },
+      {
+        "name": "Main Station Dining Area",
+        "sections": [
+          {
+            "name": "Rift Token"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "nyakuza",
+            "x": 287,
+            "y": 480
+          }
+        ]
+      },
+      {
+        "name": "Top of the Ramen Shop",
+        "sections": [
+          {
+            "name": "Rift Token"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "nyakuza",
+            "x": 225,
+            "y": 570
+          }
+        ]
+      },
+      {
+        "name": "Yellow Overpass Station - Brewing Crate",
+        "access_rules": [
+          "brewer"
+        ],
+        "sections": [
+          {
+            "name": "Relic"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "nyakuza",
+            "x": 735,
+            "y": 570
+          }
+        ]
+      },
+      {
+        "name": "Bluefin Tunnel - Cat Vacuum",
+        "access_rules": [
+          "blueticket",
+          "greenticket",
+          "moderate"
+        ],
+        "sections": [
+          {
+            "name": "Relic"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "nyakuza",
+            "x": 550,
+            "y": 670
+          }
+        ]
+      },
+      {
+        "name": "Pink Paw Station - Cat Vacuum",
+        "access_rules": [
+          "dweller, hookshot, pinkticket",
+          "dweller, hookshot, blueticket",
+          "dweller, hookshot, yellowticket",
+          "moderate"
+        ],
+        "sections": [
+          {
+            "name": "Rift Token"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "nyakuza",
+            "x": 333,
+            "y": 1058
+          }
+        ]
+      },
+      {
+        "name": "Pink Paw Station - Behind Fan",
+        "access_rules": [
+          "dweller, timestop, hookshot, pinkticket",
+          "dweller, timestop, hookshot, blueticket",
+          "dweller, timestop, hookshot, yellowticket",
+          "moderate"
+        ],
+        "sections": [
+          {
+            "name": "Rift Token"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "nyakuza",
+            "x": 552,
+            "y": 858
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Finale",
+    "access_rules": [
+      "$canAccessAct|Metro_Escape"
+    ],
+    "children": [
+      {
+        "name": "Rush Hour",
+        "access_rules": [
+          "ice, brewer, hookshot, pinkticket, yellowticket, blueticket",
+          "ice, brewer, pinkticket, yellowticket, blueticket, moderate",
+          "brewer, pinkticket, yellowticket, blueticket, hard",
+          "brewer, hard, ticket_skips_off",
+          "expert, pinkticket, yellowticket, blueticket",
+          "expert, ticket_skips_off"
+        ],
+        "sections": [
+          {
+            "name": "Time Piece"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "nyakuza",
+            "x": 940,
+            "y": 615
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Nyakuza Shops",
+    "access_rules": [
+      "$canAccessAct|MetroFreeRoam"
+    ],
+    "children": [
+      {
+        "name": "Pink Ticket Booth",
+        "access_rules": [
+          "dweller, hookshot, pinkticket",
+          "moderate"
+        ],
+        "sections": [
+          {
+            "name": "Pink Ticket"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "nyakuza",
+            "x": 440,
+            "y": 860
+          }
+        ]
+      },
+      {
+        "name": "Green Ticket Booth",
+        "sections": [
+          {
+            "name": "Green Ticket"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "nyakuza",
+            "x": 1160,
+            "y": 560
+          }
+        ]
+      },
+      {
+        "name": "Blue Ticket Booth",
+        "access_rules": [
+          "blueticket",
+          "greenticket",
+          "moderate"
+        ],
+        "sections": [
+          {
+            "name": "Blue Ticket"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "nyakuza",
+            "x": 810,
+            "y": 150
+          }
+        ]
+      },
+      {
+        "name": "Main Station Thugs",
+        "sections": [
+          {
+            "name": "Thug A",
+            "item_count": 5,
+            "clear_as_group": false
+          },
+          {
+            "name": "Thug B",
+            "item_count": 5,
+            "clear_as_group": false
+          },
+          {
+            "name": "Thug C",
+            "item_count": 5,
+            "clear_as_group": false
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "nyakuza",
+            "x": 870,
+            "y": 510
+          }
+        ]
+      },
+      {
+        "name": "Yellow Overpass Thug A",
+        "sections": [
+          {
+            "name": "Scammed",
+            "item_count": 5,
+            "clear_as_group": false
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "nyakuza",
+            "x": 450,
+            "y": 480
+          }
+        ]
+      },
+      {
+        "name": "Yellow Overpass Thug B",
+        "sections": [
+          {
+            "name": "Scammed",
+            "item_count": 5,
+            "clear_as_group": false
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "nyakuza",
+            "x": 720,
+            "y": 280
+          }
+        ]
+      },
+      {
+        "name": "Yellow Overpass Thug C",
+        "sections": [
+          {
+            "name": "Scammed",
+            "item_count": 5,
+            "clear_as_group": false
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "nyakuza",
+            "x": 430,
+            "y": 260
+          }
+        ]
+      },
+      {
+        "name": "Green Clean Thug A",
+        "sections": [
+          {
+            "name": "Scammed",
+            "item_count": 5,
+            "clear_as_group": false
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "nyakuza",
+            "x": 800,
+            "y": 845
+          }
+        ]
+      },
+      {
+        "name": "Green Clean Thug B",
+        "access_rules": [
+          "ice",
+          "yellowticket"
+        ],
+        "sections": [
+          {
+            "name": "Scammed",
+            "item_count": 5,
+            "clear_as_group": false
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "nyakuza",
+            "x": 1190,
+            "y": 500
+          }
+        ]
+      },
+      {
+        "name": "Bluefin Tunnel Thug",
+        "access_rules": [
+          "blueticket",
+          "greenticket",
+          "moderate"
+        ],
+        "sections": [
+          {
+            "name": "Scammed",
+            "item_count": 5,
+            "clear_as_group": false
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "nyakuza",
+            "x": 610,
+            "y": 150
+          }
+        ]
+      },
+      {
+        "name": "Pink Paw Station Thug",
+        "access_rules": [
+          "dweller, hookshot, pinkticket",
+          "dweller, hookshot, blueticket",
+          "dweller, hookshot, yellowticket",
+          "moderate"
+        ],
+        "sections": [
+          {
+            "name": "Scammed",
+            "item_count": 5,
+            "clear_as_group": false
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "nyakuza",
+            "x": 480,
+            "y": 800
+          }
+        ]
+      }
+    ]
+  }
 ]
