@@ -1,0 +1,28 @@
+[
+  {
+    "name": "General Logic",
+    "children": [
+      {
+        "name": "Can Melee",
+        "access_rules": [
+          "umbrella_off",
+          "umbrella"
+        ]
+      },
+      {
+        "name": "Can Hit",
+        "access_rules": [
+          "brewer",
+          "@General Logic/Can Melee"
+        ]
+      },
+      {
+        "name": "Can Dweller Bell",
+        "access_rules": [
+          "dweller",
+          "@General Logic/Can Hit"
+        ]
+      }
+    ]
+  }
+]

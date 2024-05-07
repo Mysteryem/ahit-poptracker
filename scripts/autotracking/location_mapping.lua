@@ -213,10 +213,10 @@ LOCATION_MAPPING = {
 
     [2000312317] = "@Yellow Firewall/Contractual Obligations/Time Piece",
     [2000311160] = "@Yellow Firewall/Subcon Well/Time Piece",
-    [2000311984] = "@Boss Arena Area/Toilet of Doom/Time Piece",
+    [2000311984] = "@Boss Arena Area/Boss Arena/Toilet of Doom",
     [2000312017] = "@Yellow Firewall/Queen Vanessa's Manor/Time Piece",
     [2000312032] = "@Subcon Forest/Snatcher/Mail Delivery Service",
-    [2000311390] = "@Your Contract has Expired post-fight area/Your Contract has Expired/Time Piece",
+    [2000311390] = "@Boss Arena Area/Boss Arena/Your Contract has Expired",
 
     [2000313069] = "@Blue Firewall/Pipe/Time Rift",
     [2000313056] = "@Blue Firewall/Village/Time Rift",

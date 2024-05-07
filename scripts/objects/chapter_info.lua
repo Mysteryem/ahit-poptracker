@@ -31,10 +31,10 @@ chapter_act_info = {
 
     subcon_village_icewall = Act.new(3, "subcon_village_icewall", "Chapter3 Entrances/Acts", "Yellow Firewall/Contractual Obligations/Time Piece"),
     subcon_cave = Act.new(3, "subcon_cave", "Chapter3 Entrances/Acts", "Yellow Firewall/Subcon Well/Time Piece"),
-    chapter2_toiletboss = Act.new(3, "chapter2_toiletboss", "Chapter3 Entrances/Acts", "Boss Arena Area/Toilet of Doom/Time Piece"),
+    chapter2_toiletboss = Act.new(3, "chapter2_toiletboss", "Chapter3 Entrances/Acts", "Boss Arena Area/Boss Arena/Toilet of Doom"),
     vanessa_manor_attic = Act.new(3, "vanessa_manor_attic", "Chapter3 Entrances/Acts", "Yellow Firewall/Queen Vanessa's Manor/Time Piece"),
     subcon_maildelivery = Act.new(3, "subcon_maildelivery", "Chapter3 Entrances/Acts", "Subcon Forest/Snatcher/Mail Delivery Service"),
-    snatcher_boss = Act.new(3, "snatcher_boss", "Chapter3 Entrances/Boss", "Your Contract has Expired post-fight area/Your Contract has Expired/Time Piece"),
+    snatcher_boss = Act.new(3, "snatcher_boss", "Chapter3 Entrances/Boss", "Boss Arena Area/Boss Arena/Your Contract has Expired"),
     TimeRift_Cave_Raccoon = Act.new(-3, "TimeRift_Cave_Raccoon", "Chapter Time Rift Entrances/Chapter3", "Green Firewall/Sleepy Subcon/Time Rift"),
     TimeRift_Water_Subcon_Hookshot = Act.new(-3, "TimeRift_Water_Subcon_Hookshot", "Chapter Time Rift Entrances/Chapter3", "Blue Firewall/Pipe/Time Rift"),
     TimeRift_Water_Subcon_Dwellers = Act.new(-3, "TimeRift_Water_Subcon_Dwellers", "Chapter Time Rift Entrances/Chapter3", "Blue Firewall/Village/Time Rift"),
