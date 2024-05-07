@@ -241,7 +241,11 @@
         ],
         "sections": [
           {
-            "name": "Time Piece"
+            "name": "Time Piece",
+            "access_rules": [
+              "paintings_off",
+              "yellow"
+            ]
           }
         ],
         "map_locations": [
