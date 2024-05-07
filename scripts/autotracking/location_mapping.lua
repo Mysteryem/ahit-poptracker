@@ -349,7 +349,7 @@ LOCATION_MAPPING = {
     [2000345883] = "@Nyakuza Metro/Rumbi Factory/Pages",
 
     -- Contracts
-    [2000300200] = "@Subcon Forest/Snatcher/Contracts", --Snatcher's Contract - The Subcon Well"
+    [2000300200] = "@Subcon Forest/Snatcher/Contract - The Subcon Well", --Snatcher's Contract - The Subcon Well"
     [2000300201] = "@Subcon Forest/Snatcher/Contracts", --Snatcher's Contract - Toilet of Doom"
     [2000300202] = "@Subcon Forest/Snatcher/Contracts", --Snatcher's Contract - Queen Vanessa's Manor"
     [2000300203] = "@Subcon Forest/Snatcher/Contracts", --Snatcher's Contract - Mail Delivery Service"
