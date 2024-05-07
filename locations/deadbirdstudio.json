@@ -111,7 +111,7 @@
           {
             "name": "The Big Parade",
             "access_rules": [
-              "umbrella, $canAccessAct|moon_parade"
+              "@General Logic/Can Melee, $canAccessAct|moon_parade"
             ]
           },
           {
