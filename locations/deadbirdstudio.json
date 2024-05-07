@@ -8,9 +8,8 @@
           {
             "name": "Dead Bird Studio",
             "access_rules": [
-              "umbrella_off, $canAccessAct|DeadBirdStudio",
-              "umbrella_on, umbrella, $canAccessAct|DeadBirdStudio",
-              "umbrella_on, expert, $canAccessAct|DeadBirdStudio"
+              "@General Logic/Can Hit, $canAccessAct|DeadBirdStudio",
+              "expert, $canAccessAct|DeadBirdStudio"
             ]
           },
           {
