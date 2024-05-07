@@ -250,6 +250,7 @@
     "name": "No Painting Skips",
     "type": "progressive",
     "codes": "painting_skips",
+    "allow_disabled": false,
     "stages": [
       {
         "img": "images/settings/soul.png",
