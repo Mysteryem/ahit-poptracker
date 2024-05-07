@@ -257,10 +257,9 @@
   {
     "name": "After Lever",
     "access_rules": [
-      "umbrella_off, $canAccessAct|DeadBirdStudio",
-      "umbrella_on, umbrella, $canAccessAct|DeadBirdStudio",
-      "umbrella_on, expert, $canAccessAct|DeadBirdStudio",
-      "umbrella_on, expert, $canAccessAct|chapter3_secret_finale"
+      "@General Logic/Can Hit, $canAccessAct|DeadBirdStudio",
+      "expert, $canAccessAct|DeadBirdStudio",
+      "expert, $canAccessAct|chapter3_secret_finale"
     ],
     "children": [
       {
