@@ -46,30 +46,36 @@
       },
       {
         "name": "Mafia HQ",
-        "access_rules": [
-          "@Mafia Logic/Can access Act 4 - Down With the Mafia!"
-        ],
         "sections": [
           {
-            "name": "Time Piece"
+            "name": "Time Piece",
+            "access_rules": [
+              "@Mafia Logic/Can access Act 4 - Down With the Mafia!"
+            ]
           },
           {
             "name": "Hallway Brewing Crate",
             "access_rules": [
-              "brewer"
+              "brewer, @Mafia Logic/Can access Act 4 - Down With the Mafia!"
             ]
           },
           {
-            "name": "Freezer Chest"
+            "name": "Freezer Chest",
+            "access_rules": [
+              "@Mafia Logic/Can access Act 4 - Down With the Mafia!"
+            ]
           },
           {
             "name": "Secret Room",
             "access_rules": [
-              "ice"
+              "ice, @Mafia Logic/Can access Act 4 - Down With the Mafia!"
             ]
           },
           {
-            "name": "Bathroom Stall Chest"
+            "name": "Bathroom Stall Chest",
+            "access_rules": [
+              "@Mafia Logic/Can access Act 4 - Down With the Mafia!"
+            ]
           },
           {
             "name": "Behind HQ Chest",
