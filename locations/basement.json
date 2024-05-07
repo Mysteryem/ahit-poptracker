@@ -2,7 +2,7 @@
   {
     "name": "Dead Bird Basement",
     "access_rules": [
-      "$canAccessAct|chapter3_secret_finale"
+      "@DBS Logic/Can access Secret Finale - Dead Bird Studio Basement"
     ],
     "children": [
       {

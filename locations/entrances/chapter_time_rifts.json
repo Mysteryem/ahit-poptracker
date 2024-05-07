@@ -5,7 +5,7 @@
       {
         "name": "Chapter1",
         "access_rules": [
-          "$canAccessChapter|1"
+          "@Mafia Logic/Can access Mafia Town"
         ],
         "map_locations": [
           {
@@ -38,8 +38,8 @@
       {
         "name": "Chapter2 - Dead Bird Studio",
         "access_rules": [
-          "$canAccessAct|DeadBirdStudio",
-          "$canAccessAct|chapter3_secret_finale"
+          "@DBS Logic/Can access Act 1 - Dead Bird Studio",
+          "@DBS Logic/Can access Secret Finale - Dead Bird Studio Basement"
         ],
         "map_locations": [
           {
@@ -60,7 +60,7 @@
       {
         "name": "Chapter2 - Murder on the Owl Express",
         "access_rules": [
-          "$canAccessAct|chapter3_murder"
+          "@DBS Logic/Can access Act 2 - Murder on the Owl Express"
         ],
         "map_locations": [
           {
@@ -81,8 +81,8 @@
       {
         "name": "Chapter2 - The Moon",
         "access_rules": [
-          "$canAccessAct|moon_camerasnap",
-          "$canAccessAct|moon_parade"
+          "@DBS Logic/Can access Act 3 - Picture Perfect",
+          "@DBS Logic/Can access Act 5 - The Big Parade"
         ],
         "map_locations": [
           {
@@ -102,6 +102,9 @@
       },
       {
         "name": "Chapter3",
+        "access_rules": [
+          "@Subcon Logic/Can access main Subcon area"
+        ],
         "map_locations": [
           {
             "map": "entrances",
@@ -113,19 +116,19 @@
           {
             "name": "TimeRift_Cave_Raccoon",
             "access_rules": [
-              "uforelic:4,@Green Firewall/Giant Time Piece/Relic"
+              "uforelic:4, @Subcon Logic/Green Firewall"
             ]
           },
           {
             "name": "TimeRift_Water_Subcon_Hookshot",
             "access_rules": [
-              "@Blue Firewall/Burning House/Yarn,$completedActAt|subcon_cave"
+              "@Subcon Logic/Blue Firewall, $completedActAt|subcon_cave"
             ]
           },
           {
             "name": "TimeRift_Water_Subcon_Dwellers",
             "access_rules": [
-              "@Blue Firewall/Burning House/Yarn,$completedActAt|vanessa_manor_attic"
+              "@Subcon Logic/Blue Firewall, $completedActAt|vanessa_manor_attic"
             ]
           }
         ]
@@ -143,7 +146,7 @@
           {
             "name": "TimeRift_Cave_Alps",
             "access_rules": [
-              "crayonrelic:4,@Goat Village/Goat Village/Hidden Branch"
+              "crayonrelic:4, @Alpine Logic/Can access central Alpine Area"
             ]
           },
           {
@@ -173,13 +176,13 @@
           {
             "name": "Cruise_CaveRift_Aquarium",
             "access_rules": [
-              "cakerelic:4,$canAccessAct|Cruise_Boarding"
+              "cakerelic:4, @Cruise Logic/Can access Act 1 - Bon Voyage!"
             ]
           },
           {
             "name": "Cruise_WaterRift_Slide",
             "access_rules": [
-              "$completedActAt|Cruise_Sinking,$canAccessChapter|6"
+              "@Cruise Logic/Can access Ship Area, $completedActAt|Cruise_Sinking"
             ]
           }
         ]
@@ -197,7 +200,7 @@
           {
             "name": "Metro_CaveRift_RumbiFactory",
             "access_rules": [
-              "jewelryrelic:2,$canAccessAct|MetroFreeRoam"
+              "jewelryrelic:2, @Nyakuza Logic/Can access Free Roam"
             ]
           }
         ]

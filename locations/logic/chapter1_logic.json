@@ -1,0 +1,81 @@
+[
+  {
+    "name": "Mafia Logic",
+    "children": [
+      {
+        "name": "Can access Act 1 - Welcome to Mafia Town",
+        "access_rules": [
+          "$canAccessAct|chapter1_tutorial"
+        ]
+      },
+      {
+        "name": "Can access Act 2 - Barrel Battle",
+        "access_rules": [
+          "$canAccessAct|chapter1_barrelboss"
+        ]
+      },
+      {
+        "name": "Can access Act 3 - She Came from Outer Space",
+        "access_rules": [
+          "$canAccessAct|chapter1_barrelboss"
+        ]
+      },
+      {
+        "name": "Can access Act 4 - Down With the Mafia!",
+        "access_rules": [
+          "$canAccessAct|chapter1_boss"
+        ]
+      },
+      {
+        "name": "Can access Act 5 - Cheating the Race",
+        "access_rules": [
+          "$canAccessAct|harbor_impossible_race"
+        ]
+      },
+      {
+        "name": "Can access Act 6 - Heating up Mafia Town",
+        "access_rules": [
+          "$canAccessAct|mafiatown_lava"
+        ]
+      },
+      {
+        "name": "Can access Act 7 - The Golden Vault",
+        "access_rules": [
+          "$canAccessAct|mafiatown_goldenvault"
+        ]
+      },
+      {
+        "name": "Can access Old Men",
+        "access_rules": [
+          "@Mafia Logic/Can access Act 1 - Welcome to Mafia Town",
+          "@Mafia Logic/Can access Act 2 - Barrel Battle",
+          "@Mafia Logic/Can access Act 4 - Down With the Mafia!",
+          "@Mafia Logic/Can access Act 5 - Cheating the Race",
+          "@Mafia Logic/Can access Act 6 - Heating up Mafia Town",
+          "@Mafia Logic/Can access Act 7 - The Golden Vault"
+        ]
+      },
+      {
+        "name": "Can access Mafia Town",
+        "access_rules": [
+          "@Mafia Logic/Can access Act 1 - Welcome to Mafia Town",
+          "@Mafia Logic/Can access Act 2 - Barrel Battle",
+          "@Mafia Logic/Can access Act 3 - She Came from Outer Space",
+          "@Mafia Logic/Can access Act 4 - Down With the Mafia!",
+          "@Mafia Logic/Can access Act 6 - Heating up Mafia Town",
+          "@Mafia Logic/Can access Act 5 - Cheating the Race",
+          "@Mafia Logic/Can access Act 7 - The Golden Vault"
+        ]
+      },
+      {
+        "name": "Can beat the race",
+        "access_rules": [
+          "withtimestop, timestop",
+          "withscooter, sprint, scooter",
+          "withsprint, sprint",
+          "withnothing"
+        ]
+      }
+    ]
+  }
+]

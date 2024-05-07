@@ -1,0 +1,33 @@
+[
+  {
+    "name": "Cruise Logic",
+    "children": [
+      {
+        "name": "Can access Act 1 - Bon Voyage!",
+        "access_rules": [
+          "$canAccessAct|Cruise_Boarding"
+        ]
+      },
+      {
+        "name": "Can access Act 2 - Ship Shape",
+        "access_rules": [
+          "$canAccessAct|Cruise_Working"
+        ]
+      },
+      {
+        "name": "Can access Finale - Rock the Boat",
+        "access_rules": [
+          "$canAccessAct|Cruise_Sinking"
+        ]
+      },
+      {
+        "name": "Can access Ship Area",
+        "access_rules": [
+          "@Cruise Logic/Can access Act 1 - Bon Voyage!",
+          "@Cruise Logic/Can access Act 2 - Ship Shape",
+          "@Cruise Logic/Can access Finale - Rock the Boat"
+        ]
+      }
+    ]
+  }
+]

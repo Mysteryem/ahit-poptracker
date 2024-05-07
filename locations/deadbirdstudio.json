@@ -8,14 +8,13 @@
           {
             "name": "Dead Bird Studio",
             "access_rules": [
-              "@General Logic/Can Hit, $canAccessAct|DeadBirdStudio",
-              "expert, $canAccessAct|DeadBirdStudio"
+              "@DBS Logic/Can access Act 1 - Dead Bird Studio, @DBS Logic/Can access Dead Bird Studio - Post Elevator Area"
             ]
           },
           {
             "name": "Award Ceremony",
             "access_rules": [
-              "$canAccessAct|award_ceremony"
+              "@DBS Logic/Can access Finale - Award Ceremony"
             ]
           }
         ],
@@ -38,49 +37,49 @@
           {
             "name": "Murder on the Owl Express",
             "access_rules": [
-              "$canAccessAct|chapter3_murder"
+              "@DBS Logic/Can access Act 2 - Murder on the Owl Express"
             ]
           },
           {
             "name": "Train Rush",
             "access_rules": [
-              "hookshot, $canAccessAct|trainwreck_selfdestruct"
+              "hookshot, @DBS Logic/Can access Act 4 - Train Rush"
             ]
           },
           {
             "name": "Cafeteria",
             "access_rules": [
-              "$canAccessAct|chapter3_murder"
+              "@DBS Logic/Can access Act 2 - Murder on the Owl Express"
             ]
           },
           {
             "name": "Luggage Room Top",
             "access_rules": [
-              "$canAccessAct|chapter3_murder"
+              "@DBS Logic/Can access Act 2 - Murder on the Owl Express"
             ]
           },
           {
             "name": "Luggage Room Bottom",
             "access_rules": [
-              "$canAccessAct|chapter3_murder"
+              "@DBS Logic/Can access Act 2 - Murder on the Owl Express"
             ]
           },
           {
             "name": "Raven Suite Room",
             "access_rules": [
-              "brewer, $canAccessAct|chapter3_murder"
+              "brewer, @DBS Logic/Can access Act 2 - Murder on the Owl Express"
             ]
           },
           {
             "name": "Raven Suite Top",
             "access_rules": [
-              "$canAccessAct|chapter3_murder"
+              "@DBS Logic/Can access Act 2 - Murder on the Owl Express"
             ]
           },
           {
             "name": "Lounge Chest",
             "access_rules": [
-              "$canAccessAct|chapter3_murder"
+              "@DBS Logic/Can access Act 2 - Murder on the Owl Express"
             ]
           },
           {
@@ -104,25 +103,25 @@
           {
             "name": "Picture Perfect",
             "access_rules": [
-              "$canAccessAct|moon_camerasnap"
+              "@DBS Logic/Can access Act 3 - Picture Perfect"
             ]
           },
           {
             "name": "The Big Parade",
             "access_rules": [
-              "@General Logic/Can Melee, $canAccessAct|moon_parade"
+              "@General Logic/Can Melee, @DBS Logic/Can access Act 5 - The Big Parade"
             ]
           },
           {
             "name": "Behind Badge Seller",
             "access_rules": [
-              "$canAccessAct|moon_camerasnap"
+              "@DBS Logic/Can access Act 3 - Picture Perfect"
             ]
           },
           {
             "name": "Hats Buy Building",
             "access_rules": [
-              "$canAccessAct|moon_camerasnap"
+              "@DBS Logic/Can access Act 3 - Picture Perfect"
             ]
           },
           {
@@ -145,8 +144,7 @@
   {
     "name": "Before Lever",
     "access_rules": [
-      "$canAccessAct|DeadBirdStudio",
-      "$canAccessAct|chapter3_secret_finale"
+      "@DBS Logic/Can access Dead Bird Studio - Elevator Area"
     ],
     "children": [
       {
@@ -256,9 +254,7 @@
   {
     "name": "After Lever",
     "access_rules": [
-      "@General Logic/Can Hit, $canAccessAct|DeadBirdStudio",
-      "expert, $canAccessAct|DeadBirdStudio",
-      "expert, $canAccessAct|chapter3_secret_finale"
+      "@DBS Logic/Can access Dead Bird Studio - Post Elevator Area"
     ],
     "children": [
       {

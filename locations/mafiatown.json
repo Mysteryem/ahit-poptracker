@@ -2,13 +2,13 @@
   {
     "name": "Mafia Town",
     "access_rules": [
-      "$canAccessChapter|1"
+      "@Mafia Logic/Can access Mafia Town"
     ],
     "children": [
       {
         "name": "Welcome to Mafia Town",
         "access_rules": [
-          "$canAccessAct|chapter1_tutorial"
+          "@Mafia Logic/Can access Act 1 - Welcome to Mafia Town"
         ],
         "sections": [
           {
@@ -29,7 +29,7 @@
       {
         "name": "Barrel Battle",
         "access_rules": [
-          "$canAccessAct|chapter1_barrelboss"
+          "@Mafia Logic/Can access Act 2 - Barrel Battle"
         ],
         "sections": [
           {
@@ -47,7 +47,7 @@
       {
         "name": "Mafia HQ",
         "access_rules": [
-          "$canAccessAct|chapter1_boss"
+          "@Mafia Logic/Can access Act 4 - Down With the Mafia!"
         ],
         "sections": [
           {
@@ -74,10 +74,10 @@
           {
             "name": "Behind HQ Chest",
             "access_rules": [
-              "$canAccessAct|chapter1_boss",
+              "@Mafia Logic/Can access Act 4 - Down With the Mafia!",
               "@Mafia Town/Mafia Geek/Heating Up Mafia Town",
-              "$canAccessAct|harbor_impossible_race",
-              "$canAccessAct|mafiatown_goldenvault"
+              "@Mafia Logic/Can access Act 5 - Cheating the Race",
+              "@Mafia Logic/Can access Act 7 - The Golden Vault"
             ]
           }
         ],
@@ -95,10 +95,7 @@
           {
             "name": "Cheating the Race",
             "access_rules": [
-              "withtimestop, timestop, $canAccessAct|harbor_impossible_race",
-              "withscooter, sprint, scooter, $canAccessAct|harbor_impossible_race",
-              "withsprint, sprint, $canAccessAct|harbor_impossible_race",
-              "withnothing, $canAccessAct|harbor_impossible_race"
+              "@Mafia Logic/Can beat the race, @Mafia Logic/Can access Act 5 - Cheating the Race"
             ]
           },
           {
@@ -119,14 +116,13 @@
           {
             "name": "Heating Up Mafia Town",
             "access_rules": [
-              "umbrella, umbrella_on, $canAccessAct|mafiatown_lava",
-              "umbrella_off, $canAccessAct|mafiatown_lava"
+              "@General Logic/Can Melee, @Mafia Logic/Can access Act 6 - Heating up Mafia Town"
             ]
           },
           {
             "name": "She Came from Outer Space",
             "access_rules": [
-              "$canAccessAct|chapter1_cannon_repair"
+              "@Mafia Logic/Can access Act 3 - She Came from Outer Space"
             ]
           }
         ],
@@ -144,7 +140,7 @@
           {
             "name": "Time Piece",
             "access_rules": [
-              "$canAccessAct|mafiatown_goldenvault"
+              "@Mafia Logic/Can access Act 7 - The Golden Vault"
             ]
           }
         ],
@@ -267,7 +263,7 @@
       {
         "name": "Old Man",
         "access_rules": [
-          "$canAccessChapter|1|chapter1_cannon_repair"
+          "@Mafia Logic/Can access Old Men"
         ],
         "sections": [
           {
@@ -355,7 +351,12 @@
       {
         "name": "On Scaffolding",
         "access_rules": [
-          "$canAccessChapter|1|chapter1_boss"
+          "@Mafia Logic/Can access Act 1 - Welcome to Mafia Town",
+          "@Mafia Logic/Can access Act 2 - Barrel Battle",
+          "@Mafia Logic/Can access Act 3 - She Came from Outer Space",
+          "@Mafia Logic/Can access Act 5 - Cheating the Race",
+          "@Mafia Logic/Can access Act 6 - Heating up Mafia Town",
+          "@Mafia Logic/Can access Act 7 - The Golden Vault"
         ],
         "sections": [
           {
@@ -435,7 +436,7 @@
         "access_rules": [
           "expert",
           "hookshot",
-          "$canAccessAct|mafiatown_lava",
+          "@Mafia Logic/Can access Act 6 - Heating up Mafia Town",
           "moderate, ice"
         ],
         "sections": [
@@ -469,7 +470,7 @@
       {
         "name": "Old Man 2",
         "access_rules": [
-          "$canAccessChapter|1|chapter1_cannon_repair"
+          "@Mafia Logic/Can access Old Men"
         ],
         "sections": [
           {
@@ -626,7 +627,7 @@
         "name": "Secret Cave",
         "access_rules": [
           "brewer",
-          "$canAccessAct|mafiatown_lava"
+          "@Mafia Logic/Can access Act 6 - Heating up Mafia Town"
         ],
         "sections": [
           {
@@ -772,7 +773,12 @@
       {
         "name": "Mafia Geek Platform",
         "access_rules": [
-          "$canAccessChapter|1|chapter1_cannon_repair"
+          "@Mafia Logic/Can access Act 1 - Welcome to Mafia Town",
+          "@Mafia Logic/Can access Act 2 - Barrel Battle",
+          "@Mafia Logic/Can access Act 4 - Down With the Mafia!",
+          "@Mafia Logic/Can access Act 5 - Cheating the Race",
+          "@Mafia Logic/Can access Act 6 - Heating up Mafia Town",
+          "@Mafia Logic/Can access Act 7 - The Golden Vault"
         ],
         "sections": [
           {

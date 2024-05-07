@@ -1,0 +1,19 @@
+[
+  {
+    "name": "Nyakuza Logic",
+    "children": [
+      {
+        "name": "Can access Free Roam",
+        "access_rules": [
+          "$canAccessAct|MetroFreeRoam"
+        ]
+      },
+      {
+        "name": "Can access Rush Hour",
+        "access_rules": [
+          "$canAccessAct|Metro_Escape"
+        ]
+      }
+    ]
+  }
+]

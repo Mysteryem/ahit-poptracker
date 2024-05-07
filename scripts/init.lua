@@ -23,8 +23,19 @@ Tracker:AddItems("items/items.json")
 -- Maps
 Tracker:AddMaps("maps/maps.json")
 
+-- Logic Locations
+-- To avoid calling lua functions multiple times, single locations are defined that have the result of a lua function
+-- and then other locations can reference these 'logic locations' in their logic instead of calling a lua function.
+Tracker:AddLocations("locations/logic/general_logic.json")
+Tracker:AddLocations("locations/logic/chapter1_logic.json")
+Tracker:AddLocations("locations/logic/chapter2_logic.json")
+Tracker:AddLocations("locations/logic/chapter3_logic.json")
+Tracker:AddLocations("locations/logic/chapter4_logic.json")
+Tracker:AddLocations("locations/logic/chapter5_logic.json")
+Tracker:AddLocations("locations/logic/chapter6_logic.json")
+Tracker:AddLocations("locations/logic/chapter7_logic.json")
+Tracker:AddLocations("locations/logic/spaceship_logic.json")
 -- Locations
-Tracker:AddLocations("locations/general_logic.json")
 Tracker:AddLocations("locations/spaceship.json")
 Tracker:AddLocations("locations/mafiatown.json")
 Tracker:AddLocations("locations/deadbirdstudio.json")

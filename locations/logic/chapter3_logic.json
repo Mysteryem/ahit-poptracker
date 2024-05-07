@@ -1,0 +1,116 @@
+[
+  {
+    "name": "Subcon Logic",
+    "children": [
+      {
+        "name": "Can access Act 1 - Contractual Obligations",
+        "access_rules": [
+          "$canAccessAct|subcon_village_icewall"
+        ]
+      },
+      {
+        "name": "Can access Act 2 - The Subcon Well",
+        "access_rules": [
+          "$canAccessAct|subcon_cave"
+        ]
+      },
+      {
+        "name": "Can access Act 3 - Toilet of Doom",
+        "access_rules": [
+          "$canAccessAct|chapter2_toiletboss"
+        ]
+      },
+      {
+        "name": "Can access Act 4 - Queen Vanessa's Manor",
+        "access_rules": [
+          "$canAccessAct|vanessa_manor_attic"
+        ]
+      },
+      {
+        "name": "Can access Act 5 - Mail Delivery Service",
+        "access_rules": [
+          "$canAccessAct|subcon_maildelivery"
+        ]
+      },
+      {
+        "name": "Can access Finale - Your Contract has Expired",
+        "access_rules": [
+          "$canAccessAct|subcon_village_icewall"
+        ]
+      },
+      {
+        "name": "Can access main Subcon area",
+        "access_rules": [
+          "@Subcon Logic/Can access Act 1 - Contractual Obligations",
+          "@Subcon Logic/Can access Act 2 - The Subcon Well",
+          "@Subcon Logic/Can access Act 3 - Toilet of Doom",
+          "@Subcon Logic/Can access Act 4 - Queen Vanessa's Manor",
+          "@Subcon Logic/Can access Act 5 - Mail Delivery Service",
+          "expert, @Subcon Logic/Can access Finale - Your Contract has Expired"
+        ]
+      },
+      {
+        "name": "Yellow Paintings",
+        "access_rules": [
+          "paintings_off",
+          "yellow"
+        ]
+      },
+      {
+        "name": "Blue Paintings",
+        "access_rules": [
+          "paintings_off",
+          "blue"
+        ]
+      },
+      {
+        "name": "Green Paintings",
+        "access_rules": [
+          "paintings_off",
+          "green"
+        ]
+      },
+      {
+        "name": "Yellow Firewall",
+        "access_rules": [
+          "@Subcon Logic/Yellow Paintings",
+          "moderate, no_painting_skips_off"
+        ]
+      },
+      {
+        "name": "Blue Firewall",
+        "access_rules": [
+          "@Subcon Logic/Blue Paintings",
+          "moderate, no_painting_skips_off"
+        ]
+      },
+      {
+        "name": "Green Firewall",
+        "access_rules": [
+          "@Subcon Logic/Green Paintings",
+          "mdoerate, no_painting_skips_off"
+        ]
+      },
+      {
+        "name": "Boss Firewall",
+        "access_rules": [
+          "@Subcon Logic/Yellow Paintings",
+          "expert, no_painting_skips_off"
+        ]
+      },
+      {
+        "name": "Boss Arena Gap",
+        "access_rules": [
+          "hookshot, @Subcon Logic/Can access Act 2 - The Subcon Well",
+          "hard, @Subcon Logic/Can access main Subcon area"
+        ]
+      },
+      {
+        "name": "Main Subcon -> Boss Arena Area",
+        "access_rules": [
+          "@Subcon Logic/Boss Firewall, @Subcon Logic/Boss Arena Gap"
+        ]
+      }
+    ]
+  }
+]

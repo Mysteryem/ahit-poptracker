@@ -2,7 +2,7 @@
   {
     "name": "Nyakuza Metro",
     "access_rules": [
-      "$canAccessAct|MetroFreeRoam"
+      "@Nyakuza Logic/Can access Free Roam"
     ],
     "children": [
       {
@@ -297,7 +297,7 @@
   {
     "name": "Finale",
     "access_rules": [
-      "$canAccessAct|Metro_Escape"
+      "@Nyakuza Logic/Can access Rush Hour"
     ],
     "children": [
       {
@@ -328,7 +328,7 @@
   {
     "name": "Nyakuza Shops",
     "access_rules": [
-      "$canAccessAct|MetroFreeRoam"
+      "@Nyakuza Logic/Can access Free Roam"
     ],
     "children": [
       {

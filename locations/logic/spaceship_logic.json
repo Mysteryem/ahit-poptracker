@@ -1,0 +1,13 @@
+[
+  {
+    "name": "Spaceship Logic",
+    "children": [
+      {
+        "name": "Can access Time Rift - Gallery",
+        "access_rules": [
+          "$canAccessAct|Spaceship_WaterRift_Gallery"
+        ]
+      }
+    ]
+  }
+]

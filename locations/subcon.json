@@ -1,58 +1,12 @@
 [
   {
-    "name": "Subcon Logic",
-    "children": [
-      {
-        "name": "Yellow Paintings",
-        "access_rules": [
-          "paintings_off",
-          "yellow"
-        ]
-      },
-      {
-        "name": "Blue Paintings",
-        "access_rules": [
-          "paintings_off",
-          "blue"
-        ]
-      },
-      {
-        "name": "Green Paintings",
-        "access_rules": [
-          "paintings_off",
-          "green"
-        ]
-      },
-      {
-        "name": "Boss Firewall",
-        "access_rules": [
-          "@Subcon Logic/Yellow Paintings",
-          "expert, no_painting_skips_off"
-        ]
-      },
-      {
-        "name": "Boss Arena Gap",
-        "access_rules": [
-          "hookshot, $canAccessAct|chapter2_toiletboss",
-          "hard, $canAccessMainSubcon"
-        ]
-      },
-      {
-        "name": "Main Subcon -> Boss Arena Area",
-        "access_rules": [
-          "@Subcon Logic/Boss Firewall, @Subcon Logic/Boss Arena Gap"
-        ]
-      }
-    ]
-  },
-  {
     "name": "Boss Arena Area",
     "children": [
       {
         "name": "Boss Arena Chest",
         "access_rules": [
           "@Subcon Logic/Main Subcon -> Boss Arena Area",
-          "$canAccessAct|snatcher_boss"
+          "@Subcon Logic/Can access Finale - Your Contract has Expired"
         ],
         "sections": [
           {
@@ -73,14 +27,14 @@
           {
             "name": "Your Contract has Expired",
             "access_rules": [
-              "@General Logic/Can Melee, $canAccessAct|snatcher_boss",
-              "expert, $canAccessMainSubcon"
+              "@General Logic/Can Melee, @Subcon Logic/Can access Finale - Your Contract has Expired",
+              "expert, @Subcon Logic/Can access main Subcon area"
             ]
           },
           {
             "name": "Toilet of Doom",
             "access_rules": [
-              "hookshot, @General Logic/Can Hit, @Subcon Logic/Main Subcon -> Boss Arena Area, $canAccessAct|chapter2_toiletboss"
+              "hookshot, @General Logic/Can Hit, @Subcon Logic/Main Subcon -> Boss Arena Area, @Subcon Logic/Can access Act 3 - Toilet of Doom"
             ]
           }
         ],
@@ -97,7 +51,7 @@
   {
     "name": "Subcon Forest",
     "access_rules": [
-      "$canAccessMainSubcon"
+      "@Subcon Logic/Can access main Subcon area"
     ],
     "children": [
       {
@@ -106,13 +60,13 @@
           {
             "name": "Mail Delivery Service",
             "access_rules": [
-              "sprint,$canAccessAct|subcon_maildelivery"
+              "sprint, @Subcon Logic/Can access Act 5 - Mail Delivery Service"
             ]
           },
           {
             "name": "Contract - The Subcon Well",
             "access_rules": [
-              "$canAccessAct|subcon_village_icewall"
+              "@Subcon Logic/Can access Act 1 - Contractual Obligations"
             ],
             "visibility_rules": [
               "contract"
@@ -181,7 +135,7 @@
           {
             "name": "Yarn",
             "access_rules": [
-              "$canAccessAct|subcon_village_icewall"
+              "@Subcon Logic/Can access Act 1 - Contractual Obligations"
             ]
           }
         ],
@@ -259,14 +213,13 @@
       {
         "name": "Yellow Firewall",
         "access_rules": [
-          "@Subcon Logic/Yellow Paintings",
-          "moderate, no_painting_skips_off"
+          "@Subcon Logic/Yellow Firewall"
         ],
         "children": [
           {
             "name": "Contractual Obligations",
             "access_rules": [
-              "$canAccessAct|subcon_village_icewall"
+              "@Subcon Logic/Can access Act 1 - Contractual Obligations"
             ],
             "sections": [
               {
@@ -426,8 +379,8 @@
           {
             "name": "Subcon Well",
             "access_rules": [
-              "moderate, $canAccessAct|subcon_cave",
-              "@General Logic/Can Hit, $canAccessAct|subcon_cave"
+              "moderate, @Subcon Logic/Can access Act 2 - The Subcon Well",
+              "@General Logic/Can Hit, @Subcon Logic/Can access Act 2 - The Subcon Well"
             ],
             "sections": [
               {
@@ -475,31 +428,31 @@
               {
                 "name": "Cellar",
                 "access_rules": [
-                  "$canAccessAct|vanessa_manor_attic"
+                  "@Subcon Logic/Can access Act 4 - Queen Vanessa's Manor"
                 ]
               },
               {
                 "name": "Bedroom Chest",
                 "access_rules": [
-                  "$canAccessAct|vanessa_manor_attic"
+                  "@Subcon Logic/Can access Act 4 - Queen Vanessa's Manor"
                 ]
               },
               {
                 "name": "Hall Chest",
                 "access_rules": [
-                  "$canAccessAct|vanessa_manor_attic"
+                  "@Subcon Logic/Can access Act 4 - Queen Vanessa's Manor"
                 ]
               },
               {
                 "name": "Chandelier",
                 "access_rules": [
-                  "$canAccessAct|vanessa_manor_attic"
+                  "@Subcon Logic/Can access Act 4 - Queen Vanessa's Manor"
                 ]
               },
               {
                 "name": "Time Piece",
                 "access_rules": [
-                  "$canAccessAct|vanessa_manor_attic"
+                  "@Subcon Logic/Can access Act 4 - Queen Vanessa's Manor"
                 ]
               }
             ],
@@ -516,8 +469,7 @@
       {
         "name": "Blue Firewall",
         "access_rules": [
-          "@Subcon Logic/Blue Paintings",
-          "moderate, no_painting_skips_off"
+          "@Subcon Logic/Blue Firewall"
         ],
         "children": [
           {
@@ -728,8 +680,7 @@
       {
         "name": "Green Firewall",
         "access_rules": [
-          "@Subcon Logic/Green Paintings",
-          "moderate, no_painting_skips_off"
+          "@Subcon Logic/Green Firewall"
         ],
         "children": [
           {

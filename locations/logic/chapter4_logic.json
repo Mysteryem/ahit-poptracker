@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Alpine Logic",
+    "children": [
+      {
+        "name": "Can access Free Roam",
+        "access_rules": [
+          "$canAccessAct|AlpineFreeRoam"
+        ]
+      },
+      {
+        "name": "Can access Finale - The Illness has Spread",
+        "access_rules": [
+          "$canAccessAct|AlpineSkyline_Finale"
+        ]
+      },
+      {
+        "name": "Can access central Alpine Area",
+        "access_rules": [
+          "@Alpine Logic/Can access Free Roam",
+          "@Alpine Logic/Can access Finale - The Illness has Spread"
+        ]
+      },
+      {
+        "name": "Can access Time Rift - The Twilight Bell",
+        "access_rules": [
+          "$canAccessAct|TimeRift_Water_Alp_Goats"
+        ]
+      },
+      {
+        "name": "Can access Time Rift - Curly Tail Trail",
+        "access_rules": [
+          "$canAccessAct|TimeRift_Water_AlpineSkyline_Cats"
+        ]
+      }
+    ]
+  }
+]

@@ -5,7 +5,7 @@
       {
         "name": "Bon Voyage!",
         "access_rules": [
-          "$canAccessAct|Cruise_Boarding"
+          "@Cruise Logic/Can access Act 1 - Bon Voyage!"
         ],
         "sections": [
           {
@@ -52,14 +52,14 @@
       {
         "name": "Cruise Ship",
         "access_rules": [
-          "$canAccessChapter|6"
+          "@Cruise Logic/Can access Ship Area"
         ],
         "sections": [
           {
             "name": "Toilet",
             "access_rules": [
-              "$canAccessAct|Cruise_Boarding",
-              "$canAccessAct|Cruise_Working"
+              "@Cruise Logic/Can access Act 1 - Bon Voyage!",
+              "@Cruise Logic/Can access Act 2 - Ship Shape"
             ]
           },
           {
@@ -97,7 +97,7 @@
       {
         "name": "Ship Shape",
         "access_rules": [
-          "$canAccessAct|Cruise_Working"
+          "@Cruise Logic/Can access Act 2 - Ship Shape"
         ],
         "sections": [
           {
@@ -116,7 +116,7 @@
       {
         "name": "Rock the Boat",
         "access_rules": [
-          "$canAccessAct|Cruise_Sinking"
+          "@Cruise Logic/Can access Finale - Rock the Boat"
         ],
         "sections": [
           {

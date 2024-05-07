@@ -83,8 +83,8 @@
       {
         "name": "The Gallery",
         "access_rules": [
-          "brewer, $canAccessAct|Spaceship_WaterRift_Gallery",
-          "moderate, $canAccessAct|Spaceship_WaterRift_Gallery"
+          "brewer, @Spaceship Logic/Can access Time Rift - Gallery",
+          "moderate, @Spaceship Logic/Can access Time Rift - Gallery"
         ],
         "sections": [
           {
@@ -148,13 +148,13 @@
             "item_count": 10,
             "clear_as_group": false,
             "access_rules": [
-              "$canAccessChapter|1",
-              "$canAccessAct|DeadBirdStudio",
-              "$canAccessAct|moon_camerasnap",
-              "$canAccessAct|trainwreck_selfdestruct",
-              "$canAccessMainSubcon",
-              "$canAccessChapter|4",
-              "$canAccessChapter|6"
+              "@Mafia Logic/Can access Mafia Town",
+              "@DBS Logic/Can access Act 1 - Dead Bird Studio",
+              "@DBS Logic/Can access Act 3 - Picture Perfect",
+              "@DBS Logic/Can access Act 4 - Train Rush",
+              "@Subcon Logic/Can access main Subcon area",
+              "@Alpine Logic/Can access central Alpine Area",
+              "@Cruise Logic/Can access Ship Area"
             ]
           }
         ]
