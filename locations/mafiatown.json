@@ -2,7 +2,7 @@
   {
     "name": "Mafia Town",
     "access_rules": [
-      "@Mafia Logic/Can access Mafia Town"
+      "@Mafia Logic/Can access Mafia Town (HUMT)"
     ],
     "children": [
       {
