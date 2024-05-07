@@ -150,6 +150,7 @@
             "access_rules": [
               "$canAccessChapter|1",
               "$canAccessAct|DeadBirdStudio",
+              "$canAccessAct|moon_camerasnap",
               "$canAccessAct|trainwreck_selfdestruct",
               "$canAccessMainSubcon",
               "$canAccessChapter|4",
