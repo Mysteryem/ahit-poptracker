@@ -122,6 +122,10 @@
             "name": "Contracts",
             "item_count": 3,
             "clear_as_group": false,
+            "access_rules": [
+              "@Subcon Logic/Yellow Paintings",
+              "moderate, no_painting_skips_off"
+            ],
             "visibility_rules": [
               "contract"
             ]
