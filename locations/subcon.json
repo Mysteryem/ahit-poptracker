@@ -27,7 +27,7 @@
         "name": "Boss Firewall",
         "access_rules": [
           "@Subcon Logic/Yellow Paintings",
-          "expert, painting_skips_off"
+          "expert, no_painting_skips_off"
         ]
       },
       {
@@ -256,7 +256,7 @@
         "name": "Yellow Firewall",
         "access_rules": [
           "@Subcon Logic/Yellow Paintings",
-          "moderate, painting_skips_off"
+          "moderate, no_painting_skips_off"
         ],
         "children": [
           {
@@ -513,7 +513,7 @@
         "name": "Blue Firewall",
         "access_rules": [
           "@Subcon Logic/Blue Paintings",
-          "moderate, painting_skips_off"
+          "moderate, no_painting_skips_off"
         ],
         "children": [
           {
@@ -725,7 +725,7 @@
         "name": "Green Firewall",
         "access_rules": [
           "@Subcon Logic/Green Paintings",
-          "moderate, painting_skips_off"
+          "moderate, no_painting_skips_off"
         ],
         "children": [
           {

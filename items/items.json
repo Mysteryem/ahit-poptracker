@@ -249,17 +249,17 @@
   {
     "name": "No Painting Skips",
     "type": "progressive",
-    "codes": "painting_skips",
+    "codes": "no_painting_skips",
     "allow_disabled": false,
     "stages": [
       {
         "img": "images/settings/soul.png",
         "img_mods": "@disabled",
-        "codes": "painting_skips_off"
+        "codes": "no_painting_skips_off"
       },
       {
         "img": "images/settings/soul.png",
-        "codes": "painting_skips_on",
+        "codes": "no_painting_skips_on",
         "inherit_codes": false
       }
     ]
