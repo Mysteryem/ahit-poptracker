@@ -7,17 +7,53 @@
         "access_rules": [
           "@Cruise Logic/Can access Act 1 - Bon Voyage!"
         ],
-        "sections": [
+        "children": [
           {
-            "name": "Lamp Post Top"
+            "name": "Lamp Post Top",
+            "sections": [
+              {
+                "name": "Relic"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "cruise",
+                "x": 119,
+                "y": 406
+              }
+            ]
           },
           {
-            "name": "Mafia Cargo Ship"
+            "name": "Mafia Cargo Ship",
+            "sections": [
+              {
+                "name": "Token"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "cruise",
+                "x": 503,
+                "y": 364
+              }
+            ]
           },
           {
-            "name": "Time Piece",
-            "access_rules": [
-              "hookshot"
+            "name": "Control Room",
+            "sections": [
+              {
+                "name": "Bon Voyage!",
+                "access_rules": [
+                  "hookshot, @Cruise Logic/Can access Act 1 - Bon Voyage!"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "cruise",
+                "x": 707,
+                "y": 487
+              }
             ]
           }
         ]
@@ -27,48 +63,156 @@
         "access_rules": [
           "@Cruise Logic/Can access Ship Area"
         ],
-        "sections": [
+        "children": [
           {
             "name": "Toilet",
             "access_rules": [
               "@Cruise Logic/Can access Act 1 - Bon Voyage!",
               "@Cruise Logic/Can access Act 2 - Ship Shape"
+            ],
+            "sections": [
+              {
+                "name": "Relic"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "cruise",
+                "x": 593,
+                "y": 531
+              }
             ]
           },
           {
-            "name": "Bar"
+            "name": "Bar",
+            "sections": [
+              {
+                "name": "Token"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "cruise",
+                "x": 765,
+                "y": 226
+              }
+            ]
           },
           {
-            "name": "Dive Board Ledge"
+            "name": "Dive Board Ledge",
+            "sections": [
+              {
+                "name": "Token"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "cruise",
+                "x": 703,
+                "y": 450
+              }
+            ]
           },
           {
-            "name": "Top Balcony"
+            "name": "Top Balcony",
+            "sections": [
+              {
+                "name": "Token"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "cruise",
+                "x": 754,
+                "y": 735
+              }
+            ]
           },
           {
-            "name": "Octopus Room"
+            "name": "Octopus Room",
+            "sections": [
+              {
+                "name": "Relic"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "cruise",
+                "x": 683,
+                "y": 649
+              }
+            ]
           },
           {
-            "name": "Octopus Room Top"
+            "name": "Octopus Room Top",
+            "sections": [
+              {
+                "name": "Token"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "cruise",
+                "x": 656,
+                "y": 627
+              }
+            ]
           },
           {
-            "name": "Laundry Room"
+            "name": "Laundry Room",
+            "sections": [
+              {
+                "name": "Token"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "cruise",
+                "x": 657,
+                "y": 455
+              }
+            ]
           },
           {
-            "name": "Ship Side"
+            "name": "Ship Side",
+            "sections": [
+              {
+                "name": "Token"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "cruise",
+                "x": 841,
+                "y": 697
+              }
+            ]
           },
           {
-            "name": "Silver Ring"
+            "name": "Silver Ring",
+            "sections": [
+              {
+                "name": "Relic"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "cruise",
+                "x": 710,
+                "y": 119
+              }
+            ]
           }
         ]
       },
       {
-        "name": "Ship Shape",
+        "name": "Lost and Found",
         "access_rules": [
           "@Cruise Logic/Can access Act 2 - Ship Shape"
         ],
         "sections": [
           {
-            "name": "Time Piece"
+            "name": "Ship Shape"
           },
           {
             "name": "Tasksanity Check",
@@ -78,6 +222,13 @@
               "tasksanity"
             ]
           }
+        ],
+        "map_locations": [
+          {
+            "map": "cruise",
+            "x": 707,
+            "y": 646
+          }
         ]
       },
       {
@@ -85,31 +236,75 @@
         "access_rules": [
           "@Cruise Logic/Can access Finale - Rock the Boat"
         ],
-        "sections": [
+        "children": [
           {
-            "name": "Reception Room - Suitcase"
+            "name": "Reception Room",
+            "sections": [
+              {
+                "name": "Suitcase"
+              },
+              {
+                "name": "Under Desk"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "cruise",
+                "x": 1119,
+                "y": 743
+              }
+            ]
           },
           {
-            "name": "Reception Room - Under Desk"
+            "name": "Lamp Post",
+            "sections": [
+              {
+                "name": "Token"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "cruise",
+                "x": 1137,
+                "y": 376
+              }
+            ]
           },
           {
-            "name": "Lamp Post"
-          },
-          {
-            "name": "Iceberg Top"
+            "name": "Iceberg Top",
+            "sections": [
+              {
+                "name": "Token"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "cruise",
+                "x": 1142,
+                "y": 207
+              }
+            ]
           },
           {
             "name": "Post Captain Rescue",
             "access_rules": [
               "ice",
               "moderate"
-            ]
-          },
-          {
-            "name": "Time Piece",
-            "access_rules": [
-              "ice",
-              "moderate"
+            ],
+            "sections": [
+              {
+                "name": "Time Piece"
+              },
+              {
+                "name": "Behind Iceberg"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "cruise",
+                "x": 1157,
+                "y": 62
+              }
             ]
           }
         ]
@@ -152,6 +347,13 @@
               "pages"
             ]
           }
+        ],
+        "map_locations": [
+          {
+            "map": "cruise",
+            "x": 533,
+            "y": 325
+          }
         ]
       },
       {
@@ -165,6 +367,13 @@
             "access_rules": [
               "hookshot"
             ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "cruise",
+            "x": 742,
+            "y": 770
           }
         ]
       }

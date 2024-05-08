@@ -36,6 +36,12 @@
     "img": "images/maps/AlpineSkyline.png"
   },
   {
+    "name": "cruise",
+    "location_size": 15,
+    "location_border_thickness": 1,
+    "img": "images/maps/ArcticCruise.png"
+  },
+  {
     "name": "nyakuza",
     "location_size": 28,
     "location_border_thickness": 1,

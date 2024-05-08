@@ -34,8 +34,8 @@ local map_table = {
     alpsandsails = "Alpine Skyline",
 
     -- placeholders for the DLC
-    -- ship_main = "Boat",
-    -- ship_sinking = "Boat",
+    ship_main = "Arctic Cruise",
+    ship_sinking = "Arctic Cruise",
 
     DLC_Metro = "Nyakuza Metro"
 }

@@ -48,9 +48,9 @@ chapter_act_info = {
     TheFinale_FinalBoss = Act.new(5, "TheFinale_FinalBoss", "Chapter5 Entrances/Acts", "Spaceship/Time's End/Time Piece"),
     TimeRift_Cave_Tour = Act.new(-5, "TimeRift_Cave_Tour", "The Attic Entrances/Time Rifts", "Spaceship/Tour/Time Rift"),
 
-    Cruise_Boarding = Act.new(6, "Cruise_Boarding", "Chapter6 Entrances/Acts", "The Arctic Cruise/Bon Voyage!/Time Piece"),
-    Cruise_Working = Act.new(6, "Cruise_Working", "Chapter6 Entrances/Acts", "The Arctic Cruise/Ship Shape/Time Piece"),
-    Cruise_Sinking = Act.new(6, "Cruise_Sinking", "Chapter6 Entrances/Acts", "The Arctic Cruise/Rock the Boat/Time Piece"),
+    Cruise_Boarding = Act.new(6, "Cruise_Boarding", "Chapter6 Entrances/Acts", "Bon Voyage!/Control Room/Bon Voyage!"),
+    Cruise_Working = Act.new(6, "Cruise_Working", "Chapter6 Entrances/Acts", "The Arctic Cruise/Lost and Found/Ship Shape"),
+    Cruise_Sinking = Act.new(6, "Cruise_Sinking", "Chapter6 Entrances/Acts", "Rock the Boat/Post Captain Rescue/Time Piece"),
     Cruise_CaveRift_Aquarium = Act.new(-6, "Cruise_CaveRift_Aquarium", "Chapter Time Rift Entrances/Chapter6", "The Arctic Cruise - Time Rifts/Deep Sea/Time Rift"),
     Cruise_WaterRift_Slide = Act.new(-6, "Cruise_WaterRift_Slide", "Chapter Time Rift Entrances/Chapter6", "The Arctic Cruise - Time Rifts/Balcony/Time Rift"),
 

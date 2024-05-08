@@ -122,6 +122,16 @@
               }
             },
             {
+              "title": "Arctic Cruise",
+              "icon": "images/icons/Cruise_Seal.png",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "cruise"
+                ]
+              }
+            },
+            {
               "title": "Nyakuza Metro",
               "icon": "images/icons/Nyakuza_Emblem.png",
               "content": {
