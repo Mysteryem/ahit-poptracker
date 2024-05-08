@@ -84,6 +84,9 @@
       },
       {
         "name": "Purrloined Village: Horned Stone",
+        "access_rules": [
+          "@Alpine Logic/Can access Free Roam"      
+        ],
         "sections": [
           {
             "name": "Token"
@@ -99,6 +102,9 @@
       },
       {
         "name": "Purrloined Village: Chest Reward",
+        "access_rules": [
+          "@Alpine Logic/Can access Free Roam"     
+        ],
         "sections": [
           {
             "name": "Token"
@@ -115,9 +121,8 @@
       {
         "name": "Bird House",
         "access_rules": [
-          "moderate",
-          "brewer",
-          "@Alpine Logic/Can access Free Roam"
+          "moderate, @Alpine Logic/Can access Free Roam",
+          "brewer, @Alpine Logic/Can access Free Roam"          
         ],
         "sections": [
           {
@@ -225,9 +230,9 @@
       {
         "name": "Mystifying Time Mesa: Zipline",
         "access_rules": [
-          "sprint",
-          "timestop",
-          "hard"
+          "sprint, @Alpine Logic/Can access Free Roam",
+          "timestop, @Alpine Logic/Can access Free Roam",
+          "hard, @Alpine Logic/Can access Free Roam"
         ],
         "sections": [
           {
@@ -245,9 +250,9 @@
       {
         "name": "Mystifying Time Mesa: Gate Puzzle",
         "access_rules": [
-          "sprint",
-          "timestop",
-          "hard"
+          "sprint, @Alpine Logic/Can access Free Roam",
+          "timestop, @Alpine Logic/Can access Free Roam",
+          "hard, @Alpine Logic/Can access Free Roam"
         ],
         "sections": [
           {
@@ -387,7 +392,9 @@
       {
         "name": "Goat Refinery",
         "access_rules": [
-          "@Alpine Logic/Can access Free Roam"
+          "@Alpine Logic/Can access Free Roam",
+          "moderate, sprint, @Alpine Logic/Can access Finale - The Illness has Spread",
+          "hard, @Alpine Logic/Can access Finale - The Illness has Spread"
         ],
         "sections": [
           {
