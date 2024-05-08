@@ -8,8 +8,7 @@
           {
             "name": "Abuse D:",
             "access_rules": [
-              "timepiece:4, umbrella_off",
-              "timepiece:4, umbrella_on, umbrella"
+              "timepiece:4, @General Logic/Can Hit"
             ]
           }
         ],
