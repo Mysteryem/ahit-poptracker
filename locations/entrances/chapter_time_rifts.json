@@ -165,6 +165,9 @@
       },
       {
         "name": "Chapter6",
+        "visibility_rules": [
+          "dlc1"
+        ],
         "map_locations": [
           {
             "map": "entrances",
@@ -189,6 +192,9 @@
       },
       {
         "name": "Chapter7",
+        "visibility_rules": [
+          "dlc2"
+        ],
         "map_locations": [
           {
             "map": "entrances",

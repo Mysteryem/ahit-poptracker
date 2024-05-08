@@ -211,6 +211,8 @@ function onClear(slot_data)
     setFromSlotData('NoTicketSkips', "ticket_skips")
     setFromSlotData('ExcludeTour', "exclude_tour_option")
     setFromSlotData('Tasksanity', "tasksanity")
+    setFromSlotData('EnableDLC1', "dlc1")
+    setFromSlotData('EnableDLC2', "dlc2")
 
     setFromSlotData('TasksanityCheckCount', "@The Arctic Cruise/Lost and Found/Tasksanity Check")
     setFromSlotData('BadgeSellerItemCount', "@Shops/Badge Seller/Scammed")

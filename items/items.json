@@ -376,6 +376,20 @@
     "codes": "tasksanity"
   },
   {
+    "name": "DLC 1",
+    "type": "toggle",
+    "img": "images/icons/Cruise_Seal.png",
+    "initial_active_state": true,
+    "codes": "dlc1"
+  },
+  {
+    "name": "DLC 2",
+    "type": "toggle",
+    "img": "images/icons/Nyakuza_Emblem.png",
+    "initial_active_state": true,
+    "codes": "dlc2"
+  },
+  {
     "name": "Chapter 1 Cost",
     "type": "consumable",
     "codes": "chapter_1_cost"

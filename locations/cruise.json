@@ -1,6 +1,9 @@
 [
   {
     "name": "The Arctic Cruise",
+    "visibility_rules": [
+      "dlc1"
+    ],
     "children": [
       {
         "name": "Bon Voyage!",
@@ -313,6 +316,9 @@
   },
   {
     "name": "The Arctic Cruise - Time Rifts",
+    "visibility_rules": [
+      "dlc1"
+    ],
     "children": [
       {
         "name": "Deep Sea",

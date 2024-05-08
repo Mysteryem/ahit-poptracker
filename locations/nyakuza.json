@@ -4,6 +4,9 @@
     "access_rules": [
       "@Nyakuza Logic/Can access Free Roam"
     ],
+    "visibility_rules": [
+      "dlc2"
+    ],
     "children": [
       {
         "name": "Nyakuza Metro Intro",
@@ -273,6 +276,9 @@
     "access_rules": [
       "@Nyakuza Logic/Can access Rush Hour"
     ],
+    "visibility_rules": [
+      "dlc2"
+    ],
     "children": [
       {
         "name": "Rush Hour",
@@ -301,6 +307,9 @@
   },
   {
     "name": "Nyakuza Metro - Time Rifts",
+    "visibility_rules": [
+      "dlc2"
+    ],
     "children": [
       {
         "name": "Rumbi Factory",
@@ -334,6 +343,9 @@
     "name": "Nyakuza Shops",
     "access_rules": [
       "@Nyakuza Logic/Can access Free Roam"
+    ],
+    "visibility_rules": [
+      "dlc2"
     ],
     "children": [
       {

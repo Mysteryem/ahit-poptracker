@@ -5,6 +5,9 @@
     "access_rules": [
       "$hasTimePiecesForChapter|6"
     ],
+    "visibility_rules": [
+      "dlc1"
+    ],
     "children": [
       {
         "name": "Acts",

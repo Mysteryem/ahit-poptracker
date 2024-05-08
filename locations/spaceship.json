@@ -51,7 +51,7 @@
           "$canAccessAct|TimeRift_Cave_Tour"
         ],
         "visibility_rules": [
-          "exclude_tour_disabled"
+          "exclude_tour_disabled, dlc1"
         ],
         "sections": [
           {
