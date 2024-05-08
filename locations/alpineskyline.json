@@ -232,7 +232,7 @@
         "access_rules": [
           "sprint, @Alpine Logic/Can access Free Roam",
           "timestop, @Alpine Logic/Can access Free Roam",
-          "hard, @Alpine Logic/Can access Free Roam"
+          "moderate, @Alpine Logic/Can access Free Roam"
         ],
         "sections": [
           {
