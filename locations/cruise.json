@@ -19,33 +19,6 @@
             "access_rules": [
               "hookshot"
             ]
-          },
-          {
-            "name": "Time Rift - Deep Sea",
-            "access_rules": [
-              "hookshot,dweller,ice",
-              "moderate,hookshot,dweller",
-              "hard,hookshot"
-            ]
-          },
-          {
-            "name": "Deep Sea Pages (Starfish, Mini Castle, Urchins)",
-            "item_count": 3,
-            "clear_as_group": false,
-            "visibility_rules": [
-              "pages"
-            ]
-          },
-          {
-            "name": "Deep Sea Pages (Other)",
-            "item_count": 6,
-            "clear_as_group": false,
-            "access_rules": [
-              "hookshot"
-            ],
-            "visibility_rules": [
-              "pages"
-            ]
           }
         ]
       },
@@ -85,12 +58,6 @@
           },
           {
             "name": "Silver Ring"
-          },
-          {
-            "name": "Time Rift - Balcony",
-            "access_rules": [
-              "hookshot"
-            ]
           }
         ]
       },
@@ -143,6 +110,60 @@
             "access_rules": [
               "ice",
               "moderate"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Arctic Cruise - Time Rifts",
+    "children": [
+      {
+        "name": "Deep Sea",
+        "access_rules": [
+          "$canAccessAct|Cruise_CaveRift_Aquarium"
+        ],
+        "sections": [
+          {
+            "name": "Time Rift",
+            "access_rules": [
+              "hookshot,dweller,ice",
+              "moderate,hookshot,dweller",
+              "hard,hookshot"
+            ]
+          },
+          {
+            "name": "Pages (Starfish, Mini Castle, Urchins)",
+            "item_count": 3,
+            "clear_as_group": false,
+            "visibility_rules": [
+              "pages"
+            ]
+          },
+          {
+            "name": "Pages (Other)",
+            "item_count": 6,
+            "clear_as_group": false,
+            "access_rules": [
+              "hookshot"
+            ],
+            "visibility_rules": [
+              "pages"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Balcony",
+        "access_rules": [
+          "$canAccessAct|Cruise_WaterRift_Slide"
+        ],
+        "sections": [
+          {
+            "name": "Time Rift",
+            "access_rules": [
+              "hookshot"
             ]
           }
         ]

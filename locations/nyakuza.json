@@ -157,32 +157,6 @@
         ]
       },
       {
-        "name": "Rumbi Factory",
-        "access_rules": [
-          "$canAccessAct|Metro_CaveRift_RumbiFactory"
-        ],
-        "sections": [
-          {
-            "name": "Time Rift"
-          },
-          {
-            "name": "Pages",
-            "item_count": 10,
-            "clear_as_group": false,
-            "visibility_rules": [
-              "pages"
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "nyakuza",
-            "x": 1090,
-            "y": 360
-          }
-        ]
-      },
-      {
         "name": "Main Station Dining Area",
         "sections": [
           {
@@ -320,6 +294,37 @@
             "map": "nyakuza",
             "x": 940,
             "y": 615
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Nyakuza Metro - Time Rifts",
+    "children": [
+      {
+        "name": "Rumbi Factory",
+        "access_rules": [
+          "$canAccessAct|Metro_CaveRift_RumbiFactory"
+        ],
+        "sections": [
+          {
+            "name": "Time Rift"
+          },
+          {
+            "name": "Pages",
+            "item_count": 10,
+            "clear_as_group": false,
+            "visibility_rules": [
+              "pages"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "nyakuza",
+            "x": 1090,
+            "y": 360
           }
         ]
       }

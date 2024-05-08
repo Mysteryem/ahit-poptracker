@@ -38,32 +38,6 @@
             "y": 1450
           }
         ]
-      },
-      {
-        "name": "Alpine Skyline (Rift)",
-        "access_rules": [
-          "$canAccessAct|TimeRift_Cave_Alps"
-        ],
-        "sections": [
-          {
-            "name": "Time Rift"
-          },
-          {
-            "name": "Pages",
-            "item_count": 5,
-            "clear_as_group": false,
-            "visibility_rules": [
-              "pages"
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "alpine",
-            "x": 1450,
-            "y": 1350
-          }
-        ]
       }
     ]
   },
@@ -205,26 +179,6 @@
             "map": "alpine",
             "x": 1080,
             "y": 1745
-          }
-        ]
-      },
-      {
-        "name": "The Twilight Bell (Rift)",
-        "access_rules": [
-          "expert, @Alpine Logic/Can access Time Rift - The Twilight Bell",
-          "hard, sprint, scooter, @Alpine Logic/Can access Time Rift - The Twilight Bell",
-          "dweller, @Alpine Logic/Can access Time Rift - The Twilight Bell"
-        ],
-        "sections": [
-          {
-            "name": "Time Rift"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "alpine",
-            "x": 1230,
-            "y": 2190
           }
         ]
       },
@@ -393,26 +347,6 @@
         ]
       },
       {
-        "name": "Curly Tail Trail",
-        "access_rules": [
-          "expert, @Alpine Logic/Can access Time Rift - Curly Tail Trail",
-          "hard, sprint, @Alpine Logic/Can access Time Rift - Curly Tail Trail",
-          "ice, @Alpine Logic/Can access Time Rift - Curly Tail Trail"
-        ],
-        "sections": [
-          {
-            "name": "Time Rift"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "alpine",
-            "x": 2815,
-            "y": 770
-          }
-        ]
-      },
-      {
         "name": "The Windmill",
         "access_rules": [
           "@Alpine Logic/Can access Free Roam"
@@ -484,6 +418,83 @@
             "map": "alpine",
             "x": 1340,
             "y": 1320
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Alpine Skyline - Time Rifts",
+    "children": [
+      {
+        "name": "The Twilight Bell (Rift)",
+        "access_rules": [
+          "@Alpine Logic/Can access Time Rift - The Twilight Bell"
+        ],
+        "sections": [
+          {
+            "name": "Time Rift",
+            "access_rules": [
+              "expert",
+              "hard, sprint, scooter",
+              "dweller"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "alpine",
+            "x": 1230,
+            "y": 2190
+          }
+        ]
+      },
+      {
+        "name": "Curly Tail Trail",
+        "access_rules": [
+          "@Alpine Logic/Can access Time Rift - Curly Tail Trail"
+        ],
+        "sections": [
+          {
+            "name": "Time Rift",
+            "access_rules": [
+              "expert",
+              "hard, sprint",
+              "ice"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "alpine",
+            "x": 2815,
+            "y": 770
+          }
+        ]
+      },
+      {
+        "name": "Alpine Skyline (Rift)",
+        "access_rules": [
+          "$canAccessAct|TimeRift_Cave_Alps"
+        ],
+        "sections": [
+          {
+            "name": "Time Rift"
+          },
+          {
+            "name": "Pages",
+            "item_count": 5,
+            "clear_as_group": false,
+            "visibility_rules": [
+              "pages"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "alpine",
+            "x": 1450,
+            "y": 1350
           }
         ]
       }

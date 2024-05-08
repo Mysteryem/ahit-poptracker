@@ -377,24 +377,6 @@
         ]
       },
       {
-        "name": "Bazaar",
-        "sections": [
-          {
-            "name": "Time Rift",
-            "access_rules": [
-              "$canAccessAct|TimeRift_Water_Mafia_Hard"
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "mafiatown",
-            "x": 370,
-            "y": 510
-          }
-        ]
-      },
-      {
         "name": "Badge Seller",
         "sections": [
           {
@@ -407,50 +389,6 @@
             "map": "mafiatown",
             "x": 590,
             "y": 190
-          }
-        ]
-      },
-      {
-        "name": "Sewers",
-        "sections": [
-          {
-            "name": "Time Rift",
-            "access_rules": [
-              "$canAccessAct|TimeRift_Water_Mafia_Easy"
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "mafiatown",
-            "x": 675,
-            "y": 305
-          }
-        ]
-      },
-      {
-        "name": "Mafia of Cooks",
-        "access_rules": [
-          "$canAccessAct|TimeRift_Cave_Mafia"
-        ],
-        "sections": [
-          {
-            "name": "Time Rift"
-          },
-          {
-            "name": "Pages",
-            "item_count": 6,
-            "clear_as_group": false,
-            "visibility_rules": [
-              "pages"
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "mafiatown",
-            "x": 250,
-            "y": 150
           }
         ]
       },
@@ -803,6 +741,73 @@
           {
             "map": "mafiatown",
             "x": 410,
+            "y": 150
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Mafia Town - Time Rifts",
+    "children": [
+      {
+        "name": "Bazaar",
+        "sections": [
+          {
+            "name": "Time Rift",
+            "access_rules": [
+              "$canAccessAct|TimeRift_Water_Mafia_Hard"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 370,
+            "y": 510
+          }
+        ]
+      },
+      {
+        "name": "Sewers",
+        "sections": [
+          {
+            "name": "Time Rift",
+            "access_rules": [
+              "$canAccessAct|TimeRift_Water_Mafia_Easy"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 675,
+            "y": 305
+          }
+        ]
+      },
+      {
+        "name": "Mafia of Cooks",
+        "access_rules": [
+          "$canAccessAct|TimeRift_Cave_Mafia"
+        ],
+        "sections": [
+          {
+            "name": "Time Rift"
+          },
+          {
+            "name": "Pages",
+            "item_count": 6,
+            "clear_as_group": false,
+            "visibility_rules": [
+              "pages"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 250,
             "y": 150
           }
         ]

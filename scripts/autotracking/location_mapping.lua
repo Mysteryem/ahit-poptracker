@@ -196,9 +196,9 @@ LOCATION_MAPPING = {
     [2000312318] = "@Mafia Town (HUMT)/Beach Alcove/Cheating the Race",
     [2000311481] = "@Mafia Town (HUMT)/Mafia Geek/Heating Up Mafia Town",
     [2000312250] = "@Mafia Town/The Golden Vault/Time Piece",
-    [2000312465] = "@Mafia Town (HUMT)/Bazaar/Time Rift",
-    [2000312484] = "@Mafia Town (HUMT)/Sewers/Time Rift",
-    [2000311855] = "@Mafia Town (HUMT)/Mafia of Cooks/Time Rift",
+    [2000312465] = "@Mafia Town - Time Rifts/Bazaar/Time Rift",
+    [2000312484] = "@Mafia Town - Time Rifts/Sewers/Time Rift",
+    [2000311855] = "@Mafia Town - Time Rifts/Mafia of Cooks/Time Rift",
 
     [2000311383] = "@Act Completions/Act Completion/Dead Bird Studio",
     [2000311544] = "@Films/The Conductor's Films/Murder on the Owl Express",
@@ -209,7 +209,7 @@ LOCATION_MAPPING = {
     [2000312253] = "@Dead Bird Basement/Act Completion/Time Piece",
     [2000312807] = "@Films/The Conductor's Films/Time Rift",
     [2000312785] = "@Films/DJ Groove's Films/Time Rift",
-    [2000312577] = "@Before Lever/Dead Bird Studio (Rift)/Time Piece",
+    [2000312577] = "@Dead Bird Studio (Rift)/Time Piece",
 
     [2000312317] = "@Yellow Firewall/Contractual Obligations/Time Piece",
     [2000311160] = "@Yellow Firewall/Subcon Well/Time Piece",
@@ -218,19 +218,19 @@ LOCATION_MAPPING = {
     [2000312032] = "@Subcon Forest/Snatcher/Mail Delivery Service",
     [2000311390] = "@Boss Arena Area/Boss Arena/Your Contract has Expired",
 
-    [2000313069] = "@Blue Firewall/Pipe/Time Rift",
-    [2000313056] = "@Blue Firewall/Village/Time Rift",
+    [2000313069] = "@Subcon Time Rifts/Pipe/Time Rift",
+    [2000313056] = "@Subcon Time Rifts/Village/Time Rift",
 
-    [2000312086] = "@Green Firewall/Sleepy Subcon/Time Rift",
+    [2000312086] = "@Subcon Time Rifts/Sleepy Subcon/Time Rift",
 
     [2000311428] = "@Birdhouse Zipline/Bird House/Time Piece",
     [2000312509] = "@Lava Cake Zipline/Lava Cake/Time Piece",
     [2000311540] = "@Twilight Bell Zipline/The Twilight Bell/Time Piece",
     [2000312263] = "@Windmill Zipline/The Windmill/Time Piece",
     [2000312022] = "@Alpine Skyline/The Illness has Spread/Time Piece",
-    [2000312399] = "@Twilight Bell Zipline/The Twilight Bell (Rift)/Time Rift",
-    [2000313335] = "@Windmill Zipline/Curly Tail Trail/Time Rift",
-    [2000311777] = "@Goat Village/Alpine Skyline (Rift)/Time Rift",
+    [2000312399] = "@Alpine Skyline - Time Rifts/The Twilight Bell (Rift)/Time Rift",
+    [2000313335] = "@Alpine Skyline - Time Rifts/Curly Tail Trail/Time Rift",
+    [2000311777] = "@Alpine Skyline - Time Rifts/Alpine Skyline (Rift)/Time Rift",
 
     [2000311872] = "@Spaceship/Time's End/Time Piece",
     [2000311803] = "@Spaceship/Tour/Time Rift",
@@ -238,8 +238,8 @@ LOCATION_MAPPING = {
     [2000311520] = "@The Arctic Cruise/Bon Voyage!/Time Piece",
     [2000311451] = "@The Arctic Cruise/Ship Shape/Time Piece",
     [2000311437] = "@The Arctic Cruise/Rock the Boat/Time Piece",
-    [2000312226] = "@The Arctic Cruise/Cruise Ship/Time Rift - Balcony",
-    [2000312434] = "@The Arctic Cruise/Bon Voyage!/Time Rift - Deep Sea",
+    [2000312226] = "@The Arctic Cruise - Time Rifts/Balcony/Time Rift",
+    [2000312434] = "@The Arctic Cruise - Time Rifts/Deep Sea/Time Rift",
 
     [2000311138] = "@Nyakuza Metro/Nyakuza Metro Intro/Time Piece",
     [2000311206] = "@Nyakuza Metro/Yellow Overpass Station/Time Piece",
@@ -250,40 +250,40 @@ LOCATION_MAPPING = {
     [2000311209] = "@Nyakuza Metro/Pink Paw Station/Time Piece",
     [2000311389] = "@Nyakuza Metro/Pink Paw Manhole/Time Piece",
     [2000311210] = "@Finale/Rush Hour/Time Piece",
-    [2000312736] = "@Nyakuza Metro/Rumbi Factory/Time Rift",
+    [2000312736] = "@Nyakuza Metro - Time Rifts/Rumbi Factory/Time Rift",
 
     -- Storybook pages
-    [2000345091] = "@Mafia Town (HUMT)/Mafia of Cooks/Pages", --Fish Pile"
-    [2000345090] = "@Mafia Town (HUMT)/Mafia of Cooks/Pages", --Trash Mound"
-    [2000345092] = "@Mafia Town (HUMT)/Mafia of Cooks/Pages", --Beside Red Building"
-    [2000345095] = "@Mafia Town (HUMT)/Mafia of Cooks/Pages", --Behind Shipping Containers"
-    [2000345093] = "@Mafia Town (HUMT)/Mafia of Cooks/Pages", --Top of Boat"
-    [2000345094] = "@Mafia Town (HUMT)/Mafia of Cooks/Pages", --Below Dock"
+    [2000345091] = "@Mafia Town - Time Rifts/Mafia of Cooks/Pages", --Fish Pile"
+    [2000345090] = "@Mafia Town - Time Rifts/Mafia of Cooks/Pages", --Trash Mound"
+    [2000345092] = "@Mafia Town - Time Rifts/Mafia of Cooks/Pages", --Beside Red Building"
+    [2000345095] = "@Mafia Town - Time Rifts/Mafia of Cooks/Pages", --Behind Shipping Containers"
+    [2000345093] = "@Mafia Town - Time Rifts/Mafia of Cooks/Pages", --Top of Boat"
+    [2000345094] = "@Mafia Town - Time Rifts/Mafia of Cooks/Pages", --Below Dock"
 
-    [2000345449] = "@Before Lever/Dead Bird Studio (Rift)/Pages", -- Behind Cardboard Planet
-    [2000345447] = "@Before Lever/Dead Bird Studio (Rift)/Pages", --Near Time Rift Gate"
-    [2000345448] = "@Before Lever/Dead Bird Studio (Rift)/Pages", --Top of Metal Bar"
-    [2000345450] = "@Before Lever/Dead Bird Studio (Rift)/Pages", --Lava Lamp"
-    [2000345451] = "@Before Lever/Dead Bird Studio (Rift)/Pages", --Above Horse Picture"
-    [2000345452] = "@Before Lever/Dead Bird Studio (Rift)/Pages", --Green Screen"
-    [2000345453] = "@Before Lever/Dead Bird Studio (Rift)/Pages", --In The Corner"
-    [2000345445] = "@Before Lever/Dead Bird Studio (Rift)/Pages", --Above TV Room"
+    [2000345449] = "@Dead Bird Studio (Rift)/Pages", -- Behind Cardboard Planet
+    [2000345447] = "@Dead Bird Studio (Rift)/Pages", --Near Time Rift Gate"
+    [2000345448] = "@Dead Bird Studio (Rift)/Pages", --Top of Metal Bar"
+    [2000345450] = "@Dead Bird Studio (Rift)/Pages", --Lava Lamp"
+    [2000345451] = "@Dead Bird Studio (Rift)/Pages", --Above Horse Picture"
+    [2000345452] = "@Dead Bird Studio (Rift)/Pages", --Green Screen"
+    [2000345453] = "@Dead Bird Studio (Rift)/Pages", --In The Corner"
+    [2000345445] = "@Dead Bird Studio (Rift)/Pages", --Above TV Room"
 
-    [2000345373] = "@Green Firewall/Sleepy Subcon/Pages", --Behind Entrance Area"
-    [2000345327] = "@Green Firewall/Sleepy Subcon/Pages", --Near Wrecking Ball"
-    [2000345371] = "@Green Firewall/Sleepy Subcon/Pages", --Behind Crane"
-    [2000345326] = "@Green Firewall/Sleepy Subcon/Pages", --Wrecked Treehouse"
-    [2000345372] = "@Green Firewall/Sleepy Subcon/Pages", --Behind 2nd Rift Gate"
-    [2000345328] = "@Green Firewall/Sleepy Subcon/Pages", --Rotating Platform"
-    [2000345329] = "@Green Firewall/Sleepy Subcon/Pages", --Behind 3rd Rift Gate"
-    [2000345330] = "@Green Firewall/Sleepy Subcon/Pages", --Frozen Tree"
-    [2000345370] = "@Green Firewall/Sleepy Subcon/Pages", --Secret Library"
+    [2000345373] = "@Subcon Time Rifts/Sleepy Subcon/Pages", --Behind Entrance Area"
+    [2000345327] = "@Subcon Time Rifts/Sleepy Subcon/Pages", --Near Wrecking Ball"
+    [2000345371] = "@Subcon Time Rifts/Sleepy Subcon/Pages", --Behind Crane"
+    [2000345326] = "@Subcon Time Rifts/Sleepy Subcon/Pages", --Wrecked Treehouse"
+    [2000345372] = "@Subcon Time Rifts/Sleepy Subcon/Pages", --Behind 2nd Rift Gate"
+    [2000345328] = "@Subcon Time Rifts/Sleepy Subcon/Pages", --Rotating Platform"
+    [2000345329] = "@Subcon Time Rifts/Sleepy Subcon/Pages", --Behind 3rd Rift Gate"
+    [2000345330] = "@Subcon Time Rifts/Sleepy Subcon/Pages", --Frozen Tree"
+    [2000345370] = "@Subcon Time Rifts/Sleepy Subcon/Pages", --Secret Library"
 
-    [2000345016] = "@Goat Village/Alpine Skyline (Rift)/Pages", --Page: Entrance Area Hidden Ledge
-    [2000345012] = "@Goat Village/Alpine Skyline (Rift)/Pages", --Page: Windmill Island Ledge
-    [2000345015] = "@Goat Village/Alpine Skyline (Rift)/Pages", --Page: Waterfall Wooden Pillar
-    [2000345014] = "@Goat Village/Alpine Skyline (Rift)/Pages", --Page: Lonely Birdhouse Top
-    [2000345013] = "@Goat Village/Alpine Skyline (Rift)/Pages", --Page: Below Aqueduct
+    [2000345016] = "@Alpine Skyline - Time Rifts/Alpine Skyline (Rift)/Pages", --Page: Entrance Area Hidden Ledge
+    [2000345012] = "@Alpine Skyline - Time Rifts/Alpine Skyline (Rift)/Pages", --Page: Windmill Island Ledge
+    [2000345015] = "@Alpine Skyline - Time Rifts/Alpine Skyline (Rift)/Pages", --Page: Waterfall Wooden Pillar
+    [2000345014] = "@Alpine Skyline - Time Rifts/Alpine Skyline (Rift)/Pages", --Page: Lonely Birdhouse Top
+    [2000345013] = "@Alpine Skyline - Time Rifts/Alpine Skyline (Rift)/Pages", --Page: Below Aqueduct
 
     [2000345038] = "@Spaceship/Tour/Pages", --Page: Mafia Town - Ledge
     [2000345039] = "@Spaceship/Tour/Pages", --Page: Mafia Town - Beach
@@ -295,15 +295,15 @@ LOCATION_MAPPING = {
     [2000345047] = "@Spaceship/Tour/Pages", --Page: Alpine Skyline - Behind Lava Isle
     [2000345087] = "@Spaceship/Tour/Pages", --Page: The Finale - Near Entrance
 
-    [2000346454] = "@The Arctic Cruise/Bon Voyage!/Deep Sea Pages (Starfish, Mini Castle, Urchins)", --Page: Starfish
-    [2000346452] = "@The Arctic Cruise/Bon Voyage!/Deep Sea Pages (Starfish, Mini Castle, Urchins)", --Page: Mini Castle
-    [2000346449] = "@The Arctic Cruise/Bon Voyage!/Deep Sea Pages (Starfish, Mini Castle, Urchins)", --Page: Urchins
-    [2000346450] = "@The Arctic Cruise/Bon Voyage!/Deep Sea Pages (Other)", --Page: Big Castle
-    [2000304850] = "@The Arctic Cruise/Bon Voyage!/Deep Sea Pages (Other)", --Page: Castle Top Chest
-    [2000346451] = "@The Arctic Cruise/Bon Voyage!/Deep Sea Pages (Other)", --Page: Urchin Ledge
-    [2000304849] = "@The Arctic Cruise/Bon Voyage!/Deep Sea Pages (Other)", --Page: Hidden Castle Chest
-    [2000346456] = "@The Arctic Cruise/Bon Voyage!/Deep Sea Pages (Other)", --Page: Falling Platform
-    [2000346453] = "@The Arctic Cruise/Bon Voyage!/Deep Sea Pages (Other)", --Page: Lava Starfish
+    [2000346454] = "@The Arctic Cruise - Time Rifts/Deeap Sea/Pages (Starfish, Mini Castle, Urchins)", --Page: Starfish
+    [2000346452] = "@The Arctic Cruise - Time Rifts/Deeap Sea/Pages (Starfish, Mini Castle, Urchins)", --Page: Mini Castle
+    [2000346449] = "@The Arctic Cruise - Time Rifts/Deeap Sea/Pages (Starfish, Mini Castle, Urchins)", --Page: Urchins
+    [2000346450] = "@The Arctic Cruise - Time Rifts/Deeap Sea/Pages (Other)", --Page: Big Castle
+    [2000304850] = "@The Arctic Cruise - Time Rifts/Deeap Sea/Pages (Other)", --Page: Castle Top Chest
+    [2000346451] = "@The Arctic Cruise - Time Rifts/Deeap Sea/Pages (Other)", --Page: Urchin Ledge
+    [2000304849] = "@The Arctic Cruise - Time Rifts/Deeap Sea/Pages (Other)", --Page: Hidden Castle Chest
+    [2000346456] = "@The Arctic Cruise - Time Rifts/Deeap Sea/Pages (Other)", --Page: Falling Platform
+    [2000346453] = "@The Arctic Cruise - Time Rifts/Deeap Sea/Pages (Other)", --Page: Lava Starfish
 
     [2000300204] = "@The Arctic Cruise/Ship Shape/Tasksanity Check",
     [2000300205] = "@The Arctic Cruise/Ship Shape/Tasksanity Check",
@@ -337,16 +337,16 @@ LOCATION_MAPPING = {
     [2000300233] = "@The Arctic Cruise/Ship Shape/Tasksanity Check",
     [2000300234] = "@The Arctic Cruise/Ship Shape/Tasksanity Check",
 
-    [2000345891] = "@Nyakuza Metro/Rumbi Factory/Pages",
-    [2000345888] = "@Nyakuza Metro/Rumbi Factory/Pages",
-    [2000345892] = "@Nyakuza Metro/Rumbi Factory/Pages",
-    [2000345889] = "@Nyakuza Metro/Rumbi Factory/Pages",
-    [2000345884] = "@Nyakuza Metro/Rumbi Factory/Pages",
-    [2000345885] = "@Nyakuza Metro/Rumbi Factory/Pages",
-    [2000345890] = "@Nyakuza Metro/Rumbi Factory/Pages",
-    [2000345887] = "@Nyakuza Metro/Rumbi Factory/Pages",
-    [2000345886] = "@Nyakuza Metro/Rumbi Factory/Pages",
-    [2000345883] = "@Nyakuza Metro/Rumbi Factory/Pages",
+    [2000345891] = "@Nyakuza Metro - Time Rifts/Rumbi Factory/Pages",
+    [2000345888] = "@Nyakuza Metro - Time Rifts/Rumbi Factory/Pages",
+    [2000345892] = "@Nyakuza Metro - Time Rifts/Rumbi Factory/Pages",
+    [2000345889] = "@Nyakuza Metro - Time Rifts/Rumbi Factory/Pages",
+    [2000345884] = "@Nyakuza Metro - Time Rifts/Rumbi Factory/Pages",
+    [2000345885] = "@Nyakuza Metro - Time Rifts/Rumbi Factory/Pages",
+    [2000345890] = "@Nyakuza Metro - Time Rifts/Rumbi Factory/Pages",
+    [2000345887] = "@Nyakuza Metro - Time Rifts/Rumbi Factory/Pages",
+    [2000345886] = "@Nyakuza Metro - Time Rifts/Rumbi Factory/Pages",
+    [2000345883] = "@Nyakuza Metro - Time Rifts/Rumbi Factory/Pages",
 
     -- Contracts
     [2000300200] = "@Subcon Forest/Snatcher/Contract - The Subcon Well", --Snatcher's Contract - The Subcon Well"

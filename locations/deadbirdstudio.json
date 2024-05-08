@@ -142,6 +142,32 @@
     ]
   },
   {
+    "name": "Dead Bird Studio (Rift)",
+    "access_rules": [
+      "$canAccessAct|TimeRift_Cave_BirdBasement"
+    ],
+    "sections": [
+      {
+        "name": "Time Piece"
+      },
+      {
+        "name": "Pages",
+        "item_count": 8,
+        "clear_as_group": false,
+        "visibility_rules": [
+          "pages"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "deadbirdstudio",
+        "x": 895,
+        "y": 365
+      }
+    ]
+  },
+  {
     "name": "Before Lever",
     "access_rules": [
       "@DBS Logic/Can access Dead Bird Studio - Elevator Area"
@@ -220,32 +246,6 @@
             "map": "deadbirdstudio",
             "x": 1105,
             "y": 160
-          }
-        ]
-      },
-      {
-        "name": "Dead Bird Studio (Rift)",
-        "access_rules": [
-          "$canAccessAct|TimeRift_Cave_BirdBasement"
-        ],
-        "sections": [
-          {
-            "name": "Time Piece"
-          },
-          {
-            "name": "Pages",
-            "item_count": 8,
-            "clear_as_group": false,
-            "visibility_rules": [
-              "pages"
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "deadbirdstudio",
-            "x": 895,
-            "y": 365
           }
         ]
       }

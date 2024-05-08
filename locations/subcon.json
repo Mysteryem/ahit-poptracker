@@ -473,48 +473,6 @@
         ],
         "children": [
           {
-            "name": "Village",
-            "access_rules": [
-                "$canAccessAct|TimeRift_Water_Subcon_Dwellers"
-            ],
-            "sections": [
-              {
-                "name": "Time Rift",
-                "access_rules": [
-                  "expert",
-                  "brewer",
-                  "dweller",
-                  "umbrella"
-                ]
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "subcon",
-                "x": 1600,
-                "y": 700
-              }
-            ]
-          },
-          {
-            "name": "Pipe",
-            "sections": [
-              {
-                "name": "Time Rift",
-                "access_rules": [
-                  "hookshot, $canAccessAct|TimeRift_Water_Subcon_Hookshot"
-                ]
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "subcon",
-                "x": 888,
-                "y": 750
-              }
-            ]
-          },
-          {
             "name": "Burning House",
             "sections": [
               {
@@ -684,32 +642,6 @@
         ],
         "children": [
           {
-            "name": "Sleepy Subcon",
-            "access_rules": [
-              "$canAccessAct|TimeRift_Cave_Raccoon"
-            ],
-            "sections": [
-              {
-                "name": "Time Rift"
-              },
-              {
-                "name": "Pages",
-                "item_count": 9,
-                "clear_as_group": false,
-                "visibility_rules": [
-                  "pages"
-                ]
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "subcon",
-                "x": 1570,
-                "y": 245
-              }
-            ]
-          },
-          {
             "name": "Dweller Stump",
             "sections": [
               {
@@ -869,6 +801,79 @@
                 "y": 85
               }
             ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Subcon Time Rifts",
+    "children": [
+      {
+        "name": "Village",
+        "access_rules": [
+            "$canAccessAct|TimeRift_Water_Subcon_Dwellers"
+        ],
+        "sections": [
+          {
+            "name": "Time Rift",
+            "access_rules": [
+              "expert",
+              "brewer",
+              "dweller",
+              "umbrella"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 1600,
+            "y": 700
+          }
+        ]
+      },
+      {
+        "name": "Pipe",
+        "sections": [
+          {
+            "name": "Time Rift",
+            "access_rules": [
+              "hookshot, $canAccessAct|TimeRift_Water_Subcon_Hookshot"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 888,
+            "y": 750
+          }
+        ]
+      },
+      {
+        "name": "Sleepy Subcon",
+        "access_rules": [
+          "$canAccessAct|TimeRift_Cave_Raccoon"
+        ],
+        "sections": [
+          {
+            "name": "Time Rift"
+          },
+          {
+            "name": "Pages",
+            "item_count": 9,
+            "clear_as_group": false,
+            "visibility_rules": [
+              "pages"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 1570,
+            "y": 245
           }
         ]
       }
