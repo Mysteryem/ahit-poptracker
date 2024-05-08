@@ -171,165 +171,55 @@ function onClear(slot_data)
     Archipelago:SetNotify({map_key, completed_acts_key})
     Archipelago:Get({map_key, completed_acts_key})
 
-    if slot_data['ShuffleStorybookPages'] then
-        local obj = Tracker:FindObjectForCode("pages")
-        local val = slot_data['ShuffleStorybookPages']
-        if obj then
-            obj.Active = val
+    local function setFromSlotData(slot_data_key, item_code_or_location, offset)
+        -- Optional offset added to the value read from slot data.
+        -- Only applicable to locations and progressive items.
+        offset = offset or 0
+
+        local v = slot_data[slot_data_key]
+        if not v then
+            print(string.format("Could not find key '%s' in slot data", slot_data_key))
+            return
+        end
+        local obj = Tracker:FindObjectForCode(item_code_or_location)
+        if not obj then
+            print(string.format("Could not find item/location for code '%s'", item_code_or_location))
+            return
+        end
+
+        if item_code_or_location:sub(1, 1) == "@" then
+            obj.AvailableChestCount = v + offset
+        else
+            if obj.Type == 'toggle' then
+                obj.Active = v ~= 0
+            elseif obj.Type == 'progressive' then
+                obj.CurrentStage = v + offset
+            else
+                print(string.format("Unsupported item type '%s' for item '%s'", tostring(obj.Type), item_code_or_location))
+            end
         end
     end
 
-    if slot_data['ShuffleActContracts'] then
-        local obj = Tracker:FindObjectForCode("contract")
-        local val = slot_data['ShuffleActContracts']
-        if obj then
-            obj.Active = val
-        end
-    end
-
-    if slot_data['ShuffleSubconPaintings'] then
-        local obj = Tracker:FindObjectForCode("paintings")
-        local stage = slot_data['ShuffleSubconPaintings']
-        if obj then
-            obj.CurrentStage = stage
-        end
-    end
-
-    if slot_data['ShuffleAlpineZiplines'] then
-        local obj = Tracker:FindObjectForCode("ziplines_logic")
-        local stage = slot_data['ShuffleAlpineZiplines']
-        if obj then
-            obj.CurrentStage = stage
-        end
-    end
-
-    if slot_data['UmbrellaLogic'] then
-        local obj = Tracker:FindObjectForCode("umbrella_logic")
-        local val = slot_data['UmbrellaLogic']
-        if obj then
-            obj.CurrentStage = val
-        end
-    end
-
-    if slot_data['LogicDifficulty'] then
-        local obj = Tracker:FindObjectForCode("difficulty")
-        local val = slot_data['LogicDifficulty']
-        if obj then
-            obj.CurrentStage = val + 1
-        end
-    end
-
-    if slot_data['CTRLogic'] then
-        local obj = Tracker:FindObjectForCode("ctrlogic")
-        local val = slot_data['CTRLogic']
-        if obj then
-            obj.CurrentStage = val
-        end
-    end
-
-    if slot_data['NoPaintingSkips'] then
-        local obj = Tracker:FindObjectForCode("no_painting_skips")
-        local val = slot_data['NoPaintingSkips']
-        if obj then
-            obj.CurrentStage = val + 1
-        end
-    end
-
-    if slot_data['NoTicketSkips'] then
-        local obj = Tracker:FindObjectForCode("ticket_skips")
-        local val = slot_data['NoTicketSkips']
-        if obj then
-            obj.CurrentStage = val
-        end
-    end
-
-    if slot_data['BadgeSellerItemCount'] then
-        local obj = Tracker:FindObjectForCode("@Shops/Badge Seller/Scammed")
-        local val = slot_data['BadgeSellerItemCount']
-        if obj then
-            obj.AvailableChestCount = val
-        end
-    end
-
-    if slot_data['Hat_NPC_NyakuzaShop_0'] then
-        local obj = Tracker:FindObjectForCode("@Nyakuza Shops/Main Station Thugs/Thug A")
-        local val = slot_data['Hat_NPC_NyakuzaShop_0']
-        if obj then
-            obj.AvailableChestCount = val
-        end
-    end
-
-    if slot_data['Hat_NPC_NyakuzaShop_1'] then
-        local obj = Tracker:FindObjectForCode("@Nyakuza Shops/Main Station Thugs/Thug B")
-        local val = slot_data['Hat_NPC_NyakuzaShop_1']
-        if obj then
-            obj.AvailableChestCount = val
-        end
-    end
-
-    if slot_data['Hat_NPC_NyakuzaShop_2'] then
-        local obj = Tracker:FindObjectForCode("@Nyakuza Shops/Main Station Thugs/Thug C")
-        local val = slot_data['Hat_NPC_NyakuzaShop_2']
-        if obj then
-            obj.AvailableChestCount = val
-        end
-    end
-
-    if slot_data['Hat_NPC_NyakuzaShop_13'] then
-        local obj = Tracker:FindObjectForCode("@Nyakuza Shops/Yellow Overpass Thug A/Scammed")
-        local val = slot_data['Hat_NPC_NyakuzaShop_13']
-        if obj then
-            obj.AvailableChestCount = val
-        end
-    end
-
-    if slot_data['Hat_NPC_NyakuzaShop_5'] then
-        local obj = Tracker:FindObjectForCode("@Nyakuza Shops/Yellow Overpass Thug B/Scammed")
-        local val = slot_data['Hat_NPC_NyakuzaShop_5']
-        if obj then
-            obj.AvailableChestCount = val
-        end
-    end
-
-    if slot_data['Hat_NPC_NyakuzaShop_14'] then
-        local obj = Tracker:FindObjectForCode("@Nyakuza Shops/Yellow Overpass Thug C/Scammed")
-        local val = slot_data['Hat_NPC_NyakuzaShop_14']
-        if obj then
-            obj.AvailableChestCount = val
-        end
-    end
-
-    if slot_data['Hat_NPC_NyakuzaShop_4'] then
-        local obj = Tracker:FindObjectForCode("@Nyakuza Shops/Green Clean Thug A/Scammed")
-        local val = slot_data['Hat_NPC_NyakuzaShop_4']
-        if obj then
-            obj.AvailableChestCount = val
-        end
-    end
-
-    if slot_data['Hat_NPC_NyakuzaShop_6'] then
-        local obj = Tracker:FindObjectForCode("@Nyakuza Shops/Green Clean Thug B/Scammed")
-        local val = slot_data['Hat_NPC_NyakuzaShop_6']
-        if obj then
-            obj.AvailableChestCount = val
-        end
-    end
-
-    if slot_data['Hat_NPC_NyakuzaShop_7'] then
-        local obj = Tracker:FindObjectForCode("@Nyakuza Shops/Bluefin Tunnel Thug/Scammed")
-        local val = slot_data['Hat_NPC_NyakuzaShop_7']
-        if obj then
-            obj.AvailableChestCount = val
-        end
-    end
-
-    if slot_data['Hat_NPC_NyakuzaShop_12'] then
-        local obj = Tracker:FindObjectForCode("@Nyakuza Shops/Pink Paw Station Thug/Scammed")
-        local val = slot_data['Hat_NPC_NyakuzaShop_12']
-        if obj then
-            obj.AvailableChestCount = val
-        end
-    end
+    setFromSlotData('ShuffleStorybookPages', "pages")
+    setFromSlotData('ShuffleActContracts', "contract")
+    setFromSlotData('ShuffleSubconPaintings', "paintings")
+    setFromSlotData('ShuffleAlpineZiplines', "ziplines_logic")
+    setFromSlotData('UmbrellaLogic', "umbrella_logic")
+    setFromSlotData('LogicDifficulty', "difficulty", 1)
+    setFromSlotData('CTRLogic', "ctrlogic")
+    setFromSlotData('NoPaintingSkips', "no_painting_skips", 1)
+    setFromSlotData('NoTicketSkips', "ticket_skips")
+    setFromSlotData('BadgeSellerItemCount', "@Shops/Badge Seller/Scammed")
+    setFromSlotData('Hat_NPC_NyakuzaShop_0', "@Nyakuza Shops/Main Station Thugs/Thug A")
+    setFromSlotData('Hat_NPC_NyakuzaShop_1', "@Nyakuza Shops/Main Station Thugs/Thug B")
+    setFromSlotData('Hat_NPC_NyakuzaShop_2', "@Nyakuza Shops/Main Station Thugs/Thug C")
+    setFromSlotData('Hat_NPC_NyakuzaShop_13', "@Nyakuza Shops/Yellow Overpass Thug A/Scammed")
+    setFromSlotData('Hat_NPC_NyakuzaShop_5', "@Nyakuza Shops/Yellow Overpass Thug B/Scammed")
+    setFromSlotData('Hat_NPC_NyakuzaShop_14', "@Nyakuza Shops/Yellow Overpass Thug C/Scammed")
+    setFromSlotData('Hat_NPC_NyakuzaShop_4', "@Nyakuza Shops/Green Clean Thug A/Scammed")
+    setFromSlotData('Hat_NPC_NyakuzaShop_6', "@Nyakuza Shops/Green Clean Thug B/Scammed")
+    setFromSlotData('Hat_NPC_NyakuzaShop_7', "@Nyakuza Shops/Bluefin Tunnel Thug/Scammed")
+    setFromSlotData('Hat_NPC_NyakuzaShop_12', "@Nyakuza Shops/Pink Paw Station Thug/Scammed")
 
     -- set hash table to randomized acts
     for chapter_number = 1,7 do
