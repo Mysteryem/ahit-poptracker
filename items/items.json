@@ -370,6 +370,12 @@
     ]
   },
   {
+    "name": "Tasksanity",
+    "type": "toggle",
+    "initial_active_state": true,
+    "codes": "tasksanity"
+  },
+  {
     "name": "Chapter 1 Cost",
     "type": "consumable",
     "codes": "chapter_1_cost"
