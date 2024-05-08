@@ -2,7 +2,7 @@
   {
     "name": "Mafia Town",
     "access_rules": [
-      "@Mafia Logic/Can access Mafia Town (HUMT)"
+      "@Mafia Logic/Can access Mafia Town"
     ],
     "children": [
       {
@@ -45,6 +45,242 @@
         ]
       },
       {
+        "name": "The Golden Vault",
+        "sections": [
+          {
+            "name": "Time Piece",
+            "access_rules": [
+              "@Mafia Logic/Can access Act 7 - The Golden Vault"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 465,
+            "y": 368
+          }
+        ]
+      },
+      {
+        "name": "Old Man 2",
+        "access_rules": [
+          "@Mafia Logic/Can access Old Men"
+        ],
+        "sections": [
+          {
+            "name": "Seaside Spaghetti"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 740,
+            "y": 440
+          }
+        ]
+      },
+      {
+        "name": "Old Man",
+        "access_rules": [
+          "@Mafia Logic/Can access Old Men"
+        ],
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 540,
+            "y": 285
+          }
+        ]
+      },
+      {
+        "name": "Blue Vault",
+        "sections": [
+          {
+            "name": "Vault"
+          },
+          {
+            "name": "Brewing Crate",
+            "access_rules": [
+              "brewer"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 460,
+            "y": 525
+          }
+        ]
+      },
+      {
+        "name": "Green Vault",
+        "sections": [
+          {
+            "name": "Token"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 310,
+            "y": 510
+          }
+        ]
+      },
+      {
+        "name": "Red Vault",
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 630,
+            "y": 385
+          }
+        ]
+      },
+      {
+        "name": "Plaza Under Boxes",
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 435,
+            "y": 480
+          }
+        ]
+      },
+      {
+        "name": "Small Boat",
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 850,
+            "y": 320
+          }
+        ]
+      },
+      {
+        "name": "Staircase Pon Cluster",
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 432,
+            "y": 561
+          }
+        ]
+      },
+      {
+        "name": "Palm Tree",
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 245,
+            "y": 55
+          }
+        ]
+      },
+      {
+        "name": "Port",
+        "sections": [
+          {
+            "name": "Relic"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 760,
+            "y": 460
+          }
+        ]
+      },
+      {
+        "name": "Docks Chest",
+        "sections": [
+          {
+            "name": "Relic"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 273,
+            "y": 630
+          }
+        ]
+      },
+      {
+        "name": "Ice Hat Cage",
+        "access_rules": [
+          "ice"
+        ],
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 780,
+            "y": 355
+          }
+        ]
+      },
+      {
+        "name": "Hidden Buttons",
+        "sections": [
+          {
+            "name": "Grab a beach ball"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 270,
+            "y": 230
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Mafia Town (HUMT)",
+    "access_rules": [
+      "@Mafia Logic/Can access Mafia Town (HUMT)"
+    ],
+    "children": [
+      {
         "name": "Mafia HQ",
         "sections": [
           {
@@ -81,7 +317,7 @@
             "name": "Behind HQ Chest",
             "access_rules": [
               "@Mafia Logic/Can access Act 4 - Down With the Mafia!",
-              "@Mafia Town/Mafia Geek/Heating Up Mafia Town",
+              "@Mafia Town (HUMT)/Mafia Geek/Heating Up Mafia Town",
               "@Mafia Logic/Can access Act 5 - Cheating the Race",
               "@Mafia Logic/Can access Act 7 - The Golden Vault"
             ]
@@ -137,24 +373,6 @@
             "map": "mafiatown",
             "x": 415,
             "y": 261
-          }
-        ]
-      },
-      {
-        "name": "The Golden Vault",
-        "sections": [
-          {
-            "name": "Time Piece",
-            "access_rules": [
-              "@Mafia Logic/Can access Act 7 - The Golden Vault"
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "mafiatown",
-            "x": 465,
-            "y": 368
           }
         ]
       },
@@ -237,21 +455,6 @@
         ]
       },
       {
-        "name": "Red Vault",
-        "sections": [
-          {
-            "name": "Yarn"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "mafiatown",
-            "x": 630,
-            "y": 385
-          }
-        ]
-      },
-      {
         "name": "Dweller Boxes",
         "sections": [
           {
@@ -263,24 +466,6 @@
             "map": "mafiatown",
             "x": 655,
             "y": 445
-          }
-        ]
-      },
-      {
-        "name": "Old Man",
-        "access_rules": [
-          "@Mafia Logic/Can access Old Men"
-        ],
-        "sections": [
-          {
-            "name": "Yarn"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "mafiatown",
-            "x": 540,
-            "y": 285
           }
         ]
       },
@@ -315,27 +500,6 @@
             "map": "mafiatown",
             "x": 510,
             "y": 255
-          }
-        ]
-      },
-      {
-        "name": "Blue Vault",
-        "sections": [
-          {
-            "name": "Vault"
-          },
-          {
-            "name": "Brewing Crate",
-            "access_rules": [
-              "brewer"
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "mafiatown",
-            "x": 460,
-            "y": 525
           }
         ]
       },
@@ -378,21 +542,6 @@
         ]
       },
       {
-        "name": "Plaza Under Boxes",
-        "sections": [
-          {
-            "name": "Yarn"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "mafiatown",
-            "x": 435,
-            "y": 480
-          }
-        ]
-      },
-      {
         "name": "Yellow Sphere Building Chest",
         "sections": [
           {
@@ -423,21 +572,6 @@
         ]
       },
       {
-        "name": "Small Boat",
-        "sections": [
-          {
-            "name": "Yarn"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "mafiatown",
-            "x": 850,
-            "y": 320
-          }
-        ]
-      },
-      {
         "name": "Above Boats",
         "access_rules": [
           "expert",
@@ -455,54 +589,6 @@
             "map": "mafiatown",
             "x": 887,
             "y": 325
-          }
-        ]
-      },
-      {
-        "name": "Staircase Pon Cluster",
-        "sections": [
-          {
-            "name": "Yarn"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "mafiatown",
-            "x": 432,
-            "y": 561
-          }
-        ]
-      },
-      {
-        "name": "Old Man 2",
-        "access_rules": [
-          "@Mafia Logic/Can access Old Men"
-        ],
-        "sections": [
-          {
-            "name": "Seaside Spaghetti"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "mafiatown",
-            "x": 740,
-            "y": 440
-          }
-        ]
-      },
-      {
-        "name": "Palm Tree",
-        "sections": [
-          {
-            "name": "Yarn"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "mafiatown",
-            "x": 245,
-            "y": 55
           }
         ]
       },
@@ -544,24 +630,6 @@
             "map": "mafiatown",
             "x": 280,
             "y": 350
-          }
-        ]
-      },
-      {
-        "name": "Ice Hat Cage",
-        "access_rules": [
-          "ice"
-        ],
-        "sections": [
-          {
-            "name": "Yarn"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "mafiatown",
-            "x": 780,
-            "y": 355
           }
         ]
       },
@@ -664,51 +732,6 @@
         ]
       },
       {
-        "name": "Port",
-        "sections": [
-          {
-            "name": "Relic"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "mafiatown",
-            "x": 760,
-            "y": 460
-          }
-        ]
-      },
-      {
-        "name": "Docks Chest",
-        "sections": [
-          {
-            "name": "Relic"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "mafiatown",
-            "x": 273,
-            "y": 630
-          }
-        ]
-      },
-      {
-        "name": "Green Vault",
-        "sections": [
-          {
-            "name": "Token"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "mafiatown",
-            "x": 310,
-            "y": 510
-          }
-        ]
-      },
-      {
         "name": "Behind Faucet",
         "sections": [
           {
@@ -739,21 +762,6 @@
             "map": "mafiatown",
             "x": 839,
             "y": 513
-          }
-        ]
-      },
-      {
-        "name": "Hidden Buttons",
-        "sections": [
-          {
-            "name": "Grab a beach ball"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "mafiatown",
-            "x": 270,
-            "y": 230
           }
         ]
       },
