@@ -92,9 +92,12 @@ function completedActAt(entrance)
     local act_at_entrance = chapter_act_info[entrance_info.act_name]
     local completion_location_section = act_at_entrance.vanilla_act_completion_location_section
 
-    -- Free roam acts have no act completion location and are always considered complete.
+    -- Free roam acts have no act completion location and are always considered complete when their entrance is
+    -- accessible.
     if completion_location_section == nil then
-        return true
+        local entrance_location = Tracker:FindObjectForCode(entrance_info.entrance_location_section)
+        local entrance_accessibility = entrance_location.AccessibilityLevel
+        return entrance_accessibility == AccessibilityLevel.Normal or entrance_accessibility == AccessibilityLevel.Cleared
     end
 
     -- todo: If AP is disabled, should we get act completion state from location instead?
