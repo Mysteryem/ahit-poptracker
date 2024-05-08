@@ -209,6 +209,8 @@ function onClear(slot_data)
     setFromSlotData('CTRLogic', "ctrlogic")
     setFromSlotData('NoPaintingSkips', "no_painting_skips", 1)
     setFromSlotData('NoTicketSkips', "ticket_skips")
+    setFromSlotData('ExcludeTour', "exclude_tour_option")
+
     setFromSlotData('BadgeSellerItemCount', "@Shops/Badge Seller/Scammed")
     setFromSlotData('Hat_NPC_NyakuzaShop_0', "@Nyakuza Shops/Main Station Thugs/Thug A")
     setFromSlotData('Hat_NPC_NyakuzaShop_1', "@Nyakuza Shops/Main Station Thugs/Thug B")

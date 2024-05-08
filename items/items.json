@@ -352,19 +352,19 @@
   {
     "name": "Exclude Tour Rift",
     "type": "progressive",
-    "codes": "tour_option",
+    "codes": "exclude_tour_option",
     "allow_disabled": false,
     "loop": false,
     "stages": [
       {
         "img": "images/settings/pages.png",
         "img_mods": "@disabled",
-        "codes": "tour_enabled",
+        "codes": "exclude_tour_disabled",
         "inherit_codes": false
       },
       {
         "img": "images/settings/pages.png",
-        "codes": "tour_disabled",
+        "codes": "exclude_tour_enabled",
         "inherit_codes": false
       }
     ]
