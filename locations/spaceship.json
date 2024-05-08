@@ -82,12 +82,15 @@
       {
         "name": "The Gallery",
         "access_rules": [
-          "brewer, @Spaceship Logic/Can access Time Rift - Gallery",
-          "moderate, @Spaceship Logic/Can access Time Rift - Gallery"
+          "@Spaceship Logic/Can access Time Rift - Gallery"
         ],
         "sections": [
           {
-            "name": "Time Rift"
+            "name": "Time Rift",
+            "access_rules": [
+              "brewer",
+              "moderate"
+            ]
           }
         ],
         "map_locations": [
