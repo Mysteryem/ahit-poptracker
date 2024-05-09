@@ -1,7 +1,7 @@
 {
   "name": "A Hat in Time AP Tracker",
   "package_uid": "ahit-mysteryem",
-  "package_version": "1.0.1",
+  "package_version": "1.1.0",
   "platform": "pc",
   "variants": {
     "standard": {
