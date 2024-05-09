@@ -34,10 +34,10 @@ ITEM_MAPPING = {
     -- [2000300026] = {"Hover Badge", "toggle"},
     [2000300027] = {"hookshot", "toggle"},
     -- [2000300028] = {"Item Magnet Badge", "toggle"},
-    [2000300029] = {"nobonk", "toggle"},
+    -- [2000300029] = {"nobonk", "toggle"},
     -- [2000300030] = {"Compass Badge", "toggle"},
     [2000300031] = {"scooter", "toggle"},
-    -- [2000300043] = {"Badge Pin", "toggle"},
+    [2000300043] = {"badge_pin", "toggle"},
 
     -- Other
     -- [2000300032] = {"Rift Token", "toggle"},

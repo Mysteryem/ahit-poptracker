@@ -42,10 +42,11 @@
     "codes": "scooter"
   },
   {
-    "name": "No Bonk Badge",
-    "type": "toggle",
-    "img": "images/items/no_bonk_badge.png",
-    "codes": "nobonk"
+    "name": "Badge Pin",
+    "type": "consumable",
+    "img": "images/items/badge_pin.png",
+    "max_quantity": 2,
+    "codes": "badge_pin"
   },
   {
     "name": "Umbrella",
