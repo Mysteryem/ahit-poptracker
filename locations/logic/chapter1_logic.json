@@ -17,7 +17,7 @@
       {
         "name": "Can access Act 3 - She Came from Outer Space",
         "access_rules": [
-          "$canAccessAct|chapter1_barrelboss"
+          "$canAccessAct|chapter1_cannon_repair"
         ]
       },
       {

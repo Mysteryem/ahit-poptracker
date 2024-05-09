@@ -35,7 +35,7 @@
       {
         "name": "Can access Finale - Your Contract has Expired",
         "access_rules": [
-          "$canAccessAct|subcon_village_icewall"
+          "$canAccessAct|snatcher_boss"
         ]
       },
       {
