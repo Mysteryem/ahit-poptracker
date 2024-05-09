@@ -1,6 +1,14 @@
 {
     "versions": [
         {
+            "package_version": "1.1.2",
+            "download_url": "https://github.com/Mysteryem/ahit-poptracker/archive/refs/tags/v1.1.2.zip",
+            "sha256": "f84e32bed201a7ad5e5853aa4fc3addae0ac559bee03d6e88ef99c015669cef8",
+            "changelog": [
+                "Fixed She Came from Outer Space and Your contract has Expired checking for access to the wrong acts."
+            ]
+        },
+        {
             "package_version": "1.1.1",
             "download_url": "https://github.com/Mysteryem/ahit-poptracker/archive/refs/tags/v1.1.1.zip",
             "sha256": "0baf873ad67d1277c92955e2d861938c026f73c50917665a752dcee3d3161050",
