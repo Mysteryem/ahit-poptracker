@@ -1,6 +1,18 @@
 {
     "versions": [
         {
+            "package_version": "1.1.1",
+            "download_url": "https://github.com/Mysteryem/ahit-poptracker/archive/refs/tags/v1.1.1.zip",
+            "sha256": "0baf873ad67d1277c92955e2d861938c026f73c50917665a752dcee3d3161050",
+            "changelog": [
+                "Added the Arctic Cruise map",
+                "The ExcludeTour, Tasksanity, EnableDLC1 and EnableDLC2 options are now read when connecting to AP",
+                "Logic fixes to Time Rifts",
+                "Logic fixes to Free Roam act completion",
+                "Logic fixes to Spaceship, Mafia Town, Battle of the Birds, Subcon Forest and Alpine Skyline"
+            ]
+        },
+        {
             "package_version": "1.0.1",
             "download_url": "https://github.com/Mysteryem/ahit-poptracker/archive/refs/tags/v1.0.1.zip",
             "sha256": "fbf7555c19013cd205b46eb34c50643709d031770542ac5d4ea5eb21c99b73dc",
