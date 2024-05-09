@@ -100,25 +100,24 @@ function onClear(slot_data)
     end
     -- reset items
     for _, v in pairs(ITEM_MAPPING) do
-        if v[1] and v[2] then
-            if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-                print(string.format("onClear: clearing item %s of type %s", v[1], v[2]))
-            end
-            local obj = Tracker:FindObjectForCode(v[1])
-            if obj then
-                if v[2] == "toggle" then
-                    obj.Active = false
-                elseif v[2] == "progressive" then
-                    obj.CurrentStage = 0
-                    obj.Active = false
-                elseif v[2] == "consumable" then
-                    obj.AcquiredCount = 0
-                elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-                    print(string.format("onClear: unknown item type %s for code %s", v[2], v[1]))
-                end
+        if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+            print(string.format("onClear: clearing item %s", v))
+        end
+        local obj = Tracker:FindObjectForCode(v[1])
+        if obj then
+            local obj_type = obj.Type
+            if obj_type == "toggle" then
+                obj.Active = false
+            elseif obj_type == "progressive" then
+                obj.CurrentStage = 0
+                obj.Active = false
+            elseif obj_type == "consumable" then
+                obj.AcquiredCount = 0
             elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-                print(string.format("onClear: could not find object for code %s", v[1]))
+                print(string.format("onClear: unknown item type %s for code %s", obj_type, v))
             end
+        elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+            print(string.format("onClear: could not find object for code %s", v))
         end
     end
 
@@ -402,31 +401,32 @@ function onItem(index, item_id, item_name, player_number)
     local is_local = player_number == Archipelago.PlayerNumber
     CUR_INDEX = index;
     local v = ITEM_MAPPING[item_id]
-    if not v or not v[1] then
+    if not v then
         --print(string.format("onItem: could not find item mapping for id %s", item_id))
         return
     end
-    local obj = Tracker:FindObjectForCode(v[1])
+    local obj = Tracker:FindObjectForCode(v)
     if obj then
-        if v[2] == "toggle" then
+        local obj_type = obj.Type
+        if obj_type == "toggle" then
             obj.Active = true
-        elseif v[2] == "progressive" then
+        elseif obj_type == "progressive" then
             if obj.Active then
                 obj.CurrentStage = obj.CurrentStage + 1
             else
                 obj.Active = true
             end
-        elseif v[2] == "consumable" then
+        elseif obj_type == "consumable" then
             obj.AcquiredCount = obj.AcquiredCount + obj.Increment
-            if v[1] == 'yarn' then --extra handling for hat autotracking
+            if v == 'yarn' then --extra handling for hat autotracking
                 updateYarn(obj)
             end
         elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-            print(string.format("onItem: unknown item type %s for code %s", v[2], v[1]))
+            print(string.format("onItem: unknown item type %s for code %s", obj_type, v))
         end
-        --print("onItem: Updated item check "..v[1])
+        --print("onItem: Updated item check "..v)
     else
-        print(string.format("onItem: could not find object for code %s", v[1]))
+        print(string.format("onItem: could not find object for code %s", v))
     end
 end
 
