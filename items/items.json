@@ -327,21 +327,25 @@
   {
     "name": "Subcon Well Contract",
     "type": "toggle",
+    "img": "images/items/contract_subcon_well.png",
     "codes": "wellcontract"
   },
   {
     "name": "Toilet of Doom Contract",
     "type": "toggle",
+    "img": "images/items/contract_toilet_of_doom.png",
     "codes": "toiletcontract"
   },
   {
     "name": "Queen Vanessa's Manor Contract",
     "type": "toggle",
+    "img": "images/items/contract_vanessas_manor.png",
     "codes": "manorcontract"
   },
   {
     "name": "Mail Delivery Service Contract",
     "type": "toggle",
+    "img": "images/items/contract_mail_delivery.png",
     "codes": "mailcontract"
   },
   {

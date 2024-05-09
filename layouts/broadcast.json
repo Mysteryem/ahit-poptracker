@@ -19,6 +19,10 @@
           },
           {
             "type": "layout",
+            "key": "contracts_grid"
+          },
+          {
+            "type": "layout",
             "key": "ziplines_grid"
           },
           {
