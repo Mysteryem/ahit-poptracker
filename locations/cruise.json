@@ -70,7 +70,7 @@
           {
             "name": "Toilet",
             "access_rules": [
-              "@Cruise Logic/Can access Act 1 - Bon Voyage!",
+              "hookshot, @Cruise Logic/Can access Act 1 - Bon Voyage!",
               "@Cruise Logic/Can access Act 2 - Ship Shape"
             ],
             "sections": [
