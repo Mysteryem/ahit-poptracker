@@ -103,7 +103,7 @@ function onClear(slot_data)
         if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
             print(string.format("onClear: clearing item %s", v))
         end
-        local obj = Tracker:FindObjectForCode(v[1])
+        local obj = Tracker:FindObjectForCode(v)
         if obj then
             local obj_type = obj.Type
             if obj_type == "toggle" then
