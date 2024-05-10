@@ -9,7 +9,7 @@
         "name": "Acts",
         "access_rules": [
           "dweller,brewer",
-          "hard,ice",
+          "moderate,ice",
           "expert"
         ],
         "map_locations": [
