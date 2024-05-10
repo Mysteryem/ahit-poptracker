@@ -54,63 +54,7 @@
     "img": "images/items/umbrella.png",
     "codes": "umbrella"
   },
-  {
-    "name": "Shuffle Storybook Pages",
-    "type": "toggle",
-    "img": "images/settings/pages.png",
-    "codes": "pages"
-  },
-  {
-    "name": "CTR with Sprint Hat",
-    "type": "progressive",
-    "codes": "ctrlogic",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/settings/with_timestop.png",
-        "codes": "withtimestop"
-      },
-      {
-        "img": "images/settings/with_scooter.png",
-        "codes": "withscooter"
-      },
-      {
-        "img": "images/settings/with_sprint.png",
-        "codes": "withsprint"
-      },
-      {
-        "img": "images/settings/with_nothing.png",
-        "codes": "withnothing"
-      }
-    ]
-  },
-  {
-    "name": "Shuffle Contracts",
-    "type": "toggle",
-    "img": "images/settings/contract.png",
-    "codes": "contract"
-  },
-  {
-    "name": "Umbrella Logic",
-    "type": "progressive",
-    "codes": "umbrella_logic",
-    "loop": false,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/settings/umbrella_logic.png",
-        "img_mods": "@disabled",
-        "codes": "umbrella_off"
-      },
-      {
-        "img": "images/settings/umbrella_logic.png",
-        "codes": "umbrella_on",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
+    {
     "name": "Shuffle Paintings",
     "type": "progressive",
     "codes": "paintings",
@@ -154,50 +98,6 @@
     "type": "consumable",
     "img": "images/items/time_piece.png",
     "codes": "timepiece"
-  },
-  {
-    "name": "Difficulty",
-    "codes": "difficulty",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/settings/normal.png",
-        "codes": "normal"
-      },
-      {
-        "img": "images/settings/moderate.png",
-        "codes": "moderate"
-      },
-      {
-        "img": "images/settings/hard.png",
-        "codes": "hard"
-      },
-      {
-        "img": "images/settings/expert.png",
-        "codes": "expert"
-      }
-    ]
-  },
-  {
-    "name": "Shuffle Ziplines",
-    "type": "progressive",
-    "codes": "ziplines_logic",
-    "loop": false,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/settings/ziplines.png",
-        "img_mods": "@disabled",
-        "codes": "ziplines_off"
-      },
-      {
-        "img": "images/settings/ziplines.png",
-        "codes": "ziplines_on",
-        "inherit_codes": false
-      }
-    ]
   },
   {
     "name": "Twilight Bell Zipline",
@@ -246,48 +146,6 @@
     "type": "toggle",
     "img": "images/tickets/MetroTicket_Green.png",
     "codes": "greenticket"
-  },
-  {
-    "name": "No Painting Skips",
-    "type": "progressive",
-    "codes": "no_painting_skips",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/settings/soul.png",
-        "img_mods": "@disabled",
-        "codes": "no_painting_skips_off"
-      },
-      {
-        "img": "images/settings/soul.png",
-        "codes": "no_painting_skips_on",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "No Ticket Skips",
-    "type": "progressive",
-    "codes": "ticket_skips",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/settings/MetroGuide.png",
-        "img_mods": "@disabled",
-        "codes": "ticket_skips_off",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/settings/MetroGuide.png",
-        "codes": "ticket_skips_on",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/settings/MetroFood_Burger.png",
-        "codes": "ticket_skips_rush_hour",
-        "inherit_codes": false
-      }
-    ]
   },
   {
     "name": "Burger Relic",
@@ -348,85 +206,5 @@
     "type": "toggle",
     "img": "images/items/contract_mail_delivery.png",
     "codes": "mailcontract"
-  },
-  {
-    "name": "Force Update",
-    "type": "toggle",
-    "codes": "update"
-  },
-  {
-    "name": "Exclude Tour Rift",
-    "type": "progressive",
-    "codes": "exclude_tour_option",
-    "allow_disabled": false,
-    "loop": false,
-    "stages": [
-      {
-        "img": "images/settings/pages.png",
-        "img_mods": "@disabled",
-        "codes": "exclude_tour_disabled",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/settings/pages.png",
-        "codes": "exclude_tour_enabled",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Tasksanity",
-    "type": "toggle",
-    "initial_active_state": true,
-    "codes": "tasksanity"
-  },
-  {
-    "name": "DLC 1",
-    "type": "toggle",
-    "img": "images/icons/Cruise_Seal.png",
-    "initial_active_state": true,
-    "codes": "dlc1"
-  },
-  {
-    "name": "DLC 2",
-    "type": "toggle",
-    "img": "images/icons/Nyakuza_Emblem.png",
-    "initial_active_state": true,
-    "codes": "dlc2"
-  },
-  {
-    "name": "Chapter 1 Cost",
-    "type": "consumable",
-    "codes": "chapter_1_cost"
-  },
-  {
-    "name": "Chapter 2 Cost",
-    "type": "consumable",
-    "codes": "chapter_2_cost"
-  },
-  {
-    "name": "Chapter 3 Cost",
-    "type": "consumable",
-    "codes": "chapter_3_cost"
-  },
-  {
-    "name": "Chapter 4 Cost",
-    "type": "consumable",
-    "codes": "chapter_4_cost"
-  },
-  {
-    "name": "Chapter 5 Cost",
-    "type": "consumable",
-    "codes": "chapter_5_cost"
-  },
-  {
-    "name": "Chapter 6 Cost",
-    "type": "consumable",
-    "codes": "chapter_6_cost"
-  },
-  {
-    "name": "Chapter 7 Cost",
-    "type": "consumable",
-    "codes": "chapter_7_cost"
   }
 ]

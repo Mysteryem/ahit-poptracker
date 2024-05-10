@@ -19,6 +19,8 @@ ScriptHost:LoadScript("scripts/logic/logic.lua")
 
 -- Items
 Tracker:AddItems("items/items.json")
+Tracker:AddItems("items/settings.json") -- Usually set by yaml options and received from slot data
+Tracker:AddItems("items/internal.json") -- Not intended to be shown in UI
 
 -- Maps
 Tracker:AddMaps("maps/maps.json")
