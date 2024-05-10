@@ -56,7 +56,8 @@
           {
             "name": "Yarn",
             "access_rules": [
-              "hookshot"
+              "hookshot",
+              "expert"
             ]
           }
         ],
@@ -74,7 +75,8 @@
           {
             "name": "Yarn",
             "access_rules": [
-              "hookshot"
+              "hookshot",
+              "expert"
             ]
           }
         ],
@@ -92,7 +94,8 @@
           {
             "name": "Yarn",
             "access_rules": [
-              "hookshot"
+              "hookshot",
+              "expert"
             ]
           }
         ],
@@ -110,7 +113,8 @@
           {
             "name": "Yarn",
             "access_rules": [
-              "hookshot"
+              "hookshot",
+              "expert"
             ]
           }
         ],
@@ -128,7 +132,8 @@
           {
             "name": "Yarn",
             "access_rules": [
-              "hookshot"
+              "hookshot",
+              "expert"
             ]
           }
         ],
@@ -146,7 +151,8 @@
           {
             "name": "Yarn",
             "access_rules": [
-              "hookshot"
+              "hookshot",
+              "expert"
             ]
           }
         ],
@@ -164,7 +170,8 @@
           {
             "name": "Relic",
             "access_rules": [
-              "hookshot"
+              "hookshot",
+              "expert"
             ]
           }
         ],
@@ -182,7 +189,8 @@
           {
             "name": "Time Piece",
             "access_rules": [
-              "hookshot"
+              "hookshot",
+              "expert"
             ]
           }
         ],
