@@ -1,0 +1,28 @@
+{
+  "settings_popup": {
+    "type": "container",
+    "background": "#000000",
+    "content": {
+      "type": "dock",
+      "dropshadow": true,
+      "content": [
+        {
+          "type": "dock",
+          "dock": "top",
+          "v_alignment": "stretch",
+          "content": [
+            {
+              "type": "group",
+              "header": "Settings",
+              "dock": "Right",
+              "content": {
+                "type": "layout",
+                "key": "settings_grid"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
