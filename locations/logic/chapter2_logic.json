@@ -54,7 +54,9 @@
       {
         "name": "Can access Dead Bird Studio - Post Elevator Area",
         "access_rules": [
-          "@General Logic/Can Hit, @DBS Logic/Can access Act 1 - Dead Bird Studio",
+          "normal, umbrella_off, umbrella",
+          "normal, umbrella_off, brewer",
+          "moderate, @General Logic/Can Hit, @DBS Logic/Can access Act 1 - Dead Bird Studio",
           "expert, @DBS Logic/Can access Dead Bird Studio - Elevator Area"
         ]
       }
