@@ -59,7 +59,7 @@
     "name": "Difficulty",
     "codes": "difficulty",
     "type": "progressive",
-    "loop": true,
+    "loop": false,
     "allow_disabled": false,
     "stages": [
       {
