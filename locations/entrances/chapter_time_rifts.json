@@ -18,7 +18,7 @@
           {
             "name": "TimeRift_Cave_Mafia",
             "access_rules": [
-              "burgerrelic:2"
+              "burgerrelic_complete"
             ]
           },
           {
@@ -52,7 +52,7 @@
           {
             "name": "TimeRift_Cave_BirdBasement",
             "access_rules": [
-              "trainrelic:2"
+              "trainrelic_complete"
             ]
           }
         ]
@@ -116,7 +116,7 @@
           {
             "name": "TimeRift_Cave_Raccoon",
             "access_rules": [
-              "uforelic:4, @Subcon Logic/Green Firewall"
+              "uforelic_complete, @Subcon Logic/Green Firewall"
             ]
           },
           {
@@ -146,7 +146,7 @@
           {
             "name": "TimeRift_Cave_Alps",
             "access_rules": [
-              "crayonrelic:4, @Alpine Logic/Can access central Alpine Area"
+              "crayonrelic_complete, @Alpine Logic/Can access central Alpine Area"
             ]
           },
           {
@@ -179,7 +179,7 @@
           {
             "name": "Cruise_CaveRift_Aquarium",
             "access_rules": [
-              "cakerelic:4, @Cruise Logic/Can access Act 1 - Bon Voyage!"
+              "cakerelic_complete, @Cruise Logic/Can access Act 1 - Bon Voyage!"
             ]
           },
           {
@@ -206,7 +206,7 @@
           {
             "name": "Metro_CaveRift_RumbiFactory",
             "access_rules": [
-              "jewelryrelic:2, @Nyakuza Logic/Can access Free Roam"
+              "jewelryrelic_complete, @Nyakuza Logic/Can access Free Roam"
             ]
           }
         ]

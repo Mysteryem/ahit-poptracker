@@ -55,6 +55,15 @@
                 "type": "layout",
                 "key": "tickets_grid"
               }
+            },
+            {
+              "type": "group",
+              "header": "Relics",
+              "dock": "left",
+              "content": {
+                "type": "layout",
+                "key": "relics_grid"
+              }
             }
           ]
         },

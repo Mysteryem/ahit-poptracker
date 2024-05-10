@@ -149,39 +149,172 @@
   },
   {
     "name": "Burger Relic",
-    "type": "consumable",
+    "type": "progressive",
     "codes": "burgerrelic",
-    "max_quantity": 2
+    "loop": false,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/relic_box.png",
+        "img_mods": "@disabled",
+        "codes": "burgerrelic0"
+      },
+      {
+        "img": "images/items/burgerrelic1.png",
+        "img_mods": "@disabled",
+        "codes": "burgerrelic1"
+      },
+      {
+        "img": "images/items/burgerrelic1.png",
+        "img_mods": "overlay|images/items/burgerrelic2.png",
+        "codes": "burgerrelic_complete"
+      }
+    ]
   },
   {
     "name": "Train Relic",
-    "type": "consumable",
+    "type": "progressive",
     "codes": "trainrelic",
-    "max_quantity": 2
+    "loop": false,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/relic_box.png",
+        "img_mods": "@disabled",
+        "codes": "trainrelic0"
+      },
+      {
+        "img": "images/items/trainrelic1.png",
+        "img_mods": "@disabled",
+        "codes": "trainrelic1"
+      },
+      {
+        "img": "images/items/trainrelic_complete.png",
+        "codes": "trainrelic_complete"
+      }
+    ]
   },
   {
     "name": "UFO Relic",
-    "type": "consumable",
+    "type": "progressive",
     "codes": "uforelic",
-    "max_quantity": 4
+    "loop": false,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/relic_box.png",
+        "img_mods": "@disabled",
+        "codes": "uforelic0"
+      },
+      {
+        "img": "images/items/uforelic1.png",
+        "img_mods": "@disabled",
+        "codes": "uforelic1"
+      },
+      {
+        "img": "images/items/uforelic2.png",
+        "img_mods": "@disabled",
+        "codes": "uforelic2"
+      },
+      {
+        "img": "images/items/uforelic3.png",
+        "img_mods": "@disabled",
+        "codes": "uforelic3"
+      },
+      {
+        "img": "images/items/uforelic_complete.png",
+        "codes": "uforelic_complete"
+      }
+    ]
   },
   {
     "name": "Crayon Relic",
-    "type": "consumable",
+    "type": "progressive",
     "codes": "crayonrelic",
-    "max_quantity": 4
+    "loop": false,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/relic_box.png",
+        "img_mods": "@disabled",
+        "codes": "crayonrelic0"
+      },
+      {
+        "img": "images/items/crayonrelic1.png",
+        "img_mods": "@disabled",
+        "codes": "crayonrelic1"
+      },
+      {
+        "img": "images/items/crayonrelic2.png",
+        "img_mods": "@disabled",
+        "codes": "crayonrelic2"
+      },
+      {
+        "img": "images/items/crayonrelic3.png",
+        "img_mods": "@disabled",
+        "codes": "crayonrelic3"
+      },
+      {
+        "img": "images/items/crayonrelic_complete.png",
+        "codes": "crayonrelic_complete"
+      }
+    ]
   },
   {
     "name": "Cake Relic",
-    "type": "consumable",
+    "type": "progressive",
     "codes": "cakerelic",
-    "max_quantity": 4
+    "loop": false,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/relic_box.png",
+        "img_mods": "@disabled",
+        "codes": "cakerelic0"
+      },
+      {
+        "img": "images/items/cakerelic1.png",
+        "img_mods": "@disabled",
+        "codes": "cakerelic1"
+      },
+      {
+        "img": "images/items/cakerelic2.png",
+        "img_mods": "@disabled",
+        "codes": "cakerelic2"
+      },
+      {
+        "img": "images/items/cakerelic3.png",
+        "img_mods": "@disabled",
+        "codes": "cakerelic3"
+      },
+      {
+        "img": "images/items/cakerelic_complete.png",
+        "codes": "cakerelic_complete"
+      }
+    ]
   },
   {
     "name": "Jewelry Relic",
-    "type": "consumable",
+    "type": "progressive",
     "codes": "jewelryrelic",
-    "max_quantity": 2
+    "loop": false,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/relic_box.png",
+        "img_mods": "@disabled",
+        "codes": "jewelryrelic0"
+      },
+      {
+        "img": "images/items/jewelryrelic1.png",
+        "img_mods": "@disabled",
+        "codes": "jewelryrelic1"
+      },
+      {
+        "img": "images/items/jewelryrelic_complete.png",
+        "codes": "jewelryrelic_complete"
+      }
+    ]
   },
   {
     "name": "Subcon Well Contract",

@@ -106,5 +106,23 @@
         ]
       }
     ]
+  },
+  "relics_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "2,2",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "1, 4",
+        "item_size": 4,
+        "margin": "0, 0",
+        "h_alignment": "left",
+        "rows": [
+          ["burgerrelic", "trainrelic", "uforelic"],
+          ["crayonrelic", "cakerelic", "jewelryrelic"]
+        ]
+      }
+    ]
   }
 }
