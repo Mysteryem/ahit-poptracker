@@ -62,7 +62,7 @@
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/items/paintings_off.png",
+        "img": "images/items/lock_icon.png",
         "codes": "paintings_off"
       },
       {
@@ -264,9 +264,14 @@
     "name": "Cake Relic",
     "type": "progressive",
     "codes": "cakerelic",
+    "initial_stage_idx": 1,
     "loop": false,
     "allow_disabled": false,
     "stages": [
+      {
+        "img": "images/items/lock_icon.png",
+        "codes": "cakerelic-1"
+      },
       {
         "img": "images/items/relic_box.png",
         "img_mods": "@disabled",
@@ -297,9 +302,14 @@
     "name": "Jewelry Relic",
     "type": "progressive",
     "codes": "jewelryrelic",
+    "initial_stage_idx": 1,
     "loop": false,
     "allow_disabled": false,
     "stages": [
+      {
+        "img": "images/items/lock_icon.png",
+        "codes": "jewelryrelic-1"
+      },
       {
         "img": "images/items/relic_box.png",
         "img_mods": "@disabled",
