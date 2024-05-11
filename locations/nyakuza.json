@@ -118,7 +118,7 @@
       {
         "name": "Pink Paw Station",
         "access_rules": [
-          "Nyakuza Logic/Can access upper Pink Paw Station - Missing Moderate Logic"
+          "@Nyakuza Logic/Can access upper Pink Paw Station - Missing Moderate Logic"
         ],
         "sections": [
           {
