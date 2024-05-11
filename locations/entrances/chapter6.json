@@ -1,7 +1,7 @@
 [
   {
-    "name": "Chapter6 Entrances",
-    "parent": "Chapter4 Entrances",
+    "name": "Chapter 6 Entrances",
+    "parent": "Chapter 4 Entrances",
     "access_rules": [
       "$hasTimePiecesForChapter|6"
     ],
@@ -10,29 +10,53 @@
     ],
     "children": [
       {
-        "name": "Acts",
+        "name": "Act 1 - Bon Voyage!",
         "map_locations": [
           {
             "map": "entrances",
-            "x": 392,
-            "y": 150
+            "x": 1255,
+            "y": 674
           }
         ],
         "sections": [
           {
-            "name": "Cruise_Boarding"
-          },
+            "name": ""
+          }
+        ]
+      },
+      {
+        "name": "Act 2 - Ship Shape",
+        "access_rules": [
+          "$completedActAt|Cruise_Boarding"
+        ],
+        "map_locations": [
           {
-            "name": "Cruise_Working",
-            "access_rules": [
-              "$completedActAt|Cruise_Boarding"
-            ]
-          },
+            "map": "entrances",
+            "x": 1375,
+            "y": 674
+          }
+        ],
+        "sections": [
           {
-            "name": "Cruise_Sinking",
-            "access_rules": [
-              "$completedActAt|Cruise_Working"
-            ]
+            "name": ""
+          }
+        ]
+      },
+      {
+        "name": "Finale - Rock the Boat",
+        "access_rules": [
+          "$completedActAt|Cruise_Working"
+        ],
+        "map_locations": [
+          {
+            "map": "entrances",
+            "x": 1310,
+            "y": 555
+          }
+        ],
+        "sections": [
+          {
+            "name": ""
           }
         ]
       }

@@ -1,58 +1,130 @@
 [
   {
-    "name": "Chapter1 Entrances",
+    "name": "Chapter 1 Entrances",
     "access_rules": [
       "$hasTimePiecesForChapter|1"
     ],
     "children": [
       {
-        "name": "Acts",
+        "name": "Act 1 - Welcome to Mafia Town",
+        "sections": [
+          {
+            "name": ""
+          }
+        ],
         "map_locations": [
           {
             "map": "entrances",
-            "x": 54,
-            "y": 150
+            "x": 248,
+            "y": 253
+          }
+        ]
+      },
+      {
+        "name": "Act 2 - Barrel Battle",
+        "access_rules": [
+          "$completedActAt|chapter1_tutorial"
+        ],
+        "map_locations": [
+          {
+            "map": "entrances",
+            "x": 147,
+            "y": 308
           }
         ],
         "sections": [
           {
-            "name": "chapter1_tutorial"
-          },
+            "name": ""
+          }
+        ]
+      },
+      {
+        "name": "Act 3 - She Came from Outer Space",
+        "access_rules": [
+          "@Chapter 1 Entrances/Act 2 - Barrel Battle/"
+        ],
+        "map_locations": [
           {
-            "name": "chapter1_barrelboss",
-            "access_rules": [
-              "$completedActAt|chapter1_tutorial"
-            ]
-          },
+            "map": "entrances",
+            "x": 346,
+            "y": 196
+          }
+        ],
+        "sections": [
           {
-            "name": "chapter1_cannon_repair",
-            "access_rules": [
-              "@Chapter1 Entrances/Acts/chapter1_barrelboss"
-            ]
-          },
+            "name": ""
+          }
+        ]
+      },
+      {
+        "name": "Act 4 - Down with the Mafia!",
+        "access_rules": [
+          "$completedActAt|chapter1_barrelboss,$completedActAt|chapter1_cannon_repair,"
+        ],
+        "map_locations": [
           {
-            "name": "chapter1_boss",
-            "access_rules": [
-              "$completedActAt|chapter1_barrelboss,$completedActAt|chapter1_cannon_repair,"
-            ]
-          },
+            "map": "entrances",
+            "x": 346,
+            "y": 308
+          }
+        ],
+        "sections": [
           {
-            "name": "harbor_impossible_race",
-            "access_rules": [
-              "$completedActAt|mafiatown_lava,$completedActAt|mafiatown_goldenvault,"
-            ]
-          },
+            "name": ""
+          }
+        ]
+      },
+      {
+        "name": "Act 5 - Cheating the Race",
+        "access_rules": [
+          "$completedActAt|mafiatown_lava,$completedActAt|mafiatown_goldenvault,"
+        ],
+        "map_locations": [
           {
-            "name": "mafiatown_lava",
-            "access_rules": [
-              "$completedActAt|chapter1_boss"
-            ]
-          },
+            "map": "entrances",
+            "x": 248,
+            "y": 362
+          }
+        ],
+        "sections": [
           {
-            "name": "mafiatown_goldenvault",
-            "access_rules": [
-              "@Chapter1 Entrances/Acts/mafiatown_lava"
-            ]
+            "name": ""
+          }
+        ]
+      },
+      {
+        "name": "Act 6 - Heating up Mafia Town",
+        "access_rules": [
+          "$completedActAt|chapter1_boss"
+        ],
+        "map_locations": [
+          {
+            "map": "entrances",
+            "x": 147,
+            "y": 196
+          }
+        ],
+        "sections": [
+          {
+            "name": ""
+          }
+        ]
+      },
+      {
+        "name": "Act 7 - The Golden Vault",
+        "access_rules": [
+          "@Chapter 1 Entrances/Act 6 - Heating up Mafia Town/"
+        ],
+        "map_locations": [
+          {
+            "map": "entrances",
+            "x": 248,
+            "y": 138
+          }
+        ],
+        "sections": [
+          {
+            "name": ""
           }
         ]
       }

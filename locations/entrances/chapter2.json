@@ -1,58 +1,130 @@
 [
   {
-    "name": "Chapter2 Entrances",
+    "name": "Chapter 2 Entrances",
     "access_rules": [
       "$hasTimePiecesForChapter|2"
     ],
     "children": [
       {
-        "name": "Acts",
+        "name": "Act 1 - Dead Bird Studio",
+        "sections": [
+          {
+            "name": ""
+          }
+        ],
         "map_locations": [
           {
             "map": "entrances",
-            "x": 122,
-            "y": 150
+            "x": 779,
+            "y": 331
           }
+        ]
+      },
+      {
+        "name": "Act 2 - Murder on the Owl Express",
+        "access_rules": [
+          "$completedActAt|DeadBirdStudio"
         ],
         "sections": [
           {
-            "name": "DeadBirdStudio"
-          },
+            "name": ""
+          }
+        ],
+        "map_locations": [
           {
-            "name": "chapter3_murder",
-            "access_rules": [
-              "$completedActAt|DeadBirdStudio"
-            ]
-          },
+            "map": "entrances",
+            "x": 692,
+            "y": 282
+          }
+        ]
+      },
+      {
+        "name": "Act 3 - Picture Perfect",
+        "access_rules": [
+          "@Chapter 2 Entrances/Act 2 - Murder on the Owl Express"
+        ],
+        "sections": [
           {
-            "name": "moon_camerasnap",
-            "access_rules": [
-              "@Chapter2 Entrances/Acts/chapter3_murder"
-            ]
-          },
+            "name": ""
+          }
+        ],
+        "map_locations": [
           {
-            "name": "trainwreck_selfdestruct",
-            "access_rules": [
-              "$completedActAt|chapter3_murder,$completedActAt|moon_camerasnap"
-            ]
-          },
+            "map": "entrances",
+            "x": 866,
+            "y": 282
+          }
+        ]
+      },
+      {
+        "name": "Act 4 - Train Rush",
+        "access_rules": [
+          "$completedActAt|chapter3_murder,$completedActAt|moon_camerasnap"
+        ],
+        "sections": [
           {
-            "name": "moon_parade",
-            "access_rules": [
-              "@Chapter2 Entrances/Acts/trainwreck_selfdestruct"
-            ]
-          },
+            "name": ""
+          }
+        ],
+        "map_locations": [
           {
-            "name": "award_ceremony",
-            "access_rules": [
-              "$completedActAt|trainwreck_selfdestruct,$completedActAt|moon_parade"
-            ]
-          },
+            "map": "entrances",
+            "x": 692,
+            "y": 185
+          }
+        ]
+      },
+      {
+        "name": "Act 5 - The Big Parade",
+        "access_rules": [
+          "@Chapter 2 Entrances/Act 4 - Train Rush"
+        ],
+        "sections": [
           {
-            "name": "chapter3_secret_finale",
-            "access_rules": [
-              "@Chapter2 Entrances/Acts/award_ceremony"
-            ]
+            "name": ""
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "entrances",
+            "x": 866,
+            "y": 185
+          }
+        ]
+      },
+      {
+        "name": "Finale - Award Ceremony",
+        "access_rules": [
+          "$completedActAt|trainwreck_selfdestruct,$completedActAt|moon_parade"
+        ],
+        "sections": [
+          {
+            "name": ""
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "entrances",
+            "x": 779,
+            "y": 70
+          }
+        ]
+      },
+      {
+        "name": "Secret Finale - Dead Bird Basement",
+        "access_rules": [
+          "@Chapter 2 Entrances/Finale - Award Ceremony"
+        ],
+        "sections": [
+          {
+            "name": ""
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "entrances",
+            "x": 779,
+            "y": 108
           }
         ]
       }

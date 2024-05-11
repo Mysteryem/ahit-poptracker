@@ -18,7 +18,7 @@ function Act.new(chapter, act_name, entrance_location, vanilla_act_completion_lo
     local self = setmetatable({}, Act)
     self.chapter = chapter or -1
     self.act_name = act_name or ""
-    self.entrance_location_section = "@" .. entrance_location .. "/" .. act_name
+    self.entrance_location_section = "@" .. entrance_location
     if vanilla_act_completion_location_section == nil then
         self.vanilla_act_completion_location_section = nil
     else

@@ -1,12 +1,12 @@
 [
   {
-    "name": "Chapter5 Entrances",
+    "name": "Chapter 5 Entrances",
     "access_rules": [
       "$hasTimePiecesForChapter|5"
     ],
     "children": [
       {
-        "name": "Acts",
+        "name": "Act 1 - The Finale",
         "access_rules": [
           "dweller,brewer",
           "moderate,ice",
@@ -15,13 +15,13 @@
         "map_locations": [
           {
             "map": "entrances",
-            "x": 320,
-            "y": 150
+            "x": 777,
+            "y": 677
           }
         ],
         "sections": [
           {
-            "name": "TheFinale_FinalBoss"
+            "name": ""
           }
         ]
       }

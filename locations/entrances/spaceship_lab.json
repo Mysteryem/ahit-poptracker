@@ -1,23 +1,23 @@
 [
   {
     "name": "The Lab Entrances",
-    "parent": "Chapter4 Entrances",
+    "parent": "Chapter 4 Entrances",
     "access_rules": [
       "dweller"
     ],
     "children": [
       {
-        "name": "Time Rifts",
+        "name": "Time Rift - The Lab",
         "map_locations": [
           {
             "map": "entrances",
-            "x": 71,
-            "y": 357
+            "x": 1074,
+            "y": 1102
           }
         ],
         "sections": [
           {
-            "name": "Spaceship_WaterRift_MailRoom"
+            "name": ""
           }
         ]
       }

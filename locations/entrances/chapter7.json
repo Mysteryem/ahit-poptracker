@@ -1,6 +1,6 @@
 [
   {
-    "name": "Chapter7 Entrances",
+    "name": "Chapter 7 Entrances",
     "parent": "The Lab Entrances",
     "access_rules": [
       "ice,$hasTimePiecesForChapter|7"
@@ -10,35 +10,35 @@
     ],
     "children": [
       {
-        "name": "Acts",
+        "name": "Nyakuza Metro Free Roam",
         "map_locations": [
           {
             "map": "entrances",
-            "x": 458,
-            "y": 150
+            "x": 250,
+            "y": 1108
           }
         ],
         "sections": [
           {
-            "name": "MetroFreeRoam"
+            "name": ""
           }
         ]
       },
       {
-        "name": "Boss",
+        "name": "Finale - Rush Hour",
         "access_rules": [
           "$completedNyakuzaFreeRoamActs"
         ],
         "map_locations": [
           {
             "map": "entrances",
-            "x": 458,
-            "y": 210
+            "x": 250,
+            "y": 889
           }
         ],
         "sections": [
           {
-            "name": "Metro_Escape"
+            "name": ""
           }
         ]
       }

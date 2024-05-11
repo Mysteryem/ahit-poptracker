@@ -1,23 +1,23 @@
 [
   {
     "name": "The Gallery Entrances",
-    "parent": "Chapter2 Entrances",
+    "parent": "Chapter 2 Entrances",
     "access_rules": [
       "brewer"
     ],
     "children": [
       {
-        "name": "Time Rifts",
+        "name": "Time Rift - Gallery",
         "map_locations": [
           {
             "map": "entrances",
-            "x": 71,
-            "y": 270
+            "x": 713,
+            "y": 1093
           }
         ],
         "sections": [
           {
-            "name": "Spaceship_WaterRift_Gallery"
+            "name": ""
           }
         ]
       }

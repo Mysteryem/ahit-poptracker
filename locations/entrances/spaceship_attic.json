@@ -1,26 +1,26 @@
 [
   {
     "name": "The Attic Entrances",
-    "parent": "Chapter5 Entrances",
+    "parent": "Chapter 5 Entrances",
     "children": [
       {
-        "name": "Time Rifts",
+        "name": "Time Rift - Tour",
         "access_rules": [
-          "@Chapter5 Entrances/Acts/TheFinale_FinalBoss"
+          "@Chapter 5 Entrances/Act 1 - The Finale"
+        ],
+        "visibility_rules": [
+          "exclude_tour_disabled, dlc1"
         ],
         "map_locations": [
           {
             "map": "entrances",
-            "x": 71,
-            "y": 444
+            "x": 1421,
+            "y": 1063
           }
         ],
         "sections": [
           {
-            "name": "TimeRift_Cave_Tour",
-            "visibility_rules": [
-              "exclude_tour_disabled, dlc1"
-            ]
+            "name": ""
           }
         ]
       }

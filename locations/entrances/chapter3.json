@@ -1,64 +1,112 @@
 [
   {
-    "name": "Chapter3 Entrances",
+    "name": "Chapter 3 Entrances",
     "access_rules": [
       "$hasTimePiecesForChapter|3"
     ],
     "children": [
       {
-        "name": "Acts",
+        "name": "Act 1 - Contractual Obligations",
+        "sections": [
+          {
+            "name": ""
+          }
+        ],
         "map_locations": [
           {
             "map": "entrances",
-            "x": 186,
-            "y": 150
-          }
-        ],
-        "sections": [
-          {
-            "name": "subcon_village_icewall"
-          },
-          {
-            "name": "subcon_cave",
-            "access_rules": [
-              "wellcontract"
-            ]
-          },
-          {
-            "name": "chapter2_toiletboss",
-            "access_rules": [
-              "toiletcontract"
-            ]
-          },
-          {
-            "name": "vanessa_manor_attic",
-            "access_rules": [
-              "manorcontract"
-            ]
-          },
-          {
-            "name": "subcon_maildelivery",
-            "access_rules": [
-              "mailcontract"
-            ]
+            "x": 1313,
+            "y": 252
           }
         ]
       },
       {
-        "name": "Boss",
+        "name": "Act 2 - The Subcon Well",
         "access_rules": [
-          "$completedActAt|subcon_village_icewall,$completedActAt|subcon_cave,$completedActAt|chapter2_toiletboss,$completedActAt|vanessa_manor_attic,$completedActAt|subcon_maildelivery"
+          "wellcontract"
+        ],
+        "sections": [
+          {
+            "name": ""
+          }
         ],
         "map_locations": [
           {
             "map": "entrances",
-            "x": 186,
-            "y": 210
+            "x": 1313,
+            "y": 140
           }
+        ]
+      },
+      {
+        "name": "Act 3 - Toilet of Doom",
+        "access_rules": [
+          "toiletcontract"
         ],
         "sections": [
           {
-            "name": "snatcher_boss"
+            "name": ""
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "entrances",
+            "x": 1313,
+            "y": 364
+          }
+        ]
+      },
+      {
+        "name": "Act 4 - Queen Vanessa's Manor",
+        "access_rules": [
+          "manorcontract"
+        ],
+        "sections": [
+          {
+            "name": ""
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "entrances",
+            "x": 1428,
+            "y": 252
+          }
+        ]
+      },
+      {
+        "name": "Act 5 - Mail Delivery Service",
+        "access_rules": [
+          "mailcontract"
+        ],
+        "sections": [
+          {
+            "name": ""
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "entrances",
+            "x": 1198,
+            "y": 252
+          }
+        ]
+      },
+      {
+        "name": "Finale - Your Contract has Expired",
+        "access_rules": [
+          "$completedActAt|subcon_village_icewall,$completedActAt|subcon_cave,$completedActAt|chapter2_toiletboss,$completedActAt|vanessa_manor_attic,$completedActAt|subcon_maildelivery"
+        ],
+        "sections": [
+          {
+            "name": ""
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "entrances",
+            "x": 1313,
+            "y": 36
           }
         ]
       }

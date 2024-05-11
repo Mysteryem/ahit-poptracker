@@ -3,210 +3,315 @@
     "name": "Chapter Time Rift Entrances",
     "children": [
       {
-        "name": "Chapter1",
+        "name": "Chapter 1",
         "access_rules": [
           "@Mafia Logic/Can access Mafia Town (HUMT)"
         ],
-        "map_locations": [
+        "children": [
           {
-            "map": "entrances",
-            "x": 54,
-            "y": 190
-          }
-        ],
-        "sections": [
-          {
-            "name": "TimeRift_Cave_Mafia",
-            "access_rules": [
-              "burgerrelic_complete, @Mafia Logic/Can access Mafia Town"
-            ]
-          },
-          {
-            "name": "TimeRift_Water_Mafia_Easy",
+            "name": "Time Rift - Sewers",
             "access_rules": [
               "$completedActAt|chapter1_boss"
+            ],
+            "map_locations": [
+              {
+                "map": "entrances",
+                "x": 29,
+                "y": 307
+              }
+            ],
+            "sections": [
+              {
+                "name": ""
+              }
             ]
           },
           {
-            "name": "TimeRift_Water_Mafia_Hard",
+            "name": "Time Rift - Bazaar",
             "access_rules": [
               "$completedActAt|mafiatown_lava"
+            ],
+            "map_locations": [
+              {
+                "map": "entrances",
+                "x": 29,
+                "y": 163
+              }
+            ],
+            "sections": [
+              {
+                "name": ""
+              }
             ]
-          }
-        ]
-      },
-      {
-        "name": "Chapter2 - Dead Bird Studio",
-        "access_rules": [
-          "@DBS Logic/Can access Act 1 - Dead Bird Studio",
-          "@DBS Logic/Can access Secret Finale - Dead Bird Studio Basement"
-        ],
-        "map_locations": [
+          },
           {
-            "map": "entrances",
-            "x": 104,
-            "y": 190
-          }
-        ],
-        "sections": [
-          {
-            "name": "TimeRift_Cave_BirdBasement",
+            "name": "Time Rift - Mafia of Cooks",
             "access_rules": [
-              "trainrelic_complete"
+              "burgerrelic_complete, @Mafia Logic/Can access Mafia Town"
+            ],
+            "map_locations": [
+              {
+                "map": "entrances",
+                "x": 497,
+                "y": 227
+              }
+            ],
+            "sections": [
+              {
+                "name": ""
+              }
             ]
           }
         ]
       },
       {
-        "name": "Chapter2 - Murder on the Owl Express",
-        "access_rules": [
-          "@DBS Logic/Can access Act 2 - Murder on the Owl Express"
-        ],
-        "map_locations": [
+        "name": "Chapter 2",
+        "children": [
           {
-            "map": "entrances",
-            "x": 122,
-            "y": 190
-          }
-        ],
-        "sections": [
-          {
-            "name": "TimeRift_Water_TWreck_Panels",
+            "name": "Time Rift - The Owl Express",
             "access_rules": [
-              "$completedActAt|chapter3_murder,$completedActAt|moon_camerasnap"
+              "@DBS Logic/Can access Act 2 - Murder on the Owl Express, $completedActAt|chapter3_murder, $completedActAt|moon_camerasnap"
+            ],
+            "map_locations": [
+              {
+                "map": "entrances",
+                "x": 562,
+                "y": 265
+              }
+            ],
+            "sections": [
+              {
+                "name": ""
+              }
             ]
-          }
-        ]
-      },
-      {
-        "name": "Chapter2 - The Moon",
-        "access_rules": [
-          "@DBS Logic/Can access Act 3 - Picture Perfect",
-          "@DBS Logic/Can access Act 5 - The Big Parade"
-        ],
-        "map_locations": [
+          },
           {
-            "map": "entrances",
-            "x": 140,
-            "y": 190
-          }
-        ],
-        "sections": [
-          {
-            "name": "TimeRift_Water_TWreck_Parade",
+            "name": "Time Rift - The Moon",
             "access_rules": [
-              "$completedActAt|trainwreck_selfdestruct,$completedActAt|moon_parade"
+              "@DBS Logic/Can access Act 3 - Picture Perfect, $completedActAt|trainwreck_selfdestruct, $completedActAt|moon_parade",
+              "@DBS Logic/Can access Act 5 - The Big Parade, $completedActAt|trainwreck_selfdestruct, $completedActAt|moon_parade"
+            ],
+            "map_locations": [
+              {
+                "map": "entrances",
+                "x": 562,
+                "y": 117
+              }
+            ],
+            "sections": [
+              {
+                "name": ""
+              }
+            ]
+          },
+          {
+            "name": "Time Rift - Dead Bird Studio",
+            "access_rules": [
+              "trainrelic_complete, @DBS Logic/Can access Act 1 - Dead Bird Studio",
+              "trainrelic_complete, @DBS Logic/Can access Secret Finale - Dead Bird Studio Basement"
+            ],
+            "map_locations": [
+              {
+                "map": "entrances",
+                "x": 1030,
+                "y": 188
+              }
+            ],
+            "sections": [
+              {
+                "name": ""
+              }
             ]
           }
         ]
       },
       {
-        "name": "Chapter3",
+        "name": "Chapter 3",
         "access_rules": [
           "@Subcon Logic/Can access main Subcon area"
         ],
-        "map_locations": [
+        "children": [
           {
-            "map": "entrances",
-            "x": 186,
-            "y": 170
-          }
-        ],
-        "sections": [
-          {
-            "name": "TimeRift_Cave_Raccoon",
-            "access_rules": [
-              "uforelic_complete, @Subcon Logic/Green Firewall"
-            ]
-          },
-          {
-            "name": "TimeRift_Water_Subcon_Hookshot",
+            "name": "Time Rift - Pipe",
             "access_rules": [
               "@Subcon Logic/Blue Firewall, $completedActAt|subcon_cave"
+            ],
+            "map_locations": [
+              {
+                "map": "entrances",
+                "x": 1096,
+                "y": 156
+              }
+            ],
+            "sections": [
+              {
+                "name": ""
+              }
             ]
           },
           {
-            "name": "TimeRift_Water_Subcon_Dwellers",
+            "name": "Time Rift - Village",
             "access_rules": [
               "@Subcon Logic/Blue Firewall, $completedActAt|vanessa_manor_attic"
+            ],
+            "map_locations": [
+              {
+                "map": "entrances",
+                "x": 1096,
+                "y": 298
+              }
+            ],
+            "sections": [
+              {
+                "name": ""
+              }
+            ]
+          },
+          {
+            "name": "Time Rift - Sleepy Subcon",
+            "access_rules": [
+              "uforelic_complete, @Subcon Logic/Green Firewall"
+            ],
+            "map_locations": [
+              {
+                "map": "entrances",
+                "x": 1564,
+                "y": 225
+              }
+            ],
+            "sections": [
+              {
+                "name": ""
+              }
             ]
           }
         ]
       },
       {
-        "name": "Chapter4",
-        "map_locations": [
+        "name": "Chapter 4",
+        "children": [
           {
-            "map": "entrances",
-            "x": 257,
-            "y": 170
-          }
-        ],
-        "sections": [
-          {
-            "name": "TimeRift_Cave_Alps",
-            "access_rules": [
-              "crayonrelic_complete, @Alpine Logic/Can access central Alpine Area"
-            ]
-          },
-          {
-            "name": "TimeRift_Water_Alp_Goats",
+            "name": "Time Rift - Twilight Bell",
             "access_rules": [
               "$completedFreeRoamAct|Alpine_Twilight"
+            ],
+            "map_locations": [
+              {
+                "map": "entrances",
+                "x": 29,
+                "y": 591
+              }
+            ],
+            "sections": [
+              {
+                "name": ""
+              }
             ]
           },
           {
-            "name": "TimeRift_Water_AlpineSkyline_Cats",
+            "name": "Time Rift - Curly Tail Trail",
             "access_rules": [
               "$completedFreeRoamAct|AlpineSkyline_Windmill"
+            ],
+            "map_locations": [
+              {
+                "map": "entrances",
+                "x": 29,
+                "y": 727
+              }
+            ],
+            "sections": [
+              {
+                "name": ""
+              }
+            ]
+          },
+          {
+            "name": "Time Rift - Alpine Skyline",
+            "access_rules": [
+              "crayonrelic_complete, @Alpine Logic/Can access central Alpine Area"
+            ],
+            "map_locations": [
+              {
+                "map": "entrances",
+                "x": 497,
+                "y": 648
+              }
+            ],
+            "sections": [
+              {
+                "name": ""
+              }
             ]
           }
         ]
       },
       {
-        "name": "Chapter6",
+        "name": "Chapter 6",
         "visibility_rules": [
           "dlc1"
         ],
-        "map_locations": [
+        "children": [
           {
-            "map": "entrances",
-            "x": 392,
-            "y": 190
-          }
-        ],
-        "sections": [
-          {
-            "name": "Cruise_CaveRift_Aquarium",
+            "name": "Time Rift - Balcony",
             "access_rules": [
-              "cakerelic_complete, @Cruise Logic/Can access Act 1 - Bon Voyage!"
+              "@Cruise Logic/Can access Ship Area, $completedActAt|Cruise_Sinking"
+            ],
+            "map_locations": [
+              {
+                "map": "entrances",
+                "x": 1110,
+                "y": 668
+              }
+            ],
+            "sections": [
+              {
+                "name": ""
+              }
             ]
           },
           {
-            "name": "Cruise_WaterRift_Slide",
+            "name": "Time Rift - Deep Sea",
             "access_rules": [
-              "@Cruise Logic/Can access Ship Area, $completedActAt|Cruise_Sinking"
+              "cakerelic_complete, @Cruise Logic/Can access Act 1 - Bon Voyage!"
+            ],
+            "map_locations": [
+              {
+                "map": "entrances",
+                "x": 1565,
+                "y": 645
+              }
+            ],
+            "sections": [
+              {
+                "name": ""
+              }
             ]
           }
         ]
       },
       {
-        "name": "Chapter7",
+        "name": "Chapter 7",
         "visibility_rules": [
           "dlc2"
         ],
-        "map_locations": [
+        "children": [
           {
-            "map": "entrances",
-            "x": 458,
-            "y": 170
-          }
-        ],
-        "sections": [
-          {
-            "name": "Metro_CaveRift_RumbiFactory",
+            "name": "Time Rift - Rumbi Factory",
             "access_rules": [
               "jewelryrelic_complete, @Nyakuza Logic/Can access Free Roam"
+            ],
+            "map_locations": [
+              {
+                "map": "entrances",
+                "x": 497,
+                "y": 1090
+              }
+            ],
+            "sections": [
+              {
+                "name": ""
+              }
             ]
           }
         ]
