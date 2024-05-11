@@ -410,8 +410,8 @@
       {
         "name": "The Illness has Spread",
         "access_rules": [
-          "hookshot, ziplines_off, @Alpine Logic/Can access Finale - The Illness has Spread",
-          "hookshot, birdzipline, cakezipline, windmillzipline, @Alpine Logic/Can access Finale - The Illness has Spread"
+          "ziplines_off, @Alpine Logic/Can access Finale - The Illness has Spread",
+          "birdzipline, cakezipline, windmillzipline, @Alpine Logic/Can access Finale - The Illness has Spread"
         ],
         "sections": [
           {
