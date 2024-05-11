@@ -348,6 +348,7 @@
         "name": "Pink Ticket Booth",
         "access_rules": [
           "dweller, hookshot, pinkticket",
+          "dweller, hookshot, blueticket, yellowticket",
           "moderate"
         ],
         "sections": [
