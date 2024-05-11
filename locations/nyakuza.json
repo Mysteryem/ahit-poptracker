@@ -121,8 +121,7 @@
         "name": "Pink Paw Station",
         "access_rules": [
           "hookshot, dweller, pinkticket",
-          "hookshot, dweller, blueticket",
-          "hookshot, dweller, yellowticket",
+          "hookshot, dweller, blueticket, yellowticket",
           "hookshot, dweller, moderate"
         ],
         "sections": [
@@ -142,8 +141,7 @@
         "name": "Pink Paw Manhole",
         "access_rules": [
           "ice, pinkticket",
-          "ice, yellowticket",
-          "ice, blueticket",
+          "ice, blueticket, yellowticket",
           "ice, moderate"
         ],
         "sections": [
@@ -231,8 +229,7 @@
         "name": "Pink Paw Station - Cat Vacuum",
         "access_rules": [
           "dweller, hookshot, pinkticket",
-          "dweller, hookshot, blueticket",
-          "dweller, hookshot, yellowticket",
+          "dweller, hookshot, blueticket, yellowticket",
           "moderate"
         ],
         "sections": [
@@ -252,8 +249,7 @@
         "name": "Pink Paw Station - Behind Fan",
         "access_rules": [
           "dweller, timestop, hookshot, pinkticket",
-          "dweller, timestop, hookshot, blueticket",
-          "dweller, timestop, hookshot, yellowticket",
+          "dweller, timestop, hookshot, blueticket, yellowticket",
           "moderate"
         ],
         "sections": [
@@ -544,8 +540,7 @@
         "name": "Pink Paw Station Thug",
         "access_rules": [
           "dweller, hookshot, pinkticket",
-          "dweller, hookshot, blueticket",
-          "dweller, hookshot, yellowticket",
+          "dweller, hookshot, blueticket, yellowticket",
           "moderate"
         ],
         "sections": [
