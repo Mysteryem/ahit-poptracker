@@ -10,6 +10,14 @@ function has(item, amount)
   end
 end
 
+function isApConnected()
+  if AutoTracker:GetConnectionState("AP") == 3 then
+    return true
+  else
+    return false
+  end
+end
+
 function canAccessMainSubcon()
   local difficulty = Tracker:FindObjectForCode("difficulty")
 
@@ -48,10 +56,25 @@ function hasTimePiecesForChapter(chapter_to_access)
     return timePieces.AcquiredCount >= chapter_costs[tonumber(chapter_to_access)]
 end
 
--- todo: If AP is disabled, should we get act completion state from locations instead?
+-- Only used when there is no AP connection, mainly for debugging logic.
+free_roam_act_to_time_piece = {
+    Metro_RouteA = "@Nyakuza Metro/Yellow Overpass Station/Time Piece",
+    Metro_RouteB = "@Nyakuza Metro/Green Clean Station/Time Piece",
+    Metro_RouteC = "@Nyakuza Metro/Bluefin Tunnel/Time Piece",
+    Metro_RouteD = "@Nyakuza Metro/Pink Paw Station/Time Piece",
+    Metro_ManholeA = "@Nyakuza Metro/Yellow Overpass Manhole/Time Piece",
+    Metro_ManholeB = "@Nyakuza Metro/Green Clean Manhole/Time Piece",
+    Metro_ManholeC = "@Nyakuza Metro/Pink Paw Manhole/Time Piece",
+    Alpine_Twilight = "@Twilight Bell Zipline/The Twilight Bell/Time Piece",
+    Alps_Birdhouse = "@Birdhouse Zipline/Bird House/Time Piece",
+    AlpineSkyline_Windmill = "@Windmill Zipline/The Windmill/Time Piece",
+    AlpineSkyline_WeddingCake = "@Lava Cake Zipline/Lava Cake/Time Piece",
+}
+
 function completedNyakuzaFreeRoamActs()
+    local ap_connected = isApConnected()
     for act_name, _ in pairs(nyakuza_free_roam_act_names) do
-        if completed_entrances[act_name] == nil then
+        if not completedFreeRoamAct(act_name, ap_connected) then
             return false
         end
     end
@@ -59,10 +82,10 @@ function completedNyakuzaFreeRoamActs()
     return true
 end
 
--- todo: If AP is disabled, should we get act completion state from locations instead?
 function completedAlpineFreeRoamActs()
+    local ap_connected = isApConnected()
     for act_name, _ in pairs(alpine_free_roam_act_names) do
-        if completed_entrances[act_name] == nil then
+        if not completedFreeRoamAct(act_name, ap_connected) then
             return false
         end
     end
@@ -70,7 +93,17 @@ function completedAlpineFreeRoamActs()
     return true
 end
 
-function completedFreeRoamAct(act_name)
+function completedFreeRoamAct(act_name, ap_connected)
+    if ap_connected == nil then
+        ap_connected = isApConnected()
+    end
+    if not ap_connected then
+        -- With no AP connection, check the Time Piece location. Note that checking locations manually does not update
+        -- logic and that if any Time Pieces were !collect-ed then the logic may end up incorrect if the act has not
+        -- actually been completed.
+        local time_piece_location = Tracker:FindObjectForCode(free_roam_act_to_time_piece[act_name])
+        return time_piece_location.AccessibilityLevel == AccessibilityLevel.Cleared
+    end
     return completed_entrances[act_name] ~= nil
 end
 
@@ -100,7 +133,18 @@ function completedActAt(entrance)
         return entrance_accessibility == AccessibilityLevel.Normal or entrance_accessibility == AccessibilityLevel.Cleared
     end
 
-    -- todo: If AP is disabled, should we get act completion state from location instead?
+    if not isApConnected() then
+        -- With no AP connection, check the Time Piece location. Note that checking locations manually does not update
+        -- logic and that if any Time Pieces were !collect-ed then the logic may end up incorrect if the act has not
+        -- actually been completed.
+        if act_at_entrance.vanilla_act_completion_location_section == nil then
+            -- Free roam act
+            return true
+        end
+        local completion_location = Tracker:FindObjectForCode(act_at_entrance.vanilla_act_completion_location_section)
+        return completion_location.AccessibilityLevel == AccessibilityLevel.Cleared
+    end
+
     --
     -- archipelago.lua updates the global set of completed entrances
     if completed_entrances[entrance] ~= nil then
