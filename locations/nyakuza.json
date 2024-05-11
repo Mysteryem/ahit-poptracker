@@ -25,13 +25,13 @@
       },
       {
         "name": "Yellow Overpass Station",
-        "access_rules": [
-          "hookshot",
-          "moderate"
-        ],
         "sections": [
           {
-            "name": "Time Piece"
+            "name": "Time Piece",
+            "access_rules": [
+              "hookshot",
+              "moderate"
+            ]
           },
           {
             "name": "Yellow Metro Ticket"
