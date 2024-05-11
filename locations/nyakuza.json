@@ -122,7 +122,9 @@
         "access_rules": [
           "hookshot, dweller, pinkticket",
           "hookshot, dweller, blueticket, yellowticket",
-          "hookshot, dweller, moderate, no_ticket_skips_off"
+          "[hookshot], [dweller], moderate, pinkticket",
+          "[hookshot], [dweller], moderate, blueticket, yellowticket",
+          "[hookshot], [dweller], moderate, no_ticket_skips_off"
         ],
         "sections": [
           {
@@ -230,6 +232,8 @@
         "access_rules": [
           "dweller, hookshot, pinkticket",
           "dweller, hookshot, blueticket, yellowticket",
+          "moderate, pinkticket",
+          "moderate, blueticket, yellowticket",
           "moderate, no_ticket_skips_off"
         ],
         "sections": [
@@ -250,6 +254,8 @@
         "access_rules": [
           "dweller, timestop, hookshot, pinkticket",
           "dweller, timestop, hookshot, blueticket, yellowticket",
+          "moderate, pinkticket",
+          "moderate, blueticket, yellowticket",
           "moderate, no_ticket_skips_off"
         ],
         "sections": [
@@ -349,7 +355,9 @@
         "access_rules": [
           "dweller, hookshot, pinkticket",
           "dweller, hookshot, blueticket, yellowticket",
-          "moderate, no_ticket_skips_off"
+          "[dweller], [hookshot], moderate, pinkticket",
+          "[dweller], [hookshot], moderate, blueticket, yellowticket",
+          "[dweller], [hookshot], moderate, no_ticket_skips_off"
         ],
         "sections": [
           {
@@ -542,7 +550,9 @@
         "access_rules": [
           "dweller, hookshot, pinkticket",
           "dweller, hookshot, blueticket, yellowticket",
-          "moderate, no_ticket_skips_off"
+          "[dweller], [hookshot], moderate, pinkticket",
+          "[dweller], [hookshot], moderate, blueticket, yellowticket",
+          "[dweller], [hookshot], moderate, no_ticket_skips_off"
         ],
         "sections": [
           {
