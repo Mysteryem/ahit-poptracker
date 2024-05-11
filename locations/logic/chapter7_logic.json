@@ -43,6 +43,23 @@
           "dweller, hookshot, @Nyakuza Logic/Can access Pink Paw Station",
           "[dweller], [hookshot], moderate, @Nyakuza Logic/Can access Pink Paw Station"
         ]
+      },
+      {
+        "name": "Rush Hour Tickets",
+        "access_rules": [
+          "pinkticket, yellowticket, blueticket",
+          "hard, no_ticket_skips_off",
+          "hard, no_ticket_skips_free_roam_only"
+        ]
+      },
+      {
+        "name": "Rush Hour Items",
+        "access_rules": [
+          "ice, brewer, hookshot",
+          "ice, brewer, moderate",
+          "brewer, hard",
+          "expert"
+        ]
       }
     ]
   }

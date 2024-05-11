@@ -136,7 +136,7 @@
       },
       {
         "img": "images/settings/MetroFood_Burger.png",
-        "codes": "no_ticket_skips_rush_hour",
+        "codes": "no_ticket_skips_free_roam_only",
         "inherit_codes": false
       }
     ]

@@ -268,12 +268,7 @@
       {
         "name": "Rush Hour",
         "access_rules": [
-          "ice, brewer, hookshot, pinkticket, yellowticket, blueticket",
-          "ice, brewer, pinkticket, yellowticket, blueticket, moderate",
-          "brewer, pinkticket, yellowticket, blueticket, hard",
-          "brewer, hard, no_ticket_skips_off",
-          "expert, pinkticket, yellowticket, blueticket",
-          "expert, no_ticket_skips_off"
+          "@Nyakuza Logic/Rush Hour Tickets, @Nyakuza Logic/Rush Hour Items"
         ],
         "sections": [
           {
