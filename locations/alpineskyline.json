@@ -175,7 +175,7 @@
             "name": "Token",
             "access_rules": [
               "dweller",
-              "expert"
+              "moderate"
             ]
           }
         ],
