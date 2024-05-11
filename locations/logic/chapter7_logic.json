@@ -13,6 +13,36 @@
         "access_rules": [
           "$canAccessAct|Metro_Escape"
         ]
+      },
+      {
+        "name": "Can access Bluefin Tunnel",
+        "access_rules": [
+          "greenticket",
+          "blueticket",
+          "moderate, no_ticket_skips_off"
+        ]
+      },
+      {
+        "name": "Can access Pink Paw Station",
+        "access_rules": [
+          "pinkticket",
+          "blueticket, yellowticket",
+          "moderate, no_ticket_skips_off"
+        ]
+      },
+      {
+        "name": "Can access upper Pink Paw Station",
+        "access_rules": [
+          "dweller, hookshot, @Nyakuza Logic/Can access Pink Paw Station",
+          "moderate, @Nyakuza Logic/Can access Pink Paw Station"
+        ]
+      },
+      {
+        "name": "Can access upper Pink Paw Station - Missing Moderate Logic",
+        "access_rules": [
+          "dweller, hookshot, @Nyakuza Logic/Can access Pink Paw Station",
+          "[dweller], [hookshot], moderate, @Nyakuza Logic/Can access Pink Paw Station"
+        ]
       }
     ]
   }

@@ -100,9 +100,7 @@
       {
         "name": "Bluefin Tunnel",
         "access_rules": [
-          "blueticket",
-          "greenticket",
-          "moderate, no_ticket_skips_off"
+          "@Nyakuza Logic/Can access Bluefin Tunnel"
         ],
         "sections": [
           {
@@ -120,11 +118,7 @@
       {
         "name": "Pink Paw Station",
         "access_rules": [
-          "hookshot, dweller, pinkticket",
-          "hookshot, dweller, blueticket, yellowticket",
-          "[hookshot], [dweller], moderate, pinkticket",
-          "[hookshot], [dweller], moderate, blueticket, yellowticket",
-          "[hookshot], [dweller], moderate, no_ticket_skips_off"
+          "Nyakuza Logic/Can access upper Pink Paw Station - Missing Moderate Logic"
         ],
         "sections": [
           {
@@ -142,9 +136,7 @@
       {
         "name": "Pink Paw Manhole",
         "access_rules": [
-          "ice, pinkticket",
-          "ice, blueticket, yellowticket",
-          "ice, moderate, no_ticket_skips_off"
+          "ice, @Nyakuza Logic/Can access Pink Paw Station"
         ],
         "sections": [
           {
@@ -210,9 +202,7 @@
       {
         "name": "Bluefin Tunnel - Cat Vacuum",
         "access_rules": [
-          "blueticket",
-          "greenticket",
-          "moderate, no_ticket_skips_off"
+          "@Nyakuza Logic/Can access Bluefin Tunnel"
         ],
         "sections": [
           {
@@ -230,11 +220,7 @@
       {
         "name": "Pink Paw Station - Cat Vacuum",
         "access_rules": [
-          "dweller, hookshot, pinkticket",
-          "dweller, hookshot, blueticket, yellowticket",
-          "moderate, pinkticket",
-          "moderate, blueticket, yellowticket",
-          "moderate, no_ticket_skips_off"
+          "@Nyakuza Logic/Can access upper Pink Paw Station"
         ],
         "sections": [
           {
@@ -252,11 +238,8 @@
       {
         "name": "Pink Paw Station - Behind Fan",
         "access_rules": [
-          "dweller, timestop, hookshot, pinkticket",
-          "dweller, timestop, hookshot, blueticket, yellowticket",
-          "moderate, pinkticket",
-          "moderate, blueticket, yellowticket",
-          "moderate, no_ticket_skips_off"
+          "timestop, @Nyakuza Logic/Can access upper Pink Paw Station",
+          "moderate, @Nyakuza Logic/Can access upper Pink Paw Station"
         ],
         "sections": [
           {
@@ -353,11 +336,7 @@
       {
         "name": "Pink Ticket Booth",
         "access_rules": [
-          "dweller, hookshot, pinkticket",
-          "dweller, hookshot, blueticket, yellowticket",
-          "[dweller], [hookshot], moderate, pinkticket",
-          "[dweller], [hookshot], moderate, blueticket, yellowticket",
-          "[dweller], [hookshot], moderate, no_ticket_skips_off"
+          "@Nyakuza Logic/Can access upper Pink Paw Station - Missing Moderate Logic"
         ],
         "sections": [
           {
@@ -390,9 +369,7 @@
       {
         "name": "Blue Ticket Booth",
         "access_rules": [
-          "blueticket",
-          "greenticket",
-          "moderate, no_ticket_skips_off"
+          "@Nyakuza Logic/Can access Bluefin Tunnel"
         ],
         "sections": [
           {
@@ -526,9 +503,7 @@
       {
         "name": "Bluefin Tunnel Thug",
         "access_rules": [
-          "blueticket",
-          "greenticket",
-          "moderate, no_ticket_skips_off"
+          "@Nyakuza Logic/Can access Bluefin Tunnel"
         ],
         "sections": [
           {
@@ -548,11 +523,7 @@
       {
         "name": "Pink Paw Station Thug",
         "access_rules": [
-          "dweller, hookshot, pinkticket",
-          "dweller, hookshot, blueticket, yellowticket",
-          "[dweller], [hookshot], moderate, pinkticket",
-          "[dweller], [hookshot], moderate, blueticket, yellowticket",
-          "[dweller], [hookshot], moderate, no_ticket_skips_off"
+          "@Nyakuza Logic/Can access upper Pink Paw Station - Missing Moderate Logic"
         ],
         "sections": [
           {
