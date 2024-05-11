@@ -410,7 +410,7 @@ function onItem(index, item_id, item_name, player_number)
     if index <= CUR_INDEX then
         return
     end
-    local is_local = player_number == Archipelago.PlayerNumber
+    --local is_local = player_number == Archipelago.PlayerNumber
     CUR_INDEX = index;
     local v = ITEM_MAPPING[item_id]
     if not v then
@@ -454,8 +454,6 @@ function onLocation(location_id, location_name)
     if obj then
         if v:sub(1, 1) == "@" then
             obj.AvailableChestCount = obj.AvailableChestCount - 1
-        else
-            obj.Active = true
         end
         --print("onLocation: checked spot "..v[1])
     else

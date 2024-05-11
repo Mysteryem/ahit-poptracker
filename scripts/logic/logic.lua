@@ -1,14 +1,14 @@
 require("scripts/objects/chapter_info")
 
-function has(item, amount)
-  local count = Tracker:ProviderCountForCode(item)
-  amount = tonumber(amount)
-  if not amount then
-    return count > 0
-  else
-    return count >= amount
-  end
-end
+-- function has(item, amount)
+--   local count = Tracker:ProviderCountForCode(item)
+--   amount = tonumber(amount)
+--   if not amount then
+--     return count > 0
+--   else
+--     return count >= amount
+--   end
+-- end
 
 function isApConnected()
   if AutoTracker:GetConnectionState("AP") == 3 then
@@ -16,32 +16,6 @@ function isApConnected()
   else
     return false
   end
-end
-
-function canAccessMainSubcon()
-  local difficulty = Tracker:FindObjectForCode("difficulty")
-
-  for vanilla_act_name, act_info in pairs(chapter_act_info) do
-    -- Expert difficult can Cherry Hover out of the boss area.
-    if act_info.chapter == 3 and (vanilla_act_name ~= "snatcher_boss" or difficulty.CurrentStage == 3) and canAccessAct(vanilla_act_name) then
-        return true
-    end
-  end
-
-  return false
-end
-
--- An optional exception act name can be specified. This is used for the Mafia Geek Platform location, which is present
--- in every Chapter 1 Act except She Came from Outer Space.
-function canAccessChapter(chapter_to_access, exception)
-  local chapter = tonumber(chapter_to_access)
-  for _, vanilla_act_name in ipairs(chapter_entrance_names[chapter]) do
-    if vanilla_act_name ~= exception and canAccessAct(vanilla_act_name) then
-        return true
-    end
-  end
-
-  return false
 end
 
 function canAccessAct(act_to_access)
