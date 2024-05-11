@@ -120,23 +120,23 @@
   {
     "name": "No Ticket Skips",
     "type": "progressive",
-    "codes": "ticket_skips",
+    "codes": "no_ticket_skips",
     "allow_disabled": false,
     "stages": [
       {
         "img": "images/settings/MetroGuide.png",
         "img_mods": "@disabled",
-        "codes": "ticket_skips_off",
+        "codes": "no_ticket_skips_off",
         "inherit_codes": false
       },
       {
         "img": "images/settings/MetroGuide.png",
-        "codes": "ticket_skips_on",
+        "codes": "no_ticket_skips_on",
         "inherit_codes": false
       },
       {
         "img": "images/settings/MetroFood_Burger.png",
-        "codes": "ticket_skips_rush_hour",
+        "codes": "no_ticket_skips_rush_hour",
         "inherit_codes": false
       }
     ]

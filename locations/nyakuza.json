@@ -286,9 +286,9 @@
           "ice, brewer, hookshot, pinkticket, yellowticket, blueticket",
           "ice, brewer, pinkticket, yellowticket, blueticket, moderate",
           "brewer, pinkticket, yellowticket, blueticket, hard",
-          "brewer, hard, ticket_skips_off",
+          "brewer, hard, no_ticket_skips_off",
           "expert, pinkticket, yellowticket, blueticket",
-          "expert, ticket_skips_off"
+          "expert, no_ticket_skips_off"
         ],
         "sections": [
           {
