@@ -5,7 +5,7 @@
       {
         "name": "Chapter1",
         "access_rules": [
-          "@Mafia Logic/Can access Mafia Town"
+          "@Mafia Logic/Can access Mafia Town (HUMT)"
         ],
         "map_locations": [
           {
@@ -18,7 +18,7 @@
           {
             "name": "TimeRift_Cave_Mafia",
             "access_rules": [
-              "burgerrelic_complete"
+              "burgerrelic_complete, @Mafia Logic/Can access Mafia Town"
             ]
           },
           {
