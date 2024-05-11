@@ -47,7 +47,7 @@
               {
                 "name": "Bon Voyage!",
                 "access_rules": [
-                  "hookshot, @Cruise Logic/Can access Act 1 - Bon Voyage!"
+                  "hookshot"
                 ]
               }
             ],
