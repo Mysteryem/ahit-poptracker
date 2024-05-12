@@ -205,6 +205,22 @@
                 "y": 119
               }
             ]
+          },
+          {
+            "name": "Badge Seller",
+            "sections": [
+              {
+                "name": "Scammed",
+                "ref": "Shops/Badge Seller/Scammed"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "cruise",
+                "x": 630,
+                "y": 17
+              }
+            ]
           }
         ]
       },
