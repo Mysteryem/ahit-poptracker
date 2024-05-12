@@ -37,7 +37,7 @@ local map_table = {
     ship_main = "Arctic Cruise",
     ship_sinking = "Arctic Cruise",
 
-    DLC_Metro = "Nyakuza Metro"
+    dlc_metro = "Nyakuza Metro"
 }
 
 --I initialise HatOrder in onClear but need to read the table during item checks
@@ -345,7 +345,7 @@ function changedMap(current_map, previous_map)
     internal_map_name = map_table[current_map]
     
     if internal_map_name == nil then
-        print("Could not find map name; Setting to Spaceship")
+        print(string.format("Could not find map name %s; Setting to Spaceship", current_map))
         internal_map_name = "Spaceship"
     end
     Tracker:UiHint("ActivateTab", internal_map_name)
