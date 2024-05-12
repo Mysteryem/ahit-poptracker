@@ -37,7 +37,7 @@
   },
   {
     "name": "cruise",
-    "location_size": 15,
+    "location_size": 20,
     "location_border_thickness": 1,
     "img": "images/maps/ArcticCruise.png"
   },
