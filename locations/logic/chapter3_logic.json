@@ -101,7 +101,7 @@
       {
         "name": "Boss Arena Gap",
         "access_rules": [
-          "hookshot, @Subcon Logic/Can access Act 2 - The Subcon Well",
+          "hookshot, @Subcon Logic/Can access Act 3 - Toilet of Doom",
           "hard, @Subcon Logic/Can access main Subcon area"
         ]
       },
