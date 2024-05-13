@@ -1,6 +1,21 @@
 {
     "versions": [
         {
+            "package_version": "1.2.0",
+            "download_url": "https://github.com/Mysteryem/ahit-poptracker/archive/refs/tags/v1.2.0.zip",
+            "sha256": "7003c764e4a985312109c3f0fe39f0ee4597a41c97833a2ef2e6f0a9b0328b36",
+            "changelog": [
+                "Entrances map is now ready for general use",
+                "Relics and Contracts have been added to the tracker",
+                "Tracker logic should now be up-to-date with the v1.5.1 AP World",
+                "Badge Pins have replaced No Bonk Badge in the tracker",
+                "Exclude Tour and Tasksanity are now shown in the Settings",
+                "Settings have moved to the Settings Popup between the Broadcast View and AP buttons",
+                "Fixed automatic map switching not working for Nyakuza Metro",
+                "Many Nyakuza Metro logic fixes as well as a few logic fixes for other chapters"
+            ]
+        },
+        {
             "package_version": "1.1.2",
             "download_url": "https://github.com/Mysteryem/ahit-poptracker/archive/refs/tags/v1.1.2.zip",
             "sha256": "f84e32bed201a7ad5e5853aa4fc3addae0ac559bee03d6e88ef99c015669cef8",
