@@ -47,8 +47,8 @@
         "margin": "0,0",
         "h_alignment": "left",
         "rows": [
-          ["pages", "contract", "umbrella_logic", "no_painting_skips", "dlc1"],
-          ["ctrlogic", "difficulty", "ziplines_logic", "no_ticket_skips", "dlc2"]
+          ["pages", "contract", "umbrella_logic", "dlc1", "exclude_tour_option", "tasksanity"],
+          ["ctrlogic", "difficulty", "ziplines_logic", "no_painting_skips", "dlc2", "no_ticket_skips"]
         ]
       }
     ]

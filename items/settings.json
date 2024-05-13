@@ -149,13 +149,13 @@
     "loop": false,
     "stages": [
       {
-        "img": "images/settings/pages.png",
+        "img": "images/settings/exclude_tour.png",
         "img_mods": "@disabled",
         "codes": "exclude_tour_disabled",
         "inherit_codes": false
       },
       {
-        "img": "images/settings/pages.png",
+        "img": "images/settings/exclude_tour.png",
         "codes": "exclude_tour_enabled",
         "inherit_codes": false
       }
@@ -165,6 +165,7 @@
     "name": "Tasksanity",
     "type": "toggle",
     "initial_active_state": true,
+    "img": "images/settings/tasksanity.png",
     "codes": "tasksanity"
   },
   {
