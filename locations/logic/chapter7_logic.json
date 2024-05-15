@@ -38,13 +38,6 @@
         ]
       },
       {
-        "name": "Can access upper Pink Paw Station - Missing Moderate Logic",
-        "access_rules": [
-          "dweller, hookshot, @Nyakuza Logic/Can access Pink Paw Station",
-          "[dweller], [hookshot], moderate, @Nyakuza Logic/Can access Pink Paw Station"
-        ]
-      },
-      {
         "name": "Rush Hour Tickets",
         "access_rules": [
           "pinkticket, yellowticket, blueticket",

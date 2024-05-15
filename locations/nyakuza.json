@@ -118,7 +118,7 @@
       {
         "name": "Pink Paw Station",
         "access_rules": [
-          "@Nyakuza Logic/Can access upper Pink Paw Station - Missing Moderate Logic"
+          "@Nyakuza Logic/Can access upper Pink Paw Station"
         ],
         "sections": [
           {
@@ -331,7 +331,7 @@
       {
         "name": "Pink Ticket Booth",
         "access_rules": [
-          "@Nyakuza Logic/Can access upper Pink Paw Station - Missing Moderate Logic"
+          "@Nyakuza Logic/Can access upper Pink Paw Station"
         ],
         "sections": [
           {
@@ -518,7 +518,7 @@
       {
         "name": "Pink Paw Station Thug",
         "access_rules": [
-          "@Nyakuza Logic/Can access upper Pink Paw Station - Missing Moderate Logic"
+          "@Nyakuza Logic/Can access upper Pink Paw Station"
         ],
         "sections": [
           {
