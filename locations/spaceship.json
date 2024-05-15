@@ -8,7 +8,7 @@
           {
             "name": "Abuse D:",
             "access_rules": [
-              "timepiece:4, @General Logic/Can Hit"
+              "@General Logic/Can Hit"
             ]
           }
         ],
