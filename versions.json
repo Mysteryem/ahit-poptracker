@@ -1,6 +1,16 @@
 {
     "versions": [
         {
+            "package_version": "1.2.1",
+            "download_url": "https://github.com/Mysteryem/ahit-poptracker/archive/refs/tags/v1.2.1.zip",
+            "sha256": "d585025549a416d947c5267ab46c8e018d5e40eaa105fb41ec68df1f049663f0",
+            "changelog": [
+                "Updated logic for AP World v1.5.1 logic changes:",
+                " - All the upper Pink Paw Station locations now have Moderate logic for no Dweller Mask or Hookshot",
+                " - Rumbi Abuse no longer requires 4 Time Pieces"
+            ]
+        },
+        {
             "package_version": "1.2.0",
             "download_url": "https://github.com/Mysteryem/ahit-poptracker/archive/refs/tags/v1.2.0.zip",
             "sha256": "7003c764e4a985312109c3f0fe39f0ee4597a41c97833a2ef2e6f0a9b0328b36",
