@@ -700,8 +700,7 @@
                 "name": "Platforming Tree B",
                 "access_rules": [
                   "dweller",
-                  "hard, sprint",
-                  "expert"
+                  "hard"
                 ]
               },
               {
