@@ -247,7 +247,7 @@
           {
             "name": "Time Rift - Twilight Bell",
             "access_rules": [
-              "$completedFreeRoamAct|Alpine_Twilight"
+              "@Twilight Bell Zipline/The Twilight Path, $completedFreeRoamAct|Alpine_Twilight"
             ],
             "map_locations": [
               {
@@ -271,7 +271,7 @@
           {
             "name": "Time Rift - Curly Tail Trail",
             "access_rules": [
-              "$completedFreeRoamAct|AlpineSkyline_Windmill"
+              "@Windmill Zipline/The Windmill, $completedFreeRoamAct|AlpineSkyline_Windmill"
             ],
             "map_locations": [
               {
