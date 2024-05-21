@@ -16,7 +16,13 @@
         ],
         "sections": [
           {
-            "name": ""
+            "name": "Can Enter"
+          },
+          {
+            "name": "Can Complete",
+            "access_rules": [
+              "$canCompleteActAt|AlpineFreeRoam"
+            ]
           }
         ]
       },
@@ -34,7 +40,13 @@
         ],
         "sections": [
           {
-            "name": ""
+            "name": "Can Enter"
+          },
+          {
+            "name": "Can Complete",
+            "access_rules": [
+              "$canCompleteActAt|AlpineSkyline_Finale"
+            ]
           }
         ]
       }

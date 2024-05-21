@@ -1,0 +1,320 @@
+[
+  {
+    // Checking Time Piece locations in lua code can give `AccessibilityLevel.Cleared` if the location was !collect-ed,
+    // but completing the act could still be impossible. To work around this, extra locations are defined using the same
+    // logic as each Time Piece location. These are only locations, so cannot be cleared.
+    // The name of each child must match the correspnding internal act name in chaper_info.lua.
+    // Unlike other logic locations, these must be loaded after all normal locations.
+    // Regex to use on `chapter_act_info` in chapter_info.lua to create the list of children:
+    // Find:
+    // ^\s+(\w+)\s*=\s*Act.new\(-*\d,\s*"[^"]+",\s*"[^"]+",\s*("([^"]+)"|nil)\),*$
+    // Replace:
+    //      {
+    //        "name": "$1",
+    //        "access_rules": [
+    //          "@$3"
+    //        ]
+    //      },
+    // Then just need to remove the "," from the last child and manually add the free roam act access rules.
+    "name": "internal_can_complete_act",
+    "children": [
+      {
+        "name": "Spaceship_WaterRift_Gallery",
+        "access_rules": [
+          "@Time Rifts/The Gallery/Time Rift"
+        ]
+      },
+      {
+        "name": "Spaceship_WaterRift_MailRoom",
+        "access_rules": [
+          "@Time Rifts/The Lab/Time Rift"
+        ]
+      },
+
+      {
+        "name": "chapter1_tutorial",
+        "access_rules": [
+          "@Mafia Town/Welcome to Mafia Town/Time Piece"
+        ]
+      },
+      {
+        "name": "chapter1_barrelboss",
+        "access_rules": [
+          "@Mafia Town/Barrel Battle/Time Piece"
+        ]
+      },
+      {
+        "name": "chapter1_cannon_repair",
+        "access_rules": [
+          "@Mafia Town (HUMT)/Mafia Geek/She Came from Outer Space"
+        ]
+      },
+      {
+        "name": "chapter1_boss",
+        "access_rules": [
+          "@Mafia Town (HUMT)/Mafia HQ/Time Piece"
+        ]
+      },
+      {
+        "name": "harbor_impossible_race",
+        "access_rules": [
+          "@Mafia Town (HUMT)/Beach Alcove/Cheating the Race"
+        ]
+      },
+      {
+        "name": "mafiatown_lava",
+        "access_rules": [
+          "@Mafia Town (HUMT)/Mafia Geek/Heating Up Mafia Town"
+        ]
+      },
+      {
+        "name": "mafiatown_goldenvault",
+        "access_rules": [
+          "@Mafia Town/The Golden Vault/Time Piece"
+        ]
+      },
+      {
+        "name": "TimeRift_Cave_Mafia",
+        "access_rules": [
+          "@Mafia Town - Time Rifts/Mafia of Cooks/Time Rift"
+        ]
+      },
+      {
+        "name": "TimeRift_Water_Mafia_Easy",
+        "access_rules": [
+          "@Mafia Town - Time Rifts/Sewers/Time Rift"
+        ]
+      },
+      {
+        "name": "TimeRift_Water_Mafia_Hard",
+        "access_rules": [
+          "@Mafia Town - Time Rifts/Bazaar/Time Rift"
+        ]
+      },
+
+      {
+        "name": "DeadBirdStudio",
+        "access_rules": [
+          "@Act Completions/Act Completion/Dead Bird Studio"
+        ]
+      },
+      {
+        "name": "chapter3_murder",
+        "access_rules": [
+          "@Films/The Conductor's Films/Murder on the Owl Express"
+        ]
+      },
+      {
+        "name": "moon_camerasnap",
+        "access_rules": [
+          "@Films/DJ Groove's Films/Picture Perfect"
+        ]
+      },
+      {
+        "name": "trainwreck_selfdestruct",
+        "access_rules": [
+          "@Films/The Conductor's Films/Train Rush"
+        ]
+      },
+      {
+        "name": "moon_parade",
+        "access_rules": [
+          "@Films/DJ Groove's Films/The Big Parade"
+        ]
+      },
+      {
+        "name": "award_ceremony",
+        "access_rules": [
+          "@Act Completions/Act Completion/Award Ceremony"
+        ]
+      },
+      {
+        "name": "chapter3_secret_finale",
+        "access_rules": [
+          "@Dead Bird Basement/Act Completion/Time Piece"
+        ]
+      },
+      {
+        "name": "TimeRift_Cave_BirdBasement",
+        "access_rules": [
+          "@Dead Bird Studio (Rift)/Time Piece"
+        ]
+      },
+      {
+        "name": "TimeRift_Water_TWreck_Panels",
+        "access_rules": [
+          "@Films/The Conductor's Films/Time Rift"
+        ]
+      },
+      {
+        "name": "TimeRift_Water_TWreck_Parade",
+        "access_rules": [
+          "@Films/DJ Groove's Films/Time Rift"
+        ]
+      },
+
+      {
+        "name": "subcon_village_icewall",
+        "access_rules": [
+          "@Yellow Firewall/Contractual Obligations/Time Piece"
+        ]
+      },
+      {
+        "name": "subcon_cave",
+        "access_rules": [
+          "@Yellow Firewall/Subcon Well/Time Piece"
+        ]
+      },
+      {
+        "name": "chapter2_toiletboss",
+        "access_rules": [
+          "@Boss Arena Area/Boss Arena/Toilet of Doom"
+        ]
+      },
+      {
+        "name": "vanessa_manor_attic",
+        "access_rules": [
+          "@Yellow Firewall/Queen Vanessa's Manor/Time Piece"
+        ]
+      },
+      {
+        "name": "subcon_maildelivery",
+        "access_rules": [
+          "@Subcon Forest/Snatcher/Mail Delivery Service"
+        ]
+      },
+      {
+        "name": "snatcher_boss",
+        "access_rules": [
+          "@Boss Arena Area/Boss Arena/Your Contract has Expired"
+        ]
+      },
+      {
+        "name": "TimeRift_Cave_Raccoon",
+        "access_rules": [
+          "@Subcon Time Rifts/Sleepy Subcon/Time Rift"
+        ]
+      },
+      {
+        "name": "TimeRift_Water_Subcon_Hookshot",
+        "access_rules": [
+          "@Subcon Time Rifts/Pipe/Time Rift"
+        ]
+      },
+      {
+        "name": "TimeRift_Water_Subcon_Dwellers",
+        "access_rules": [
+          "@Subcon Time Rifts/Village/Time Rift"
+        ]
+      },
+
+      {
+        "name": "AlpineFreeRoam",
+        "access_rules": [
+          [
+            "@Twilight Bell Zipline/The Twilight Bell/Time Piece",
+            "@Birdhouse Zipline/Bird House/Time Piece",
+            "@Windmill Zipline/The Windmill/Time Piece",
+            "@Lava Cake Zipline/Lava Cake/Time Piece"
+          ]
+        ]
+      },
+      {
+        "name": "AlpineSkyline_Finale",
+        "access_rules": [
+          "@Alpine Skyline/The Illness has Spread/Time Piece"
+        ]
+      },
+      {
+        "name": "TimeRift_Cave_Alps",
+        "access_rules": [
+          "@Alpine Skyline - Time Rifts/Alpine Skyline (Rift)/Time Rift"
+        ]
+      },
+      {
+        "name": "TimeRift_Water_Alp_Goats",
+        "access_rules": [
+          "@Alpine Skyline - Time Rifts/The Twilight Bell (Rift)/Time Rift"
+        ]
+      },
+      {
+        "name": "TimeRift_Water_AlpineSkyline_Cats",
+        "access_rules": [
+          "@Alpine Skyline - Time Rifts/Curly Tail Trail/Time Rift"
+        ]
+      },
+
+      {
+        "name": "TheFinale_FinalBoss",
+        "access_rules": [
+          "@Spaceship/Time's End/Time Piece"
+        ]
+      },
+      {
+        "name": "TimeRift_Cave_Tour",
+        "access_rules": [
+          "@Spaceship/Tour/Time Rift"
+        ]
+      },
+
+      {
+        "name": "Cruise_Boarding",
+        "access_rules": [
+          "@Bon Voyage!/Control Room/Bon Voyage!"
+        ]
+      },
+      {
+        "name": "Cruise_Working",
+        "access_rules": [
+          "@The Arctic Cruise/Lost and Found/Ship Shape"
+        ]
+      },
+      {
+        "name": "Cruise_Sinking",
+        "access_rules": [
+          "@Rock the Boat/Post Captain Rescue/Time Piece"
+        ]
+      },
+      {
+        "name": "Cruise_CaveRift_Aquarium",
+        "access_rules": [
+          "@The Arctic Cruise - Time Rifts/Deep Sea/Time Rift"
+        ]
+      },
+      {
+        "name": "Cruise_WaterRift_Slide",
+        "access_rules": [
+          "@The Arctic Cruise - Time Rifts/Balcony/Time Rift"
+        ]
+      },
+
+      {
+        "name": "MetroFreeRoam",
+        "access_rules": [
+          [
+            "@Nyakuza Metro/Nyakuza Metro Intro/Time Piece",
+            "@Nyakuza Metro/Yellow Overpass Station/Time Piece",
+            "@Nyakuza Metro/Green Clean Station/Time Piece",
+            "@Nyakuza Metro/Bluefin Tunnel/Time Piece",
+            "@Nyakuza Metro/Pink Paw Station/Time Piece",
+            "@Nyakuza Metro/Yellow Overpass Manhole/Time Piece",
+            "@Nyakuza Metro/Green Clean Manhole/Time Piece",
+            "@Nyakuza Metro/Pink Paw Manhole/Time Piece"
+          ]
+        ]
+      },
+      {
+        "name": "Metro_Escape",
+        "access_rules": [
+          "@Finale/Rush Hour/Time Piece"
+        ]
+      },
+      {
+        "name": "Metro_CaveRift_RumbiFactory",
+        "access_rules": [
+          "@Nyakuza Metro - Time Rifts/Rumbi Factory/Time Rift"
+        ]
+      }
+    ]
+  }
+]

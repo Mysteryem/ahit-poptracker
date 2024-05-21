@@ -5,8 +5,8 @@ local Act = {
     chapter = -1,
     -- act_name is set to the act that has been randomized to this entrance, when connecting to AP.
     act_name = "",
-    -- Entrance location for logic
-    entrance_location_section = "",
+    -- Entrance location for logic. Must have "Can Enter" and "Can Complete" sections.
+    entrance_location = "",
     -- Vanilla completion logic
     -- `nil` implies a free roam act which is always considered complete
     vanilla_act_completion_location_section = nil
@@ -18,7 +18,7 @@ function Act.new(chapter, act_name, entrance_location, vanilla_act_completion_lo
     local self = setmetatable({}, Act)
     self.chapter = chapter or -1
     self.act_name = act_name or ""
-    self.entrance_location_section = "@" .. entrance_location
+    self.entrance_location = "@" .. entrance_location
     if vanilla_act_completion_location_section == nil then
         self.vanilla_act_completion_location_section = nil
     else
@@ -41,6 +41,48 @@ end
 
 function Act:setActName(act_name)
     self.act_name = act_name
+end
+
+function Act:getCanEnterSection()
+    if self.entrance_location then
+        return Tracker:FindObjectForCode(self.entrance_location .. "/Can Enter")
+    else
+        print(string.format("Error: Could not find 'can enter entrance' section for '%s'", v.entrance_location))
+        return nil
+    end
+end
+
+function Act:getCanCompleteSection()
+    if self.entrance_location then
+        return Tracker:FindObjectForCode(self.entrance_location .. "/Can Complete")
+    else
+        print(string.format("Error: Could not find 'can complete entrance' section for '%s'", v.entrance_location))
+        return nil
+    end
+end
+
+function Act:markAsCompleted()
+    local can_enter = self:getCanEnterSection()
+    if can_enter then
+        can_enter.AvailableChestCount = can_enter.AvailableChestCount - 1
+    end
+
+    local can_complete = self:getCanCompleteSection()
+    if can_complete then
+        can_complete.AvailableChestCount = can_complete.AvailableChestCount - 1
+    end
+end
+
+function Act:clearCompletion()
+    local can_enter = self:getCanEnterSection()
+    if can_enter then
+        can_enter.AvailableChestCount = can_enter.ChestCount
+    end
+
+    local can_complete = self:getCanCompleteSection()
+    if can_complete then
+        can_complete.AvailableChestCount = can_complete.ChestCount
+    end
 end
 
 return Act

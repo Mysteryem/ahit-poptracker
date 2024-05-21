@@ -81,12 +81,7 @@ function onClear(slot_data)
     completed_entrances = {}
 
     for _, v in pairs(chapter_act_info) do
-        local entrance_location = Tracker:FindObjectForCode(v.entrance_location_section)
-        if entrance_location then
-            entrance_location.AvailableChestCount = entrance_location.ChestCount
-        else
-            print(string.format("onClear: Could not find entrance location '%s'", v.entrance_location_section))
-        end
+        v:clearCompletion()
     end
 
     -- reset locations
@@ -274,21 +269,21 @@ function onClear(slot_data)
     local act_at_bugged_entrance = chapter_act_info[bugged_entrance.act_name]
     local act_completion_location_for_act = act_at_bugged_entrance.vanilla_act_completion_location_section
     if act_completion_location_for_act then
-        act_completion_time_pieces_at_bugged_entrances[act_completion_location_for_act] = bugged_entrance.entrance_location_section
+        act_completion_time_pieces_at_bugged_entrances[act_completion_location_for_act] = bugged_entrance
     end
     -- Add the Nyakuza Metro Free Roam entrance if its act is not a free roam act (always considered complete).
     bugged_entrance = chapter_act_info["MetroFreeRoam"]
     act_at_bugged_entrance = chapter_act_info[bugged_entrance.act_name]
     act_completion_location_for_act = act_at_bugged_entrance.vanilla_act_completion_location_section
     if act_completion_location_for_act then
-        act_completion_time_pieces_at_bugged_entrances[act_completion_location_for_act] = bugged_entrance.entrance_location_section
+        act_completion_time_pieces_at_bugged_entrances[act_completion_location_for_act] = bugged_entrance
     end
     -- Add the Rush Hour entrance if its act is not a free roam act (always considered complete).
     bugged_entrance = chapter_act_info["Metro_Escape"]
     act_at_bugged_entrance = chapter_act_info[bugged_entrance.act_name]
     act_completion_location_for_act = act_at_bugged_entrance.vanilla_act_completion_location_section
     if act_completion_location_for_act then
-        act_completion_time_pieces_at_bugged_entrances[act_completion_location_for_act] = bugged_entrance.entrance_location_section
+        act_completion_time_pieces_at_bugged_entrances[act_completion_location_for_act] = bugged_entrance
     end
 end
 
@@ -359,10 +354,9 @@ function tryCompleteEntranceWithFreeRoamAct(act_name, free_roam_acts)
         end
     end
 
-    -- Clear the location of the entrance whose act is `act_name`.
+    -- Clear the location sections of the entrance whose act is `act_name`.
     local entrance_with_free_roam_act = getActInfo(act_name)
-    local entrance_loc = Tracker:FindObjectForCode(entrance_with_free_roam_act.entrance_location_section)
-    entrance_loc.AvailableChestCount = entrance_loc.AvailableChestCount - 1
+    entrance_with_free_roam_act:markAsCompleted()
 end
 
 function changedCompletedEntrances(current, previous)
@@ -376,8 +370,7 @@ function changedCompletedEntrances(current, previous)
             completed_entrances[entrance_name] = true
             entrance = chapter_act_info[entrance_name]
             if entrance then
-                local entrance_loc = Tracker:FindObjectForCode(entrance.entrance_location_section)
-                entrance_loc.AvailableChestCount = entrance_loc.AvailableChestCount - 1
+                entrance:markAsCompleted()
                 --print("Player has completed the act at entrance '" .. entrance_name .. "', so the entrance has been cleared")
             else
                 -- Most likely, it is an act within a free roam act, so has no chapter_act_info entry.
@@ -466,10 +459,9 @@ function onLocation(location_id, location_name)
     -- the entrance.
     -- Note: This can produce incorrect results if the time piece location is cleared through !collect.
     --       Fortunately, there is no logic that depends on whether these entrances have been cleared.
-    local bugged_entrance_time_piece_location = act_completion_time_pieces_at_bugged_entrances[v]
-    if bugged_entrance_time_piece_location then
-        local entrance_location = Tracker:FindObjectForCode(bugged_entrance_time_piece_location)
-        entrance_location.AvailableChestCount = entrance_location.AvailableChestCount - 1
+    local bugged_entrance = act_completion_time_pieces_at_bugged_entrances[v]
+    if bugged_entrance then
+        bugged_entrance:markAsCompleted()
         -- If there was logic that depended on these bugged entrances, then an update would be required.
         --forceUpdate()
     end

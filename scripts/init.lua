@@ -57,6 +57,8 @@ Tracker:AddLocations("locations/entrances/chapter7.json")
 Tracker:AddLocations("locations/entrances/chapter_time_rifts.json")
 Tracker:AddLocations("locations/entrances/spaceship_attic.json")
 Tracker:AddLocations("locations/entrances/spaceship_gallery.json")
+-- Extra Logic Locations that depend on normal Locations
+Tracker:AddLocations("locations/logic/act_completion.json")
 
 -- Layout
 Tracker:AddLayouts("layouts/items.json")

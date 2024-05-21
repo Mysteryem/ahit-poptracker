@@ -9,7 +9,13 @@
         "name": "Act 1 - Contractual Obligations",
         "sections": [
           {
-            "name": ""
+            "name": "Can Enter"
+          },
+          {
+            "name": "Can Complete",
+            "access_rules": [
+              "$canCompleteActAt|subcon_village_icewall"
+            ]
           }
         ],
         "map_locations": [
@@ -27,7 +33,13 @@
         ],
         "sections": [
           {
-            "name": ""
+            "name": "Can Enter"
+          },
+          {
+            "name": "Can Complete",
+            "access_rules": [
+              "$canCompleteActAt|subcon_cave"
+            ]
           }
         ],
         "map_locations": [
@@ -45,7 +57,13 @@
         ],
         "sections": [
           {
-            "name": ""
+            "name": "Can Enter"
+          },
+          {
+            "name": "Can Complete",
+            "access_rules": [
+              "$canCompleteActAt|chapter2_toiletboss"
+            ]
           }
         ],
         "map_locations": [
@@ -63,7 +81,13 @@
         ],
         "sections": [
           {
-            "name": ""
+            "name": "Can Enter"
+          },
+          {
+            "name": "Can Complete",
+            "access_rules": [
+              "$canCompleteActAt|vanessa_manor_attic"
+            ]
           }
         ],
         "map_locations": [
@@ -81,7 +105,13 @@
         ],
         "sections": [
           {
-            "name": ""
+            "name": "Can Enter"
+          },
+          {
+            "name": "Can Complete",
+            "access_rules": [
+              "$canCompleteActAt|subcon_maildelivery"
+            ]
           }
         ],
         "map_locations": [
@@ -99,7 +129,13 @@
         ],
         "sections": [
           {
-            "name": ""
+            "name": "Can Enter"
+          },
+          {
+            "name": "Can Complete",
+            "access_rules": [
+              "$canCompleteActAt|snatcher_boss"
+            ]
           }
         ],
         "map_locations": [

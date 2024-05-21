@@ -20,7 +20,13 @@
         ],
         "sections": [
           {
-            "name": ""
+            "name": "Can Enter"
+          },
+          {
+            "name": "Can Complete",
+            "access_rules": [
+              "$canCompleteActAt|TimeRift_Cave_Tour"
+            ]
           }
         ]
       }

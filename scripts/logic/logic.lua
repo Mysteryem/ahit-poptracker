@@ -20,7 +20,7 @@ end
 
 function canAccessAct(act_to_access)
   local act_info = getActInfo(act_to_access)
-  local location = Tracker:FindObjectForCode(act_info.entrance_location_section)
+  local location = act_info:getCanEnterSection()
   local entrance_accessibility = location.AccessibilityLevel
   return entrance_accessibility == AccessibilityLevel.Normal or entrance_accessibility == AccessibilityLevel.Cleared
 end
@@ -92,7 +92,7 @@ function completedActAt(entrance)
     -- DISABLED PENDING FEEDBACK
 --     if not act_rando_enabled then
 --         -- The player knows which acts are where in advance when there is no act rando, so the tracker should know too.
---         return canCompleteActAt(entrance)
+--         return canCompleteActAt(entrance, true, true)
 --     end
     local entrance_info = chapter_act_info[entrance]
 
@@ -102,8 +102,8 @@ function completedActAt(entrance)
     -- Free roam acts have no act completion location and are always considered complete when their entrance is
     -- accessible.
     if completion_location_section == nil then
-        local entrance_location = Tracker:FindObjectForCode(entrance_info.entrance_location_section)
-        local entrance_accessibility = entrance_location.AccessibilityLevel
+        local entrance_section = entrance_info:getCanEnterSection()
+        local entrance_accessibility = entrance_section.AccessibilityLevel
         return entrance_accessibility == AccessibilityLevel.Normal or entrance_accessibility == AccessibilityLevel.Cleared
     end
 
@@ -150,34 +150,31 @@ function completedActAt(entrance)
     end
 end
 
-function canCompleteActAt(entrance)
+function canCompleteActAt(entrance, check_entrance, skip_free_roam_sub_acts)
     local entrance_info = chapter_act_info[entrance]
 
-    -- TODO: Instead of checking the entrance accessibility here, we could instead include the checks in the .json:
-    --   `$canCompleteActAt|chapter3_murder,$canCompleteActAt|moon_camerasnap`
-    -- becomes
-    --   `"@Chapter2 Entrances/Acts/chapter3_murder,@Chapter2 Entrances/Acts/moon_camerasnap,$canCompleteActAt|chapter3_murder,$canCompleteActAt|moon_camerasnap"`
-    -- Which would be more performant?
-
-    -- First check if the entrance is accessible.
-    local entrance_location = Tracker:FindObjectForCode(entrance_info.entrance_location_section)
-    local entrance_accessibility = entrance_location.AccessibilityLevel
-    if entrance_accessibility ~= AccessibilityLevel.Normal and entrance_accessibility ~= AccessibilityLevel.Cleared then
-        return false
+    if check_entrance then
+        -- Check if the entrance is accessible.
+        local entrance_location = entrance_info:getCanEnterSection()
+        local entrance_accessibility = entrance_location.AccessibilityLevel
+        if entrance_accessibility ~= AccessibilityLevel.Normal and entrance_accessibility ~= AccessibilityLevel.Cleared then
+            return false
+        end
     end
 
     -- Now check if the act at the entrance is beatable.
-    local act_at_entrance = chapter_act_info[entrance_info.act_name]
+    local act_at_entrance_name = entrance_info.act_name
+    local act_at_entrance = chapter_act_info[act_at_entrance_name]
     local completion_location_section = act_at_entrance.vanilla_act_completion_location_section
 
-    -- Free roam acts have no act completion location and are always considered complete.
-    if completion_location_section == nil then
+    -- Free roam acts have no act completion location and are always considered 'complete' even if not all of their Time
+    -- Pieces have been acquired.
+    if completion_location_section == nil and skip_free_roam_sub_acts then
         return true
     end
 
-    local completion_location = Tracker:FindObjectForCode(act_at_entrance.vanilla_act_completion_location_section)
-    -- TODO: Can we prefix the function use with "^" and then return an AccessibilityLevel constant directly?
-    --       What about when there is other logic to be considered, such as subcon paintings?
-    local completion_accessibility = completion_location.AccessibilityLevel
-    return completion_accessibility == AccessibilityLevel.Normal or completion_accessibility == AccessibilityLevel.Cleared
+    -- Check the accessibility of the location defined in locations/logic/act_completion.json.
+    local completion_location_name = "@internal_can_complete_act/" .. act_at_entrance_name
+    local completion_location = Tracker:FindObjectForCode(completion_location_name)
+    return completion_location.AccessibilityLevel == AccessibilityLevel.Normal
 end

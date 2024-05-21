@@ -9,7 +9,13 @@
         "name": "Act 1 - Dead Bird Studio",
         "sections": [
           {
-            "name": ""
+            "name": "Can Enter"
+          },
+          {
+            "name": "Can Complete",
+            "access_rules": [
+              "$canCompleteActAt|DeadBirdStudio"
+            ]
           }
         ],
         "map_locations": [
@@ -27,7 +33,13 @@
         ],
         "sections": [
           {
-            "name": ""
+            "name": "Can Enter"
+          },
+          {
+            "name": "Can Complete",
+            "access_rules": [
+              "$canCompleteActAt|chapter3_murder"
+            ]
           }
         ],
         "map_locations": [
@@ -45,7 +57,13 @@
         ],
         "sections": [
           {
-            "name": ""
+            "name": "Can Enter"
+          },
+          {
+            "name": "Can Complete",
+            "access_rules": [
+              "$canCompleteActAt|moon_camerasnap"
+            ]
           }
         ],
         "map_locations": [
@@ -63,7 +81,13 @@
         ],
         "sections": [
           {
-            "name": ""
+            "name": "Can Enter"
+          },
+          {
+            "name": "Can Complete",
+            "access_rules": [
+              "$canCompleteActAt|trainwreck_selfdestruct"
+            ]
           }
         ],
         "map_locations": [
@@ -81,7 +105,13 @@
         ],
         "sections": [
           {
-            "name": ""
+            "name": "Can Enter"
+          },
+          {
+            "name": "Can Complete",
+            "access_rules": [
+              "$canCompleteActAt|moon_parade"
+            ]
           }
         ],
         "map_locations": [
@@ -99,7 +129,13 @@
         ],
         "sections": [
           {
-            "name": ""
+            "name": "Can Enter"
+          },
+          {
+            "name": "Can Complete",
+            "access_rules": [
+              "$canCompleteActAt|award_ceremony"
+            ]
           }
         ],
         "map_locations": [
@@ -117,7 +153,13 @@
         ],
         "sections": [
           {
-            "name": ""
+            "name": "Can Enter"
+          },
+          {
+            "name": "Can Complete",
+            "access_rules": [
+              "$canCompleteActAt|chapter3_secret_finale"
+            ]
           }
         ],
         "map_locations": [

@@ -22,7 +22,13 @@
             ],
             "sections": [
               {
-                "name": ""
+                "name": "Can Enter"
+              },
+              {
+                "name": "Can Complete",
+                "access_rules": [
+                  "$canCompleteActAt|TimeRift_Water_Mafia_Easy"
+                ]
               }
             ]
           },
@@ -40,7 +46,13 @@
             ],
             "sections": [
               {
-                "name": ""
+                "name": "Can Enter"
+              },
+              {
+                "name": "Can Complete",
+                "access_rules": [
+                  "$canCompleteActAt|TimeRift_Water_Mafia_Hard"
+                ]
               }
             ]
           },
@@ -58,7 +70,13 @@
             ],
             "sections": [
               {
-                "name": ""
+                "name": "Can Enter"
+              },
+              {
+                "name": "Can Complete",
+                "access_rules": [
+                  "$canCompleteActAt|TimeRift_Cave_Mafia"
+                ]
               }
             ]
           }
@@ -81,7 +99,13 @@
             ],
             "sections": [
               {
-                "name": ""
+                "name": "Can Enter"
+              },
+              {
+                "name": "Can Complete",
+                "access_rules": [
+                  "$canCompleteActAt|TimeRift_Water_TWreck_Panels"
+                ]
               }
             ]
           },
@@ -100,7 +124,13 @@
             ],
             "sections": [
               {
-                "name": ""
+                "name": "Can Enter"
+              },
+              {
+                "name": "Can Complete",
+                "access_rules": [
+                  "$canCompleteActAt|TimeRift_Water_TWreck_Parade"
+                ]
               }
             ]
           },
@@ -119,7 +149,13 @@
             ],
             "sections": [
               {
-                "name": ""
+                "name": "Can Enter"
+              },
+              {
+                "name": "Can Complete",
+                "access_rules": [
+                  "$canCompleteActAt|TimeRift_Cave_BirdBasement"
+                ]
               }
             ]
           }
@@ -145,7 +181,13 @@
             ],
             "sections": [
               {
-                "name": ""
+                "name": "Can Enter"
+              },
+              {
+                "name": "Can Complete",
+                "access_rules": [
+                  "$canCompleteActAt|TimeRift_Water_Subcon_Hookshot"
+                ]
               }
             ]
           },
@@ -163,7 +205,13 @@
             ],
             "sections": [
               {
-                "name": ""
+                "name": "Can Enter"
+              },
+              {
+                "name": "Can Complete",
+                "access_rules": [
+                  "$canCompleteActAt|TimeRift_Water_Subcon_Dwellers"
+                ]
               }
             ]
           },
@@ -181,7 +229,13 @@
             ],
             "sections": [
               {
-                "name": ""
+                "name": "Can Enter"
+              },
+              {
+                "name": "Can Complete",
+                "access_rules": [
+                  "$canCompleteActAt|TimeRift_Cave_Raccoon"
+                ]
               }
             ]
           }
@@ -204,7 +258,13 @@
             ],
             "sections": [
               {
-                "name": ""
+                "name": "Can Enter"
+              },
+              {
+                "name": "Can Complete",
+                "access_rules": [
+                  "$canCompleteActAt|TimeRift_Water_Alp_Goats"
+                ]
               }
             ]
           },
@@ -222,7 +282,13 @@
             ],
             "sections": [
               {
-                "name": ""
+                "name": "Can Enter"
+              },
+              {
+                "name": "Can Complete",
+                "access_rules": [
+                  "$canCompleteActAt|TimeRift_Water_AlpineSkyline_Cats"
+                ]
               }
             ]
           },
@@ -240,7 +306,13 @@
             ],
             "sections": [
               {
-                "name": ""
+                "name": "Can Enter"
+              },
+              {
+                "name": "Can Complete",
+                "access_rules": [
+                  "$canCompleteActAt|TimeRift_Cave_Alps"
+                ]
               }
             ]
           }
@@ -266,7 +338,13 @@
             ],
             "sections": [
               {
-                "name": ""
+                "name": "Can Enter"
+              },
+              {
+                "name": "Can Complete",
+                "access_rules": [
+                  "$canCompleteActAt|Cruise_WaterRift_Slide"
+                ]
               }
             ]
           },
@@ -284,7 +362,13 @@
             ],
             "sections": [
               {
-                "name": ""
+                "name": "Can Enter"
+              },
+              {
+                "name": "Can Complete",
+                "access_rules": [
+                  "$canCompleteActAt|Cruise_CaveRift_Aquarium"
+                ]
               }
             ]
           }
@@ -310,7 +394,13 @@
             ],
             "sections": [
               {
-                "name": ""
+                "name": "Can Enter"
+              },
+              {
+                "name": "Can Complete",
+                "access_rules": [
+                  "$canCompleteActAt|Metro_CaveRift_RumbiFactory"
+                ]
               }
             ]
           }

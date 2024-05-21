@@ -9,7 +9,13 @@
         "name": "Act 1 - Welcome to Mafia Town",
         "sections": [
           {
-            "name": ""
+            "name": "Can Enter"
+          },
+          {
+            "name": "Can Complete",
+            "access_rules": [
+              "$canCompleteActAt|chapter1_tutorial"
+            ]
           }
         ],
         "map_locations": [
@@ -34,14 +40,20 @@
         ],
         "sections": [
           {
-            "name": ""
+            "name": "Can Enter"
+          },
+          {
+            "name": "Can Complete",
+            "access_rules": [
+              "$canCompleteActAt|chapter1_barrelboss"
+            ]
           }
         ]
       },
       {
         "name": "Act 3 - She Came from Outer Space",
         "access_rules": [
-          "@Chapter 1 Entrances/Act 2 - Barrel Battle/"
+          "@Chapter 1 Entrances/Act 2 - Barrel Battle"
         ],
         "map_locations": [
           {
@@ -52,7 +64,13 @@
         ],
         "sections": [
           {
-            "name": ""
+            "name": "Can Enter"
+          },
+          {
+            "name": "Can Complete",
+            "access_rules": [
+              "$canCompleteActAt|chapter1_cannon_repair"
+            ]
           }
         ]
       },
@@ -70,7 +88,13 @@
         ],
         "sections": [
           {
-            "name": ""
+            "name": "Can Enter"
+          },
+          {
+            "name": "Can Complete",
+            "access_rules": [
+              "$canCompleteActAt|chapter1_boss"
+            ]
           }
         ]
       },
@@ -88,7 +112,13 @@
         ],
         "sections": [
           {
-            "name": ""
+            "name": "Can Enter"
+          },
+          {
+            "name": "Can Complete",
+            "access_rules": [
+              "$canCompleteActAt|harbor_impossible_race"
+            ]
           }
         ]
       },
@@ -106,14 +136,20 @@
         ],
         "sections": [
           {
-            "name": ""
+            "name": "Can Enter"
+          },
+          {
+            "name": "Can Complete",
+            "access_rules": [
+              "$canCompleteActAt|mafiatown_lava"
+            ]
           }
         ]
       },
       {
         "name": "Act 7 - The Golden Vault",
         "access_rules": [
-          "@Chapter 1 Entrances/Act 6 - Heating up Mafia Town/"
+          "@Chapter 1 Entrances/Act 6 - Heating up Mafia Town"
         ],
         "map_locations": [
           {
@@ -124,7 +160,13 @@
         ],
         "sections": [
           {
-            "name": ""
+            "name": "Can Enter"
+          },
+          {
+            "name": "Can Complete",
+            "access_rules": [
+              "$canCompleteActAt|mafiatown_goldenvault"
+            ]
           }
         ]
       }
