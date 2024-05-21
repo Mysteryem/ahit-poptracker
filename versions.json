@@ -1,6 +1,18 @@
 {
     "versions": [
         {
+            "package_version": "1.3.0",
+            "download_url": "https://github.com/Mysteryem/ahit-poptracker/archive/refs/tags/v1.3.0.zip",
+            "sha256": "c1a27f258da609a80a13375ebf5e8b7b115fe5a913fd43a470b3db00fe1d02b3",
+            "changelog": [
+                "Added 'Can Enter' and 'Can Complete' chests to Entrances map locations",
+                "Updated logic for AP World v1.5.3 logic changes:",
+                " - Added Moderate logic for completing Time Rift - Village with nothing when Umbrella Logic is disabled",
+                " - Removed Sprint Hat requirement from Hard Logic for Dweller Platforming Tree B",
+                " - Added Expert logic for completing Yellow Overpass Manhole and Green Clean Manhole with nothing"
+            ]
+        },
+        {
             "package_version": "1.2.1",
             "download_url": "https://github.com/Mysteryem/ahit-poptracker/archive/refs/tags/v1.2.1.zip",
             "sha256": "d585025549a416d947c5267ab46c8e018d5e40eaa105fb41ec68df1f049663f0",
