@@ -78,27 +78,6 @@ alpine_free_roam_act_names = {
     AlpineSkyline_WeddingCake = true
 }
 
-time_piece_location_to_vanilla_entrance = {}
-for entrance, act in pairs(chapter_act_info) do
-    local time_piece_loc = act.vanilla_act_completion_location_section
-    -- Free roam acts are considered cleared automatically, though the tracker will show them as accessible and
-    -- uncleared.
-    if time_piece_loc ~= nil then
-        time_piece_location_to_vanilla_entrance[time_piece_loc] = entrance
-    end
-end
-
-chapter_entrance_names = {}
-for entrance, act in pairs(chapter_act_info) do
-    local chapter = act.chapter
-    local chapter_entrances = chapter_entrance_names[chapter]
-    if chapter_entrances == nil then
-        chapter_entrances = {}
-        chapter_entrance_names[chapter] = chapter_entrances
-    end
-    table.insert(chapter_entrances, entrance)
-end
-
 act_to_entrance = {}
 
 -- Should be called after updating the act name of entrances through act:setActName(new_name)
@@ -109,16 +88,6 @@ function updateActToEntrance()
 end
 
 updateActToEntrance()
-
--- Given a time piece location, get the act, get the entrance of the act and return the entrance's location.
-function getEntranceFromTimePieceLocation(time_piece_loc)
-    local vanilla_act = time_piece_location_to_vanilla_entrance[time_piece_loc]
-    if vanilla_act then
-        return getActInfo(vanilla_act)
-    end
-
-    return nil
-end
 
 function getActInfo(act_name)
     return chapter_act_info[act_to_entrance[act_name]]
