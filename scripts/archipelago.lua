@@ -6,8 +6,6 @@ ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
 CUR_INDEX = -1
 --SLOT_DATA = nil
 
-local act_completion_time_pieces_at_bugged_entrances = {}
-
 -- Setup for auto map switching
 local map_table = {
     hub_spaceship = "Spaceship",
@@ -281,30 +279,6 @@ function onClear(slot_data)
     end
 
     updateActToEntrance()
-
-    -- Reset
-    act_completion_time_pieces_at_bugged_entrances = {}
-    -- Add the Alpine Free Roam entrance if its act is not a free roam act (always considered complete).
-    local bugged_entrance = chapter_act_info["AlpineFreeRoam"]
-    local act_at_bugged_entrance = chapter_act_info[bugged_entrance.act_name]
-    local act_completion_location_for_act = act_at_bugged_entrance.vanilla_act_completion_location_section
-    if act_completion_location_for_act then
-        act_completion_time_pieces_at_bugged_entrances[act_completion_location_for_act] = bugged_entrance
-    end
-    -- Add the Nyakuza Metro Free Roam entrance if its act is not a free roam act (always considered complete).
-    bugged_entrance = chapter_act_info["MetroFreeRoam"]
-    act_at_bugged_entrance = chapter_act_info[bugged_entrance.act_name]
-    act_completion_location_for_act = act_at_bugged_entrance.vanilla_act_completion_location_section
-    if act_completion_location_for_act then
-        act_completion_time_pieces_at_bugged_entrances[act_completion_location_for_act] = bugged_entrance
-    end
-    -- Add the Rush Hour entrance if its act is not a free roam act (always considered complete).
-    bugged_entrance = chapter_act_info["Metro_Escape"]
-    act_at_bugged_entrance = chapter_act_info[bugged_entrance.act_name]
-    act_completion_location_for_act = act_at_bugged_entrance.vanilla_act_completion_location_section
-    if act_completion_location_for_act then
-        act_completion_time_pieces_at_bugged_entrances[act_completion_location_for_act] = bugged_entrance
-    end
 end
 
 function onClearHandler(slot_data)
@@ -469,19 +443,6 @@ function onLocation(location_id, location_name)
         --print("onLocation: checked spot "..v[1])
     else
         print(string.format("onLocation: could not find object for code %s", v))
-    end
-
-    -- Workaround for act completions occurring at free roam entrances and the Rush Hour entrance giving an empty string
-    -- as the entrance name.
-    -- When clearing the location of the act completion time piece of the chapter at the bugged entrance, also clear
-    -- the entrance.
-    -- Note: This can produce incorrect results if the time piece location is cleared through !collect.
-    --       Fortunately, there is no logic that depends on whether these entrances have been cleared.
-    local bugged_entrance = act_completion_time_pieces_at_bugged_entrances[v]
-    if bugged_entrance then
-        bugged_entrance:markAsCompleted()
-        -- If there was logic that depended on these bugged entrances, then an update would be required.
-        --forceUpdate()
     end
 end
 
