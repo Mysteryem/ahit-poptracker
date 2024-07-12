@@ -11,18 +11,28 @@ local act_completion_time_pieces_at_bugged_entrances = {}
 -- Setup for auto map switching
 local map_table = {
     hub_spaceship = "Spaceship",
+    timerift_water_spaceship_mail = "Spaceship",
+    timerift_water_spaceship = "Spaceship",
+    castle_mu = "Spaceship", -- The Finale
+    timerift_cave_tour = "Spaceship",
 
     mafia_town = "Mafia Town",
     mafia_town_night = "Mafia Town",
     mafia_town_lava = "Mafia Town",
     mafia_hq = "Mafia Town",
     mafia_town_dw_ufo = "Mafia Town",
+    timerift_cave_mafia = "Mafia Town",
+    timerift_water_mafia_easy = "Mafia Town",
+    timerift_water_mafia_hard = "Mafia Town",
 
     deadbirdstudio = "Dead Bird Studio",
     chapter3_murder = "Dead Bird Studio",
     themoon = "Dead Bird Studio",
     trainwreck_selfdestruct = "Dead Bird Studio",
     dead_cinema = "Dead Bird Studio",
+    timerift_cave_birdbasement = "Dead Bird Studio",
+    timerift_water_twreck_panels = "Dead Bird Studio",
+    timerift_water_twreck_parade = "Dead Bird Studio",
 
     deadbirdbasement = "Dead Bird Basement",
     djgrooves_boss = "Dead Bird Basement",
@@ -30,12 +40,22 @@ local map_table = {
     subconforest = "Subcon Forest",
     subcon_cave = "Subcon Forest",
     vanessa_manor = "Subcon Forest",
+    timerift_cave_raccoon = "Subcon Forest",
+    timerift_water_subcon_hookshot = "Subcon Forest",
+    timerift_water_subcon_dwellers = "Subcon Forest",
 
     alpsandsails = "Alpine Skyline",
+    timerift_cave_alps = "Alpine Skyline",
+    timerift_water_alp_goats = "Alpine Skyline",
+    timerift_water_alp_cats = "Alpine Skyline",
 
-    -- placeholders for the DLC
     ship_main = "Arctic Cruise",
     ship_sinking = "Arctic Cruise",
+    timerift_cave_aquarium = "Arctic Cruise",
+    timerift_water_cruise_slide = "Arctic Cruise",
+
+    dlc_metro = "Nyakuza Metro",
+    timerift_cave_rumbifactory = "Nyakuza Metro",
 
     dlc_metro = "Nyakuza Metro"
 }
