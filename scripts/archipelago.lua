@@ -327,6 +327,9 @@ end
 
 --called when map is changed
 function changedMap(current_map, previous_map)
+    if current_map == nil then
+        return
+    end
     -- should start disabled?
     -- add button to disable auto switching
     internal_map_name = map_table[current_map]
@@ -352,6 +355,9 @@ function tryCompleteEntranceWithFreeRoamAct(act_name, free_roam_acts)
 end
 
 function changedCompletedEntrances(current, previous)
+    if current == nil then
+        return
+    end
     local new_completions = false
 
     -- todo: Find out if `current` is guaranteed to be the same as `previous` but with extra elements. Then the
