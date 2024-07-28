@@ -56,8 +56,8 @@
         "access_rules": [
           "normal, umbrella, @DBS Logic/Can access Act 1 - Dead Bird Studio",
           "normal, brewer, @DBS Logic/Can access Act 1 - Dead Bird Studio",
-          "moderate, @General Logic/Can Hit, @DBS Logic/Can access Act 1 - Dead Bird Studio",
-          "expert, @DBS Logic/Can access Dead Bird Studio - Elevator Area"
+          "[moderate], @General Logic/Can Hit, @DBS Logic/Can access Act 1 - Dead Bird Studio",
+          "[expert], @DBS Logic/Can access Dead Bird Studio - Elevator Area"
         ]
       }
     ]

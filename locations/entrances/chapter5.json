@@ -9,8 +9,8 @@
         "name": "Act 1 - The Finale",
         "access_rules": [
           "dweller,brewer",
-          "moderate,ice",
-          "expert"
+          "[moderate],ice",
+          "[expert]"
         ],
         "map_locations": [
           {
