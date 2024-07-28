@@ -296,7 +296,7 @@
       {
         "name": "Rumbi Factory",
         "access_rules": [
-          "$canAccessAct|Metro_CaveRift_RumbiFactory"
+          "^$canAccessAct|Metro_CaveRift_RumbiFactory"
         ],
         "sections": [
           {

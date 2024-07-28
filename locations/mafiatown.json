@@ -756,7 +756,7 @@
           {
             "name": "Time Rift",
             "access_rules": [
-              "$canAccessAct|TimeRift_Water_Mafia_Hard"
+              "^$canAccessAct|TimeRift_Water_Mafia_Hard"
             ]
           }
         ],
@@ -774,7 +774,7 @@
           {
             "name": "Time Rift",
             "access_rules": [
-              "$canAccessAct|TimeRift_Water_Mafia_Easy"
+              "^$canAccessAct|TimeRift_Water_Mafia_Easy"
             ]
           }
         ],
@@ -789,7 +789,7 @@
       {
         "name": "Mafia of Cooks",
         "access_rules": [
-          "$canAccessAct|TimeRift_Cave_Mafia"
+          "^$canAccessAct|TimeRift_Cave_Mafia"
         ],
         "sections": [
           {

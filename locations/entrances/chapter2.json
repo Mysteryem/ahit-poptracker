@@ -14,7 +14,7 @@
           {
             "name": "Can Complete",
             "access_rules": [
-              "$canCompleteActAt|DeadBirdStudio"
+              "^$canCompleteActAt|DeadBirdStudio"
             ]
           }
         ],
@@ -38,7 +38,7 @@
           {
             "name": "Can Complete",
             "access_rules": [
-              "$canCompleteActAt|chapter3_murder"
+              "^$canCompleteActAt|chapter3_murder"
             ]
           }
         ],
@@ -62,7 +62,7 @@
           {
             "name": "Can Complete",
             "access_rules": [
-              "$canCompleteActAt|moon_camerasnap"
+              "^$canCompleteActAt|moon_camerasnap"
             ]
           }
         ],
@@ -86,7 +86,7 @@
           {
             "name": "Can Complete",
             "access_rules": [
-              "$canCompleteActAt|trainwreck_selfdestruct"
+              "^$canCompleteActAt|trainwreck_selfdestruct"
             ]
           }
         ],
@@ -110,7 +110,7 @@
           {
             "name": "Can Complete",
             "access_rules": [
-              "$canCompleteActAt|moon_parade"
+              "^$canCompleteActAt|moon_parade"
             ]
           }
         ],
@@ -134,7 +134,7 @@
           {
             "name": "Can Complete",
             "access_rules": [
-              "$canCompleteActAt|award_ceremony"
+              "^$canCompleteActAt|award_ceremony"
             ]
           }
         ],
@@ -158,7 +158,7 @@
           {
             "name": "Can Complete",
             "access_rules": [
-              "$canCompleteActAt|chapter3_secret_finale"
+              "^$canCompleteActAt|chapter3_secret_finale"
             ]
           }
         ],

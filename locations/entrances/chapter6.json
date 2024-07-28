@@ -25,7 +25,7 @@
           {
             "name": "Can Complete",
             "access_rules": [
-              "$canCompleteActAt|Cruise_Boarding"
+              "^$canCompleteActAt|Cruise_Boarding"
             ]
           }
         ]
@@ -49,7 +49,7 @@
           {
             "name": "Can Complete",
             "access_rules": [
-              "$canCompleteActAt|Cruise_Working"
+              "^$canCompleteActAt|Cruise_Working"
             ]
           }
         ]
@@ -73,7 +73,7 @@
           {
             "name": "Can Complete",
             "access_rules": [
-              "$canCompleteActAt|Cruise_Sinking"
+              "^$canCompleteActAt|Cruise_Sinking"
             ]
           }
         ]

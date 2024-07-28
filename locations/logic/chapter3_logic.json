@@ -5,37 +5,37 @@
       {
         "name": "Can access Act 1 - Contractual Obligations",
         "access_rules": [
-          "$canAccessAct|subcon_village_icewall"
+          "^$canAccessAct|subcon_village_icewall"
         ]
       },
       {
         "name": "Can access Act 2 - The Subcon Well",
         "access_rules": [
-          "$canAccessAct|subcon_cave"
+          "^$canAccessAct|subcon_cave"
         ]
       },
       {
         "name": "Can access Act 3 - Toilet of Doom",
         "access_rules": [
-          "$canAccessAct|chapter2_toiletboss"
+          "^$canAccessAct|chapter2_toiletboss"
         ]
       },
       {
         "name": "Can access Act 4 - Queen Vanessa's Manor",
         "access_rules": [
-          "$canAccessAct|vanessa_manor_attic"
+          "^$canAccessAct|vanessa_manor_attic"
         ]
       },
       {
         "name": "Can access Act 5 - Mail Delivery Service",
         "access_rules": [
-          "$canAccessAct|subcon_maildelivery"
+          "^$canAccessAct|subcon_maildelivery"
         ]
       },
       {
         "name": "Can access Finale - Your Contract has Expired",
         "access_rules": [
-          "$canAccessAct|snatcher_boss"
+          "^$canAccessAct|snatcher_boss"
         ]
       },
       {

@@ -480,7 +480,7 @@
       {
         "name": "Alpine Skyline (Rift)",
         "access_rules": [
-          "$canAccessAct|TimeRift_Cave_Alps"
+          "^$canAccessAct|TimeRift_Cave_Alps"
         ],
         "sections": [
           {

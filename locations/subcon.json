@@ -811,7 +811,7 @@
       {
         "name": "Village",
         "access_rules": [
-            "$canAccessAct|TimeRift_Water_Subcon_Dwellers"
+            "^$canAccessAct|TimeRift_Water_Subcon_Dwellers"
         ],
         "sections": [
           {
@@ -835,11 +835,14 @@
       },
       {
         "name": "Pipe",
+        "access_rules": [
+          "^$canAccessAct|TimeRift_Water_Subcon_Hookshot"
+        ],
         "sections": [
           {
             "name": "Time Rift",
             "access_rules": [
-              "hookshot, $canAccessAct|TimeRift_Water_Subcon_Hookshot"
+              "hookshot"
             ]
           }
         ],
@@ -854,7 +857,7 @@
       {
         "name": "Sleepy Subcon",
         "access_rules": [
-          "$canAccessAct|TimeRift_Cave_Raccoon"
+          "^$canAccessAct|TimeRift_Cave_Raccoon"
         ],
         "sections": [
           {

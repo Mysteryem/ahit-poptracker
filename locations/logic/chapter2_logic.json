@@ -5,43 +5,43 @@
       {
         "name": "Can access Act 1 - Dead Bird Studio",
         "access_rules": [
-          "$canAccessAct|DeadBirdStudio"
+          "^$canAccessAct|DeadBirdStudio"
         ]
       },
       {
         "name": "Can access Act 2 - Murder on the Owl Express",
         "access_rules": [
-          "$canAccessAct|chapter3_murder"
+          "^$canAccessAct|chapter3_murder"
         ]
       },
       {
         "name": "Can access Act 3 - Picture Perfect",
         "access_rules": [
-          "$canAccessAct|moon_camerasnap"
+          "^$canAccessAct|moon_camerasnap"
         ]
       },
       {
         "name": "Can access Act 4 - Train Rush",
         "access_rules": [
-          "$canAccessAct|trainwreck_selfdestruct"
+          "^$canAccessAct|trainwreck_selfdestruct"
         ]
       },
       {
         "name": "Can access Act 5 - The Big Parade",
         "access_rules": [
-          "$canAccessAct|moon_parade"
+          "^$canAccessAct|moon_parade"
         ]
       },
       {
         "name": "Can access Finale - Award Ceremony",
         "access_rules": [
-          "$canAccessAct|award_ceremony"
+          "^$canAccessAct|award_ceremony"
         ]
       },
       {
         "name": "Can access Secret Finale - Dead Bird Studio Basement",
         "access_rules": [
-          "$canAccessAct|chapter3_secret_finale"
+          "^$canAccessAct|chapter3_secret_finale"
         ]
       },
       {

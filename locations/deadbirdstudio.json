@@ -85,7 +85,7 @@
           {
             "name": "Time Rift",
             "access_rules": [
-              "$canAccessAct|TimeRift_Water_TWreck_Panels"
+              "^$canAccessAct|TimeRift_Water_TWreck_Panels"
             ]
           }
         ],
@@ -127,7 +127,7 @@
           {
             "name": "Time Rift",
             "access_rules": [
-              "$canAccessAct|TimeRift_Water_TWreck_Parade"
+              "^$canAccessAct|TimeRift_Water_TWreck_Parade"
             ]
           }
         ],
@@ -144,7 +144,7 @@
   {
     "name": "Dead Bird Studio (Rift)",
     "access_rules": [
-      "$canAccessAct|TimeRift_Cave_BirdBasement"
+      "^$canAccessAct|TimeRift_Cave_BirdBasement"
     ],
     "sections": [
       {

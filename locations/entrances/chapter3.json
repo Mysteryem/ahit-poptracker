@@ -14,7 +14,7 @@
           {
             "name": "Can Complete",
             "access_rules": [
-              "$canCompleteActAt|subcon_village_icewall"
+              "^$canCompleteActAt|subcon_village_icewall"
             ]
           }
         ],
@@ -38,7 +38,7 @@
           {
             "name": "Can Complete",
             "access_rules": [
-              "$canCompleteActAt|subcon_cave"
+              "^$canCompleteActAt|subcon_cave"
             ]
           }
         ],
@@ -62,7 +62,7 @@
           {
             "name": "Can Complete",
             "access_rules": [
-              "$canCompleteActAt|chapter2_toiletboss"
+              "^$canCompleteActAt|chapter2_toiletboss"
             ]
           }
         ],
@@ -86,7 +86,7 @@
           {
             "name": "Can Complete",
             "access_rules": [
-              "$canCompleteActAt|vanessa_manor_attic"
+              "^$canCompleteActAt|vanessa_manor_attic"
             ]
           }
         ],
@@ -110,7 +110,7 @@
           {
             "name": "Can Complete",
             "access_rules": [
-              "$canCompleteActAt|subcon_maildelivery"
+              "^$canCompleteActAt|subcon_maildelivery"
             ]
           }
         ],
@@ -134,7 +134,7 @@
           {
             "name": "Can Complete",
             "access_rules": [
-              "$canCompleteActAt|snatcher_boss"
+              "^$canCompleteActAt|snatcher_boss"
             ]
           }
         ],

@@ -14,7 +14,7 @@
           {
             "name": "Can Complete",
             "access_rules": [
-              "$canCompleteActAt|chapter1_tutorial"
+              "^$canCompleteActAt|chapter1_tutorial"
             ]
           }
         ],
@@ -45,7 +45,7 @@
           {
             "name": "Can Complete",
             "access_rules": [
-              "$canCompleteActAt|chapter1_barrelboss"
+              "^$canCompleteActAt|chapter1_barrelboss"
             ]
           }
         ]
@@ -69,7 +69,7 @@
           {
             "name": "Can Complete",
             "access_rules": [
-              "$canCompleteActAt|chapter1_cannon_repair"
+              "^$canCompleteActAt|chapter1_cannon_repair"
             ]
           }
         ]
@@ -93,7 +93,7 @@
           {
             "name": "Can Complete",
             "access_rules": [
-              "$canCompleteActAt|chapter1_boss"
+              "^$canCompleteActAt|chapter1_boss"
             ]
           }
         ]
@@ -117,7 +117,7 @@
           {
             "name": "Can Complete",
             "access_rules": [
-              "$canCompleteActAt|harbor_impossible_race"
+              "^$canCompleteActAt|harbor_impossible_race"
             ]
           }
         ]
@@ -141,7 +141,7 @@
           {
             "name": "Can Complete",
             "access_rules": [
-              "$canCompleteActAt|mafiatown_lava"
+              "^$canCompleteActAt|mafiatown_lava"
             ]
           }
         ]
@@ -165,7 +165,7 @@
           {
             "name": "Can Complete",
             "access_rules": [
-              "$canCompleteActAt|mafiatown_goldenvault"
+              "^$canCompleteActAt|mafiatown_goldenvault"
             ]
           }
         ]

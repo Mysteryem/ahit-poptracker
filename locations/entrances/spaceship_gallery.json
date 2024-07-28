@@ -22,7 +22,7 @@
           {
             "name": "Can Complete",
             "access_rules": [
-              "$canCompleteActAt|Spaceship_WaterRift_Gallery"
+              "^$canCompleteActAt|Spaceship_WaterRift_Gallery"
             ]
           }
         ]

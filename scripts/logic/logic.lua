@@ -18,11 +18,40 @@ function isApConnected()
   end
 end
 
+-- Currently unused. May be needed for no-act-rando in the future.
+local ACCESSIBILITY_VALUES = {
+    [AccessibilityLevel.None] = 0,
+    [AccessibilityLevel.Inspect] = 1,
+    [AccessibilityLevel.Partial] = 2, -- Not really useful
+    [AccessibilityLevel.SequenceBreak] = 3,
+    [AccessibilityLevel.Normal] = 4,
+    [AccessibilityLevel.Cleared] = 5, -- Not really useful
+}
+local ACCESSIBILITY_VALUES_REVERSE = {}
+for accessibility_level, value in pairs(ACCESSIBILITY_VALUES) do
+    ACCESSIBILITY_VALUES_REVERSE[value] = accessibility_level
+end
+
+-- Currently unused. May be needed for no-act-rando in the future.
+function combineAccessibility(...)
+    -- Start at 'Normal'
+    local current_accessibility_value = 4
+    for _, accessibility_level in ipairs(arg) do
+        local accessibility_value = ACCESSIBILITY_VALUES[v]
+        if accessibility_value == 0 then
+            -- Can't get lower than 'None', so return early.
+            return AccessibilityLevel.None
+        elseif accessibility_value < current_accessibility_value then
+            current_accessibility_value = accessibility_value
+        end
+    end
+    return ACCESSIBILITY_VALUES_REVERSE[current_accessibility_value]
+end
+
 function canAccessAct(act_to_access)
   local act_info = getActInfo(act_to_access)
   local location = act_info:getCanEnterSection()
-  local entrance_accessibility = location.AccessibilityLevel
-  return entrance_accessibility == AccessibilityLevel.Normal or entrance_accessibility == AccessibilityLevel.Cleared
+  return location.AccessibilityLevel
 end
 
 function hasTimePiecesForChapter(chapter_to_access)
@@ -124,31 +153,41 @@ function completedActAt(entrance)
     return completed_entrances[entrance] ~= nil
 end
 
+-- Note: the check_entrance and skip_free_roam_sub_acts arguments are currently unused.
 function canCompleteActAt(entrance, check_entrance, skip_free_roam_sub_acts)
     local entrance_info = chapter_act_info[entrance]
 
+    local entrance_accessibility
     if check_entrance then
         -- Check if the entrance is accessible.
         local entrance_location = entrance_info:getCanEnterSection()
-        local entrance_accessibility = entrance_location.AccessibilityLevel
-        if entrance_accessibility ~= AccessibilityLevel.Normal and entrance_accessibility ~= AccessibilityLevel.Cleared then
-            return false
-        end
+        entrance_accessibility = entrance_location.AccessibilityLevel
     end
 
     -- Now check if the act at the entrance is beatable.
     local act_at_entrance_name = entrance_info.act_name
-    local act_at_entrance = chapter_act_info[act_at_entrance_name]
-    local completion_location_section = act_at_entrance.vanilla_act_completion_location_section
 
     -- Free roam acts have no act completion location and are always considered 'complete' even if not all of their Time
     -- Pieces have been acquired.
-    if completion_location_section == nil and skip_free_roam_sub_acts then
-        return true
+    if skip_free_roam_sub_acts then
+        local act_at_entrance = chapter_act_info[act_at_entrance_name]
+        local completion_location_section = act_at_entrance.vanilla_act_completion_location_section
+        if completion_location_section == nil then
+            -- The act at the entrance is a free roam act if it has no vanilla act completion section.
+            if check_entrance then
+                return entrance_accessibility
+            else
+                return AccessibilityLevel.Normal
+            end
+        end
     end
 
     -- Check the accessibility of the location defined in locations/logic/act_completion.json.
     local completion_location_name = "@internal_can_complete_act/" .. act_at_entrance_name
     local completion_location = Tracker:FindObjectForCode(completion_location_name)
-    return completion_location.AccessibilityLevel == AccessibilityLevel.Normal
+    if check_entrance then
+        return combineAccessibility(completion_location.AccessibilityLevel, entrance_accessibility)
+    else
+        return completion_location.AccessibilityLevel
+    end
 end

@@ -339,7 +339,7 @@
       {
         "name": "Deep Sea",
         "access_rules": [
-          "$canAccessAct|Cruise_CaveRift_Aquarium"
+          "^$canAccessAct|Cruise_CaveRift_Aquarium"
         ],
         "sections": [
           {
@@ -381,7 +381,7 @@
       {
         "name": "Balcony",
         "access_rules": [
-          "$canAccessAct|Cruise_WaterRift_Slide"
+          "^$canAccessAct|Cruise_WaterRift_Slide"
         ],
         "sections": [
           {

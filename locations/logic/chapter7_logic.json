@@ -5,13 +5,13 @@
       {
         "name": "Can access Free Roam",
         "access_rules": [
-          "$canAccessAct|MetroFreeRoam"
+          "^$canAccessAct|MetroFreeRoam"
         ]
       },
       {
         "name": "Can access Rush Hour",
         "access_rules": [
-          "$canAccessAct|Metro_Escape"
+          "^$canAccessAct|Metro_Escape"
         ]
       },
       {

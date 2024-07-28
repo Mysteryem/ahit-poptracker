@@ -23,7 +23,7 @@
       {
         "name": "Time's End",
         "access_rules": [
-          "$canAccessAct|TheFinale_FinalBoss"
+          "^$canAccessAct|TheFinale_FinalBoss"
         ],
         "sections": [
           {
@@ -48,7 +48,7 @@
       {
         "name": "Tour",
         "access_rules": [
-          "$canAccessAct|TimeRift_Cave_Tour"
+          "^$canAccessAct|TimeRift_Cave_Tour"
         ],
         "visibility_rules": [
           "exclude_tour_disabled, dlc1"
@@ -104,7 +104,7 @@
       {
         "name": "The Lab",
         "access_rules": [
-          "$canAccessAct|Spaceship_WaterRift_MailRoom"
+          "^$canAccessAct|Spaceship_WaterRift_MailRoom"
         ],
         "sections": [
           {

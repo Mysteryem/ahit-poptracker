@@ -21,7 +21,7 @@
           {
             "name": "Can Complete",
             "access_rules": [
-              "$canCompleteActAt|AlpineFreeRoam"
+              "^$canCompleteActAt|AlpineFreeRoam"
             ]
           }
         ]
@@ -45,7 +45,7 @@
           {
             "name": "Can Complete",
             "access_rules": [
-              "$canCompleteActAt|AlpineSkyline_Finale"
+              "^$canCompleteActAt|AlpineSkyline_Finale"
             ]
           }
         ]
