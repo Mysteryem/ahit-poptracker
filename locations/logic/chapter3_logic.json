@@ -88,7 +88,7 @@
         "name": "Green Firewall",
         "access_rules": [
           "@Subcon Logic/Green Paintings",
-          "mdoerate, no_painting_skips_off"
+          "moderate, no_painting_skips_off"
         ]
       },
       {
