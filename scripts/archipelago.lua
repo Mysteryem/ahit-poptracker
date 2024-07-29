@@ -8,7 +8,7 @@ CUR_INDEX = -1
 
 -- Setup for auto map switching
 local map_table = {
-    hub_spaceship = "Spaceship",
+    hub_spaceship = "default",
     timerift_water_spaceship_mail = "Spaceship",
     timerift_water_spaceship = "Spaceship",
     castle_mu = "Spaceship", -- The Finale
@@ -330,13 +330,29 @@ function changedMap(current_map, previous_map)
     if current_map == nil then
         return
     end
+
+    local auto_switch_setting_item = Tracker:FindObjectForCode("setting_auto_map_switch")
+    if not auto_switch_setting_item.Active then
+        -- Automatic map switching is disabled
+        return
+    end
+
     -- should start disabled?
     -- add button to disable auto switching
-    internal_map_name = map_table[current_map]
+    local internal_map_name = map_table[current_map]
     
     if internal_map_name == nil then
         print(string.format("Could not find map name %s; Setting to Spaceship", current_map))
-        internal_map_name = "Spaceship"
+        internal_map_name = "default"
+    end
+    if internal_map_name == "default" then
+        local default_map_setting_item = Tracker:FindObjectForCode("setting_default_map")
+        local current_stage = default_map_setting_item.CurrentStage
+        if current_stage == 1 then
+            internal_map_name = "Entrances"
+        else
+            internal_map_name = "Spaceship"
+        end
     end
     Tracker:UiHint("ActivateTab", internal_map_name)
 end

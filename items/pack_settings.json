@@ -1,13 +1,13 @@
 [
   {
-    "name": "Automatic Map Switching",//Not Yet Implemented
+    "name": "Automatic Map Switching",
     "type": "toggle",
     "img": "images/settings/MetroGuide.png",
     "codes": "setting_auto_map_switch",
     "initial_active_state": true
   },
   {
-    "name": "Default Map",//Not Yet Implemented
+    "name": "Default Map",
     "type": "progressive",
     "codes": "setting_default_map",
     "allow_disabled": false,
@@ -15,10 +15,12 @@
     "stages": [
       {
         "codes": "setting_default_map_spaceship",
+        "img": "images/icons/Rumbi_square.png",
         "inherit_codes": false
       },
       {
         "codes": "setting_default_map_entrances",
+        "img": "images/icons/Telescope.png",
         "inherit_codes": false
       }
     ]

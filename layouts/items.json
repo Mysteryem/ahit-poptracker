@@ -65,7 +65,7 @@
         "margin": "0,0",
         "h_alignment": "left",
         "rows": [
-          ["setting_show_higher_logic", "setting_show_higher_logic_next_only"]
+          ["setting_auto_map_switch", "setting_default_map", "setting_show_higher_logic", "setting_show_higher_logic_next_only"]
         ]
       }
     ]
