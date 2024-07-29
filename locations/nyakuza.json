@@ -30,7 +30,7 @@
             "name": "Time Piece",
             "access_rules": [
               "hookshot",
-              "[moderate]"
+              "@General Logic/Moderate"
             ]
           },
           {
@@ -49,7 +49,7 @@
         "name": "Yellow Overpass Manhole",
         "access_rules": [
           "ice",
-          "[expert]"
+          "@General Logic/Expert"
         ],
         "sections": [
           {
@@ -83,8 +83,8 @@
         "name": "Green Clean Manhole",
         "access_rules": [
           "ice, dweller",
-          "ice, [hard]",
-          "[expert]"
+          "ice, @General Logic/Hard",
+          "@General Logic/Expert"
         ],
         "sections": [
           {
@@ -241,7 +241,7 @@
         "name": "Pink Paw Station - Behind Fan",
         "access_rules": [
           "timestop, @Nyakuza Logic/Can access upper Pink Paw Station",
-          "[moderate], @Nyakuza Logic/Can access upper Pink Paw Station"
+          "@General Logic/Moderate, @Nyakuza Logic/Can access upper Pink Paw Station"
         ],
         "sections": [
           {

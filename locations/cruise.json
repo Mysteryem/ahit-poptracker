@@ -308,7 +308,7 @@
             "name": "Post Captain Rescue",
             "access_rules": [
               "ice",
-              "[moderate]"
+              "@General Logic/Moderate"
             ],
             "sections": [
               {
@@ -346,8 +346,8 @@
             "name": "Time Rift",
             "access_rules": [
               "hookshot,dweller,ice",
-              "[moderate],hookshot,dweller",
-              "[hard],hookshot"
+              "@General Logic/Moderate,hookshot,dweller",
+              "@General Logic/Hard,hookshot"
             ]
           },
           {

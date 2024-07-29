@@ -19,6 +19,15 @@
                 "type": "layout",
                 "key": "settings_grid"
               }
+            },
+            {
+              "type": "group",
+              "header": "Pack Settings",
+              "dock": "Right",
+              "content": {
+                "type": "layout",
+                "key": "pack_settings_grid"
+              }
             }
           ]
         }

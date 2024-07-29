@@ -22,6 +22,29 @@
           "dweller",
           "@General Logic/Can Hit"
         ]
+      },
+      {
+        "name": "Moderate",
+        "access_rules": [
+          "moderate",
+          "setting_show_higher_logic, [moderate]"
+        ]
+      },
+      {
+        "name": "Hard",
+        "access_rules": [
+          "hard",
+          "setting_show_higher_logic, setting_show_higher_logic_next_only_disabled, [hard]",
+          "setting_show_higher_logic, setting_show_higher_logic_next_only_enabled, moderate, [hard]"
+        ]
+      },
+      {
+        "name": "Expert",
+        "access_rules": [
+          "expert",
+          "setting_show_higher_logic, setting_show_higher_logic_next_only_disabled, [expert]",
+          "setting_show_higher_logic, setting_show_higher_logic_next_only_enabled, hard, [expert]"
+        ]
       }
     ]
   }

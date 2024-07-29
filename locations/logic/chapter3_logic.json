@@ -46,7 +46,7 @@
           "@Subcon Logic/Can access Act 3 - Toilet of Doom",
           "@Subcon Logic/Can access Act 4 - Queen Vanessa's Manor",
           "@Subcon Logic/Can access Act 5 - Mail Delivery Service",
-          "[expert], @Subcon Logic/Can access Finale - Your Contract has Expired"
+          "@General Logic/Expert, @Subcon Logic/Can access Finale - Your Contract has Expired"
         ]
       },
       {
@@ -74,35 +74,35 @@
         "name": "Yellow Firewall",
         "access_rules": [
           "@Subcon Logic/Yellow Paintings",
-          "[moderate], [no_painting_skips_off]"
+          "@General Logic/Moderate, [no_painting_skips_off]"
         ]
       },
       {
         "name": "Blue Firewall",
         "access_rules": [
           "@Subcon Logic/Blue Paintings",
-          "[moderate], [no_painting_skips_off]"
+          "@General Logic/Moderate, [no_painting_skips_off]"
         ]
       },
       {
         "name": "Green Firewall",
         "access_rules": [
           "@Subcon Logic/Green Paintings",
-          "[moderate], [no_painting_skips_off]"
+          "@General Logic/Moderate, [no_painting_skips_off]"
         ]
       },
       {
         "name": "Boss Firewall",
         "access_rules": [
           "@Subcon Logic/Yellow Paintings",
-          "[expert], [no_painting_skips_off]"
+          "@General Logic/Expert, [no_painting_skips_off]"
         ]
       },
       {
         "name": "Boss Arena Gap",
         "access_rules": [
           "hookshot, @Subcon Logic/Can access Act 3 - Toilet of Doom",
-          "[hard], @Subcon Logic/Can access main Subcon area"
+          "@General Logic/Hard, @Subcon Logic/Can access main Subcon area"
         ]
       },
       {

@@ -53,6 +53,23 @@
       }
     ]
   },
+  "pack_settings_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "2,2",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "1, 4",
+        "item_size": 4,
+        "margin": "0,0",
+        "h_alignment": "left",
+        "rows": [
+          ["setting_show_higher_logic", "setting_show_higher_logic_next_only"]
+        ]
+      }
+    ]
+  },
   "ziplines_grid": {
     "type": "array",
     "orientation": "vertical",

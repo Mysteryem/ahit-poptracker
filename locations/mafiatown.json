@@ -512,10 +512,10 @@
       {
         "name": "Above Boats",
         "access_rules": [
-          "[expert]",
+          "@General Logic/Expert",
           "hookshot",
           "@Mafia Logic/Can access Act 6 - Heating up Mafia Town",
-          "[moderate], ice"
+          "@General Logic/Moderate, ice"
         ],
         "sections": [
           {
@@ -551,7 +551,7 @@
       {
         "name": "Top of Ruined Tower",
         "access_rules": [
-          "[moderate]",
+          "@General Logic/Moderate",
           "ice"
         ],
         "sections": [
@@ -575,7 +575,7 @@
         "name": "Hot Air Balloon",
         "access_rules": [
           "ice",
-          "[expert]"
+          "@General Logic/Expert"
         ],
         "sections": [
           {
@@ -688,7 +688,7 @@
         "name": "Top of Lighthouse",
         "access_rules": [
           "hookshot",
-          "[expert]"
+          "@General Logic/Expert"
         ],
         "sections": [
           {
@@ -706,7 +706,7 @@
       {
         "name": "Clock Tower Chest",
         "access_rules": [
-          "[moderate]",
+          "@General Logic/Moderate",
           "hookshot"
         ],
         "sections": [

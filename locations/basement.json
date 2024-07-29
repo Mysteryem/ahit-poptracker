@@ -57,7 +57,7 @@
             "name": "Yarn",
             "access_rules": [
               "hookshot",
-              "[expert]"
+              "@General Logic/Expert"
             ]
           }
         ],
@@ -76,7 +76,7 @@
             "name": "Yarn",
             "access_rules": [
               "hookshot",
-              "[expert]"
+              "@General Logic/Expert"
             ]
           }
         ],
@@ -95,7 +95,7 @@
             "name": "Yarn",
             "access_rules": [
               "hookshot",
-              "[expert]"
+              "@General Logic/Expert"
             ]
           }
         ],
@@ -114,7 +114,7 @@
             "name": "Yarn",
             "access_rules": [
               "hookshot",
-              "[expert]"
+              "@General Logic/Expert"
             ]
           }
         ],
@@ -133,7 +133,7 @@
             "name": "Yarn",
             "access_rules": [
               "hookshot",
-              "[expert]"
+              "@General Logic/Expert"
             ]
           }
         ],
@@ -152,7 +152,7 @@
             "name": "Yarn",
             "access_rules": [
               "hookshot",
-              "[expert]"
+              "@General Logic/Expert"
             ]
           }
         ],
@@ -171,7 +171,7 @@
             "name": "Relic",
             "access_rules": [
               "hookshot",
-              "[expert]"
+              "@General Logic/Expert"
             ]
           }
         ],
@@ -190,7 +190,7 @@
             "name": "Time Piece",
             "access_rules": [
               "hookshot",
-              "[expert]"
+              "@General Logic/Expert"
             ]
           }
         ],

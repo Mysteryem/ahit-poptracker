@@ -19,7 +19,7 @@
         "access_rules": [
           "greenticket",
           "blueticket",
-          "[moderate], [no_ticket_skips_off]"
+          "@General Logic/Moderate, [no_ticket_skips_off]"
         ]
       },
       {
@@ -27,31 +27,31 @@
         "access_rules": [
           "pinkticket",
           "blueticket, yellowticket",
-          "[moderate], [no_ticket_skips_off]"
+          "@General Logic/Moderate, [no_ticket_skips_off]"
         ]
       },
       {
         "name": "Can access upper Pink Paw Station",
         "access_rules": [
           "dweller, hookshot, @Nyakuza Logic/Can access Pink Paw Station",
-          "[moderate], @Nyakuza Logic/Can access Pink Paw Station"
+          "@General Logic/Moderate, @Nyakuza Logic/Can access Pink Paw Station"
         ]
       },
       {
         "name": "Rush Hour Tickets",
         "access_rules": [
           "pinkticket, yellowticket, blueticket",
-          "[hard], [no_ticket_skips_off]",
-          "[hard], [no_ticket_skips_free_roam_only]"
+          "@General Logic/Hard, [no_ticket_skips_off]",
+          "@General Logic/Hard, [no_ticket_skips_free_roam_only]"
         ]
       },
       {
         "name": "Rush Hour Items",
         "access_rules": [
           "ice, brewer, hookshot",
-          "ice, brewer, [moderate]",
-          "brewer, [hard]",
-          "[expert]"
+          "ice, brewer, @General Logic/Moderate",
+          "brewer, @General Logic/Hard",
+          "@General Logic/Expert"
         ]
       }
     ]

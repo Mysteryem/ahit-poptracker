@@ -33,7 +33,7 @@
             "name": "Time Piece",
             "access_rules": [
               "dweller,hookshot",
-              "[moderate],dweller"
+              "@General Logic/Moderate,dweller"
             ]
           }
         ],
@@ -89,7 +89,7 @@
             "name": "Time Rift",
             "access_rules": [
               "brewer",
-              "[moderate]"
+              "@General Logic/Moderate"
             ]
           }
         ],

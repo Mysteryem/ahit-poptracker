@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Automatic Map Switching",//Not Yet Implemented
+    "type": "toggle",
+    "img": "images/settings/MetroGuide.png",
+    "codes": "setting_auto_map_switch",
+    "initial_active_state": true
+  },
+  {
+    "name": "Default Map",//Not Yet Implemented
+    "type": "progressive",
+    "codes": "setting_default_map",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "codes": "setting_default_map_spaceship",
+        "inherit_codes": false
+      },
+      {
+        "codes": "setting_default_map_entrances",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Show Higher Logic Difficulties",
+    "type": "toggle",
+    "img": "images/settings/expert_out_of_logic_48.png",
+    "codes": "setting_show_higher_logic",
+    "initial_active_state": true
+  },
+  {
+    "name": "Only Show Next Logic Difficulty",
+    "type": "progressive",
+    "img": "images/settings/moderate_out_of_logic_48.png",
+    "codes": "setting_show_higher_logic_next_only",
+    "allow_disabled": false,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/settings/moderate_out_of_logic_48.png",
+        "img_mods": "@disabled",
+        "codes": "setting_show_higher_logic_next_only_disabled",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/moderate_out_of_logic_48.png",
+        "codes": "setting_show_higher_logic_next_only_enabled",
+        "inherit_codes": false
+      }
+    ]
+  }
+]
