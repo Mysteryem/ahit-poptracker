@@ -152,7 +152,7 @@
             },
             {
               "title": "Entrances",
-              "icon": "images/icons/Rumbi.png",
+              "icon": "images/icons/Telescope.png",
               "content": {
                 "type": "map",
                 "maps": [
