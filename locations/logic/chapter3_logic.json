@@ -46,7 +46,7 @@
           "@Subcon Logic/Can access Act 3 - Toilet of Doom",
           "@Subcon Logic/Can access Act 4 - Queen Vanessa's Manor",
           "@Subcon Logic/Can access Act 5 - Mail Delivery Service",
-          "@General Logic/Expert, @Subcon Logic/Can access Finale - Your Contract has Expired"
+          "@General Logic/Expert, @Subcon Logic/Can access Finale - Your Contract has Expired, @Subcon Logic/Yellow Firewall" // Technically its' the boss firewall but the apworld logic just checks for 1 painting because expert logic is assumed to be able to skip the boss firewall
         ]
       },
       {
