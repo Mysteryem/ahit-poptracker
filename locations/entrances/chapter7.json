@@ -33,7 +33,7 @@
       {
         "name": "Finale - Rush Hour",
         "access_rules": [
-          "$completedNyakuzaFreeRoamActs"
+          "$completedNyakuzaFreeRoamActs, [@internal_can_complete_act/MetroFreeRoam]"
         ],
         "map_locations": [
           {

@@ -59,6 +59,13 @@
           "@General Logic/Moderate, @General Logic/Can Hit, @DBS Logic/Can access Act 1 - Dead Bird Studio",
           "@General Logic/Expert, @DBS Logic/Can access Dead Bird Studio - Elevator Area"
         ]
+      },
+      {
+        "name": "Can access Moon Set",
+        "access_rules": [
+          "@DBS Logic/Can access Act 3 - Picture Perfect",
+          "@DBS Logic/Can access Act 5 - The Big Parade"
+        ]
       }
     ]
   }

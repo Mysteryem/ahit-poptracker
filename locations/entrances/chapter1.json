@@ -29,7 +29,7 @@
       {
         "name": "Act 2 - Barrel Battle",
         "access_rules": [
-          "$completedActAt|chapter1_tutorial"
+          "$completedActAt|chapter1_tutorial, [^$canCompleteActOrIsFreeRoamAt|chapter1_tutorial]"
         ],
         "map_locations": [
           {
@@ -77,7 +77,12 @@
       {
         "name": "Act 4 - Down with the Mafia!",
         "access_rules": [
-          "$completedActAt|chapter1_barrelboss,$completedActAt|chapter1_cannon_repair,"
+          [
+            "$completedActAt|chapter1_barrelboss",
+            "$completedActAt|chapter1_cannon_repair",
+            "[^$canCompleteActOrIsFreeRoamAt|chapter1_barrelboss]",
+            "[^$canCompleteActOrIsFreeRoamAt|chapter1_cannon_repair]"
+          ]
         ],
         "map_locations": [
           {
@@ -101,7 +106,12 @@
       {
         "name": "Act 5 - Cheating the Race",
         "access_rules": [
-          "$completedActAt|mafiatown_lava,$completedActAt|mafiatown_goldenvault,"
+          [
+            "$completedActAt|mafiatown_lava",
+            "$completedActAt|mafiatown_goldenvault",
+            "[^$canCompleteActOrIsFreeRoamAt|mafiatown_lava]",
+            "[^$canCompleteActOrIsFreeRoamAt|mafiatown_goldenvault]"
+          ]
         ],
         "map_locations": [
           {
@@ -125,7 +135,7 @@
       {
         "name": "Act 6 - Heating up Mafia Town",
         "access_rules": [
-          "$completedActAt|chapter1_boss"
+          "$completedActAt|chapter1_boss, [^$canCompleteActOrIsFreeRoamAt|chapter1_boss]"
         ],
         "map_locations": [
           {

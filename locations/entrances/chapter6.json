@@ -33,7 +33,7 @@
       {
         "name": "Act 2 - Ship Shape",
         "access_rules": [
-          "$completedActAt|Cruise_Boarding"
+          "$completedActAt|Cruise_Boarding, [^$canCompleteActOrIsFreeRoamAt|Cruise_Boarding]"
         ],
         "map_locations": [
           {
@@ -57,7 +57,7 @@
       {
         "name": "Finale - Rock the Boat",
         "access_rules": [
-          "$completedActAt|Cruise_Working"
+          "$completedActAt|Cruise_Working, [^$canCompleteActOrIsFreeRoamAt|Cruise_Working]"
         ],
         "map_locations": [
           {

@@ -125,7 +125,18 @@
       {
         "name": "Finale - Your Contract has Expired",
         "access_rules": [
-          "$completedActAt|subcon_village_icewall,$completedActAt|subcon_cave,$completedActAt|chapter2_toiletboss,$completedActAt|vanessa_manor_attic,$completedActAt|subcon_maildelivery"
+          [
+            "$completedActAt|subcon_village_icewall",
+            "$completedActAt|subcon_cave",
+            "$completedActAt|chapter2_toiletboss",
+            "$completedActAt|vanessa_manor_attic",
+            "$completedActAt|subcon_maildelivery",
+            "[^$canCompleteActOrIsFreeRoamAt|subcon_village_icewall]",
+            "[^$canCompleteActOrIsFreeRoamAt|subcon_cave]",
+            "[^$canCompleteActOrIsFreeRoamAt|chapter2_toiletboss]",
+            "[^$canCompleteActOrIsFreeRoamAt|vanessa_manor_attic]",
+            "[^$canCompleteActOrIsFreeRoamAt|subcon_maildelivery]"
+          ]
         ],
         "sections": [
           {

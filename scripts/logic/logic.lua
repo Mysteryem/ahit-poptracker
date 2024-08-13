@@ -191,3 +191,14 @@ function canCompleteActAt(entrance, check_entrance, skip_free_roam_sub_acts)
         return completion_location.AccessibilityLevel
     end
 end
+
+-- Check whether an act entrance in a telescope can logically be marked as completed.
+-- Free Roam acts are automatically marked as completed once unlocked, allowing for later acts within a telescope to be
+-- unlocked without having to complete every act within the Free Roam.
+-- The exception to this is Time Rift entrances, which are never automatically marked as completed because completed
+-- Time Rift entrances can be entered directly from the telescope, without needing to find and enter the Time Rift
+-- itself. There are no act entrances that are unlocked after completing an act at a Time Rift, so this exception is
+-- irrelevant to the tracker.
+function canCompleteActOrIsFreeRoamAt(entrance, check_entrance)
+    return canCompleteActAt(entrance, check_entrance, true)
+end

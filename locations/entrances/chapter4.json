@@ -29,7 +29,7 @@
       {
         "name": "Finale - The Illness has Spread",
         "access_rules": [
-          "$completedAlpineFreeRoamActs"
+          "$completedAlpineFreeRoamActs, [@internal_can_complete_act/AlpineFreeRoam]"
         ],
         "map_locations": [
           {

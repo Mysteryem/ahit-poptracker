@@ -11,7 +11,7 @@
           {
             "name": "Time Rift - Sewers",
             "access_rules": [
-              "$completedActAt|chapter1_boss"
+              "$completedActAt|chapter1_boss, [^$canCompleteActOrIsFreeRoamAt|chapter1_boss]"
             ],
             "map_locations": [
               {
@@ -35,7 +35,7 @@
           {
             "name": "Time Rift - Bazaar",
             "access_rules": [
-              "$completedActAt|mafiatown_lava"
+              "$completedActAt|mafiatown_lava, [^$canCompleteActOrIsFreeRoamAt|mafiatown_lava]"
             ],
             "map_locations": [
               {
@@ -88,7 +88,13 @@
           {
             "name": "Time Rift - The Owl Express",
             "access_rules": [
-              "@DBS Logic/Can access Act 2 - Murder on the Owl Express, $completedActAt|chapter3_murder, $completedActAt|moon_camerasnap"
+              [
+                "@DBS Logic/Can access Act 2 - Murder on the Owl Express",
+                "$completedActAt|chapter3_murder",
+                "$completedActAt|moon_camerasnap",
+                "[^$canCompleteActOrIsFreeRoamAt|chapter3_murder]",
+                "[^$canCompleteActOrIsFreeRoamAt|moon_camerasnap]"
+              ]
             ],
             "map_locations": [
               {
@@ -112,8 +118,13 @@
           {
             "name": "Time Rift - The Moon",
             "access_rules": [
-              "@DBS Logic/Can access Act 3 - Picture Perfect, $completedActAt|trainwreck_selfdestruct, $completedActAt|moon_parade",
-              "@DBS Logic/Can access Act 5 - The Big Parade, $completedActAt|trainwreck_selfdestruct, $completedActAt|moon_parade"
+              [
+                "@DBS Logic/Can access Moon Set",
+                "$completedActAt|trainwreck_selfdestruct",
+                "$completedActAt|moon_parade",
+                "[^$canCompleteActOrIsFreeRoamAt|trainwreck_selfdestruct]",
+                "[^$canCompleteActOrIsFreeRoamAt|moon_parade]"
+              ]
             ],
             "map_locations": [
               {
@@ -170,7 +181,7 @@
           {
             "name": "Time Rift - Pipe",
             "access_rules": [
-              "@Subcon Logic/Blue Firewall, $completedActAt|subcon_cave"
+              "@Subcon Logic/Blue Firewall, $completedActAt|subcon_cave, [^$canCompleteActOrIsFreeRoamAt|subcon_cave]"
             ],
             "map_locations": [
               {
@@ -194,7 +205,11 @@
           {
             "name": "Time Rift - Village",
             "access_rules": [
-              "@Subcon Logic/Blue Firewall, $completedActAt|vanessa_manor_attic"
+              [
+                "@Subcon Logic/Blue Firewall",
+                "$completedActAt|vanessa_manor_attic",
+                "[^$canCompleteActOrIsFreeRoamAt|vanessa_manor_attic]"
+              ]
             ],
             "map_locations": [
               {
@@ -247,7 +262,11 @@
           {
             "name": "Time Rift - Twilight Bell",
             "access_rules": [
-              "@Twilight Bell Zipline/The Twilight Path, $completedFreeRoamAct|Alpine_Twilight"
+              [
+                "@Twilight Bell Zipline/The Twilight Path",
+                "$completedFreeRoamAct|Alpine_Twilight",
+                "[@Twilight Bell Zipline/The Twilight Bell/Time Piece]"
+              ]
             ],
             "map_locations": [
               {
@@ -271,7 +290,11 @@
           {
             "name": "Time Rift - Curly Tail Trail",
             "access_rules": [
-              "@Windmill Zipline/The Windmill, $completedFreeRoamAct|AlpineSkyline_Windmill"
+              [
+                "@Windmill Zipline/The Windmill",
+                "$completedFreeRoamAct|AlpineSkyline_Windmill",
+                "[@Windmill Zipline/The Windmill/Time Piece]"
+              ]
             ],
             "map_locations": [
               {
@@ -327,7 +350,11 @@
           {
             "name": "Time Rift - Balcony",
             "access_rules": [
-              "@Cruise Logic/Can access Ship Area, $completedActAt|Cruise_Sinking"
+              [
+                "@Cruise Logic/Can access Ship Area",
+                "$completedActAt|Cruise_Sinking",
+                "[^$canCompleteActOrIsFreeRoamAt|Cruise_Sinking]"
+              ]
             ],
             "map_locations": [
               {

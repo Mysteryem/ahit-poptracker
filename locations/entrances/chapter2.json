@@ -29,7 +29,7 @@
       {
         "name": "Act 2 - Murder on the Owl Express",
         "access_rules": [
-          "$completedActAt|DeadBirdStudio"
+          "$completedActAt|DeadBirdStudio, [^$canCompleteActOrIsFreeRoamAt|DeadBirdStudio]"
         ],
         "sections": [
           {
@@ -77,7 +77,12 @@
       {
         "name": "Act 4 - Train Rush",
         "access_rules": [
-          "$completedActAt|chapter3_murder,$completedActAt|moon_camerasnap"
+          [
+            "$completedActAt|chapter3_murder",
+            "$completedActAt|moon_camerasnap",
+            "[^$canCompleteActOrIsFreeRoamAt|chapter3_murder]",
+            "[^$canCompleteActOrIsFreeRoamAt|moon_camerasnap]"
+          ]
         ],
         "sections": [
           {
@@ -125,7 +130,12 @@
       {
         "name": "Finale - Award Ceremony",
         "access_rules": [
-          "$completedActAt|trainwreck_selfdestruct,$completedActAt|moon_parade"
+          [
+            "$completedActAt|trainwreck_selfdestruct",
+            "$completedActAt|moon_parade",
+            "[^$canCompleteActOrIsFreeRoamAt|trainwreck_selfdestruct]",
+            "[^$canCompleteActOrIsFreeRoamAt|moon_parade]"
+          ]
         ],
         "sections": [
           {
