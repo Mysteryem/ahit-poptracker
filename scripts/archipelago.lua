@@ -274,6 +274,20 @@ function onClear(slot_data)
         end
     end
 
+    -- Enable the contracts when contracts are shuffled
+    if Tracker:FindObjectForCode("contract").Active then
+        local contract_items = {
+            "contract_subcon_well",
+            "contract_toilet_of_doom",
+            "contract_queen_vanessas_manor",
+            "contract_mail_delivery_service"
+        }
+        for _, item_code in ipairs(contract_items) do
+            local contract_item = Tracker:FindObjectForCode(item_code)
+            contract_item.CurrentStage = contract_item.CurrentStage + 1
+        end
+    end
+
     -- set hash table to randomized acts
     for chapter_number = 1,7 do
         local chapter = string.format('Chapter%dCost', chapter_number)

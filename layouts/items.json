@@ -124,8 +124,8 @@
         "margin": "0, 0",
         "h_alignment": "left",
         "rows": [
-          ["wellcontract", "toiletcontract"],
-          ["manorcontract", "mailcontract"]
+          ["contract_subcon_well", "contract_toilet_of_doom"],
+          ["contract_queen_vanessas_manor", "contract_mail_delivery_service"]
         ]
       }
     ]
