@@ -74,28 +74,28 @@
         "name": "Yellow Firewall",
         "access_rules": [
           "@Subcon Logic/Yellow Paintings",
-          "@General Logic/Moderate, [no_painting_skips_off]"
+          "@General Logic/Moderate, @General Logic/Painting Skips"
         ]
       },
       {
         "name": "Blue Firewall",
         "access_rules": [
           "@Subcon Logic/Blue Paintings",
-          "@General Logic/Moderate, [no_painting_skips_off]"
+          "@General Logic/Moderate, @General Logic/Painting Skips"
         ]
       },
       {
         "name": "Green Firewall",
         "access_rules": [
           "@Subcon Logic/Green Paintings",
-          "@General Logic/Moderate, [no_painting_skips_off]"
+          "@General Logic/Moderate, @General Logic/Painting Skips"
         ]
       },
       {
         "name": "Boss Firewall",
         "access_rules": [
           "@Subcon Logic/Yellow Paintings",
-          "@General Logic/Expert, [no_painting_skips_off]"
+          "@General Logic/Expert, @General Logic/Painting Skips"
         ]
       },
       {

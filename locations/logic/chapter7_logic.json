@@ -19,7 +19,7 @@
         "access_rules": [
           "greenticket",
           "blueticket",
-          "@General Logic/Moderate, [no_ticket_skips_off]"
+          "@General Logic/Moderate, @General Logic/Metro Ticket Skips"
         ]
       },
       {
@@ -27,7 +27,7 @@
         "access_rules": [
           "pinkticket",
           "blueticket, yellowticket",
-          "@General Logic/Moderate, [no_ticket_skips_off]"
+          "@General Logic/Moderate, @General Logic/Metro Ticket Skips"
         ]
       },
       {
@@ -41,8 +41,7 @@
         "name": "Rush Hour Tickets",
         "access_rules": [
           "pinkticket, yellowticket, blueticket",
-          "@General Logic/Hard, [no_ticket_skips_off]",
-          "@General Logic/Hard, [no_ticket_skips_free_roam_only]"
+          "@General Logic/Hard, @General Logic/Rush Hour Ticket Skips"
         ]
       },
       {

@@ -45,6 +45,29 @@
           "setting_show_higher_logic, setting_show_higher_logic_next_only_disabled, [expert]",
           "setting_show_higher_logic, setting_show_higher_logic_next_only_enabled, hard, [expert]"
         ]
+      },
+      {
+        "name": "Metro Ticket Skips",
+        "access_rules": [
+          "no_ticket_skips_off",
+          "setting_show_disabled_skips, [no_ticket_skips_off]"
+        ]
+      },
+      {
+        "name": "Rush Hour Ticket Skips",
+        "access_rules": [
+          "no_ticket_skips_off",
+          "no_ticket_skips_free_roam_only",
+          "setting_show_disabled_skips, [no_ticket_skips_off]",
+          "setting_show_disabled_skips, [no_ticket_skips_free_roam_only]"
+        ]
+      },
+      {
+        "name": "Painting Skips",
+        "access_rules": [
+          "no_painting_skips_off",
+          "setting_show_disabled_skips, [no_painting_skips_off]"
+        ]
       }
     ]
   }

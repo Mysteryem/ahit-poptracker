@@ -52,5 +52,11 @@
         "inherit_codes": false
       }
     ]
+  },
+  {
+    "name": "Show Disabled Skips",// Disabled by default because the 'no __ skips' options are disabled by default, meaning that if skips are disabled, players probably did so on purpose
+    "type": "toggle",
+    "img": "images/settings/no_skips_out_of_logic_48.png",
+    "codes": "setting_show_disabled_skips"
   }
 ]

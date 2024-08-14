@@ -78,7 +78,7 @@
             "clear_as_group": false,
             "access_rules": [
               "@Subcon Logic/Yellow Paintings",
-              "@General Logic/Moderate, [no_painting_skips_off]"
+              "@General Logic/Moderate, @General Logic/Painting Skips"
             ],
             "visibility_rules": [
               "contract"
