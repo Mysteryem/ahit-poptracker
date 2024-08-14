@@ -88,8 +88,8 @@
         "margin": "0, 0",
         "h_alignment": "left",
         "rows": [
-          ["bellzipline", "birdzipline"],
-          ["windmillzipline", "cakezipline"]
+          ["zipline_unlock_twilight_bell", "zipline_unlock_birdhouse"],
+          ["zipline_unlock_windmill", "zipline_unlock_lava_cake"]
         ]
       }
     ]

@@ -260,6 +260,20 @@ function onClear(slot_data)
         end
     end
 
+    -- Enable the zipline unlocks when ziplines are shuffled
+    if Tracker:FindObjectForCode("ziplines_logic").CurrentStage == 1 then
+        local zipline_items = {
+            "zipline_unlock_twilight_bell",
+            "zipline_unlock_birdhouse",
+            "zipline_unlock_lava_cake",
+            "zipline_unlock_windmill"
+        }
+        for _, item_code in ipairs(zipline_items) do
+            local zipline_item = Tracker:FindObjectForCode(item_code)
+            zipline_item.CurrentStage = zipline_item.CurrentStage + 1
+        end
+    end
+
     -- set hash table to randomized acts
     for chapter_number = 1,7 do
         local chapter = string.format('Chapter%dCost', chapter_number)

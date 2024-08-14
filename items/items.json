@@ -101,27 +101,83 @@
   },
   {
     "name": "Twilight Bell Zipline",
-    "type": "toggle",
-    "img": "images/ziplines/bell_zipline.png",
-    "codes": "bellzipline"
+    "type": "progressive",
+    "codes": "zipline_unlock_twilight_bell",
+    "loop": false,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/lock_icon.png"
+      },
+      {
+        "img": "images/ziplines/bell_zipline.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/ziplines/bell_zipline.png",
+        "codes": "bellzipline"
+      }
+    ]
   },
   {
     "name": "Birdhouse Zipline",
-    "type": "toggle",
-    "img": "images/ziplines/bird_zipline.png",
-    "codes": "birdzipline"
+    "type": "progressive",
+    "codes": "zipline_unlock_birdhouse",
+    "loop": false,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/lock_icon.png"
+      },
+      {
+        "img": "images/ziplines/bird_zipline.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/ziplines/bird_zipline.png",
+        "codes": "birdzipline"
+      }
+    ]
   },
   {
     "name": "Lava Cake Zipline",
-    "type": "toggle",
-    "img": "images/ziplines/cake_zipline.png",
-    "codes": "cakezipline"
+    "type": "progressive",
+    "codes": "zipline_unlock_lava_cake",
+    "loop": false,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/lock_icon.png"
+      },
+      {
+        "img": "images/ziplines/cake_zipline.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/ziplines/cake_zipline.png",
+        "codes": "cakezipline"
+      }
+    ]
   },
   {
     "name": "Windmill Zipline",
-    "type": "toggle",
-    "img": "images/ziplines/windmill_zipline.png",
-    "codes": "windmillzipline"
+    "type": "progressive",
+    "codes": "zipline_unlock_windmill",
+    "loop": false,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/lock_icon.png"
+      },
+      {
+        "img": "images/ziplines/windmill_zipline.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/ziplines/windmill_zipline.png",
+        "codes": "windmillzipline"
+      }
+    ]
   },
   {
     "name": "Yellow Ticket",
