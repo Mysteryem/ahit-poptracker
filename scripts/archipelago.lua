@@ -239,16 +239,25 @@ function onClear(slot_data)
     setFromSlotData('Hat_NPC_NyakuzaShop_7', "@Nyakuza Shops/Bluefin Tunnel Thug/Scammed")
     setFromSlotData('Hat_NPC_NyakuzaShop_12', "@Nyakuza Shops/Pink Paw Station Thug/Scammed")
 
-    -- Enable DLC relics depending on which DLCs are enabled.
-    -- The DLC relics have an extra initial stage that displays a lock icon. Increase the stage to show the default icon
-    -- for relics that have not been acquired yet.
+    -- Enable DLC items depending on which DLCs are enabled.
+    -- The DLC items have an extra initial stage that displays a lock icon. Increase the stage to show the default icon
+    -- for items that have not been acquired yet.
     if Tracker:FindObjectForCode("dlc1").Active then
         local cake_relic = Tracker:FindObjectForCode("cakerelic")
         cake_relic.CurrentStage = cake_relic.CurrentStage + 1
     end
     if Tracker:FindObjectForCode("dlc2").Active then
-        local jewelry_relic = Tracker:FindObjectForCode("jewelryrelic")
-        jewelry_relic.CurrentStage = jewelry_relic.CurrentStage + 1
+        local dlc2_items = {
+            "jewelryrelic",
+            "metro_ticket_green",
+            "metro_ticket_blue",
+            "metro_ticket_pink",
+            "metro_ticket_yellow"
+        }
+        for _, item_code in ipairs(dlc2_items) do
+            local dlc2_item = Tracker:FindObjectForCode(item_code)
+            dlc2_item.CurrentStage = dlc2_item.CurrentStage + 1
+        end
     end
 
     -- set hash table to randomized acts

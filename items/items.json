@@ -125,27 +125,83 @@
   },
   {
     "name": "Yellow Ticket",
-    "type": "toggle",
-    "img": "images/tickets/MetroTicket_Yellow.png",
-    "codes": "yellowticket"
+    "type": "progressive",
+    "codes": "metro_ticket_yellow",
+    "loop": false,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/lock_icon.png"
+      },
+      {
+        "img": "images/tickets/MetroTicket_Yellow.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/tickets/MetroTicket_Yellow.png",
+        "codes": "yellowticket"
+      }
+    ]
   },
   {
     "name": "Pink Ticket",
-    "type": "toggle",
-    "img": "images/tickets/MetroTicket_Red.png",
-    "codes": "pinkticket"
+    "type": "progressive",
+    "codes": "metro_ticket_pink",
+    "loop": false,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/lock_icon.png"
+      },
+      {
+        "img": "images/tickets/MetroTicket_Red.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/tickets/MetroTicket_Red.png",
+        "codes": "pinkticket"
+      }
+    ]
   },
   {
     "name": "Blue Ticket",
-    "type": "toggle",
-    "img": "images/tickets/MetroTicket_Blue.png",
-    "codes": "blueticket"
+    "type": "progressive",
+    "codes": "metro_ticket_blue",
+    "loop": false,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/lock_icon.png"
+      },
+      {
+        "img": "images/tickets/MetroTicket_Blue.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/tickets/MetroTicket_Blue.png",
+        "codes": "blueticket"
+      }
+    ]
   },
   {
     "name": "Green Ticket",
-    "type": "toggle",
-    "img": "images/tickets/MetroTicket_Green.png",
-    "codes": "greenticket"
+    "type": "progressive",
+    "codes": "metro_ticket_green",
+    "loop": false,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/lock_icon.png"
+      },
+      {
+        "img": "images/tickets/MetroTicket_Green.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/tickets/MetroTicket_Green.png",
+        "codes": "greenticket"
+      }
+    ]
   },
   {
     "name": "Burger Relic",

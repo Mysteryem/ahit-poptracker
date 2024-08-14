@@ -106,8 +106,8 @@
         "margin": "0, 0",
         "h_alignment": "left",
         "rows": [
-          ["yellowticket", "pinkticket"],
-          ["blueticket", "greenticket"]
+          ["metro_ticket_yellow", "metro_ticket_pink"],
+          ["metro_ticket_blue", "metro_ticket_green"]
         ]
       }
     ]
