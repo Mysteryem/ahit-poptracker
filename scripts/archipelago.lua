@@ -90,6 +90,36 @@ function dump_table(o, depth)
     end
 end
 
+-- Enable progressive items that start with a lock icon when a specified option is enabled.
+local function enabled_linked_progressive_items(option_item_code, linked_item_codes)
+    local option_item = Tracker:FindObjectForCode(option_item_code)
+    if not option_item then
+        print("No item found for option_item_code '"..option_item_code.."'")
+        return
+    end
+    local option_item_type = option_item.Type
+
+    local option_enabled
+    if option_item_type == "toggle" then
+        option_enabled = option_item.Active
+    elseif option_item_type == "progressive" then
+        option_enabled = option_item.CurrentStage ~= 0
+    else
+        print("Unsupported option_item Type "..option_item_type)
+    end
+
+    if option_enabled then
+        for _, item_code in ipairs(linked_item_codes) do
+            local linked_item = Tracker:FindObjectForCode(item_code)
+            if linked_item.Type == "progressive" then
+                linked_item.CurrentStage = linked_item.CurrentStage + 1
+            else
+                print("Linked item Type should be 'progressive', but was '"..linked_item.Type.."'")
+            end
+        end
+    end
+end
+
 
 function onClear(slot_data)
     --SLOT_DATA = slot_data
@@ -242,51 +272,24 @@ function onClear(slot_data)
     -- Enable DLC items depending on which DLCs are enabled.
     -- The DLC items have an extra initial stage that displays a lock icon. Increase the stage to show the default icon
     -- for items that have not been acquired yet.
-    if Tracker:FindObjectForCode("dlc1").Active then
-        local cake_relic = Tracker:FindObjectForCode("cakerelic")
-        cake_relic.CurrentStage = cake_relic.CurrentStage + 1
-    end
-    if Tracker:FindObjectForCode("dlc2").Active then
-        local dlc2_items = {
-            "jewelryrelic",
-            "metro_ticket_green",
-            "metro_ticket_blue",
-            "metro_ticket_pink",
-            "metro_ticket_yellow"
-        }
-        for _, item_code in ipairs(dlc2_items) do
-            local dlc2_item = Tracker:FindObjectForCode(item_code)
-            dlc2_item.CurrentStage = dlc2_item.CurrentStage + 1
-        end
-    end
+    enabled_linked_progressive_items("dlc1", {"cakerelic"})
+    enabled_linked_progressive_items("dlc2", {"jewelryrelic",
+                                              "metro_ticket_green",
+                                              "metro_ticket_blue",
+                                              "metro_ticket_pink",
+                                              "metro_ticket_yellow"})
 
     -- Enable the zipline unlocks when ziplines are shuffled
-    if Tracker:FindObjectForCode("ziplines_logic").CurrentStage == 1 then
-        local zipline_items = {
-            "zipline_unlock_twilight_bell",
-            "zipline_unlock_birdhouse",
-            "zipline_unlock_lava_cake",
-            "zipline_unlock_windmill"
-        }
-        for _, item_code in ipairs(zipline_items) do
-            local zipline_item = Tracker:FindObjectForCode(item_code)
-            zipline_item.CurrentStage = zipline_item.CurrentStage + 1
-        end
-    end
+    enabled_linked_progressive_items("ziplines_logic", {"zipline_unlock_twilight_bell",
+                                                        "zipline_unlock_birdhouse",
+                                                        "zipline_unlock_lava_cake",
+                                                        "zipline_unlock_windmill"})
 
     -- Enable the contracts when contracts are shuffled
-    if Tracker:FindObjectForCode("contract").Active then
-        local contract_items = {
-            "contract_subcon_well",
-            "contract_toilet_of_doom",
-            "contract_queen_vanessas_manor",
-            "contract_mail_delivery_service"
-        }
-        for _, item_code in ipairs(contract_items) do
-            local contract_item = Tracker:FindObjectForCode(item_code)
-            contract_item.CurrentStage = contract_item.CurrentStage + 1
-        end
-    end
+    enabled_linked_progressive_items("contract", {"contract_subcon_well",
+                                                  "contract_toilet_of_doom",
+                                                  "contract_queen_vanessas_manor",
+                                                  "contract_mail_delivery_service"})
 
     -- set hash table to randomized acts
     for chapter_number = 1,7 do
