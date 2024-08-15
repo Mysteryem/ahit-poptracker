@@ -383,9 +383,6 @@
   },
   {
     "name": "Alpine Skyline",
-    "access_rules": [
-      "hookshot"
-    ],
     "children": [
       {
         "name": "Goat Refinery",
@@ -410,8 +407,8 @@
       {
         "name": "The Illness has Spread",
         "access_rules": [
-          "ziplines_off, @Alpine Logic/Can access Finale - The Illness has Spread",
-          "birdzipline, cakezipline, windmillzipline, @Alpine Logic/Can access Finale - The Illness has Spread"
+          "hookshot, ziplines_off, @Alpine Logic/Can access Finale - The Illness has Spread",
+          "hookshot, birdzipline, cakezipline, windmillzipline, @Alpine Logic/Can access Finale - The Illness has Spread"
         ],
         "sections": [
           {
