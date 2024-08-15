@@ -133,12 +133,18 @@ function onClear(slot_data)
     end
 
     -- reset locations
+    -- Multiple location IDs can correspond to the same location in the tracker, so only reset each tracker location
+    -- once.
+    local reset_locations = {}
     for _, v in pairs(LOCATION_MAPPING) do
-        local obj = Tracker:FindObjectForCode(v)
-        if obj then
-            obj.AvailableChestCount = obj.ChestCount
-        else
-            print(string.format("onClear: Could not find location '%s'", v))
+        if reset_locations[v] == nil then
+            reset_locations[v] = true
+            local obj = Tracker:FindObjectForCode(v)
+            if obj then
+                obj.AvailableChestCount = obj.ChestCount
+            else
+                print(string.format("onClear: Could not find location '%s'", v))
+            end
         end
     end
     -- reset items
