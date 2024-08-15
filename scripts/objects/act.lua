@@ -43,11 +43,20 @@ function Act:setActName(act_name)
     self.act_name = act_name
 end
 
+function Act:getEntranceLocation()
+    if self.entrance_location then
+        return Tracker:FindObjectForCode(self.entrance_location)
+    else
+        print(string.format("Error: Could not find entrance location '%s'", self.entrance_location))
+        return nil
+    end
+end
+
 function Act:getCanEnterSection()
     if self.entrance_location then
         return Tracker:FindObjectForCode(self.entrance_location .. "/Can Enter")
     else
-        print(string.format("Error: Could not find 'can enter entrance' section for '%s'", v.entrance_location))
+        print(string.format("Error: Could not find 'can enter entrance' section for '%s'", self.entrance_location))
         return nil
     end
 end
@@ -56,7 +65,7 @@ function Act:getCanCompleteSection()
     if self.entrance_location then
         return Tracker:FindObjectForCode(self.entrance_location .. "/Can Complete")
     else
-        print(string.format("Error: Could not find 'can complete entrance' section for '%s'", v.entrance_location))
+        print(string.format("Error: Could not find 'can complete entrance' section for '%s'", self.entrance_location))
         return nil
     end
 end

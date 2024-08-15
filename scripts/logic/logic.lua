@@ -50,7 +50,7 @@ end
 
 function canAccessAct(act_to_access)
   local act_info = getActInfo(act_to_access)
-  local location = act_info:getCanEnterSection()
+  local location = act_info:getEntranceLocation()
   return location.AccessibilityLevel
 end
 
@@ -131,8 +131,8 @@ function completedActAt(entrance)
     -- Free roam acts have no act completion location and are always considered complete when their entrance is
     -- accessible.
     if completion_location_section == nil then
-        local entrance_section = entrance_info:getCanEnterSection()
-        local entrance_accessibility = entrance_section.AccessibilityLevel
+        local entrance_location = entrance_info:getEntranceLocation()
+        local entrance_accessibility = entrance_location.AccessibilityLevel
         return entrance_accessibility == AccessibilityLevel.Normal or entrance_accessibility == AccessibilityLevel.Cleared
     end
 
@@ -160,7 +160,7 @@ function canCompleteActAt(entrance, check_entrance, skip_free_roam_sub_acts)
     local entrance_accessibility
     if check_entrance then
         -- Check if the entrance is accessible.
-        local entrance_location = entrance_info:getCanEnterSection()
+        local entrance_location = entrance_info:getEntranceLocation()
         entrance_accessibility = entrance_location.AccessibilityLevel
     end
 
