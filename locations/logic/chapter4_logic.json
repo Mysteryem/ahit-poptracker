@@ -32,6 +32,34 @@
         "access_rules": [
           "^$canAccessAct|TimeRift_Water_AlpineSkyline_Cats"
         ]
+      },
+      {
+        "name": "Birdhouse Zipline Unlocked",
+        "access_rules": [
+          "ziplines_off",
+          "birdzipline"
+        ]
+      },
+      {
+        "name": "Twilight Bell Zipline Unlocked",
+        "access_rules": [
+          "ziplines_off",
+          "bellzipline"
+        ]
+      },
+      {
+        "name": "Lava Cake Zipline Unlocked",
+        "access_rules": [
+          "ziplines_off",
+          "cakezipline"
+        ]
+      },
+      {
+        "name": "Windmill Zipline Unlocked",
+        "access_rules": [
+          "ziplines_off",
+          "windmillzipline"
+        ]
       }
     ]
   }

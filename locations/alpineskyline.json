@@ -44,8 +44,7 @@
   {
     "name": "Birdhouse Zipline",
     "access_rules": [
-      "hookshot, ziplines_off, @Alpine Logic/Can access central Alpine Area",
-      "hookshot, birdzipline, @Alpine Logic/Can access central Alpine Area"
+      "hookshot, @Alpine Logic/Birdhouse Zipline Unlocked, @Alpine Logic/Can access central Alpine Area"
     ],
     "children": [
       {
@@ -164,8 +163,7 @@
   {
     "name": "Twilight Bell Zipline",
     "access_rules": [
-      "hookshot, ziplines_off, @Alpine Logic/Can access Free Roam",
-      "hookshot, bellzipline, @Alpine Logic/Can access Free Roam"
+      "hookshot, @Alpine Logic/Twilight Bell Zipline Unlocked, @Alpine Logic/Can access Free Roam"
     ],
     "children": [
       {
@@ -223,8 +221,7 @@
   {
     "name": "Lava Cake Zipline",
     "access_rules": [
-      "hookshot, ziplines_off, @Alpine Logic/Can access central Alpine Area",
-      "hookshot, cakezipline, @Alpine Logic/Can access central Alpine Area"
+      "hookshot, @Alpine Logic/Lava Cake Zipline Unlocked, @Alpine Logic/Can access central Alpine Area"
     ],
     "children": [
       {
@@ -315,8 +312,7 @@
   {
     "name": "Windmill Zipline",
     "access_rules": [
-      "hookshot, ziplines_off, @Alpine Logic/Can access central Alpine Area",
-      "hookshot, windmillzipline, @Alpine Logic/Can access central Alpine Area"
+      "hookshot, @Alpine Logic/Windmill Zipline Unlocked, @Alpine Logic/Can access central Alpine Area"
     ],
     "children": [
       {
@@ -407,8 +403,13 @@
       {
         "name": "The Illness has Spread",
         "access_rules": [
-          "hookshot, ziplines_off, @Alpine Logic/Can access Finale - The Illness has Spread",
-          "hookshot, birdzipline, cakezipline, windmillzipline, @Alpine Logic/Can access Finale - The Illness has Spread"
+          [
+            "hookshot",
+            "@Alpine Logic/Birdhouse Zipline Unlocked",
+            "@Alpine Logic/Lava Cake Zipline Unlocked",
+            "@Alpine Logic/Windmill Zipline Unlocked",
+            "@Alpine Logic/Can access Finale - The Illness has Spread"
+          ]
         ],
         "sections": [
           {
