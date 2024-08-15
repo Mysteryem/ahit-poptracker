@@ -28,7 +28,7 @@ local map_table = {
     themoon = "Dead Bird Studio",
     trainwreck_selfdestruct = "Dead Bird Studio",
     dead_cinema = "Dead Bird Studio",
-    timerift_cave_birdbasement = "Dead Bird Studio",
+    timerift_cave_deadbird = "Dead Bird Studio",
     timerift_water_twreck_panels = "Dead Bird Studio",
     timerift_water_twreck_parade = "Dead Bird Studio",
 
