@@ -387,17 +387,26 @@
           {
             "name": "Thug A",
             "item_count": 5,
-            "clear_as_group": false
+            "clear_as_group": false,
+            "visibility_rules": [
+              "metro_thug_enabled_0"
+            ]
           },
           {
             "name": "Thug B",
             "item_count": 5,
-            "clear_as_group": false
+            "clear_as_group": false,
+            "visibility_rules": [
+              "metro_thug_enabled_1"
+            ]
           },
           {
             "name": "Thug C",
             "item_count": 5,
-            "clear_as_group": false
+            "clear_as_group": false,
+            "visibility_rules": [
+              "metro_thug_enabled_2"
+            ]
           }
         ],
         "map_locations": [
@@ -414,7 +423,10 @@
           {
             "name": "Scammed",
             "item_count": 5,
-            "clear_as_group": false
+            "clear_as_group": false,
+            "visibility_rules": [
+              "metro_thug_enabled_13"
+            ]
           }
         ],
         "map_locations": [
@@ -431,7 +443,10 @@
           {
             "name": "Scammed",
             "item_count": 5,
-            "clear_as_group": false
+            "clear_as_group": false,
+            "visibility_rules": [
+              "metro_thug_enabled_5"
+            ]
           }
         ],
         "map_locations": [
@@ -448,7 +463,10 @@
           {
             "name": "Scammed",
             "item_count": 5,
-            "clear_as_group": false
+            "clear_as_group": false,
+            "visibility_rules": [
+              "metro_thug_enabled_14"
+            ]
           }
         ],
         "map_locations": [
@@ -465,7 +483,10 @@
           {
             "name": "Scammed",
             "item_count": 5,
-            "clear_as_group": false
+            "clear_as_group": false,
+            "visibility_rules": [
+              "metro_thug_enabled_4"
+            ]
           }
         ],
         "map_locations": [
@@ -486,7 +507,10 @@
           {
             "name": "Scammed",
             "item_count": 5,
-            "clear_as_group": false
+            "clear_as_group": false,
+            "visibility_rules": [
+              "metro_thug_enabled_6"
+            ]
           }
         ],
         "map_locations": [
@@ -506,7 +530,10 @@
           {
             "name": "Scammed",
             "item_count": 5,
-            "clear_as_group": false
+            "clear_as_group": false,
+            "visibility_rules": [
+              "metro_thug_enabled_7"
+            ]
           }
         ],
         "map_locations": [
@@ -526,7 +553,10 @@
           {
             "name": "Scammed",
             "item_count": 5,
-            "clear_as_group": false
+            "clear_as_group": false,
+            "visibility_rules": [
+              "metro_thug_enabled_12"
+            ]
           }
         ],
         "map_locations": [

@@ -60,6 +60,8 @@ local map_table = {
 
 --I initialise HatOrder in onClear but need to read the table during item checks
 HatOrder = {}
+-- There are missing numbers, that's just how it is.
+local metro_thug_numbers = {0, 1, 2, 4, 5, 6, 7, 12, 13, 14}
 
 FLAG_CODES = {}
 
@@ -274,6 +276,15 @@ function onClear(slot_data)
     setFromSlotData('Hat_NPC_NyakuzaShop_6', "@Nyakuza Shops/Green Clean Thug B/Scammed")
     setFromSlotData('Hat_NPC_NyakuzaShop_7', "@Nyakuza Shops/Bluefin Tunnel Thug/Scammed")
     setFromSlotData('Hat_NPC_NyakuzaShop_12', "@Nyakuza Shops/Pink Paw Station Thug/Scammed")
+    -- There are internal items used by the tracker to specify if a thug should be visible on the map.
+    for _, v in ipairs(metro_thug_numbers) do
+        v = tostring(v)
+        local thug_enabled_item = Tracker:FindObjectForCode("metro_thug_enabled_"..v)
+        local item_count = slot_data["Hat_NPC_NyakuzaShop_"..v]
+        -- AHiT in Archipelago 0.5.0 has a bug where Metro Thug shops can be absent from slot_data when they have no
+        -- items.
+        thug_enabled_item.Active = item_count ~= nil and item_count ~= 0
+    end
 
     -- Enable DLC items depending on which DLCs are enabled.
     -- The DLC items have an extra initial stage that displays a lock icon. Increase the stage to show the default icon

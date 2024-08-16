@@ -216,5 +216,65 @@
     "name": "Chapter 7 Cost",
     "type": "consumable",
     "codes": "chapter_7_cost"
+  },
+  {
+    "name": "Metro Thug 0 Enabled",
+    "type": "toggle",
+    "codes": "metro_thug_enabled_0",
+    "initial_active_state": true
+  },
+  {
+    "name": "Metro Thug 1 Enabled",
+    "type": "toggle",
+    "codes": "metro_thug_enabled_1",
+    "initial_active_state": true
+  },
+  {
+    "name": "Metro Thug 2 Enabled",
+    "type": "toggle",
+    "codes": "metro_thug_enabled_2",
+    "initial_active_state": true
+  },
+  {
+    "name": "Metro Thug 4 Enabled",
+    "type": "toggle",
+    "codes": "metro_thug_enabled_4",
+    "initial_active_state": true
+  },
+  {
+    "name": "Metro Thug 5 Enabled",
+    "type": "toggle",
+    "codes": "metro_thug_enabled_5",
+    "initial_active_state": true
+  },
+  {
+    "name": "Metro Thug 6 Enabled",
+    "type": "toggle",
+    "codes": "metro_thug_enabled_6",
+    "initial_active_state": true
+  },
+  {
+    "name": "Metro Thug 7 Enabled",
+    "type": "toggle",
+    "codes": "metro_thug_enabled_7",
+    "initial_active_state": true
+  },
+  {
+    "name": "Metro Thug 12 Enabled",
+    "type": "toggle",
+    "codes": "metro_thug_enabled_12",
+    "initial_active_state": true
+  },
+  {
+    "name": "Metro Thug 13 Enabled",
+    "type": "toggle",
+    "codes": "metro_thug_enabled_13",
+    "initial_active_state": true
+  },
+  {
+    "name": "Metro Thug 14 Enabled",
+    "type": "toggle",
+    "codes": "metro_thug_enabled_14",
+    "initial_active_state": true
   }
 ]
