@@ -276,7 +276,8 @@ function onClear(slot_data)
     setFromSlotData('Hat_NPC_NyakuzaShop_6', "@Nyakuza Shops/Green Clean Thug B/Scammed")
     setFromSlotData('Hat_NPC_NyakuzaShop_7', "@Nyakuza Shops/Bluefin Tunnel Thug/Scammed")
     setFromSlotData('Hat_NPC_NyakuzaShop_12', "@Nyakuza Shops/Pink Paw Station Thug/Scammed")
-    -- There are internal items used by the tracker to specify if a thug should be visible on the map.
+    -- There are internal items used by the tracker to specify if a shop should be visible on the map.
+    Tracker:FindObjectForCode("badge_seller_enabled").Active = (slot_data["BadgeSellerItemCount"] or 0) > 0
     for _, v in ipairs(metro_thug_numbers) do
         v = tostring(v)
         local thug_enabled_item = Tracker:FindObjectForCode("metro_thug_enabled_"..v)

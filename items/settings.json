@@ -276,5 +276,11 @@
     "type": "toggle",
     "codes": "metro_thug_enabled_14",
     "initial_active_state": true
+  },
+  {
+    "name": "Badge Seller Enabled",
+    "type": "toggle",
+    "codes": "badge_seller_enabled",
+    "initial_active_state": true
   }
 ]

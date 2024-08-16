@@ -157,6 +157,9 @@
               "@Subcon Logic/Can access main Subcon area",
               "@Alpine Logic/Can access central Alpine Area",
               "@Cruise Logic/Can access Ship Area"
+            ],
+            "visibility_rules": [
+              "badge_seller_enabled"
             ]
           }
         ]
