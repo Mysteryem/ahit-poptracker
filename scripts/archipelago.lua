@@ -305,12 +305,6 @@ function onClear(slot_data)
                                                         "zipline_unlock_lava_cake",
                                                         "zipline_unlock_windmill"})
 
-    -- Enable the contracts when contracts are shuffled
-    enabled_linked_progressive_items("contract", {"contract_subcon_well",
-                                                  "contract_toilet_of_doom",
-                                                  "contract_queen_vanessas_manor",
-                                                  "contract_mail_delivery_service"})
-
     -- set hash table to randomized acts
     for chapter_number = 1,7 do
         local chapter = string.format('Chapter%dCost', chapter_number)
