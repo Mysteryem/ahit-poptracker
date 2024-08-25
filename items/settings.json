@@ -6,7 +6,7 @@
     "codes": "pages"
   },
   {
-    "name": "CTR with Sprint Hat",
+    "name": "Cheating The Race Logic",
     "type": "progressive",
     "codes": "ctrlogic",
     "loop": true,
@@ -14,18 +14,22 @@
     "stages": [
       {
         "img": "images/settings/with_timestop.png",
+        "name": "CTR with Timestop",
         "codes": "withtimestop"
       },
       {
         "img": "images/settings/with_scooter.png",
+        "name": "CTR with Scooter",
         "codes": "withscooter"
       },
       {
         "img": "images/settings/with_sprint.png",
+        "name": "CTR with Sprint",
         "codes": "withsprint"
       },
       {
         "img": "images/settings/with_nothing.png",
+        "name": "CTR with Nothing",
         "codes": "withnothing"
       }
     ]
