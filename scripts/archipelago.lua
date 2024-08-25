@@ -391,12 +391,10 @@ function changedMap(current_map, previous_map)
         return
     end
 
-    -- should start disabled?
-    -- add button to disable auto switching
     local internal_map_name = map_table[current_map]
     
     if internal_map_name == nil then
-        print(string.format("Could not find map name %s; Setting to Spaceship", current_map))
+        print(string.format("Could not find map name %s; Setting to default map", current_map))
         internal_map_name = "default"
     end
     if internal_map_name == "default" then
