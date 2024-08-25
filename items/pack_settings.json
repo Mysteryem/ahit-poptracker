@@ -33,7 +33,7 @@
     "initial_active_state": true
   },
   {
-    "name": "Only Show Next Logic Difficulty",
+    "name": "Only Show Next Difficulty",// Applies to both Logic Difficulty and CTR Difficulty
     "type": "progressive",
     "img": "images/settings/moderate_out_of_logic_48.png",
     "codes": "setting_show_higher_logic_next_only",
@@ -58,5 +58,12 @@
     "type": "toggle",
     "img": "images/settings/no_skips_out_of_logic_48.png",
     "codes": "setting_show_disabled_skips"
+  },
+  {
+    "name": "Show Higher CTR Difficulties",
+    "type": "toggle",
+    "img": "images/settings/ctr_out_of_logic_48.png",
+    "codes": "setting_show_higher_ctr_logic",
+    "initial_active_state": true
   }
 ]

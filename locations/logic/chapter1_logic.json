@@ -78,7 +78,11 @@
           "withtimestop, timestop",
           "withscooter, sprint, scooter",
           "withsprint, sprint",
-          "withnothing"
+          "withnothing",
+          "setting_show_higher_ctr_logic, setting_show_higher_logic_next_only_disabled, [withnothing]",
+          "setting_show_higher_ctr_logic, setting_show_higher_logic_next_only_enabled, withsprint, [withnothing]",
+          "setting_show_higher_ctr_logic, setting_show_higher_logic_next_only_enabled, withscooter, sprint, [withsprint]",
+          "setting_show_higher_ctr_logic, setting_show_higher_logic_next_only_enabled, withtimestop, sprint, scooter, [withscooter]"
         ]
       }
     ]
