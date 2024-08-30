@@ -1,6 +1,27 @@
 {
     "versions": [
         {
+            "package_version": "1.4.0",
+            "download_url": "https://github.com/Mysteryem/ahit-poptracker/archive/refs/tags/v1.4.0.zip",
+            "sha256": "9a88c0fb15679c129b49ee67dae217c267ed58d51baae18848bb71998ef8cb4f",
+            "changelog": [
+                "Added Out-of-logic support",
+                "Map switching updates",
+                "Logic fixes:",
+                " - Fix green firewall painting skips never being in logic",
+                " - Fix expert logic access of the main subcon area from YCHE ignoring painting requirements",
+                " - Fix moderate/hard logic of Goat Refinery from The Illness has Spread incorrectly requiring hookshot",
+                "Other fixes:",
+                " - Fix NoPaintingSkips option always being enabled after connecting to AP",
+                " - Fix Yellow Overpass Thugs A and C being placed on the map at each other's location",
+                " - Fix Metro Thug shops with zero items often showing as having 5 items",
+                "Misc changes:",
+                " - New icon for Entrances map",
+                " - Ziplines and Metro Tickets use a lock icon when they are not available in your seed",
+                " - Shops with zero items from the start are removed from maps"
+            ]
+        },
+        {
             "package_version": "1.3.0",
             "download_url": "https://github.com/Mysteryem/ahit-poptracker/archive/refs/tags/v1.3.0.zip",
             "sha256": "c1a27f258da609a80a13375ebf5e8b7b115fe5a913fd43a470b3db00fe1d02b3",
