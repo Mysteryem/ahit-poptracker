@@ -132,25 +132,24 @@ function completedActAt(entrance)
     -- accessible.
     if completion_location_section == nil then
         local entrance_location = entrance_info:getEntranceLocation()
-        local entrance_accessibility = entrance_location.AccessibilityLevel
-        return entrance_accessibility == AccessibilityLevel.Normal or entrance_accessibility == AccessibilityLevel.Cleared
+        return entrance_location.AccessibilityLevel
     end
 
     if not isApConnected() then
         -- With no AP connection, check the Time Piece location. Note that checking locations manually does not update
         -- logic and that if any Time Pieces were !collect-ed then the logic may end up incorrect if the act has not
         -- actually been completed.
-        if act_at_entrance.vanilla_act_completion_location_section == nil then
-            -- Free roam act
-            return true
-        end
         local completion_location = Tracker:FindObjectForCode(act_at_entrance.vanilla_act_completion_location_section)
-        return completion_location.AccessibilityLevel == AccessibilityLevel.Cleared
+        return completion_location.AccessibilityLevel
     end
 
     --
     -- archipelago.lua updates the global set of completed entrances
-    return completed_entrances[entrance] ~= nil
+    if completed_entrances[entrance] ~= nil then
+        return AccessibilityLevel.Normal
+    else
+        return AccessibilityLevel.None
+    end
 end
 
 -- Note: the check_entrance and skip_free_roam_sub_acts arguments are currently unused.
