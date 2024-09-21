@@ -34,7 +34,7 @@ ITEM_MAPPING = {
     -- [2000300026] = "Hover Badge",
     [2000300027] = "hookshot",
     -- [2000300028] = "Item Magnet Badge",
-    -- [2000300029] = "nobonk",
+    [2000300029] = "nobonk",
     -- [2000300030] = "Compass Badge",
     [2000300031] = "scooter",
     [2000300043] = "badge_pin",
@@ -70,8 +70,8 @@ ITEM_MAPPING = {
     [2000300048] = "pinkticket",
 
     -- Death Wish items
-    -- [2000300038] = "One-Hit Hero Badge",
-    -- [2000300042] = "Camera Badge",
+    [2000300038] = "one_hit_hero",
+    [2000300042] = "camera_badge",
 
     --Contracts
     [2000300200] = "wellcontract",

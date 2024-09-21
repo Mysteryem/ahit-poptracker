@@ -1,0 +1,1696 @@
+[
+  {
+    "name": "Death Wish",
+    "access_rules": [
+      "$hasTimePiecesForDeathWish"
+    ],
+    "visibility_rules": [
+      "dw_mode_normal",
+      "dw_mode_shuffle, $hasTimePiecesForDeathWish"
+    ],
+    "children": [
+      {
+        // This is the starting contract when shuffle is not enabled.
+        "name": "Contract - Beat the Heat",
+        "access_rules": [
+          "dw_mode_normal",
+          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_HeatingUpHarder"
+        ],
+        "visibility_rules": [
+          "dw_mode_normal",
+          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_HeatingUpHarder"
+        ],
+        "children": [
+          {
+            "name": "Beat the Heat",
+            "access_rules": [
+              "@General Logic/Can Melee"
+            ],
+            "sections": [
+              {
+                "name": "Main Objective"
+              },
+              {
+                "name": "All Clear",
+                "visibility_rules": [
+                  "dw_enable_bonus"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 636,
+                "y": 424
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Contract - So You're Back From Outer Space",
+        "access_rules": [
+          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_BackFromSpace",
+          [
+            "dw_mode_normal",
+            "stamp:2",
+            "[logical_stamp:2]",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_HeatingUpHarder"
+          ]
+        ],
+        "visibility_rules": [
+          "dw_mode_normal",
+          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_BackFromSpace"
+        ],
+        "children": [
+          {
+            "name": "So You're Back From Outer Space",
+            "access_rules": [
+              "hookshot",
+              "@General Logic/Hard"
+            ],
+            "sections": [
+              {
+                "name": "Main Objective"
+              },
+              {
+                "name": "All Clear",
+                "access_rules": [
+                  "sprint"
+                ],
+                "visibility_rules": [
+                  "dw_enable_bonus"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 818,
+                "y": 627
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Contract - Mafia's Jumps",
+        "access_rules": [
+          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_NoAPresses_MafiaAlien",
+          [
+            "dw_mode_normal",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_Speedrun_MafiaAlien"
+          ]
+        ],
+        "visibility_rules": [
+          "dw_mode_normal",
+          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_NoAPresses_MafiaAlien"
+        ],
+        "children": [
+          {
+            "name": "Mafia's Jumps",
+            "access_rules": [
+              "ice",
+              "@General Logic/Hard"
+            ],
+            "sections": [
+              {
+                "name": "Main Objective"
+              },
+              {
+                "name": "All Clear",
+                "visibility_rules": [
+                  "dw_enable_bonus"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 1195,
+                "y": 767
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Contract - Collect-a-thon",
+        "access_rules": [
+          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_PonFrenzy",
+          [
+            "dw_mode_normal",
+            "stamp:5",
+            "[logical_stamp:5]",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_BackFromSpace"
+          ]
+        ],
+        "visibility_rules": [
+          "dw_mode_normal",
+          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_PonFrenzy"
+        ],
+        "children": [
+          {
+            "name": "Collect-a-thon",
+            "sections": [
+              {
+                "name": "Main Objective"
+              },
+              {
+                "name": "All Clear",
+                "visibility_rules": [
+                  "dw_enable_bonus"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 982,
+                "y": 637
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Contract - She Speedran from Outer Space",
+        "access_rules": [
+          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Speedrun_MafiaAlien",
+          [
+            "dw_mode_normal",
+            "stamp:8",
+            "[logical_stamp:8]",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_RiftCollapse_MafiaTown"
+          ]
+        ],
+        "visibility_rules": [
+          "dw_mode_normal",
+          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Speedrun_MafiaAlien"
+        ],
+        "children": [
+          {
+            "name": "She Speedran from Outer Space",
+            "sections": [
+              {
+                "name": "Main Objective"
+              },
+              {
+                "name": "All Clear",
+                "visibility_rules": [
+                  "dw_enable_bonus"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 1078,
+                "y": 735
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Contract - Vault Codes in the Wind",
+        "access_rules": [
+          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_MovingVault",
+          [
+            "dw_mode_normal",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_PonFrenzy",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_Speedrun_MafiaAlien"
+          ]
+        ],
+        "visibility_rules": [
+          "dw_mode_normal",
+          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_MovingVault"
+        ],
+        "children": [
+          {
+            "name": "Vault Codes in the Wind",
+            "access_rules": [
+              "sprint",
+              "@General Logic/Expert"
+            ],
+            "sections": [
+              {
+                "name": "Main Objective"
+              },
+              {
+                "name": "All Clear",
+                "visibility_rules": [
+                  "dw_enable_bonus"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 1125,
+                "y": 631
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Contract - Encore! Encore!",
+        "access_rules": [
+          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_MafiaBossEX",
+          [
+            "dw_mode_normal",
+            "stamp:10",
+            "[logical_stamp:10]",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_PonFrenzy"
+          ]
+        ],
+        "visibility_rules": [
+          "dw_mode_normal",
+          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_MafiaBossEX"
+        ],
+        "children": [
+          {
+            "name": "Encore! Encore!",
+            "sections": [
+              {
+                "name": "Main Objective"
+              },
+              {
+                "name": "All Clear",
+                "access_rules": [
+                  "one_hit_hero"
+                ],
+                "visibility_rules": [
+                  "dw_enable_bonus"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 1040,
+                "y": 511
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Contract - Security Breach",
+        "access_rules": [
+          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_DeadBirdStudioMoreGuards",
+          [
+            "dw_mode_normal",
+            "stamp:4",
+            "[logical_stamp:4]",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_HeatingUpHarder"
+          ]
+        ],
+        "visibility_rules": [
+          "dw_mode_normal",
+          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_DeadBirdStudioMoreGuards"
+        ],
+        "children": [
+          {
+            "name": "Security Breach",
+            "access_rules": [
+              "@General Logic/Can Hit"
+            ],
+            "sections": [
+              {
+                "name": "Main Objective"
+              },
+              {
+                "name": "All Clear",
+                "visibility_rules": [
+                  "dw_enable_bonus"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 415,
+                "y": 761
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Contract - 10 Seconds until Self-Destruct",
+        "access_rules": [
+          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_TrainRushShortTime",
+          [
+            "dw_mode_normal",
+            "stamp:15",
+            "[logical_stamp:15]",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_DifficultParade"
+          ]
+        ],
+        "visibility_rules": [
+          "dw_mode_normal",
+          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_TrainRushShortTime"
+        ],
+        "children": [
+          {
+            "name": "10 Seconds until Self-Destruct",
+            "access_rules": [
+              "hookshot"
+            ],
+            "sections": [
+              {
+                "name": "Main Objective"
+              },
+              {
+                "name": "All Clear",
+                "access_rules": [
+                  "one_hit_hero, badge_pin"
+                ],
+                "visibility_rules": [
+                  "dw_enable_bonus"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 157,
+                "y": 632
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Contract - The Great Big Hootenanny",
+        "access_rules": [
+          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_DifficultParade",
+          [
+            "dw_mode_normal",
+            "stamp:7",
+            "[logical_stamp:7]",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_DeadBirdStudioMoreGuards"
+          ]
+        ],
+        "visibility_rules": [
+          "dw_mode_normal",
+          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_DifficultParade"
+        ],
+        "children": [
+          {
+            "name": "The Great Big Hootenanny",
+            "sections": [
+              {
+                "name": "Main Objective"
+              },
+              {
+                "name": "All Clear",
+                "visibility_rules": [
+                  "dw_enable_bonus"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 259,
+                "y": 728
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Contract - Killing Two Birds",
+        "access_rules": [
+          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_BirdBossEX",
+          [
+            "dw_mode_normal",
+            "stamp:25",
+            "[logical_stamp:25]",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_RiftCollapse_Birds",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_TrainRushShortTime"
+          ]
+        ],
+        "visibility_rules": [
+          "dw_mode_normal",
+          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_BirdBossEX"
+        ],
+        "children": [
+          {
+            "name": "Killing Two Birds",
+            "sections": [
+              {
+                "name": "Main Objective"
+              },
+              {
+                "name": "All Clear",
+                "visibility_rules": [
+                  "dw_enable_bonus"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 272,
+                "y": 529
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Contract - Speedrun Well",
+        "access_rules": [
+          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Speedrun_SubWell",
+          [
+            "dw_mode_normal",
+            "stamp:10",
+            "[logical_stamp:10]",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_HeatingUpHarder"
+          ]
+        ],
+        "visibility_rules": [
+          "dw_mode_normal",
+          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Speedrun_SubWell"
+        ],
+        "children": [
+          {
+            "name": "Speedrun Well",
+            "access_rules": [
+              "hookshot, @General Logic/Can Hit",
+              "@General Logic/Expert"
+            ],
+            "sections": [
+              {
+                "name": "Main Objective"
+              },
+              {
+                "name": "All Clear",
+                "visibility_rules": [
+                  "dw_enable_bonus"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 398,
+                "y": 342
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Contract - Boss Rush",
+        "access_rules": [
+          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_BossRush",
+          [
+            "dw_mode_normal",
+            "stamp:15",
+            "[logical_stamp:15]",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_Speedrun_SubWell"
+          ]
+        ],
+        "visibility_rules": [
+          "dw_mode_normal",
+          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_BossRush"
+        ],
+        "children": [
+          {
+            "name": "Boss Rush",
+            "access_rules": [
+              "hookshot, @General Logic/Can Melee"
+            ],
+            "sections": [
+              {
+                "name": "Main Objective"
+              },
+              {
+                "name": "All Clear",
+                "access_rules": [
+                  "one_hit_hero, badge_pin"
+                ],
+                "visibility_rules": [
+                  "dw_enable_bonus"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 437,
+                "y": 234
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Contract - Quality Time with Snatcher",
+        "access_rules": [
+          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_SurvivalOfTheFittest",
+          [
+            "dw_mode_normal",
+            "stamp:20",
+            "[logical_stamp:20]",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_RiftCollapse_Subcon"
+          ]
+        ],
+        "visibility_rules": [
+          "dw_mode_normal",
+          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_SurvivalOfTheFittest"
+        ],
+        "children": [
+          {
+            "name": "Quality Time with Snatcher",
+            "sections": [
+              {
+                "name": "Main Objective"
+              },
+              {
+                "name": "All Clear",
+                "visibility_rules": [
+                  "dw_enable_bonus"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 176,
+                "y": 209
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Contract - Breaching the Contract",
+        "access_rules": [
+          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_SnatcherEX",
+          [
+            "dw_mode_normal",
+            "stamp:40",
+            "[logical_stamp:40]",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_BossRush",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_SurvivalOfTheFittest"
+          ]
+        ],
+        "visibility_rules": [
+          "dw_mode_normal",
+          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_SnatcherEX"
+        ],
+        "children": [
+          {
+            "name": "Breaching the Contract",
+            "sections": [
+              {
+                "name": "Main Objective"
+              },
+              {
+                "name": "All Clear",
+                "visibility_rules": [
+                  "dw_enable_bonus"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 354,
+                "y": 104
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Contract - Bird Sanctuary",
+        "access_rules": [
+          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_NiceBirdhouse",
+          [
+            "dw_mode_normal",
+            "stamp:15",
+            "[logical_stamp:15]",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_HeatingUpHarder"
+          ]
+        ],
+        "visibility_rules": [
+          "dw_mode_normal",
+          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_NiceBirdhouse"
+        ],
+        "children": [
+          {
+            "name": "Bird Sanctuary",
+            "access_rules": [
+              "hookshot, @Death Wish Unlock/Bird Sanctuary"
+            ],
+            "sections": [
+              {
+                "name": "Main Objective"
+              },
+              {
+                "name": "All Clear",
+                "access_rules": [
+                  "one_hit_hero, badge_pin, dweller"
+                ],
+                "visibility_rules": [
+                  "dw_enable_bonus"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 940,
+                "y": 282
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Contract - Wound-Up Windmill",
+        "access_rules": [
+          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_FastWindmill",
+          [
+            "dw_mode_normal",
+            "stamp:30",
+            "[logical_stamp:30]",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_NiceBirdhouse"
+          ]
+        ],
+        "visibility_rules": [
+          "dw_mode_normal",
+          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_FastWindmill"
+        ],
+        "children": [
+          {
+            "name": "Wound-Up Windmill",
+            "access_rules": [
+              "hookshot"
+            ],
+            "sections": [
+              {
+                "name": "Main Objective"
+              },
+              {
+                "name": "All Clear",
+                "access_rules": [
+                  "one_hit_hero, badge_pin",
+                  "one_hit_hero, @General Logic/Moderate"
+                ],
+                "visibility_rules": [
+                  "dw_enable_bonus"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 908,
+                "y": 129
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Contract - The Illness has Speedrun",
+        "access_rules": [
+          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Speedrun_Illness",
+          [
+            "dw_mode_normal",
+            "stamp:35",
+            "[logical_stamp:35]",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_RiftCollapse_Alps",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_FastWindmill"
+          ]
+        ],
+        "visibility_rules": [
+          "dw_mode_normal",
+          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Speedrun_Illness"
+        ],
+        "children": [
+          {
+            "name": "The Illness has Speedrun",
+            "access_rules": [
+              "hookshot, umbrella",
+              "hookshot, @General Logic/Expert"
+            ],
+            "sections": [
+              {
+                "name": "Main Objective"
+              },
+              {
+                "name": "All Clear",
+                "access_rules": [
+                  "sprint",
+                  "@General Logic/Expert"
+                ],
+                "visibility_rules": [
+                  "dw_enable_bonus"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 1082,
+                "y": 65
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Contract - The Mustache Gauntlet",
+        "access_rules": [
+          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_HardCastle",
+          [
+            "dw_mode_normal",
+            "stamp:35",
+            "[logical_stamp:35]",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_FastWindmill"
+          ]
+        ],
+        "visibility_rules": [
+          "dw_mode_normal",
+          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_HardCastle"
+        ],
+        "children": [
+          {
+            "name": "The Mustache Gauntlet",
+            "access_rules": [
+              "hookshot, dweller, @Death Wish Logic/Can Safely Defeat Fiery Crows"
+            ],
+            "sections": [
+              {
+                "name": "Main Objective"
+              },
+              {
+                "name": "All Clear",
+                "access_rules": [
+                  "ice"
+                ],
+                "visibility_rules": [
+                  "dw_enable_bonus"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 822,
+                "y": 219
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Contract - No More Bad Guys",
+        "access_rules": [
+          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_MuGirlEX",
+          [
+            "dw_mode_normal",
+            "stamp:50",
+            "[logical_stamp:50]",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_HardCastle"
+          ]
+        ],
+        "visibility_rules": [
+          "dw_mode_normal",
+          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_MuGirlEX"
+        ],
+        "children": [
+          {
+            "name": "No More Bad Guys",
+            "sections": [
+              {
+                "name": "Main Objective"
+              },
+              {
+                "name": "All Clear",
+                "visibility_rules": [
+                  "dw_enable_bonus"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 733,
+                "y": 194
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Contract - Cruisin' for a Bruisin'",
+        "access_rules": [
+          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_EndlessTasks",
+          [
+            "dw_mode_normal",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_RiftCollapse_Cruise"
+          ]
+        ],
+        "visibility_rules": [
+          "dw_mode_normal",
+          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_EndlessTasks"
+        ],
+        "children": [
+          {
+            "name": "Cruisin' for a Bruisin'",
+            "sections": [
+              {
+                "name": "Main Objective"
+              },
+              {
+                "name": "All Clear",
+                "visibility_rules": [
+                  "dw_enable_bonus"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 646,
+                "y": 745
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Contract - Seal the Deal",
+        "access_rules": [
+          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_BossRushEX",
+          [
+            "dw_mode_normal",
+            "stamp:70",
+            "[logical_stamp:70]",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_MafiaBossEX",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_BirdBossEX",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_SnatcherEX",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_MuGirlEX"
+          ]
+        ],
+        "visibility_rules": [
+          "dw_mode_normal",
+          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_BossRushEX"
+        ],
+        "children": [
+          {
+            "name": "Seal the Deal",
+            "sections": [
+              {
+                "name": "Main Objective"
+              },
+              {
+                "name": "All Clear",
+                "visibility_rules": [
+                  "dw_enable_bonus"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 612,
+                "y": 231
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Contract - Rift Collapse: Mafia of Cooks",
+        "access_rules": [
+          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_RiftCollapse_MafiaTown",
+          [
+            "dw_mode_normal",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_BackFromSpace"
+          ]
+        ],
+        "visibility_rules": [
+          "dw_mode_normal",
+          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_RiftCollapse_MafiaTown"
+        ],
+        "children": [
+          {
+            "name": "Rift Collapse: Mafia of Cooks",
+            "sections": [
+              {
+                "name": "Main Objective"
+              },
+              {
+                "name": "All Clear",
+                "visibility_rules": [
+                  "dw_enable_bonus"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 909,
+                "y": 735
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Contract - Rift Collapse: Dead Bird Studio",
+        "access_rules": [
+          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_RiftCollapse_Birds",
+          [
+            "dw_mode_normal",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_DeadBirdStudioMoreGuards"
+          ]
+        ],
+        "visibility_rules": [
+          "dw_mode_normal",
+          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_RiftCollapse_Birds"
+        ],
+        "children": [
+          {
+            "name": "Rift Collapse: Dead Bird Studio",
+            "sections": [
+              {
+                "name": "Main Objective"
+              },
+              {
+                "name": "All Clear",
+                "visibility_rules": [
+                  "dw_enable_bonus"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 380,
+                "y": 633
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Contract - Rift Collapse: Sleepy Subcon",
+        "access_rules": [
+          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_RiftCollapse_Subcon",
+          [
+            "dw_mode_normal",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_Speedrun_SubWell"
+          ]
+        ],
+        "visibility_rules": [
+          "dw_mode_normal",
+          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_RiftCollapse_Subcon"
+        ],
+        "children": [
+          {
+            "name": "Rift Collapse: Sleepy Subcon",
+            "sections": [
+              {
+                "name": "Main Objective"
+              },
+              {
+                "name": "All Clear",
+                "visibility_rules": [
+                  "dw_enable_bonus"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 246,
+                "y": 342
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Contract - Rift Collapse: Alpine Skyline",
+        "access_rules": [
+          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_RiftCollapse_Alps",
+          [
+            "dw_mode_normal",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_NiceBirdhouse"
+          ]
+        ],
+        "visibility_rules": [
+          "dw_mode_normal",
+          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_RiftCollapse_Alps"
+        ],
+        "children": [
+          {
+            "name": "Rift Collapse: Alpine Skyline",
+            "sections": [
+              {
+                "name": "Main Objective"
+              },
+              {
+                "name": "All Clear",
+                "visibility_rules": [
+                  "dw_enable_bonus"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 1117,
+                "y": 251
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Contract - Rift Collapse: Deep Sea",
+        "access_rules": [
+          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_RiftCollapse_Cruise",
+          [
+            "dw_mode_normal",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_RiftCollapse_MafiaTown",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_RiftCollapse_Birds",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_RiftCollapse_Subcon",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_RiftCollapse_Alps"
+          ]
+        ],
+        "visibility_rules": [
+          "dw_mode_normal",
+          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_RiftCollapse_Cruise"
+        ],
+        "children": [
+          {
+            "name": "Rift Collapse: Deep Sea",
+            "access_rules": [
+              "hookshot"
+            ],
+            "sections": [
+              {
+                "name": "Main Objective"
+              },
+              {
+                "name": "All Clear",
+                "access_rules": [
+                  "dweller"
+                ],
+                "visibility_rules": [
+                  "dw_enable_bonus"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 657,
+                "y": 639
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Contract - Community Rift: Rhythm Jump Studio",
+        "access_rules": [
+          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_CommunityRift_RhythmJump",
+          [
+            "dw_mode_normal",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_TrainRushShortTime"
+          ]
+        ],
+        "visibility_rules": [
+          "dw_mode_normal",
+          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_CommunityRift_RhythmJump"
+        ],
+        "children": [
+          {
+            "name": "Community Rift: Rhythm Jump Studio",
+            "access_rules": [
+              "ice"
+            ],
+            "sections": [
+              {
+                "name": "Main Objective"
+              },
+              {
+                "name": "All Clear",
+                "visibility_rules": [
+                  "dw_enable_bonus"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 119,
+                "y": 533
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Contract - Community Rift: Twilight Travels",
+        "access_rules": [
+          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_CommunityRift_TwilightTravels",
+          [
+            "dw_mode_normal",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_SurvivalOfTheFittest"
+          ]
+        ],
+        "visibility_rules": [
+          "dw_mode_normal",
+          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_CommunityRift_TwilightTravels"
+        ],
+        "children": [
+          {
+            "name": "Community Rift: Twilight Travels",
+            "access_rules": [
+              "hookshot, dweller"
+            ],
+            "sections": [
+              {
+                "name": "Main Objective"
+              },
+              {
+                "name": "All Clear",
+                "access_rules": [
+                  "brewer"
+                ],
+                "visibility_rules": [
+                  "dw_enable_bonus"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 114,
+                "y": 334
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Contract - Community Rift: The Mountain Rift",
+        "access_rules": [
+          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_CommunityRift_MountainRift",
+          [
+            "dw_mode_normal",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_RiftCollapse_Alps"
+          ]
+        ],
+        "visibility_rules": [
+          "dw_mode_normal",
+          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_CommunityRift_MountainRift"
+        ],
+        "children": [
+          {
+            "name": "Community Rift: The Mountain Rift",
+            "access_rules": [
+              "hookshot, dweller"
+            ],
+            "sections": [
+              {
+                "name": "Main Objective"
+              },
+              {
+                "name": "All Clear",
+                "visibility_rules": [
+                  "dw_enable_bonus"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 1198,
+                "y": 143
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Candle - Snatcher's Hit List",
+        "access_rules": [
+          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_KillEverybody",
+          [
+            "dw_mode_normal",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_HeatingUpHarder"
+          ]
+        ],
+        "visibility_rules": [
+          "dw_mode_normal",
+          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_KillEverybody"
+        ],
+        "children": [
+          {
+            "name": "Snatcher's Hit List",
+            "access_rules": [
+              "@Death Wish Logic/Enemy Locations/Mafia Goon"
+            ],
+            "sections": [
+              {
+                "name": "Main Objective"
+              },
+              {
+                "name": "All Clear",
+                "access_rules": [
+                  // There are 12 enemy types to kill for the second part of the bonus.
+                  [
+                    "@Death Wish Logic/Enemy Locations/Mafia Goon",
+                    "@Death Wish Logic/Enemy Locations/Sleepy Raccoon",
+                    "@Death Wish Logic/Enemy Locations/UFO",
+                    "@Death Wish Logic/Enemy Locations/Rat",
+                    "@Death Wish Logic/Enemy Locations/Shock Squid",
+                    "@Death Wish Logic/Enemy Locations/Shromb Egg",
+                    "@Death Wish Logic/Enemy Locations/Spider",
+                    "@Death Wish Logic/Enemy Locations/Crow",
+                    "@Death Wish Logic/Enemy Locations/Pompous Crow",
+                    // Also needed for the first part of the bonus.
+                    "@Death Wish Logic/Enemy Locations/Fiery Crow",
+                    "@Death Wish Logic/Enemy Locations/Express Owl",
+                    "@Death Wish Logic/Enemy Locations/Ninja Cat"
+                  ]
+                ],
+                "visibility_rules": [
+                  "dw_enable_bonus"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 775,
+                "y": 461
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Candle - Snatcher Coins in Mafia Town",
+        "access_rules": [
+          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Tokens_MafiaTown",
+          [
+            "dw_mode_normal",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_BackFromSpace"
+          ]
+        ],
+        "visibility_rules": [
+          "dw_mode_normal",
+          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Tokens_MafiaTown"
+        ],
+        "children": [
+          {
+            "name": "Snatcher Coins in Mafia Town",
+            "access_rules": [
+              "@Death Wish Logic/Snatcher Coins/Mafia Town/Top of HQ",
+              "@Death Wish Logic/Snatcher Coins/Mafia Town/Top of Tower",
+              "@Death Wish Logic/Snatcher Coins/Mafia Town/Under Ruined Tower"
+            ],
+            "sections": [
+              {
+                "name": "Main Objective"
+              },
+              {
+                "name": "All Clear",
+                "access_rules": [
+                  [
+                    "@Death Wish Logic/Snatcher Coins/Mafia Town/Top of HQ",
+                    "@Death Wish Logic/Snatcher Coins/Mafia Town/Top of Tower",
+                    "@Death Wish Logic/Snatcher Coins/Mafia Town/Under Ruined Tower"
+                  ]
+                ],
+                "visibility_rules": [
+                  "dw_enable_bonus"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 913,
+                "y": 547
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Candle - Snatcher Coins in Battle of the Birds",
+        "access_rules": [
+          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Tokens_Birds",
+          [
+            "dw_mode_normal",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_DifficultParade"
+          ]
+        ],
+        "visibility_rules": [
+          "dw_mode_normal",
+          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Tokens_Birds"
+        ],
+        "children": [
+          {
+            "name": "Snatcher Coins in Battle of the Birds",
+            "access_rules": [
+              "@Death Wish Logic/Snatcher Coins/Battle of the Birds/Top of Red House",
+              "@Death Wish Logic/Snatcher Coins/Battle of the Birds/Train Rush",
+              "@Death Wish Logic/Snatcher Coins/Battle of the Birds/Picture Perfect"
+            ],
+            "sections": [
+              {
+                "name": "Main Objective"
+              },
+              {
+                "name": "All Clear",
+                "access_rules": [
+                  [
+                    "@Death Wish Logic/Snatcher Coins/Battle of the Birds/Top of Red House",
+                    "@Death Wish Logic/Snatcher Coins/Battle of the Birds/Train Rush",
+                    "@Death Wish Logic/Snatcher Coins/Battle of the Birds/Picture Perfect"
+                  ]
+                ],
+                "visibility_rules": [
+                  "dw_enable_bonus"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 114,
+                "y": 748
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Candle - Zero Jumps",
+        "access_rules": [
+          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_NoAPresses",
+          [
+            "dw_mode_normal",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_RiftCollapse_Birds"
+          ]
+        ],
+        "visibility_rules": [
+          "dw_mode_normal",
+          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_NoAPresses"
+        ],
+        "children": [
+          // TODO: Can we add another child whose purpose is to show the logic for each possible Zero Jumps completion?
+          //{
+          //  "name": "Welcome to Mafia Town",
+          //  "ref": "Death Wish/Candle - Zero Jumps/Zero Jumps/Main Objective",
+          //  "access_rules": [
+          //    "@Mafia Town/Welcome to Mafia Town/Time Piece"
+          //  ]
+          //}
+          {
+            "name": "Zero Jumps",
+            "access_rules": [
+              "@Death Wish Logic/Zero Jumps/Welcome to Mafia Town",
+              "@Death Wish Logic/Zero Jumps/Down with the Mafia!",
+              "@Death Wish Logic/Zero Jumps/Cheating the Race",
+              "@Death Wish Logic/Zero Jumps/The Golden Vault",
+              "@Death Wish Logic/Zero Jumps/Dead Bird Studio",
+              "@Death Wish Logic/Zero Jumps/Murder on the Owl Express",
+              "@Death Wish Logic/Zero Jumps/Picture Perfect",
+              "@Death Wish Logic/Zero Jumps/Train Rush",
+              "@Death Wish Logic/Zero Jumps/Contractual Obligations",
+              "@Death Wish Logic/Zero Jumps/Your Contract has Expired",
+              "@Death Wish Logic/Zero Jumps/Toilet of Doom",
+              "@Death Wish Logic/Zero Jumps/Mail Delivery Service",
+              "@Death Wish Logic/Zero Jumps/Time Rift - Alpine Skyline",
+              "@Death Wish Logic/Zero Jumps/Time Rift - The Lab",
+              "@Death Wish Logic/Zero Jumps/Yellow Overpass Station",
+              "@Death Wish Logic/Zero Jumps/Green Clean Station",
+              "@Death Wish Logic/Zero Jumps Hard/Time Rift - Sewers",
+              "@Death Wish Logic/Zero Jumps Hard/Time Rift - Bazaar",
+              "@Death Wish Logic/Zero Jumps Hard/The Big Parade",
+              "@Death Wish Logic/Zero Jumps Hard/Time Rift - Pipe",
+              "@Death Wish Logic/Zero Jumps Hard/Time Rift - Curly Tail Trail",
+              "@Death Wish Logic/Zero Jumps Hard/Time Rift - The Twilight Bell",
+              "@Death Wish Logic/Zero Jumps Hard/The Illness has Spread",
+              "@Death Wish Logic/Zero Jumps Hard/The Finale",
+              "@Death Wish Logic/Zero Jumps Hard/Pink Paw Station",
+              "@Death Wish Logic/Zero Jumps Expert/The Birdhouse",
+              "@Death Wish Logic/Zero Jumps Expert/The Lava Cake",
+              "@Death Wish Logic/Zero Jumps Expert/The Windmill",
+              "@Death Wish Logic/Zero Jumps Expert/The Twilight Bell",
+              "@Death Wish Logic/Zero Jumps Expert/Time Rift - Sleepy Subcon",
+              "@Death Wish Logic/Zero Jumps Expert/Ship Shape"
+            ],
+            "sections": [
+              {
+                "name": "Main Objective"
+              },
+              {
+                "name": "All Clear",
+                "access_rules": [
+                  "@Death Wish Logic/Zero Jumps/Train Rush, ^$canCompleteFourZeroJumps"
+                ],
+                "visibility_rules": [
+                  "dw_enable_bonus"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 399,
+                "y": 542
+              }
+            ]
+          },
+          {
+            "name": "Zero Jumps Logic"
+          }
+        ]
+      },
+      {
+        "name": "Candle - Snatcher Coins in Subcon Forest",
+        "access_rules": [
+          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Tokens_Subcon",
+          [
+            "dw_mode_normal",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_RiftCollapse_Subcon"
+          ]
+        ],
+        "visibility_rules": [
+          "dw_mode_normal",
+          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Tokens_Subcon"
+        ],
+        "children": [
+          {
+            "name": "Snatcher Coins in Subcon Forest",
+            "access_rules": [
+              "@Death Wish Logic/Snatcher Coins/Subcon Forest/Swamp Tree",
+              "@Death Wish Logic/Snatcher Coins/Subcon Forest/Manor Roof",
+              "@Death Wish Logic/Snatcher Coins/Subcon Forest/Giant Time Piece"
+            ],
+            "sections": [
+              {
+                "name": "Main Objective"
+              },
+              {
+                "name": "All Clear",
+                "access_rules": [
+                  [
+                    "@Death Wish Logic/Snatcher Coins/Subcon Forest/Swamp Tree",
+                    "@Death Wish Logic/Snatcher Coins/Subcon Forest/Manor Roof",
+                    "@Death Wish Logic/Snatcher Coins/Subcon Forest/Giant Time Piece"
+                  ]
+                ],
+                "visibility_rules": [
+                  "dw_enable_bonus"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 322,
+                "y": 235
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Candle - Snatcher Coins in Alpine Skyline",
+        "access_rules": [
+          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Tokens_Alps",
+          [
+            "dw_mode_normal",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_NiceBirdhouse"
+          ]
+        ],
+        "visibility_rules": [
+          "dw_mode_normal",
+          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Tokens_Alps"
+        ],
+        "children": [
+          {
+            "name": "Snatcher Coins in Alpine Skyline",
+            "access_rules": [
+              "@Death Wish Logic/Snatcher Coins/Alpine Skyline/Goat Village Top",
+              "@Death Wish Logic/Snatcher Coins/Alpine Skyline/Lava Cake",
+              "@Death Wish Logic/Snatcher Coins/Alpine Skyline/Windmill"
+            ],
+            "sections": [
+              {
+                "name": "Main Objective"
+              },
+              {
+                "name": "All Clear",
+                "access_rules": [
+                  [
+                    "@Death Wish Logic/Snatcher Coins/Alpine Skyline/Goat Village Top",
+                    "@Death Wish Logic/Snatcher Coins/Alpine Skyline/Lava Cake",
+                    "@Death Wish Logic/Snatcher Coins/Alpine Skyline/Windmill"
+                  ]
+                ],
+                "visibility_rules": [
+                  "dw_enable_bonus"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 1030,
+                "y": 186
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Candle - Snatcher Coins in Nyakuza Metro",
+        "access_rules": [
+          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Tokens_Metro",
+          [
+            "dw_mode_normal",
+            "stamp:30",
+            "[logical_stamp:30]",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_BirdBossEX"
+          ]
+        ],
+        "visibility_rules": [
+          "dw_mode_normal",
+          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Tokens_Metro"
+        ],
+        "children": [
+          {
+            "name": "Snatcher Coins in Nyakuza Metro",
+            "access_rules": [
+              "@Death Wish Logic/Snatcher Coins/Nyakuza Metro/Green Clean Tower",
+              "@Death Wish Logic/Snatcher Coins/Nyakuza Metro/Bluefin Cat Train",
+              "@Death Wish Logic/Snatcher Coins/Nyakuza Metro/Pink Paw Fence"
+            ],
+            "visibility_rules": [
+              "dlc2"
+            ],
+            "sections": [
+              {
+                "name": "Main Objective"
+              },
+              {
+                "name": "All Clear",
+                "access_rules": [
+                  [
+                    "@Death Wish Logic/Snatcher Coins/Nyakuza Metro/Green Clean Tower",
+                    "@Death Wish Logic/Snatcher Coins/Nyakuza Metro/Bluefin Cat Train",
+                    "@Death Wish Logic/Snatcher Coins/Nyakuza Metro/Pink Paw Fence"
+                  ]
+                ],
+                "visibility_rules": [
+                  "dw_enable_bonus"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 190,
+                "y": 450
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Candle - Camera Tourist",
+        "access_rules": [
+          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_CameraTourist_1",
+          [
+            "dw_mode_normal",
+            "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_RiftCollapse_Alps"
+          ]
+        ],
+        "visibility_rules": [
+          "dw_mode_normal",
+          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_CameraTourist_1"
+        ],
+        "children": [
+          {
+            "name": "Camera Tourist",
+            "access_rules": [
+              "camera_badge, ^$canFindEightUniqueEnemiesToTakePicturesOf"
+            ],
+            "sections": [
+              {
+                "name": "Main Objective"
+              },
+              {
+                "name": "All Clear",
+                "access_rules": [
+                  [
+                    "@Death Wish Logic/Triple Enemy Location",
+                    "@Death Wish Logic/Boss Locations/Mafia Boss",
+                    "@Death Wish Logic/Boss Locations/Conductor or DJ Grooves",
+                    "@Death Wish Logic/Boss Locations/Toilet",
+                    "@Death Wish Logic/Boss Locations/Snatcher",
+                    "@Death Wish Logic/Boss Locations/Toxic Flower",
+                    "@Death Wish Logic/Boss Locations/Mustache Girl"
+                  ]
+                ],
+                "visibility_rules": [
+                  "dw_enable_bonus"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 1129,
+                "y": 364
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

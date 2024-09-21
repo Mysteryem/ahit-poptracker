@@ -1,0 +1,62 @@
+[
+  {
+    "name": "spaceship",
+    "location_size": 30,
+    "location_border_thickness": 1,
+    "img": "images/maps/Spaceship.png"
+  },
+  {
+    "name": "mafiatown",
+    "location_size": 15,
+    "location_border_thickness": 1,
+    "img": "images/maps/MafiaTownMap.png"
+  },
+  {
+    "name": "deadbirdstudio",
+    "location_size": 40,
+    "location_border_thickness": 2,
+    "img": "images/maps/DeadBirdStudio.png"
+  },
+  {
+    "name": "basement",
+    "location_size": 35,
+    "location_border_thickness": 2,
+    "img": "images/maps/DeadBirdStudioBasement.png"
+  },
+  {
+    "name": "subcon",
+    "location_size": 20,
+    "location_border_thickness": 1,
+    "img": "images/maps/SubconForest.png"
+  },
+  {
+    "name": "alpine",
+    "location_size": 50,
+    "location_border_thickness": 1,
+    "img": "images/maps/AlpineSkyline.png"
+  },
+  {
+    "name": "cruise",
+    "location_size": 20,
+    "location_border_thickness": 1,
+    "img": "images/maps/ArcticCruise.png"
+  },
+  {
+    "name": "nyakuza",
+    "location_size": 28,
+    "location_border_thickness": 1,
+    "img": "images/maps/NyakuzaMetro.png"
+  },
+  {
+    "name": "entrances",
+    "location_size": 30,
+    "location_border_thickness": 1,
+    "img": "images/maps/Entrances.png"
+  },
+  {
+    "name": "deathwish",
+    "location_size": 30,
+    "location_border_thickness": 1,
+    "img": "images/maps/DeathWish.png"
+  }
+]

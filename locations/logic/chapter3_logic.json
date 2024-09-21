@@ -39,6 +39,24 @@
         ]
       },
       {
+        "name": "Can access Time Rift - Pipe",
+        "access_rules": [
+          "^$canAccessAct|TimeRift_Water_Subcon_Hookshot"
+        ]
+      },
+      {
+        "name": "Can access Time Rift - Village",
+        "access_rules": [
+          "^$canAccessAct|TimeRift_Water_Subcon_Dwellers"
+        ]
+      },
+      {
+        "name": "Can access Time Rift - Sleepy Subcon",
+        "access_rules": [
+          "^$canAccessAct|TimeRift_Cave_Raccoon"
+        ]
+      },
+      {
         "name": "Can access main Subcon area",
         "access_rules": [
           "@Subcon Logic/Can access Act 1 - Contractual Obligations",

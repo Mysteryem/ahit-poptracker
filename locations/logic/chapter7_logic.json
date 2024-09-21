@@ -15,6 +15,24 @@
         ]
       },
       {
+        "name": "Can access Time Rift - Rumbi Factory",
+        "access_rules": [
+          "^$canAccessAct|Metro_CaveRift_RumbiFactory"
+        ]
+      },
+      {
+        "name": "Can access Yellow Overpass Station",
+        "access_rules": [
+          "@Nyakuza Logic/Can access Free Roam"
+        ]
+      },
+      {
+        "name": "Can access Green Clean Station",
+        "access_rules": [
+          "@Nyakuza Logic/Can access Free Roam"
+        ]
+      },
+      {
         "name": "Can access Bluefin Tunnel",
         "access_rules": [
           "greenticket",

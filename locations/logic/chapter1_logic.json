@@ -45,6 +45,24 @@
         ]
       },
       {
+        "name": "Can access Time Rift - Sewers",
+        "access_rules": [
+          "^$canAccessAct|TimeRift_Water_Mafia_Easy"
+        ]
+      },
+      {
+        "name": "Can access Time Rift - Bazaar",
+        "access_rules": [
+          "^$canAccessAct|TimeRift_Water_Mafia_Hard"
+        ]
+      },
+      {
+        "name": "Can access Time Rift - Mafia of Cooks",
+        "access_rules": [
+          "^$canAccessAct|TimeRift_Cave_Mafia"
+        ]
+      },
+      {
         "name": "Can access Old Men",
         "access_rules": [
           "@Mafia Logic/Can access Act 1 - Welcome to Mafia Town",

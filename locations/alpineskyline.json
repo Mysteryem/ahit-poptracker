@@ -478,7 +478,7 @@
       {
         "name": "Alpine Skyline (Rift)",
         "access_rules": [
-          "^$canAccessAct|TimeRift_Cave_Alps"
+          "@Alpine Logic/Can access Time Rift - Alpine Skyline"
         ],
         "sections": [
           {

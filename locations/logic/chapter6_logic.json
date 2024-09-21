@@ -21,6 +21,18 @@
         ]
       },
       {
+        "name": "Can access Time Rift - Balcony",
+        "access_rules": [
+          "^$canAccessAct|Cruise_WaterRift_Slide"
+        ]
+      },
+      {
+        "name": "Can access Time Rift - Deep Sea",
+        "access_rules": [
+          "^$canAccessAct|Cruise_CaveRift_Aquarium"
+        ]
+      },
+      {
         "name": "Can access Ship Area",
         "access_rules": [
           "hookshot, @Cruise Logic/Can access Act 1 - Bon Voyage!",

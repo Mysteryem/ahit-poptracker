@@ -432,3 +432,76 @@ LOCATION_MAPPING = {
     [2000301041] = "@Nyakuza Shops/Pink Paw Station Thug/Scammed",
     [2000301042] = "@Nyakuza Shops/Pink Paw Station Thug/Scammed"
 }
+
+-- 1) Copy and paste from worlds.ahit.Locations.death_wishes
+-- 2) Find `"([^"]+)": (\d+),`
+-- 3) Replace `[$2] = "$1",`
+-- This requires that Death Wishes in the tracker match the names in the AHiT world.
+local death_wish_location_mapping = {
+    [2000350000] = "Beat the Heat",
+    [2000350002] = "Snatcher's Hit List",
+    [2000350004] = "So You're Back From Outer Space",
+    [2000350006] = "Collect-a-thon",
+    [2000350008] = "Rift Collapse: Mafia of Cooks",
+    [2000350010] = "She Speedran from Outer Space",
+    [2000350012] = "Mafia's Jumps",
+    [2000350014] = "Vault Codes in the Wind",
+    [2000350016] = "Encore! Encore!",
+    [2000350018] = "Snatcher Coins in Mafia Town",
+
+    [2000350020] = "Security Breach",
+    [2000350022] = "The Great Big Hootenanny",
+    [2000350024] = "Rift Collapse: Dead Bird Studio",
+    [2000350026] = "10 Seconds until Self-Destruct",
+    [2000350028] = "Killing Two Birds",
+    [2000350030] = "Snatcher Coins in Battle of the Birds",
+    [2000350032] = "Zero Jumps",
+
+    [2000350034] = "Speedrun Well",
+    [2000350036] = "Rift Collapse: Sleepy Subcon",
+    [2000350038] = "Boss Rush",
+    [2000350040] = "Quality Time with Snatcher",
+    [2000350042] = "Breaching the Contract",
+    [2000350044] = "Snatcher Coins in Subcon Forest",
+
+    [2000350046] = "Bird Sanctuary",
+    [2000350048] = "Rift Collapse: Alpine Skyline",
+    [2000350050] = "Wound-Up Windmill",
+    [2000350052] = "The Illness has Speedrun",
+    [2000350054] = "Snatcher Coins in Alpine Skyline",
+    [2000350056] = "Camera Tourist",
+
+    [2000350058] = "The Mustache Gauntlet",
+    [2000350060] = "No More Bad Guys",
+
+    [2000350062] = "Seal the Deal",
+    [2000350064] = "Rift Collapse: Deep Sea",
+    [2000350066] = "Cruisin' for a Bruisin'",
+
+    [2000350068] = "Community Rift: Rhythm Jump Studio",
+    [2000350070] = "Community Rift: Twilight Travels",
+    [2000350072] = "Community Rift: The Mountain Rift",
+    [2000350074] = "Snatcher Coins in Nyakuza Metro",
+}
+local death_wish_candles = {
+    ["Snatcher's Hit List"] = true,
+    ["Snatcher Coins in Mafia Town"] = true,
+    ["Snatcher Coins in Battle of the Birds"] = true,
+    ["Zero Jumps"] = true,
+    ["Snatcher Coins in Subcon Forest"] = true,
+    ["Snatcher Coins in Alpine Skyline"] = true,
+    ["Camera Tourist"] = true,
+    ["Snatcher Coins in Nyakuza Metro"] = true,
+}
+if Tracker.ActiveVariantUID == "variant_death_wish" then
+    for k, v in pairs(death_wish_location_mapping) do
+        local location_name
+        if death_wish_candles[v] then
+            location_name = string.format("@Death Wish/Candle - %s/%s", v, v)
+        else
+            location_name = string.format("@Death Wish/Contract - %s/%s", v, v)
+        end
+        LOCATION_MAPPING[k] = location_name.."/Main Objective"
+        LOCATION_MAPPING[k + 1] = location_name.."/All Clear"
+    end
+end

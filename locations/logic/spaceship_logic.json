@@ -7,6 +7,18 @@
         "access_rules": [
           "^$canAccessAct|Spaceship_WaterRift_Gallery"
         ]
+      },
+      {
+        "name": "Can access Time Rift - The Lab",
+        "access_rules": [
+          "^$canAccessAct|Spaceship_WaterRift_MailRoom"
+        ]
+      },
+      {
+        "name": "Can access Time Rift - Tour",
+        "access_rules": [
+          "^$canAccessAct|TimeRift_Cave_Tour"
+        ]
       }
     ]
   }

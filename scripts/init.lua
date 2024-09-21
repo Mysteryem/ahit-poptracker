@@ -3,6 +3,7 @@
 ENABLE_DEBUG_LOG = true
 -- get current variant
 local variant = Tracker.ActiveVariantUID
+local is_death_wish = variant == "variant_death_wish"
 -- check variant info
 
 print("-- Example Tracker --")
@@ -16,12 +17,15 @@ ScriptHost:LoadScript("scripts/utils.lua")
 
 -- Logic
 ScriptHost:LoadScript("scripts/logic/logic.lua")
+ScriptHost:LoadScript("scripts/logic/death_wish_logic.lua")
 
 -- Items
 Tracker:AddItems("items/items.json")
 Tracker:AddItems("items/settings.json") -- Usually set by yaml options and received from slot data
 Tracker:AddItems("items/pack_settings.json") -- Options that control how the pack functions
 Tracker:AddItems("items/internal.json") -- Not intended to be shown in UI
+-- Extra settings items for Death Wish
+Tracker:AddItems("items/death_wish_settings.json")
 
 -- Maps
 Tracker:AddMaps("maps/maps.json")
@@ -38,6 +42,9 @@ Tracker:AddLocations("locations/logic/chapter5_logic.json")
 Tracker:AddLocations("locations/logic/chapter6_logic.json")
 Tracker:AddLocations("locations/logic/chapter7_logic.json")
 Tracker:AddLocations("locations/logic/spaceship_logic.json")
+if is_death_wish then
+    Tracker:AddLocations("locations/logic/deathwish_logic.json")
+end
 -- Locations
 Tracker:AddLocations("locations/spaceship.json")
 Tracker:AddLocations("locations/mafiatown.json")
@@ -60,9 +67,17 @@ Tracker:AddLocations("locations/entrances/spaceship_attic.json")
 Tracker:AddLocations("locations/entrances/spaceship_gallery.json")
 -- Extra Logic Locations that depend on normal Locations
 Tracker:AddLocations("locations/logic/act_completion.json")
+-- Extra locations for Death Wish
+if is_death_wish then
+    Tracker:AddLocations("locations/deathwish.json")
+end
 
 -- Layout
 Tracker:AddLayouts("layouts/items.json")
+if is_death_wish then
+    Tracker:AddLayouts("layouts/death_wish_items.json")
+end
+Tracker:AddLayouts("layouts/map_tabs.json")
 Tracker:AddLayouts("layouts/tracker.json")
 Tracker:AddLayouts("layouts/broadcast.json")
 Tracker:AddLayouts("layouts/settings.json")

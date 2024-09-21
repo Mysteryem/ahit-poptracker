@@ -1,0 +1,13 @@
+[
+  {
+    "name": "Time's End Logic",
+    "children": [
+      {
+        "name": "Can access The Finale",
+        "access_rules": [
+          "^$canAccessAct|TheFinale_FinalBoss"
+        ]
+      }
+    ]
+  }
+]

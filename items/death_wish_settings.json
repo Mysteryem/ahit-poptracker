@@ -1,0 +1,64 @@
+[
+  {
+    "name": "Death Wish Mode",
+    "type": "progressive",
+    "codes": "dw_mode",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "name": "Death Wish Mode - Normal",
+        "img": "images/items/dw_stamp.png",
+        "codes": "dw_mode_normal"
+      },
+      {
+        "name": "Death Wish Mode - Shuffle",
+        "img": "images/items/dw_logical_stamp.png",
+        "codes": "dw_mode_shuffle",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Death Wish Shuffle Count",
+    "type": "consumable",
+    "img": "images/items/dw_stamp.png",
+    "codes": "dw_shuffle_count"
+  },
+  {
+    "name": "Shuffle Death Wish Full Completions",
+    "type": "toggle",
+    "img": "images/items/dw_stamp.png",
+    "codes": "dw_enable_bonus"
+  },
+  {
+    "name": "Auto Complete Bonus Stamps",
+    "type": "toggle",
+    "img": "images/items/dw_stamp.png",
+    "codes": "dw_auto_complete_bonuses"
+  },
+  {
+    "name": "Exclude Annoying Death Wish Contracts",
+    "type": "toggle",
+    "img": "images/settings/tasksanity.png",
+    "codes": "dw_exclude_annoying_contracts"
+  },
+  {
+    "name": "Exclude Annoying Death Wish Full Completions",
+    "type": "toggle",
+    "img": "images/icons/Conductor.png",
+    "codes": "dw_exclude_annoying_full_completions"
+  },
+  {
+    "name": "Exclude Candle Death Wishes",
+    "type": "toggle",
+    "img": "images/items/dw_stamp.png",
+    "codes": "dw_exclude_candles"
+  },
+  {
+    "name": "Death Wish Time Piece Requirement",
+    "type": "consumable",
+    "img": "images/items/time_piece.png",
+    "codes": "dw_timepiece_requirement"
+  }
+]

@@ -461,5 +461,35 @@
     "type": "toggle",
     "img": "images/items/contract_mail_delivery.png",
     "codes": "mailcontract"
+  },
+  {
+    "name": "No Bonk Badge",
+    "type": "toggle",
+    "img": "images/items/no_bonk_badge.png",
+    "codes": "nobonk"
+  },
+  {
+    "name": "Camera Badge",
+    "type": "toggle",
+    "img": "images/items/camera_badge.png",
+    "codes": "camera_badge"
+  },
+  {
+    "name": "One-Hit Hero Badge",
+    "type": "toggle",
+    "img": "images/items/one_hit_hero_badge.png",
+    "codes": "one_hit_hero"
+  },
+  {
+    "name": "Death Wish Stamp",
+    "type": "consumable",
+    "img": "images/items/dw_stamp.png",
+    "codes": "stamp"
+  },
+  {
+    "name": "Logical Death Wish Stamp",
+    "type": "consumable",
+    "img": "images/items/dw_logical_stamp.png",
+    "codes": "logical_stamp"
   }
 ]

@@ -7,6 +7,10 @@
     "standard": {
       "display_name": "Map Tracker",
       "flags": "ap"
+    },
+    "variant_death_wish": {
+      "display_name": "Map Tracker (Death Wish)",
+      "flags": "ap"
     }
   },
   "min_poptracker_version": "0.26.0",

@@ -1,0 +1,56 @@
+{
+  "consumable_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "2,2",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "1, 4",
+        "item_size": 4,
+        "margin": "15,0",
+        "h_alignment": "center",
+        "rows": [
+          ["timepiece", "yarn"],
+          ["stamp", "logical_stamp"]
+        ]
+      }
+    ]
+  },
+  "item_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "2,2",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "1, 4",
+        "item_size": 4,
+        "margin": "0,0",
+        "h_alignment": "center",
+        "rows": [
+          ["sprint", "brewer", "ice", "dweller", "timestop", "one_hit_hero", "camera_badge"],
+          ["paintings", "umbrella", "hookshot", "scooter", "badge_pin", "nobonk"]
+        ]
+      }
+    ]
+  },
+  "death_wish_settings_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "2,2",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "1, 4",
+        "item_size": 4,
+        "margin": "0,0",
+        "h_alignment": "left",
+        "rows": [
+          ["dw_mode", "dw_shuffle_count", "dw_enable_bonus", "dw_auto_complete_bonuses", "dw_exclude_annoying_contracts", "dw_exclude_annoying_full_completions"],
+          ["dw_exclude_candles", "dw_timepiece_requirement"]
+        ]
+      }
+    ]
+  }
+}

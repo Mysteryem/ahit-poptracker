@@ -756,7 +756,7 @@
           {
             "name": "Time Rift",
             "access_rules": [
-              "^$canAccessAct|TimeRift_Water_Mafia_Hard"
+              "@Mafia Logic/Can access Time Rift - Bazaar"
             ]
           }
         ],
@@ -774,7 +774,7 @@
           {
             "name": "Time Rift",
             "access_rules": [
-              "^$canAccessAct|TimeRift_Water_Mafia_Easy"
+              "@Mafia Logic/Can access Time Rift - Sewers"
             ]
           }
         ],
@@ -789,7 +789,7 @@
       {
         "name": "Mafia of Cooks",
         "access_rules": [
-          "^$canAccessAct|TimeRift_Cave_Mafia"
+          "@Mafia Logic/Can access Time Rift - Mafia of Cooks"
         ],
         "sections": [
           {

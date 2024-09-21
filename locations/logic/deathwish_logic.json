@@ -1,0 +1,800 @@
+[
+  {
+    "name": "Death Wish Logic",
+    "children": [
+      {
+        "name": "Can Safely Defeat Fiery Crows",
+        "access_rules": [
+          "umbrella",
+          "ice",
+          "brewer"
+        ]
+      },
+      {
+        "name": "At Least One TIHS Zipline Unlocked",
+        "access_rules": [
+          "ziplines_off",
+          "birdzipline",
+          "cakezipline",
+          "windmillzipline"
+        ]
+      },
+      {
+        "name": "Zero Jumps",
+        "children": [
+          {
+            "name": "Welcome to Mafia Town",
+            "access_rules": [
+              "@Mafia Logic/Can access Act 1 - Welcome to Mafia Town"
+            ]
+          },
+          {
+            "name": "Down with the Mafia!",
+            "access_rules": [
+              "ice, @Mafia Logic/Can access Act 4 - Down With the Mafia!"
+            ]
+          },
+          {
+            "name": "Cheating the Race",
+            "access_rules": [
+              "timestop, @Mafia Logic/Can access Act 5 - Cheating the Race"
+            ]
+          },
+          {
+            "name": "The Golden Vault",
+            "access_rules": [
+              "ice, @Mafia Logic/Can access Act 7 - The Golden Vault"
+            ]
+          },
+          {
+            "name": "Dead Bird Studio",
+            "access_rules": [
+              "ice, @General Logic/Can Hit, @DBS Logic/Can access Act 1 - Dead Bird Studio"
+            ]
+          },
+          {
+            "name": "Murder on the Owl Express",
+            "access_rules": [
+              "ice, @DBS Logic/Can access Act 2 - Murder on the Owl Express"
+            ]
+          },
+          {
+            "name": "Picture Perfect",
+            "access_rules": [
+              "@DBS Logic/Can access Act 3 - Picture Perfect"
+            ]
+          },
+          {
+            "name": "Train Rush",
+            "access_rules": [
+              "ice, hookshot, @DBS Logic/Can access Act 4 - Train Rush"
+            ]
+          },
+          {
+            "name": "Contractual Obligations",
+            "access_rules": [
+              "@Subcon Logic/Yellow Paintings, @Subcon Logic/Can access Act 1 - Contractual Obligations"
+            ]
+          },
+          {
+            "name": "Your Contract has Expired",
+            "access_rules": [
+              "@General Logic/Can Melee, @Subcon Logic/Can access Finale - Your Contract has Expired"
+            ]
+          },
+          {
+            "name": "Toilet of Doom",
+            "access_rules": [
+              [
+                "hookshot",
+                "@General Logic/Can Hit",
+                "ice",
+                "@Subcon Logic/Yellow Paintings",
+                "@Subcon Logic/Can access Act 3 - Toilet of Doom"
+              ],
+              [
+                "hookshot",
+                "@General Logic/Expert",
+                "@General Logic/Can Hit",
+                "@Subcon Logic/Boss Firewall",
+                // Paintings not required if painting skips are in logic
+                "@Subcon Logic/Can access Act 3 - Toilet of Doom"
+              ]
+            ]
+          },
+          {
+            "name": "Mail Delivery Service",
+            "access_rules": [
+              "sprint, @Subcon Logic/Can access Act 5 - Mail Delivery Service"
+            ]
+          },
+          {
+            "name": "Time Rift - Alpine Skyline",
+            "access_rules": [
+              "ice, hookshot, @Alpine Logic/Can access Time Rift - Alpine Skyline"
+            ]
+          },
+          {
+            "name": "Time Rift - The Lab",
+            "access_rules": [
+              "ice, @Spaceship Logic/Can access Time Rift - The Lab"
+            ]
+          },
+          {
+            "name": "Yellow Overpass Station",
+            "access_rules": [
+              "ice, hookshot, @Nyakuza Logic/Can access Yellow Overpass Station"
+              //TODO: Is "dlc2" needed in the access rule?
+            ]
+          },
+          {
+            "name": "Green Clean Station",
+            "access_rules": [
+              "ice, hookshot, @Nyakuza Logic/Can access Green Clean Station"
+              //TODO: Is "dlc2" needed in the access rule?
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Zero Jumps Hard",
+        "access_rules": [
+          "@General Logic/Hard"
+        ],
+        "children": [
+          {
+            "name": "Time Rift - Sewers",
+            "access_rules": [
+              "ice, @Mafia Logic/Can access Time Rift - Sewers"
+            ]
+          },
+          {
+            "name": "Time Rift - Bazaar",
+            "access_rules": [
+              "ice, @Mafia Logic/Can access Time Rift - Bazaar"
+            ]
+          },
+          {
+            "name": "The Big Parade",
+            "access_rules": [
+              "ice, @General Logic/Can Melee, @DBS Logic/Can access Act 5 - The Big Parade"
+            ]
+          },
+          {
+            "name": "Time Rift - Pipe",
+            "access_rules": [
+              "ice, hookshot, @Subcon Logic/Can access Time Rift - Pipe"
+            ]
+          },
+          {
+            "name": "Time Rift - Curly Tail Trail",
+            "access_rules": [
+              "ice, @Alpine Logic/Can access Time Rift - Curly Tail Trail"
+            ]
+          },
+          {
+            "name": "Time Rift - The Twilight Bell",
+            "access_rules": [
+              "ice, dweller, @General Logic/Can Hit, @Alpine Logic/Can access Time Rift - The Twilight Bell"
+            ]
+          },
+          {
+            "name": "The Illness has Spread",
+            "access_rules": [
+              "ice, hookshot, @General Logic/Can Hit, @Alpine Logic/Can access Finale - The Illness has Spread"
+            ]
+          },
+          {
+            "name": "The Finale",
+            "access_rules": [
+              "ice, dweller, hookshot, @Time's End Logic/Can access The Finale"
+            ]
+          },
+          {
+            "name": "Pink Paw Station",
+            "access_rules": [
+              //TODO: Is this possible when considering ticket skips? Can you get to the wrong warp from Yellow Overpass
+              //      without jumping?
+              //TODO: Technically, "upper Pink Paw Station" is what needs to be accessed, but on Moderate logic and higher
+              //      there's no difference, and doing it like this is closer to the world's logic.
+              "ice, hookshot, @Nyakuza Logic/Can access Pink Paw Station"
+              //TODO: Is "dlc2" needed in the access rule?
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Zero Jumps Expert",
+        "access_rules": [
+          "@General Logic/Expert"
+        ],
+        "children": [
+          {
+            "name": "The Birdhouse",
+            "access_rules": [
+              "ice, @Birdhouse Zipline/Bird House"
+              //todo: Could move some of the alpine logic into chapter4_logic.json
+            ]
+          },
+          {
+            "name": "The Lava Cake",
+            "access_rules": [
+              "@Lava Cake Zipline/Lava Cake"
+            ]
+          },
+          {
+            "name": "The Windmill",
+            "access_rules": [
+              "ice, nobonk, @Windmill Zipline/The Windmill"
+            ]
+          },
+          {
+            "name": "The Twilight Bell",
+            "access_rules": [
+              "ice, dweller, @General Logic/Can Hit, nobonk, @Twilight Bell Zipline/The Twilight Bell"
+            ]
+          },
+          {
+            // The AP World is missing the "Time Rift - " prefix.
+            "name": "Time Rift - Sleepy Subcon",
+            "access_rules": [
+              "ice, @Subcon Logic/Can access Time Rift - Sleepy Subcon"
+            ]
+          },
+          {
+            "name": "Ship Shape",
+            "access_rules": [
+              "ice, @Cruise Logic/Can access Act 2 - Ship Shape"
+            ]
+          }
+        ]
+      },
+      {
+        // todo: Do the Metro Cats in Rush Hour count?
+        // todo: Does the Metro secret boss count?
+        "name": "Enemy Locations",
+        //Used for Snatcher's Hit List and Camera Tourist
+        "children": [
+          {
+            "name": "Mafia Goon",
+            "access_rules": [
+              // There's one in Time Rift - Sleepy Subcon on the stage with the falling towers, but it dies almost
+              // immediately and I'm not sure if it counts.
+              // There are plenty on the Cruise that can't be fought and there's one you can knock into water, but I'm
+              // not sure if that counts.
+              // Mafia's Jumps probably works.
+              // Collect-a-thon probably works.
+              // She Spedran from Outer Space probably works.
+              // Vault Codes in the Wind probably works.
+              // Are there any in any of the community rifts?
+              "@Mafia Logic/Can access Mafia Town",
+              // Does not include Heating Up Mafia Town
+              "@Mafia Logic/Can access Time Rift - Mafia of Cooks",
+              "@Spaceship Logic/Can access Time Rift - Tour",
+              "@Cruise Logic/Can access Act 1 - Bon Voyage!",
+              "@Death Wish/Contract - The Mustache Gauntlet",
+              "@Death Wish/Contract - Rift Collapse: Mafia of Cooks",
+              "@Death Wish/Contract - So You're Back From Outer Space"
+            ]
+          },
+          {
+            "name": "Sleepy Raccoon",
+            "access_rules": [
+              // There are definitely some in other parts of alpine skyline.
+              "@Mafia Logic/Can access Act 3 - She Came from Outer Space",
+              "@Mafia Logic/Can access Act 4 - Down With the Mafia!",
+              "@Twilight Bell Zipline/The Twilight Bell",
+              "@Death Wish/Contract - She Speedran from Outer Space",
+              "@Death Wish/Contract - Mafia's Jumps",
+              "@Death Wish/Contract - The Mustache Gauntlet",
+              "@Subcon Logic/Can access Time Rift - Sleepy Subcon",
+              "@Death Wish/Contract - Rift Collapse: Sleepy Subcon",
+              // Before the giant cannonball. todo: Probably don't need hookshot for this on normal logic?
+              // There are also some later raccoons around the balloons that must be used for hookshot-less.
+              "[never], @Time's End Logic/Can access The Finale"
+            ]
+          },
+          {
+            "name": "UFO",
+            "access_rules": [
+              // Is that really all?
+              "@DBS Logic/Can access Act 3 - Picture Perfect",
+              "@Death Wish/Contract - So You're Back From Outer Space",
+              "@Death Wish/Contract - Community Rift: Rhythm Jump Studio"
+            ]
+          },
+          {
+            "name": "Rat",
+            "access_rules": [
+              // Is that all?
+              "@Mafia Logic/Can access Act 4 - Down With the Mafia!",
+              "@Nyakuza Logic/Can access Bluefin Tunnel",
+              "[never], @Mafia Logic/Can access Time Rift - Mafia of Cooks"
+              //There are two on the boat stage.
+            ]
+          },
+          {
+            "name": "Shock Squid",
+            "access_rules": [
+              // Are there not any in Rift Collapse - Deep Sea?
+              "@Cruise Logic/Can access Act 1 - Bon Voyage!",
+              "@Subcon Logic/Can access Time Rift - Sleepy Subcon",
+              "hookshot, @Cruise Logic/Can access Time Rift - Deep Sea",
+              "@Death Wish/Contract - Rift Collapse: Sleepy Subcon"
+            ]
+          },
+          {
+            "name": "Shromb Egg",
+            "access_rules": [
+              // todo: Are there any in Wound-up Windmill?
+              // todo: Are there any in Rift Collapse - Alpine Skyline?
+              "@Birdhouse Zipline/Bird House",
+              "@Death Wish/Contract - Bird Sanctuary",
+              // Last stage in the wood hut to the left of spawn
+              "[never], @Alpine Logic/Can access Time Rift - Alpine Skyline",
+              // Two in the Alpine stage. One in the wood hut, the other in the middle of the stage
+              "[never], @Spaceship Logic/Can access Time Rift - Tour",
+              // In the elevated exterior area before House Window
+              "[never], @Windmill Zipline/The Windmill"
+            ]
+          },
+          {
+            "name": "Spider",
+            "access_rules": [
+              // There are a couple around Subcon Village (as well as elsewhere), so there are no extra requriements.
+              "@Subcon Logic/Can access main Subcon area",
+              "@Death Wish/Contract - The Mustache Gauntlet",
+              "@Death Wish/Contract - Speedrun Well",
+              "@Lava Cake Zipline/Lava Cake",
+              "@Windmill Zipline/The Windmill",
+              // Spiders in the Sizzling Lava Split must be used to go to either Mystifying Time Mesa or The Lava Cake
+              "[never], @Lava Cake Zipline",
+              // todo: Surely there are some here too?
+              "[never], @Death Wish/Contract - Wound-Up Windmill"
+            ]
+          },
+          {
+            "name": "Crow",
+            "access_rules": [
+              // todo: Are there any in Wound-up Windmill?
+              // todo: Are there any in Rift Collapse - Alpine Skyline?
+              // todo: There are dweller crows in one of the Community Rifts, do they count as the same enemy?
+              // todo: Are there any in The Finale or are they all fiery?
+              "@Mafia Logic/Can access Mafia Town",
+              // Does not include Heating Up Mafia Town
+              "@Birdhouse Zipline/Bird House",
+              "@Spaceship Logic/Can access Time Rift - Tour",
+              "@Death Wish/Contract - Bird Sanctuary",
+              "@Alpine Logic/Can access Time Rift - Alpine Skyline",
+              "@Death Wish/Contract - Rift Collapse: Alpine Skyline",
+              // In the main station area just before the manhole
+              "[never], @Nyakuza Logic/Can access Yellow Overpass Station",
+              // On one of the suspended platforms
+              "[never], @Nyakuza Logic/Can access Green Clean Station",
+              // In front of the dweller platform with hearts beneath it, before the normal logic hookshot requirement
+              "[never], @Time's End Logic/Can access The Finale"
+            ]
+          },
+          {
+            "name": "Pompous Crow",
+            "access_rules": [
+              // todo: Is there one after the brewer boxes before an item on the path to the windmill?
+              // todo: Are there any in Wound-up Windmill or in the exterior sections of The Windmill?
+              "@Birdhouse Zipline/Bird House",
+              "@Spaceship Logic/Can access Time Rift - The Lab",
+              "@Death Wish/Contract - Bird Sanctuary",
+              "@Death Wish/Contract - The Mustache Gauntlet",
+              // Technically the Pompous Crow is in Ember Summit, but in The Illness has Spread, lightning destroys the
+              // platform where the Pompous Crow would normally spawn, so the Pompous Crow can only be accessed from
+              // Alpine Free Roam.
+              "[never], @Lava Cake Zipline/Lava Cake",
+              // One on the first stage before the lighthouse. One on the alpine stage in the wood hut by the shromb
+              // egg.
+              "[never], @Spaceship Logic/Can access Time Rift - Tour",
+              // In front of the dweller platform with hearts beneath it, before the normal logic hookshot requirement
+              "[never], @Time's End Logic/Can access The Finale"
+            ]
+          },
+          {
+            "name": "Fiery Crow",
+            "access_rules": [
+              "@Time's End Logic/Can access The Finale",
+              "@Lava Cake Zipline/Lava Cake",
+              "@Death Wish/Contract - The Mustache Gauntlet",
+              // Two in the Alpine stage (Lava area) and Three in the Finale stage.
+              "[never], @Spaceship Logic/Can access Time Rift - Tour"
+            ]
+          },
+          {
+            "name": "Express Owl",
+            "access_rules": [
+              // todo: Are there any in Rift Collapse - Deep Sea?
+              // todo: Are there any in 10 Seconds until Self-Destruct?
+              // todo: Check that the ones in Train Rush count.
+              "@Time's End Logic/Can access The Finale",
+              "@DBS Logic/Can access Time Rift - The Owl Express",
+              "@Cruise Logic/Can access Time Rift - Deep Sea",
+              // The ones without voicelines can be attacked and killed.
+              "[never], @DBS Logic/Can access Act 4 - Train Rush"
+            ]
+          },
+          {
+            "name": "Ninja Cat - Orange Lazy Paw Gang",
+            "access_rules": [
+              // todo: Are there any in Rift Collapse - Deep Sea?
+              "@Birdhouse Zipline/Bird House",
+              "@Windmill Zipline/The Windmill",
+              "@Nyakuza Logic/Can access Bluefin Tunnel",
+              "@Death Wish/Contract - The Mustache Gauntlet",
+              "@Alpine Logic/Can access Time Rift - Curly Tail Trail",
+              "@Alpine Logic/Can access Time Rift - Alpine Skyline",
+              "hookshot, @Cruise Logic/Can access Time Rift - Deep Sea",
+              "@Death Wish/Contract - Rift Collapse: Alpine Skyline",
+              // After the Dweller wall, so use the Time Piece's logic.
+              "[never], @Spaceship/Time's End/Time Piece"
+            ]
+          },
+          {
+            // The logic counts both types of Ninja Cat as a single enemy for Camera Tourist even though they count
+            // separately. There is Orange Lazy Paw Gang in the same place as all Pink Lazy Paw Gang, so it is
+            // irrelevant to logic.
+            "name": "Ninja Cat - Pink Lazy Paw Gang",
+            "access_rules": [
+              // todo: Are there any elsewhere or are these restricted to Nyakuza Metro?
+              "@Nyakuza Logic/Can access Bluefin Tunnel"
+            ]
+          },
+          {
+            // Both are considered the same type of enemy by Snatcher's Hit List
+            "name": "Ninja Cat",
+            "access_rules": [
+              "@Death Wish Logic/Enemy Locations/Ninja Cat - Orange Lazy Paw Gang",
+              "@Death Wish Logic/Enemy Locations/Ninja Cat - Pink Lazy Paw Gang"
+            ]
+          },
+          {
+            // They are considered separate enemies for Camera Tourist, though the logic still considers them the same.
+            "name": "Other Ninja Cat",
+            "access_rules": [
+              [
+                // Getting a second Ninja Cat picture is never in logic for Camera Tourist.
+                "[never]",
+                "@Death Wish Logic/Enemy Locations/Ninja Cat - Orange Lazy Paw Gang",
+                "@Death Wish Logic/Enemy Locations/Ninja Cat - Pink Lazy Paw Gang"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        // todo: Check if Subcon Forest Headless Statues count
+        // todo: Check if Mafia Nerd counts (it would need to count separately from Mafia Goon)
+        "name": "Enemy Locations - Camera Tourist Extras",
+        "children": [
+          {
+            // Includes non-killable Express Owls.
+            "name": "Express Owl (Camera Tourist)",
+            "access_rules": [
+              // todo: Check that the owls in Dead Bird Studio count
+              // todo: Check that the owls in Murder on the Owl Express count
+              "@Death Wish Logic/Enemy Locations/Express Owl",
+              "[never], @DBS Logic/Can access Act 1 - Dead Bird Studio",
+              // In the sauna.
+              "[never], @DBS Logic/Can access Act 2 - Murder on the Owl Express",
+              // Stage before the Time Piece
+              "[never], @DBS Logic/Can access Time Rift - Dead Bird Studio"
+            ]
+          },
+          {
+            "name": "Alpine Goat",
+            "access_rules": [
+              // todo: Do the ones in The Twilight Bell count?
+              "[never], @Alpine Logic/Can access central Alpine Area",
+              "[never], @Alpine Logic/Can access Time Rift - The Twilight Bell",
+              // After the Dweller wall, so use the Time Piece's logic.
+              "[never], @Spaceship/Time's End/Time Piece",
+              "[never], @Death Wish/Contract - The Illness has Speedrun"
+            ]
+          },
+          {
+            "name": "Malfunctioning Rumbi",
+            "access_rules": [
+              "[never], @Nyakuza Logic/Can access Time Rift - Rumbi Factory"
+            ]
+          },
+          {
+            // Not included in logic. Camera Tourist only. The four sitting at a table cracking jokes.
+            // todo: Do the standalone CAW Crows that act like Daed Bird Studio owls/penguins count for Camera Tourist?
+            "name": "CAW Crows",
+            "access_rules": [
+              // todo: Do the ones in Time Rift - Alpine Skyline count?
+              // todo: Do the ones in Dead Bird Basement count?
+              "[never], @Alpine Logic/Can access Time Rift - Alpine Skyline",
+              "[never], @Spaceship Logic/Can access Time Rift - Tour",
+              "[never], @DBS Logic/Can access Secret Finale - Dead Bird Studio Basement"
+            ]
+          },
+          {
+            "name": "Dead Bird Studio Camera",
+            "access_rules": [
+              // todo: Do all of these count?
+              "[never], @DBS Logic/Can access Act 1 - Dead Bird Studio",
+              "[never], @DBS Logic/Can access Time Rift - Dead Bird Studio",
+              "[never], @DBS Logic/Can access Secret Finale - Dead Bird Studio Basement",
+              "[never], @Spaceship Logic/Can access Time Rift - Tour",
+              "[never], @Death Wish/Contract - Security Breach"
+            ]
+          },
+          {
+            // Friendly ones in Picture Perfect/The Big Parade do not count.
+            "name": "Moon Penguin",
+            "access_rules": [
+              "[never], @DBS Logic/Can access Act 1 - Dead Bird Studio",
+              "[never], @Death Wish/Contract - Security Breach"
+            ]
+          },
+          {
+            "name": "Purple Time Rift",
+            "access_rules": [
+              "[never], @Mafia Town - Time Rifts/Mafia of Cooks/Time Rift",
+              "[never], @Dead Bird Studio (Rift)/Time Piece",
+              "[never], @Subcon Time Rifts/Sleepy Subcon/Time Rift",
+              "[never], @Alpine Skyline - Time Rifts/Alpine Skyline (Rift)/Time Rift",
+              "[never], @Spaceship/Tour/Time Rift",
+              "[never], @The Arctic Cruise - Time Rifts/Deep Sea/Time Rift",
+              "[never], @Nyakuza Metro - Time Rifts/Rumbi Factory/Time Rift"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Boss Locations",
+        "children": [
+          {
+            "name": "Mafia Boss",
+            "access_rules": [
+              "@Mafia Logic/Can access Act 4 - Down With the Mafia!",
+              "@Death Wish/Contract - Encore! Encore!",
+              "@Death Wish/Contract - Boss Rush",
+              "[never], @Death Wish/Contract - Seal the Deal"
+            ]
+          },
+          {
+            // Apparently, both bosses count separately, so Killing Two Birds counts for 2 pictures.
+            // This could also mean that getting the picture of The Conductor in Dead Bird Studio and then changing the
+            // boss to DJ Grooves through the random choice at the Award Ceremony could mean going back into Dead Bird
+            // Studio could get a second picture that counts. Similarly for making it to the end of Dead Bird Basement.
+            // Unsure which boss is fought in Contract - Boss Rush
+            "name": "Conductor or DJ Grooves",
+            "access_rules": [
+              // FIXME: This does not include the hookshot requirement due to a bug!!! Note that expert doesn't need it
+              "@DBS Logic/Can access Secret Finale - Dead Bird Studio Basement",
+              "@Death Wish/Contract - Killing Two Birds",
+              // todo: Which boss do you fight? Is it fixed or does it match who you'll fight in Dead Bird Basement?
+              "@Death Wish/Contract - Boss Rush",
+              // Whichever director is currently considered your boss of Dead Bird Basement can be photographed inside
+              // Act 1 to get the photo.
+              "[never], @DBS Logic/Can access Act 1 - Dead Bird Studio",
+              "[never], @Death Wish/Contract - Seal the Deal"
+            ]
+          },
+          {
+            "name": "Toilet",
+            "access_rules": [
+              // FIXME: Missing paintings + hookshot requirement!!! Note that Hard can cherry bridge and expert can cherry hover
+              "@Subcon Logic/Can access Act 3 - Toilet of Doom",
+              "@Death Wish/Contract - Boss Rush"
+            ]
+          },
+          {
+            "name": "Snatcher",
+            "access_rules": [
+              "@Subcon Logic/Can access Finale - Your Contract has Expired",
+              "@Death Wish/Contract - Breaching the Contract",
+              // Must be able to kill Toilet beforehand.
+              "hookshot, @General Logic/Can Hit, @Death Wish/Contract - Boss Rush",
+              "@Death Wish/Contract - Quality Time with Snatcher",
+              "[never], @Death Wish/Contract - Seal the Deal"
+            ]
+          },
+          {
+            "name": "Toxic Flower",
+            "access_rules": [
+              [
+                "hookshot",
+                "@Death Wish Logic/At Least One TIHS Zipline Unlocked",
+                "@Alpine Logic/Can access Finale - The Illness has Spread"
+              ],
+              [
+                "hookshot",
+                "@Death Wish/Contract - The Illness has Speedrun"
+              ]
+            ]
+          },
+          {
+            "name": "Mustache Girl",
+            "access_rules": [
+              "hookshot, dweller, @Time's End Logic/Can access The Finale",
+              // Must be able to kill Toilet and Snatcher beforehand.
+              "hookshot, @General Logic/Can Melee, @Death Wish/Contract - Boss Rush",
+              "@Death Wish/Contract - No More Bad Guys",
+              "[never], @Death Wish/Contract - Seal the Deal"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Triple Enemy Location",
+        "access_rules": [
+          // There's probably more that aren't considered by logic.
+          "@Mafia Logic/Can access Act 3 - She Came from Outer Space",
+          "@Death Wish/Contract - She Speedran from Outer Space",
+          "@Death Wish/Contract - Mafia's Jumps",
+          "hookshot, dweller, @Death Wish/Contract - The Mustache Gauntlet",
+          "@Birdhouse Zipline/Bird House",
+          "@Death Wish/Contract - Bird Sanctuary",
+          "@Spaceship Logic/Can access Time Rift - Tour",
+          // Only the director which is currently considered your Chapter 2 boss counts as an enemy, so either
+          //   a. DJ Grooves + Moon Penguin + Camera
+          // or
+          //   b. Conductor + Express Owl + Camera
+          // Both are accessible at the start of the level.
+          "[never], @DBS Logic/Can access Act 1 - Dead Bird Studio"
+        ]
+      },
+      {
+        "name": "Snatcher Coins",
+        "children": [
+          {
+            "name": "Mafia Town",
+            "children": [
+              {
+                "name": "Top of HQ",
+                "access_rules": [
+                  // todo: Expert should be able to bucket hover to the coin from other acts/death wishes
+                  "@Mafia Logic/Can access Act 4 - Down With the Mafia!",
+                  "@Mafia Logic/Can access Act 5 - Cheating the Race",
+                  "@Mafia Logic/Can access Act 6 - Heating up Mafia Town, @General Logic/Can Melee",
+                  "@Mafia Logic/Can access Act 7 - The Golden Vault",
+                  // FIXME: Missing @General Logic/Can Melee requirement? Try plando-ing umbrella onto full completion.
+                  "@Death Wish/Contract - Beat the Heat"
+                ]
+              },
+              {
+                "name": "Top of Tower",
+                "access_rules": [
+                  "@Mafia Logic/Can access Mafia Town (HUMT)",
+                  "@Death Wish/Contract - Beat the Heat",
+                  "@Death Wish/Contract - Collect-a-thon",
+                  "@Death Wish/Contract - She Speedran from Outer Space",
+                  "@Death Wish/Contract - Mafia's Jumps"
+                ]
+              },
+              {
+                "name": "Under Ruined Tower",
+                "access_rules": [
+                  // FIXME: This is also accessible in Heating up Mafia Town
+                  // todo: Why is this not accessible in Mafia's Jumps?
+                  "@Mafia Logic/Can access Mafia Town",
+                  "@Death Wish/Contract - Collect-a-thon",
+                  "@Death Wish/Contract - She Speedran from Outer Space"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Battle of the Birds",
+            "children": [
+              {
+                "name": "Top of Red House",
+                "access_rules": [
+                  "@DBS Logic/Can access Dead Bird Studio - Elevator Area",
+                  "@Death Wish/Contract - Security Breach"
+                ]
+              },
+              {
+                "name": "Train Rush",
+                "access_rules": [
+                  "hookshot, @DBS Logic/Can access Act 4 - Train Rush",
+                  // TODO: Is it actually there? I thought the floating hookpoints were different in the contract.
+                  "hookshot, @Death Wish/Contract - 10 Seconds until Self-Destruct"
+                ]
+              },
+              {
+                "name": "Picture Perfect",
+                "access_rules": [
+                  // todo: Is this also accessible in The Big Parade and The Great Big Hootenanny?
+                  "@DBS Logic/Can access Act 3 - Picture Perfect"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Subcon Forest",
+            "children": [
+              {
+                "name": "Swamp Tree",
+                "access_rules": [
+                  "hookshot, @Subcon Logic/Yellow Firewall, @Subcon Logic/Can access main Subcon area",
+                  "hookshot, @Death Wish/Contract - Speedrun Well"
+                ]
+              },
+              {
+                "name": "Manor Roof",
+                "access_rules": [
+                  [
+                    "@General Logic/Can Dweller Bell",
+                    "@Subcon Logic/Yellow Firewall",
+                    "@Subcon Logic/Can access main Subcon area"
+                  ],
+                  // Moderate can normally skip the Dweller Bell. This is not currently considered by the Snatcher
+                  // coin's logic.
+                  [
+                    "[never]",
+                    "@General Logic/Moderate",
+                    "@Subcon Logic/Yellow Firewall",
+                    "@Subcon Logic/Can access main Subcon area"
+                  ]
+                ]
+              },
+              {
+                "name": "Giant Time Piece",
+                "access_rules": [
+                  "@Subcon Logic/Green Firewall, @Subcon Logic/Can access main Subcon area"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Alpine Skyline",
+            "children": [
+              {
+                "name": "Goat Village Top",
+                "access_rules": [
+                  "@Alpine Logic/Can access central Alpine Area",
+                  "@Death Wish/Contract - The Illness has Speedrun"
+                ]
+              },
+              {
+                "name": "Lava Cake",
+                "access_rules": [
+                  "@Lava Cake Zipline/Lava Cake"
+                ]
+              },
+              {
+                "name": "Windmill",
+                "access_rules": [
+                  "@Windmill Zipline/The Windmill",
+                  "hookshot, @Death Wish/Contract - Wound-Up Windmill"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Nyakuza Metro",
+            "children": [
+              {
+                "name": "Green Clean Tower",
+                "access_rules": [
+                  "@Nyakuza Logic/Can access Green Clean Station"
+                ]
+              },
+              {
+                "name": "Bluefin Cat Train",
+                "access_rules": [
+                  "@Nyakuza Logic/Can access Bluefin Tunnel"
+                ]
+              },
+              {
+                "name": "Pink Paw Fence",
+                "access_rules": [
+                  "@Nyakuza Logic/Can access Pink Paw Station"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

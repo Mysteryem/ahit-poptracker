@@ -339,7 +339,7 @@
       {
         "name": "Deep Sea",
         "access_rules": [
-          "^$canAccessAct|Cruise_CaveRift_Aquarium"
+          "@Cruise Logic/Can access Time Rift - Deep Sea"
         ],
         "sections": [
           {
@@ -381,7 +381,7 @@
       {
         "name": "Balcony",
         "access_rules": [
-          "^$canAccessAct|Cruise_WaterRift_Slide"
+          "@Cruise Logic/Can access Time Rift - Balcony"
         ],
         "sections": [
           {

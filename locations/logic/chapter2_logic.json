@@ -45,6 +45,24 @@
         ]
       },
       {
+        "name": "Can access Time Rift - The Owl Express",
+        "access_rules": [
+          "^$canAccessAct|TimeRift_Water_TWreck_Panels"
+        ]
+      },
+      {
+        "name": "Can access Time Rift - The Moon",
+        "access_rules": [
+          "^$canAccessAct|TimeRift_Water_TWreck_Parade"
+        ]
+      },
+      {
+        "name": "Can access Time Rift - Dead Bird Studio",
+        "access_rules": [
+          "^$canAccessAct|TimeRift_Cave_BirdBasement"
+        ]
+      },
+      {
         "name": "Can access Dead Bird Studio - Elevator Area",
         "access_rules": [
           "@DBS Logic/Can access Act 1 - Dead Bird Studio",

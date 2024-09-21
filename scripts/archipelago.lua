@@ -58,6 +58,59 @@ local map_table = {
     dlc_metro = "Nyakuza Metro"
 }
 
+local death_wish_classes = {
+    "Hat_SnatcherContract_DeathWish_HeatingUpHarder",
+    "Hat_SnatcherContract_DeathWish_BackFromSpace",
+    "Hat_SnatcherContract_DeathWish_KillEverybody",
+    "Hat_SnatcherContract_DeathWish_PonFrenzy",
+    "Hat_SnatcherContract_DeathWish_RiftCollapse_MafiaTown",
+    "Hat_SnatcherContract_DeathWish_MafiaBossEX",
+    "Hat_SnatcherContract_DeathWish_Speedrun_MafiaAlien",
+    "Hat_SnatcherContract_DeathWish_NoAPresses_MafiaAlien",
+    "Hat_SnatcherContract_DeathWish_MovingVault",
+    "Hat_SnatcherContract_DeathWish_Tokens_MafiaTown",
+
+    "Hat_SnatcherContract_DeathWish_DeadBirdStudioMoreGuards",
+    "Hat_SnatcherContract_DeathWish_DifficultParade",
+    "Hat_SnatcherContract_DeathWish_RiftCollapse_Birds",
+    "Hat_SnatcherContract_DeathWish_TrainRushShortTime",
+    "Hat_SnatcherContract_DeathWish_BirdBossEX",
+    "Hat_SnatcherContract_DeathWish_Tokens_Birds",
+    "Hat_SnatcherContract_DeathWish_NoAPresses",
+
+    "Hat_SnatcherContract_DeathWish_Speedrun_SubWell",
+    "Hat_SnatcherContract_DeathWish_RiftCollapse_Subcon",
+    "Hat_SnatcherContract_DeathWish_BossRush",
+    "Hat_SnatcherContract_DeathWish_SurvivalOfTheFittest",
+    "Hat_SnatcherContract_DeathWish_SnatcherEX",
+    "Hat_SnatcherContract_DeathWish_Tokens_Subcon",
+
+    "Hat_SnatcherContract_DeathWish_NiceBirdhouse",
+    "Hat_SnatcherContract_DeathWish_RiftCollapse_Alps",
+    "Hat_SnatcherContract_DeathWish_FastWindmill",
+    "Hat_SnatcherContract_DeathWish_Speedrun_Illness",
+    "Hat_SnatcherContract_DeathWish_Tokens_Alps",
+    "Hat_SnatcherContract_DeathWish_CameraTourist_1",
+
+    "Hat_SnatcherContract_DeathWish_HardCastle",
+    "Hat_SnatcherContract_DeathWish_MuGirlEX",
+
+    "Hat_SnatcherContract_DeathWish_BossRushEX",
+    "Hat_SnatcherContract_DeathWish_RiftCollapse_Cruise",
+    "Hat_SnatcherContract_DeathWish_EndlessTasks",
+
+    "Hat_SnatcherContract_DeathWish_CommunityRift_RhythmJump",
+    "Hat_SnatcherContract_DeathWish_CommunityRift_TwilightTravels",
+    "Hat_SnatcherContract_DeathWish_CommunityRift_MountainRift",
+
+    "Hat_SnatcherContract_DeathWish_Tokens_Metro",
+}
+
+death_wish_data_storage_key_to_class = {}
+death_wish_class_to_shuffle_number = {}
+death_wish_shuffle_completion_count = 0
+death_wish_completions = {}
+
 --I initialise HatOrder in onClear but need to read the table during item checks
 HatOrder = {}
 -- There are missing numbers, that's just how it is.
@@ -278,7 +331,8 @@ function onClear(slot_data)
     setFromSlotData('Hat_NPC_NyakuzaShop_12', "@Nyakuza Shops/Pink Paw Station Thug/Scammed")
     -- There are internal items used by the tracker to specify if a shop should be visible on the map.
     Tracker:FindObjectForCode("badge_seller_enabled").Active = (slot_data["BadgeSellerItemCount"] or 0) > 0
-    if Tracker:FindObjectForCode("dlc2").Active then
+    local dlc2_enabled = Tracker:FindObjectForCode("dlc2").Active
+    if dlc2_enabled then
         for _, v in ipairs(metro_thug_numbers) do
             v = tostring(v)
             local thug_enabled_item = Tracker:FindObjectForCode("metro_thug_enabled_"..v)
@@ -332,6 +386,77 @@ function onClear(slot_data)
     end
 
     updateActToEntrance()
+
+    if Tracker.ActiveVariantUID == "variant_death_wish" then
+        death_wish_data_storage_key_to_class = {}
+        death_wish_class_to_shuffle_number = {}
+        death_wish_shuffle_completion_count = 0
+        death_wish_completions = {}
+
+        setFromSlotData('DWEnableBonus', "dw_enable_bonus")
+        setFromSlotData('DWAutoCompleteBonuses', "dw_auto_complete_bonuses")
+        setFromSlotData('DWShuffle', "dw_mode") -- 0: normal, 1: shuffle
+
+        -- Stamps are calculated from completed contracts.
+        local stamps = Tracker:FindObjectForCode("stamp")
+        stamps.AcquiredCount = 0
+        local logical_stamps = Tracker:FindObjectForCode("logical_stamp")
+        logical_stamps.AcquiredCount = 0
+
+        local dw_mode = Tracker:FindObjectForCode("dw_mode").CurrentStage
+        local data_storage_request_keys = {}
+        if dw_mode == 0 then -- normal
+            -- # # # # #
+            -- DW Normal
+
+            -- TODO: Find out if excluded contracts/bonuses get set into data storage as if they have been cleared.
+            --       If not, then we would need to read the excluded ones to determine stamp counts.
+            -- Read "excluded_dw{num}" from slot data from 0 to ??? until nil to find all excluded contracts.
+
+            -- Read "excluded_bonus{num}" from slot data from 0 to ??? until nil to find all excluded bonuses.
+
+            -- Request from data storage and listen to updates to "{contract_class}_{slot_number}" for each non-excluded
+            -- contract.
+            for _, death_wish_class in ipairs(death_wish_classes) do
+                if dlc2_enabled or death_wish_class ~= "Hat_SnatcherContract_DeathWish_Tokens_Metro" then
+                    local data_storage_key = string.format("%s_%s", death_wish_class, Archipelago.PlayerNumber)
+                    death_wish_data_storage_key_to_class[data_storage_key] = death_wish_class
+                    table.insert(data_storage_request_keys, data_storage_key)
+                end
+            end
+            Archipelago:SetNotify({map_key, completed_acts_key})
+            Archipelago:Get({map_key, completed_acts_key})
+        elseif dw_mode == 1 then -- shuffle
+            -- # # # # #
+            -- DW Shuffle
+            local num_shuffle_contracts = #death_wish_classes
+            for i=1,#death_wish_classes do
+                -- The slot data keys are zero-indexed, so subtract 1.
+                local shuffle_contract = slot_data["dw_"..(i - 1)]
+                if shuffle_contract == nil then
+                    num_shuffle_contracts = i - 1
+                    break
+                else
+                    death_wish_class_to_shuffle_number[shuffle_contract] = i - 1
+                    local data_storage_key = string.format("%s_%s", shuffle_contract, Archipelago.PlayerNumber)
+                    death_wish_data_storage_key_to_class[data_storage_key] = shuffle_contract
+                    table.insert(data_storage_request_keys, data_storage_key)
+                end
+            end
+
+            -- Read "dw_{num}" from slot data from 0 to ??? until nil to find the contract at each part of the sequence.
+
+            -- Request from data storage and listen to updates to "{contract_class}_{slot_number}" for each contract in the
+            -- sequence.
+        else
+            print("Error: Unknown Death Wish Mode "..tostring(dw_mode))
+        end
+
+        Archipelago:SetNotify(data_storage_request_keys)
+        Archipelago:Get(data_storage_request_keys)
+    end
+
+    print(dump_table(slot_data))
 end
 
 function onClearHandler(slot_data)
@@ -455,6 +580,58 @@ function changedCompletedEntrances(current, previous)
     if new_completions then
         forceUpdate()
     end
+
+    print(dump_table(current))
+end
+
+function onDeathWishContractCompleted(contract_class, current, previous)
+    current = current or ""
+
+    local stamps = Tracker:FindObjectForCode("stamp")
+    -- Logic only counts stamps from bonuses when both parts of the bonus are complete.
+    local logical_stamps = Tracker:FindObjectForCode("logical_stamp")
+
+    local current_completion = death_wish_completions[contract_class]
+    if current_completion == nil then
+        current_completion = {}
+        death_wish_completions[contract_class] = current_completion
+    end
+
+    for i=0,2 do
+        -- Replace `nil` with `false` by comparing against `true`.
+        local already_complete = current_completion[i] == true
+        -- String contains "0" if the main objective is complete.
+        -- String contains "1" if the first part of the bonus is complete.
+        -- String contains "2" if the second part of the bonus is complete.
+        -- I have seen a string be "0012". I have no idea how that can happen, but the code here handles that odd case
+        -- without issue.
+        local is_complete = string.find(current, tostring(i)) ~= nil
+        if is_complete ~= already_complete then
+            if is_complete then
+                current_completion[i] = true
+                stamps.AcquiredCount = stamps.AcquiredCount + 1
+                if i == 0 then
+                    death_wish_shuffle_completion_count = death_wish_shuffle_completion_count + 1
+                    logical_stamps.AcquiredCount = logical_stamps.AcquiredCount + 1
+                elseif (i == 1 and current_completion[2]) or (i == 2 and current_completion[1]) then
+                    logical_stamps.AcquiredCount = logical_stamps.AcquiredCount + 2
+                end
+                print(string.format("Completed death wish contract %s objective %s.", contract_class, i))
+                print("New stamp count: "..tostring(stamps.AcquiredCount))
+                print("New logical stamp count: "..tostring(logical_stamps.AcquiredCount))
+            else
+                current_completion[i] = false
+                stamps.AcquiredCount = stamps.AcquiredCount - 1
+                print(string.format("Warning: Death wish contract %s un-completed objective %s.", contract_class, i))
+                if i == 0 then
+                    death_wish_shuffle_completion_count = death_wish_shuffle_completion_count - 1
+                    logical_stamps.AcquiredCount = logical_stamps.AcquiredCount - 1
+                elseif (i == 1 and current_completion[2]) or (i == 2 and current_completion[1]) then
+                    logical_stamps.AcquiredCount = logical_stamps.AcquiredCount - 2
+                end
+            end
+        end
+    end
 end
 
 function forceUpdate()
@@ -526,6 +703,14 @@ function onEvent(key, new_value, old_value)
         -- `old_value` may be `nil` initially.
         -- Values are expected to be a list of strings, e.g. {"chapter1_tutorial", "chapter1_cannon_repair"}
         changedCompletedEntrances(new_value, old_value)
+    else
+        local contract_class = death_wish_data_storage_key_to_class[key]
+        if contract_class ~= nil then
+            onDeathWishContractCompleted(contract_class, new_value, old_value)
+        else
+            print("Unknown key "..tostring(key))
+        end
+        -- print(key..":\n\t"..dump_table(new_value))
     end
 end
 

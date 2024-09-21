@@ -811,7 +811,7 @@
       {
         "name": "Village",
         "access_rules": [
-            "^$canAccessAct|TimeRift_Water_Subcon_Dwellers"
+            "@Subcon Logic/Can access Time Rift - Village"
         ],
         "sections": [
           {
@@ -836,7 +836,7 @@
       {
         "name": "Pipe",
         "access_rules": [
-          "^$canAccessAct|TimeRift_Water_Subcon_Hookshot"
+          "@Subcon Logic/Can access Time Rift - Pipe"
         ],
         "sections": [
           {
@@ -857,7 +857,7 @@
       {
         "name": "Sleepy Subcon",
         "access_rules": [
-          "^$canAccessAct|TimeRift_Cave_Raccoon"
+          "@Subcon Logic/Can access Time Rift - Sleepy Subcon"
         ],
         "sections": [
           {

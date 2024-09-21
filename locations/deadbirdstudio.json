@@ -85,7 +85,7 @@
           {
             "name": "Time Rift",
             "access_rules": [
-              "^$canAccessAct|TimeRift_Water_TWreck_Panels"
+              "@DBS Logic/Can access Time Rift - The Owl Express"
             ]
           }
         ],
@@ -127,7 +127,7 @@
           {
             "name": "Time Rift",
             "access_rules": [
-              "^$canAccessAct|TimeRift_Water_TWreck_Parade"
+              "@DBS Logic/Can access Time Rift - The Moon"
             ]
           }
         ],
@@ -144,7 +144,7 @@
   {
     "name": "Dead Bird Studio (Rift)",
     "access_rules": [
-      "^$canAccessAct|TimeRift_Cave_BirdBasement"
+      "@DBS Logic/Can access Time Rift - Dead Bird Studio"
     ],
     "sections": [
       {
