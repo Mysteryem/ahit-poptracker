@@ -324,12 +324,11 @@ function onClear(slot_data)
         act_rando_enabled = slot_data['ActRandomizer'] > 0
     end
 
-    -- there is an arguement that key and act should be swapped (i dont know if its worth it though)
-    for key, act in pairs(chapter_act_info) do
-        if act and slot_data[key] then
-            act:setActName(slot_data[key])
---             act:setIsAccessible(false)
-        end
+    -- Load randomized act entrances. If an act is not present, e.g. the chapter is not enabled, it is set to its
+    -- vanilla act.
+    for vanilla_act_name, act in pairs(chapter_act_info) do
+        local act_name = slot_data[vanilla_act_name] or vanilla_act_name
+        act:setActName(act_name)
     end
 
     updateActToEntrance()
