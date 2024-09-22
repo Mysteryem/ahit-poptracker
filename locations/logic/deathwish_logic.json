@@ -429,7 +429,9 @@
               "@DBS Logic/Can access Time Rift - The Owl Express",
               "@Cruise Logic/Can access Time Rift - Deep Sea",
               // The ones without voicelines can be attacked and killed.
-              "[never], @DBS Logic/Can access Act 4 - Train Rush"
+              "[never], @DBS Logic/Can access Act 4 - Train Rush",
+              // There's a bunch in the final stage.
+              "[never], @Spaceship Logic/Can access Time Rift - Tour"
             ]
           },
           {
