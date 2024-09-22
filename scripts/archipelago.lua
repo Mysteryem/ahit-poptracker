@@ -376,6 +376,8 @@ function onClear(slot_data)
                 obj.Active = v ~= 0
             elseif obj.Type == 'progressive' then
                 obj.CurrentStage = v + offset
+            elseif obj.Type == 'consumable' then
+                obj.AcquiredCount = v + offset
             else
                 print(string.format("Unsupported item type '%s' for item '%s'", tostring(obj.Type), item_code_or_location))
             end
