@@ -47,8 +47,7 @@
         "margin": "0,0",
         "h_alignment": "left",
         "rows": [
-          ["dw_mode", "dw_shuffle_count", "dw_enable_bonus", "dw_auto_complete_bonuses", "dw_exclude_annoying_contracts", "dw_exclude_annoying_full_completions"],
-          ["dw_exclude_candles", "dw_timepiece_requirement"]
+          ["dw_mode", "dw_enable_bonus", "dw_auto_complete_bonuses", "dw_timepiece_requirement"]
         ]
       }
     ]

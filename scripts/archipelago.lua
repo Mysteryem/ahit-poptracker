@@ -478,6 +478,7 @@ function onClear(slot_data)
         setFromSlotData('DWEnableBonus', "dw_enable_bonus")
         setFromSlotData('DWAutoCompleteBonuses', "dw_auto_complete_bonuses")
         setFromSlotData('DWShuffle', "dw_mode") -- 0: normal, 1: shuffle
+        setFromSlotData('DWTimePieceRequirement', "dw_timepiece_requirement")
 
         local dw_mode = Tracker:FindObjectForCode("dw_mode").CurrentStage
         local bonuses_enabled = Tracker:FindObjectForCode("dw_enable_bonus").Active
