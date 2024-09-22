@@ -1303,6 +1303,96 @@
                 "y": 461
               }
             ]
+          },
+          {
+            "name": "Snatcher's Hit List Enemies (no tracking)",
+            // The main objective only needs access to Mafia Goons, so these locations only need to be visible when
+            // bonuses are relevant.
+            "visibility_rules": [
+              "@Death Wish Logic/Bonuses Relevant"
+            ],
+            "sections": [
+              {
+                "name": "Mafia Goon",
+                "access_rules": [
+                  "@Death Wish Logic/Enemy Locations/Mafia Goon"
+                ]
+              },
+              {
+                "name": "Sleepy Raccoon",
+                "access_rules": [
+                  "@Death Wish Logic/Enemy Locations/Sleepy Raccoon"
+                ]
+              },
+              {
+                "name": "UFO",
+                "access_rules": [
+                  "@Death Wish Logic/Enemy Locations/UFO"
+                ]
+              },
+              {
+                "name": "Rat",
+                "access_rules": [
+                  "@Death Wish Logic/Enemy Locations/Rat"
+                ]
+              },
+              {
+                "name": "Shock Squid",
+                "access_rules": [
+                  "@Death Wish Logic/Enemy Locations/Shock Squid"
+                ]
+              },
+              {
+                "name": "Shromb Egg",
+                "access_rules": [
+                  "@Death Wish Logic/Enemy Locations/Shromb Egg"
+                ]
+              },
+              {
+                "name": "Spider",
+                "access_rules": [
+                  "@Death Wish Logic/Enemy Locations/Spider"
+                ]
+              },
+              {
+                "name": "Crow",
+                "access_rules": [
+                  "@Death Wish Logic/Enemy Locations/Crow"
+                ]
+              },
+              {
+                "name": "Pompous Crow",
+                "access_rules": [
+                  "@Death Wish Logic/Enemy Locations/Pompous Crow"
+                ]
+              },
+              {
+                "name": "Fiery Crow",
+                "access_rules": [
+                  "@Death Wish Logic/Enemy Locations/Fiery Crow"
+                ]
+              },
+              {
+                "name": "Express Owl",
+                "access_rules": [
+                  "@Death Wish Logic/Enemy Locations/Express Owl"
+                ]
+              },
+              {
+                "name": "Ninja Cat",
+                "access_rules": [
+                  "@Death Wish Logic/Enemy Locations/Ninja Cat"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 810,
+                "y": 461,
+                "shape": "diamond"
+              }
+            ]
           }
         ]
       },
