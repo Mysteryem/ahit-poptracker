@@ -58,52 +58,54 @@ local map_table = {
     dlc_metro = "Nyakuza Metro"
 }
 
+-- 38 total death wishes
+local num_death_wish_classes = 38
 local death_wish_classes = {
-    "Hat_SnatcherContract_DeathWish_HeatingUpHarder",
-    "Hat_SnatcherContract_DeathWish_BackFromSpace",
-    "Hat_SnatcherContract_DeathWish_KillEverybody",
-    "Hat_SnatcherContract_DeathWish_PonFrenzy",
-    "Hat_SnatcherContract_DeathWish_RiftCollapse_MafiaTown",
-    "Hat_SnatcherContract_DeathWish_MafiaBossEX",
-    "Hat_SnatcherContract_DeathWish_Speedrun_MafiaAlien",
-    "Hat_SnatcherContract_DeathWish_NoAPresses_MafiaAlien",
-    "Hat_SnatcherContract_DeathWish_MovingVault",
-    "Hat_SnatcherContract_DeathWish_Tokens_MafiaTown",
+    Hat_SnatcherContract_DeathWish_HeatingUpHarder = "Beat the Heat",
+    Hat_SnatcherContract_DeathWish_BackFromSpace = "So You're Back From Outer Space",
+    Hat_SnatcherContract_DeathWish_KillEverybody = "Snatcher's Hit List",
+    Hat_SnatcherContract_DeathWish_PonFrenzy = "Collect-a-thon",
+    Hat_SnatcherContract_DeathWish_RiftCollapse_MafiaTown = "Rift Collapse: Mafia of Cooks",
+    Hat_SnatcherContract_DeathWish_MafiaBossEX = "Encore! Encore!",
+    Hat_SnatcherContract_DeathWish_Speedrun_MafiaAlien = "She Speedran from Outer Space",
+    Hat_SnatcherContract_DeathWish_NoAPresses_MafiaAlien = "Mafia's Jumps",
+    Hat_SnatcherContract_DeathWish_MovingVault = "Vault Codes in the Wind",
+    Hat_SnatcherContract_DeathWish_Tokens_MafiaTown = "Snatcher Coins in Mafia Town",
 
-    "Hat_SnatcherContract_DeathWish_DeadBirdStudioMoreGuards",
-    "Hat_SnatcherContract_DeathWish_DifficultParade",
-    "Hat_SnatcherContract_DeathWish_RiftCollapse_Birds",
-    "Hat_SnatcherContract_DeathWish_TrainRushShortTime",
-    "Hat_SnatcherContract_DeathWish_BirdBossEX",
-    "Hat_SnatcherContract_DeathWish_Tokens_Birds",
-    "Hat_SnatcherContract_DeathWish_NoAPresses",
+    Hat_SnatcherContract_DeathWish_DeadBirdStudioMoreGuards = "Security Breach",
+    Hat_SnatcherContract_DeathWish_DifficultParade = "The Great Big Hootenanny",
+    Hat_SnatcherContract_DeathWish_RiftCollapse_Birds = "Rift Collapse: Dead Bird Studio",
+    Hat_SnatcherContract_DeathWish_TrainRushShortTime = "10 Seconds until Self-Destruct",
+    Hat_SnatcherContract_DeathWish_BirdBossEX = "Killing Two Birds",
+    Hat_SnatcherContract_DeathWish_Tokens_Birds = "Snatcher Coins in Battle of the Birds",
+    Hat_SnatcherContract_DeathWish_NoAPresses = "Zero Jumps",
 
-    "Hat_SnatcherContract_DeathWish_Speedrun_SubWell",
-    "Hat_SnatcherContract_DeathWish_RiftCollapse_Subcon",
-    "Hat_SnatcherContract_DeathWish_BossRush",
-    "Hat_SnatcherContract_DeathWish_SurvivalOfTheFittest",
-    "Hat_SnatcherContract_DeathWish_SnatcherEX",
-    "Hat_SnatcherContract_DeathWish_Tokens_Subcon",
+    Hat_SnatcherContract_DeathWish_Speedrun_SubWell = "Speedrun Well",
+    Hat_SnatcherContract_DeathWish_RiftCollapse_Subcon = "Rift Collapse: Sleepy Subcon",
+    Hat_SnatcherContract_DeathWish_BossRush = "Boss Rush",
+    Hat_SnatcherContract_DeathWish_SurvivalOfTheFittest = "Quality Time with Snatcher",
+    Hat_SnatcherContract_DeathWish_SnatcherEX = "Breaching the Contract",
+    Hat_SnatcherContract_DeathWish_Tokens_Subcon = "Snatcher Coins in Subcon Forest",
 
-    "Hat_SnatcherContract_DeathWish_NiceBirdhouse",
-    "Hat_SnatcherContract_DeathWish_RiftCollapse_Alps",
-    "Hat_SnatcherContract_DeathWish_FastWindmill",
-    "Hat_SnatcherContract_DeathWish_Speedrun_Illness",
-    "Hat_SnatcherContract_DeathWish_Tokens_Alps",
-    "Hat_SnatcherContract_DeathWish_CameraTourist_1",
+    Hat_SnatcherContract_DeathWish_NiceBirdhouse = "Bird Sanctuary",
+    Hat_SnatcherContract_DeathWish_RiftCollapse_Alps = "Rift Collapse: Alpine Skyline",
+    Hat_SnatcherContract_DeathWish_FastWindmill = "Wound-Up Windmill",
+    Hat_SnatcherContract_DeathWish_Speedrun_Illness = "The Illness has Speedrun",
+    Hat_SnatcherContract_DeathWish_Tokens_Alps = "Snatcher Coins in Alpine Skyline",
+    Hat_SnatcherContract_DeathWish_CameraTourist_1 = "Camera Tourist",
 
-    "Hat_SnatcherContract_DeathWish_HardCastle",
-    "Hat_SnatcherContract_DeathWish_MuGirlEX",
+    Hat_SnatcherContract_DeathWish_HardCastle = "The Mustache Gauntlet",
+    Hat_SnatcherContract_DeathWish_MuGirlEX = "No More Bad Guys",
 
-    "Hat_SnatcherContract_DeathWish_BossRushEX",
-    "Hat_SnatcherContract_DeathWish_RiftCollapse_Cruise",
-    "Hat_SnatcherContract_DeathWish_EndlessTasks",
+    Hat_SnatcherContract_DeathWish_BossRushEX = "Seal the Deal",
+    Hat_SnatcherContract_DeathWish_RiftCollapse_Cruise = "Rift Collapse: Deep Sea",
+    Hat_SnatcherContract_DeathWish_EndlessTasks = "Cruisin' for a Bruisin'",
 
-    "Hat_SnatcherContract_DeathWish_CommunityRift_RhythmJump",
-    "Hat_SnatcherContract_DeathWish_CommunityRift_TwilightTravels",
-    "Hat_SnatcherContract_DeathWish_CommunityRift_MountainRift",
+    Hat_SnatcherContract_DeathWish_CommunityRift_RhythmJump = "Community Rift: Rhythm Jump Studio",
+    Hat_SnatcherContract_DeathWish_CommunityRift_TwilightTravels = "Community Rift: Twilight Travels",
+    Hat_SnatcherContract_DeathWish_CommunityRift_MountainRift = "Community Rift: The Mountain Rift",
 
-    "Hat_SnatcherContract_DeathWish_Tokens_Metro",
+    Hat_SnatcherContract_DeathWish_Tokens_Metro = "Snatcher Coins in Nyakuza Metro",
 }
 -- Number of stamps required to unlock specific contracts in normal Death Wish mode.
 local death_wish_contract_stamp_requirements = {
@@ -493,7 +495,7 @@ function onClear(slot_data)
 
             -- Request from data storage and listen to updates to "{contract_class}_{slot_number}" for each non-excluded
             -- contract.
-            for _, death_wish_class in ipairs(death_wish_classes) do
+            for death_wish_class, _ in pairs(death_wish_classes) do
                 if dlc2_enabled or death_wish_class ~= "Hat_SnatcherContract_DeathWish_Tokens_Metro" then
                     local data_storage_key = string.format("%s_%s", death_wish_class, Archipelago.PlayerNumber)
                     death_wish_data_storage_key_to_class[data_storage_key] = death_wish_class
@@ -504,7 +506,7 @@ function onClear(slot_data)
             Archipelago:Get({map_key, completed_acts_key})
 
             -- Load excluded Death Wish Contracts.
-            for i=1,#death_wish_classes do
+            for i=1,num_death_wish_classes do
                 -- The slot data keys are zero-indexed, so subtract 1.
                 local excluded_contract = slot_data["excluded_dw"..(i - 1)]
                 if excluded_contract == nil then
@@ -521,7 +523,7 @@ function onClear(slot_data)
             end
 
             -- Load excluded Bonuses
-            for i=1,#death_wish_classes do
+            for i=1,num_death_wish_classes do
                 -- The slot data keys are zero-indexed, so subtract 1.
                 local excluded_bonus = slot_data["excluded_bonus"..(i - 1)]
                 if excluded_bonus == nil then
@@ -538,8 +540,8 @@ function onClear(slot_data)
             -- Excluded contracts are simply not part of the shuffle sequence.
             -- Stamps are irrelevant in this mode, so we don't care if the stamp count doesn't match.
             -- The stamp counts in shuffle mode are weird anyway, I'm not sure how they get counted.
-            local num_shuffle_contracts = #death_wish_classes
-            for i=1,#death_wish_classes do
+            local num_shuffle_contracts = num_death_wish_classes
+            for i=1,num_death_wish_classes do
                 -- The slot data keys are zero-indexed, so subtract 1.
                 local shuffle_contract = slot_data["dw_"..(i - 1)]
                 if shuffle_contract == nil then
