@@ -3,6 +3,14 @@
     "name": "Death Wish Logic",
     "children": [
       {
+        "name": "Bonuses Relevant",
+        "access_rules": [
+          "dw_enable_bonus",
+          // With auto-completion off, the player still needs to beat bonuses for stamps.
+          "dw_mode_normal, dw_auto_complete_bonuses_off"
+        ]
+      },
+      {
         "name": "Can Safely Defeat Fiery Crows",
         "access_rules": [
           "umbrella",

@@ -33,7 +33,7 @@
               {
                 "name": "All Clear",
                 "visibility_rules": [
-                  "dw_enable_bonus"
+                  "@Death Wish Logic/Bonuses Relevant"
                 ]
               }
             ],
@@ -79,7 +79,7 @@
                   "sprint"
                 ],
                 "visibility_rules": [
-                  "dw_enable_bonus"
+                  "@Death Wish Logic/Bonuses Relevant"
                 ]
               }
             ],
@@ -120,7 +120,7 @@
               {
                 "name": "All Clear",
                 "visibility_rules": [
-                  "dw_enable_bonus"
+                  "@Death Wish Logic/Bonuses Relevant"
                 ]
               }
             ],
@@ -159,7 +159,7 @@
               {
                 "name": "All Clear",
                 "visibility_rules": [
-                  "dw_enable_bonus"
+                  "@Death Wish Logic/Bonuses Relevant"
                 ]
               }
             ],
@@ -198,7 +198,7 @@
               {
                 "name": "All Clear",
                 "visibility_rules": [
-                  "dw_enable_bonus"
+                  "@Death Wish Logic/Bonuses Relevant"
                 ]
               }
             ],
@@ -240,7 +240,7 @@
               {
                 "name": "All Clear",
                 "visibility_rules": [
-                  "dw_enable_bonus"
+                  "@Death Wish Logic/Bonuses Relevant"
                 ]
               }
             ],
@@ -282,7 +282,7 @@
                   "one_hit_hero"
                 ],
                 "visibility_rules": [
-                  "dw_enable_bonus"
+                  "@Death Wish Logic/Bonuses Relevant"
                 ]
               }
             ],
@@ -324,7 +324,7 @@
               {
                 "name": "All Clear",
                 "visibility_rules": [
-                  "dw_enable_bonus"
+                  "@Death Wish Logic/Bonuses Relevant"
                 ]
               }
             ],
@@ -369,7 +369,7 @@
                   "one_hit_hero, badge_pin"
                 ],
                 "visibility_rules": [
-                  "dw_enable_bonus"
+                  "@Death Wish Logic/Bonuses Relevant"
                 ]
               }
             ],
@@ -408,7 +408,7 @@
               {
                 "name": "All Clear",
                 "visibility_rules": [
-                  "dw_enable_bonus"
+                  "@Death Wish Logic/Bonuses Relevant"
                 ]
               }
             ],
@@ -448,7 +448,7 @@
               {
                 "name": "All Clear",
                 "visibility_rules": [
-                  "dw_enable_bonus"
+                  "@Death Wish Logic/Bonuses Relevant"
                 ]
               }
             ],
@@ -491,7 +491,7 @@
               {
                 "name": "All Clear",
                 "visibility_rules": [
-                  "dw_enable_bonus"
+                  "@Death Wish Logic/Bonuses Relevant"
                 ]
               }
             ],
@@ -536,7 +536,7 @@
                   "one_hit_hero, badge_pin"
                 ],
                 "visibility_rules": [
-                  "dw_enable_bonus"
+                  "@Death Wish Logic/Bonuses Relevant"
                 ]
               }
             ],
@@ -575,7 +575,7 @@
               {
                 "name": "All Clear",
                 "visibility_rules": [
-                  "dw_enable_bonus"
+                  "@Death Wish Logic/Bonuses Relevant"
                 ]
               }
             ],
@@ -615,7 +615,7 @@
               {
                 "name": "All Clear",
                 "visibility_rules": [
-                  "dw_enable_bonus"
+                  "@Death Wish Logic/Bonuses Relevant"
                 ]
               }
             ],
@@ -660,7 +660,7 @@
                   "one_hit_hero, badge_pin, dweller"
                 ],
                 "visibility_rules": [
-                  "dw_enable_bonus"
+                  "@Death Wish Logic/Bonuses Relevant"
                 ]
               }
             ],
@@ -706,7 +706,7 @@
                   "one_hit_hero, @General Logic/Moderate"
                 ],
                 "visibility_rules": [
-                  "dw_enable_bonus"
+                  "@Death Wish Logic/Bonuses Relevant"
                 ]
               }
             ],
@@ -754,7 +754,7 @@
                   "@General Logic/Expert"
                 ],
                 "visibility_rules": [
-                  "dw_enable_bonus"
+                  "@Death Wish Logic/Bonuses Relevant"
                 ]
               }
             ],
@@ -799,7 +799,7 @@
                   "ice"
                 ],
                 "visibility_rules": [
-                  "dw_enable_bonus"
+                  "@Death Wish Logic/Bonuses Relevant"
                 ]
               }
             ],
@@ -838,7 +838,7 @@
               {
                 "name": "All Clear",
                 "visibility_rules": [
-                  "dw_enable_bonus"
+                  "@Death Wish Logic/Bonuses Relevant"
                 ]
               }
             ],
@@ -875,7 +875,7 @@
               {
                 "name": "All Clear",
                 "visibility_rules": [
-                  "dw_enable_bonus"
+                  "@Death Wish Logic/Bonuses Relevant"
                 ]
               }
             ],
@@ -917,7 +917,7 @@
               {
                 "name": "All Clear",
                 "visibility_rules": [
-                  "dw_enable_bonus"
+                  "@Death Wish Logic/Bonuses Relevant"
                 ]
               }
             ],
@@ -954,7 +954,7 @@
               {
                 "name": "All Clear",
                 "visibility_rules": [
-                  "dw_enable_bonus"
+                  "@Death Wish Logic/Bonuses Relevant"
                 ]
               }
             ],
@@ -991,7 +991,7 @@
               {
                 "name": "All Clear",
                 "visibility_rules": [
-                  "dw_enable_bonus"
+                  "@Death Wish Logic/Bonuses Relevant"
                 ]
               }
             ],
@@ -1028,7 +1028,7 @@
               {
                 "name": "All Clear",
                 "visibility_rules": [
-                  "dw_enable_bonus"
+                  "@Death Wish Logic/Bonuses Relevant"
                 ]
               }
             ],
@@ -1065,7 +1065,7 @@
               {
                 "name": "All Clear",
                 "visibility_rules": [
-                  "dw_enable_bonus"
+                  "@Death Wish Logic/Bonuses Relevant"
                 ]
               }
             ],
@@ -1111,7 +1111,7 @@
                   "dweller"
                 ],
                 "visibility_rules": [
-                  "dw_enable_bonus"
+                  "@Death Wish Logic/Bonuses Relevant"
                 ]
               }
             ],
@@ -1151,7 +1151,7 @@
               {
                 "name": "All Clear",
                 "visibility_rules": [
-                  "dw_enable_bonus"
+                  "@Death Wish Logic/Bonuses Relevant"
                 ]
               }
             ],
@@ -1194,7 +1194,7 @@
                   "brewer"
                 ],
                 "visibility_rules": [
-                  "dw_enable_bonus"
+                  "@Death Wish Logic/Bonuses Relevant"
                 ]
               }
             ],
@@ -1234,7 +1234,7 @@
               {
                 "name": "All Clear",
                 "visibility_rules": [
-                  "dw_enable_bonus"
+                  "@Death Wish Logic/Bonuses Relevant"
                 ]
               }
             ],
@@ -1292,7 +1292,7 @@
                   ]
                 ],
                 "visibility_rules": [
-                  "dw_enable_bonus"
+                  "@Death Wish Logic/Bonuses Relevant"
                 ]
               }
             ],
@@ -1341,7 +1341,7 @@
                   ]
                 ],
                 "visibility_rules": [
-                  "dw_enable_bonus"
+                  "@Death Wish Logic/Bonuses Relevant"
                 ]
               }
             ],
@@ -1390,7 +1390,7 @@
                   ]
                 ],
                 "visibility_rules": [
-                  "dw_enable_bonus"
+                  "@Death Wish Logic/Bonuses Relevant"
                 ]
               }
             ],
@@ -1471,7 +1471,7 @@
                   "@Death Wish Logic/Zero Jumps/Train Rush, ^$canCompleteFourZeroJumps"
                 ],
                 "visibility_rules": [
-                  "dw_enable_bonus"
+                  "@Death Wish Logic/Bonuses Relevant"
                 ]
               }
             ],
@@ -1523,7 +1523,7 @@
                   ]
                 ],
                 "visibility_rules": [
-                  "dw_enable_bonus"
+                  "@Death Wish Logic/Bonuses Relevant"
                 ]
               }
             ],
@@ -1572,7 +1572,7 @@
                   ]
                 ],
                 "visibility_rules": [
-                  "dw_enable_bonus"
+                  "@Death Wish Logic/Bonuses Relevant"
                 ]
               }
             ],
@@ -1626,7 +1626,7 @@
                   ]
                 ],
                 "visibility_rules": [
-                  "dw_enable_bonus"
+                  "@Death Wish Logic/Bonuses Relevant"
                 ]
               }
             ],
@@ -1677,7 +1677,7 @@
                   ]
                 ],
                 "visibility_rules": [
-                  "dw_enable_bonus"
+                  "@Death Wish Logic/Bonuses Relevant"
                 ]
               }
             ],
