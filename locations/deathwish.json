@@ -1249,7 +1249,7 @@
         ]
       },
       {
-        "name": "Candle - Snatcher's Hit List",
+        "name": "Contract - Snatcher's Hit List",
         "access_rules": [
           "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_KillEverybody",
           [
@@ -1307,7 +1307,7 @@
         ]
       },
       {
-        "name": "Candle - Snatcher Coins in Mafia Town",
+        "name": "Contract - Snatcher Coins in Mafia Town",
         "access_rules": [
           "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Tokens_MafiaTown",
           [
@@ -1356,7 +1356,7 @@
         ]
       },
       {
-        "name": "Candle - Snatcher Coins in Battle of the Birds",
+        "name": "Contract - Snatcher Coins in Battle of the Birds",
         "access_rules": [
           "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Tokens_Birds",
           [
@@ -1405,7 +1405,7 @@
         ]
       },
       {
-        "name": "Candle - Zero Jumps",
+        "name": "Contract - Zero Jumps",
         "access_rules": [
           "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_NoAPresses",
           [
@@ -1421,7 +1421,7 @@
           // TODO: Can we add another child whose purpose is to show the logic for each possible Zero Jumps completion?
           //{
           //  "name": "Welcome to Mafia Town",
-          //  "ref": "Death Wish/Candle - Zero Jumps/Zero Jumps/Main Objective",
+          //  "ref": "Death Wish/Contract - Zero Jumps/Zero Jumps/Main Objective",
           //  "access_rules": [
           //    "@Mafia Town/Welcome to Mafia Town/Time Piece"
           //  ]
@@ -1489,7 +1489,7 @@
         ]
       },
       {
-        "name": "Candle - Snatcher Coins in Subcon Forest",
+        "name": "Contract - Snatcher Coins in Subcon Forest",
         "access_rules": [
           "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Tokens_Subcon",
           [
@@ -1538,7 +1538,7 @@
         ]
       },
       {
-        "name": "Candle - Snatcher Coins in Alpine Skyline",
+        "name": "Contract - Snatcher Coins in Alpine Skyline",
         "access_rules": [
           "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Tokens_Alps",
           [
@@ -1587,7 +1587,7 @@
         ]
       },
       {
-        "name": "Candle - Snatcher Coins in Nyakuza Metro",
+        "name": "Contract - Snatcher Coins in Nyakuza Metro",
         "access_rules": [
           "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Tokens_Metro",
           [
@@ -1641,7 +1641,7 @@
         ]
       },
       {
-        "name": "Candle - Camera Tourist",
+        "name": "Contract - Camera Tourist",
         "access_rules": [
           "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_CameraTourist_1",
           [

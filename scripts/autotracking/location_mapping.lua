@@ -483,24 +483,9 @@ local death_wish_location_mapping = {
     [2000350072] = "Community Rift: The Mountain Rift",
     [2000350074] = "Snatcher Coins in Nyakuza Metro",
 }
-local death_wish_candles = {
-    ["Snatcher's Hit List"] = true,
-    ["Snatcher Coins in Mafia Town"] = true,
-    ["Snatcher Coins in Battle of the Birds"] = true,
-    ["Zero Jumps"] = true,
-    ["Snatcher Coins in Subcon Forest"] = true,
-    ["Snatcher Coins in Alpine Skyline"] = true,
-    ["Camera Tourist"] = true,
-    ["Snatcher Coins in Nyakuza Metro"] = true,
-}
 if Tracker.ActiveVariantUID == "variant_death_wish" then
     for k, v in pairs(death_wish_location_mapping) do
-        local location_name
-        if death_wish_candles[v] then
-            location_name = string.format("@Death Wish/Candle - %s/%s", v, v)
-        else
-            location_name = string.format("@Death Wish/Contract - %s/%s", v, v)
-        end
+        local location_name = string.format("@Death Wish/Contract - %s/%s", v, v)
         LOCATION_MAPPING[k] = location_name.."/Main Objective"
         LOCATION_MAPPING[k + 1] = location_name.."/All Clear"
     end
