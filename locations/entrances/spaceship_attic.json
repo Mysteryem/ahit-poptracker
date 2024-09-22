@@ -6,7 +6,7 @@
       {
         "name": "Time Rift - Tour",
         "access_rules": [
-          "@Chapter 5 Entrances/Act 1 - The Finale"
+          "exclude_tour_disabled, dlc1, @Chapter 5 Entrances/Act 1 - The Finale"
         ],
         "visibility_rules": [
           "exclude_tour_disabled, dlc1"
