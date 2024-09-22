@@ -515,8 +515,6 @@ function onClear(slot_data)
                     table.insert(data_storage_request_keys, data_storage_key)
                 end
             end
-            Archipelago:SetNotify({map_key, completed_acts_key})
-            Archipelago:Get({map_key, completed_acts_key})
 
             -- Load excluded Death Wish Contracts.
             for i=1,num_death_wish_classes do
