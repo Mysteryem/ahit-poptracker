@@ -105,11 +105,85 @@ local death_wish_classes = {
 
     "Hat_SnatcherContract_DeathWish_Tokens_Metro",
 }
+-- Number of stamps required to unlock specific contracts in normal Death Wish mode.
+local death_wish_contract_stamp_requirements = {
+    Hat_SnatcherContract_DeathWish_BackFromSpace = 2,
+    Hat_SnatcherContract_DeathWish_DeadBirdStudioMoreGuards = 4,
+    Hat_SnatcherContract_DeathWish_PonFrenzy = 5,
+    Hat_SnatcherContract_DeathWish_DifficultParade = 7,
+    Hat_SnatcherContract_DeathWish_Speedrun_MafiaAlien = 8,
+    Hat_SnatcherContract_DeathWish_MafiaBossEX = 10,
+    Hat_SnatcherContract_DeathWish_Speedrun_SubWell = 10,
+    Hat_SnatcherContract_DeathWish_TrainRushShortTime = 15,
+    Hat_SnatcherContract_DeathWish_BossRush = 15,
+    Hat_SnatcherContract_DeathWish_NiceBirdhouse = 15,
+    Hat_SnatcherContract_DeathWish_SurvivalOfTheFittest = 20,
+    Hat_SnatcherContract_DeathWish_BirdBossEX = 25,
+    Hat_SnatcherContract_DeathWish_FastWindmill = 30,
+    Hat_SnatcherContract_DeathWish_Tokens_Metro = 30,
+    Hat_SnatcherContract_DeathWish_Speedrun_Illness = 35,
+    Hat_SnatcherContract_DeathWish_HardCastle = 35,
+    Hat_SnatcherContract_DeathWish_SnatcherEX = 40,
+    Hat_SnatcherContract_DeathWish_MuGirlEX = 50,
+    Hat_SnatcherContract_DeathWish_BossRushEX = 70,
+}
+-- Prerequisite contracts to unlock specific contracts in noraml Death Wish mode.
+local death_wish_contract_prerequisites = {
+    Hat_SnatcherContract_DeathWish_BackFromSpace = {"Hat_SnatcherContract_DeathWish_HeatingUpHarder"},
+    Hat_SnatcherContract_DeathWish_NoAPresses_MafiaAlien = {"Hat_SnatcherContract_DeathWish_Speedrun_MafiaAlien"},
+    Hat_SnatcherContract_DeathWish_PonFrenzy = {"Hat_SnatcherContract_DeathWish_BackFromSpace"},
+    Hat_SnatcherContract_DeathWish_Speedrun_MafiaAlien = {"Hat_SnatcherContract_DeathWish_RiftCollapse_MafiaTown"},
+    Hat_SnatcherContract_DeathWish_MovingVault = {"Hat_SnatcherContract_DeathWish_PonFrenzy",
+                                                  "Hat_SnatcherContract_DeathWish_Speedrun_MafiaAlien"},
+    Hat_SnatcherContract_DeathWish_MafiaBossEX = {"Hat_SnatcherContract_DeathWish_PonFrenzy"},
+    Hat_SnatcherContract_DeathWish_DeadBirdStudioMoreGuards = {"Hat_SnatcherContract_DeathWish_HeatingUpHarder"},
+    Hat_SnatcherContract_DeathWish_TrainRushShortTime = {"Hat_SnatcherContract_DeathWish_DifficultParade"},
+    Hat_SnatcherContract_DeathWish_DifficultParade = {"Hat_SnatcherContract_DeathWish_DeadBirdStudioMoreGuards"},
+    Hat_SnatcherContract_DeathWish_BirdBossEX = {"Hat_SnatcherContract_DeathWish_RiftCollapse_Birds",
+                                                 "Hat_SnatcherContract_DeathWish_TrainRushShortTime"},
+    Hat_SnatcherContract_DeathWish_Speedrun_SubWell = {"Hat_SnatcherContract_DeathWish_HeatingUpHarder"},
+    Hat_SnatcherContract_DeathWish_BossRush = {"Hat_SnatcherContract_DeathWish_Speedrun_SubWell"},
+    Hat_SnatcherContract_DeathWish_SurvivalOfTheFittest = {"Hat_SnatcherContract_DeathWish_RiftCollapse_Subcon"},
+    Hat_SnatcherContract_DeathWish_SnatcherEX = {"Hat_SnatcherContract_DeathWish_BossRush",
+                                                 "Hat_SnatcherContract_DeathWish_SurvivalOfTheFittest"},
+    Hat_SnatcherContract_DeathWish_NiceBirdhouse = {"Hat_SnatcherContract_DeathWish_HeatingUpHarder"},
+    Hat_SnatcherContract_DeathWish_FastWindmill = {"Hat_SnatcherContract_DeathWish_NiceBirdhouse"},
+    Hat_SnatcherContract_DeathWish_Speedrun_Illness = {"Hat_SnatcherContract_DeathWish_RiftCollapse_Alps",
+                                                       "Hat_SnatcherContract_DeathWish_FastWindmill"},
+    Hat_SnatcherContract_DeathWish_HardCastle = {"Hat_SnatcherContract_DeathWish_FastWindmill"},
+    Hat_SnatcherContract_DeathWish_MuGirlEX = {"Hat_SnatcherContract_DeathWish_HardCastle"},
+    Hat_SnatcherContract_DeathWish_EndlessTasks = {"Hat_SnatcherContract_DeathWish_RiftCollapse_Cruise"},
+    Hat_SnatcherContract_DeathWish_BossRushEX = {"Hat_SnatcherContract_DeathWish_MafiaBossEX",
+                                                 "Hat_SnatcherContract_DeathWish_BirdBossEX",
+                                                 "Hat_SnatcherContract_DeathWish_SnatcherEX",
+                                                 "Hat_SnatcherContract_DeathWish_MuGirlEX"},
+    Hat_SnatcherContract_DeathWish_RiftCollapse_MafiaTown = {"Hat_SnatcherContract_DeathWish_BackFromSpace"},
+    Hat_SnatcherContract_DeathWish_RiftCollapse_Birds = {"Hat_SnatcherContract_DeathWish_DeadBirdStudioMoreGuards"},
+    Hat_SnatcherContract_DeathWish_RiftCollapse_Subcon = {"Hat_SnatcherContract_DeathWish_Speedrun_SubWell"},
+    Hat_SnatcherContract_DeathWish_RiftCollapse_Alps = {"Hat_SnatcherContract_DeathWish_NiceBirdhouse"},
+    Hat_SnatcherContract_DeathWish_RiftCollapse_Cruise = {"Hat_SnatcherContract_DeathWish_RiftCollapse_MafiaTown",
+                                                          "Hat_SnatcherContract_DeathWish_RiftCollapse_Birds",
+                                                          "Hat_SnatcherContract_DeathWish_RiftCollapse_Subcon",
+                                                          "Hat_SnatcherContract_DeathWish_RiftCollapse_Alps"},
+    Hat_SnatcherContract_DeathWish_CommunityRift_RhythmJump = {"Hat_SnatcherContract_DeathWish_TrainRushShortTime"},
+    Hat_SnatcherContract_DeathWish_CommunityRift_TwilightTravels = {"Hat_SnatcherContract_DeathWish_SurvivalOfTheFittest"},
+    Hat_SnatcherContract_DeathWish_CommunityRift_MountainRift = {"Hat_SnatcherContract_DeathWish_RiftCollapse_Alps"},
+    Hat_SnatcherContract_DeathWish_KillEverybody = {"Hat_SnatcherContract_DeathWish_HeatingUpHarder"},
+    Hat_SnatcherContract_DeathWish_Tokens_MafiaTown = {"Hat_SnatcherContract_DeathWish_BackFromSpace"},
+    Hat_SnatcherContract_DeathWish_Tokens_Birds = {"Hat_SnatcherContract_DeathWish_DifficultParade"},
+    Hat_SnatcherContract_DeathWish_NoAPresses = {"Hat_SnatcherContract_DeathWish_RiftCollapse_Birds"},
+    Hat_SnatcherContract_DeathWish_Tokens_Subcon = {"Hat_SnatcherContract_DeathWish_RiftCollapse_Subcon"},
+    Hat_SnatcherContract_DeathWish_Tokens_Alps = {"Hat_SnatcherContract_DeathWish_NiceBirdhouse"},
+    Hat_SnatcherContract_DeathWish_Tokens_Metro = {"Hat_SnatcherContract_DeathWish_BirdBossEX"},
+    Hat_SnatcherContract_DeathWish_CameraTourist_1 = {"Hat_SnatcherContract_DeathWish_RiftCollapse_Alps"},
+}
 
 death_wish_data_storage_key_to_class = {}
 death_wish_class_to_shuffle_number = {}
 death_wish_shuffle_completion_count = 0
 death_wish_completions = {}
+death_wish_remaining_excluded_main_objectives = {}
+death_wish_remaining_excluded_bonuses = {}
 
 --I initialise HatOrder in onClear but need to read the table during item checks
 HatOrder = {}
@@ -392,6 +466,8 @@ function onClear(slot_data)
         death_wish_class_to_shuffle_number = {}
         death_wish_shuffle_completion_count = 0
         death_wish_completions = {}
+        death_wish_remaining_excluded_main_objectives = {}
+        death_wish_remaining_excluded_bonuses = {}
 
         setFromSlotData('DWEnableBonus', "dw_enable_bonus")
         setFromSlotData('DWAutoCompleteBonuses', "dw_auto_complete_bonuses")
@@ -426,9 +502,42 @@ function onClear(slot_data)
             end
             Archipelago:SetNotify({map_key, completed_acts_key})
             Archipelago:Get({map_key, completed_acts_key})
+
+            -- Load excluded Death Wish Contracts.
+            for i=1,#death_wish_classes do
+                -- The slot data keys are zero-indexed, so subtract 1.
+                local excluded_contract = slot_data["excluded_dw"..(i - 1)]
+                if excluded_contract == nil then
+                    break
+                else
+                    death_wish_remaining_excluded_main_objectives[excluded_contract] = true
+                end
+            end
+
+            -- Beat The Heat is the initially unlocked contract, if it is excluded, it will auto-complete, which could
+            -- cause other excluded contracts to auto-complete.
+            if death_wish_remaining_excluded_main_objectives["Hat_SnatcherContract_DeathWish_HeatingUpHarder"] then
+                checkDeathWishAutoCompletions()
+            end
+
+            -- Load excluded Bonuses
+            for i=1,#death_wish_classes do
+                -- The slot data keys are zero-indexed, so subtract 1.
+                local excluded_bonus = slot_data["excluded_bonus"..(i - 1)]
+                if excluded_bonus == nil then
+                    break
+                else
+                    death_wish_remaining_excluded_bonuses[excluded_bonus] = true
+                end
+            end
         elseif dw_mode == 1 then -- shuffle
             -- # # # # #
             -- DW Shuffle
+            --
+            -- Slot data does not contain excluded contracts/bonuses in this mode.
+            -- Excluded contracts are simply not part of the shuffle sequence.
+            -- Stamps are irrelevant in this mode, so we don't care if the stamp count doesn't match.
+            -- The stamp counts in shuffle mode are weird anyway, I'm not sure how they get counted.
             local num_shuffle_contracts = #death_wish_classes
             for i=1,#death_wish_classes do
                 -- The slot data keys are zero-indexed, so subtract 1.
@@ -584,6 +693,81 @@ function changedCompletedEntrances(current, previous)
     print(dump_table(current))
 end
 
+function checkDeathWishAutoCompletions()
+    local stamps = Tracker:FindObjectForCode("stamp")
+    -- Logic only counts stamps from bonuses when both parts of the bonus are completed.
+    local logical_stamps = Tracker:FindObjectForCode("logical_stamp")
+
+    local stamp_count = stamps.AcquiredCount
+
+    local changed
+    repeat
+        changed = false
+
+        -- Check for excluded main objectives that should now auto-complete.
+        -- In death wish shuffle, excluded main objectives do not exist in the sequence, so can be ignored.
+        for contract, _ in pairs(death_wish_remaining_excluded_main_objectives) do
+            local stamp_requirement = death_wish_contract_stamp_requirements[contract] or 0
+            if stamp_count >= stamp_requirement then
+                local prerequisite_contracts = death_wish_contract_prerequisites[contract] or {}
+                local all_prerequisites_complete = true
+                for _, prerequisite_contract in ipairs(prerequisite_contracts) do
+                    local prerequisite_completion_state = death_wish_completions[prerequisite_contract] or {}
+                    if not prerequisite_completion_state[0] then
+                        all_prerequisites_complete = false
+                        break
+                    end
+                end
+                if all_prerequisites_complete then
+                    print(string.format("Auto-completing excluded contract %s", contract))
+                    -- Auto-complete the entire contract.
+                    local completion_state = death_wish_completions[contract]
+                    if completion_state == nil then
+                        completion_state = {}
+                        death_wish_completions[contract] = completion_state
+                    end
+                    -- An excluded main objective auto-completes everything.
+                    local stamps_to_add = 0
+                    local logical_stamps_to_add = 0
+                    if not completion_state[0] then
+                        completion_state[0] = true
+                        stamps_to_add = stamps_to_add + 1
+                        logical_stamps_to_add = logical_stamps_to_add + 1
+                    end
+
+                    local auto_completing_bonus = false
+                    if not completion_state[1] then
+                        completion_state[1] = true
+                        stamps_to_add = stamps_to_add + 1
+                        auto_completing_bonus = true
+                    end
+                    if not completion_state[2] then
+                        completion_state[2] = true
+                        stamps_to_add = stamps_to_add + 1
+                        auto_completing_bonus = true
+                    end
+                    if auto_completing_bonus then
+                        logical_stamps_to_add = logical_stamps_to_add + 2
+                        -- Normally, a fully excluded contract won't be present in the excluded bonuses, but remove it
+                        -- from excluded bonuses if this is not the case (maybe manually excluded bonuses could cause
+                        -- this?).
+                        death_wish_remaining_excluded_bonuses[contract] = nil
+                    end
+
+                    -- Loop again in-case auto-completing the contract unlocks additional contracts that also
+                    -- auto-complete.
+                    changed = true
+                    stamps.AcquiredCount = stamps.AcquiredCount + stamps_to_add
+                    logical_stamps.AcquiredCount = logical_stamps.AcquiredCount + logical_stamps_to_add
+                    -- Remove the excluded contract from the next loop
+                    death_wish_remaining_excluded_main_objectives[contract] = nil
+                end
+            end
+        end
+
+    until not changed
+end
+
 function onDeathWishContractCompleted(contract_class, current, previous)
     current = current or ""
 
@@ -597,6 +781,8 @@ function onDeathWishContractCompleted(contract_class, current, previous)
         death_wish_completions[contract_class] = current_completion
     end
 
+    local changed = false
+
     for i=0,2 do
         -- Replace `nil` with `false` by comparing against `true`.
         local already_complete = current_completion[i] == true
@@ -607,29 +793,41 @@ function onDeathWishContractCompleted(contract_class, current, previous)
         -- without issue.
         local is_complete = string.find(current, tostring(i)) ~= nil
         if is_complete ~= already_complete then
+            changed = true
             if is_complete then
                 current_completion[i] = true
                 stamps.AcquiredCount = stamps.AcquiredCount + 1
                 if i == 0 then
                     death_wish_shuffle_completion_count = death_wish_shuffle_completion_count + 1
                     logical_stamps.AcquiredCount = logical_stamps.AcquiredCount + 1
+                    if death_wish_remaining_excluded_main_objectives[contract_class] then
+                        print(string.format("Warning: Manually completed main objective of excluded contract %s which"..
+                                            " should have been completed automatically."))
+                        death_wish_remaining_excluded_main_objectives[contract_class] = nil
+                    end
+                    if death_wish_remaining_excluded_bonuses[contract_class] then
+                        -- Act as if the bonuses have also been completed.
+                        current = "012"
+                        -- Remove the contract from the remaining excluded bonuses.
+                        death_wish_remaining_excluded_bonuses[contract_class] = nil
+                        print(string.format("Auto-completing excluded bonuses for %s", contract_class))
+                    end
                 elseif (i == 1 and current_completion[2]) or (i == 2 and current_completion[1]) then
                     logical_stamps.AcquiredCount = logical_stamps.AcquiredCount + 2
                 end
                 print(string.format("Completed death wish contract %s objective %s.", contract_class, i))
                 print("New stamp count: "..tostring(stamps.AcquiredCount))
                 print("New logical stamp count: "..tostring(logical_stamps.AcquiredCount))
-            else
-                current_completion[i] = false
-                stamps.AcquiredCount = stamps.AcquiredCount - 1
-                print(string.format("Warning: Death wish contract %s un-completed objective %s.", contract_class, i))
-                if i == 0 then
-                    death_wish_shuffle_completion_count = death_wish_shuffle_completion_count - 1
-                    logical_stamps.AcquiredCount = logical_stamps.AcquiredCount - 1
-                elseif (i == 1 and current_completion[2]) or (i == 2 and current_completion[1]) then
-                    logical_stamps.AcquiredCount = logical_stamps.AcquiredCount - 2
-                end
             end
+        end
+    end
+
+    if changed then
+        -- Excluded death wishes do not exist in death wish shuffle and stamps are irrelevant to logic in death wish
+        -- shuffle.
+        local is_normal_death_wish = Tracker:FindObjectForCode("dw_mode").CurrentStage == 0
+        if is_normal_death_wish then
+            checkDeathWishAutoCompletions()
         end
     end
 end

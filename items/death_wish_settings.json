@@ -33,9 +33,21 @@
   },
   {
     "name": "Auto Complete Bonus Stamps",
-    "type": "toggle",
-    "img": "images/items/dw_stamp.png",
-    "codes": "dw_auto_complete_bonuses"
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "dw_auto_complete_bonuses",
+    "stages": [
+      {
+        "img": "images/items/dw_logical_stamp.png",
+        "img_mods": "@disabled",
+        "codes": "dw_auto_complete_bonuses_off"
+      },
+      {
+        "img": "images/items/dw_logical_stamp.png",
+        "codes": "dw_auto_complete_bonuses_on",
+        "inherit_codes": false
+      }
+    ]
   },
   {
     "name": "Exclude Annoying Death Wish Contracts",
