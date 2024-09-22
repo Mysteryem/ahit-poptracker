@@ -349,6 +349,8 @@
           {
             "name": "Spider",
             "access_rules": [
+              // There are spiders in the intro to Alpine Free Roam, but they are missable, so cannot be considered by
+              // logic.
               // There are a couple around Subcon Village (as well as elsewhere), so there are no extra requriements.
               "@Subcon Logic/Can access main Subcon area",
               "@Death Wish/Contract - The Mustache Gauntlet",
@@ -358,7 +360,11 @@
               // Spiders in the Sizzling Lava Split must be used to go to either Mystifying Time Mesa or The Lava Cake
               "[never], @Lava Cake Zipline",
               // todo: Surely there are some here too?
-              "[never], @Death Wish/Contract - Wound-Up Windmill"
+              "[never], @Death Wish/Contract - Wound-Up Windmill",
+              // There is one in stage 2 holding a rift pon and another in stage 3 guarding a rift pon.
+              "[never], @Subcon Logic/Can access Time Rift - Sleepy Subcon",
+              // There are spiders after the brewing crates, so use the Time Rift location.
+              "[never], @Time Rifts/The Gallery/Time Rift"
             ]
           },
           {
