@@ -5,15 +5,17 @@ local function has_count_accessible_locations(locations, required_count)
     local accessible_count = 0
     for _, loc_path in ipairs(locations) do
         local location = Tracker:FindObjectForCode(loc_path)
-        local location_accessibility = location.AccessibilityLevel
-        if location_accessibility == AccessibilityLevel.Normal then
-            accessible_count = accessible_count + 1
-            if accessible_count == required_count then
-                -- Return early.
-                return AccessibilityLevel.Normal
+        if location then
+            local location_accessibility = location.AccessibilityLevel
+            if location_accessibility == AccessibilityLevel.Normal then
+                accessible_count = accessible_count + 1
+                if accessible_count == required_count then
+                    -- Return early.
+                    return AccessibilityLevel.Normal
+                end
+            elseif location_accessibility == AccessibilityLevel.SequenceBreak then
+                sequence_break_count = sequence_break_count + 1
             end
-        elseif location_accessibility == AccessibilityLevel.SequenceBreak then
-            sequence_break_count = sequence_break_count + 1
         end
     end
     if (sequence_break_count + accessible_count) >= required_count then
