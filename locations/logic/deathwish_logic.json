@@ -304,7 +304,9 @@
               "@Death Wish/Contract - Rift Collapse: Sleepy Subcon",
               // Before the giant cannonball. todo: Probably don't need hookshot for this on normal logic?
               // There are also some later raccoons around the balloons that must be used for hookshot-less.
-              "[never], @Time's End Logic/Can access The Finale"
+              "[never], @Time's End Logic/Can access The Finale",
+              "[never], @Alpine Skyline/Goat Refinery",
+              "[never], @DBS Logic/Can access Time Rift - The Owl Express"
             ]
           },
           {
@@ -378,7 +380,6 @@
               // todo: Are there any in Wound-up Windmill?
               // todo: Are there any in Rift Collapse - Alpine Skyline?
               // todo: There are dweller crows in one of the Community Rifts, do they count as the same enemy?
-              // todo: Are there any in The Finale or are they all fiery?
               "@Mafia Logic/Can access Mafia Town",
               // Does not include Heating Up Mafia Town
               "@Birdhouse Zipline/Bird House",
@@ -391,7 +392,10 @@
               // On one of the suspended platforms
               "[never], @Nyakuza Logic/Can access Green Clean Station",
               // In front of the dweller platform with hearts beneath it, before the normal logic hookshot requirement
-              "[never], @Time's End Logic/Can access The Finale"
+              "[never], @Time's End Logic/Can access The Finale",
+              "[never], @Alpine Skyline/Goat Refinery",
+              // Hookshot is needed to reach them
+              "[never], @The Arctic Cruise - Time Rifts/Balcony/Time Rift"
             ]
           },
           {
@@ -399,6 +403,7 @@
             "access_rules": [
               // todo: Is there one after the brewer boxes before an item on the path to the windmill?
               // todo: Are there any in Wound-up Windmill or in the exterior sections of The Windmill?
+              // If you can reach the one guarding the item in Yellow Band Hills, you can also reach the Birdhouse.
               "@Birdhouse Zipline/Bird House",
               "@Spaceship Logic/Can access Time Rift - The Lab",
               "@Death Wish/Contract - Bird Sanctuary",
@@ -421,7 +426,9 @@
               "@Lava Cake Zipline/Lava Cake",
               "@Death Wish/Contract - The Mustache Gauntlet",
               // Two in the Alpine stage (Lava area) and Three in the Finale stage.
-              "[never], @Spaceship Logic/Can access Time Rift - Tour"
+              "[never], @Spaceship Logic/Can access Time Rift - Tour",
+              // Hookshot is needed to reach them
+              "[never], @The Arctic Cruise - Time Rifts/Balcony/Time Rift"
             ]
           },
           {
@@ -509,7 +516,8 @@
           {
             "name": "Alpine Goat",
             "access_rules": [
-              // todo: Do the ones in The Twilight Bell count?
+              // The ones inside the Twilight Bell also count, though you have to go through the central Alpine Area to
+              // get there and there are two there.
               "[never], @Alpine Logic/Can access central Alpine Area",
               "[never], @Alpine Logic/Can access Time Rift - The Twilight Bell",
               // After the Dweller wall, so use the Time Piece's logic.
@@ -535,8 +543,9 @@
             // todo: Do the standalone CAW Crows that act like Daed Bird Studio owls/penguins count for Camera Tourist?
             "name": "CAW Crows",
             "access_rules": [
-              // todo: Do the ones in Time Rift - Alpine Skyline count?
+              // todo: Do the ones in Time Rift - Alpine Skyline count? They show up with the red icon, so probably.
               // todo: Do the ones in Dead Bird Basement count?
+              "[never], @DBS Logic/Can access Act 2 - Murder on the Owl Express",
               "[never], @Alpine Logic/Can access Time Rift - Alpine Skyline",
               "[never], @Spaceship Logic/Can access Time Rift - Tour",
               "[never], @DBS Logic/Can access Secret Finale - Dead Bird Studio Basement"
@@ -646,7 +655,9 @@
               // Must be able to kill Toilet and Snatcher beforehand.
               "hookshot, @General Logic/Can Melee, @Death Wish/Contract - Boss Rush",
               "@Death Wish/Contract - No More Bad Guys",
-              "[never], @Death Wish/Contract - Seal the Deal"
+              "[never], @Death Wish/Contract - Seal the Deal",
+              // Also considers moderate logic to skip hookshot.
+              "[never], @Spaceship/Time's End/Time Piece"
             ]
           }
         ]
