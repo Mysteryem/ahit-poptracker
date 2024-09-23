@@ -1574,7 +1574,214 @@
             ]
           },
           {
-            "name": "Zero Jumps Logic"
+            "name": "Zero Jumps Acts (no tracking)",
+            // The sections have been ordered by chapter and then by act.
+            "sections": [
+              {
+                "name": "Welcome to Mafia Town",
+                "access_rules": [
+                  "@Death Wish Logic/Zero Jumps/Welcome to Mafia Town"
+                ]
+              },
+              {
+                "name": "Down with the Mafia!",
+                "access_rules": [
+                  "@Death Wish Logic/Zero Jumps/Down with the Mafia!"
+                ]
+              },
+              {
+                "name": "The Golden Vault",
+                "access_rules": [
+                  "@Death Wish Logic/Zero Jumps/The Golden Vault"
+                ]
+              },
+              {
+                // Technically, Cheating the Race is Act 5, but it's unlocked after completing Acts 6 and 7.
+                "name": "Cheating the Race",
+                "access_rules": [
+                  "@Death Wish Logic/Zero Jumps/Cheating the Race"
+                ]
+              },
+              {
+                "name": "Time Rift - Sewers",
+                "access_rules": [
+                  "@Death Wish Logic/Zero Jumps Hard/Time Rift - Sewers"
+                ]
+              },
+              {
+                "name": "Time Rift - Bazaar",
+                "access_rules": [
+                  "@Death Wish Logic/Zero Jumps Hard/Time Rift - Bazaar"
+                ]
+              },
+              {
+                "name": "Dead Bird Studio",
+                "access_rules": [
+                  "@Death Wish Logic/Zero Jumps/Dead Bird Studio"
+                ]
+              },
+              {
+                "name": "Murder on the Owl Express",
+                "access_rules": [
+                  "@Death Wish Logic/Zero Jumps/Murder on the Owl Express"
+                ]
+              },
+              {
+                "name": "Picture Perfect",
+                "access_rules": [
+                  "@Death Wish Logic/Zero Jumps/Picture Perfect"
+                ]
+              },
+              {
+                "name": "Train Rush",
+                "access_rules": [
+                  "@Death Wish Logic/Zero Jumps/Train Rush"
+                ]
+              },
+              {
+                "name": "The Big Parade",
+                "access_rules": [
+                  "@Death Wish Logic/Zero Jumps Hard/The Big Parade"
+                ]
+              },
+              {
+                "name": "Contractual Obligations",
+                "access_rules": [
+                  "@Death Wish Logic/Zero Jumps/Contractual Obligations"
+                ]
+              },
+              {
+                "name": "Toilet of Doom",
+                "access_rules": [
+                  "@Death Wish Logic/Zero Jumps/Toilet of Doom"
+                ]
+              },
+              {
+                "name": "Mail Delivery Service",
+                "access_rules": [
+                  "@Death Wish Logic/Zero Jumps/Mail Delivery Service"
+                ]
+              },
+              {
+                "name": "Your Contract has Expired",
+                "access_rules": [
+                  "@Death Wish Logic/Zero Jumps/Your Contract has Expired"
+                ]
+              },
+              {
+                "name": "Time Rift - Pipe",
+                "access_rules": [
+                  "@Death Wish Logic/Zero Jumps Hard/Time Rift - Pipe"
+                ]
+              },
+              {
+                "name": "Time Rift - Sleepy Subcon",
+                "access_rules": [
+                  "@Death Wish Logic/Zero Jumps Expert/Time Rift - Sleepy Subcon"
+                ]
+              },
+              {
+                "name": "The Birdhouse",
+                "access_rules": [
+                  "@Death Wish Logic/Zero Jumps Expert/The Birdhouse"
+                ]
+              },
+              {
+                "name": "The Lava Cake",
+                "access_rules": [
+                  "@Death Wish Logic/Zero Jumps Expert/The Lava Cake"
+                ]
+              },
+              {
+                "name": "The Windmill",
+                "access_rules": [
+                  "@Death Wish Logic/Zero Jumps Expert/The Windmill"
+                ]
+              },
+              {
+                "name": "The Twilight Bell",
+                "access_rules": [
+                  "@Death Wish Logic/Zero Jumps Expert/The Twilight Bell"
+                ]
+              },
+              {
+                "name": "The Illness has Spread",
+                "access_rules": [
+                  "@Death Wish Logic/Zero Jumps Hard/The Illness has Spread"
+                ]
+              },
+              {
+                "name": "Time Rift - Curly Tail Trail",
+                "access_rules": [
+                  "@Death Wish Logic/Zero Jumps Hard/Time Rift - Curly Tail Trail"
+                ]
+              },
+              {
+                "name": "Time Rift - The Twilight Bell",
+                "access_rules": [
+                  "@Death Wish Logic/Zero Jumps Hard/Time Rift - The Twilight Bell"
+                ]
+              },
+              {
+                "name": "Time Rift - Alpine Skyline",
+                "access_rules": [
+                  "@Death Wish Logic/Zero Jumps/Time Rift - Alpine Skyline"
+                ]
+              },
+              {
+                "name": "The Finale",
+                "access_rules": [
+                  "@Death Wish Logic/Zero Jumps Hard/The Finale"
+                ]
+              },
+              {
+                "name": "Ship Shape",
+                "access_rules": [
+                  "@Death Wish Logic/Zero Jumps Expert/Ship Shape"
+                ]
+              },
+              {
+                "name": "Yellow Overpass Station",
+                "visibility_rules": [
+                  "dlc2"
+                ],
+                "access_rules": [
+                  "@Death Wish Logic/Zero Jumps/Yellow Overpass Station"
+                ]
+              },
+              {
+                "name": "Green Clean Station",
+                "visibility_rules": [
+                  "dlc2"
+                ],
+                "access_rules": [
+                  "@Death Wish Logic/Zero Jumps/Green Clean Station"
+                ]
+              },
+              {
+                "name": "Pink Paw Station",
+                "visibility_rules": [
+                  "dlc2"
+                ],
+                "access_rules": [
+                  "@Death Wish Logic/Zero Jumps Hard/Pink Paw Station"
+                ]
+              },
+              {
+                "name": "Time Rift - The Lab",
+                "access_rules": [
+                  "@Death Wish Logic/Zero Jumps/Time Rift - The Lab"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 434,
+                "y": 542,
+                "shape": "diamond"
+              }
+            ]
           }
         ]
       },
