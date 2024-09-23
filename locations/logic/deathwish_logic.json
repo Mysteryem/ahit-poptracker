@@ -489,7 +489,7 @@
         "children": [
           {
             // Includes non-killable Express Owls.
-            "name": "Express Owl (Camera Tourist)",
+            "name": "Express Owl",
             "access_rules": [
               // todo: Check that the owls in Dead Bird Studio count
               // todo: Check that the owls in Murder on the Owl Express count
@@ -581,7 +581,7 @@
             // boss to DJ Grooves through the random choice at the Award Ceremony could mean going back into Dead Bird
             // Studio could get a second picture that counts. Similarly for making it to the end of Dead Bird Basement.
             // Unsure which boss is fought in Contract - Boss Rush
-            "name": "Conductor or DJ Grooves",
+            "name": "Director",
             "access_rules": [
               // FIXME: This does not include the hookshot requirement due to a bug!!! Note that expert doesn't need it
               "@DBS Logic/Can access Secret Finale - Dead Bird Studio Basement",
@@ -640,22 +640,75 @@
         ]
       },
       {
-        "name": "Triple Enemy Location",
+        "name": "Triple Enemy Locations",
+        "sections": [
+          {
+            "name": "She Came from Outer Space",
+            "access_rules": [
+              "@Mafia Logic/Can access Act 3 - She Came from Outer Space"
+            ]
+          },
+          {
+            "name": "She Speedran from Outer Space",
+            "access_rules": [
+              "@Death Wish/Contract - She Speedran from Outer Space"
+            ]
+          },
+          {
+            "name": "Mafia's Jumps",
+            "access_rules": [
+              "@Death Wish/Contract - Mafia's Jumps"
+            ]
+          },
+          {
+            "name": "The Mustache Gauntlet",
+            "access_rules": [
+              "hookshot, dweller, @Death Wish/Contract - The Mustache Gauntlet"
+            ]
+          },
+          {
+            "name": "The Birdhouse",
+            "access_rules": [
+              "@Birdhouse Zipline/Bird House"
+            ]
+          },
+          {
+            "name": "Bird Sanctuary",
+            "access_rules": [
+              "@Death Wish/Contract - Bird Sanctuary"
+            ]
+          },
+          {
+            "name": "Time Rift - Tour",
+            "access_rules": [
+              "@Spaceship Logic/Can access Time Rift - Tour"
+            ]
+          },
+          {
+            "name": "Dead Bird Studio",
+            "access_rules": [
+              "[never], @DBS Logic/Can access Act 1 - Dead Bird Studio"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "At Least One Triple Enemy Location",
         "access_rules": [
           // There's probably more that aren't considered by logic.
-          "@Mafia Logic/Can access Act 3 - She Came from Outer Space",
-          "@Death Wish/Contract - She Speedran from Outer Space",
-          "@Death Wish/Contract - Mafia's Jumps",
-          "hookshot, dweller, @Death Wish/Contract - The Mustache Gauntlet",
-          "@Birdhouse Zipline/Bird House",
-          "@Death Wish/Contract - Bird Sanctuary",
-          "@Spaceship Logic/Can access Time Rift - Tour",
+          "@Death Wish Logic/Triple Enemy Locations/She Came from Outer Space",
+          "@Death Wish Logic/Triple Enemy Locations/She Speedran from Outer Space",
+          "@Death Wish Logic/Triple Enemy Locations/Mafia's Jumps",
+          "@Death Wish Logic/Triple Enemy Locations/The Mustache Gauntlet",
+          "@Death Wish Logic/Triple Enemy Locations/The Birdhouse",
+          "@Death Wish Logic/Triple Enemy Locations/Bird Sanctuary",
+          "@Death Wish Logic/Triple Enemy Locations/Time Rift - Tour",
           // Only the director which is currently considered your Chapter 2 boss counts as an enemy, so either
           //   a. DJ Grooves + Moon Penguin + Camera
           // or
           //   b. Conductor + Express Owl + Camera
           // Both are accessible at the start of the level.
-          "[never], @DBS Logic/Can access Act 1 - Dead Bird Studio"
+          "@Death Wish Logic/Triple Enemy Locations/Dead Bird Studio"
         ]
       },
       {

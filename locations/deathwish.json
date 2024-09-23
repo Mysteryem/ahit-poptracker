@@ -1964,9 +1964,9 @@
                 "name": "All Clear",
                 "access_rules": [
                   [
-                    "@Death Wish Logic/Triple Enemy Location",
+                    "@Death Wish Logic/At Least One Triple Enemy Location",
                     "@Death Wish Logic/Boss Locations/Mafia Boss",
-                    "@Death Wish Logic/Boss Locations/Conductor or DJ Grooves",
+                    "@Death Wish Logic/Boss Locations/Director",
                     "@Death Wish Logic/Boss Locations/Toilet",
                     "@Death Wish Logic/Boss Locations/Snatcher",
                     "@Death Wish Logic/Boss Locations/Toxic Flower",
@@ -1983,6 +1983,268 @@
                 "map": "deathwish",
                 "x": 1129,
                 "y": 364
+              }
+            ]
+          },
+          {
+            "name": "Camera Tourist Enemies (no tracking)",
+            "sections": [
+              {
+                "name": "Mafia Goon",
+                "access_rules": [
+                  "@Death Wish Logic/Enemy Locations/Mafia Goon"
+                ]
+              },
+              {
+                "name": "Sleepy Raccoon",
+                "access_rules": [
+                  "@Death Wish Logic/Enemy Locations/Sleepy Raccoon"
+                ]
+              },
+              {
+                "name": "UFO",
+                "access_rules": [
+                  "@Death Wish Logic/Enemy Locations/UFO"
+                ]
+              },
+              {
+                "name": "Rat",
+                "access_rules": [
+                  "@Death Wish Logic/Enemy Locations/Rat"
+                ]
+              },
+              {
+                "name": "Shock Squid",
+                "access_rules": [
+                  "@Death Wish Logic/Enemy Locations/Shock Squid"
+                ]
+              },
+              {
+                "name": "Shromb Egg",
+                "access_rules": [
+                  "@Death Wish Logic/Enemy Locations/Shromb Egg"
+                ]
+              },
+              {
+                "name": "Spider",
+                "access_rules": [
+                  "@Death Wish Logic/Enemy Locations/Spider"
+                ]
+              },
+              {
+                "name": "Crow",
+                "access_rules": [
+                  "@Death Wish Logic/Enemy Locations/Crow"
+                ]
+              },
+              {
+                "name": "Pompous Crow",
+                "access_rules": [
+                  "@Death Wish Logic/Enemy Locations/Pompous Crow"
+                ]
+              },
+              {
+                "name": "Fiery Crow",
+                "access_rules": [
+                  "@Death Wish Logic/Enemy Locations/Fiery Crow"
+                ]
+              },
+              {
+                "name": "Ninja Cat (Orange)",
+                "access_rules": [
+                  // Technically, this rule covers either Orange or Pink, but there are Orange everywhere that there are
+                  // Pink.
+                  "@Death Wish Logic/Enemy Locations/Ninja Cat"
+                ]
+              },
+              {
+                "name": "Express Owl",
+                "access_rules": [
+                  "@Death Wish Logic/Enemy Locations - Camera Tourist Extras/Express Owl"
+                ]
+              },
+              {
+                "name": "Ninja Cat (Pink) (never in logic)",
+                // Pink Lazy Paw Gang are only found in Nyakuza Metro
+                "visibility_rules": [
+                  "dlc2"
+                ],
+                "access_rules": [
+                  // Technically, this rule requires both colors of Ninja Cat to be in-logic, but there are Orange
+                  // everywhere that there are Pink.
+                  "@Death Wish Logic/Enemy Locations/Other Ninja Cat"
+                ]
+              },
+              {
+                "name": "Alpine Goat (never in logic)",
+                "access_rules": [
+                  "@Death Wish Logic/Enemy Locations - Camera Tourist Extras/Alpine Goat"
+                ]
+              },
+              {
+                "name": "Malfunctioning Rumbi (never in logic)",
+                // Only found in Time Rift - Rumbi Factory
+                "visibility_rules": [
+                  "dlc2"
+                ],
+                "access_rules": [
+                  "@Death Wish Logic/Enemy Locations - Camera Tourist Extras/Malfunctioning Rumbi"
+                ]
+              },
+              {
+                "name": "CAW Crows (never in logic)",
+                "access_rules": [
+                  "@Death Wish Logic/Enemy Locations - Camera Tourist Extras/CAW Crows"
+                ]
+              },
+              {
+                "name": "Dead Bird Studio Camera (never in logic)",
+                "access_rules": [
+                  "@Death Wish Logic/Enemy Locations - Camera Tourist Extras/Dead Bird Studio Camera"
+                ]
+              },
+              {
+                "name": "Moon Penguin (never in logic)",
+                "access_rules": [
+                  "@Death Wish Logic/Enemy Locations - Camera Tourist Extras/Moon Penguin"
+                ]
+              },
+              {
+                "name": "Purple Time Rift (never in logic)",
+                "access_rules": [
+                  "@Death Wish Logic/Enemy Locations - Camera Tourist Extras/Purple Time Rift"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                // Up and right diagonally.
+                "x": 1164,
+                "y": 329,
+                "shape": "diamond"
+              }
+            ]
+          },
+          {
+            "name": "Camera Tourist Bosses (no tracking)",
+            "visibility_rules": [
+              "@Death Wish Logic/Bonuses Relevant"
+            ],
+            "sections": [
+              {
+                "name": "Mafia Boss",
+                "access_rules": [
+                  "@Death Wish Logic/Boss Locations/Mafia Boss"
+                ]
+              },
+              {
+                "name": "Director",
+                "access_rules": [
+                  "@Death Wish Logic/Boss Locations/Director"
+                ]
+              },
+              {
+                "name": "Toilet",
+                "access_rules": [
+                  "@Death Wish Logic/Boss Locations/Toilet"
+                ]
+              },
+              {
+                "name": "Snatcher",
+                "access_rules": [
+                  "@Death Wish Logic/Boss Locations/Snatcher"
+                ]
+              },
+              {
+                "name": "Toxic Flower",
+                "access_rules": [
+                  "@Death Wish Logic/Boss Locations/Toxic Flower"
+                ]
+              },
+              {
+                "name": "Mustache Girl",
+                "access_rules": [
+                  "@Death Wish Logic/Boss Locations/Mustache Girl"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                // Down and right diagonally.
+                "x": 1164,
+                "y": 399,
+                "shape": "diamond"
+              }
+            ]
+          },
+          {
+            "name": "Camera Tourist Triple Enemy Photos (no tracking)",
+            "visibility_rules": [
+              "@Death Wish Logic/Bonuses Relevant"
+            ],
+            "sections": [
+              {
+                "name": "She Came from Outer Space",
+                "access_rules": [
+                  "@Death Wish Logic/Triple Enemy Locations/She Came from Outer Space"
+                ]
+              },
+              {
+                "name": "She Speedran from Outer Space",
+                "access_rules": [
+                  "@Death Wish Logic/Triple Enemy Locations/She Speedran from Outer Space"
+                ]
+              },
+              {
+                "name": "Mafia's Jumps",
+                "access_rules": [
+                  "@Death Wish Logic/Triple Enemy Locations/Mafia's Jumps"
+                ]
+              },
+              {
+                "name": "The Mustache Gauntlet",
+                "access_rules": [
+                  "@Death Wish Logic/Triple Enemy Locations/The Mustache Gauntlet"
+                ]
+              },
+              {
+                "name": "The Birdhouse",
+                "access_rules": [
+                  "@Death Wish Logic/Triple Enemy Locations/The Birdhouse"
+                ]
+              },
+              {
+                "name": "Bird Sanctuary",
+                "access_rules": [
+                  "@Death Wish Logic/Triple Enemy Locations/Bird Sanctuary"
+                ]
+              },
+              {
+                "name": "Time Rift - Tour",
+                // No point showing Tour if the option to exclude it is enabled.
+                "visibility_rules": [
+                  "exclude_tour_disabled"
+                ],
+                "access_rules": [
+                  "@Death Wish Logic/Triple Enemy Locations/Time Rift - Tour"
+                ]
+              },
+              {
+                "name": "Dead Bird Studio (never in logic)",
+                "access_rules": [
+                  "@Death Wish Logic/Triple Enemy Locations/Dead Bird Studio"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                // To the right.
+                "x": 1164,
+                "y": 364,
+                "shape": "diamond"
               }
             ]
           }
