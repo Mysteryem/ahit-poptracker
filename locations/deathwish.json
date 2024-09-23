@@ -1442,6 +1442,37 @@
                 "y": 547
               }
             ]
+          },
+          {
+            "name": "Mafia Town Snatcher Coins (no tracking)",
+            "sections": [
+              {
+                "name": "Top of HQ",
+                "access_rules": [
+                  "@Death Wish Logic/Snatcher Coins/Mafia Town/Top of HQ"
+                ]
+              },
+              {
+                "name": "Top of Tower",
+                "access_rules": [
+                  "@Death Wish Logic/Snatcher Coins/Mafia Town/Top of Tower"
+                ]
+              },
+              {
+                "name": "Under Ruined Tower",
+                "access_rules": [
+                  "@Death Wish Logic/Snatcher Coins/Mafia Town/Under Ruined Tower"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 948,
+                "y": 547,
+                "shape": "diamond"
+              }
+            ]
           }
         ]
       },
@@ -1489,6 +1520,37 @@
                 "map": "deathwish",
                 "x": 114,
                 "y": 748
+              }
+            ]
+          },
+          {
+            "name": "Battle of the Birds Snatcher Coins (no tracking)",
+            "sections": [
+              {
+                "name": "Top of Red House",
+                "access_rules": [
+                  "@Death Wish Logic/Snatcher Coins/Battle of the Birds/Top of Red House"
+                ]
+              },
+              {
+                "name": "Train Rush",
+                "access_rules": [
+                  "@Death Wish Logic/Snatcher Coins/Battle of the Birds/Train Rush"
+                ]
+              },
+              {
+                "name": "Picture Perfect",
+                "access_rules": [
+                  "@Death Wish Logic/Snatcher Coins/Battle of the Birds/Picture Perfect"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 149,
+                "y": 748,
+                "shape": "diamond"
               }
             ]
           }
@@ -1831,6 +1893,37 @@
                 "y": 235
               }
             ]
+          },
+          {
+            "name": "Subcon Forest Snatcher Coins (no tracking)",
+            "sections": [
+              {
+                "name": "Swamp Tree",
+                "access_rules": [
+                  "@Death Wish Logic/Snatcher Coins/Subcon Forest/Swamp Tree"
+                ]
+              },
+              {
+                "name": "Manor Roof",
+                "access_rules": [
+                  "@Death Wish Logic/Snatcher Coins/Subcon Forest/Manor Roof"
+                ]
+              },
+              {
+                "name": "Giant Time Piece",
+                "access_rules": [
+                  "@Death Wish Logic/Snatcher Coins/Subcon Forest/Giant Time Piece"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 357,
+                "y": 235,
+                "shape": "diamond"
+              }
+            ]
           }
         ]
       },
@@ -1880,6 +1973,37 @@
                 "y": 186
               }
             ]
+          },
+          {
+            "name": "Alpine Skyline Snatcher Coins (no tracking)",
+            "sections": [
+              {
+                "name": "Goat Village Top",
+                "access_rules": [
+                  "@Death Wish Logic/Snatcher Coins/Alpine Skyline/Goat Village Top"
+                ]
+              },
+              {
+                "name": "Lava Cake",
+                "access_rules": [
+                  "@Death Wish Logic/Snatcher Coins/Alpine Skyline/Lava Cake"
+                ]
+              },
+              {
+                "name": "Windmill",
+                "access_rules": [
+                  "@Death Wish Logic/Snatcher Coins/Alpine Skyline/Windmill"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 1065,
+                "y": 186,
+                "shape": "diamond"
+              }
+            ]
           }
         ]
       },
@@ -1895,8 +2019,8 @@
           ]
         ],
         "visibility_rules": [
-          "dw_mode_normal",
-          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Tokens_Metro"
+          "dlc2, dw_mode_normal",
+          "dlc2, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Tokens_Metro"
         ],
         "children": [
           {
@@ -1905,9 +2029,6 @@
               "@Death Wish Logic/Snatcher Coins/Nyakuza Metro/Green Clean Tower",
               "@Death Wish Logic/Snatcher Coins/Nyakuza Metro/Bluefin Cat Train",
               "@Death Wish Logic/Snatcher Coins/Nyakuza Metro/Pink Paw Fence"
-            ],
-            "visibility_rules": [
-              "dlc2"
             ],
             "sections": [
               {
@@ -1932,6 +2053,37 @@
                 "map": "deathwish",
                 "x": 190,
                 "y": 450
+              }
+            ]
+          },
+          {
+            "name": "Nyakuza Metro Snatcher Coins (no tracking)",
+            "sections": [
+              {
+                "name": "Green Clean Tower",
+                "access_rules": [
+                  "@Death Wish Logic/Snatcher Coins/Nyakuza Metro/Green Clean Tower"
+                ]
+              },
+              {
+                "name": "Bluefin Cat Train",
+                "access_rules": [
+                  "@Death Wish Logic/Snatcher Coins/Nyakuza Metro/Bluefin Cat Train"
+                ]
+              },
+              {
+                "name": "Pink Paw Fence",
+                "access_rules": [
+                  "@Death Wish Logic/Snatcher Coins/Nyakuza Metro/Pink Paw Fence"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deathwish",
+                "x": 225,
+                "y": 450,
+                "shape": "diamond"
               }
             ]
           }
