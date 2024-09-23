@@ -8,6 +8,11 @@
           "dw_enable_bonus",
           // With auto-completion off, the player still needs to beat bonuses for stamps.
           "dw_mode_normal, dw_auto_complete_bonuses_off"
+        ],
+        // Copy of access_rules for use when referenceing in visibility rules.
+        "visibility_rules": [
+          "dw_enable_bonus",
+          "dw_mode_normal, dw_auto_complete_bonuses_off"
         ]
       },
       {
