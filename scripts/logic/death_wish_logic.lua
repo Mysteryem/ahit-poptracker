@@ -124,6 +124,7 @@ local camera_tourist_enemy_locations = {
     "@Death Wish Logic/Enemy Locations/Other Ninja Cat",
     "@Death Wish Logic/Enemy Locations - Camera Tourist Extras/Alpine Goat",
     "@Death Wish Logic/Enemy Locations - Camera Tourist Extras/Malfunctioning Rumbi",
+    "@Death Wish Logic/Enemy Locations - Camera Tourist Extras/Headless Statue",
     "@Death Wish Logic/Enemy Locations - Camera Tourist Extras/CAW Crows",
     "@Death Wish Logic/Enemy Locations - Camera Tourist Extras/Dead Bird Studio Camera",
     "@Death Wish Logic/Enemy Locations - Camera Tourist Extras/Moon Penguin",

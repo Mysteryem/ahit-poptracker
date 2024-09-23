@@ -2092,6 +2092,12 @@
                 ]
               },
               {
+                "name": "Headless Statue (never in logic)",
+                "access_rules": [
+                  "@Death Wish Logic/Enemy Locations - Camera Tourist Extras/Headless Statue"
+                ]
+              },
+              {
                 "name": "CAW Crows (never in logic)",
                 "access_rules": [
                   "@Death Wish Logic/Enemy Locations - Camera Tourist Extras/CAW Crows"

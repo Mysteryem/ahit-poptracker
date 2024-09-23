@@ -524,6 +524,13 @@
             ]
           },
           {
+            "name": "Headless Statue",
+            "access_rules": [
+              // There is one near Ice Cube Shack
+              "[never], @Subcon Logic/Can access main Subcon area, @Subcon Logic/Yellow Firewall"
+            ]
+          },
+          {
             // Not included in logic. Camera Tourist only. The four sitting at a table cracking jokes.
             // todo: Do the standalone CAW Crows that act like Daed Bird Studio owls/penguins count for Camera Tourist?
             "name": "CAW Crows",
