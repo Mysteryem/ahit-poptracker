@@ -2118,11 +2118,27 @@
             ],
             "map_locations": [
               {
+                // When bonuses are relevant, display the location above the other two.
                 "map": "deathwish",
                 // Up and right diagonally.
                 "x": 1164,
                 "y": 329,
-                "shape": "diamond"
+                "shape": "diamond",
+                "restrict_visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                // When bonuses are not relevant, display the location directly to the right because the other two will
+                // be hidden.
+                "map": "deathwish",
+                // To the right.
+                "x": 1164,
+                "y": 364,
+                "shape": "diamond",
+                "force_invisibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
               }
             ]
           },
