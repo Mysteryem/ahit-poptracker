@@ -306,7 +306,12 @@
               // There are also some later raccoons around the balloons that must be used for hookshot-less.
               "[never], @Time's End Logic/Can access The Finale",
               "[never], @Alpine Skyline/Goat Refinery",
-              "[never], @DBS Logic/Can access Time Rift - The Owl Express"
+              "[never], @DBS Logic/Can access Time Rift - The Owl Express",
+              "[never], @Death Wish/Contract - Wound-Up Windmill",
+              "[never], @Windmill Zipline/Goat Outpost Horn",
+              // Actually at Serpentine Bird Horn, but there's not checks there.
+              "[never], @Birdhouse Zipline/Bird Pass Fork",
+              "[never], @Death Wish/Contract - Beat the Heat"
             ]
           },
           {
@@ -335,7 +340,8 @@
               "@Cruise Logic/Can access Act 1 - Bon Voyage!",
               "@Subcon Logic/Can access Time Rift - Sleepy Subcon",
               "hookshot, @Cruise Logic/Can access Time Rift - Deep Sea",
-              "@Death Wish/Contract - Rift Collapse: Sleepy Subcon"
+              "@Death Wish/Contract - Rift Collapse: Sleepy Subcon",
+              "[never], hookshot, @Death Wish/Contract - Rift Collapse: Deep Sea"
             ]
           },
           {
@@ -350,7 +356,9 @@
               // Two in the Alpine stage. One in the wood hut, the other in the middle of the stage
               "[never], @Spaceship Logic/Can access Time Rift - Tour",
               // In the elevated exterior area before House Window
-              "[never], @Windmill Zipline/The Windmill"
+              "[never], @Windmill Zipline/The Windmill",
+              // A bunch in the exterior area, requiring hookshot to reach.
+              "[never], hookshot, @Death Wish/Contract - Wound-Up Windmill"
             ]
           },
           {
@@ -366,19 +374,18 @@
               "@Windmill Zipline/The Windmill",
               // Spiders in the Sizzling Lava Split must be used to go to either Mystifying Time Mesa or The Lava Cake
               "[never], @Lava Cake Zipline",
-              // todo: Surely there are some here too?
               "[never], @Death Wish/Contract - Wound-Up Windmill",
               // There is one in stage 2 holding a rift pon and another in stage 3 guarding a rift pon.
               "[never], @Subcon Logic/Can access Time Rift - Sleepy Subcon",
               // There are spiders after the brewing crates, so use the Time Rift location.
-              "[never], @Time Rifts/The Gallery/Time Rift"
+              "[never], @Time Rifts/The Gallery/Time Rift",
+              // Actually at Serpentine Bird Horn
+              "[never], @Birdhouse Zipline/Bird Pass Fork"
             ]
           },
           {
             "name": "Crow",
             "access_rules": [
-              // todo: Are there any in Wound-up Windmill?
-              // todo: Are there any in Rift Collapse - Alpine Skyline?
               // todo: There are dweller crows in one of the Community Rifts, do they count as the same enemy?
               "@Mafia Logic/Can access Mafia Town",
               // Does not include Heating Up Mafia Town
@@ -395,14 +402,17 @@
               "[never], @Time's End Logic/Can access The Finale",
               "[never], @Alpine Skyline/Goat Refinery",
               // Hookshot is needed to reach them
-              "[never], @The Arctic Cruise - Time Rifts/Balcony/Time Rift"
+              "[never], @The Arctic Cruise - Time Rifts/Balcony/Time Rift",
+              "[never], @Death Wish/Contract - Wound-Up Windmill",
+              "[never], hookshot, @Death Wish/Contract - Rift Collapse: Deep Sea",
+              "[never], @Windmill Zipline/Goat Outpost Horn",
+              // Actually at Serpentine Bird Horn
+              "[never], @Birdhouse Zipline/Bird Pass Fork",
             ]
           },
           {
             "name": "Pompous Crow",
             "access_rules": [
-              // todo: Is there one after the brewer boxes before an item on the path to the windmill?
-              // todo: Are there any in Wound-up Windmill or in the exterior sections of The Windmill?
               // If you can reach the one guarding the item in Yellow Band Hills, you can also reach the Birdhouse.
               "@Birdhouse Zipline/Bird House",
               "@Spaceship Logic/Can access Time Rift - The Lab",
@@ -416,7 +426,8 @@
               // egg.
               "[never], @Spaceship Logic/Can access Time Rift - Tour",
               // In front of the dweller platform with hearts beneath it, before the normal logic hookshot requirement
-              "[never], @Time's End Logic/Can access The Finale"
+              "[never], @Time's End Logic/Can access The Finale",
+              "[never], @Death Wish/Contract - Wound-Up Windmill"
             ]
           },
           {
@@ -428,22 +439,23 @@
               // Two in the Alpine stage (Lava area) and Three in the Finale stage.
               "[never], @Spaceship Logic/Can access Time Rift - Tour",
               // Hookshot is needed to reach them
-              "[never], @The Arctic Cruise - Time Rifts/Balcony/Time Rift"
+              "[never], @The Arctic Cruise - Time Rifts/Balcony/Time Rift",
+              // A bunch in the exterior area, requiring hookshot to reach.
+              "[never], hookshot, @Death Wish/Contract - Wound-Up Windmill"
             ]
           },
           {
             "name": "Express Owl",
             "access_rules": [
-              // todo: Are there any in Rift Collapse - Deep Sea?
-              // todo: Are there any in 10 Seconds until Self-Destruct?
-              // todo: Check that the ones in Train Rush count.
               "@Time's End Logic/Can access The Finale",
               "@DBS Logic/Can access Time Rift - The Owl Express",
               "@Cruise Logic/Can access Time Rift - Deep Sea",
               // The ones without voicelines can be attacked and killed.
               "[never], @DBS Logic/Can access Act 4 - Train Rush",
               // There's a bunch in the final stage.
-              "[never], @Spaceship Logic/Can access Time Rift - Tour"
+              "[never], @Spaceship Logic/Can access Time Rift - Tour",
+              "[never], @Death Wish/Contract - Rift Collapse: Deep Sea",
+              "[never], @Death Wish/Contract - 10 Seconds until Self-Destruct"
             ]
           },
           {
@@ -495,16 +507,14 @@
         ]
       },
       {
-        // todo: Check if Subcon Forest Headless Statues count
-        // todo: Check if Mafia Nerd counts (it would need to count separately from Mafia Goon)
+        // todo: Check if Goofy Mafia counts (he would need to count separately from Mafia Goon) (the one in the
+        // Mailroom does not count as an enemy)
         "name": "Enemy Locations - Camera Tourist Extras",
         "children": [
           {
             // Includes non-killable Express Owls.
             "name": "Express Owl",
             "access_rules": [
-              // todo: Check that the owls in Dead Bird Studio count
-              // todo: Check that the owls in Murder on the Owl Express count
               "@Death Wish Logic/Enemy Locations/Express Owl",
               "[never], @DBS Logic/Can access Act 1 - Dead Bird Studio",
               // In the sauna.
@@ -540,21 +550,23 @@
           },
           {
             // Not included in logic. Camera Tourist only. The four sitting at a table cracking jokes.
-            // todo: Do the standalone CAW Crows that act like Daed Bird Studio owls/penguins count for Camera Tourist?
+            // todo: Do the standalone CAW Crows that act like Dead Bird Studio owls/penguins count separately from the
+            // group of four for Camera Tourist? (found on Murder on the Owl Exrpess and Time Rift - Tour)
             "name": "CAW Crows",
             "access_rules": [
-              // todo: Do the ones in Time Rift - Alpine Skyline count? They show up with the red icon, so probably.
-              // todo: Do the ones in Dead Bird Basement count?
               "[never], @DBS Logic/Can access Act 2 - Murder on the Owl Express",
+              "[never], @DBS Logic/Can access Secret Finale - Dead Bird Studio Basement",
               "[never], @Alpine Logic/Can access Time Rift - Alpine Skyline",
               "[never], @Spaceship Logic/Can access Time Rift - Tour",
-              "[never], @DBS Logic/Can access Secret Finale - Dead Bird Studio Basement"
+              // The Crows are after the hookshot required section.
+              "[never], @Dead Bird Basement/Act Completion/Time Piece",
+              // In the casino
+              "[never], @Cruise Logic/Can access Ship Area"
             ]
           },
           {
             "name": "Dead Bird Studio Camera",
             "access_rules": [
-              // todo: Do all of these count?
               "[never], @DBS Logic/Can access Act 1 - Dead Bird Studio",
               "[never], @DBS Logic/Can access Time Rift - Dead Bird Studio",
               "[never], @DBS Logic/Can access Secret Finale - Dead Bird Studio Basement",
@@ -567,6 +579,7 @@
             "name": "Moon Penguin",
             "access_rules": [
               "[never], @DBS Logic/Can access Act 1 - Dead Bird Studio",
+              "[never], @DBS Logic/Can access Secret Finale - Dead Bird Studio Basement",
               "[never], @Death Wish/Contract - Security Breach"
             ]
           },
