@@ -8,12 +8,12 @@
     "stages": [
       {
         "name": "Death Wish Mode - Normal",
-        "img": "images/items/dw_stamp.png",
+        "img": "images/settings/death_wish_mode_normal.png",
         "codes": "dw_mode_normal"
       },
       {
         "name": "Death Wish Mode - Shuffle",
-        "img": "images/items/dw_logical_stamp.png",
+        "img": "images/settings/death_wish_mode_shuffle.png",
         "codes": "dw_mode_shuffle",
         "inherit_codes": false
       }
@@ -22,7 +22,7 @@
   {
     "name": "Shuffle Death Wish Full Completions",
     "type": "toggle",
-    "img": "images/items/dw_stamp.png",
+    "img": "images/settings/death_wish_shuffle_full_completions.png",
     "codes": "dw_enable_bonus"
   },
   {
@@ -32,12 +32,12 @@
     "codes": "dw_auto_complete_bonuses",
     "stages": [
       {
-        "img": "images/items/dw_logical_stamp.png",
+        "img": "images/settings/death_wish_auto_complete_bonuses.png",
         "img_mods": "@disabled",
         "codes": "dw_auto_complete_bonuses_off"
       },
       {
-        "img": "images/items/dw_logical_stamp.png",
+        "img": "images/settings/death_wish_auto_complete_bonuses.png",
         "codes": "dw_auto_complete_bonuses_on",
         "inherit_codes": false
       }
