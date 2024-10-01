@@ -150,6 +150,7 @@
             "item_count": 10,
             "clear_as_group": false,
             "access_rules": [
+              // todo: Also accessible out-of-logic in Beat the Heat.
               "@Mafia Logic/Can access Mafia Town (HUMT)",
               "@DBS Logic/Can access Act 1 - Dead Bird Studio",
               "@DBS Logic/Can access Act 3 - Picture Perfect",

@@ -581,7 +581,7 @@ function onClear(slot_data)
         Archipelago:Get(data_storage_request_keys)
     end
 
-    print(dump_table(slot_data))
+    --print(dump_table(slot_data))
 end
 
 function onClearHandler(slot_data)
@@ -706,7 +706,7 @@ function changedCompletedEntrances(current, previous)
         forceUpdate()
     end
 
-    print(dump_table(current))
+    --print(dump_table(current))
 end
 
 function manuallyClearDeathWishAllClearSection(contract_class)
@@ -845,8 +845,8 @@ function onDeathWishContractCompleted(contract_class, current, previous)
                     end
                 end
                 print(string.format("Completed death wish contract %s objective %s.", contract_class, i))
-                print("New stamp count: "..tostring(stamps.AcquiredCount))
-                print("New logical stamp count: "..tostring(logical_stamps.AcquiredCount))
+                --print("New stamp count: "..tostring(stamps.AcquiredCount))
+                --print("New logical stamp count: "..tostring(logical_stamps.AcquiredCount))
             end
         end
     end

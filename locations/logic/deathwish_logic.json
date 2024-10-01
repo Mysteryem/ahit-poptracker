@@ -801,7 +801,6 @@
                 "name": "Train Rush",
                 "access_rules": [
                   "hookshot, @DBS Logic/Can access Act 4 - Train Rush",
-                  // TODO: Is it actually there? I thought the floating hookpoints were different in the contract.
                   "hookshot, @Death Wish/Contract - 10 Seconds until Self-Destruct"
                 ]
               },
