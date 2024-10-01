@@ -1,6 +1,17 @@
 {
     "versions": [
         {
+            "package_version": "1.5.0",
+            "download_url": "https://github.com/Mysteryem/ahit-poptracker/archive/refs/tags/v1.5.0.zip",
+            "sha256": "f617060b192d8a4f3f7984d0c07d062f2a4e3b61f5cb77c01d2cb7d06434146c",
+            "changelog": [
+                "Added Death Wish variant (WIP)",
+                "Fixes:",
+                " - Fix acts unlocked due to an out-of-logic free roam act showing as inaccessible",
+                " - Fix randomized acts persisting from previous slots"
+            ]
+        },
+        {
             "package_version": "1.4.0",
             "download_url": "https://github.com/Mysteryem/ahit-poptracker/archive/refs/tags/v1.4.0.zip",
             "sha256": "9a88c0fb15679c129b49ee67dae217c267ed58d51baae18848bb71998ef8cb4f",
