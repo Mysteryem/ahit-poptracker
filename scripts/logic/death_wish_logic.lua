@@ -52,16 +52,10 @@ end
 
 function isShuffleContractUnlocked(name)
     local shuffle_number_lookup = death_wish_class_to_shuffle_number or {}
-
     local shuffle_number = shuffle_number_lookup[name]
     if shuffle_number == nil then
-        return
+        return false
     end
-
---     -- The initially unlocked shuffle contract is not known until death wish is unlocked.
---     if shuffle_number == 0 and not hasTimePiecesForDeathWish() then
---         return false
---     end
 
     local completion_count = death_wish_shuffle_completion_count or 0
     -- TODO
