@@ -4,10 +4,6 @@
     "access_rules": [
       "$hasTimePiecesForDeathWish"
     ],
-    "visibility_rules": [
-      "dw_mode_normal",
-      "dw_mode_shuffle, $hasTimePiecesForDeathWish"
-    ],
     "children": [
       {
         // This is the starting contract when shuffle is not enabled.
@@ -18,7 +14,7 @@
         ],
         "visibility_rules": [
           "dw_mode_normal",
-          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_HeatingUpHarder"
+          "$isShuffleContractPresent|Hat_SnatcherContract_DeathWish_HeatingUpHarder"
         ],
         "children": [
           {
@@ -60,7 +56,7 @@
         ],
         "visibility_rules": [
           "dw_mode_normal",
-          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_BackFromSpace"
+          "$isShuffleContractPresent|Hat_SnatcherContract_DeathWish_BackFromSpace"
         ],
         "children": [
           {
@@ -104,7 +100,7 @@
         ],
         "visibility_rules": [
           "dw_mode_normal",
-          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_NoAPresses_MafiaAlien"
+          "$isShuffleContractPresent|Hat_SnatcherContract_DeathWish_NoAPresses_MafiaAlien"
         ],
         "children": [
           {
@@ -147,7 +143,7 @@
         ],
         "visibility_rules": [
           "dw_mode_normal",
-          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_PonFrenzy"
+          "$isShuffleContractPresent|Hat_SnatcherContract_DeathWish_PonFrenzy"
         ],
         "children": [
           {
@@ -186,7 +182,7 @@
         ],
         "visibility_rules": [
           "dw_mode_normal",
-          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Speedrun_MafiaAlien"
+          "$isShuffleContractPresent|Hat_SnatcherContract_DeathWish_Speedrun_MafiaAlien"
         ],
         "children": [
           {
@@ -224,7 +220,7 @@
         ],
         "visibility_rules": [
           "dw_mode_normal",
-          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_MovingVault"
+          "$isShuffleContractPresent|Hat_SnatcherContract_DeathWish_MovingVault"
         ],
         "children": [
           {
@@ -267,7 +263,7 @@
         ],
         "visibility_rules": [
           "dw_mode_normal",
-          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_MafiaBossEX"
+          "$isShuffleContractPresent|Hat_SnatcherContract_DeathWish_MafiaBossEX"
         ],
         "children": [
           {
@@ -309,7 +305,7 @@
         ],
         "visibility_rules": [
           "dw_mode_normal",
-          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_DeadBirdStudioMoreGuards"
+          "$isShuffleContractPresent|Hat_SnatcherContract_DeathWish_DeadBirdStudioMoreGuards"
         ],
         "children": [
           {
@@ -351,7 +347,7 @@
         ],
         "visibility_rules": [
           "dw_mode_normal",
-          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_TrainRushShortTime"
+          "$isShuffleContractPresent|Hat_SnatcherContract_DeathWish_TrainRushShortTime"
         ],
         "children": [
           {
@@ -396,7 +392,7 @@
         ],
         "visibility_rules": [
           "dw_mode_normal",
-          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_DifficultParade"
+          "$isShuffleContractPresent|Hat_SnatcherContract_DeathWish_DifficultParade"
         ],
         "children": [
           {
@@ -436,7 +432,7 @@
         ],
         "visibility_rules": [
           "dw_mode_normal",
-          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_BirdBossEX"
+          "$isShuffleContractPresent|Hat_SnatcherContract_DeathWish_BirdBossEX"
         ],
         "children": [
           {
@@ -475,7 +471,7 @@
         ],
         "visibility_rules": [
           "dw_mode_normal",
-          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Speedrun_SubWell"
+          "$isShuffleContractPresent|Hat_SnatcherContract_DeathWish_Speedrun_SubWell"
         ],
         "children": [
           {
@@ -518,7 +514,7 @@
         ],
         "visibility_rules": [
           "dw_mode_normal",
-          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_BossRush"
+          "$isShuffleContractPresent|Hat_SnatcherContract_DeathWish_BossRush"
         ],
         "children": [
           {
@@ -563,7 +559,7 @@
         ],
         "visibility_rules": [
           "dw_mode_normal",
-          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_SurvivalOfTheFittest"
+          "$isShuffleContractPresent|Hat_SnatcherContract_DeathWish_SurvivalOfTheFittest"
         ],
         "children": [
           {
@@ -603,7 +599,7 @@
         ],
         "visibility_rules": [
           "dw_mode_normal",
-          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_SnatcherEX"
+          "$isShuffleContractPresent|Hat_SnatcherContract_DeathWish_SnatcherEX"
         ],
         "children": [
           {
@@ -642,7 +638,7 @@
         ],
         "visibility_rules": [
           "dw_mode_normal",
-          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_NiceBirdhouse"
+          "$isShuffleContractPresent|Hat_SnatcherContract_DeathWish_NiceBirdhouse"
         ],
         "children": [
           {
@@ -687,7 +683,7 @@
         ],
         "visibility_rules": [
           "dw_mode_normal",
-          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_FastWindmill"
+          "$isShuffleContractPresent|Hat_SnatcherContract_DeathWish_FastWindmill"
         ],
         "children": [
           {
@@ -734,7 +730,7 @@
         ],
         "visibility_rules": [
           "dw_mode_normal",
-          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Speedrun_Illness"
+          "$isShuffleContractPresent|Hat_SnatcherContract_DeathWish_Speedrun_Illness"
         ],
         "children": [
           {
@@ -781,7 +777,7 @@
         ],
         "visibility_rules": [
           "dw_mode_normal",
-          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_HardCastle"
+          "$isShuffleContractPresent|Hat_SnatcherContract_DeathWish_HardCastle"
         ],
         "children": [
           {
@@ -826,7 +822,7 @@
         ],
         "visibility_rules": [
           "dw_mode_normal",
-          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_MuGirlEX"
+          "$isShuffleContractPresent|Hat_SnatcherContract_DeathWish_MuGirlEX"
         ],
         "children": [
           {
@@ -863,7 +859,7 @@
         ],
         "visibility_rules": [
           "dw_mode_normal",
-          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_EndlessTasks"
+          "$isShuffleContractPresent|Hat_SnatcherContract_DeathWish_EndlessTasks"
         ],
         "children": [
           {
@@ -905,7 +901,7 @@
         ],
         "visibility_rules": [
           "dw_mode_normal",
-          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_BossRushEX"
+          "$isShuffleContractPresent|Hat_SnatcherContract_DeathWish_BossRushEX"
         ],
         "children": [
           {
@@ -942,7 +938,7 @@
         ],
         "visibility_rules": [
           "dw_mode_normal",
-          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_RiftCollapse_MafiaTown"
+          "$isShuffleContractPresent|Hat_SnatcherContract_DeathWish_RiftCollapse_MafiaTown"
         ],
         "children": [
           {
@@ -979,7 +975,7 @@
         ],
         "visibility_rules": [
           "dw_mode_normal",
-          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_RiftCollapse_Birds"
+          "$isShuffleContractPresent|Hat_SnatcherContract_DeathWish_RiftCollapse_Birds"
         ],
         "children": [
           {
@@ -1016,7 +1012,7 @@
         ],
         "visibility_rules": [
           "dw_mode_normal",
-          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_RiftCollapse_Subcon"
+          "$isShuffleContractPresent|Hat_SnatcherContract_DeathWish_RiftCollapse_Subcon"
         ],
         "children": [
           {
@@ -1053,7 +1049,7 @@
         ],
         "visibility_rules": [
           "dw_mode_normal",
-          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_RiftCollapse_Alps"
+          "$isShuffleContractPresent|Hat_SnatcherContract_DeathWish_RiftCollapse_Alps"
         ],
         "children": [
           {
@@ -1093,7 +1089,7 @@
         ],
         "visibility_rules": [
           "dw_mode_normal",
-          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_RiftCollapse_Cruise"
+          "$isShuffleContractPresent|Hat_SnatcherContract_DeathWish_RiftCollapse_Cruise"
         ],
         "children": [
           {
@@ -1136,7 +1132,7 @@
         ],
         "visibility_rules": [
           "dw_mode_normal",
-          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_CommunityRift_RhythmJump"
+          "$isShuffleContractPresent|Hat_SnatcherContract_DeathWish_CommunityRift_RhythmJump"
         ],
         "children": [
           {
@@ -1176,7 +1172,7 @@
         ],
         "visibility_rules": [
           "dw_mode_normal",
-          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_CommunityRift_TwilightTravels"
+          "$isShuffleContractPresent|Hat_SnatcherContract_DeathWish_CommunityRift_TwilightTravels"
         ],
         "children": [
           {
@@ -1219,7 +1215,7 @@
         ],
         "visibility_rules": [
           "dw_mode_normal",
-          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_CommunityRift_MountainRift"
+          "$isShuffleContractPresent|Hat_SnatcherContract_DeathWish_CommunityRift_MountainRift"
         ],
         "children": [
           {
@@ -1259,7 +1255,7 @@
         ],
         "visibility_rules": [
           "dw_mode_normal",
-          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_KillEverybody"
+          "$isShuffleContractPresent|Hat_SnatcherContract_DeathWish_KillEverybody"
         ],
         "children": [
           {
@@ -1407,7 +1403,7 @@
         ],
         "visibility_rules": [
           "dw_mode_normal",
-          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Tokens_MafiaTown"
+          "$isShuffleContractPresent|Hat_SnatcherContract_DeathWish_Tokens_MafiaTown"
         ],
         "children": [
           {
@@ -1487,7 +1483,7 @@
         ],
         "visibility_rules": [
           "dw_mode_normal",
-          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Tokens_Birds"
+          "$isShuffleContractPresent|Hat_SnatcherContract_DeathWish_Tokens_Birds"
         ],
         "children": [
           {
@@ -1567,7 +1563,7 @@
         ],
         "visibility_rules": [
           "dw_mode_normal",
-          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_NoAPresses"
+          "$isShuffleContractPresent|Hat_SnatcherContract_DeathWish_NoAPresses"
         ],
         "children": [
           // TODO: Can we add another child whose purpose is to show the logic for each possible Zero Jumps completion?
@@ -1858,7 +1854,7 @@
         ],
         "visibility_rules": [
           "dw_mode_normal",
-          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Tokens_Subcon"
+          "$isShuffleContractPresent|Hat_SnatcherContract_DeathWish_Tokens_Subcon"
         ],
         "children": [
           {
@@ -1938,7 +1934,7 @@
         ],
         "visibility_rules": [
           "dw_mode_normal",
-          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Tokens_Alps"
+          "$isShuffleContractPresent|Hat_SnatcherContract_DeathWish_Tokens_Alps"
         ],
         "children": [
           {
@@ -2100,7 +2096,7 @@
         ],
         "visibility_rules": [
           "dw_mode_normal",
-          "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_CameraTourist_1"
+          "$isShuffleContractPresent|Hat_SnatcherContract_DeathWish_CameraTourist_1"
         ],
         "children": [
           {

@@ -45,6 +45,11 @@ function isContractMainObjectiveComplete(name)
     return completion[0] == true
 end
 
+function isShuffleContractPresent(name)
+    local shuffle_number_lookup = death_wish_class_to_shuffle_number or {}
+    return shuffle_number_lookup[name] ~= nil
+end
+
 function isShuffleContractUnlocked(name)
     local shuffle_number_lookup = death_wish_class_to_shuffle_number or {}
 
