@@ -50,13 +50,13 @@ LOCATION_MAPPING = {
     [2000303243] = "@Mafia Town (HUMT)/Mafia HQ/Bathroom Stall Chest",
 
     [2000304874] = "@Before Lever/Up the Ladder/Yarn",
-    [2000303901] = "@After Lever/DJ Grooves Sign Chest/Yarn",
+    [2000303901] = "@After Second Lever/DJ Grooves Sign Chest/Yarn",
     [2000305024] = "@Before Lever/Red Building Top/Yarn",
     [2000305248] = "@Before Lever/Behind Water Tower/Yarn",
     [2000305247] = "@Before Lever/Side of House/Yarn",
-    [2000303898] = "@After Lever/Tightrope Chest/Relic",
-    [2000303899] = "@After Lever/Teepee Chest/Relic",
-    [2000303900] = "@After Lever/Conductor Chest/Token",
+    [2000303898] = "@After First Lever/Tightrope Chest/Relic",
+    [2000303899] = "@After Second Lever/Teepee Chest/Relic",
+    [2000303900] = "@After Second Lever/Conductor Chest/Token",
 
     [2000305313] = "@Films/The Conductor's Films/Cafeteria",
     [2000305090] = "@Films/The Conductor's Films/Luggage Room Top",

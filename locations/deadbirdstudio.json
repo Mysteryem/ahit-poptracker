@@ -8,7 +8,7 @@
           {
             "name": "Dead Bird Studio",
             "access_rules": [
-              "@DBS Logic/Can access Act 1 - Dead Bird Studio, @DBS Logic/Can access Dead Bird Studio - Post Elevator Area"
+              "@DBS Logic/Can access Act 1 - Dead Bird Studio, @DBS Logic/Can access Dead Bird Studio - Post Fast Switch Platform Area"
             ]
           },
           {
@@ -252,9 +252,32 @@
     ]
   },
   {
-    "name": "After Lever",
+    "name": "After First Lever",
     "access_rules": [
       "@DBS Logic/Can access Dead Bird Studio - Post Elevator Area"
+    ],
+    "children": [
+      {
+        "name": "Tightrope Chest",
+        "sections": [
+          {
+            "name": "Relic"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "deadbirdstudio",
+            "x": 1415,
+            "y": 1360
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "After Second Lever",
+    "access_rules": [
+      "@DBS Logic/Can access Dead Bird Studio - Post Fast Switch Platform Area"
     ],
     "children": [
       {
@@ -269,21 +292,6 @@
             "map": "deadbirdstudio",
             "x": 1900,
             "y": 1200
-          }
-        ]
-      },
-      {
-        "name": "Tightrope Chest",
-        "sections": [
-          {
-            "name": "Relic"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "deadbirdstudio",
-            "x": 1415,
-            "y": 1360
           }
         ]
       },

@@ -72,10 +72,20 @@
       {
         "name": "Can access Dead Bird Studio - Post Elevator Area",
         "access_rules": [
-          "normal, umbrella, @DBS Logic/Can access Act 1 - Dead Bird Studio",
-          "normal, brewer, @DBS Logic/Can access Act 1 - Dead Bird Studio",
-          "@General Logic/Moderate, @General Logic/Can Hit, @DBS Logic/Can access Act 1 - Dead Bird Studio",
+          "@General Logic/Can Hit, @DBS Logic/Can access Act 1 - Dead Bird Studio",
           "@General Logic/Expert, @DBS Logic/Can access Dead Bird Studio - Elevator Area"
+        ]
+      },
+      {
+        "name": "Can access Dead Bird Studio - Post Fast Switch Platform Area",
+        "access_rules": [
+          // There is a faster moving platform controlled by a switch. When Umbrella Logic is off and the player is on
+          // normal logic difficulty, punching the switch and reaching the moving platform before it leaves is
+          // considered too difficult due to the time Hat Kid spends recoiling in pain.
+          "normal, umbrella, @DBS Logic/Can access Dead Bird Studio - Post Elevator Area",
+          "normal, brewer, @DBS Logic/Can access Dead Bird Studio - Post Elevator Area",
+          "@General Logic/Moderate, @DBS Logic/Can access Dead Bird Studio - Post Elevator Area",
+          "@General Logic/Expert, @DBS Logic/Can access Dead Bird Studio - Post Elevator Area"
         ]
       },
       {
