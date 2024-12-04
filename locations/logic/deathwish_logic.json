@@ -624,7 +624,10 @@
               "@Death Wish/Contract - Boss Rush",
               // Whichever director is currently considered your boss of Dead Bird Basement can be photographed inside
               // Act 1 to get the photo.
-              "[never], @DBS Logic/Can access Act 1 - Dead Bird Studio",
+              // It seems like you need to be able to enter Dead Bird Studio Basement or complete the Award Ceremony for
+              // one of the directors to be considered enemies.
+              "[never], @DBS Logic/Can access Act 1 - Dead Bird Studio, @Act Completions/Act Completion/Award Ceremony",
+              "[never], @DBS Logic/Can access Act 1 - Dead Bird Studio, @DBS Logic/Can access Secret Finale - Dead Bird Studio Basement",
               "[never], @Death Wish/Contract - Seal the Deal"
             ]
           },
@@ -723,7 +726,14 @@
           {
             "name": "Dead Bird Studio",
             "access_rules": [
-              "[never], @DBS Logic/Can access Act 1 - Dead Bird Studio"
+              // It seems like you need to be able to enter Dead Bird Studio Basement or complete the Award Ceremony for
+              // one of the directors to be considered enemies. Without Award Ceremony, the boss is always The
+              // Conductor. Award Ceremony is capable of switching the boss to DJ Grooves even after completing Dead
+              // Bird Studio Basement. Whichever of the directors is considered your current boss is the one you can
+              // photgraph and thus contributes to the Triple enemy photo. You also get the Boss photo from them at the
+              // same time.
+              "[never], @DBS Logic/Can access Act 1 - Dead Bird Studio, @Act Completions/Act Completion/Award Ceremony",
+              "[never], @DBS Logic/Can access Act 1 - Dead Bird Studio, @DBS Logic/Can access Secret Finale - Dead Bird Studio Basement"
             ]
           }
         ]
