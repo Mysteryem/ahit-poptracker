@@ -38,7 +38,7 @@
         "map_locations": [
           {
             "map": "entrances",
-            "x": 250,
+            "x": 247,
             "y": 889
           }
         ],
@@ -51,6 +51,185 @@
             "access_rules": [
               "^$canCompleteActAt|Metro_Escape"
             ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Chapter 7 Free Roam Acts",
+    "visibility_rules": [
+      "dlc2"
+    ],
+    "access_rules": [
+      "@Nyakuza Logic/Can access Free Roam"
+    ],
+    "children": [
+      {
+        "name": "Yellow Overpass Station",
+        "map_locations": [
+          {
+            "map": "entrances",
+            "x": 336,
+            "y": 1173,
+            "shape": "diamond"
+          }
+        ],
+        "sections": [
+          {
+            "name": "Can Enter"
+          },
+          {
+            "name": "Can Complete",
+            "access_rules": [
+              "@Nyakuza Metro/Yellow Overpass Station/Time Piece"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Yellow Overpass Manhole",
+        "access_rules": [
+          // If you can enter, you can get the Time Piece.
+          "@Nyakuza Metro/Yellow Overpass Manhole/Time Piece"
+        ],
+        "map_locations": [
+          {
+            "map": "entrances",
+            "x": 133,
+            "y": 1078,
+            "shape": "diamond"
+          }
+        ],
+        "sections": [
+          {
+            "name": "Can Enter"
+          },
+          {
+            "name": "Can Complete"
+          }
+        ]
+      },
+      {
+        "name": "Green Clean Station",
+        "map_locations": [
+          {
+            "map": "entrances",
+            "x": 358,
+            "y": 1078,
+            "shape": "diamond"
+          }
+        ],
+        "sections": [
+          {
+            "name": "Can Enter"
+          },
+          {
+            "name": "Can Complete",
+            "access_rules": [
+              "@Nyakuza Metro/Green Clean Station/Time Piece"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Green Clean Manhole",
+        "access_rules": [
+          // Dweller Mask is not required to enter.
+          "ice",
+          // Expert can enter with nothing.
+          "@General Logic/Expert"
+        ],
+        "map_locations": [
+          {
+            "map": "entrances",
+            "x": 156,
+            "y": 1173,
+            "shape": "diamond"
+          }
+        ],
+        "sections": [
+          {
+            "name": "Can Enter"
+          },
+          {
+            "name": "Can Complete",
+            "access_rules": [
+              "@Nyakuza Metro/Green Clean Manhole/Time Piece"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Bluefin Tunnel",
+        "access_rules": [
+          "@Nyakuza Logic/Can access Bluefin Tunnel"
+        ],
+        "map_locations": [
+          {
+            "map": "entrances",
+            "x": 295,
+            "y": 1003,
+            "shape": "diamond"
+          }
+        ],
+        "sections": [
+          {
+            "name": "Can Enter"
+          },
+          {
+            "name": "Can Complete",
+            "access_rules": [
+              "@Nyakuza Metro/Bluefin Tunnel/Time Piece"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Pink Paw Station",
+        "access_rules": [
+          "@Nyakuza Logic/Can access Pink Paw Station"
+        ],
+        "map_locations": [
+          {
+            "map": "entrances",
+            "x": 195,
+            "y": 1003,
+            "shape": "diamond"
+          }
+        ],
+        "sections": [
+          {
+            "name": "Can Enter"
+          },
+          {
+            "name": "Can Complete",
+            "access_rules": [
+              "@Nyakuza Metro/Pink Paw Station/Time Piece"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Pink Paw Manhole",
+        "access_rules": [
+          // If you can enter, you can get the Time Piece.
+          "@Nyakuza Metro/Pink Paw Manhole/Time Piece"
+        ],
+        "map_locations": [
+          {
+            "map": "entrances",
+            "x": 247,
+            "y": 1215,
+            "shape": "diamond"
+          }
+        ],
+        "sections": [
+          {
+            "name": "Can Enter"
+          },
+          {
+            "name": "Can Complete"
           }
         ]
       }

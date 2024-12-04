@@ -34,7 +34,7 @@
         "map_locations": [
           {
             "map": "entrances",
-            "x": 250,
+            "x": 247,
             "y": 463
           }
         ],
@@ -46,6 +46,111 @@
             "name": "Can Complete",
             "access_rules": [
               "^$canCompleteActAt|AlpineSkyline_Finale"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Chapter 4 Free Roam Acts",
+    "children": [
+      {
+        "name": "The Windmill",
+        "access_rules": [
+          "@Windmill Zipline/The Windmill"
+        ],
+        "map_locations": [
+          {
+            "map": "entrances",
+            "x": 247,
+            "y": 565,
+            "shape": "diamond"
+          }
+        ],
+        "sections": [
+          {
+            "name": "Can Enter"
+          },
+          {
+            "name": "Can Complete",
+            "access_rules": [
+              "@Windmill Zipline/The Windmill/Time Piece"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "The Birdhouse",
+        "access_rules": [
+          "@Birdhouse Zipline/Bird House"
+        ],
+        "map_locations": [
+          {
+            "map": "entrances",
+            "x": 362,
+            "y": 678,
+            "shape": "diamond"
+          }
+        ],
+        "sections": [
+          {
+            "name": "Can Enter"
+          },
+          {
+            "name": "Can Complete",
+            "access_rules": [
+              "@Birdhouse Zipline/Bird House/Time Piece"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "The Lava Cake",
+        "access_rules": [
+          "@Lava Cake Zipline/Lava Cake"
+        ],
+        "map_locations": [
+          {
+            "map": "entrances",
+            "x": 131,
+            "y": 678,
+            "shape": "diamond"
+          }
+        ],
+        "sections": [
+          {
+            "name": "Can Enter"
+          },
+          {
+            "name": "Can Complete",
+            "access_rules": [
+              "@Lava Cake Zipline/Lava Cake/Time Piece"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "The Twilight Bell",
+        "access_rules": [
+          "@Twilight Bell Zipline/The Twilight Bell"
+        ],
+        "map_locations": [
+          {
+            "map": "entrances",
+            "x": 247,
+            "y": 791,
+            "shape": "diamond"
+          }
+        ],
+        "sections": [
+          {
+            "name": "Can Enter"
+          },
+          {
+            "name": "Can Complete",
+            "access_rules": [
+              "@Twilight Bell Zipline/The Twilight Bell/Time Piece"
             ]
           }
         ]

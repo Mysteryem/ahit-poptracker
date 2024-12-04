@@ -44,6 +44,12 @@ chapter_act_info = {
     TimeRift_Cave_Alps = Act.new(-4, "TimeRift_Cave_Alps", "Chapter Time Rift Entrances/Chapter 4/Time Rift - Alpine Skyline", "Alpine Skyline - Time Rifts/Alpine Skyline (Rift)/Time Rift"),
     TimeRift_Water_Alp_Goats = Act.new(-4, "TimeRift_Water_Alp_Goats", "Chapter Time Rift Entrances/Chapter 4/Time Rift - Twilight Bell", "Alpine Skyline - Time Rifts/The Twilight Bell (Rift)/Time Rift"),
     TimeRift_Water_AlpineSkyline_Cats = Act.new(-4, "TimeRift_Water_AlpineSkyline_Cats", "Chapter Time Rift Entrances/Chapter 4/Time Rift - Curly Tail Trail", "Alpine Skyline - Time Rifts/Curly Tail Trail/Time Rift"),
+    -- Free Roam Acts, so never randomized. Should not be used with `^$canCompleteActAt|<name>` and similar because the
+    -- access rules are static.
+    Alpine_Twilight = Act.new(-4, "Alpine_Twilight", "Chapter 4 Free Roam Acts/The Twilight Bell", "Twilight Bell Zipline/The Twilight Bell/Time Piece"),
+    Alps_Birdhouse = Act.new(-4, "Alps_Birdhouse", "Chapter 4 Free Roam Acts/The Birdhouse", "Birdhouse Zipline/Bird House/Time Piece"),
+    AlpineSkyline_Windmill = Act.new(-4, "AlpineSkyline_Windmill", "Chapter 4 Free Roam Acts/The Windmill", "Windmill Zipline/The Windmill/Time Piece"),
+    AlpineSkyline_WeddingCake = Act.new(-4, "AlpineSkyline_WeddingCake", "Chapter 4 Free Roam Acts/The Lava Cake", "Lava Cake Zipline/Lava Cake/Time Piece"),
 
     TheFinale_FinalBoss = Act.new(5, "TheFinale_FinalBoss", "Chapter 5 Entrances/Act 1 - The Finale", "Spaceship/Time's End/Time Piece"),
     TimeRift_Cave_Tour = Act.new(-5, "TimeRift_Cave_Tour", "The Attic Entrances/Time Rift - Tour", "Spaceship/Tour/Time Rift"),
@@ -56,7 +62,16 @@ chapter_act_info = {
 
     MetroFreeRoam = Act.new(7, "MetroFreeRoam", "Chapter 7 Entrances/Nyakuza Metro Free Roam", nil),
     Metro_Escape = Act.new(7, "Metro_Escape", "Chapter 7 Entrances/Finale - Rush Hour", "Finale/Rush Hour/Time Piece"),
-    Metro_CaveRift_RumbiFactory = Act.new(-7, "Metro_CaveRift_RumbiFactory", "Chapter Time Rift Entrances/Chapter 7/Time Rift - Rumbi Factory", "Nyakuza Metro - Time Rifts/Rumbi Factory/Time Rift")
+    Metro_CaveRift_RumbiFactory = Act.new(-7, "Metro_CaveRift_RumbiFactory", "Chapter Time Rift Entrances/Chapter 7/Time Rift - Rumbi Factory", "Nyakuza Metro - Time Rifts/Rumbi Factory/Time Rift"),
+    -- Free Roam Acts, so never randomized. Should not be used with `^$canCompleteActAt|<name>` and similar because the
+    -- access rules are static.
+    Metro_RouteA = Act.new(-7, "Metro_RouteA", "Chapter 7 Free Roam Acts/Yellow Overpass Station", "Nyakuza Metro/Yellow Overpass Station/Time Piece"),
+    Metro_RouteB = Act.new(-7, "Metro_RouteB", "Chapter 7 Free Roam Acts/Green Clean Station", "Nyakuza Metro/Green Clean Station/Time Piece"),
+    Metro_RouteC = Act.new(-7, "Metro_RouteC", "Chapter 7 Free Roam Acts/Bluefin Tunnel", "Nyakuza Metro/Bluefin Tunnel/Time Piece"),
+    Metro_RouteD = Act.new(-7, "Metro_RouteD", "Chapter 7 Free Roam Acts/Pink Paw Station", "Nyakuza Metro/Pink Paw Station/Time Piece"),
+    Metro_ManholeA = Act.new(-7, "Metro_ManholeA", "Chapter 7 Free Roam Acts/Yellow Overpass Manhole", "Nyakuza Metro/Yellow Overpass Manhole/Time Piece"),
+    Metro_ManholeB = Act.new(-7, "Metro_ManholeB", "Chapter 7 Free Roam Acts/Green Clean Manhole", "Nyakuza Metro/Green Clean Manhole/Time Piece"),
+    Metro_ManholeC = Act.new(-7, "Metro_ManholeC", "Chapter 7 Free Roam Acts/Pink Paw Manhole", "Nyakuza Metro/Pink Paw Manhole/Time Piece"),
 }
 
 -- There is also a `Metro_Intro` time piece, but it is not actually required to unlock the boss act, nor does it show up
