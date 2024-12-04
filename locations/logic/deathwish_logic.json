@@ -550,18 +550,24 @@
           },
           {
             // Not included in logic. Camera Tourist only. The four sitting at a table cracking jokes.
-            // todo: Do the standalone CAW Crows that act like Dead Bird Studio owls/penguins count separately from the
-            // group of four for Camera Tourist? (found on Murder on the Owl Exrpess and Time Rift - Tour)
-            "name": "CAW Crows",
+            "name": "Laughing CAW Crows",
             "access_rules": [
               "[never], @DBS Logic/Can access Act 2 - Murder on the Owl Express",
-              "[never], @DBS Logic/Can access Secret Finale - Dead Bird Studio Basement",
               "[never], @Alpine Logic/Can access Time Rift - Alpine Skyline",
               "[never], @Spaceship Logic/Can access Time Rift - Tour",
               // The Crows are after the hookshot required section.
               "[never], @Dead Bird Basement/Act Completion/Time Piece",
               // In the casino
               "[never], @Cruise Logic/Can access Ship Area"
+            ]
+          },
+          {
+            // Not included in logic. Camera Tourist only. Individual, stealth section Crows, similar to Moon Penguins
+            // and Express Owls in Dead Bird Studio.
+            "name": "Individual CAW Crow",
+            "access_rules": [
+              "[never], @DBS Logic/Can access Act 2 - Murder on the Owl Express",
+              "[never], @Spaceship Logic/Can access Time Rift - Tour"
             ]
           },
           {

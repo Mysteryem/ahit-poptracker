@@ -2246,9 +2246,15 @@
                 ]
               },
               {
-                "name": "CAW Crows (never in logic)",
+                "name": "Laughing CAW Crows (never in logic)",
                 "access_rules": [
-                  "@Death Wish Logic/Enemy Locations - Camera Tourist Extras/CAW Crows"
+                  "@Death Wish Logic/Enemy Locations - Camera Tourist Extras/Laughing CAW Crows"
+                ]
+              },
+              {
+                "name": "Individual CAW Crow (never in logic)",
+                "access_rules": [
+                  "@Death Wish Logic/Enemy Location - Camera Tourist Extras/Individual CAW Crow"
                 ]
               },
               {

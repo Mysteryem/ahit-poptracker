@@ -120,11 +120,13 @@ local camera_tourist_enemy_locations = {
     -- Every enemy below this point is never in logic.
 
     -- The logic counts both types of Ninja Cat as a single enemy for Camera Tourist even though they count separately.
+    -- This is because both types of Ninja Cat count as only a single enemy for Snatcher's Hit List.
     "@Death Wish Logic/Enemy Locations/Other Ninja Cat",
     "@Death Wish Logic/Enemy Locations - Camera Tourist Extras/Alpine Goat",
     "@Death Wish Logic/Enemy Locations - Camera Tourist Extras/Malfunctioning Rumbi",
     "@Death Wish Logic/Enemy Locations - Camera Tourist Extras/Headless Statue",
-    "@Death Wish Logic/Enemy Locations - Camera Tourist Extras/CAW Crows",
+    "@Death Wish Logic/Enemy Locations - Camera Tourist Extras/Laughing CAW Crows",
+    "@Death Wish Logic/Enemy Locations - Camera Tourist Extras/Individual CAW Crow",
     "@Death Wish Logic/Enemy Locations - Camera Tourist Extras/Dead Bird Studio Camera",
     "@Death Wish Logic/Enemy Locations - Camera Tourist Extras/Moon Penguin",
     "@Death Wish Logic/Enemy Locations - Camera Tourist Extras/Purple Time Rift",
