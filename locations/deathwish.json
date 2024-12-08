@@ -2016,7 +2016,7 @@
         ],
         "visibility_rules": [
           "dlc2, dw_mode_normal",
-          "dlc2, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Tokens_Metro"
+          "dlc2, $isShuffleContractPresent|Hat_SnatcherContract_DeathWish_Tokens_Metro"
         ],
         "children": [
           {
