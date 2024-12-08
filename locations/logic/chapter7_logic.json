@@ -33,7 +33,7 @@
         ]
       },
       {
-        "name": "Can access Bluefin Tunnel",
+        "name": "Bluefin Tunnel Tickets",
         "access_rules": [
           "greenticket",
           "blueticket",
@@ -41,7 +41,13 @@
         ]
       },
       {
-        "name": "Can access Pink Paw Station",
+        "name": "Can access Bluefin Tunnel",
+        "access_rules": [
+          "@Nyakuza Logic/Can access Free Roam, @Nyakuza Logic/Bluefin Tunnel Tickets"
+        ]
+      },
+      {
+        "name": "Pink Paw Station Tickets",
         "access_rules": [
           "pinkticket",
           "blueticket, yellowticket",
@@ -49,10 +55,16 @@
         ]
       },
       {
-        "name": "Can access upper Pink Paw Station",
+        "name": "Can access Pink Paw Station",
         "access_rules": [
-          "dweller, hookshot, @Nyakuza Logic/Can access Pink Paw Station",
-          "@General Logic/Moderate, @Nyakuza Logic/Can access Pink Paw Station"
+          "@Nyakuza Logic/Can access Free Roam, @Nyakuza Logic/Pink Paw Station Tickets"
+        ]
+      },
+      {
+        "name": "Upper Pink Paw Station Items",
+        "access_rules": [
+          "dweller, hookshot, @Nyakuza Logic/Pink Paw Station Tickets",
+          "@General Logic/Moderate, @Nyakuza Logic/Pink Paw Station Tickets"
         ]
       },
       {

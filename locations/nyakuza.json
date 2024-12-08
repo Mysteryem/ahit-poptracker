@@ -102,7 +102,7 @@
       {
         "name": "Bluefin Tunnel",
         "access_rules": [
-          "@Nyakuza Logic/Can access Bluefin Tunnel"
+          "@Nyakuza Logic/Bluefin Tunnel Tickets"
         ],
         "sections": [
           {
@@ -120,7 +120,7 @@
       {
         "name": "Pink Paw Station",
         "access_rules": [
-          "@Nyakuza Logic/Can access upper Pink Paw Station"
+          "@Nyakuza Logic/Upper Pink Paw Station Items"
         ],
         "sections": [
           {
@@ -138,7 +138,7 @@
       {
         "name": "Pink Paw Manhole",
         "access_rules": [
-          "ice, @Nyakuza Logic/Can access Pink Paw Station"
+          "ice, @Nyakuza Logic/Pink Paw Station Tickets"
         ],
         "sections": [
           {
@@ -204,7 +204,7 @@
       {
         "name": "Bluefin Tunnel - Cat Vacuum",
         "access_rules": [
-          "@Nyakuza Logic/Can access Bluefin Tunnel"
+          "@Nyakuza Logic/Bluefin Tunnel Tickets"
         ],
         "sections": [
           {
@@ -222,7 +222,7 @@
       {
         "name": "Pink Paw Station - Cat Vacuum",
         "access_rules": [
-          "@Nyakuza Logic/Can access upper Pink Paw Station"
+          "@Nyakuza Logic/Upper Pink Paw Station Items"
         ],
         "sections": [
           {
@@ -240,8 +240,8 @@
       {
         "name": "Pink Paw Station - Behind Fan",
         "access_rules": [
-          "timestop, @Nyakuza Logic/Can access upper Pink Paw Station",
-          "@General Logic/Moderate, @Nyakuza Logic/Can access upper Pink Paw Station"
+          "timestop, @Nyakuza Logic/Upper Pink Paw Station Items",
+          "@General Logic/Moderate, @Nyakuza Logic/Upper Pink Paw Station Items"
         ],
         "sections": [
           {
@@ -333,7 +333,7 @@
       {
         "name": "Pink Ticket Booth",
         "access_rules": [
-          "@Nyakuza Logic/Can access upper Pink Paw Station"
+          "@Nyakuza Logic/Upper Pink Paw Station Items"
         ],
         "sections": [
           {
@@ -366,7 +366,7 @@
       {
         "name": "Blue Ticket Booth",
         "access_rules": [
-          "@Nyakuza Logic/Can access Bluefin Tunnel"
+          "@Nyakuza Logic/Bluefin Tunnel Tickets"
         ],
         "sections": [
           {
@@ -524,7 +524,7 @@
       {
         "name": "Bluefin Tunnel Thug",
         "access_rules": [
-          "@Nyakuza Logic/Can access Bluefin Tunnel"
+          "@Nyakuza Logic/Bluefin Tunnel Tickets"
         ],
         "sections": [
           {
@@ -547,7 +547,7 @@
       {
         "name": "Pink Paw Station Thug",
         "access_rules": [
-          "@Nyakuza Logic/Can access upper Pink Paw Station"
+          "@Nyakuza Logic/Upper Pink Paw Station Items"
         ],
         "sections": [
           {

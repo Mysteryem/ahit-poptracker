@@ -163,7 +163,7 @@
       {
         "name": "Bluefin Tunnel",
         "access_rules": [
-          "@Nyakuza Logic/Can access Bluefin Tunnel"
+          "@Nyakuza Logic/Bluefin Tunnel Tickets"
         ],
         "map_locations": [
           {
@@ -188,7 +188,7 @@
       {
         "name": "Pink Paw Station",
         "access_rules": [
-          "@Nyakuza Logic/Can access Pink Paw Station"
+          "@Nyakuza Logic/Pink Paw Station Tickets"
         ],
         "map_locations": [
           {
