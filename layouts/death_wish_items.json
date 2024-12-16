@@ -47,7 +47,7 @@
         "margin": "0,0",
         "h_alignment": "left",
         "rows": [
-          ["dw_mode", "dw_enable_bonus", "dw_auto_complete_bonuses", "dw_timepiece_requirement"]
+          ["dw_mode", "dw_enable_bonus", "dw_auto_complete_bonuses", "dw_timepiece_requirement", "dw_shuffle_show_locked"]
         ]
       }
     ]

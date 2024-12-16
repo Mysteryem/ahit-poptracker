@@ -48,5 +48,16 @@
     "type": "consumable",
     "img": "images/items/time_piece.png",
     "codes": "dw_timepiece_requirement"
+  },
+  {
+    // Shuffle contracts are only visible in-game once the preceding contract has been completed.
+    // The tracker matches this behaviour by default because it makes it easier to track which contract is next in the
+    // sequence, as well as when Death Wish has been unlocked.
+    // The Archipelago client and web tracker spoil the contracts in the sequence because no locations exist for
+    // contracts that are not in the sequence, so it is OK for the tracker to show all contracts in the sequence.
+    "name": "Show Locked Shuffle Contracts",
+    "type": "toggle",
+    "img": "images/settings/death_wish_shuffle_show_locked.png",
+    "codes": "dw_shuffle_show_locked"
   }
 ]

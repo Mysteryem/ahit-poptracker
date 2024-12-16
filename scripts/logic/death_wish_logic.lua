@@ -54,13 +54,12 @@ function isShuffleContractUnlocked(name)
     local shuffle_number_lookup = death_wish_class_to_shuffle_number or {}
     local shuffle_number = shuffle_number_lookup[name]
     if shuffle_number == nil then
+        -- Contract is not present in the sequence or the player does not have death wish shuffle enabled.
         return false
     end
 
     local completion_count = death_wish_shuffle_completion_count or 0
-    -- TODO
-    -- A contract may not exist in the shuffle sequence, but if it does, then it is only visible once the preceding
-    -- contract has been completed.
+    -- Shuffle contracts are only accessible in-game once the preceding contract has been completed.
     return completion_count >= shuffle_number
 end
 
