@@ -3479,6 +3479,15 @@
                 "access_rules": [
                   "@Death Wish Logic/Triple Enemy Locations/Dead Bird Studio"
                 ]
+              },
+              {
+                "name": "Bluefin Tunnel (never in logic)",
+                "visibility_rules": [
+                  "dlc2"
+                ],
+                "access_rules": [
+                  "@Death Wish Logic/Triple Enemy Locations/Bluefin Tunnel"
+                ]
               }
             ],
             "map_locations": [

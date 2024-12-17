@@ -744,6 +744,14 @@
               "[never], @DBS Logic/Can access Act 1 - Dead Bird Studio, @Act Completions/Act Completion/Award Ceremony",
               "[never], @DBS Logic/Can access Act 1 - Dead Bird Studio, @DBS Logic/Can access Secret Finale - Dead Bird Studio Basement"
             ]
+          },
+          {
+            // Behind the Blue Ticket barrier entrance in Yellow Overpass station, there is both a Pink and Orange Lazy
+            // Paw Ninja Cat. By luring them towards the Rats below, all 3 can be captured in a single photo.
+            "name": "Bluefin Tunnel",
+            "access_rules": [
+              "[never], @Nyakuza Logic/Can access Bluefin Tunnel"
+            ]
           }
         ]
       },
@@ -763,7 +771,8 @@
           // or
           //   b. Conductor + Express Owl + Camera
           // Both are accessible at the start of the level.
-          "@Death Wish Logic/Triple Enemy Locations/Dead Bird Studio"
+          "@Death Wish Logic/Triple Enemy Locations/Dead Bird Studio",
+          "@Death Wish Logic/Triple Enemy Locations/Bluefin Tunnel"
         ]
       },
       {
