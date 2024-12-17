@@ -687,15 +687,15 @@ function changedCompletedEntrances(current, previous)
             if entrance then
                 entrance:markAsCompleted()
                 --print("Player has completed the act at entrance '" .. entrance_name .. "', so the entrance has been cleared")
-            else
-                -- Most likely, it is an act within a free roam act, so has no chapter_act_info entry.
+
                 -- Clear the entrance that has a free roam act if all of the free roam's acts have been completed.
                 if nyakuza_free_roam_act_names[entrance_name] then
                     tryCompleteEntranceWithFreeRoamAct("MetroFreeRoam", nyakuza_free_roam_act_names)
                 elseif alpine_free_roam_act_names[entrance_name] then
                     tryCompleteEntranceWithFreeRoamAct("AlpineFreeRoam", alpine_free_roam_act_names)
                 end
-                --print("Player has completed the act at entrance '" .. entrance_name .. "'")
+            else
+                print("Error: Player has completed the act at the entrance '" .. entrance_name .. "', but no such entrance could be found.")
             end
         else
             --print("Player has re-completed the act at entrance '" .. entrance_name .. "'")
