@@ -408,6 +408,7 @@
               "[never], @Windmill Zipline/Goat Outpost Horn",
               // Actually at Serpentine Bird Horn
               "[never], @Birdhouse Zipline/Bird Pass Fork",
+              // todo: Ember Summit too, or are they Fiery Crows?
             ]
           },
           {
@@ -544,7 +545,9 @@
           {
             "name": "Headless Statue",
             "access_rules": [
-              // There is one near Ice Cube Shack
+              // There is one near Ice Cube Shack, two outside Queen Vanessa's Manor, one on the fountain in the
+              // village, and I think there is also one near the gallows. The one near the Ice Cube Shack is the most
+              // accessible.
               "[never], @Subcon Logic/Can access main Subcon area, @Subcon Logic/Yellow Firewall"
             ]
           },
