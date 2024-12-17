@@ -2442,14 +2442,6 @@
           "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_NoAPresses"
         ],
         "children": [
-          // TODO: Can we add another child whose purpose is to show the logic for each possible Zero Jumps completion?
-          //{
-          //  "name": "Welcome to Mafia Town",
-          //  "ref": "Death Wish/Contract - Zero Jumps/Zero Jumps/Main Objective",
-          //  "access_rules": [
-          //    "@Mafia Town/Welcome to Mafia Town/Time Piece"
-          //  ]
-          //}
           {
             "name": "Zero Jumps",
             "access_rules": [
