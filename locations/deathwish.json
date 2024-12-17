@@ -100,7 +100,11 @@
               {
                 "name": "All Clear",
                 "access_rules": [
-                  "sprint"
+                  // The required times to reach the Time Piece have been increased in the slightly more up-to-date
+                  // version of the game available through the Steam Beta, which probably doesn't need to require Sprint
+                  // any more. Technically it is possible without Sprint even on the older game version with the harder
+                  // pre-patch time requirements, but only just barely for some of the best runners.
+                  "[sprint]"
                 ],
                 "visibility_rules": [
                   "@Death Wish Logic/Bonuses Relevant"
