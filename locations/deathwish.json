@@ -37,6 +37,27 @@
                 "visibility_rules": [
                   "@Death Wish Logic/Bonuses Relevant"
                 ]
+              },
+              {
+                "name": "Main Objective Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png"
+              },
+              {
+                "name": "Bonus 1 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Bonus 2 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
               }
             ],
             "map_locations": [
@@ -84,6 +105,33 @@
                 "visibility_rules": [
                   "@Death Wish Logic/Bonuses Relevant"
                 ]
+              },
+              {
+                "name": "Main Objective Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png"
+              },
+              {
+                "name": "Bonus 1 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "access_rules": [
+                  "@Death Wish/Contract - So You're Back From Outer Space/So You're Back From Outer Space/All Clear"
+                ],
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Bonus 2 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "access_rules": [
+                  "@Death Wish/Contract - So You're Back From Outer Space/So You're Back From Outer Space/All Clear"
+                ],
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
               }
             ],
             "map_locations": [
@@ -123,6 +171,27 @@
               },
               {
                 "name": "All Clear",
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Main Objective Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png"
+              },
+              {
+                "name": "Bonus 1 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Bonus 2 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
                 "visibility_rules": [
                   "@Death Wish Logic/Bonuses Relevant"
                 ]
@@ -166,6 +235,27 @@
                 "visibility_rules": [
                   "@Death Wish Logic/Bonuses Relevant"
                 ]
+              },
+              {
+                "name": "Main Objective Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png"
+              },
+              {
+                "name": "Bonus 1 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Bonus 2 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
               }
             ],
             "map_locations": [
@@ -203,6 +293,27 @@
               },
               {
                 "name": "All Clear",
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Main Objective Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png"
+              },
+              {
+                "name": "Bonus 1 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Bonus 2 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
                 "visibility_rules": [
                   "@Death Wish Logic/Bonuses Relevant"
                 ]
@@ -249,6 +360,27 @@
                 "visibility_rules": [
                   "@Death Wish Logic/Bonuses Relevant"
                 ]
+              },
+              {
+                "name": "Main Objective Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png"
+              },
+              {
+                "name": "Bonus 1 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Bonus 2 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
               }
             ],
             "map_locations": [
@@ -288,6 +420,35 @@
                 "name": "All Clear",
                 "access_rules": [
                   "one_hit_hero"
+                ],
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Main Objective Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png"
+              },
+              {
+                "name": "Bonus 1 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "access_rules": [
+                  // Don't miss your cue to attack
+                  "[@Death Wish/Contract - Encore! Encore!/Encore! Encore!/All Clear]"
+                ],
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Bonus 2 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "access_rules": [
+                  // With One-Hit Hero equipped
+                  "@Death Wish/Contract - Encore! Encore!/Encore! Encore!/All Clear"
                 ],
                 "visibility_rules": [
                   "@Death Wish Logic/Bonuses Relevant"
@@ -332,6 +493,27 @@
               },
               {
                 "name": "All Clear",
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Main Objective Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png"
+              },
+              {
+                "name": "Bonus 1 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Bonus 2 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
                 "visibility_rules": [
                   "@Death Wish Logic/Bonuses Relevant"
                 ]
@@ -381,6 +563,35 @@
                 "visibility_rules": [
                   "@Death Wish Logic/Bonuses Relevant"
                 ]
+              },
+              {
+                "name": "Main Objective Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png"
+              },
+              {
+                "name": "Bonus 1 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "access_rules": [
+                  // Collect all the 9 Conductor Tokens
+                  "[@Death Wish/Contract - 10 Seconds until Self-Destruct/10 Seconds until Self-Destruct/All Clear]"
+                ],
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Bonus 2 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "access_rules": [
+                  // No hat abilities, One-Hit Hero equipped
+                  "@Death Wish/Contract - 10 Seconds until Self-Destruct/10 Seconds until Self-Destruct/All Clear"
+                ],
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
               }
             ],
             "map_locations": [
@@ -418,6 +629,27 @@
               },
               {
                 "name": "All Clear",
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Main Objective Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png"
+              },
+              {
+                "name": "Bonus 1 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Bonus 2 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
                 "visibility_rules": [
                   "@Death Wish Logic/Bonuses Relevant"
                 ]
@@ -462,6 +694,27 @@
                 "visibility_rules": [
                   "@Death Wish Logic/Bonuses Relevant"
                 ]
+              },
+              {
+                "name": "Main Objective Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png"
+              },
+              {
+                "name": "Bonus 1 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Bonus 2 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
               }
             ],
             "map_locations": [
@@ -503,6 +756,27 @@
               },
               {
                 "name": "All Clear",
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Main Objective Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png"
+              },
+              {
+                "name": "Bonus 1 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Bonus 2 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
                 "visibility_rules": [
                   "@Death Wish Logic/Bonuses Relevant"
                 ]
@@ -552,6 +826,35 @@
                 "visibility_rules": [
                   "@Death Wish Logic/Bonuses Relevant"
                 ]
+              },
+              {
+                "name": "Main Objective Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png"
+              },
+              {
+                "name": "Bonus 1 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "access_rules": [
+                  // Don't miss any chance to hit
+                  "[@Death Wish/Contract - Boss Rush/Boss Rush/All Clear]"
+                ],
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Bonus 2 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "access_rules": [
+                  // Win with One-Hit Hero equipped
+                  "@Death Wish/Contract - Boss Rush/Boss Rush/All Clear"
+                ],
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
               }
             ],
             "map_locations": [
@@ -589,6 +892,27 @@
               },
               {
                 "name": "All Clear",
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Main Objective Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png"
+              },
+              {
+                "name": "Bonus 1 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Bonus 2 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
                 "visibility_rules": [
                   "@Death Wish Logic/Bonuses Relevant"
                 ]
@@ -633,6 +957,27 @@
                 "visibility_rules": [
                   "@Death Wish Logic/Bonuses Relevant"
                 ]
+              },
+              {
+                "name": "Main Objective Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png"
+              },
+              {
+                "name": "Bonus 1 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Bonus 2 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
               }
             ],
             "map_locations": [
@@ -674,7 +1019,40 @@
               {
                 "name": "All Clear",
                 "access_rules": [
-                  "one_hit_hero, badge_pin, dweller"
+                  "one_hit_hero, badge_pin, dweller",
+                  // Without Dweller is not considered by logic, but probably should be for Moderate logic and higher.
+                  "one_hit_hero, badge_pin, [dweller], @General Logic/Moderate"
+                ],
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Main Objective Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png"
+              },
+              {
+                "name": "Bonus 1 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "access_rules": [
+                  // With One-Hit Hero equipped
+                  "one_hit_hero, badge_pin, [@Death Wish/Contract - Bird Sanctuary/Bird Sanctuary/All Clear]"
+                ],
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Bonus 2 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "access_rules": [
+                  // Defeat 6 hidden Mafia
+                  // One of the Mafia is in the dweller area.
+                  "dweller, [@Death Wish/Contract - Bird Sanctuary/Bird Sanctuary/All Clear]",
+                  "[dweller], @General Logic/Moderate, [@Death Wish/Contract - Bird Sanctuary/Bird Sanctuary/All Clear]"
                 ],
                 "visibility_rules": [
                   "@Death Wish Logic/Bonuses Relevant"
@@ -722,6 +1100,35 @@
                 "access_rules": [
                   "one_hit_hero, badge_pin",
                   "one_hit_hero, @General Logic/Moderate"
+                ],
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Main Objective Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png"
+              },
+              {
+                "name": "Bonus 1 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "access_rules": [
+                  // No hat abilities, One-Hit Hero equipped
+                  "@Death Wish/Contract - Wound-Up Windmill/Wound-Up Windmill/All Clear"
+                ],
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Bonus 2 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "access_rules": [
+                  // Reach the end in 4 minutes
+                  "[@Death Wish/Contract - Wound-Up Windmill/Wound-Up Windmill/All Clear]"
                 ],
                 "visibility_rules": [
                   "@Death Wish Logic/Bonuses Relevant"
@@ -775,6 +1182,27 @@
                 "visibility_rules": [
                   "@Death Wish Logic/Bonuses Relevant"
                 ]
+              },
+              {
+                "name": "Main Objective Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png"
+              },
+              {
+                "name": "Bonus 1 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Bonus 2 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
               }
             ],
             "map_locations": [
@@ -816,7 +1244,40 @@
               {
                 "name": "All Clear",
                 "access_rules": [
-                  "ice"
+                  "ice",
+                  // todo: Logic does not include umbrella alternative for killing all enemies without using projectiles
+                  "[never], umbrella"
+                ],
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Main Objective Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png"
+              },
+              {
+                "name": "Bonus 1 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "access_rules": [
+                  // Don't get burned
+                  // todo: Can Projectile Badge be used without an Umbrella? Maybe that could work to kill Fiery Crows.
+                  "@Death Wish Logic/Can Safely Defeat Fiery Crows, [@Death Wish/Contract - The Mustache Gauntlet/The Mustache Gauntlet/All Clear]"
+                ],
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Bonus 2 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "access_rules": [
+                  // Don't use any projectile weapons
+                  // Umbrella/Ice Hat required
+                  "@Death Wish/The Mustache Gauntlet/The Mustache Gauntlet/All Clear"
                 ],
                 "visibility_rules": [
                   "@Death Wish Logic/Bonuses Relevant"
@@ -861,6 +1322,27 @@
                 "visibility_rules": [
                   "@Death Wish Logic/Bonuses Relevant"
                 ]
+              },
+              {
+                "name": "Main Objective Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png"
+              },
+              {
+                "name": "Bonus 1 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Bonus 2 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
               }
             ],
             "map_locations": [
@@ -896,6 +1378,27 @@
               },
               {
                 "name": "All Clear",
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Main Objective Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png"
+              },
+              {
+                "name": "Bonus 1 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Bonus 2 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
                 "visibility_rules": [
                   "@Death Wish Logic/Bonuses Relevant"
                 ]
@@ -942,6 +1445,27 @@
                 "visibility_rules": [
                   "@Death Wish Logic/Bonuses Relevant"
                 ]
+              },
+              {
+                "name": "Main Objective Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png"
+              },
+              {
+                "name": "Bonus 1 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Bonus 2 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
               }
             ],
             "map_locations": [
@@ -977,6 +1501,27 @@
               },
               {
                 "name": "All Clear",
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Main Objective Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png"
+              },
+              {
+                "name": "Bonus 1 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Bonus 2 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
                 "visibility_rules": [
                   "@Death Wish Logic/Bonuses Relevant"
                 ]
@@ -1018,6 +1563,27 @@
                 "visibility_rules": [
                   "@Death Wish Logic/Bonuses Relevant"
                 ]
+              },
+              {
+                "name": "Main Objective Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png"
+              },
+              {
+                "name": "Bonus 1 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Bonus 2 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
               }
             ],
             "map_locations": [
@@ -1056,6 +1622,27 @@
                 "visibility_rules": [
                   "@Death Wish Logic/Bonuses Relevant"
                 ]
+              },
+              {
+                "name": "Main Objective Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png"
+              },
+              {
+                "name": "Bonus 1 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Bonus 2 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
               }
             ],
             "map_locations": [
@@ -1091,6 +1678,27 @@
               },
               {
                 "name": "All Clear",
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Main Objective Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png"
+              },
+              {
+                "name": "Bonus 1 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Bonus 2 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
                 "visibility_rules": [
                   "@Death Wish Logic/Bonuses Relevant"
                 ]
@@ -1141,6 +1749,36 @@
                 "visibility_rules": [
                   "@Death Wish Logic/Bonuses Relevant"
                 ]
+              },
+              {
+                "name": "Main Objective Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png"
+              },
+              {
+                "name": "Bonus 1 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "access_rules": [
+                  // Escape with 30 seconds to spare
+                  // Assuming this is possible without Dweller Mask
+                  "[@Death Wish/Contract - Rift Collapse: Deep Sea/Rift Collapse: Deep Sea/All Clear]"
+                ],
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Bonus 2 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                // Collect every Rift Pon
+                "access_rules": [
+                  "@Death Wish/Contract - Rift Collapse: Deep Sea/Rift Collapse: Deep Sea/All Clear"
+                ],
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
               }
             ],
             "map_locations": [
@@ -1179,6 +1817,27 @@
               },
               {
                 "name": "All Clear",
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Main Objective Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png"
+              },
+              {
+                "name": "Bonus 1 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Bonus 2 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
                 "visibility_rules": [
                   "@Death Wish Logic/Bonuses Relevant"
                 ]
@@ -1226,6 +1885,42 @@
                 "visibility_rules": [
                   "@Death Wish Logic/Bonuses Relevant"
                 ]
+              },
+              {
+                "name": "Main Objective Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png"
+              },
+              {
+                "name": "Bonus 1 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "access_rules": [
+                  // Collect every Rift Pon
+                  // Brewer appears to be required because there is a Rift Pon in the upper area of the interior in the
+                  // first area.
+                  // Additionally, there is a Bridge at the end of the penultimate area that may need Brewer.
+                  "@Death Wish/Contract - Community Rift: Twilight Travels/Community Rift: Twilight Travels/All Clear"
+                ],
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Bonus 2 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "access_rules": [
+                  // Collect all the Storybook Pages
+                  // Brewer appears to be required because there is a Storybook Page in the upper area of the interior
+                  // in the first area.
+                  // todo: Maybe you can wall jump to it?
+                  // Additionally, there is a Bridge at the end of the penultimate area that may need Brewer.
+                  "@Death Wish/Contract - Community Rift: Twilight Travels/Community Rift: Twilight Travels/All Clear"
+                ],
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
               }
             ],
             "map_locations": [
@@ -1264,6 +1959,27 @@
               },
               {
                 "name": "All Clear",
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Main Objective Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png"
+              },
+              {
+                "name": "Bonus 1 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Bonus 2 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
                 "visibility_rules": [
                   "@Death Wish Logic/Bonuses Relevant"
                 ]
@@ -1307,8 +2023,10 @@
                 "name": "All Clear",
                 "access_rules": [
                   // There are 12 enemy types to kill for the second part of the bonus.
+                  // The Metro Cat in the Metro Intro does not count and neither does the secret Metro boss.
                   [
-                    "@Death Wish Logic/Enemy Locations/Mafia Goon",
+                    // Inherited from the location's access_rules
+                    // "@Death Wish Logic/Enemy Locations/Mafia Goon",
                     "@Death Wish Logic/Enemy Locations/Sleepy Raccoon",
                     "@Death Wish Logic/Enemy Locations/UFO",
                     "@Death Wish Logic/Enemy Locations/Rat",
@@ -1316,12 +2034,41 @@
                     "@Death Wish Logic/Enemy Locations/Shromb Egg",
                     "@Death Wish Logic/Enemy Locations/Spider",
                     "@Death Wish Logic/Enemy Locations/Crow",
-                    "@Death Wish Logic/Enemy Locations/Pompous Crow",
                     // Also needed for the first part of the bonus.
+                    "@Death Wish Logic/Enemy Locations/Pompous Crow",
                     "@Death Wish Logic/Enemy Locations/Fiery Crow",
                     "@Death Wish Logic/Enemy Locations/Express Owl",
                     "@Death Wish Logic/Enemy Locations/Ninja Cat"
                   ]
+                ],
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Main Objective Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png"
+              },
+              {
+                "name": "Bonus 1 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "access_rules": [
+                  // Kill 10 Alpine Pompous Crows without getting bullied
+                  "@Death Wish Logic/Enemy Locations/Pompous Crow, [@Death Wish/Contract - Snatcher's Hit List/Snatcher's Hit List/All Clear]"
+                ],
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Bonus 2 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "access_rules": [
+                  // Kill every type of enemy
+                  "@Death Wish/Contract - Snatcher's Hit List/Snatcher's Hit List/All Clear"
                 ],
                 "visibility_rules": [
                   "@Death Wish Logic/Bonuses Relevant"
@@ -1466,6 +2213,49 @@
                 "visibility_rules": [
                   "@Death Wish Logic/Bonuses Relevant"
                 ]
+              },
+              {
+                "name": "Main Objective Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png"
+              },
+              {
+                "name": "Bonus 1 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "access_rules": [
+                  // Find 2 Snatcher Coins
+                  [
+                    "[@Death Wish Logic/Snatcher Coins/Mafia Town/Top of HQ]",
+                    "@Death Wish Logic/Snatcher Coins/Mafia Town/Top of Tower",
+                    "@Death Wish Logic/Snatcher Coins/Mafia Town/Under Ruined Tower"
+                  ],
+                  [
+                    "@Death Wish Logic/Snatcher Coins/Mafia Town/Top of HQ",
+                    "[@Death Wish Logic/Snatcher Coins/Mafia Town/Top of Tower]",
+                    "@Death Wish Logic/Snatcher Coins/Mafia Town/Under Ruined Tower"
+                  ],
+                  [
+                    "@Death Wish Logic/Snatcher Coins/Mafia Town/Top of HQ",
+                    "@Death Wish Logic/Snatcher Coins/Mafia Town/Top of Tower",
+                    "[@Death Wish Logic/Snatcher Coins/Mafia Town/Under Ruined Tower]"
+                  ]
+                ],
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Bonus 2 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "access_rules": [
+                  // Find all 3 Snatcher Coins
+                  "@Death Wish/Contract - Snatcher Coins in Mafia Town/Snatcher Coins in Mafia Town/All Clear"
+                ],
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
               }
             ],
             "map_locations": [
@@ -1543,6 +2333,49 @@
                     "@Death Wish Logic/Snatcher Coins/Battle of the Birds/Train Rush",
                     "@Death Wish Logic/Snatcher Coins/Battle of the Birds/Picture Perfect"
                   ]
+                ],
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Main Objective Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png"
+              },
+              {
+                "name": "Bonus 1 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "access_rules": [
+                  // Find 2 Snatcher Coints
+                  [
+                    "[@Death Wish Logic/Snatcher Coins/Battle of the Birds/Top of Red House]",
+                    "@Death Wish Logic/Snatcher Coins/Battle of the Birds/Train Rush",
+                    "@Death Wish Logic/Snatcher Coins/Battle of the Birds/Picture Perfect"
+                  ],
+                  [
+                    "@Death Wish Logic/Snatcher Coins/Battle of the Birds/Top of Red House",
+                    "[@Death Wish Logic/Snatcher Coins/Battle of the Birds/Train Rush]",
+                    "@Death Wish Logic/Snatcher Coins/Battle of the Birds/Picture Perfect"
+                  ],
+                  [
+                    "@Death Wish Logic/Snatcher Coins/Battle of the Birds/Top of Red House",
+                    "@Death Wish Logic/Snatcher Coins/Battle of the Birds/Train Rush",
+                    "[@Death Wish Logic/Snatcher Coins/Battle of the Birds/Picture Perfect]"
+                  ]
+                ],
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Bonus 2 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "access_rules": [
+                  // Find all 3 Snatcher Coins
+                  "@Death Wish/Contract - Snatcher Coins in Battle of the Birds/Snatcher Coins in Battle of the Birds/All Clear"
                 ],
                 "visibility_rules": [
                   "@Death Wish Logic/Bonuses Relevant"
@@ -1656,6 +2489,35 @@
                 "name": "All Clear",
                 "access_rules": [
                   "@Death Wish Logic/Zero Jumps/Train Rush, ^$canCompleteFourZeroJumps"
+                ],
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Main Objective Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png"
+              },
+              {
+                "name": "Bonus 1 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "access_rules": [
+                  // Collect 4 time pieces without jumping
+                  "^$canCompleteFourZeroJumps, [@Death Wish/Contract - Zero Jumps/Zero Jumps/All Clear]"
+                ],
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Bonus 2 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "access_rules": [
+                  // Clear Train Rush without jumping
+                  "@Death Wish Logic/Zero Jumps/Train Rush, [@Death Wish/Contract - Zero Jumps/Zero Jumps/All Clear]"
                 ],
                 "visibility_rules": [
                   "@Death Wish Logic/Bonuses Relevant"
@@ -1920,6 +2782,49 @@
                 "visibility_rules": [
                   "@Death Wish Logic/Bonuses Relevant"
                 ]
+              },
+              {
+                "name": "Main Objective Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png"
+              },
+              {
+                "name": "Bonus 1 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "access_rules": [
+                  // Find 2 Snatcher Coins
+                  [
+                    "[@Death Wish Logic/Snatcher Coins/Subcon Forest/Swamp Tree]",
+                    "@Death Wish Logic/Snatcher Coins/Subcon Forest/Manor Roof",
+                    "@Death Wish Logic/Snatcher Coins/Subcon Forest/Giant Time Piece"
+                  ],
+                  [
+                    "@Death Wish Logic/Snatcher Coins/Subcon Forest/Swamp Tree",
+                    "[@Death Wish Logic/Snatcher Coins/Subcon Forest/Manor Roof]",
+                    "@Death Wish Logic/Snatcher Coins/Subcon Forest/Giant Time Piece"
+                  ],
+                  [
+                    "@Death Wish Logic/Snatcher Coins/Subcon Forest/Swamp Tree",
+                    "@Death Wish Logic/Snatcher Coins/Subcon Forest/Manor Roof",
+                    "[@Death Wish Logic/Snatcher Coins/Subcon Forest/Giant Time Piece]"
+                  ]
+                ],
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Bonus 2 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "access_rules": [
+                  // Find all 3 Snatcher Coins
+                  "@Death Wish/Contract - Snatcher Coins in Subcon Forest/Snatcher Coins in Subcon Forest/All Clear"
+                ],
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
               }
             ],
             "map_locations": [
@@ -1997,6 +2902,49 @@
                     "@Death Wish Logic/Snatcher Coins/Alpine Skyline/Lava Cake",
                     "@Death Wish Logic/Snatcher Coins/Alpine Skyline/Windmill"
                   ]
+                ],
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Main Objective Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png"
+              },
+              {
+                "name": "Bonus 1 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "access_rules": [
+                  // Find 2 Snatcher Coins
+                  [
+                    "[@Death Wish Logic/Snatcher Coins/Alpine Skyline/Goat Village Top]",
+                    "@Death Wish Logic/Snatcher Coins/Alpine Skyline/Lava Cake",
+                    "@Death Wish Logic/Snatcher Coins/Alpine Skyline/Windmill"
+                  ],
+                  [
+                    "@Death Wish Logic/Snatcher Coins/Alpine Skyline/Goat Village Top",
+                    "[@Death Wish Logic/Snatcher Coins/Alpine Skyline/Lava Cake]",
+                    "@Death Wish Logic/Snatcher Coins/Alpine Skyline/Windmill"
+                  ],
+                  [
+                    "@Death Wish Logic/Snatcher Coins/Alpine Skyline/Goat Village Top",
+                    "@Death Wish Logic/Snatcher Coins/Alpine Skyline/Lava Cake",
+                    "[@Death Wish Logic/Snatcher Coins/Alpine Skyline/Windmill]"
+                  ]
+                ],
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Bonus 2 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "access_rules": [
+                  // Find all 3 Snatcher Coins
+                  "@Death Wish/Contract - Snatcher Coins in Alpine Skyline/Snatcher Coins in Alpine Skyline/All Clear"
                 ],
                 "visibility_rules": [
                   "@Death Wish Logic/Bonuses Relevant"
@@ -2084,6 +3032,49 @@
                 "visibility_rules": [
                   "@Death Wish Logic/Bonuses Relevant"
                 ]
+              },
+              {
+                "name": "Main Objective Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png"
+              },
+              {
+                "name": "Bonus 1 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "access_rules": [
+                  // Find 2 Snatcher Coins
+                  [
+                    "[@Death Wish Logic/Snatcher Coins/Nyakuza Metro/Green Clean Tower]",
+                    "@Death Wish Logic/Snatcher Coins/Nyakuza Metro/Bluefin Cat Train",
+                    "@Death Wish Logic/Snatcher Coins/Nyakuza Metro/Pink Paw Fence"
+                  ],
+                  [
+                    "@Death Wish Logic/Snatcher Coins/Nyakuza Metro/Green Clean Tower",
+                    "[@Death Wish Logic/Snatcher Coins/Nyakuza Metro/Bluefin Cat Train]",
+                    "@Death Wish Logic/Snatcher Coins/Nyakuza Metro/Pink Paw Fence"
+                  ],
+                  [
+                    "@Death Wish Logic/Snatcher Coins/Nyakuza Metro/Green Clean Tower",
+                    "@Death Wish Logic/Snatcher Coins/Nyakuza Metro/Bluefin Cat Train",
+                    "[@Death Wish Logic/Snatcher Coins/Nyakuza Metro/Pink Paw Fence]"
+                  ]
+                ],
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Bonus 2 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "access_rules": [
+                  // Find all 3 Snatcher Coins
+                  "@Death Wish/Contract - Snatcher Coins in Nyakuza Metro/Snatcher Coins in Nyakuza Metro/All Clear"
+                ],
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
               }
             ],
             "map_locations": [
@@ -2162,6 +3153,43 @@
                     "@Death Wish Logic/Boss Locations/Snatcher",
                     "@Death Wish Logic/Boss Locations/Toxic Flower",
                     "@Death Wish Logic/Boss Locations/Mustache Girl"
+                  ]
+                ],
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Main Objective Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png"
+              },
+              {
+                "name": "Bonus 1 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "access_rules": [
+                  // Snap a single picture with 3 different enemies in it
+                  "@Death Wish Logic/At Least One Triple Enemy Location, [@Death Wish/Contract - Camera Tourist/Camera Tourist/All Clear]"
+                ],
+                "visibility_rules": [
+                  "@Death Wish Logic/Bonuses Relevant"
+                ]
+              },
+              {
+                "name": "Bonus 2 Complete (Event)",
+                "chest_unopened_img": "images/icons/dw_stamp32.png",
+                "chest_opened_img": "images/icons/dw_stamp_stamped32.png",
+                "access_rules": [
+                  // Snap a picture of every boss
+                  [
+                    "@Death Wish Logic/Boss Locations/Mafia Boss",
+                    "@Death Wish Logic/Boss Locations/Director",
+                    "@Death Wish Logic/Boss Locations/Toilet",
+                    "@Death Wish Logic/Boss Locations/Snatcher",
+                    "@Death Wish Logic/Boss Locations/Toxic Flower",
+                    "@Death Wish Logic/Boss Locations/Mustache Girl",
+                    "[@Death Wish/Contract - Camera Tourist/Camera Tourist/All Clear]"
                   ]
                 ],
                 "visibility_rules": [

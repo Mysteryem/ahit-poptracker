@@ -498,6 +498,23 @@ function onClear(slot_data)
         local logical_stamps = Tracker:FindObjectForCode("logical_stamp")
         logical_stamps.AcquiredCount = 0
 
+        -- Reset cleared contract events.
+        for _, contract_name in pairs(death_wish_classes) do
+            local contract_location_name = string.format("@Death Wish/Contract - %s/%s", contract_name, contract_name)
+
+            -- Reset main objective.
+            local main_objective_event_section_name = contract_location_name.."/Main Objective Complete (Event)"
+            local main_objective_event_section = Tracker:FindObjectForCode(main_objective_event_section_name)
+            main_objective_event_section.AvailableChestCount = main_objective_event_section.ChestCount
+
+            -- Reset bonuses.
+            for i=1,2 do
+                local bonus_event_section_name = string.format("%s/Bonus %i Complete (Event)", contract_location_name, i)
+                local bonus_event_section = Tracker:FindObjectForCode(bonus_event_section_name)
+                bonus_event_section.AvailableChestCount = bonus_event_section.ChestCount
+            end
+        end
+
         local data_storage_request_keys = {}
         if dw_mode == DW_MODE_NORMAL then
             -- # # # # #
@@ -823,6 +840,8 @@ function onDeathWishContractCompleted(contract_class, current, previous)
             if is_complete then
                 current_completion[i] = true
                 stamps.AcquiredCount = stamps.AcquiredCount + 1
+                local contract_name = death_wish_classes[contract_class]
+                local contract_location_name = string.format("@Death Wish/Contract - %s/%s", contract_name, contract_name)
                 if i == 0 then
                     death_wish_shuffle_completion_count = death_wish_shuffle_completion_count + 1
                     logical_stamps.AcquiredCount = logical_stamps.AcquiredCount + 1
@@ -831,17 +850,41 @@ function onDeathWishContractCompleted(contract_class, current, previous)
                                             " should have been completed automatically."))
                         death_wish_remaining_excluded_main_objectives[contract_class] = nil
                     end
+
+                    -- Clear the Main Objective event section.
+                    local main_objective_event_section_name = contract_location_name.."/Main Objective Complete (Event)"
+                    local main_objective_event_section = Tracker:FindObjectForCode(main_objective_event_section_name)
+                    main_objective_event_section.AvailableChestCount = main_objective_event_section.AvailableChestCount - 1
+
                     if death_wish_remaining_excluded_bonuses[contract_class] then
                         -- Act as if the bonuses have also been completed.
                         current = "012"
                         -- Remove the contract from the remaining excluded bonuses.
                         death_wish_remaining_excluded_bonuses[contract_class] = nil
                         print(string.format("Auto-completing excluded bonuses for %s", contract_class))
+
+                        -- todo/fixme: Some of the Bonuses only update when both parts are completed, so maybe we should
+                        -- use only a single event for both bonuses.
+                        -- todo: With one event per main objective/bonus, we could use a location watch to increment the
+                        -- number of stamps.
+                        -- Clear the Bonuse event sections.
+                        for j=1,2 do
+                            local bonus_event_section_name = string.format("%s/Bonus %i Complete (Event)", contract_location_name, j)
+                            local bonus_event_section = Tracker:FindObjectForCode(bonus_event_section_name)
+                            bonus_event_section.AvailableChestCount = bonus_event_section.AvailableChestCount - 1
+                        end
                     end
-                elseif (i == 1 and current_completion[2]) or (i == 2 and current_completion[1]) then
-                    logical_stamps.AcquiredCount = logical_stamps.AcquiredCount + 2
-                    if death_wish_clear_all_clear_manually then
-                        manuallyClearDeathWishAllClearSection(contract_class)
+                else
+                    -- Clear the Bonus event section.
+                    local bonus_event_section_name = string.format("%s/Bonus %i Complete (Event)", contract_location_name, i)
+                    local bonus_event_section = Tracker:FindObjectForCode(bonus_event_section_name)
+                    bonus_event_section.AvailableChestCount = bonus_event_section.AvailableChestCount - 1
+
+                    if (i == 1 and current_completion[2]) or (i == 2 and current_completion[1]) then
+                        logical_stamps.AcquiredCount = logical_stamps.AcquiredCount + 2
+                        if death_wish_clear_all_clear_manually then
+                            manuallyClearDeathWishAllClearSection(contract_class)
+                        end
                     end
                 end
                 print(string.format("Completed death wish contract %s objective %s.", contract_class, i))
