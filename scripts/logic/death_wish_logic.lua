@@ -130,7 +130,6 @@ local camera_tourist_enemy_locations = {
     "@Death Wish Logic/Enemy Locations - Camera Tourist Extras/Moon Penguin",
     "@Death Wish Logic/Enemy Locations - Camera Tourist Extras/Purple Time Rift",
     "@Death Wish Logic/Enemy Locations - Camera Tourist Extras/Goofy Mafia",
-    -- TODO: Check if Subcon Forest Headless Statues count
 }
 
 function canFindEightUniqueEnemiesToTakePicturesOf()
