@@ -508,8 +508,6 @@
         ]
       },
       {
-        // todo: Check if Goofy Mafia counts (he would need to count separately from Mafia Goon) (the one in the
-        // Mailroom does not count as an enemy)
         "name": "Enemy Locations - Camera Tourist Extras",
         "children": [
           {
@@ -602,6 +600,15 @@
               "[never], @Spaceship/Tour/Time Rift",
               "[never], @The Arctic Cruise - Time Rifts/Deep Sea/Time Rift",
               "[never], @Nyakuza Metro - Time Rifts/Rumbi Factory/Time Rift"
+            ]
+          },
+          {
+            // The Goofy Mafia in SCFOS (and presumably Mafia's Jumps) counts separately from Mafia Goons.
+            // The Goofy Mafia in the mailroom and in Heating Up Mafia Town does not count as an enemy.
+            "name": "Goofy Mafia",
+            "access_rules": [
+              "[never], @Mafia Logic/Can access Act 3 - She Came from Outer Space",
+              "[never], @Death Wish/Contract - Mafia's Jumps"
             ]
           }
         ]
