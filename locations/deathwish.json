@@ -3466,9 +3466,9 @@
               },
               {
                 "name": "Time Rift - Tour",
-                // No point showing Tour if the option to exclude it is enabled.
+                // No point showing Tour if the option to exclude it is enabled or DLC1 is not enabled.
                 "visibility_rules": [
-                  "exclude_tour_disabled"
+                  "exclude_tour_disabled, dlc1"
                 ],
                 "access_rules": [
                   "@Death Wish Logic/Triple Enemy Locations/Time Rift - Tour"
