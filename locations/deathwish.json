@@ -48,7 +48,7 @@
                 "chest_unopened_img": "images/icons/dw_stamp32.png",
                 "chest_opened_img": "images/icons/dw_stamp_stamped_x2_32.png",
                 "visibility_rules": [
-                  "@Death Wish Logic/Bonuses Relevant"
+                  "dw_mode_normal"
                 ]
               }
             ],
@@ -115,7 +115,7 @@
                   "@Death Wish/Contract - So You're Back From Outer Space/So You're Back From Outer Space/All Clear"
                 ],
                 "visibility_rules": [
-                  "@Death Wish Logic/Bonuses Relevant"
+                  "dw_mode_normal"
                 ]
               }
             ],
@@ -170,7 +170,7 @@
                 "chest_unopened_img": "images/icons/dw_stamp32.png",
                 "chest_opened_img": "images/icons/dw_stamp_stamped_x2_32.png",
                 "visibility_rules": [
-                  "@Death Wish Logic/Bonuses Relevant"
+                  "dw_mode_normal"
                 ]
               }
             ],
@@ -223,7 +223,7 @@
                 "chest_unopened_img": "images/icons/dw_stamp32.png",
                 "chest_opened_img": "images/icons/dw_stamp_stamped_x2_32.png",
                 "visibility_rules": [
-                  "@Death Wish Logic/Bonuses Relevant"
+                  "dw_mode_normal"
                 ]
               }
             ],
@@ -276,7 +276,7 @@
                 "chest_unopened_img": "images/icons/dw_stamp32.png",
                 "chest_opened_img": "images/icons/dw_stamp_stamped_x2_32.png",
                 "visibility_rules": [
-                  "@Death Wish Logic/Bonuses Relevant"
+                  "dw_mode_normal"
                 ]
               }
             ],
@@ -332,7 +332,7 @@
                 "chest_unopened_img": "images/icons/dw_stamp32.png",
                 "chest_opened_img": "images/icons/dw_stamp_stamped_x2_32.png",
                 "visibility_rules": [
-                  "@Death Wish Logic/Bonuses Relevant"
+                  "dw_mode_normal"
                 ]
               }
             ],
@@ -391,7 +391,7 @@
                   "@Death Wish/Contract - Encore! Encore!/Encore! Encore!/All Clear"
                 ],
                 "visibility_rules": [
-                  "@Death Wish Logic/Bonuses Relevant"
+                  "dw_mode_normal"
                 ]
               }
             ],
@@ -447,7 +447,7 @@
                 "chest_unopened_img": "images/icons/dw_stamp32.png",
                 "chest_opened_img": "images/icons/dw_stamp_stamped_x2_32.png",
                 "visibility_rules": [
-                  "@Death Wish Logic/Bonuses Relevant"
+                  "dw_mode_normal"
                 ]
               }
             ],
@@ -509,7 +509,7 @@
                   "@Death Wish/Contract - 10 Seconds until Self-Destruct/10 Seconds until Self-Destruct/All Clear"
                 ],
                 "visibility_rules": [
-                  "@Death Wish Logic/Bonuses Relevant"
+                  "dw_mode_normal"
                 ]
               }
             ],
@@ -562,7 +562,7 @@
                 "chest_unopened_img": "images/icons/dw_stamp32.png",
                 "chest_opened_img": "images/icons/dw_stamp_stamped_x2_32.png",
                 "visibility_rules": [
-                  "@Death Wish Logic/Bonuses Relevant"
+                  "dw_mode_normal"
                 ]
               }
             ],
@@ -616,7 +616,7 @@
                 "chest_unopened_img": "images/icons/dw_stamp32.png",
                 "chest_opened_img": "images/icons/dw_stamp_stamped_x2_32.png",
                 "visibility_rules": [
-                  "@Death Wish Logic/Bonuses Relevant"
+                  "dw_mode_normal"
                 ]
               }
             ],
@@ -673,7 +673,7 @@
                 "chest_unopened_img": "images/icons/dw_stamp32.png",
                 "chest_opened_img": "images/icons/dw_stamp_stamped_x2_32.png",
                 "visibility_rules": [
-                  "@Death Wish Logic/Bonuses Relevant"
+                  "dw_mode_normal"
                 ]
               }
             ],
@@ -735,7 +735,7 @@
                   "@Death Wish/Contract - Boss Rush/Boss Rush/All Clear"
                 ],
                 "visibility_rules": [
-                  "@Death Wish Logic/Bonuses Relevant"
+                  "dw_mode_normal"
                 ]
               }
             ],
@@ -788,7 +788,7 @@
                 "chest_unopened_img": "images/icons/dw_stamp32.png",
                 "chest_opened_img": "images/icons/dw_stamp_stamped_x2_32.png",
                 "visibility_rules": [
-                  "@Death Wish Logic/Bonuses Relevant"
+                  "dw_mode_normal"
                 ]
               }
             ],
@@ -842,7 +842,7 @@
                 "chest_unopened_img": "images/icons/dw_stamp32.png",
                 "chest_opened_img": "images/icons/dw_stamp_stamped_x2_32.png",
                 "visibility_rules": [
-                  "@Death Wish Logic/Bonuses Relevant"
+                  "dw_mode_normal"
                 ]
               }
             ],
@@ -906,7 +906,7 @@
                   "@Death Wish/Contract - Bird Sanctuary/Bird Sanctuary/All Clear"
                 ],
                 "visibility_rules": [
-                  "@Death Wish Logic/Bonuses Relevant"
+                  "dw_mode_normal"
                 ]
               }
             ],
@@ -969,7 +969,7 @@
                   "@Death Wish/Contract - Wound-Up Windmill/Wound-Up Windmill/All Clear"
                 ],
                 "visibility_rules": [
-                  "@Death Wish Logic/Bonuses Relevant"
+                  "dw_mode_normal"
                 ]
               }
             ],
@@ -1031,7 +1031,7 @@
                 "chest_unopened_img": "images/icons/dw_stamp32.png",
                 "chest_opened_img": "images/icons/dw_stamp_stamped_x2_32.png",
                 "visibility_rules": [
-                  "@Death Wish Logic/Bonuses Relevant"
+                  "dw_mode_normal"
                 ]
               }
             ],
@@ -1095,7 +1095,7 @@
                   "@Death Wish/Contract - The Mustache Gauntlet/The Mustache Gauntlet/All Clear"
                 ],
                 "visibility_rules": [
-                  "@Death Wish Logic/Bonuses Relevant"
+                  "dw_mode_normal"
                 ]
               }
             ],
@@ -1148,7 +1148,7 @@
                 "chest_unopened_img": "images/icons/dw_stamp32.png",
                 "chest_opened_img": "images/icons/dw_stamp_stamped_x2_32.png",
                 "visibility_rules": [
-                  "@Death Wish Logic/Bonuses Relevant"
+                  "dw_mode_normal"
                 ]
               }
             ],
@@ -1199,7 +1199,7 @@
                 "chest_unopened_img": "images/icons/dw_stamp32.png",
                 "chest_opened_img": "images/icons/dw_stamp_stamped_x2_32.png",
                 "visibility_rules": [
-                  "@Death Wish Logic/Bonuses Relevant"
+                  "dw_mode_normal"
                 ]
               }
             ],
@@ -1255,7 +1255,7 @@
                 "chest_unopened_img": "images/icons/dw_stamp32.png",
                 "chest_opened_img": "images/icons/dw_stamp_stamped_x2_32.png",
                 "visibility_rules": [
-                  "@Death Wish Logic/Bonuses Relevant"
+                  "dw_mode_normal"
                 ]
               }
             ],
@@ -1306,7 +1306,7 @@
                 "chest_unopened_img": "images/icons/dw_stamp32.png",
                 "chest_opened_img": "images/icons/dw_stamp_stamped_x2_32.png",
                 "visibility_rules": [
-                  "@Death Wish Logic/Bonuses Relevant"
+                  "dw_mode_normal"
                 ]
               }
             ],
@@ -1357,7 +1357,7 @@
                 "chest_unopened_img": "images/icons/dw_stamp32.png",
                 "chest_opened_img": "images/icons/dw_stamp_stamped_x2_32.png",
                 "visibility_rules": [
-                  "@Death Wish Logic/Bonuses Relevant"
+                  "dw_mode_normal"
                 ]
               }
             ],
@@ -1408,7 +1408,7 @@
                 "chest_unopened_img": "images/icons/dw_stamp32.png",
                 "chest_opened_img": "images/icons/dw_stamp_stamped_x2_32.png",
                 "visibility_rules": [
-                  "@Death Wish Logic/Bonuses Relevant"
+                  "dw_mode_normal"
                 ]
               }
             ],
@@ -1459,7 +1459,7 @@
                 "chest_unopened_img": "images/icons/dw_stamp32.png",
                 "chest_opened_img": "images/icons/dw_stamp_stamped_x2_32.png",
                 "visibility_rules": [
-                  "@Death Wish Logic/Bonuses Relevant"
+                  "dw_mode_normal"
                 ]
               }
             ],
@@ -1522,7 +1522,7 @@
                   "@Death Wish/Contract - Rift Collapse: Deep Sea/Rift Collapse: Deep Sea/All Clear"
                 ],
                 "visibility_rules": [
-                  "@Death Wish Logic/Bonuses Relevant"
+                  "dw_mode_normal"
                 ]
               }
             ],
@@ -1576,7 +1576,7 @@
                 "chest_unopened_img": "images/icons/dw_stamp32.png",
                 "chest_opened_img": "images/icons/dw_stamp_stamped_x2_32.png",
                 "visibility_rules": [
-                  "@Death Wish Logic/Bonuses Relevant"
+                  "dw_mode_normal"
                 ]
               }
             ],
@@ -1636,7 +1636,7 @@
                   "@Death Wish/Contract - Community Rift: Twilight Travels/Community Rift: Twilight Travels/All Clear"
                 ],
                 "visibility_rules": [
-                  "@Death Wish Logic/Bonuses Relevant"
+                  "dw_mode_normal"
                 ]
               }
             ],
@@ -1690,7 +1690,7 @@
                 "chest_unopened_img": "images/icons/dw_stamp32.png",
                 "chest_opened_img": "images/icons/dw_stamp_stamped_x2_32.png",
                 "visibility_rules": [
-                  "@Death Wish Logic/Bonuses Relevant"
+                  "dw_mode_normal"
                 ]
               }
             ],
@@ -1767,7 +1767,7 @@
                   "@Death Wish/Contract - Snatcher's Hit List/Snatcher's Hit List/All Clear"
                 ],
                 "visibility_rules": [
-                  "@Death Wish Logic/Bonuses Relevant"
+                  "dw_mode_normal"
                 ]
               }
             ],
@@ -1923,7 +1923,7 @@
                   "@Death Wish/Contract - Snatcher Coins in Mafia Town/Snatcher Coins in Mafia Town/All Clear"
                 ],
                 "visibility_rules": [
-                  "@Death Wish Logic/Bonuses Relevant"
+                  "dw_mode_normal"
                 ]
               }
             ],
@@ -2020,7 +2020,7 @@
                   "@Death Wish/Contract - Snatcher Coins in Battle of the Birds/Snatcher Coins in Battle of the Birds/All Clear"
                 ],
                 "visibility_rules": [
-                  "@Death Wish Logic/Bonuses Relevant"
+                  "dw_mode_normal"
                 ]
               }
             ],
@@ -2141,7 +2141,7 @@
                   "@Death Wish/Contract - Zero Jumps/Zero Jumps/All Clear"
                 ],
                 "visibility_rules": [
-                  "@Death Wish Logic/Bonuses Relevant"
+                  "dw_mode_normal"
                 ]
               }
             ],
@@ -2417,7 +2417,7 @@
                   "@Death Wish/Contract - Snatcher Coins in Subcon Forest/Snatcher Coins in Subcon Forest/All Clear"
                 ],
                 "visibility_rules": [
-                  "@Death Wish Logic/Bonuses Relevant"
+                  "dw_mode_normal"
                 ]
               }
             ],
@@ -2514,7 +2514,7 @@
                   "@Death Wish/Contract - Snatcher Coins in Alpine Skyline/Snatcher Coins in Alpine Skyline/All Clear"
                 ],
                 "visibility_rules": [
-                  "@Death Wish Logic/Bonuses Relevant"
+                  "dw_mode_normal"
                 ]
               }
             ],
@@ -2613,7 +2613,7 @@
                   "@Death Wish/Contract - Snatcher Coins in Nyakuza Metro/Snatcher Coins in Nyakuza Metro/All Clear"
                 ],
                 "visibility_rules": [
-                  "@Death Wish Logic/Bonuses Relevant"
+                  "dw_mode_normal"
                 ]
               }
             ],
@@ -2712,7 +2712,7 @@
                   "@Death Wish/Contract - Camera Tourist/Camera Tourist/All Clear"
                 ],
                 "visibility_rules": [
-                  "@Death Wish Logic/Bonuses Relevant"
+                  "dw_mode_normal"
                 ]
               }
             ],
