@@ -839,6 +839,7 @@ function onDeathWishContractCompleted(contract_class, current, previous)
                 --stamps.AcquiredCount = stamps.AcquiredCount + 1
                 local contract_name = death_wish_classes[contract_class]
                 local contract_location_name = string.format("@Death Wish/Contract - %s/%s", contract_name, contract_name)
+                local clear_all_clear_event = false
                 if i == 0 then
                     death_wish_shuffle_completion_count = death_wish_shuffle_completion_count + 1
                     logical_stamps.AcquiredCount = logical_stamps.AcquiredCount + 1
@@ -859,19 +860,27 @@ function onDeathWishContractCompleted(contract_class, current, previous)
                         -- Remove the contract from the remaining excluded bonuses.
                         death_wish_remaining_excluded_bonuses[contract_class] = nil
                         print(string.format("Auto-completing excluded bonuses for %s", contract_class))
-
-                        -- Clear the All Clear event section.
-                        local all_clear_event_section_name = string.format("%s/All Clear Complete (Event)", contract_location_name)
-                        local all_clear_event_section = Tracker:FindObjectForCode(all_clear_event_section_name)
-                        all_clear_event_section.AvailableChestCount = all_clear_event_section.AvailableChestCount - 1
+                        clear_all_clear_event = true
+                    elseif current_completion[1] and current_completion[2] then
+                        -- In a rare cases, e.g. Camera Tourist, it is technically possible to complete both bonuses
+                        -- before completing the main objective.
+                        -- Currently, contracts are only updated in datastorage when the main objective is completed or
+                        -- when the contract is fully cleared, so it is not currently possible for a bonus to be marked
+                        -- as complete without the main objective also being marked as complete. If this changes in the
+                        -- future, such that completing any part of a contract updates the value in datastorage, then
+                        -- this case could occur, so it is accounted for here.
+                        clear_all_clear_event = true
                     end
-                elseif (i == 1 and current_completion[2]) or (i == 2 and current_completion[1]) then
-                    -- Clear the All Clear event section
+                elseif current_completion[0] and ((i == 1 and current_completion[2]) or (i == 2 and current_completion[1])) then
+                    -- The contract has been fully cleared
+                    clear_all_clear_event = true
+                    logical_stamps.AcquiredCount = logical_stamps.AcquiredCount + 2
+                end
+                if clear_all_clear_event then
+                    -- Clear the All Clear event section.
                     local all_clear_event_section_name = string.format("%s/All Clear Complete (Event)", contract_location_name)
                     local all_clear_event_section = Tracker:FindObjectForCode(all_clear_event_section_name)
                     all_clear_event_section.AvailableChestCount = all_clear_event_section.AvailableChestCount - 1
-
-                    logical_stamps.AcquiredCount = logical_stamps.AcquiredCount + 2
                 end
                 print(string.format("Completed death wish contract %s objective %s.", contract_class, i))
                 --print("New stamp count: "..tostring(stamps.AcquiredCount))
