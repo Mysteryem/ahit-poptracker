@@ -715,7 +715,7 @@ end
 
 function checkDeathWishAutoCompletions()
     local stamps = Tracker:FindObjectForCode("stamp")
-    -- Logic only counts stamps from bonuses when both parts of the bonus are completed.
+    -- Logic only counts stamps from bonuses when the contract is fully completed.
     local logical_stamps = Tracker:FindObjectForCode("logical_stamp")
 
     local stamp_count = stamps.AcquiredCount
@@ -746,6 +746,9 @@ function checkDeathWishAutoCompletions()
                         completion_state = {}
                         death_wish_completions[contract] = completion_state
                     end
+                    local contract_name = death_wish_classes[contract]
+                    local contract_location_name = string.format("@Death Wish/Contract - %s/%s", contract_name, contract_name)
+
                     -- An excluded main objective auto-completes everything.
                     local stamps_to_add = 0
                     local logical_stamps_to_add = 0
@@ -753,6 +756,11 @@ function checkDeathWishAutoCompletions()
                         completion_state[0] = true
                         stamps_to_add = stamps_to_add + 1
                         logical_stamps_to_add = logical_stamps_to_add + 1
+
+                        -- Clear the Main Objective event section.
+                        local main_objective_event_section_name = contract_location_name.."/Main Objective Complete (Event)"
+                        local main_objective_event_section = Tracker:FindObjectForCode(main_objective_event_section_name)
+                        main_objective_event_section.AvailableChestCount = main_objective_event_section.AvailableChestCount - 1
                     end
 
                     local auto_completing_bonus = false
@@ -772,6 +780,11 @@ function checkDeathWishAutoCompletions()
                         -- from excluded bonuses if this is not the case (maybe manually excluded bonuses could cause
                         -- this?).
                         death_wish_remaining_excluded_bonuses[contract] = nil
+
+                        -- Clear the All Clear event section.
+                        local all_clear_event_section_name = string.format("%s/All Clear Complete (Event)", contract_location_name)
+                        local all_clear_event_section = Tracker:FindObjectForCode(all_clear_event_section_name)
+                        all_clear_event_section.AvailableChestCount = all_clear_event_section.AvailableChestCount - 1
                     end
 
                     -- Loop again in-case auto-completing the contract unlocks additional contracts that also
