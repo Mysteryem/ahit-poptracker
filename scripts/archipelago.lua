@@ -481,8 +481,10 @@ function onClear(slot_data)
         setFromSlotData('DWTimePieceRequirement', "dw_timepiece_requirement")
 
         -- Stamps are calculated from completed contracts.
-        local stamps = Tracker:FindObjectForCode("stamp")
-        stamps.AcquiredCount = 0
+        -- Tracking exact stamp counts is not currently possible, e.g. partial bonus completion. Only Main Objective
+        -- completion for +1 stamp and All Clear for +2 stamps can be tracked accurately currently.
+        --local stamps = Tracker:FindObjectForCode("stamp")
+        --stamps.AcquiredCount = 0
         local logical_stamps = Tracker:FindObjectForCode("logical_stamp")
         logical_stamps.AcquiredCount = 0
 
@@ -714,11 +716,12 @@ function changedCompletedEntrances(current, previous)
 end
 
 function checkDeathWishAutoCompletions()
-    local stamps = Tracker:FindObjectForCode("stamp")
+    --local stamps = Tracker:FindObjectForCode("stamp")
     -- Logic only counts stamps from bonuses when the contract is fully completed.
     local logical_stamps = Tracker:FindObjectForCode("logical_stamp")
 
-    local stamp_count = stamps.AcquiredCount
+    -- The real stamp count cannot be tracked accurately currently, so we have to use the logical stamp count instead.
+    local stamp_count = logical_stamps.AcquiredCount
 
     local changed
     repeat
@@ -750,11 +753,11 @@ function checkDeathWishAutoCompletions()
                     local contract_location_name = string.format("@Death Wish/Contract - %s/%s", contract_name, contract_name)
 
                     -- An excluded main objective auto-completes everything.
-                    local stamps_to_add = 0
+                    --local stamps_to_add = 0
                     local logical_stamps_to_add = 0
                     if not completion_state[0] then
                         completion_state[0] = true
-                        stamps_to_add = stamps_to_add + 1
+                        --stamps_to_add = stamps_to_add + 1
                         logical_stamps_to_add = logical_stamps_to_add + 1
 
                         -- Clear the Main Objective event section.
@@ -766,12 +769,12 @@ function checkDeathWishAutoCompletions()
                     local auto_completing_bonus = false
                     if not completion_state[1] then
                         completion_state[1] = true
-                        stamps_to_add = stamps_to_add + 1
+                        --stamps_to_add = stamps_to_add + 1
                         auto_completing_bonus = true
                     end
                     if not completion_state[2] then
                         completion_state[2] = true
-                        stamps_to_add = stamps_to_add + 1
+                        --stamps_to_add = stamps_to_add + 1
                         auto_completing_bonus = true
                     end
                     if auto_completing_bonus then
@@ -790,7 +793,7 @@ function checkDeathWishAutoCompletions()
                     -- Loop again in-case auto-completing the contract unlocks additional contracts that also
                     -- auto-complete.
                     changed = true
-                    stamps.AcquiredCount = stamps.AcquiredCount + stamps_to_add
+                    --stamps.AcquiredCount = stamps.AcquiredCount + stamps_to_add
                     logical_stamps.AcquiredCount = logical_stamps.AcquiredCount + logical_stamps_to_add
                     -- Remove the excluded contract from the next loop
                     death_wish_remaining_excluded_main_objectives[contract] = nil
@@ -803,7 +806,7 @@ end
 function onDeathWishContractCompleted(contract_class, current, previous)
     current = current or ""
 
-    local stamps = Tracker:FindObjectForCode("stamp")
+    --local stamps = Tracker:FindObjectForCode("stamp")
     -- Logic only counts stamps from bonuses when both parts of the bonus are complete.
     local logical_stamps = Tracker:FindObjectForCode("logical_stamp")
 
@@ -833,7 +836,7 @@ function onDeathWishContractCompleted(contract_class, current, previous)
             changed = true
             if is_complete then
                 current_completion[i] = true
-                stamps.AcquiredCount = stamps.AcquiredCount + 1
+                --stamps.AcquiredCount = stamps.AcquiredCount + 1
                 local contract_name = death_wish_classes[contract_class]
                 local contract_location_name = string.format("@Death Wish/Contract - %s/%s", contract_name, contract_name)
                 if i == 0 then

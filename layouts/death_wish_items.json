@@ -12,7 +12,7 @@
         "h_alignment": "center",
         "rows": [
           ["timepiece", "yarn"],
-          ["stamp", "logical_stamp"]
+          ["logical_stamp"]
         ]
       }
     ]

@@ -481,15 +481,20 @@
     "codes": "one_hit_hero"
   },
   {
+    // Real stamp count. It is not currently possible to track this accurately.
     "name": "Death Wish Stamp",
     "type": "consumable",
     "img": "images/items/dw_stamp.png",
     "codes": "stamp"
   },
   {
-    "name": "Logical Death Wish Stamp",
+    // Logical stamp count. Updates upon completing a main objective or fully clearing a contract.
+    // If real stamp count could be tracked, it would be possible to show that some contracts can be accessed
+    // out-of-logic using stamps from partially completed bonuses or bonuses completed without completing the main
+    // objective.
+    "name": "Death Wish Stamp",
     "type": "consumable",
-    "img": "images/items/dw_logical_stamp.png",
+    "img": "images/items/dw_stamp.png",
     "codes": "logical_stamp"
   }
 ]

@@ -68,8 +68,7 @@
           "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_BackFromSpace",
           [
             "dw_mode_normal",
-            "stamp:2",
-            "[logical_stamp:2]",
+            "logical_stamp:2",
             "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_HeatingUpHarder"
           ]
         ],
@@ -190,8 +189,7 @@
           "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_PonFrenzy",
           [
             "dw_mode_normal",
-            "stamp:5",
-            "[logical_stamp:5]",
+            "logical_stamp:5",
             "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_BackFromSpace"
           ]
         ],
@@ -243,8 +241,7 @@
           "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Speedrun_MafiaAlien",
           [
             "dw_mode_normal",
-            "stamp:8",
-            "[logical_stamp:8]",
+            "logical_stamp:8",
             "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_RiftCollapse_MafiaTown"
           ]
         ],
@@ -352,8 +349,7 @@
           "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_MafiaBossEX",
           [
             "dw_mode_normal",
-            "stamp:10",
-            "[logical_stamp:10]",
+            "logical_stamp:10",
             "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_PonFrenzy"
           ]
         ],
@@ -411,8 +407,7 @@
           "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_DeadBirdStudioMoreGuards",
           [
             "dw_mode_normal",
-            "stamp:4",
-            "[logical_stamp:4]",
+            "logical_stamp:4",
             "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_HeatingUpHarder"
           ]
         ],
@@ -467,8 +462,7 @@
           "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_TrainRushShortTime",
           [
             "dw_mode_normal",
-            "stamp:15",
-            "[logical_stamp:15]",
+            "logical_stamp:15",
             "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_DifficultParade"
           ]
         ],
@@ -529,8 +523,7 @@
           "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_DifficultParade",
           [
             "dw_mode_normal",
-            "stamp:7",
-            "[logical_stamp:7]",
+            "logical_stamp:7",
             "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_DeadBirdStudioMoreGuards"
           ]
         ],
@@ -582,8 +575,7 @@
           "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_BirdBossEX",
           [
             "dw_mode_normal",
-            "stamp:25",
-            "[logical_stamp:25]",
+            "logical_stamp:25",
             "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_RiftCollapse_Birds",
             "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_TrainRushShortTime"
           ]
@@ -636,8 +628,7 @@
           "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Speedrun_SubWell",
           [
             "dw_mode_normal",
-            "stamp:10",
-            "[logical_stamp:10]",
+            "logical_stamp:10",
             "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_HeatingUpHarder"
           ]
         ],
@@ -693,8 +684,7 @@
           "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_BossRush",
           [
             "dw_mode_normal",
-            "stamp:15",
-            "[logical_stamp:15]",
+            "logical_stamp:15",
             "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_Speedrun_SubWell"
           ]
         ],
@@ -755,8 +745,7 @@
           "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_SurvivalOfTheFittest",
           [
             "dw_mode_normal",
-            "stamp:20",
-            "[logical_stamp:20]",
+            "logical_stamp:20",
             "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_RiftCollapse_Subcon"
           ]
         ],
@@ -808,8 +797,7 @@
           "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_SnatcherEX",
           [
             "dw_mode_normal",
-            "stamp:40",
-            "[logical_stamp:40]",
+            "logical_stamp:40",
             "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_BossRush",
             "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_SurvivalOfTheFittest"
           ]
@@ -862,8 +850,7 @@
           "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_NiceBirdhouse",
           [
             "dw_mode_normal",
-            "stamp:15",
-            "[logical_stamp:15]",
+            "logical_stamp:15",
             "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_HeatingUpHarder"
           ]
         ],
@@ -926,8 +913,7 @@
           "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_FastWindmill",
           [
             "dw_mode_normal",
-            "stamp:30",
-            "[logical_stamp:30]",
+            "logical_stamp:30",
             "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_NiceBirdhouse"
           ]
         ],
@@ -989,8 +975,7 @@
           "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Speedrun_Illness",
           [
             "dw_mode_normal",
-            "stamp:35",
-            "[logical_stamp:35]",
+            "logical_stamp:35",
             "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_RiftCollapse_Alps",
             "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_FastWindmill"
           ]
@@ -1051,8 +1036,7 @@
           "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_HardCastle",
           [
             "dw_mode_normal",
-            "stamp:35",
-            "[logical_stamp:35]",
+            "logical_stamp:35",
             "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_FastWindmill"
           ]
         ],
@@ -1115,8 +1099,7 @@
           "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_MuGirlEX",
           [
             "dw_mode_normal",
-            "stamp:50",
-            "[logical_stamp:50]",
+            "logical_stamp:50",
             "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_HardCastle"
           ]
         ],
@@ -1219,8 +1202,7 @@
           "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_BossRushEX",
           [
             "dw_mode_normal",
-            "stamp:70",
-            "[logical_stamp:70]",
+            "logical_stamp:70",
             "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_MafiaBossEX",
             "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_BirdBossEX",
             "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_SnatcherEX",
@@ -2565,8 +2547,7 @@
           "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Tokens_Metro",
           [
             "dw_mode_normal",
-            "stamp:30",
-            "[logical_stamp:30]",
+            "logical_stamp:30",
             "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_BirdBossEX"
           ]
         ],
