@@ -186,7 +186,6 @@ death_wish_shuffle_completion_count = 0
 death_wish_completions = {}
 death_wish_remaining_excluded_main_objectives = {}
 death_wish_remaining_excluded_bonuses = {}
-death_wish_clear_all_clear_manually = false
 DW_MODE_NORMAL = 0
 DW_MODE_SHUFFLE = 1
 
@@ -475,22 +474,11 @@ function onClear(slot_data)
         death_wish_completions = {}
         death_wish_remaining_excluded_main_objectives = {}
         death_wish_remaining_excluded_bonuses = {}
-        death_wish_clear_all_clear_manually = false
 
         setFromSlotData('DWEnableBonus', "dw_enable_bonus")
         setFromSlotData('DWAutoCompleteBonuses', "dw_auto_complete_bonuses")
         setFromSlotData('DWShuffle', "dw_mode") -- 0: normal, 1: shuffle
         setFromSlotData('DWTimePieceRequirement', "dw_timepiece_requirement")
-
-        local dw_mode = Tracker:FindObjectForCode("dw_mode").CurrentStage
-        local bonuses_enabled = Tracker:FindObjectForCode("dw_enable_bonus").Active
-        local auto_complete_bonuses = Tracker:FindObjectForCode("dw_auto_complete_bonuses").CurrentStage == 1
-
-        -- In normal mode, if bonuses are not enabled (as checks), but do not auto-complete, then their sections must be
-        -- cleared manually.
-        if dw_mode == DW_MODE_NORMAL and not bonuses_enabled and not auto_complete_bonuses then
-            death_wish_clear_all_clear_manually = true
-        end
 
         -- Stamps are calculated from completed contracts.
         local stamps = Tracker:FindObjectForCode("stamp")
@@ -514,6 +502,7 @@ function onClear(slot_data)
         end
 
         local data_storage_request_keys = {}
+        local dw_mode = Tracker:FindObjectForCode("dw_mode").CurrentStage
         if dw_mode == DW_MODE_NORMAL then
             -- # # # # #
             -- DW Normal
@@ -724,14 +713,6 @@ function changedCompletedEntrances(current, previous)
     --print(dump_table(current))
 end
 
-function manuallyClearDeathWishAllClearSection(contract_class)
-    local contract_name = death_wish_classes[contract_class]
-    local all_clear_section_name = string.format("@Death Wish/Contract - %s/%s/All Clear",
-                                                 contract_name, contract_name)
-    local all_clear_section = Tracker:FindObjectForCode(all_clear_section_name)
-    all_clear_section.AvailableChestCount = all_clear_section.AvailableChestCount - 1
-end
-
 function checkDeathWishAutoCompletions()
     local stamps = Tracker:FindObjectForCode("stamp")
     -- Logic only counts stamps from bonuses when both parts of the bonus are completed.
@@ -791,9 +772,6 @@ function checkDeathWishAutoCompletions()
                         -- from excluded bonuses if this is not the case (maybe manually excluded bonuses could cause
                         -- this?).
                         death_wish_remaining_excluded_bonuses[contract] = nil
-                        if death_wish_clear_all_clear_manually then
-                            manuallyClearDeathWishAllClearSection(contract)
-                        end
                     end
 
                     -- Loop again in-case auto-completing the contract unlocks additional contracts that also
@@ -878,9 +856,6 @@ function onDeathWishContractCompleted(contract_class, current, previous)
                     all_clear_event_section.AvailableChestCount = all_clear_event_section.AvailableChestCount - 1
 
                     logical_stamps.AcquiredCount = logical_stamps.AcquiredCount + 2
-                    if death_wish_clear_all_clear_manually then
-                        manuallyClearDeathWishAllClearSection(contract_class)
-                    end
                 end
                 print(string.format("Completed death wish contract %s objective %s.", contract_class, i))
                 --print("New stamp count: "..tostring(stamps.AcquiredCount))
