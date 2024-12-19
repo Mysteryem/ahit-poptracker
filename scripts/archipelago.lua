@@ -508,11 +508,9 @@ function onClear(slot_data)
             main_objective_event_section.AvailableChestCount = main_objective_event_section.ChestCount
 
             -- Reset bonuses.
-            for i=1,2 do
-                local bonus_event_section_name = string.format("%s/Bonus %i Complete (Event)", contract_location_name, i)
-                local bonus_event_section = Tracker:FindObjectForCode(bonus_event_section_name)
-                bonus_event_section.AvailableChestCount = bonus_event_section.ChestCount
-            end
+            local all_clear_event_section_name = string.format("%s/All Clear Complete (Event)", contract_location_name)
+            local all_clear_event_section = Tracker:FindObjectForCode(all_clear_event_section_name)
+            all_clear_event_section.AvailableChestCount = all_clear_event_section.ChestCount
         end
 
         local data_storage_request_keys = {}
@@ -834,6 +832,11 @@ function onDeathWishContractCompleted(contract_class, current, previous)
         -- String contains "2" if the second part of the bonus is complete.
         -- I have seen a string be "0012". I have no idea how that can happen, but the code here handles that odd case
         -- without issue.
+        -- The AHiT AP mod only updates contracts in datastorage when the main objective gets completed or when the
+        -- contract is fully completed. If the main objective and one bonus are completed simultaneously, or a bonus is
+        -- completed before the main objective, and then the main objective is completed afterward, datastorage for the
+        -- contract can end up as "01" or "02". Completing only the main objective sets "0", but completing only bonus 1
+        -- or 2 after that will not update datastorage until both bonuses are completed.
         local is_complete = string.find(current, tostring(i)) ~= nil
         if is_complete ~= already_complete then
             changed = true
@@ -863,28 +866,20 @@ function onDeathWishContractCompleted(contract_class, current, previous)
                         death_wish_remaining_excluded_bonuses[contract_class] = nil
                         print(string.format("Auto-completing excluded bonuses for %s", contract_class))
 
-                        -- todo/fixme: Some of the Bonuses only update when both parts are completed, so maybe we should
-                        -- use only a single event for both bonuses.
-                        -- todo: With one event per main objective/bonus, we could use a location watch to increment the
-                        -- number of stamps.
-                        -- Clear the Bonuse event sections.
-                        for j=1,2 do
-                            local bonus_event_section_name = string.format("%s/Bonus %i Complete (Event)", contract_location_name, j)
-                            local bonus_event_section = Tracker:FindObjectForCode(bonus_event_section_name)
-                            bonus_event_section.AvailableChestCount = bonus_event_section.AvailableChestCount - 1
-                        end
+                        -- Clear the All Clear event section.
+                        local all_clear_event_section_name = string.format("%s/All Clear Complete (Event)", contract_location_name)
+                        local all_clear_event_section = Tracker:FindObjectForCode(all_clear_event_section_name)
+                        all_clear_event_section.AvailableChestCount = all_clear_event_section.AvailableChestCount - 1
                     end
-                else
-                    -- Clear the Bonus event section.
-                    local bonus_event_section_name = string.format("%s/Bonus %i Complete (Event)", contract_location_name, i)
-                    local bonus_event_section = Tracker:FindObjectForCode(bonus_event_section_name)
-                    bonus_event_section.AvailableChestCount = bonus_event_section.AvailableChestCount - 1
+                elseif (i == 1 and current_completion[2]) or (i == 2 and current_completion[1]) then
+                    -- Clear the All Clear event section
+                    local all_clear_event_section_name = string.format("%s/All Clear Complete (Event)", contract_location_name)
+                    local all_clear_event_section = Tracker:FindObjectForCode(all_clear_event_section_name)
+                    all_clear_event_section.AvailableChestCount = all_clear_event_section.AvailableChestCount - 1
 
-                    if (i == 1 and current_completion[2]) or (i == 2 and current_completion[1]) then
-                        logical_stamps.AcquiredCount = logical_stamps.AcquiredCount + 2
-                        if death_wish_clear_all_clear_manually then
-                            manuallyClearDeathWishAllClearSection(contract_class)
-                        end
+                    logical_stamps.AcquiredCount = logical_stamps.AcquiredCount + 2
+                    if death_wish_clear_all_clear_manually then
+                        manuallyClearDeathWishAllClearSection(contract_class)
                     end
                 end
                 print(string.format("Completed death wish contract %s objective %s.", contract_class, i))
