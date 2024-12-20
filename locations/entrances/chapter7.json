@@ -33,7 +33,15 @@
       {
         "name": "Finale - Rush Hour",
         "access_rules": [
-          "$completedNyakuzaFreeRoamActs, [@internal_can_complete_act/MetroFreeRoam]"
+          "$completedNyakuzaFreeRoamActs, [@internal_can_complete_act/MetroFreeRoam]",
+          // Completing any act in the Free Roam shows what the act at the Finale is.
+          "{$checkCompletedActAt|Metro_RouteA}",
+          "{$checkCompletedActAt|Metro_RouteB}",
+          "{$checkCompletedActAt|Metro_RouteC}",
+          "{$checkCompletedActAt|Metro_RouteD}",
+          "{$checkCompletedActAt|Metro_ManholeA}",
+          "{$checkCompletedActAt|Metro_ManholeB}",
+          "{$checkCompletedActAt|Metro_ManholeC}"
         ],
         "map_locations": [
           {

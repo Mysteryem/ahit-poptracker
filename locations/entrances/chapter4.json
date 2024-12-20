@@ -29,7 +29,12 @@
       {
         "name": "Finale - The Illness has Spread",
         "access_rules": [
-          "$completedAlpineFreeRoamActs, [@internal_can_complete_act/AlpineFreeRoam]"
+          "$completedAlpineFreeRoamActs, [@internal_can_complete_act/AlpineFreeRoam]",
+          // Completing any act in the Free Roam shows what the act at the Finale is.
+          "{$checkCompletedActAt|Alpine_Twilight}",
+          "{$checkCompletedActAt|Alps_Birdhouse}",
+          "{$checkCompletedActAt|AlpineSkyline_Windmill}",
+          "{$checkCompletedActAt|AlpineSkyline_WeddingCake}"
         ],
         "map_locations": [
           {
