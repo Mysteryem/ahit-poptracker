@@ -4,14 +4,16 @@
     "children": [
       {
         "name": "Chapter 1",
-        "access_rules": [
-          "@Mafia Logic/Can access Mafia Town (HUMT)"
-        ],
         "children": [
           {
             "name": "Time Rift - Sewers",
             "access_rules": [
-              "^$completedActAt|chapter1_boss, [^$canCompleteActOrIsFreeRoamAt|chapter1_boss]"
+              [
+                "@Mafia Logic/Can access Mafia Town (HUMT)",
+                "^$completedActAt|chapter1_boss",
+                "[^$canCompleteActOrIsFreeRoamAt|chapter1_boss]"
+              ],
+              "{$checkCompletedActAt|chapter1_boss}"
             ],
             "map_locations": [
               {
@@ -35,7 +37,12 @@
           {
             "name": "Time Rift - Bazaar",
             "access_rules": [
-              "^$completedActAt|mafiatown_lava, [^$canCompleteActOrIsFreeRoamAt|mafiatown_lava]"
+              [
+                "@Mafia Logic/Can access Mafia Town (HUMT)",
+                "^$completedActAt|mafiatown_lava",
+                "[^$canCompleteActOrIsFreeRoamAt|mafiatown_lava]"
+              ],
+              "{$checkCompletedActAt|mafiatown_lava}"
             ],
             "map_locations": [
               {
@@ -59,7 +66,8 @@
           {
             "name": "Time Rift - Mafia of Cooks",
             "access_rules": [
-              "burgerrelic_complete, @Mafia Logic/Can access Mafia Town"
+              "burgerrelic_complete, @Mafia Logic/Can access Mafia Town",
+              "{burgerrelic_complete, @Chapter 1 Entrances/Act 1 - Welcome to Mafia Town}"
             ],
             "map_locations": [
               {
@@ -94,7 +102,8 @@
                 "^$completedActAt|moon_camerasnap",
                 "[^$canCompleteActOrIsFreeRoamAt|chapter3_murder]",
                 "[^$canCompleteActOrIsFreeRoamAt|moon_camerasnap]"
-              ]
+              ],
+              "{$checkCompletedActAt|chapter3_murder, $checkCompletedActAt|moon_camerasnap}"
             ],
             "map_locations": [
               {
@@ -124,7 +133,8 @@
                 "^$completedActAt|moon_parade",
                 "[^$canCompleteActOrIsFreeRoamAt|trainwreck_selfdestruct]",
                 "[^$canCompleteActOrIsFreeRoamAt|moon_parade]"
-              ]
+              ],
+              "{$checkCompletedActAt|trainwreck_selfdestruct, $checkCompletedActAt|moon_parade}"
             ],
             "map_locations": [
               {
@@ -149,7 +159,8 @@
             "name": "Time Rift - Dead Bird Studio",
             "access_rules": [
               "trainrelic_complete, @DBS Logic/Can access Act 1 - Dead Bird Studio",
-              "trainrelic_complete, @DBS Logic/Can access Secret Finale - Dead Bird Studio Basement"
+              "trainrelic_complete, @DBS Logic/Can access Secret Finale - Dead Bird Studio Basement",
+              "{trainrelic_complete, @Chapter 2 Entrances/Act 1 - Dead Bird Studio}"
             ],
             "map_locations": [
               {
@@ -181,7 +192,8 @@
           {
             "name": "Time Rift - Pipe",
             "access_rules": [
-              "@Subcon Logic/Blue Firewall, ^$completedActAt|subcon_cave, [^$canCompleteActOrIsFreeRoamAt|subcon_cave]"
+              "@Subcon Logic/Blue Firewall, ^$completedActAt|subcon_cave, [^$canCompleteActOrIsFreeRoamAt|subcon_cave]",
+              "{$checkCompletedActAt|subcon_cave}"
             ],
             "map_locations": [
               {
@@ -209,7 +221,8 @@
                 "@Subcon Logic/Blue Firewall",
                 "^$completedActAt|vanessa_manor_attic",
                 "[^$canCompleteActOrIsFreeRoamAt|vanessa_manor_attic]"
-              ]
+              ],
+              "{$checkCompletedActAt|vanessa_manor_attic}"
             ],
             "map_locations": [
               {
@@ -233,7 +246,8 @@
           {
             "name": "Time Rift - Sleepy Subcon",
             "access_rules": [
-              "uforelic_complete, @Subcon Logic/Green Firewall"
+              "uforelic_complete, @Subcon Logic/Green Firewall",
+              "{uforelic_complete, @Chapter 3 Entrances/Act 1 - Contractual Obligations}"
             ],
             "map_locations": [
               {
@@ -267,6 +281,7 @@
                 "$completedFreeRoamAct|Alpine_Twilight",
                 "[@Twilight Bell Zipline/The Twilight Bell/Time Piece]"
               ]
+              // No checkable rule because if you can complete the act, you can reach the Time Rift entrance.
             ],
             "map_locations": [
               {
@@ -295,6 +310,7 @@
                 "$completedFreeRoamAct|AlpineSkyline_Windmill",
                 "[@Windmill Zipline/The Windmill/Time Piece]"
               ]
+              // No checkable rule because if you can complete the act, you can reach the Time Rift entrance.
             ],
             "map_locations": [
               {
@@ -318,7 +334,8 @@
           {
             "name": "Time Rift - Alpine Skyline",
             "access_rules": [
-              "crayonrelic_complete, @Alpine Logic/Can access central Alpine Area"
+              "crayonrelic_complete, @Alpine Logic/Can access central Alpine Area",
+              "{crayonrelic_complete, @Chapter 4 Entrances/Alpine Skyline Free Roam}"
             ],
             "map_locations": [
               {
@@ -354,7 +371,8 @@
                 "@Cruise Logic/Can access Ship Area",
                 "^$completedActAt|Cruise_Sinking",
                 "[^$canCompleteActOrIsFreeRoamAt|Cruise_Sinking]"
-              ]
+              ],
+              "{$checkCompletedActAt|Cruise_Sinking}"
             ],
             "map_locations": [
               {
@@ -378,7 +396,8 @@
           {
             "name": "Time Rift - Deep Sea",
             "access_rules": [
-              "cakerelic_complete, @Cruise Logic/Can access Act 1 - Bon Voyage!"
+              "cakerelic_complete, @Cruise Logic/Can access Act 1 - Bon Voyage!",
+              "{cakerelic_complete, @Chapter 6 Entrances/Act 1 - Bon Voyage!}"
             ],
             "map_locations": [
               {
@@ -410,7 +429,8 @@
           {
             "name": "Time Rift - Rumbi Factory",
             "access_rules": [
-              "jewelryrelic_complete, @Nyakuza Logic/Can access Free Roam"
+              "jewelryrelic_complete, @Nyakuza Logic/Can access Free Roam",
+              "{jewelryrelic_complete, @Chapter 7 Entrances/Nyakuza Metro Free Roam}"
             ],
             "map_locations": [
               {

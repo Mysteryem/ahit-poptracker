@@ -52,6 +52,23 @@ function Act:getEntranceLocation()
     end
 end
 
+function Act:getEntranceAccessibility(allow_inspect)
+    local entrance_location = self:getEntranceLocation()
+    if allow_inspect then
+        return entrance_location.AccessibilityLevel
+    else
+        local entrance_accessibility = entrance_location.AccessibilityLevel
+        if entrance_accessibility == AccessibilityLevel.Inspect then
+            -- By default, Inspect is not propagated because it is meaningless to logic.
+            -- If an entrance is Inspect (checkable), the locations within the act at that entrance are unreachable,
+            -- not Inspect.
+            return AccessibilityLevel.None
+        else
+            return entrance_accessibility
+        end
+    end
+end
+
 function Act:getCanEnterSection()
     if self.entrance_location then
         return Tracker:FindObjectForCode(self.entrance_location .. "/Can Enter")

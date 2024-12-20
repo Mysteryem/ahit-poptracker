@@ -49,9 +49,8 @@ function combineAccessibility(...)
 end
 
 function canAccessAct(act_to_access)
-  local act_info = getActInfo(act_to_access)
-  local location = act_info:getEntranceLocation()
-  return location.AccessibilityLevel
+    local act_info = getActInfo(act_to_access)
+    return act_info:getEntranceAccessibility()
 end
 
 function hasTimePiecesForChapter(chapter_to_access)
@@ -152,6 +151,21 @@ function completedActAt(entrance)
     end
 end
 
+-- If a checkable rule resolves to SequenceBreak, then it displays as yellow instead of either red or blue that would
+-- normally be expected (there's no color for checkable + sequence break because you cannot have both at the same time).
+function checkCompletedActAt(entrance)
+    local accessibility = completedActAt(entrance)
+    -- SequenceBreak can occur when the act at the entrance is a free roam because then the accessibility is retrieved
+    -- from the entrance. If the entrance was unlocked out-of-logic, then it returns SequenceBreak so that all the
+    -- locations accessible from the act at the entrance show as yellow instead of green (if there is no alternate
+    -- in-logic way to access the locations).
+    if accessibility == AccessibilityLevel.SequenceBreak then
+        return true
+    else
+        return accessibility == AccessibilityLevel.Normal
+    end
+end
+
 -- Note: the check_entrance and skip_free_roam_sub_acts arguments are currently unused.
 function canCompleteActAt(entrance, check_entrance, skip_free_roam_sub_acts)
     local entrance_info = chapter_act_info[entrance]
@@ -159,8 +173,7 @@ function canCompleteActAt(entrance, check_entrance, skip_free_roam_sub_acts)
     local entrance_accessibility
     if check_entrance then
         -- Check if the entrance is accessible.
-        local entrance_location = entrance_info:getEntranceLocation()
-        entrance_accessibility = entrance_location.AccessibilityLevel
+        entrance_accessibility = entrance_info:getEntranceAccessibility()
     end
 
     -- Now check if the act at the entrance is beatable.
