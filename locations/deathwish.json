@@ -2845,6 +2845,12 @@
                 "access_rules": [
                   "@Death Wish Logic/Enemy Locations - Camera Tourist Extras/Purple Time Rift"
                 ]
+              },
+              {
+                "name": "Goofy Mafia (never in logic)",
+                "access_rules": [
+                  "@Death Wish Logic/Enemy Locations - Camera Tourist Extras/Goofy Mafia"
+                ]
               }
             ],
             "map_locations": [
