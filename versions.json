@@ -1,6 +1,26 @@
 {
     "versions": [
         {
+            "package_version": "1.6.0",
+            "download_url": "https://github.com/Mysteryem/ahit-poptracker/archive/refs/tags/v1.6.0.zip",
+            "sha256": "0067e43ecba4431c6df48d8732b10a0b60af471ab6808674a5b0d4d76d450aac",
+            "changelog": [
+                "Entrances Map and Death Wish updates",
+                "Fixes:",
+                " - Fix Dead Bird Studio - Tightrope Chest being inaccessible on normal logic with no Umbrella/Brewing Hat and without Umbrella Logic enabled",
+                " - Fix Pink Paw and Bluefin Tunnel Snatcher Coins not checking for having access to Nyakuza Free Roam",
+                "Entrances Map:",
+                " - Free Roam acts are now shown and tracked",
+                " - Entrances show as blue (checkable) if you can see what act is at the entrance from the telescope, but cannot reach the entrance",
+                "Death Wish:",
+                " - Added completion events to make !collect less confusing",
+                " - Stamp count tracking now only tracks logical stamps",
+                " - New option to show locked shuffle mode contracts",
+                " - Camera Tourist logic updates",
+                " - So You're Back From Outer Space - All Clear marked as possible, but out-of-logic, without Sprint Hat"
+            ]
+        },
+        {
             "package_version": "1.5.0",
             "download_url": "https://github.com/Mysteryem/ahit-poptracker/archive/refs/tags/v1.5.0.zip",
             "sha256": "f617060b192d8a4f3f7984d0c07d062f2a4e3b61f5cb77c01d2cb7d06434146c",
