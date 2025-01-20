@@ -57,9 +57,8 @@
       {
         "name": "Finale - Rock the Boat",
         "access_rules": [
-          "^$completedActAt|Cruise_Working, [^$canCompleteActOrIsFreeRoamAt|Cruise_Working]",
-          // Once the first act has been completed, it is shown what act is at the Finale.
-          "{$checkCompletedActAt|Cruise_Boarding}"
+          "^$completedActAt|Cruise_Working, [^$canCompleteActOrIsFreeRoamAt|Cruise_Working]"
+          // Unlike other chapters, completing the first act does not show what act is at the Finale of the chapter.
         ],
         "map_locations": [
           {
