@@ -150,7 +150,6 @@
             "item_count": 10,
             "clear_as_group": false,
             "access_rules": [
-              // todo: Also accessible out-of-logic in Beat the Heat, She Speedran from Outer Space and Collect-a-thon.
               "@Mafia Logic/Can access Mafia Town (HUMT)",
               "@DBS Logic/Can access Act 1 - Dead Bird Studio",
               "@DBS Logic/Can access Act 3 - Picture Perfect",
@@ -158,6 +157,13 @@
               "@Subcon Logic/Can access main Subcon area",
               "@Alpine Logic/Can access central Alpine Area",
               "@Cruise Logic/Can access Ship Area"
+              // Also accessible out-of-logic in various Death Wish contracts, though these should realistically never
+              // be logically relevant because at least one of the above areas should be in logic in sphere 1.
+//              "never, [@Death Wish/Contract - Beat the Heat]",
+//              "never, [@Death Wish/Contract - She Speedran from Outer Space]",
+//              "never, [@Death Wish/Contract - Collect-a-thon]",
+//              "never, [@Death Wish/Contract - Bird Sanctuary]",
+//              "never, [@Death Wish/Contract - Wound-Up Windmill]"
             ],
             "visibility_rules": [
               "badge_seller_enabled"
