@@ -863,6 +863,8 @@
           {
             "name": "Bird Sanctuary",
             "access_rules": [
+              // Might be possible with Ice Hat instead of Hookshot on harder logic difficulties, by performing an Ice
+              // Hat slide.
               "hookshot"
             ],
             "sections": [

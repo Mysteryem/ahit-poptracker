@@ -591,6 +591,7 @@
             ]
           },
           {
+            // todo: Check if Rift Collapse Purple Time Rifts count.
             "name": "Purple Time Rift",
             "access_rules": [
               "[never], @Mafia Town - Time Rifts/Mafia of Cooks/Time Rift",
@@ -913,18 +914,25 @@
             "name": "Nyakuza Metro",
             "children": [
               {
+                // Hard logic could probably get this from Rush Hour.
                 "name": "Green Clean Tower",
                 "access_rules": [
                   "@Nyakuza Logic/Can access Green Clean Station"
                 ]
               },
               {
+                // Inaccessible from Rush Hour without complicated tricks to despawn the crowd of cats from the main
+                // station and use Green Ticket to enter Bluefin Tunnel. Accessing from Bluefin Tunnel in reverse (Blue
+                // Ticket route) is also not possible without despawning the cats blocking the vent.
                 "name": "Bluefin Cat Train",
                 "access_rules": [
                   "@Nyakuza Logic/Can access Bluefin Tunnel"
                 ]
               },
               {
+                // todo: Easily accessible from Rush Hour? Blue + Yellow tickets required normally.
+                //  Hard logic with Pink Ticket or Rush Hour ticket skips could probably wrong warp into the top of Pink
+                //  Paw and fall down to lower Pink Paw to get to this.
                 "name": "Pink Paw Fence",
                 "access_rules": [
                   "@Nyakuza Logic/Can access Pink Paw Station"

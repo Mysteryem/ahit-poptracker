@@ -5,6 +5,8 @@
       {
         "name": "Can access Free Roam",
         "access_rules": [
+          // Can also be access out-of-logic from Rush Hour by tricking the game into thinking you're in Free Roam and
+          // then dying to respawn in Free Roam.
           "^$canAccessAct|MetroFreeRoam"
         ]
       },

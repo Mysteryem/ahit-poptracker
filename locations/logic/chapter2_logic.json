@@ -73,6 +73,8 @@
         "name": "Can access Dead Bird Studio - Post Elevator Area",
         "access_rules": [
           "@General Logic/Can Hit, @DBS Logic/Can access Act 1 - Dead Bird Studio",
+          // Moderate or hard logic could Ice Hat slide in the future
+          //"ice, @General Logic/Hard, @DBS Logic/Can access Dead Bird Studio - Elevator Area",
           "@General Logic/Expert, @DBS Logic/Can access Dead Bird Studio - Elevator Area"
         ]
       },
