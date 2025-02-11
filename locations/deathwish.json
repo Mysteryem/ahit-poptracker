@@ -863,7 +863,7 @@
           {
             "name": "Bird Sanctuary",
             "access_rules": [
-              "hookshot, @Death Wish Unlock/Bird Sanctuary"
+              "hookshot"
             ],
             "sections": [
               {
