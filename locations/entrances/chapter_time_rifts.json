@@ -185,15 +185,19 @@
       },
       {
         "name": "Chapter 3",
-        "access_rules": [
-          "@Subcon Logic/Can access main Subcon area"
-        ],
         "children": [
           {
             "name": "Time Rift - Pipe",
             "access_rules": [
-              "@Subcon Logic/Blue Firewall, ^$completedActAt|subcon_cave, [^$canCompleteActOrIsFreeRoamAt|subcon_cave]",
-              "{$checkCompletedActAt|subcon_cave}"
+              [
+                "@Subcon Logic/Can access main Subcon area",
+                "@Subcon Logic/Blue Firewall",
+                "^$completedActAt|subcon_cave",
+                "[^$canCompleteActOrIsFreeRoamAt|subcon_cave]"
+              ],
+              [
+                "{$checkCompletedActAt|subcon_cave}"
+              ]
             ],
             "map_locations": [
               {
@@ -218,11 +222,14 @@
             "name": "Time Rift - Village",
             "access_rules": [
               [
+                "@Subcon Logic/Can access main Subcon area",
                 "@Subcon Logic/Blue Firewall",
                 "^$completedActAt|vanessa_manor_attic",
                 "[^$canCompleteActOrIsFreeRoamAt|vanessa_manor_attic]"
               ],
-              "{$checkCompletedActAt|vanessa_manor_attic}"
+              [
+                "{$checkCompletedActAt|vanessa_manor_attic}"
+              ]
             ],
             "map_locations": [
               {
@@ -246,7 +253,7 @@
           {
             "name": "Time Rift - Sleepy Subcon",
             "access_rules": [
-              "uforelic_complete, @Subcon Logic/Green Firewall",
+              "uforelic_complete, @Subcon Logic/Can access main Subcon area, @Subcon Logic/Green Firewall",
               "{uforelic_complete, @Chapter 3 Entrances/Act 1 - Contractual Obligations}"
             ],
             "map_locations": [
