@@ -152,7 +152,8 @@
           {
             "map": "entrances",
             "x": 779,
-            "y": 70
+            "y": 70,
+            "shape": "diamond"
           }
         ]
       },
