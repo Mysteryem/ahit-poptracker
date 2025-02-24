@@ -1,6 +1,8 @@
 [
   {
     "name": "Chapter 3 Entrances",
+    "chest_unopened_img": "images/icons/act.png",
+    "chest_opened_img": "images/icons/act_complete.png",
     "access_rules": [
       "$hasTimePiecesForChapter|3"
     ],
@@ -52,6 +54,8 @@
       },
       {
         "name": "Act 3 - Toilet of Doom",
+        "chest_unopened_img": "images/icons/boss.png",
+        "chest_opened_img": "images/icons/boss_complete.png",
         "access_rules": [
           "toiletcontract"
         ],
@@ -124,6 +128,8 @@
       },
       {
         "name": "Finale - Your Contract has Expired",
+        "chest_unopened_img": "images/icons/finale.png",
+        "chest_opened_img": "images/icons/finale_complete.png",
         "access_rules": [
           [
             "^$completedActAt|subcon_village_icewall",

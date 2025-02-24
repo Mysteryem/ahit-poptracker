@@ -1,6 +1,8 @@
 [
   {
     "name": "Chapter 5 Entrances",
+    "chest_unopened_img": "images/icons/boss.png",
+    "chest_opened_img": "images/icons/boss_complete.png",
     "access_rules": [
       "$hasTimePiecesForChapter|5"
     ],

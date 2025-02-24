@@ -1,6 +1,8 @@
 [
   {
     "name": "Chapter 6 Entrances",
+    "chest_unopened_img": "images/icons/act.png",
+    "chest_opened_img": "images/icons/act_complete.png",
     "parent": "Chapter 4 Entrances",
     "access_rules": [
       "$hasTimePiecesForChapter|6"
@@ -56,6 +58,8 @@
       },
       {
         "name": "Finale - Rock the Boat",
+        "chest_unopened_img": "images/icons/finale.png",
+        "chest_opened_img": "images/icons/finale_complete.png",
         "access_rules": [
           "^$completedActAt|Cruise_Working, [^$canCompleteActOrIsFreeRoamAt|Cruise_Working]"
           // Unlike other chapters, completing the first act does not show what act is at the Finale of the chapter.

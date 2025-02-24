@@ -1,6 +1,8 @@
 [
   {
     "name": "Chapter Time Rift Entrances",
+    "chest_unopened_img": "images/icons/time_rift_blue.png",
+    "chest_opened_img": "images/icons/time_rift_blue_complete.png",
     "children": [
       {
         "name": "Chapter 1",
@@ -65,6 +67,8 @@
           },
           {
             "name": "Time Rift - Mafia of Cooks",
+            "chest_unopened_img": "images/icons/time_rift_purple.png",
+            "chest_opened_img": "images/icons/time_rift_purple_complete.png",
             "access_rules": [
               "burgerrelic_complete, @Mafia Logic/Can access Mafia Town",
               "{burgerrelic_complete, @Chapter 1 Entrances/Act 1 - Welcome to Mafia Town}"
@@ -157,6 +161,8 @@
           },
           {
             "name": "Time Rift - Dead Bird Studio",
+            "chest_unopened_img": "images/icons/time_rift_purple.png",
+            "chest_opened_img": "images/icons/time_rift_purple_complete.png",
             "access_rules": [
               "trainrelic_complete, @DBS Logic/Can access Act 1 - Dead Bird Studio",
               "trainrelic_complete, @DBS Logic/Can access Secret Finale - Dead Bird Studio Basement",
@@ -252,6 +258,8 @@
           },
           {
             "name": "Time Rift - Sleepy Subcon",
+            "chest_unopened_img": "images/icons/time_rift_purple.png",
+            "chest_opened_img": "images/icons/time_rift_purple_complete.png",
             "access_rules": [
               "uforelic_complete, @Subcon Logic/Can access main Subcon area, @Subcon Logic/Green Firewall",
               "{uforelic_complete, @Chapter 3 Entrances/Act 1 - Contractual Obligations}"
@@ -340,6 +348,8 @@
           },
           {
             "name": "Time Rift - Alpine Skyline",
+            "chest_unopened_img": "images/icons/time_rift_purple.png",
+            "chest_opened_img": "images/icons/time_rift_purple_complete.png",
             "access_rules": [
               "crayonrelic_complete, @Alpine Logic/Can access central Alpine Area",
               "{crayonrelic_complete, @Chapter 4 Entrances/Alpine Skyline Free Roam}"
@@ -402,6 +412,8 @@
           },
           {
             "name": "Time Rift - Deep Sea",
+            "chest_unopened_img": "images/icons/time_rift_purple.png",
+            "chest_opened_img": "images/icons/time_rift_purple_complete.png",
             "access_rules": [
               "cakerelic_complete, @Cruise Logic/Can access Act 1 - Bon Voyage!",
               "{cakerelic_complete, @Chapter 6 Entrances/Act 1 - Bon Voyage!}"
@@ -435,6 +447,8 @@
         "children": [
           {
             "name": "Time Rift - Rumbi Factory",
+            "chest_unopened_img": "images/icons/time_rift_purple.png",
+            "chest_opened_img": "images/icons/time_rift_purple_complete.png",
             "access_rules": [
               "jewelryrelic_complete, @Nyakuza Logic/Can access Free Roam",
               "{jewelryrelic_complete, @Chapter 7 Entrances/Nyakuza Metro Free Roam}"

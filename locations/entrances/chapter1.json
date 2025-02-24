@@ -1,6 +1,8 @@
 [
   {
     "name": "Chapter 1 Entrances",
+    "chest_unopened_img": "images/icons/act.png",
+    "chest_opened_img": "images/icons/act_complete.png",
     "access_rules": [
       "$hasTimePiecesForChapter|1"
     ],
@@ -28,6 +30,8 @@
       },
       {
         "name": "Act 2 - Barrel Battle",
+        "chest_unopened_img": "images/icons/boss.png",
+        "chest_opened_img": "images/icons/boss_complete.png",
         "access_rules": [
           "^$completedActAt|chapter1_tutorial, [^$canCompleteActOrIsFreeRoamAt|chapter1_tutorial]"
         ],
@@ -76,6 +80,8 @@
       },
       {
         "name": "Act 4 - Down with the Mafia!",
+        "chest_unopened_img": "images/icons/boss.png",
+        "chest_opened_img": "images/icons/boss_complete.png",
         "access_rules": [
           [
             "^$completedActAt|chapter1_barrelboss",

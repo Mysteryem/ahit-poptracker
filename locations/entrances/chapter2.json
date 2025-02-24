@@ -1,6 +1,8 @@
 [
   {
     "name": "Chapter 2 Entrances",
+    "chest_unopened_img": "images/icons/act.png",
+    "chest_opened_img": "images/icons/act_complete.png",
     "access_rules": [
       "$hasTimePiecesForChapter|2"
     ],
@@ -129,6 +131,8 @@
       },
       {
         "name": "Finale - Award Ceremony",
+        "chest_unopened_img": "images/icons/finale.png",
+        "chest_opened_img": "images/icons/finale_complete.png",
         "access_rules": [
           [
             "^$completedActAt|trainwreck_selfdestruct",
@@ -159,6 +163,8 @@
       },
       {
         "name": "Secret Finale - Dead Bird Basement",
+        "chest_unopened_img": "images/icons/finale.png",
+        "chest_opened_img": "images/icons/finale_complete.png",
         "access_rules": [
           "@Chapter 2 Entrances/Finale - Award Ceremony",
           // Completing any act in the chapter shows what the act at the Finale is.

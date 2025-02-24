@@ -1,6 +1,8 @@
 [
   {
     "name": "The Gallery Entrances",
+    "chest_unopened_img": "images/icons/time_rift_blue.png",
+    "chest_opened_img": "images/icons/time_rift_blue_complete.png",
     "parent": "Chapter 2 Entrances",
     "access_rules": [
       "brewer"

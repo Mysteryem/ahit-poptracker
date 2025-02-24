@@ -11,6 +11,8 @@
     "children": [
       {
         "name": "Nyakuza Metro Free Roam",
+        "chest_unopened_img": "images/icons/free_roam.png",
+        "chest_opened_img": "images/icons/free_roam_complete.png",
         "map_locations": [
           {
             "map": "entrances",
@@ -32,6 +34,8 @@
       },
       {
         "name": "Finale - Rush Hour",
+        "chest_unopened_img": "images/icons/finale.png",
+        "chest_opened_img": "images/icons/finale_complete.png",
         "access_rules": [
           "$completedNyakuzaFreeRoamActs, [@internal_can_complete_act/MetroFreeRoam]",
           // Completing any act in the Free Roam shows what the act at the Finale is.
@@ -66,6 +70,8 @@
   },
   {
     "name": "Chapter 7 Free Roam Acts",
+    "chest_unopened_img": "images/icons/act.png",
+    "chest_opened_img": "images/icons/act_complete.png",
     "visibility_rules": [
       "dlc2"
     ],

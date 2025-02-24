@@ -1,6 +1,8 @@
 [
   {
     "name": "The Attic Entrances",
+    "chest_unopened_img": "images/icons/time_rift_green.png",
+    "chest_opened_img": "images/icons/time_rift_green_complete.png",
     "parent": "Chapter 5 Entrances",
     "children": [
       {
