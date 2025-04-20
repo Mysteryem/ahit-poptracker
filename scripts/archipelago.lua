@@ -590,29 +590,6 @@ function onClear(slot_data)
     --print(dump_table(slot_data))
 end
 
-function onClearHandler(slot_data)
-    -- Disable tracker updates.
-    Tracker.BulkUpdate = true
-    -- Use a protected call so that tracker updates always get enabled again, even if an error occurred.
-    local ok, err = pcall(onClear, slot_data)
-    -- Enable tracker updates again.
-    if ok then
-        -- Defer re-enabling tracker updates until the next frame, which doesn't happen until all received items/cleared
-        -- locations from AP have been processed.
-        local handlerName = "AP onClearHandler"
-        local function frameCallback()
-            ScriptHost:RemoveOnFrameHandler(handlerName)
-            Tracker.BulkUpdate = false
-            forceUpdate()
-        end
-        ScriptHost:AddOnFrameHandler(handlerName, frameCallback)
-    else
-        Tracker.BulkUpdate = false
-        print("Error: onClear failed:")
-        print(err)
-    end
-end
-
 -- There's no explicit event on receiving hats so I fetched the hat order and cost
 -- for each hat on Clear, then here I count how many yarn has been received
 function updateYarn(yarn)
@@ -979,7 +956,7 @@ function onEvent(key, new_value, old_value)
     end
 end
 
-Archipelago:AddClearHandler("clear handler", onClearHandler)
+Archipelago:AddClearHandler("clear handler", onClear)
 Archipelago:AddRetrievedHandler("event handler", onEvent)
 Archipelago:AddSetReplyHandler("event launch handler", onEvent)
 Archipelago:AddItemHandler("item handler", onItem)

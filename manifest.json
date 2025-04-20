@@ -13,8 +13,8 @@
       "flags": "ap"
     }
   },
-  "min_poptracker_version": "0.26.0",
-  "target_poptracker_version": "0.26.2",
+  "min_poptracker_version": "0.31.0",
+  "target_poptracker_version": "0.31.0",
   "game_name": "A Hat in Time",
   "author": "Mysteryem",
   "versions_url": "https://raw.githubusercontent.com/Mysteryem/ahit-poptracker/main/versions.json"
