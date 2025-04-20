@@ -109,7 +109,7 @@ function completedFreeRoamAct(act_name, ap_connected)
     return completed_entrances[act_name] ~= nil
 end
 
--- Return if the act at the entrance has been completed (AccessibilityLevel.Cleared).
+-- Return if the act at the entrance has been completed (AccessibilityLevel.Cleared, but accounting for !collect).
 -- This is used because a player using act randomization won't know what new act/rift will unlock after they complete an
 -- act, so the tracker should not display the act/rift that will unlock as accessible until the player has beaten the
 -- act.
