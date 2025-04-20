@@ -760,6 +760,14 @@
             "access_rules": [
               "[never], @Nyakuza Logic/Can access Bluefin Tunnel"
             ]
+          },
+          {
+            "name": "Down with the Mafia!",
+            // The same enemies are present as in She Came from Outer Space. Triple enemy photos can be taken at the
+            // harbour and near the badge seller near the crane.
+            "access_rules": [
+              "[never], @Mafia Logic/Can access Act 4 - Down With the Mafia!"
+            ]
           }
         ]
       },
@@ -780,7 +788,8 @@
           //   b. Conductor + Express Owl + Camera
           // Both are accessible at the start of the level.
           "@Death Wish Logic/Triple Enemy Locations/Dead Bird Studio",
-          "@Death Wish Logic/Triple Enemy Locations/Bluefin Tunnel"
+          "@Death Wish Logic/Triple Enemy Locations/Bluefin Tunnel",
+          "@Death Wish Logic/Triple Enemy Locations/Down with the Mafia!"
         ]
       },
       {
