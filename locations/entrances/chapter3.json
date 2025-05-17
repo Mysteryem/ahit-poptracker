@@ -148,11 +148,21 @@
           // While it is possible to complete the Purple Time Rift before all of these, completing the Purple Time Rift
           // for a chapter does not make the Finale visible (tested in Chapter 4, and assuming the other chapters are
           // the same).
-          "{$checkCompletedActAt|subcon_village_icewall}",
-          "{$checkCompletedActAt|subcon_cave}",
-          "{$checkCompletedActAt|chapter2_toiletboss}",
-          "{$checkCompletedActAt|vanessa_manor_attic}",
-          "{$checkCompletedActAt|subcon_maildelivery}"
+          [
+            "{$checkCompletedActAt|subcon_village_icewall}"
+          ],
+          [
+            "{$checkCompletedActAt|subcon_cave}"
+          ],
+          [
+            "{$checkCompletedActAt|chapter2_toiletboss}"
+          ],
+          [
+            "{$checkCompletedActAt|vanessa_manor_attic}"
+          ],
+          [
+            "{$checkCompletedActAt|subcon_maildelivery}"
+          ]
         ],
         "sections": [
           {
