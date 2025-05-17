@@ -49,6 +49,30 @@
     ]
   },
   {
+    "name": "Behind Boss Firewall",
+    "access_rules": [
+      "@Subcon Logic/Can access main Subcon area, @Subcon Logic/Boss Firewall",
+      "@Subcon Logic/Can access Finale - Your Contract has Expired, @Subcon Logic/Boss Arena Area -> Behind Boss Firewall"
+    ],
+    "children": [
+        {
+          "name": "Snatcher Statue Chest",
+          "sections": [
+            {
+              "name": "Yarn"
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "subcon",
+              "x": 400,
+              "y": 460
+            }
+          ]
+        }
+    ]
+  },
+  {
     "name": "Subcon Forest",
     "access_rules": [
       "@Subcon Logic/Can access main Subcon area"
@@ -235,21 +259,6 @@
                 "map": "subcon",
                 "x": 400,
                 "y": 515
-              }
-            ]
-          },
-          {
-            "name": "Snatcher Statue Chest",
-            "sections": [
-              {
-                "name": "Yarn"
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "subcon",
-                "x": 400,
-                "y": 460
               }
             ]
           },
