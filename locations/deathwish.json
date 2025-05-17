@@ -65,7 +65,10 @@
       {
         "name": "Contract - So You're Back From Outer Space",
         "access_rules": [
-          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_BackFromSpace",
+          [
+            "dw_mode_shuffle",
+            "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_BackFromSpace"
+          ],
           [
             "dw_mode_normal",
             "logical_stamp:2",
@@ -131,7 +134,10 @@
       {
         "name": "Contract - Mafia's Jumps",
         "access_rules": [
-          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_NoAPresses_MafiaAlien",
+          [
+            "dw_mode_shuffle",
+            "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_NoAPresses_MafiaAlien"
+          ],
           [
             "dw_mode_normal",
             "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_Speedrun_MafiaAlien"
@@ -186,7 +192,10 @@
       {
         "name": "Contract - Collect-a-thon",
         "access_rules": [
-          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_PonFrenzy",
+          [
+            "dw_mode_shuffle",
+            "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_PonFrenzy"
+          ],
           [
             "dw_mode_normal",
             "logical_stamp:5",
@@ -238,7 +247,10 @@
       {
         "name": "Contract - She Speedran from Outer Space",
         "access_rules": [
-          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Speedrun_MafiaAlien",
+          [
+            "dw_mode_shuffle",
+            "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Speedrun_MafiaAlien"
+          ],
           [
             "dw_mode_normal",
             "logical_stamp:8",
@@ -290,7 +302,10 @@
       {
         "name": "Contract - Vault Codes in the Wind",
         "access_rules": [
-          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_MovingVault",
+          [
+            "dw_mode_shuffle",
+            "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_MovingVault"
+          ],
           [
             "dw_mode_normal",
             "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_PonFrenzy",
@@ -346,7 +361,10 @@
       {
         "name": "Contract - Encore! Encore!",
         "access_rules": [
-          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_MafiaBossEX",
+          [
+            "dw_mode_shuffle",
+            "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_MafiaBossEX"
+          ],
           [
             "dw_mode_normal",
             "logical_stamp:10",
@@ -404,7 +422,10 @@
       {
         "name": "Contract - Security Breach",
         "access_rules": [
-          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_DeadBirdStudioMoreGuards",
+          [
+            "dw_mode_shuffle",
+            "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_DeadBirdStudioMoreGuards"
+          ],
           [
             "dw_mode_normal",
             "logical_stamp:4",
@@ -459,7 +480,10 @@
       {
         "name": "Contract - 10 Seconds until Self-Destruct",
         "access_rules": [
-          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_TrainRushShortTime",
+          [
+            "dw_mode_shuffle",
+            "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_TrainRushShortTime"
+          ],
           [
             "dw_mode_normal",
             "logical_stamp:15",
@@ -520,7 +544,10 @@
       {
         "name": "Contract - The Great Big Hootenanny",
         "access_rules": [
-          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_DifficultParade",
+          [
+            "dw_mode_shuffle",
+            "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_DifficultParade"
+          ],
           [
             "dw_mode_normal",
             "logical_stamp:7",
@@ -572,7 +599,10 @@
       {
         "name": "Contract - Killing Two Birds",
         "access_rules": [
-          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_BirdBossEX",
+          [
+            "dw_mode_shuffle",
+            "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_BirdBossEX"
+          ],
           [
             "dw_mode_normal",
             "logical_stamp:25",
@@ -625,7 +655,10 @@
       {
         "name": "Contract - Speedrun Well",
         "access_rules": [
-          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Speedrun_SubWell",
+          [
+            "dw_mode_shuffle",
+            "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Speedrun_SubWell"
+          ],
           [
             "dw_mode_normal",
             "logical_stamp:10",
@@ -681,7 +714,10 @@
       {
         "name": "Contract - Boss Rush",
         "access_rules": [
-          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_BossRush",
+          [
+            "dw_mode_shuffle",
+            "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_BossRush"
+          ],
           [
             "dw_mode_normal",
             "logical_stamp:15",
@@ -742,7 +778,10 @@
       {
         "name": "Contract - Quality Time with Snatcher",
         "access_rules": [
-          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_SurvivalOfTheFittest",
+          [
+            "dw_mode_shuffle",
+            "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_SurvivalOfTheFittest"
+          ],
           [
             "dw_mode_normal",
             "logical_stamp:20",
@@ -794,7 +833,10 @@
       {
         "name": "Contract - Breaching the Contract",
         "access_rules": [
-          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_SnatcherEX",
+          [
+            "dw_mode_shuffle",
+            "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_SnatcherEX"
+          ],
           [
             "dw_mode_normal",
             "logical_stamp:40",
@@ -847,7 +889,10 @@
       {
         "name": "Contract - Bird Sanctuary",
         "access_rules": [
-          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_NiceBirdhouse",
+          [
+            "dw_mode_shuffle",
+            "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_NiceBirdhouse"
+          ],
           [
             "dw_mode_normal",
             "logical_stamp:15",
@@ -912,7 +957,10 @@
       {
         "name": "Contract - Wound-Up Windmill",
         "access_rules": [
-          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_FastWindmill",
+          [
+            "dw_mode_shuffle",
+            "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_FastWindmill"
+          ],
           [
             "dw_mode_normal",
             "logical_stamp:30",
@@ -974,7 +1022,10 @@
       {
         "name": "Contract - The Illness has Speedrun",
         "access_rules": [
-          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Speedrun_Illness",
+          [
+            "dw_mode_shuffle",
+            "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Speedrun_Illness"
+          ],
           [
             "dw_mode_normal",
             "logical_stamp:35",
@@ -1035,7 +1086,10 @@
       {
         "name": "Contract - The Mustache Gauntlet",
         "access_rules": [
-          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_HardCastle",
+          [
+            "dw_mode_shuffle",
+            "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_HardCastle"
+          ],
           [
             "dw_mode_normal",
             "logical_stamp:35",
@@ -1098,7 +1152,10 @@
       {
         "name": "Contract - No More Bad Guys",
         "access_rules": [
-          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_MuGirlEX",
+          [
+            "dw_mode_shuffle",
+            "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_MuGirlEX"
+          ],
           [
             "dw_mode_normal",
             "logical_stamp:50",
@@ -1150,7 +1207,10 @@
       {
         "name": "Contract - Cruisin' for a Bruisin'",
         "access_rules": [
-          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_EndlessTasks",
+          [
+            "dw_mode_shuffle",
+            "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_EndlessTasks"
+          ],
           [
             "dw_mode_normal",
             "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_RiftCollapse_Cruise"
@@ -1201,7 +1261,10 @@
       {
         "name": "Contract - Seal the Deal",
         "access_rules": [
-          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_BossRushEX",
+          [
+            "dw_mode_shuffle",
+            "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_BossRushEX"
+          ],
           [
             "dw_mode_normal",
             "logical_stamp:70",
@@ -1256,7 +1319,10 @@
       {
         "name": "Contract - Rift Collapse: Mafia of Cooks",
         "access_rules": [
-          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_RiftCollapse_MafiaTown",
+          [
+            "dw_mode_shuffle",
+            "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_RiftCollapse_MafiaTown"
+          ],
           [
             "dw_mode_normal",
             "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_BackFromSpace"
@@ -1307,7 +1373,10 @@
       {
         "name": "Contract - Rift Collapse: Dead Bird Studio",
         "access_rules": [
-          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_RiftCollapse_Birds",
+          [
+            "dw_mode_shuffle",
+            "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_RiftCollapse_Birds"
+          ],
           [
             "dw_mode_normal",
             "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_DeadBirdStudioMoreGuards"
@@ -1358,7 +1427,10 @@
       {
         "name": "Contract - Rift Collapse: Sleepy Subcon",
         "access_rules": [
-          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_RiftCollapse_Subcon",
+          [
+            "dw_mode_shuffle",
+            "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_RiftCollapse_Subcon"
+          ],
           [
             "dw_mode_normal",
             "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_Speedrun_SubWell"
@@ -1409,7 +1481,10 @@
       {
         "name": "Contract - Rift Collapse: Alpine Skyline",
         "access_rules": [
-          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_RiftCollapse_Alps",
+          [
+            "dw_mode_shuffle",
+            "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_RiftCollapse_Alps"
+          ],
           [
             "dw_mode_normal",
             "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_NiceBirdhouse"
@@ -1460,7 +1535,10 @@
       {
         "name": "Contract - Rift Collapse: Deep Sea",
         "access_rules": [
-          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_RiftCollapse_Cruise",
+          [
+            "dw_mode_shuffle",
+            "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_RiftCollapse_Cruise"
+          ],
           [
             "dw_mode_normal",
             "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_RiftCollapse_MafiaTown",
@@ -1523,7 +1601,10 @@
       {
         "name": "Contract - Community Rift: Rhythm Jump Studio",
         "access_rules": [
-          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_CommunityRift_RhythmJump",
+          [
+            "dw_mode_shuffle",
+            "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_CommunityRift_RhythmJump"
+          ],
           [
             "dw_mode_normal",
             "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_TrainRushShortTime"
@@ -1577,7 +1658,10 @@
       {
         "name": "Contract - Community Rift: Twilight Travels",
         "access_rules": [
-          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_CommunityRift_TwilightTravels",
+          [
+            "dw_mode_shuffle",
+            "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_CommunityRift_TwilightTravels"
+          ],
           [
             "dw_mode_normal",
             "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_SurvivalOfTheFittest"
@@ -1637,7 +1721,10 @@
       {
         "name": "Contract - Community Rift: The Mountain Rift",
         "access_rules": [
-          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_CommunityRift_MountainRift",
+          [
+            "dw_mode_shuffle",
+            "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_CommunityRift_MountainRift"
+          ],
           [
             "dw_mode_normal",
             "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_RiftCollapse_Alps"
@@ -1691,7 +1778,10 @@
       {
         "name": "Contract - Snatcher's Hit List",
         "access_rules": [
-          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_KillEverybody",
+          [
+            "dw_mode_shuffle",
+            "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_KillEverybody"
+          ],
           [
             "dw_mode_normal",
             "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_HeatingUpHarder"
@@ -1858,7 +1948,10 @@
       {
         "name": "Contract - Snatcher Coins in Mafia Town",
         "access_rules": [
-          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Tokens_MafiaTown",
+          [
+            "dw_mode_shuffle",
+            "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Tokens_MafiaTown"
+          ],
           [
             "dw_mode_normal",
             "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_BackFromSpace"
@@ -1955,7 +2048,10 @@
       {
         "name": "Contract - Snatcher Coins in Battle of the Birds",
         "access_rules": [
-          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Tokens_Birds",
+          [
+            "dw_mode_shuffle",
+            "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Tokens_Birds"
+          ],
           [
             "dw_mode_normal",
             "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_DifficultParade"
@@ -2052,7 +2148,10 @@
       {
         "name": "Contract - Zero Jumps",
         "access_rules": [
-          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_NoAPresses",
+          [
+            "dw_mode_shuffle",
+            "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_NoAPresses"
+          ],
           [
             "dw_mode_normal",
             "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_RiftCollapse_Birds"
@@ -2352,7 +2451,10 @@
       {
         "name": "Contract - Snatcher Coins in Subcon Forest",
         "access_rules": [
-          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Tokens_Subcon",
+          [
+            "dw_mode_shuffle",
+            "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Tokens_Subcon"
+          ],
           [
             "dw_mode_normal",
             "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_RiftCollapse_Subcon"
@@ -2449,7 +2551,10 @@
       {
         "name": "Contract - Snatcher Coins in Alpine Skyline",
         "access_rules": [
-          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Tokens_Alps",
+          [
+            "dw_mode_shuffle",
+            "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Tokens_Alps"
+          ],
           [
             "dw_mode_normal",
             "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_NiceBirdhouse"
@@ -2546,7 +2651,10 @@
       {
         "name": "Contract - Snatcher Coins in Nyakuza Metro",
         "access_rules": [
-          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Tokens_Metro",
+          [
+            "dw_mode_shuffle",
+            "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_Tokens_Metro"
+          ],
           [
             "dw_mode_normal",
             "logical_stamp:30",
