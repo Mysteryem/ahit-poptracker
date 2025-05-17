@@ -15,7 +15,9 @@
                 "^$completedActAt|chapter1_boss",
                 "[^$canCompleteActOrIsFreeRoamAt|chapter1_boss]"
               ],
-              "{$checkCompletedActAt|chapter1_boss}"
+              [
+                "{$checkCompletedActAt|chapter1_boss}"
+              ]
             ],
             "map_locations": [
               {
@@ -44,7 +46,9 @@
                 "^$completedActAt|mafiatown_lava",
                 "[^$canCompleteActOrIsFreeRoamAt|mafiatown_lava]"
               ],
-              "{$checkCompletedActAt|mafiatown_lava}"
+              [
+                "{$checkCompletedActAt|mafiatown_lava}"
+              ]
             ],
             "map_locations": [
               {
@@ -71,7 +75,7 @@
             "chest_opened_img": "images/icons/time_rift_purple_complete.png",
             "access_rules": [
               "burgerrelic_complete, @Mafia Logic/Can access Mafia Town",
-              "{burgerrelic_complete, @Chapter 1 Entrances/Act 1 - Welcome to Mafia Town}"
+              "{burgerrelic_complete}, {@Chapter 1 Entrances/Act 1 - Welcome to Mafia Town}"
             ],
             "map_locations": [
               {
@@ -107,7 +111,10 @@
                 "[^$canCompleteActOrIsFreeRoamAt|chapter3_murder]",
                 "[^$canCompleteActOrIsFreeRoamAt|moon_camerasnap]"
               ],
-              "{$checkCompletedActAt|chapter3_murder, $checkCompletedActAt|moon_camerasnap}"
+              [
+                "{$checkCompletedActAt|chapter3_murder}",
+                "{$checkCompletedActAt|moon_camerasnap}"
+              ]
             ],
             "map_locations": [
               {
@@ -138,7 +145,10 @@
                 "[^$canCompleteActOrIsFreeRoamAt|trainwreck_selfdestruct]",
                 "[^$canCompleteActOrIsFreeRoamAt|moon_parade]"
               ],
-              "{$checkCompletedActAt|trainwreck_selfdestruct, $checkCompletedActAt|moon_parade}"
+              [
+                "{$checkCompletedActAt|trainwreck_selfdestruct}",
+                "{$checkCompletedActAt|moon_parade}"
+              ]
             ],
             "map_locations": [
               {
@@ -166,7 +176,7 @@
             "access_rules": [
               "trainrelic_complete, @DBS Logic/Can access Act 1 - Dead Bird Studio",
               "trainrelic_complete, @DBS Logic/Can access Secret Finale - Dead Bird Studio Basement",
-              "{trainrelic_complete, @Chapter 2 Entrances/Act 1 - Dead Bird Studio}"
+              "{trainrelic_complete}, {@Chapter 2 Entrances/Act 1 - Dead Bird Studio}"
             ],
             "map_locations": [
               {
@@ -262,7 +272,7 @@
             "chest_opened_img": "images/icons/time_rift_purple_complete.png",
             "access_rules": [
               "uforelic_complete, @Subcon Logic/Can access main Subcon area, @Subcon Logic/Green Firewall",
-              "{uforelic_complete, @Chapter 3 Entrances/Act 1 - Contractual Obligations}"
+              "{uforelic_complete}, {@Chapter 3 Entrances/Act 1 - Contractual Obligations}"
             ],
             "map_locations": [
               {
@@ -352,7 +362,7 @@
             "chest_opened_img": "images/icons/time_rift_purple_complete.png",
             "access_rules": [
               "crayonrelic_complete, @Alpine Logic/Can access central Alpine Area",
-              "{crayonrelic_complete, @Chapter 4 Entrances/Alpine Skyline Free Roam}"
+              "{crayonrelic_complete}, {@Chapter 4 Entrances/Alpine Skyline Free Roam}"
             ],
             "map_locations": [
               {
@@ -389,7 +399,9 @@
                 "^$completedActAt|Cruise_Sinking",
                 "[^$canCompleteActOrIsFreeRoamAt|Cruise_Sinking]"
               ],
-              "{$checkCompletedActAt|Cruise_Sinking}"
+              [
+                "{$checkCompletedActAt|Cruise_Sinking}"
+              ]
             ],
             "map_locations": [
               {
@@ -416,7 +428,7 @@
             "chest_opened_img": "images/icons/time_rift_purple_complete.png",
             "access_rules": [
               "cakerelic_complete, @Cruise Logic/Can access Act 1 - Bon Voyage!",
-              "{cakerelic_complete, @Chapter 6 Entrances/Act 1 - Bon Voyage!}"
+              "{cakerelic_complete}, {@Chapter 6 Entrances/Act 1 - Bon Voyage!}"
             ],
             "map_locations": [
               {
@@ -451,7 +463,7 @@
             "chest_opened_img": "images/icons/time_rift_purple_complete.png",
             "access_rules": [
               "jewelryrelic_complete, @Nyakuza Logic/Can access Free Roam",
-              "{jewelryrelic_complete, @Chapter 7 Entrances/Nyakuza Metro Free Roam}"
+              "{jewelryrelic_complete}, {@Chapter 7 Entrances/Nyakuza Metro Free Roam}"
             ],
             "map_locations": [
               {
