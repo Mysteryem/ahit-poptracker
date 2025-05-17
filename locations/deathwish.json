@@ -2644,7 +2644,10 @@
       {
         "name": "Contract - Camera Tourist",
         "access_rules": [
-          "dw_mode_shuffle, $isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_CameraTourist_1",
+          [
+            "dw_mode_shuffle",
+            "$isShuffleContractUnlocked|Hat_SnatcherContract_DeathWish_CameraTourist_1"
+          ],
           [
             "dw_mode_normal",
             "$isContractMainObjectiveComplete|Hat_SnatcherContract_DeathWish_RiftCollapse_Alps"
