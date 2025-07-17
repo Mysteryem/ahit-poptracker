@@ -79,7 +79,7 @@
       {
         "name": "Rush Hour Items",
         "access_rules": [
-          "ice, brewer, hookshot",
+          "ice, brewer, hookshot, dweller",
           "ice, brewer, @General Logic/Moderate",
           "brewer, @General Logic/Hard",
           "@General Logic/Expert"
