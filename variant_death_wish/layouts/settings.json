@@ -14,7 +14,7 @@
             {
               "type": "group",
               "header": "Settings",
-              "dock": "right",
+              "dock": "top",
               "content": {
                 "type": "layout",
                 "key": "settings_grid"
@@ -23,7 +23,7 @@
             {
               "type": "group",
               "header": "Death Wish Settings",
-              "dock": "right",
+              "dock": "top",
               "content": {
                 "type": "layout",
                 "key": "death_wish_settings_grid"
@@ -32,7 +32,7 @@
             {
               "type": "group",
               "header": "Pack Settings",
-              "dock": "right",
+              "dock": "top",
               "content": {
                 "type": "layout",
                 "key": "pack_settings_grid"
