@@ -384,7 +384,7 @@ function onClear(slot_data)
     end
 
     setFromSlotData('ShuffleStorybookPages', "pages")
-    setFromSlotData('ShuffleActContracts', "contract")
+    setFromSlotData('ShuffleActContracts', "contracts_shuffled")
     setFromSlotData('ShuffleSubconPaintings', "paintings")
     setFromSlotData('ShuffleAlpineZiplines', "ziplines_logic")
     setFromSlotData('UmbrellaLogic', "umbrella_logic")
