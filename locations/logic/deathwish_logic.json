@@ -805,8 +805,7 @@
                   "@Mafia Logic/Can access Act 5 - Cheating the Race",
                   "@Mafia Logic/Can access Act 6 - Heating up Mafia Town, @General Logic/Can Melee",
                   "@Mafia Logic/Can access Act 7 - The Golden Vault",
-                  // FIXME: Missing @General Logic/Can Melee requirement? Try plando-ing umbrella onto full completion.
-                  "@Death Wish/Contract - Beat the Heat"
+                  "@Death Wish/Contract - Beat the Heat/Beat the Heat/Main Objective"
                 ]
               },
               {
