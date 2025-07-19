@@ -575,7 +575,8 @@
         "name": "Hot Air Balloon",
         "access_rules": [
           "ice",
-          "@General Logic/Expert"
+          // In HUMT, the buckets are missing and there is only 1 beach ball, but two objects are needed to hover.
+          "@General Logic/Expert, @Mafia Logic/Can access Mafia Town"
         ],
         "sections": [
           {
