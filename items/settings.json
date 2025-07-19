@@ -36,9 +36,21 @@
   },
   {
     "name": "Shuffle Contracts",
-    "type": "toggle",
-    "img": "images/settings/contract.png",
-    "codes": "contract"
+    "type": "progressive",
+    "loop": false,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/settings/contract.png",
+        "img_mods": "@disabled",
+        "codes": "contracts_vanilla"
+      },
+      {
+        "img": "images/settings/contract.png",
+        "codes": "contracts_shuffled",
+        "inherit_codes": false
+      }
+    ]
   },
   {
     "name": "Umbrella Logic",

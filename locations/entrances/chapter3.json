@@ -31,7 +31,11 @@
       {
         "name": "Act 2 - The Subcon Well",
         "access_rules": [
-          "wellcontract"
+          // A player could start inventory or plando a contract into the multiworld even with vanilla contracts, which
+          // the world's logic could accept over the vanilla contract. Whether the game mod would accept this is unclear
+          // without testing.
+          "wellcontract",
+          "contracts_vanilla, @Subcon Forest/Snatcher/Contract - The Subcon Well"
         ],
         "sections": [
           {
@@ -57,7 +61,8 @@
         "chest_unopened_img": "images/icons/boss.png",
         "chest_opened_img": "images/icons/boss_complete.png",
         "access_rules": [
-          "toiletcontract"
+          "toiletcontract",
+          "contracts_vanilla, @Subcon Forest/Snatcher/Contracts"
         ],
         "sections": [
           {
@@ -81,7 +86,8 @@
       {
         "name": "Act 4 - Queen Vanessa's Manor",
         "access_rules": [
-          "manorcontract"
+          "manorcontract",
+          "contracts_vanilla, @Subcon Forest/Snatcher/Contracts"
         ],
         "sections": [
           {
@@ -105,7 +111,8 @@
       {
         "name": "Act 5 - Mail Delivery Service",
         "access_rules": [
-          "mailcontract"
+          "mailcontract",
+          "contracts_vanilla, @Subcon Forest/Snatcher/Contracts"
         ],
         "sections": [
           {

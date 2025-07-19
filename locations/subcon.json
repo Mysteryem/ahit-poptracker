@@ -93,7 +93,7 @@
               "@Subcon Logic/Can access Act 1 - Contractual Obligations"
             ],
             "visibility_rules": [
-              "contract"
+              "contracts_shuffled"
             ]
           },
           {
@@ -105,7 +105,7 @@
               "@General Logic/Moderate, @General Logic/Painting Skips"
             ],
             "visibility_rules": [
-              "contract"
+              "contracts_shuffled"
             ]
           }
         ],
