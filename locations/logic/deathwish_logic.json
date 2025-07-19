@@ -634,8 +634,7 @@
             // Unsure which boss is fought in Contract - Boss Rush
             "name": "Director",
             "access_rules": [
-              // FIXME: This does not include the hookshot requirement due to a bug!!! Note that expert doesn't need it
-              "@DBS Logic/Can access Secret Finale - Dead Bird Studio Basement",
+              "@Dead Bird Basement/Act Completion/Time Piece",
               "@Death Wish/Contract - Killing Two Birds",
               // todo: Which boss do you fight? Is it fixed or does it match who you'll fight in Dead Bird Basement?
               "@Death Wish/Contract - Boss Rush",
