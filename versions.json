@@ -1,6 +1,26 @@
 {
     "versions": [
         {
+            "package_version": "1.7.2",
+            "download_url": "https://github.com/Mysteryem/ahit-poptracker/archive/refs/tags/v1.7.2.zip",
+            "sha256": "25e96dc6d81f653a993aeb8792197965113222eb081c49552d59bb09d090bd78",
+            "changelog": [
+                "Logic:",
+                "- Update to AP 0.6.2 Logic",
+                "New:",
+                " - Added support for vanilla Contracts",
+                " - Added custom icons to the Entrance map",
+                " - Added Down with the Mafia! to out-of-logic Triple Enemy locations",
+                "Changes:",
+                " - Mafia Town Beach Patio/Chest renamed to Beach Patio/Slip Slide Chest",
+                " - Chapter 2 award ceremony now uses a diamond icon because it is not randomized",
+                " - Performance workarounds removed now that PopTracker logic is much faster",
+                "Fixes:",
+                " - Fix Chapter 3 Time Rifts never showing as checkable (blue)",
+                " - Fix Chapter 6 Finale showing as checkable (blue) after completing Chapter 6 Act 1"
+            ]
+        },
+        {
             "package_version": "1.6.0",
             "download_url": "https://github.com/Mysteryem/ahit-poptracker/archive/refs/tags/v1.6.0.zip",
             "sha256": "0067e43ecba4431c6df48d8732b10a0b60af471ab6808674a5b0d4d76d450aac",
