@@ -651,8 +651,7 @@
           {
             "name": "Toilet",
             "access_rules": [
-              // FIXME: Missing paintings + hookshot requirement!!! Note that Hard can cherry bridge and expert can cherry hover
-              "@Subcon Logic/Can access Act 3 - Toilet of Doom",
+              "@Boss Arena Area/Boss Arena/Toilet of Doom",
               "@Death Wish/Contract - Boss Rush"
             ]
           },
