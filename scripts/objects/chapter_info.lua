@@ -51,7 +51,7 @@ chapter_act_info = {
     AlpineSkyline_Windmill = Act.new(-4, "AlpineSkyline_Windmill", "Chapter 4 Free Roam Acts/The Windmill", "Windmill Zipline/The Windmill/Time Piece"),
     AlpineSkyline_WeddingCake = Act.new(-4, "AlpineSkyline_WeddingCake", "Chapter 4 Free Roam Acts/The Lava Cake", "Lava Cake Zipline/Lava Cake/Time Piece"),
 
-    TheFinale_FinalBoss = Act.new(5, "TheFinale_FinalBoss", "Chapter 5 Entrances/Act 1 - The Finale", "Spaceship/Time's End/Time Piece"),
+    TheFinale_FinalBoss = Act.new(5, "TheFinale_FinalBoss", "Chapter 5 Entrances/Act 1 - The Finale", "Spaceship/The Finale/Time Piece"),
     TimeRift_Cave_Tour = Act.new(-5, "TimeRift_Cave_Tour", "The Attic Entrances/Time Rift - Tour", "Spaceship/Tour/Time Rift"),
 
     Cruise_Boarding = Act.new(6, "Cruise_Boarding", "Chapter 6 Entrances/Act 1 - Bon Voyage!", "Bon Voyage!/Control Room/Bon Voyage!"),

@@ -158,7 +158,7 @@ LOCATION_MAPPING = {
     [2000335815] = "@Windmill Zipline/The Windmill/Dropdown",
     [2000335389] = "@Windmill Zipline/The Windmill/House Window",
 
-    [2000304108] = "@Spaceship/Time's End/Frozen Item",
+    [2000304108] = "@Spaceship/The Finale/Frozen Item",
 
     [2000305321] = "@The Arctic Cruise/Bon Voyage!/Lamp Post Top/Relic",
     [2000304313] = "@The Arctic Cruise/Bon Voyage!/Mafia Cargo Ship/Token",
@@ -232,7 +232,7 @@ LOCATION_MAPPING = {
     [2000313335] = "@Alpine Skyline - Time Rifts/Curly Tail Trail/Time Rift",
     [2000311777] = "@Alpine Skyline - Time Rifts/Alpine Skyline (Rift)/Time Rift",
 
-    [2000311872] = "@Spaceship/Time's End/Time Piece",
+    [2000311872] = "@Spaceship/The Finale/Time Piece",
     [2000311803] = "@Spaceship/Tour/Time Rift",
 
     [2000311520] = "@Bon Voyage!/Control Room/Bon Voyage!",
