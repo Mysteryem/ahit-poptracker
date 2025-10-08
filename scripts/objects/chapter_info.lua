@@ -19,7 +19,7 @@ chapter_act_info = {
     TimeRift_Water_Mafia_Hard = Act.new(-1,"TimeRift_Water_Mafia_Hard", "Chapter Time Rift Entrances/Chapter 1/Time Rift - Bazaar", "Mafia Town - Time Rifts/Bazaar/Time Rift"),
 
     DeadBirdStudio = Act.new(2, "DeadBirdStudio", "Chapter 2 Entrances/Act 1 - Dead Bird Studio", "Act Completions/Act Completion/Dead Bird Studio"),
-    chapter3_murder = Act.new(2, "chapter3_murder", "Chapter 2 Entrances/Act 2 - Murder on the Owl Express", "Films/The Conductor's Films/Murder on the Owl Express"),
+    chapter3_murder = Act.new(2, "chapter3_murder", "Chapter 2 Entrances/Act 2 - Murder on the Owl Express", "Murder on the Owl Express/Act Completion/Time Piece"),
     moon_camerasnap = Act.new(2, "moon_camerasnap", "Chapter 2 Entrances/Act 3 - Picture Perfect", "Films/DJ Groove's Films/Picture Perfect"),
     trainwreck_selfdestruct = Act.new(2, "trainwreck_selfdestruct", "Chapter 2 Entrances/Act 4 - Train Rush", "Films/The Conductor's Films/Train Rush"),
     moon_parade = Act.new(2, "moon_parade", "Chapter 2 Entrances/Act 5 - The Big Parade", "Films/DJ Groove's Films/The Big Parade"),

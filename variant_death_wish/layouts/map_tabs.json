@@ -23,22 +23,41 @@
         }
       },
       {
-        "title": "Dead Bird Studio",
-        "icon": "images/icons/Conductor.png",
+        "title": "Battle of the Birds",
+        "icon": "images/icons/killing_two_birds.png",
         "content": {
-          "type": "map",
-          "maps": [
-            "deadbirdstudio"
-          ]
-        }
-      },
-      {
-        "title": "Dead Bird Basement",
-        "icon": "images/icons/DJ_Grooves.png",
-        "content": {
-          "type": "map",
-          "maps": [
-            "basement"
+          "type": "tabbed",
+          "tabs": [
+            {
+              "title": "Dead Bird Studio",
+              "icon": "images/icons/killing_two_birds.png",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "deadbirdstudio"
+                ]
+              }
+            },
+            {
+              "title": "Murder on the Owl Express",
+              "icon": "images/icons/Conductor.png",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "murder_on_the_owl_express"
+                ]
+              }
+            },
+            {
+              "title": "Dead Bird Basement",
+              "icon": "images/icons/killing_two_birds.png",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "basement"
+                ]
+              }
+            }
           ]
         }
       },

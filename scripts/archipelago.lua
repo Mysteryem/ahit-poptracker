@@ -2,61 +2,10 @@ require("objects/chapter_info")
 
 ScriptHost:LoadScript("scripts/autotracking/item_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
+ScriptHost:LoadScript("scripts/autotracking/map_tab_mapping.lua")
 
 CUR_INDEX = -1
 --SLOT_DATA = nil
-
--- Setup for auto map switching
-local map_table = {
-    hub_spaceship = "default",
-    timerift_water_spaceship_mail = "Spaceship",
-    timerift_water_spaceship = "Spaceship",
-    castle_mu = "Spaceship", -- The Finale
-    timerift_cave_tour = "Spaceship",
-
-    mafia_town = "Mafia Town",
-    mafia_town_night = "Mafia Town",
-    mafia_town_lava = "Mafia Town",
-    mafia_hq = "Mafia Town",
-    mafia_town_dw_ufo = "Mafia Town",
-    timerift_cave_mafia = "Mafia Town",
-    timerift_water_mafia_easy = "Mafia Town",
-    timerift_water_mafia_hard = "Mafia Town",
-
-    deadbirdstudio = "Dead Bird Studio",
-    chapter3_murder = "Dead Bird Studio",
-    themoon = "Dead Bird Studio",
-    trainwreck_selfdestruct = "Dead Bird Studio",
-    dead_cinema = "Dead Bird Studio",
-    timerift_cave_deadbird = "Dead Bird Studio",
-    timerift_water_twreck_panels = "Dead Bird Studio",
-    timerift_water_twreck_parade = "Dead Bird Studio",
-
-    deadbirdbasement = "Dead Bird Basement",
-    djgrooves_boss = "Dead Bird Basement",
-
-    subconforest = "Subcon Forest",
-    subcon_cave = "Subcon Forest",
-    vanessa_manor = "Subcon Forest",
-    timerift_cave_raccoon = "Subcon Forest",
-    timerift_water_subcon_hookshot = "Subcon Forest",
-    timerift_water_subcon_dwellers = "Subcon Forest",
-
-    alpsandsails = "Alpine Skyline",
-    timerift_cave_alps = "Alpine Skyline",
-    timerift_water_alp_goats = "Alpine Skyline",
-    timerift_water_alp_cats = "Alpine Skyline",
-
-    ship_main = "Arctic Cruise",
-    ship_sinking = "Arctic Cruise",
-    timerift_cave_aquarium = "Arctic Cruise",
-    timerift_water_cruise_slide = "Arctic Cruise",
-
-    dlc_metro = "Nyakuza Metro",
-    timerift_cave_rumbifactory = "Nyakuza Metro",
-
-    dlc_metro = "Nyakuza Metro"
-}
 
 -- 38 total death wishes
 local num_death_wish_classes = 38
@@ -627,22 +576,28 @@ function changedMap(current_map, previous_map)
         return
     end
 
-    local internal_map_name = map_table[current_map]
-    
-    if internal_map_name == nil then
-        print(string.format("Could not find map name %s; Setting to default map", current_map))
-        internal_map_name = "default"
-    end
-    if internal_map_name == "default" then
-        local default_map_setting_item = Tracker:FindObjectForCode("setting_default_map")
-        local current_stage = default_map_setting_item.CurrentStage
-        if current_stage == 1 then
-            internal_map_name = "Entrances"
-        else
-            internal_map_name = "Spaceship"
+    local internal_map_name = MAP_TAB_MAPPING[current_map]
+
+    if type(internal_map_name) == "table" then
+        for _, tab_name in ipairs(internal_map_name) do
+            Tracker:UiHint("ActivateTab", tab_name)
         end
+    else
+        if internal_map_name == nil then
+            print(string.format("Could not find map name %s; Setting to default map", current_map))
+            internal_map_name = "default"
+        end
+        if internal_map_name == "default" then
+            local default_map_setting_item = Tracker:FindObjectForCode("setting_default_map")
+            local current_stage = default_map_setting_item.CurrentStage
+            if current_stage == 1 then
+                internal_map_name = "Entrances"
+            else
+                internal_map_name = "Spaceship"
+            end
+        end
+        Tracker:UiHint("ActivateTab", internal_map_name)
     end
-    Tracker:UiHint("ActivateTab", internal_map_name)
 end
 
 function tryCompleteEntranceWithFreeRoamAct(act_name, free_roam_acts)

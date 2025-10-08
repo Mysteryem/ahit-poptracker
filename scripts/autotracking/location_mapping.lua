@@ -58,12 +58,12 @@ LOCATION_MAPPING = {
     [2000303899] = "@After Second Lever/Teepee Chest/Relic",
     [2000303900] = "@After Second Lever/Conductor Chest/Token",
 
-    [2000305313] = "@Films/The Conductor's Films/Cafeteria",
-    [2000305090] = "@Films/The Conductor's Films/Luggage Room Top",
-    [2000305091] = "@Films/The Conductor's Films/Luggage Room Bottom",
-    [2000305701] = "@Films/The Conductor's Films/Raven Suite Room",
-    [2000305312] = "@Films/The Conductor's Films/Raven Suite Top",
-    [2000303963] = "@Films/The Conductor's Films/Lounge Chest",
+    [2000305313] = "@Murder on the Owl Express/Cafeteria/Yarn",
+    [2000305090] = "@Murder on the Owl Express/Luggage Room Top/Yarn",
+    [2000305091] = "@Murder on the Owl Express/Luggage Room Bottom/Yarn",
+    [2000305701] = "@Murder on the Owl Express/Raven Suite/Room",
+    [2000305312] = "@Murder on the Owl Express/Raven Suite/Top",
+    [2000303963] = "@Murder on the Owl Express/Lounge Chest/Token",
 
     [2000304307] = "@Films/DJ Groove's Films/Behind Badge Seller",
     [2000304530] = "@Films/DJ Groove's Films/Hats Buy Building",
@@ -201,7 +201,7 @@ LOCATION_MAPPING = {
     [2000311855] = "@Mafia Town - Time Rifts/Mafia of Cooks/Time Rift",
 
     [2000311383] = "@Act Completions/Act Completion/Dead Bird Studio",
-    [2000311544] = "@Films/The Conductor's Films/Murder on the Owl Express",
+    [2000311544] = "@Murder on the Owl Express/Act Completion/Time Piece",
     [2000311587] = "@Films/DJ Groove's Films/Picture Perfect",
     [2000312481] = "@Films/The Conductor's Films/Train Rush",
     [2000311157] = "@Films/DJ Groove's Films/The Big Parade",
