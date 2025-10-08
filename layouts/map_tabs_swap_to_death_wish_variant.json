@@ -1,0 +1,16 @@
+{
+  "map_tabs": {
+    "type": "tabbed",
+    "tabs": [
+      {
+        "title": "Open the Death Wish variant of the tracker pack",
+        "content": {
+          "type": "map",
+          "maps": [
+            "use_deathwish_variant"
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -585,6 +585,10 @@ function onClear(slot_data)
 
         Archipelago:SetNotify(data_storage_request_keys)
         Archipelago:Get(data_storage_request_keys)
+    elseif slot_data["EnableDeathWish"] == 1 then
+      -- Death Wish is enabled, but the user is not using the Death Wish variant of the pack.
+      -- Replace the map tabs with a single map telling the user to swap to the Death Wish variant of the pack.
+      Tracker:AddLayouts("layouts/map_tabs_swap_to_death_wish_variant.json")
     end
 
     --print(dump_table(slot_data))
