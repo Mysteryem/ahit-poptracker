@@ -29,6 +29,34 @@
     ]
   },
   {
+    "name": "Battle of the Birds",
+    "children": [
+      {
+        "name": "Time Rifts",
+        "children": [
+          {
+            "name": "The Owl Express",
+            "access_rules": [
+              "@DBS Logic/Can access Time Rift - The Owl Express"
+            ],
+            "sections": [
+              {
+                "name": "Time Rift"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "murder_on_the_owl_express",
+                "x": 623,
+                "y": 514
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "Films",
     "children": [
       {
@@ -38,12 +66,6 @@
             "name": "Train Rush",
             "access_rules": [
               "hookshot, @DBS Logic/Can access Act 4 - Train Rush"
-            ]
-          },
-          {
-            "name": "Time Rift",
-            "access_rules": [
-              "@DBS Logic/Can access Time Rift - The Owl Express"
             ]
           }
         ],

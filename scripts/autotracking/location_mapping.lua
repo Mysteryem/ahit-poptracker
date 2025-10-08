@@ -207,7 +207,7 @@ LOCATION_MAPPING = {
     [2000311157] = "@Films/DJ Groove's Films/The Big Parade",
     [2000311488] = "@Act Completions/Act Completion/Award Ceremony",
     [2000312253] = "@Dead Bird Basement/Act Completion/Time Piece",
-    [2000312807] = "@Films/The Conductor's Films/Time Rift",
+    [2000312807] = "@Battle of the Birds/Time Rifts/The Owl Express/Time Rift",
     [2000312785] = "@Films/DJ Groove's Films/Time Rift",
     [2000312577] = "@Dead Bird Studio (Rift)/Time Piece",
 

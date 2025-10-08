@@ -26,7 +26,7 @@ chapter_act_info = {
     award_ceremony = Act.new(2, "award_ceremony", "Chapter 2 Entrances/Finale - Award Ceremony", "Act Completions/Act Completion/Award Ceremony"),
     chapter3_secret_finale = Act.new(2, "chapter3_secret_finale", "Chapter 2 Entrances/Secret Finale - Dead Bird Basement", "Dead Bird Basement/Act Completion/Time Piece"),
     TimeRift_Cave_BirdBasement = Act.new(-2, "TimeRift_Cave_BirdBasement", "Chapter Time Rift Entrances/Chapter 2/Time Rift - Dead Bird Studio", "Dead Bird Studio (Rift)/Time Piece"),
-    TimeRift_Water_TWreck_Panels = Act.new(-2, "TimeRift_Water_TWreck_Panels", "Chapter Time Rift Entrances/Chapter 2/Time Rift - The Owl Express", "Films/The Conductor's Films/Time Rift"),
+    TimeRift_Water_TWreck_Panels = Act.new(-2, "TimeRift_Water_TWreck_Panels", "Chapter Time Rift Entrances/Chapter 2/Time Rift - The Owl Express", "Battle of the Birds/Time Rifts/The Owl Express/Time Rift"),
     TimeRift_Water_TWreck_Parade = Act.new(-2, "TimeRift_Water_TWreck_Parade", "Chapter Time Rift Entrances/Chapter 2/Time Rift - The Moon", "Films/DJ Groove's Films/Time Rift"),
 
     subcon_village_icewall = Act.new(3, "subcon_village_icewall", "Chapter 3 Entrances/Act 1 - Contractual Obligations", "Yellow Firewall/Contractual Obligations/Time Piece"),
