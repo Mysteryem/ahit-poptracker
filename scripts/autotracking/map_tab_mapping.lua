@@ -16,12 +16,12 @@ MAP_TAB_MAPPING = {
 
     deadbirdstudio = {"Battle of the Birds", "Dead Bird Studio"},
     chapter3_murder = {"Battle of the Birds", "Murder on the Owl Express"},
-    themoon = {"Battle of the Birds", "Dead Bird Studio"},
+    themoon = {"Battle of the Birds", "The Moon"},
     trainwreck_selfdestruct = {"Battle of the Birds", "Dead Bird Studio"},
     dead_cinema = {"Battle of the Birds", "Dead Bird Studio"},
     timerift_cave_deadbird = {"Battle of the Birds", "Dead Bird Studio"},
-    timerift_water_twreck_panels = {"Battle of the Birds", "Dead Bird Studio"},
-    timerift_water_twreck_parade = {"Battle of the Birds", "Dead Bird Studio"},
+    timerift_water_twreck_panels = {"Battle of the Birds", "Murder on the Owl Express"},
+    timerift_water_twreck_parade = {"Battle of the Birds", "The Moon"},
 
     deadbirdbasement = {"Battle of the Birds", "Dead Bird Basement"},
     djgrooves_boss = {"Battle of the Birds", "Dead Bird Basement"},
