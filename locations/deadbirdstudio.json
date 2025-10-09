@@ -168,10 +168,42 @@
         "name": "The Conductor's Films",
         "sections": [
           {
+            "name": "Murder on the Owl Express",
+            "ref": "Murder on the Owl Express/Act Completion/Time Piece"
+          },
+          {
             "name": "Train Rush",
             "access_rules": [
               "hookshot, @DBS Logic/Can access Act 4 - Train Rush"
             ]
+          },
+          {
+            "name": "Cafeteria",
+            "ref": "Murder on the Owl Express/Cafeteria/Yarn"
+          },
+          {
+            "name": "Luggage Room Top",
+            "ref": "Murder on the Owl Express/Luggage Room Top/Yarn"
+          },
+          {
+            "name": "Luggage Room Bottom",
+            "ref": "Murder on the Owl Express/Luggage Room Bottom/Yarn"
+          },
+          {
+            "name": "Raven Suite Room",
+            "ref": "Murder on the Owl Express/Raven Suite/Room"
+          },
+          {
+            "name": "Raven Suite Top",
+            "ref": "Murder on the Owl Express/Raven Suite/Top"
+          },
+          {
+            "name": "Lounge Chest",
+            "ref": "Murder on the Owl Express/Lounge Chest/Token"
+          },
+          {
+            "name": "Time Rift",
+            "ref": "Battle of the Birds/Time Rifts/The Owl Express/Time Rift"
           }
         ],
         "map_locations": [
