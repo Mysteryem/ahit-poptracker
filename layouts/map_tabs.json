@@ -49,6 +49,16 @@
               }
             },
             {
+              "title": "The Moon",
+              "icon": "images/icons/DJ_Grooves.png",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "the_moon"
+                ]
+              }
+            },
+            {
               "title": "Dead Bird Basement",
               "icon": "images/icons/killing_two_birds.png",
               "content": {

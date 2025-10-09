@@ -20,14 +20,14 @@ chapter_act_info = {
 
     DeadBirdStudio = Act.new(2, "DeadBirdStudio", "Chapter 2 Entrances/Act 1 - Dead Bird Studio", "Act Completions/Act Completion/Dead Bird Studio"),
     chapter3_murder = Act.new(2, "chapter3_murder", "Chapter 2 Entrances/Act 2 - Murder on the Owl Express", "Murder on the Owl Express/Act Completion/Time Piece"),
-    moon_camerasnap = Act.new(2, "moon_camerasnap", "Chapter 2 Entrances/Act 3 - Picture Perfect", "Films/DJ Groove's Films/Picture Perfect"),
+    moon_camerasnap = Act.new(2, "moon_camerasnap", "Chapter 2 Entrances/Act 3 - Picture Perfect", "Battle of the Birds/Picture Perfect/Time Piece"),
     trainwreck_selfdestruct = Act.new(2, "trainwreck_selfdestruct", "Chapter 2 Entrances/Act 4 - Train Rush", "Films/The Conductor's Films/Train Rush"),
-    moon_parade = Act.new(2, "moon_parade", "Chapter 2 Entrances/Act 5 - The Big Parade", "Films/DJ Groove's Films/The Big Parade"),
+    moon_parade = Act.new(2, "moon_parade", "Chapter 2 Entrances/Act 5 - The Big Parade", "Battle of the Birds/The Big Parade/Time Piece"),
     award_ceremony = Act.new(2, "award_ceremony", "Chapter 2 Entrances/Finale - Award Ceremony", "Act Completions/Act Completion/Award Ceremony"),
     chapter3_secret_finale = Act.new(2, "chapter3_secret_finale", "Chapter 2 Entrances/Secret Finale - Dead Bird Basement", "Dead Bird Basement/Act Completion/Time Piece"),
     TimeRift_Cave_BirdBasement = Act.new(-2, "TimeRift_Cave_BirdBasement", "Chapter Time Rift Entrances/Chapter 2/Time Rift - Dead Bird Studio", "Dead Bird Studio (Rift)/Time Piece"),
     TimeRift_Water_TWreck_Panels = Act.new(-2, "TimeRift_Water_TWreck_Panels", "Chapter Time Rift Entrances/Chapter 2/Time Rift - The Owl Express", "Battle of the Birds/Time Rifts/The Owl Express/Time Rift"),
-    TimeRift_Water_TWreck_Parade = Act.new(-2, "TimeRift_Water_TWreck_Parade", "Chapter Time Rift Entrances/Chapter 2/Time Rift - The Moon", "Films/DJ Groove's Films/Time Rift"),
+    TimeRift_Water_TWreck_Parade = Act.new(-2, "TimeRift_Water_TWreck_Parade", "Chapter Time Rift Entrances/Chapter 2/Time Rift - The Moon", "Battle of the Birds/Time Rifts/The Moon/Time Rift"),
 
     subcon_village_icewall = Act.new(3, "subcon_village_icewall", "Chapter 3 Entrances/Act 1 - Contractual Obligations", "Yellow Firewall/Contractual Obligations/Time Piece"),
     subcon_cave = Act.new(3, "subcon_cave", "Chapter 3 Entrances/Act 2 - The Subcon Well", "Yellow Firewall/Subcon Well/Time Piece"),

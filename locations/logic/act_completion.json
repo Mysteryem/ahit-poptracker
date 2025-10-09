@@ -107,7 +107,7 @@
       {
         "name": "moon_camerasnap",
         "access_rules": [
-          "@Films/DJ Groove's Films/Picture Perfect"
+          "@Battle of the Birds/Picture Perfect/Time Piece"
         ]
       },
       {
@@ -119,7 +119,7 @@
       {
         "name": "moon_parade",
         "access_rules": [
-          "@Films/DJ Groove's Films/The Big Parade"
+          "@Battle of the Birds/The Big Parade/Time Piece"
         ]
       },
       {
@@ -149,7 +149,7 @@
       {
         "name": "TimeRift_Water_TWreck_Parade",
         "access_rules": [
-          "@Films/DJ Groove's Films/Time Rift"
+          "@Battle of the Birds/Time Rifts/The Moon/Time Rift"
         ]
       },
 

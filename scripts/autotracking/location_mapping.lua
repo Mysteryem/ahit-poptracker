@@ -65,8 +65,8 @@ LOCATION_MAPPING = {
     [2000305312] = "@Murder on the Owl Express/Raven Suite/Top",
     [2000303963] = "@Murder on the Owl Express/Lounge Chest/Token",
 
-    [2000304307] = "@Films/DJ Groove's Films/Behind Badge Seller",
-    [2000304530] = "@Films/DJ Groove's Films/Hats Buy Building",
+    [2000304307] = "@Battle of the Birds/Picture Perfect/Behind Badge Seller/Yarn",
+    [2000304530] = "@Battle of the Birds/Picture Perfect/Hats Buy Building/Yarn",
 
     [2000305432] = "@Dead Bird Basement/Window Platform/Yarn",
     [2000305059] = "@Dead Bird Basement/Cardboard Conductor/Yarn",
@@ -202,13 +202,13 @@ LOCATION_MAPPING = {
 
     [2000311383] = "@Act Completions/Act Completion/Dead Bird Studio",
     [2000311544] = "@Murder on the Owl Express/Act Completion/Time Piece",
-    [2000311587] = "@Films/DJ Groove's Films/Picture Perfect",
+    [2000311587] = "@Battle of the Birds/Picture Perfect/Time Piece",
     [2000312481] = "@Films/The Conductor's Films/Train Rush",
-    [2000311157] = "@Films/DJ Groove's Films/The Big Parade",
+    [2000311157] = "@Battle of the Birds/The Big Parade/Time Piece",
     [2000311488] = "@Act Completions/Act Completion/Award Ceremony",
     [2000312253] = "@Dead Bird Basement/Act Completion/Time Piece",
     [2000312807] = "@Battle of the Birds/Time Rifts/The Owl Express/Time Rift",
-    [2000312785] = "@Films/DJ Groove's Films/Time Rift",
+    [2000312785] = "@Battle of the Birds/Time Rifts/The Moon/Time Rift",
     [2000312577] = "@Dead Bird Studio (Rift)/Time Piece",
 
     [2000312317] = "@Yellow Firewall/Contractual Obligations/Time Piece",

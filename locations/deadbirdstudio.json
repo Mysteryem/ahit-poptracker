@@ -32,6 +32,93 @@
     "name": "Battle of the Birds",
     "children": [
       {
+        "name": "Picture Perfect",
+        "access_rules": [
+          "@DBS Logic/Can access Act 3 - Picture Perfect"
+        ],
+        "sections": [
+          {
+            "name": "Time Piece"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "the_moon",
+            "x": 126,
+            "y": 1219
+          }
+        ],
+        "children": [
+          {
+            "name": "Behind Badge Seller",
+            "sections": [
+              {
+                "name": "Yarn"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "the_moon",
+                "x": 857,
+                "y": 573
+              }
+            ]
+          },
+          {
+            "name": "Hats Buy Building",
+            "sections": [
+              {
+                "name": "Yarn"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "the_moon",
+                "x": 788,
+                "y": 1266
+              }
+            ]
+          },
+          {
+            "name": "Badge Seller",
+            "sections": [
+              {
+                "name": "Scammed",
+                "ref": "Shops/Badge Seller/Scammed"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "the_moon",
+                "x": 742,
+                "y": 564
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "The Big Parade",
+        "access_rules": [
+          "@DBS Logic/Can access Act 5 - The Big Parade"
+        ],
+        "sections": [
+          {
+            "name": "Time Piece",
+            "access_rules": [
+              "@General Logic/Can Melee"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "the_moon",
+            "x": 629,
+            "y": 822
+          }
+        ]
+      },
+      {
         "name": "Time Rifts",
         "children": [
           {
@@ -49,6 +136,24 @@
                 "map": "murder_on_the_owl_express",
                 "x": 623,
                 "y": 514
+              }
+            ]
+          },
+          {
+            "name": "The Moon",
+            "access_rules": [
+              "@DBS Logic/Can access Time Rift - The Moon"
+            ],
+            "sections": [
+              {
+                "name": "Time Rift"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "the_moon",
+                "x": 803,
+                "y": 1012
               }
             ]
           }
@@ -82,33 +187,23 @@
         "sections": [
           {
             "name": "Picture Perfect",
-            "access_rules": [
-              "@DBS Logic/Can access Act 3 - Picture Perfect"
-            ]
+            "ref": "Battle of the Birds/Picture Perfect/Time Piece"
           },
           {
             "name": "The Big Parade",
-            "access_rules": [
-              "@General Logic/Can Melee, @DBS Logic/Can access Act 5 - The Big Parade"
-            ]
+            "ref": "Battle of the Birds/The Big Parade/Time Piece"
           },
           {
             "name": "Behind Badge Seller",
-            "access_rules": [
-              "@DBS Logic/Can access Act 3 - Picture Perfect"
-            ]
+            "ref": "Battle of the Birds/Picture Perfect/Behind Badge Seller/Yarn"
           },
           {
             "name": "Hats Buy Building",
-            "access_rules": [
-              "@DBS Logic/Can access Act 3 - Picture Perfect"
-            ]
+            "ref": "Battle of the Birds/Picture Perfect/Hats Buy Building/Yarn"
           },
           {
             "name": "Time Rift",
-            "access_rules": [
-              "@DBS Logic/Can access Time Rift - The Moon"
-            ]
+            "ref": "Battle of the Birds/Time Rifts/The Moon/Time Rift"
           }
         ],
         "map_locations": [
