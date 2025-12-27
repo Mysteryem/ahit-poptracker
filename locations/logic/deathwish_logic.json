@@ -609,7 +609,8 @@
             "name": "Goofy Mafia",
             "access_rules": [
               "[never], @Mafia Logic/Can access Act 3 - She Came from Outer Space",
-              "[never], @Death Wish/Contract - Mafia's Jumps"
+              "[never], @Death Wish/Contract - Mafia's Jumps",
+              "[never], @Death Wish/Contract - She Speedran from Outer Space"
             ]
           }
         ]
