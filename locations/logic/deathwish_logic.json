@@ -586,7 +586,8 @@
             "name": "Moon Penguin",
             "access_rules": [
               "[never], @DBS Logic/Can access Act 1 - Dead Bird Studio",
-              "[never], @DBS Logic/Can access Secret Finale - Dead Bird Studio Basement",
+              // Only found after the section that needs Hookshot.
+              "[never], @Dead Bird Basement/Act Completion/Time Piece",
               "[never], @Death Wish/Contract - Security Breach"
             ]
           },
