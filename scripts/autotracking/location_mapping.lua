@@ -68,6 +68,12 @@ LOCATION_MAPPING = {
     [2000304307] = "@Battle of the Birds/Picture Perfect/Behind Badge Seller/Yarn",
     [2000304530] = "@Battle of the Birds/Picture Perfect/Hats Buy Building/Yarn",
 
+    [2001203990] = "@Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Cardboard Puppy/",
+    [2001203991] = "@Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Card Guessing Game/",
+    [2001203992] = "@Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Back Alley/",
+    [2001203993] = "@Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Cooking Show/",
+    [2001203987] = "@Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Pon Cluster/",
+
     [2000305432] = "@Dead Bird Basement/Window Platform/Yarn",
     [2000305059] = "@Dead Bird Basement/Cardboard Conductor/Yarn",
     [2000305057] = "@Dead Bird Basement/Above Conductor Sign/Yarn",

@@ -94,6 +94,79 @@
                 "y": 564
               }
             ]
+          },
+          {
+            "name": "DJ Grooves Tokens",
+            "visibility_rules": [
+              "shuffle_director_tokens"
+            ],
+            "children": [
+              {
+                "name": "DJ Grooves Token: Cardboard Puppy",
+                "sections": [
+                  {}
+                ],
+                "map_locations": [
+                  {
+                    "map": "the_moon",
+                    "x": 400,
+                    "y": 1076
+                  }
+                ]
+              },
+              {
+                "name": "DJ Grooves Token: Pon Cluster",
+                "sections": [
+                  {}
+                ],
+                "map_locations": [
+                  {
+                    "map": "the_moon",
+                    "x": 724,
+                    "y": 1051
+                  }
+                ]
+              },
+              {
+                "name": "DJ Grooves Token: Back Alley",
+                "sections": [
+                  {}
+                ],
+                "map_locations": [
+                  {
+                    "map": "the_moon",
+                    "x": 1010,
+                    "y": 1203
+                  }
+                ]
+              },
+              {
+                "name": "DJ Grooves Token: Card Guessing Game",
+                "sections": [
+                  {}
+                ],
+                "map_locations": [
+                  {
+                    "map": "the_moon",
+                    "x": 870,
+                    "y": 218
+                  }
+                ]
+              },
+              {
+                "name": "DJ Grooves Token: Cooking Show",
+                "sections": [
+                  {}
+                ],
+                "map_locations": [
+                  {
+                    "map": "the_moon",
+                    "x": 482,
+                    "y": 283
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -232,6 +305,26 @@
           {
             "name": "Hats Buy Building",
             "ref": "Battle of the Birds/Picture Perfect/Hats Buy Building/Yarn"
+          },
+          {
+            "name": "DJ Grooves Token: Cardboard Puppy",
+            "ref": "Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Cardboard Puppy/"
+          },
+          {
+            "name": "DJ Grooves Token: Card Guessing Game",
+            "ref": "Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Card Guessing Game/"
+          },
+          {
+            "name": "DJ Grooves Token: Back Alley",
+            "ref": "Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Back Alley/"
+          },
+          {
+            "name": "DJ Grooves Token: Cooking Show",
+            "ref": "Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Cooking Show/"
+          },
+          {
+            "name": "DJ Grooves Token: Pon Cluster",
+            "ref": "Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Pon Cluster/"
           },
           {
             "name": "Time Rift",
