@@ -235,7 +235,7 @@
     ]
   },
   {
-    "name": "Films",
+    "name": "Films Overview",
     "children": [
       {
         "name": "The Conductor's Films",
@@ -289,53 +289,82 @@
       },
       {
         "name": "DJ Groove's Films",
-        "sections": [
+        "children": [
           {
             "name": "Picture Perfect",
-            "ref": "Battle of the Birds/Picture Perfect/Time Piece"
+            "sections": [
+              {
+                "name": "Time Piece",
+                "ref": "Battle of the Birds/Picture Perfect/Time Piece"
+              },
+              {
+                "name": "Behind Badge Seller",
+                "ref": "Battle of the Birds/Picture Perfect/Behind Badge Seller/Yarn"
+              },
+              {
+                "name": "Hats Buy Building",
+                "ref": "Battle of the Birds/Picture Perfect/Hats Buy Building/Yarn"
+              },
+              {
+                "name": "DJ Grooves Token: Cardboard Puppy",
+                "ref": "Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Cardboard Puppy/"
+              },
+              {
+                "name": "DJ Grooves Token: Card Guessing Game",
+                "ref": "Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Card Guessing Game/"
+              },
+              {
+                "name": "DJ Grooves Token: Back Alley",
+                "ref": "Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Back Alley/"
+              },
+              {
+                "name": "DJ Grooves Token: Cooking Show",
+                "ref": "Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Cooking Show/"
+              },
+              {
+                "name": "DJ Grooves Token: Pon Cluster",
+                "ref": "Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Pon Cluster/"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deadbirdstudio",
+                "x": 1818,
+                "y": 180
+              }
+            ]
           },
           {
             "name": "The Big Parade",
-            "ref": "Battle of the Birds/The Big Parade/Time Piece"
+            "sections": [
+              {
+                "name": "Time Piece",
+                "ref": "Battle of the Birds/The Big Parade/Time Piece"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deadbirdstudio",
+                "x": 1881,
+                "y": 180
+              }
+            ]
           },
           {
-            "name": "Behind Badge Seller",
-            "ref": "Battle of the Birds/Picture Perfect/Behind Badge Seller/Yarn"
-          },
-          {
-            "name": "Hats Buy Building",
-            "ref": "Battle of the Birds/Picture Perfect/Hats Buy Building/Yarn"
-          },
-          {
-            "name": "DJ Grooves Token: Cardboard Puppy",
-            "ref": "Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Cardboard Puppy/"
-          },
-          {
-            "name": "DJ Grooves Token: Card Guessing Game",
-            "ref": "Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Card Guessing Game/"
-          },
-          {
-            "name": "DJ Grooves Token: Back Alley",
-            "ref": "Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Back Alley/"
-          },
-          {
-            "name": "DJ Grooves Token: Cooking Show",
-            "ref": "Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Cooking Show/"
-          },
-          {
-            "name": "DJ Grooves Token: Pon Cluster",
-            "ref": "Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Pon Cluster/"
-          },
-          {
-            "name": "Time Rift",
-            "ref": "Battle of the Birds/Time Rifts/The Moon/Time Rift"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "deadbirdstudio",
-            "x": 1890,
-            "y": 180
+            "name": "Time Rift - The Moon",
+            "sections": [
+              {
+                "name": "Time Piece",
+                "ref": "Battle of the Birds/Time Rifts/The Moon/Time Rift"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deadbirdstudio",
+                "x": 1944,
+                "y": 180
+              }
+            ]
           }
         ]
       }
