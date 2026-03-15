@@ -239,51 +239,80 @@
     "children": [
       {
         "name": "The Conductor's Films",
-        "sections": [
+        "children": [
           {
             "name": "Murder on the Owl Express",
-            "ref": "Murder on the Owl Express/Act Completion/Time Piece"
+            "sections": [
+              {
+                "name": "Time Piece",
+                "ref": "Murder on the Owl Express/Act Completion/Time Piece"
+              },
+              {
+                "name": "Cafeteria",
+                "ref": "Murder on the Owl Express/Cafeteria/Yarn"
+              },
+              {
+                "name": "Luggage Room Top",
+                "ref": "Murder on the Owl Express/Luggage Room Top/Yarn"
+              },
+              {
+                "name": "Luggage Room Bottom",
+                "ref": "Murder on the Owl Express/Luggage Room Bottom/Yarn"
+              },
+              {
+                "name": "Raven Suite Room",
+                "ref": "Murder on the Owl Express/Raven Suite/Room"
+              },
+              {
+                "name": "Raven Suite Top",
+                "ref": "Murder on the Owl Express/Raven Suite/Top"
+              },
+              {
+                "name": "Lounge Chest",
+                "ref": "Murder on the Owl Express/Lounge Chest/Token"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deadbirdstudio",
+                "x": 1376,
+                "y": 180
+              }
+            ]
           },
           {
             "name": "Train Rush",
             "access_rules": [
               "hookshot, @DBS Logic/Can access Act 4 - Train Rush"
+            ],
+            "sections": [
+              {
+                "name": "Time Piece"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deadbirdstudio",
+                "x": 1439,
+                "y": 180
+              }
             ]
           },
           {
-            "name": "Cafeteria",
-            "ref": "Murder on the Owl Express/Cafeteria/Yarn"
-          },
-          {
-            "name": "Luggage Room Top",
-            "ref": "Murder on the Owl Express/Luggage Room Top/Yarn"
-          },
-          {
-            "name": "Luggage Room Bottom",
-            "ref": "Murder on the Owl Express/Luggage Room Bottom/Yarn"
-          },
-          {
-            "name": "Raven Suite Room",
-            "ref": "Murder on the Owl Express/Raven Suite/Room"
-          },
-          {
-            "name": "Raven Suite Top",
-            "ref": "Murder on the Owl Express/Raven Suite/Top"
-          },
-          {
-            "name": "Lounge Chest",
-            "ref": "Murder on the Owl Express/Lounge Chest/Token"
-          },
-          {
-            "name": "Time Rift",
-            "ref": "Battle of the Birds/Time Rifts/The Owl Express/Time Rift"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "deadbirdstudio",
-            "x": 1440,
-            "y": 180
+            "name": "Time Rift - The Owl Express",
+            "sections": [
+              {
+                "name": "Time Piece",
+                "ref": "Battle of the Birds/Time Rifts/The Owl Express/Time Rift"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "deadbirdstudio",
+                "x": 1502,
+                "y": 180
+              }
+            ]
           }
         ]
       },
