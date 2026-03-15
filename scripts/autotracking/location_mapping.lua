@@ -65,6 +65,9 @@ LOCATION_MAPPING = {
     [2000305312] = "@Murder on the Owl Express/Raven Suite/Top",
     [2000303963] = "@Murder on the Owl Express/Lounge Chest/Token",
 
+    [2001104767] = "@Murder on the Owl Express/Conductor Token: Cafeteria/",
+    [2001104768] = "@Murder on the Owl Express/Conductor Token: Recreational Room/",
+
     [2000304307] = "@Battle of the Birds/Picture Perfect/Behind Badge Seller/Yarn",
     [2000304530] = "@Battle of the Birds/Picture Perfect/Hats Buy Building/Yarn",
 

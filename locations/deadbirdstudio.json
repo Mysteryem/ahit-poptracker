@@ -270,6 +270,14 @@
               {
                 "name": "Lounge Chest",
                 "ref": "Murder on the Owl Express/Lounge Chest/Token"
+              },
+              {
+                "name": "Conductor Token: Cafeteria",
+                "ref": "Murder on the Owl Express/Conductor Token: Cafeteria/"
+              },
+              {
+                "name": "Conductor Token: Recreational Room",
+                "ref": "Murder on the Owl Express/Conductor Token: Recreational Room/"
               }
             ],
             "map_locations": [
@@ -684,6 +692,38 @@
             "map": "murder_on_the_owl_express",
             "x": 522,
             "y": 38
+          }
+        ]
+      },
+      {
+        "name": "Conductor Token: Cafeteria",
+        "visibility_rules": [
+          "shuffle_director_tokens"
+        ],
+        "sections": [
+          {}
+        ],
+        "map_locations": [
+          {
+            "map": "murder_on_the_owl_express",
+            "x": 731,
+            "y": 443
+          }
+        ]
+      },
+      {
+        "name": "Conductor Token: Recreational Room",
+        "visibility_rules": [
+          "shuffle_director_tokens"
+        ],
+        "sections": [
+          {}
+        ],
+        "map_locations": [
+          {
+            "map": "murder_on_the_owl_express",
+            "x": 853,
+            "y": 270
           }
         ]
       }
