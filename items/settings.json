@@ -199,6 +199,12 @@
     "codes": "dlc2"
   },
   {
+    "name": "Shuffle Director Tokens (and Time Bonuses)",
+    "type": "toggle",
+    "img": "images/settings/director_token_shuffle.png",
+    "codes": "shuffle_director_tokens"
+  },
+  {
     "name": "Chapter 1 Cost",
     "type": "consumable",
     "codes": "chapter_1_cost"

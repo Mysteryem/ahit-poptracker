@@ -45,10 +45,12 @@
         "item_margin": "1, 4",
         "item_size": 4,
         "margin": "0,0",
-        "h_alignment": "left",
+        "h_alignment": "center",
         "rows": [
-          ["pages", "contracts_shuffled", "umbrella_logic", "dlc1", "exclude_tour_option", "tasksanity"],
-          ["ctrlogic", "difficulty", "ziplines_logic", "no_painting_skips", "dlc2", "no_ticket_skips"]
+          ["pages", "contracts_shuffled", "paintings", "ziplines_logic", "shuffle_director_tokens"],
+          ["difficulty", "ctrlogic", "umbrella_logic", "no_painting_skips"],
+          ["dlc1", "exclude_tour_option", "tasksanity"],
+          ["dlc2", "no_ticket_skips"]
         ]
       }
     ]
