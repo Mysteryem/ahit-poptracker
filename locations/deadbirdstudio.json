@@ -415,6 +415,22 @@
         ],
         "children": [
           {
+            "name": "Badge Seller",
+            "sections": [
+              {
+                "name": "Scammed",
+                "ref": "Shops/Badge Seller/Scammed"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "train_rush",
+                "x": 665,
+                "y": 180
+              }
+            ]
+          },
+          {
             "name": "Time Bonuses",
             "visibility_rules": [
               "shuffle_director_tokens"
