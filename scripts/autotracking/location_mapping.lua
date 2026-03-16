@@ -65,8 +65,8 @@ LOCATION_MAPPING = {
     [2000305312] = "@Murder on the Owl Express/Raven Suite/Top",
     [2000303963] = "@Murder on the Owl Express/Lounge Chest/Token",
 
-    [2000304307] = "@Battle of the Birds/Picture Perfect/Behind Badge Seller/Yarn",
-    [2000304530] = "@Battle of the Birds/Picture Perfect/Hats Buy Building/Yarn",
+    [2000304307] = "@Battle of the Birds/Picture Perfect/Picture Perfect - Behind Badge Seller/Yarn",
+    [2000304530] = "@Battle of the Birds/Picture Perfect/Picture Perfect - Hats Buy Building/Yarn",
 
     [2000305432] = "@Dead Bird Basement/Window Platform/Yarn",
     [2000305059] = "@Dead Bird Basement/Cardboard Conductor/Yarn",
@@ -436,11 +436,11 @@ LOCATION_MAPPING = {
     [2001104767] = "@Murder on the Owl Express/Conductor Token: Cafeteria/",
     [2001104768] = "@Murder on the Owl Express/Conductor Token: Recreational Room/",
 
-    [2001203990] = "@Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Cardboard Puppy/",
-    [2001203991] = "@Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Card Guessing Game/",
-    [2001203992] = "@Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Back Alley/",
-    [2001203993] = "@Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Cooking Show/",
-    [2001203987] = "@Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Pon Cluster/",
+    [2001203990] = "@Battle of the Birds/Picture Perfect/DJ Grooves Tokens/Picture Perfect - DJ Grooves Token: Cardboard Puppy/",
+    [2001203991] = "@Battle of the Birds/Picture Perfect/DJ Grooves Tokens/Picture Perfect - DJ Grooves Token: Card Guessing Game/",
+    [2001203992] = "@Battle of the Birds/Picture Perfect/DJ Grooves Tokens/Picture Perfect - DJ Grooves Token: Back Alley/",
+    [2001203993] = "@Battle of the Birds/Picture Perfect/DJ Grooves Tokens/Picture Perfect - DJ Grooves Token: Cooking Show/",
+    [2001203987] = "@Battle of the Birds/Picture Perfect/DJ Grooves Tokens/Picture Perfect - DJ Grooves Token: Pon Cluster/",
 
     [2001400000] = "@Battle of the Birds/The Big Parade/The Big Parade - DJ Grooves Tokens (Internal)/Token 1",
     [2001400001] = "@Battle of the Birds/The Big Parade/The Big Parade - DJ Grooves Tokens (Internal)/Token 2",

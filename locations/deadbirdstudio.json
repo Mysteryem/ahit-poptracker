@@ -50,7 +50,7 @@
         ],
         "children": [
           {
-            "name": "Behind Badge Seller",
+            "name": "Picture Perfect - Behind Badge Seller",
             "sections": [
               {
                 "name": "Yarn"
@@ -65,7 +65,7 @@
             ]
           },
           {
-            "name": "Hats Buy Building",
+            "name": "Picture Perfect - Hats Buy Building",
             "sections": [
               {
                 "name": "Yarn"
@@ -102,7 +102,7 @@
             ],
             "children": [
               {
-                "name": "DJ Grooves Token: Cardboard Puppy",
+                "name": "Picture Perfect - DJ Grooves Token: Cardboard Puppy",
                 "sections": [
                   {}
                 ],
@@ -115,7 +115,7 @@
                 ]
               },
               {
-                "name": "DJ Grooves Token: Pon Cluster",
+                "name": "Picture Perfect - DJ Grooves Token: Pon Cluster",
                 "sections": [
                   {}
                 ],
@@ -128,7 +128,7 @@
                 ]
               },
               {
-                "name": "DJ Grooves Token: Back Alley",
+                "name": "Picture Perfect - DJ Grooves Token: Back Alley",
                 "sections": [
                   {}
                 ],
@@ -141,7 +141,7 @@
                 ]
               },
               {
-                "name": "DJ Grooves Token: Card Guessing Game",
+                "name": "Picture Perfect - DJ Grooves Token: Card Guessing Game",
                 "sections": [
                   {}
                 ],
@@ -154,7 +154,7 @@
                 ]
               },
               {
-                "name": "DJ Grooves Token: Cooking Show",
+                "name": "Picture Perfect - DJ Grooves Token: Cooking Show",
                 "sections": [
                   {}
                 ],
@@ -512,31 +512,31 @@
               },
               {
                 "name": "Behind Badge Seller",
-                "ref": "Battle of the Birds/Picture Perfect/Behind Badge Seller/Yarn"
+                "ref": "Battle of the Birds/Picture Perfect/Picture Perfect - Behind Badge Seller/Yarn"
               },
               {
                 "name": "Hats Buy Building",
-                "ref": "Battle of the Birds/Picture Perfect/Hats Buy Building/Yarn"
+                "ref": "Battle of the Birds/Picture Perfect/Picture Perfect - Hats Buy Building/Yarn"
               },
               {
                 "name": "DJ Grooves Token: Cardboard Puppy",
-                "ref": "Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Cardboard Puppy/"
+                "ref": "Battle of the Birds/Picture Perfect/DJ Grooves Tokens/Picture Perfect - DJ Grooves Token: Cardboard Puppy/"
               },
               {
                 "name": "DJ Grooves Token: Card Guessing Game",
-                "ref": "Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Card Guessing Game/"
+                "ref": "Battle of the Birds/Picture Perfect/DJ Grooves Tokens/Picture Perfect - DJ Grooves Token: Card Guessing Game/"
               },
               {
                 "name": "DJ Grooves Token: Back Alley",
-                "ref": "Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Back Alley/"
+                "ref": "Battle of the Birds/Picture Perfect/DJ Grooves Tokens/Picture Perfect - DJ Grooves Token: Back Alley/"
               },
               {
                 "name": "DJ Grooves Token: Cooking Show",
-                "ref": "Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Cooking Show/"
+                "ref": "Battle of the Birds/Picture Perfect/DJ Grooves Tokens/Picture Perfect - DJ Grooves Token: Cooking Show/"
               },
               {
                 "name": "DJ Grooves Token: Pon Cluster",
-                "ref": "Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Pon Cluster/"
+                "ref": "Battle of the Birds/Picture Perfect/DJ Grooves Tokens/Picture Perfect - DJ Grooves Token: Pon Cluster/"
               }
             ],
             "map_locations": [
