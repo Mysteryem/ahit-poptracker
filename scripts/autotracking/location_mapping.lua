@@ -441,6 +441,15 @@ LOCATION_MAPPING = {
     [2001203992] = "@Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Back Alley/",
     [2001203993] = "@Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Cooking Show/",
     [2001203987] = "@Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Pon Cluster/",
+
+    [2001400000] = "@Battle of the Birds/The Big Parade/The Big Parade - DJ Grooves Tokens (Internal)/Token 1",
+    [2001400001] = "@Battle of the Birds/The Big Parade/The Big Parade - DJ Grooves Tokens (Internal)/Token 2",
+    [2001400002] = "@Battle of the Birds/The Big Parade/The Big Parade - DJ Grooves Tokens (Internal)/Token 3",
+    [2001400003] = "@Battle of the Birds/The Big Parade/The Big Parade - DJ Grooves Tokens (Internal)/Token 4",
+    [2001400004] = "@Battle of the Birds/The Big Parade/The Big Parade - DJ Grooves Tokens (Internal)/Token 5",
+    [2001400005] = "@Battle of the Birds/The Big Parade/The Big Parade - DJ Grooves Tokens (Internal)/Token 6",
+    [2001400006] = "@Battle of the Birds/The Big Parade/The Big Parade - DJ Grooves Tokens (Internal)/Token 7",
+    [2001400007] = "@Battle of the Birds/The Big Parade/The Big Parade - DJ Grooves Tokens (Internal)/Token 8",
 }
 
 -- 1) Copy and paste from worlds.ahit.Locations.death_wishes

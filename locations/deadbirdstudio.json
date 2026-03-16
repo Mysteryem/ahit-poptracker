@@ -175,6 +175,182 @@
         "access_rules": [
           "@DBS Logic/Can access Act 5 - The Big Parade"
         ],
+        "children": [
+          {
+            "name": "The Big Parade - DJ Grooves Tokens (Internal)",
+            "_comment": "Sections containing '/' cannot be referenced, so these internal sections are used.",
+            "visibility_rules": [
+              "shuffle_director_tokens"
+            ],
+            "sections": [
+              {
+                "name": "Token 1"
+              },
+              {
+                "name": "Token 2"
+              },
+              {
+                "name": "Token 3"
+              },
+              {
+                "name": "Token 4"
+              },
+              {
+                "name": "Token 5",
+                "access_rules": [
+                  "@General Logic/Can Melee"
+                ]
+              },
+              {
+                "name": "Token 6",
+                "access_rules": [
+                  "@General Logic/Can Melee"
+                ]
+              },
+              {
+                "name": "Token 7",
+                "access_rules": [
+                  "@General Logic/Can Melee"
+                ]
+              },
+              {
+                "name": "Token 8",
+                "access_rules": [
+                  "@General Logic/Can Melee"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "The Big Parade - DJ Grooves Tokens",
+            "sections": [
+              {
+                "name": "Token (1/8)",
+                "ref": "Battle of the Birds/The Big Parade/The Big Parade - DJ Grooves Tokens (Internal)/Token 1"
+              },
+              {
+                "name": "Token (2/8)",
+                "ref": "Battle of the Birds/The Big Parade/The Big Parade - DJ Grooves Tokens (Internal)/Token 2"
+              },
+              {
+                "name": "Token (3/8)",
+                "ref": "Battle of the Birds/The Big Parade/The Big Parade - DJ Grooves Tokens (Internal)/Token 3"
+              },
+              {
+                "name": "Token (4/8)",
+                "ref": "Battle of the Birds/The Big Parade/The Big Parade - DJ Grooves Tokens (Internal)/Token 4"
+              },
+              {
+                "name": "Token (5/8)",
+                "ref": "Battle of the Birds/The Big Parade/The Big Parade - DJ Grooves Tokens (Internal)/Token 5"
+              },
+              {
+                "name": "Token (6/8)",
+                "ref": "Battle of the Birds/The Big Parade/The Big Parade - DJ Grooves Tokens (Internal)/Token 6"
+              },
+              {
+                "name": "Token (7/8)",
+                "ref": "Battle of the Birds/The Big Parade/The Big Parade - DJ Grooves Tokens (Internal)/Token 7"
+              },
+              {
+                "name": "Token (8/8)",
+                "ref": "Battle of the Birds/The Big Parade/The Big Parade - DJ Grooves Tokens (Internal)/Token 8"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "the_moon",
+                "x": 302,
+                "y": 40,
+                "size": 20
+              },
+              {
+                "map": "the_moon",
+                "x": 336,
+                "y": 46,
+                "size": 20
+              },
+              {
+                "map": "the_moon",
+                "x": 310,
+                "y": 71,
+                "size": 20
+              },
+              {
+                "map": "the_moon",
+                "x": 431,
+                "y": 287,
+                "size": 20
+              },
+              {
+                "map": "the_moon",
+                "x": 741,
+                "y": 212,
+                "size": 20
+              },
+              {
+                "map": "the_moon",
+                "x": 1305,
+                "y": 623,
+                "size": 20
+              },
+              {
+                "map": "the_moon",
+                "x": 259,
+                "y": 644,
+                "size": 20
+              },
+              {
+                "map": "the_moon",
+                "x": 675,
+                "y": 776,
+                "size": 20
+              },
+              {
+                "map": "the_moon",
+                "x": 642,
+                "y": 852,
+                "size": 20
+              },
+              {
+                "map": "the_moon",
+                "x": 1122,
+                "y": 831,
+                "size": 20
+              },
+              {
+                "map": "the_moon",
+                "x": 701,
+                "y": 1023,
+                "size": 20
+              },
+              {
+                "map": "the_moon",
+                "x": 749,
+                "y": 1080,
+                "size": 20
+              },
+              {
+                "map": "the_moon",
+                "x": 765,
+                "y": 1304,
+                "size": 20
+              },
+              {
+                "map": "the_moon",
+                "x": 898,
+                "y": 1319,
+                "size": 20
+              },
+              {
+                "map": "the_moon",
+                "x": 419,
+                "y": 1327,
+                "size": 20
+              }
+            ]
+          }
+        ],
         "sections": [
           {
             "name": "Time Piece",
@@ -377,6 +553,38 @@
               {
                 "name": "Time Piece",
                 "ref": "Battle of the Birds/The Big Parade/Time Piece"
+              },
+              {
+                "name": "DJ Grooves Token (1/8)",
+                "ref": "Battle of the Birds/The Big Parade/The Big Parade - DJ Grooves Tokens (Internal)/Token 1"
+              },
+              {
+                "name": "DJ Grooves Token (2/8)",
+                "ref": "Battle of the Birds/The Big Parade/The Big Parade - DJ Grooves Tokens (Internal)/Token 2"
+              },
+              {
+                "name": "DJ Grooves Token (3/8)",
+                "ref": "Battle of the Birds/The Big Parade/The Big Parade - DJ Grooves Tokens (Internal)/Token 3"
+              },
+              {
+                "name": "DJ Grooves Token (4/8)",
+                "ref": "Battle of the Birds/The Big Parade/The Big Parade - DJ Grooves Tokens (Internal)/Token 4"
+              },
+              {
+                "name": "DJ Grooves Token (5/8)",
+                "ref": "Battle of the Birds/The Big Parade/The Big Parade - DJ Grooves Tokens (Internal)/Token 5"
+              },
+              {
+                "name": "DJ Grooves Token (6/8)",
+                "ref": "Battle of the Birds/The Big Parade/The Big Parade - DJ Grooves Tokens (Internal)/Token 6"
+              },
+              {
+                "name": "DJ Grooves Token (7/8)",
+                "ref": "Battle of the Birds/The Big Parade/The Big Parade - DJ Grooves Tokens (Internal)/Token 7"
+              },
+              {
+                "name": "DJ Grooves Token (8/8)",
+                "ref": "Battle of the Birds/The Big Parade/The Big Parade - DJ Grooves Tokens (Internal)/Token 8"
               }
             ],
             "map_locations": [
