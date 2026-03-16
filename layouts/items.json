@@ -47,7 +47,7 @@
         "margin": "0,0",
         "h_alignment": "center",
         "rows": [
-          ["pages", "contracts_shuffled", "paintings", "ziplines_logic", "shuffle_director_tokens"],
+          ["pages", "contracts_shuffled", "ziplines_logic", "shuffle_director_tokens"],
           ["difficulty", "ctrlogic", "umbrella_logic", "no_painting_skips"],
           ["dlc1", "exclude_tour_option", "tasksanity"],
           ["dlc2", "no_ticket_skips"]
