@@ -65,17 +65,8 @@ LOCATION_MAPPING = {
     [2000305312] = "@Murder on the Owl Express/Raven Suite/Top",
     [2000303963] = "@Murder on the Owl Express/Lounge Chest/Token",
 
-    [2001104767] = "@Murder on the Owl Express/Conductor Token: Cafeteria/",
-    [2001104768] = "@Murder on the Owl Express/Conductor Token: Recreational Room/",
-
     [2000304307] = "@Battle of the Birds/Picture Perfect/Behind Badge Seller/Yarn",
     [2000304530] = "@Battle of the Birds/Picture Perfect/Hats Buy Building/Yarn",
-
-    [2001203990] = "@Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Cardboard Puppy/",
-    [2001203991] = "@Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Card Guessing Game/",
-    [2001203992] = "@Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Back Alley/",
-    [2001203993] = "@Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Cooking Show/",
-    [2001203987] = "@Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Pon Cluster/",
 
     [2000305432] = "@Dead Bird Basement/Window Platform/Yarn",
     [2000305059] = "@Dead Bird Basement/Cardboard Conductor/Yarn",
@@ -439,7 +430,17 @@ LOCATION_MAPPING = {
     [2000301039] = "@Nyakuza Shops/Pink Paw Station Thug/Scammed",
     [2000301040] = "@Nyakuza Shops/Pink Paw Station Thug/Scammed",
     [2000301041] = "@Nyakuza Shops/Pink Paw Station Thug/Scammed",
-    [2000301042] = "@Nyakuza Shops/Pink Paw Station Thug/Scammed"
+    [2000301042] = "@Nyakuza Shops/Pink Paw Station Thug/Scammed",
+
+    -- Director Tokens and Time Bonuses
+    [2001104767] = "@Murder on the Owl Express/Conductor Token: Cafeteria/",
+    [2001104768] = "@Murder on the Owl Express/Conductor Token: Recreational Room/",
+
+    [2001203990] = "@Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Cardboard Puppy/",
+    [2001203991] = "@Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Card Guessing Game/",
+    [2001203992] = "@Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Back Alley/",
+    [2001203993] = "@Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Cooking Show/",
+    [2001203987] = "@Battle of the Birds/Picture Perfect/DJ Grooves Tokens/DJ Grooves Token: Pon Cluster/",
 }
 
 -- 1) Copy and paste from worlds.ahit.Locations.death_wishes
