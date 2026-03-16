@@ -407,6 +407,164 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Train Rush",
+        "access_rules": [
+          "hookshot, @DBS Logic/Can access Act 4 - Train Rush"
+        ],
+        "children": [
+          {
+            "name": "Time Bonuses",
+            "visibility_rules": [
+              "shuffle_director_tokens"
+            ],
+            "children": [
+              {
+                "name": "Time Bonus: 1st Room",
+                "sections": [
+                  {}
+                ],
+                "map_locations": [
+                  {
+                    "map": "train_rush",
+                    "x": 1102,
+                    "y": 95
+                  }
+                ]
+              },
+              {
+                "name": "Time Bonus: Falling Platform",
+                "sections": [
+                  {}
+                ],
+                "map_locations": [
+                  {
+                    "map": "train_rush",
+                    "x": 947,
+                    "y": 232
+                  }
+                ]
+              },
+              {
+                "name": "Time Bonus: Acid Crates",
+                "sections": [
+                  {}
+                ],
+                "map_locations": [
+                  {
+                    "map": "train_rush",
+                    "x": 1285,
+                    "y": 282
+                  }
+                ]
+              },
+              {
+                "name": "Time Bonus: Balloon",
+                "sections": [
+                  {}
+                ],
+                "map_locations": [
+                  {
+                    "map": "train_rush",
+                    "x": 906,
+                    "y": 491
+                  }
+                ]
+              },
+              {
+                "name": "Time Bonus: Ring of Fire",
+                "sections": [
+                  {}
+                ],
+                "map_locations": [
+                  {
+                    "map": "train_rush",
+                    "x": 838,
+                    "y": 700
+                  }
+                ]
+              },
+              {
+                "name": "Time Bonus: Blue Panels",
+                "sections": [
+                  {}
+                ],
+                "map_locations": [
+                  {
+                    "map": "train_rush",
+                    "x": 1390,
+                    "y": 695
+                  }
+                ]
+              },
+              {
+                "name": "Time Bonus: Sinking Lava Platform",
+                "sections": [
+                  {}
+                ],
+                "map_locations": [
+                  {
+                    "map": "train_rush",
+                    "x": 1119,
+                    "y": 1002
+                  }
+                ]
+              },
+              {
+                "name": "Time Bonus: Lava Panels 1",
+                "sections": [
+                  {}
+                ],
+                "map_locations": [
+                  {
+                    "map": "train_rush",
+                    "x": 1628,
+                    "y": 930
+                  }
+                ]
+              },
+              {
+                "name": "Time Bonus: Lava Panels 2",
+                "sections": [
+                  {}
+                ],
+                "map_locations": [
+                  {
+                    "map": "train_rush",
+                    "x": 1763,
+                    "y": 1039
+                  }
+                ]
+              },
+              {
+                "name": "Time Bonus: Lava Panels 3",
+                "sections": [
+                  {}
+                ],
+                "map_locations": [
+                  {
+                    "map": "train_rush",
+                    "x": 1993,
+                    "y": 978
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "sections": [
+          {
+            "name": "Time Piece"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "train_rush",
+            "x": 2230,
+            "y": 970
+          }
+        ]
       }
     ]
   },
@@ -466,12 +624,50 @@
           },
           {
             "name": "Train Rush",
-            "access_rules": [
-              "hookshot, @DBS Logic/Can access Act 4 - Train Rush"
-            ],
             "sections": [
               {
-                "name": "Time Piece"
+                "name": "Time Piece",
+                "ref": "Battle of the Birds/Train Rush/Time Piece"
+              },
+              {
+                "name": "Time Bonus: 1st Room",
+                "ref": "Battle of the Birds/Train Rush/Time Bonuses/Time Bonus: 1st Room/"
+              },
+              {
+                "name": "Time Bonus: Falling Platform",
+                "ref": "Battle of the Birds/Train Rush/Time Bonuses/Time Bonus: Falling Platform/"
+              },
+              {
+                "name": "Time Bonus: Acid Crates",
+                "ref": "Battle of the Birds/Train Rush/Time Bonuses/Time Bonus: Acid Crates/"
+              },
+              {
+                "name": "Time Bonus: Balloon",
+                "ref": "Battle of the Birds/Train Rush/Time Bonuses/Time Bonus: Balloon/"
+              },
+              {
+                "name": "Time Bonus: Ring of Fire",
+                "ref": "Battle of the Birds/Train Rush/Time Bonuses/Time Bonus: Ring of Fire/"
+              },
+              {
+                "name": "Time Bonus: Blue Panels",
+                "ref": "Battle of the Birds/Train Rush/Time Bonuses/Time Bonus: Blue Panels/"
+              },
+              {
+                "name": "Time Bonus: Sinking Lava Platform",
+                "ref": "Battle of the Birds/Train Rush/Time Bonuses/Time Bonus: Sinking Lava Platform/"
+              },
+              {
+                "name": "Time Bonus: Lava Panels 1",
+                "ref": "Battle of the Birds/Train Rush/Time Bonuses/Time Bonus: Lava Panels 1/"
+              },
+              {
+                "name": "Time Bonus: Lava Panels 2",
+                "ref": "Battle of the Birds/Train Rush/Time Bonuses/Time Bonus: Lava Panels 2/"
+              },
+              {
+                "name": "Time Bonus: Lava Panels 3",
+                "ref": "Battle of the Birds/Train Rush/Time Bonuses/Time Bonus: Lava Panels 3/"
               }
             ],
             "map_locations": [

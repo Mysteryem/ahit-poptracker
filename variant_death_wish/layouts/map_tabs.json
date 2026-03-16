@@ -59,6 +59,16 @@
               }
             },
             {
+              "title": "Train Rush",
+              "icon": "images/icons/Conductor.png",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "train_rush"
+                ]
+              }
+            },
+            {
               "title": "Dead Bird Basement",
               "icon": "images/icons/killing_two_birds.png",
               "content": {
