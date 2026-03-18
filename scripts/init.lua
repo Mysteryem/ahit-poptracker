@@ -54,6 +54,9 @@ Tracker:AddLocations("locations/subcon.json")
 Tracker:AddLocations("locations/alpineskyline.json")
 Tracker:AddLocations("locations/cruise.json")
 Tracker:AddLocations("locations/nyakuza.json")
+-- Locations overview
+Tracker:AddLocations("locations/spaceship_overview.json")
+-- Entrances
 Tracker:AddLocations("locations/entrances/chapter1.json")
 Tracker:AddLocations("locations/entrances/chapter2.json")
 Tracker:AddLocations("locations/entrances/chapter3.json")

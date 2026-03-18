@@ -43,3 +43,4 @@ luac.out
 *.idea
 
 .images
+.scripts

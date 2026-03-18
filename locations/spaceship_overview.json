@@ -1,0 +1,1142 @@
+[
+  {
+    "name": "Chapter 1: Mafia Town",
+    "sections": [
+      {
+        "name": "Act Completion (Welcome to Mafia Town)",
+        "ref": "Mafia Town/Welcome to Mafia Town/Time Piece"
+      },
+      {
+        "name": "Welcome to Mafia Town - Umbrella",
+        "ref": "Mafia Town/Welcome to Mafia Town/Umbrella"
+      },
+      {
+        "name": "Act Completion (Barrel Battle)",
+        "ref": "Mafia Town/Barrel Battle/Time Piece"
+      },
+      {
+        "name": "Act Completion (She Came from Outer Space)",
+        "ref": "Mafia Town (HUMT)/Mafia Geek/She Came from Outer Space"
+      },
+      {
+        "name": "Act Completion (Down with the Mafia!)",
+        "ref": "Mafia Town (HUMT)/Mafia HQ/Time Piece"
+      },
+      {
+        "name": "Mafia HQ - Hallway Brewing Crate",
+        "ref": "Mafia Town (HUMT)/Mafia HQ/Hallway Brewing Crate"
+      },
+      {
+        "name": "Mafia HQ - Freezer Chest",
+        "ref": "Mafia Town (HUMT)/Mafia HQ/Freezer Chest"
+      },
+      {
+        "name": "Mafia HQ - Secret Room",
+        "ref": "Mafia Town (HUMT)/Mafia HQ/Secret Room"
+      },
+      {
+        "name": "Mafia HQ - Bathroom Stall Chest",
+        "ref": "Mafia Town (HUMT)/Mafia HQ/Bathroom Stall Chest"
+      },
+      {
+        "name": "Act Completion (Cheating the Race)",
+        "ref": "Mafia Town (HUMT)/Beach Alcove/Cheating the Race"
+      },
+      {
+        "name": "Act Completion (Heating Up Mafia Town)",
+        "ref": "Mafia Town (HUMT)/Mafia Geek/Heating Up Mafia Town"
+      },
+      {
+        "name": "Act Completion (The Golden Vault)",
+        "ref": "Mafia Town/The Golden Vault/Time Piece"
+      },
+      {
+        "name": "Act Completion (Time Rift - Bazaar)",
+        "ref": "Mafia Town - Time Rifts/Bazaar/Time Rift"
+      },
+      {
+        "name": "Act Completion (Time Rift - Sewers)",
+        "ref": "Mafia Town - Time Rifts/Sewers/Time Rift"
+      },
+      {
+        "name": "Act Completion (Time Rift - Mafia of Cooks)",
+        "ref": "Mafia Town - Time Rifts/Mafia of Cooks/Time Rift"
+      },
+      {
+        "name": "Mafia of Cooks - Pages",
+        "ref": "Mafia Town - Time Rifts/Mafia of Cooks/Pages"
+      },
+      {
+        "name": "Mafia Town - Red Vault",
+        "ref": "Mafia Town/Red Vault/Yarn"
+      },
+      {
+        "name": "Mafia Town - Dweller Boxes",
+        "ref": "Mafia Town (HUMT)/Dweller Boxes/Yarn"
+      },
+      {
+        "name": "Mafia Town - Old Man (Seaside Spaghetti)",
+        "ref": "Mafia Town/Old Man 2/Seaside Spaghetti"
+      },
+      {
+        "name": "Mafia Town - Ledge Chest",
+        "ref": "Mafia Town (HUMT)/Ledge Chest/Yarn"
+      },
+      {
+        "name": "Mafia Town - Yellow Sphere Building Chest",
+        "ref": "Mafia Town (HUMT)/Yellow Sphere Building Chest/Yarn"
+      },
+      {
+        "name": "Mafia Town - Beneath Scaffolding",
+        "ref": "Mafia Town (HUMT)/Beneath Scaffolding/Yarn"
+      },
+      {
+        "name": "Mafia Town - On Scaffolding",
+        "ref": "Mafia Town (HUMT)/On Scaffolding/Yarn"
+      },
+      {
+        "name": "Mafia Town - Plaza Under Boxes",
+        "ref": "Mafia Town/Plaza Under Boxes/Yarn"
+      },
+      {
+        "name": "Mafia Town - Blue Vault Brewing Crate",
+        "ref": "Mafia Town/Blue Vault/Brewing Crate"
+      },
+      {
+        "name": "Mafia Town - Small Boat",
+        "ref": "Mafia Town/Small Boat/Yarn"
+      },
+      {
+        "name": "Mafia Town - Cargo Ship",
+        "ref": "Mafia Town (HUMT)/Cargo Ship/Yarn"
+      },
+      {
+        "name": "Mafia Town - Beach Alcove",
+        "ref": "Mafia Town (HUMT)/Beach Alcove/Yarn"
+      },
+      {
+        "name": "Mafia Town - Wood Cage",
+        "ref": "Mafia Town (HUMT)/Steel Beams/Wood Cage"
+      },
+      {
+        "name": "Mafia Town - Staircase Pon Cluster",
+        "ref": "Mafia Town/Staircase Pon Cluster/Yarn"
+      },
+      {
+        "name": "Mafia Town - Blue Vault",
+        "ref": "Mafia Town/Blue Vault/Vault"
+      },
+      {
+        "name": "Mafia Town - Old Man (Steel Beams)",
+        "ref": "Mafia Town/Old Man/Yarn"
+      },
+      {
+        "name": "Mafia Town - Palm Tree",
+        "ref": "Mafia Town/Palm Tree/Yarn"
+      },
+      {
+        "name": "Mafia Town - Beach Patio",
+        "ref": "Mafia Town (HUMT)/Beach Patio/Freestanding"
+      },
+      {
+        "name": "Mafia Town - Steel Beam Nest",
+        "ref": "Mafia Town (HUMT)/Steel Beams/Nest"
+      },
+      {
+        "name": "Mafia Town - Top of Ruined Tower",
+        "ref": "Mafia Town (HUMT)/Top of Ruined Tower/Yarn"
+      },
+      {
+        "name": "Mafia Town - Ice Hat Cage",
+        "ref": "Mafia Town/Ice Hat Cage/Yarn"
+      },
+      {
+        "name": "Mafia Town - Hot Air Balloon",
+        "ref": "Mafia Town (HUMT)/Hot Air Balloon/Yarn"
+      },
+      {
+        "name": "Mafia Town - Camera Badge 1",
+        "ref": "Mafia Town (HUMT)/Camera Badge/smile :)"
+      },
+      {
+        "name": "Mafia Town - Camera Badge 2",
+        "ref": "Mafia Town (HUMT)/Camera Badge 2/smile :)"
+      },
+      {
+        "name": "Mafia Town - Chest Beneath Aqueduct",
+        "ref": "Mafia Town (HUMT)/Chest Beneath Aqueduct/Relic"
+      },
+      {
+        "name": "Mafia Town - Secret Cave",
+        "ref": "Mafia Town (HUMT)/Secret Cave/Relic"
+      },
+      {
+        "name": "Mafia Town - Crow Chest",
+        "ref": "Mafia Town (HUMT)/Crow Chest/Relic"
+      },
+      {
+        "name": "Mafia Town - Port",
+        "ref": "Mafia Town/Port/Relic"
+      },
+      {
+        "name": "Mafia Town - Docks Chest",
+        "ref": "Mafia Town/Docks Chest/Relic"
+      },
+      {
+        "name": "Mafia Town - Above Boats",
+        "ref": "Mafia Town (HUMT)/Above Boats/Relic"
+      },
+      {
+        "name": "Mafia Town - Slip Slide Chest",
+        "ref": "Mafia Town (HUMT)/Beach Patio/Slip Slide Chest"
+      },
+      {
+        "name": "Mafia Town - Green Vault",
+        "ref": "Mafia Town/Green Vault/Token"
+      },
+      {
+        "name": "Mafia Town - Behind Faucet",
+        "ref": "Mafia Town (HUMT)/Behind Faucet/Token"
+      },
+      {
+        "name": "Mafia Town - Hidden Buttons Chest",
+        "ref": "Mafia Town/Hidden Buttons/Grab a beach ball"
+      },
+      {
+        "name": "Mafia Town - Clock Tower Chest",
+        "ref": "Mafia Town (HUMT)/Clock Tower Chest/Token"
+      },
+      {
+        "name": "Mafia Town - Top of Lighthouse",
+        "ref": "Mafia Town (HUMT)/Top of Lighthouse/Token"
+      },
+      {
+        "name": "Mafia Town - Mafia Geek Platform",
+        "ref": "Mafia Town (HUMT)/Mafia Geek Platform/Token"
+      },
+      {
+        "name": "Mafia Town - Behind HQ Chest",
+        "ref": "Mafia Town (HUMT)/Mafia HQ/Behind HQ Chest"
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "spaceship",
+        "x": 513,
+        "y": 421
+      }
+    ]
+  },
+  {
+    "name": "Chapter 2: Battle of the Birds",
+    "sections": [
+      {
+        "name": "Act Completion (Dead Bird Studio)",
+        "ref": "Act Completions/Act Completion/Dead Bird Studio"
+      },
+      {
+        "name": "Dead Bird Studio - Up the Ladder",
+        "ref": "Before Lever/Up the Ladder/Yarn"
+      },
+      {
+        "name": "Dead Bird Studio - DJ Grooves Sign Chest",
+        "ref": "After Second Lever/DJ Grooves Sign Chest/Yarn"
+      },
+      {
+        "name": "Dead Bird Studio - Red Building Top",
+        "ref": "Before Lever/Red Building Top/Yarn"
+      },
+      {
+        "name": "Dead Bird Studio - Behind Water Tower",
+        "ref": "Before Lever/Behind Water Tower/Yarn"
+      },
+      {
+        "name": "Dead Bird Studio - Side of House",
+        "ref": "Before Lever/Side of House/Yarn"
+      },
+      {
+        "name": "Dead Bird Studio - Tightrope Chest",
+        "ref": "After First Lever/Tightrope Chest/Relic"
+      },
+      {
+        "name": "Dead Bird Studio - Tepee Chest",
+        "ref": "After Second Lever/Teepee Chest/Relic"
+      },
+      {
+        "name": "Dead Bird Studio - Conductor Chest",
+        "ref": "After Second Lever/Conductor Chest/Token"
+      },
+      {
+        "name": "Act Completion (Murder on the Owl Express)",
+        "ref": "Murder on the Owl Express/Act Completion/Time Piece"
+      },
+      {
+        "name": "Murder on the Owl Express - Cafeteria",
+        "ref": "Murder on the Owl Express/Cafeteria/Yarn"
+      },
+      {
+        "name": "Murder on the Owl Express - Luggage Room Top",
+        "ref": "Murder on the Owl Express/Luggage Room Top/Yarn"
+      },
+      {
+        "name": "Murder on the Owl Express - Luggage Room Bottom",
+        "ref": "Murder on the Owl Express/Luggage Room Bottom/Yarn"
+      },
+      {
+        "name": "Murder on the Owl Express - Raven Suite Room",
+        "ref": "Murder on the Owl Express/Raven Suite/Room"
+      },
+      {
+        "name": "Murder on the Owl Express - Raven Suite Top",
+        "ref": "Murder on the Owl Express/Raven Suite/Top"
+      },
+      {
+        "name": "Murder on the Owl Express - Lounge Chest",
+        "ref": "Murder on the Owl Express/Lounge Chest/Token"
+      },
+      {
+        "name": "Murder on the Owl Express - Conductor Token: Cafeteria",
+        "ref": "Murder on the Owl Express/Conductor Token: Cafeteria/"
+      },
+      {
+        "name": "Murder on the Owl Express - Conductor Token: Recreational Room",
+        "ref": "Murder on the Owl Express/Conductor Token: Recreational Room/"
+      },
+      {
+        "name": "Act Completion (Picture Perfect)",
+        "ref": "Battle of the Birds/Picture Perfect/Time Piece"
+      },
+      {
+        "name": "Picture Perfect - Behind Badge Seller",
+        "ref": "Battle of the Birds/Picture Perfect/Picture Perfect - Behind Badge Seller/Yarn"
+      },
+      {
+        "name": "Picture Perfect - Hats Buy Building",
+        "ref": "Battle of the Birds/Picture Perfect/Picture Perfect - Hats Buy Building/Yarn"
+      },
+      {
+        "name": "Picture Perfect - DJ Grooves Token: Cardboard Puppy",
+        "ref": "Battle of the Birds/Picture Perfect/DJ Grooves Tokens/Picture Perfect - DJ Grooves Token: Cardboard Puppy/"
+      },
+      {
+        "name": "Picture Perfect - DJ Grooves Token: Card Guessing Game",
+        "ref": "Battle of the Birds/Picture Perfect/DJ Grooves Tokens/Picture Perfect - DJ Grooves Token: Card Guessing Game/"
+      },
+      {
+        "name": "Picture Perfect - DJ Grooves Token: Back Alley",
+        "ref": "Battle of the Birds/Picture Perfect/DJ Grooves Tokens/Picture Perfect - DJ Grooves Token: Back Alley/"
+      },
+      {
+        "name": "Picture Perfect - DJ Grooves Token: Cooking Show",
+        "ref": "Battle of the Birds/Picture Perfect/DJ Grooves Tokens/Picture Perfect - DJ Grooves Token: Cooking Show/"
+      },
+      {
+        "name": "Picture Perfect - DJ Grooves Token: Pon Cluster",
+        "ref": "Battle of the Birds/Picture Perfect/DJ Grooves Tokens/Picture Perfect - DJ Grooves Token: Pon Cluster/"
+      },
+      {
+        "name": "Act Completion (Train Rush)",
+        "ref": "Battle of the Birds/Train Rush/Time Piece"
+      },
+      {
+        "name": "Train Rush - Time Bonus: 1st Room",
+        "ref": "Battle of the Birds/Train Rush/Time Bonuses/Time Bonus: 1st Room/"
+      },
+      {
+        "name": "Train Rush - Time Bonus: Falling Platform",
+        "ref": "Battle of the Birds/Train Rush/Time Bonuses/Time Bonus: Falling Platform/"
+      },
+      {
+        "name": "Train Rush - Time Bonus: Acid Crates",
+        "ref": "Battle of the Birds/Train Rush/Time Bonuses/Time Bonus: Acid Crates/"
+      },
+      {
+        "name": "Train Rush - Time Bonus: Balloon",
+        "ref": "Battle of the Birds/Train Rush/Time Bonuses/Time Bonus: Balloon/"
+      },
+      {
+        "name": "Train Rush - Time Bonus: Ring of Fire",
+        "ref": "Battle of the Birds/Train Rush/Time Bonuses/Time Bonus: Ring of Fire/"
+      },
+      {
+        "name": "Train Rush - Time Bonus: Blue Panels",
+        "ref": "Battle of the Birds/Train Rush/Time Bonuses/Time Bonus: Blue Panels/"
+      },
+      {
+        "name": "Train Rush - Time Bonus: Sinking Lava Platform",
+        "ref": "Battle of the Birds/Train Rush/Time Bonuses/Time Bonus: Sinking Lava Platform/"
+      },
+      {
+        "name": "Train Rush - Time Bonus: Lava Panels 1",
+        "ref": "Battle of the Birds/Train Rush/Time Bonuses/Time Bonus: Lava Panels 1/"
+      },
+      {
+        "name": "Train Rush - Time Bonus: Lava Panels 2",
+        "ref": "Battle of the Birds/Train Rush/Time Bonuses/Time Bonus: Lava Panels 2/"
+      },
+      {
+        "name": "Train Rush - Time Bonus: Lava Panels 3",
+        "ref": "Battle of the Birds/Train Rush/Time Bonuses/Time Bonus: Lava Panels 3/"
+      },
+      {
+        "name": "Act Completion (The Big Parade)",
+        "ref": "Battle of the Birds/The Big Parade/Time Piece"
+      },
+      {
+        "name": "The Big Parade - DJ Grooves Token (1/8)",
+        "ref": "Battle of the Birds/The Big Parade/The Big Parade - DJ Grooves Tokens (Internal)/Token 1"
+      },
+      {
+        "name": "The Big Parade - DJ Grooves Token (2/8)",
+        "ref": "Battle of the Birds/The Big Parade/The Big Parade - DJ Grooves Tokens (Internal)/Token 2"
+      },
+      {
+        "name": "The Big Parade - DJ Grooves Token (3/8)",
+        "ref": "Battle of the Birds/The Big Parade/The Big Parade - DJ Grooves Tokens (Internal)/Token 3"
+      },
+      {
+        "name": "The Big Parade - DJ Grooves Token (4/8)",
+        "ref": "Battle of the Birds/The Big Parade/The Big Parade - DJ Grooves Tokens (Internal)/Token 4"
+      },
+      {
+        "name": "The Big Parade - DJ Grooves Token (5/8)",
+        "ref": "Battle of the Birds/The Big Parade/The Big Parade - DJ Grooves Tokens (Internal)/Token 5"
+      },
+      {
+        "name": "The Big Parade - DJ Grooves Token (6/8)",
+        "ref": "Battle of the Birds/The Big Parade/The Big Parade - DJ Grooves Tokens (Internal)/Token 6"
+      },
+      {
+        "name": "The Big Parade - DJ Grooves Token (7/8)",
+        "ref": "Battle of the Birds/The Big Parade/The Big Parade - DJ Grooves Tokens (Internal)/Token 7"
+      },
+      {
+        "name": "The Big Parade - DJ Grooves Token (8/8)",
+        "ref": "Battle of the Birds/The Big Parade/The Big Parade - DJ Grooves Tokens (Internal)/Token 8"
+      },
+      {
+        "name": "Act Completion (Award Ceremony)",
+        "ref": "Act Completions/Act Completion/Award Ceremony"
+      },
+      {
+        "name": "Act Completion (Dead Bird Studio Basement)",
+        "ref": "Dead Bird Basement/Act Completion/Time Piece"
+      },
+      {
+        "name": "Dead Bird Studio Basement - Window Platform",
+        "ref": "Dead Bird Basement/Window Platform/Yarn"
+      },
+      {
+        "name": "Dead Bird Studio Basement - Cardboard Conductor",
+        "ref": "Dead Bird Basement/Cardboard Conductor/Yarn"
+      },
+      {
+        "name": "Dead Bird Studio Basement - Above Conductor Sign",
+        "ref": "Dead Bird Basement/Above Conductor Sign/Yarn"
+      },
+      {
+        "name": "Dead Bird Studio Basement - Logo Wall",
+        "ref": "Dead Bird Basement/Logo Wall/Yarn"
+      },
+      {
+        "name": "Dead Bird Studio Basement - Disco Room",
+        "ref": "Dead Bird Basement/Disco Room/Yarn"
+      },
+      {
+        "name": "Dead Bird Studio Basement - Small Room",
+        "ref": "Dead Bird Basement/Small Room/Token"
+      },
+      {
+        "name": "Dead Bird Studio Basement - Vent Pipe",
+        "ref": "Dead Bird Basement/Vent Pipe/Yarn"
+      },
+      {
+        "name": "Dead Bird Studio Basement - Tightrope",
+        "ref": "Dead Bird Basement/Tightrope/Yarn"
+      },
+      {
+        "name": "Dead Bird Studio Basement - Cameras",
+        "ref": "Dead Bird Basement/Cameras/Yarn"
+      },
+      {
+        "name": "Dead Bird Studio Basement - Locked Room",
+        "ref": "Dead Bird Basement/Locked Room/Relic"
+      },
+      {
+        "name": "Act Completion (Time Rift - The Owl Express)",
+        "ref": "Battle of the Birds/Time Rifts/The Owl Express/Time Rift"
+      },
+      {
+        "name": "Act Completion (Time Rift - The Moon)",
+        "ref": "Battle of the Birds/Time Rifts/The Moon/Time Rift"
+      },
+      {
+        "name": "Act Completion (Time Rift - Dead Bird Studio)",
+        "ref": "Dead Bird Studio (Rift)/Time Piece"
+      },
+      {
+        "name": "Dead Bird Studio (Rift) - Pages",
+        "ref": "Dead Bird Studio (Rift)/Pages"
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "spaceship",
+        "x": 618,
+        "y": 130
+      }
+    ]
+  },
+  {
+    "name": "Chapter 3: Subcon Forest",
+    "sections": [
+      {
+        "name": "Act Completion (Contractual Obligations)",
+        "ref": "Yellow Firewall/Contractual Obligations/Time Piece"
+      },
+      {
+        "name": "Snatcher's Contract - The Subcon Well",
+        "ref": "Subcon Forest/Snatcher/Contract - The Subcon Well"
+      },
+      {
+        "name": "Contractual Obligations - Cherry Bomb Bone Cage",
+        "ref": "Subcon Forest/Cherry Bomb Bone Cage/Yarn"
+      },
+      {
+        "name": "Act Completion (The Subcon Well)",
+        "ref": "Yellow Firewall/Subcon Well/Time Piece"
+      },
+      {
+        "name": "Subcon Well - Hookshot Badge Chest",
+        "ref": "Yellow Firewall/Subcon Well/Hookshot Badge Chest"
+      },
+      {
+        "name": "Subcon Well - Above Chest",
+        "ref": "Yellow Firewall/Subcon Well/Above Chest"
+      },
+      {
+        "name": "Subcon Well - On Pipe",
+        "ref": "Yellow Firewall/Subcon Well/On Pipe"
+      },
+      {
+        "name": "Subcon Well - Mushroom",
+        "ref": "Yellow Firewall/Subcon Well/Mushroom"
+      },
+      {
+        "name": "Act Completion (Toilet of Doom)",
+        "ref": "Boss Arena Area/Boss Arena/Toilet of Doom"
+      },
+      {
+        "name": "Act Completion (Queen Vanessa's Manor)",
+        "ref": "Yellow Firewall/Queen Vanessa's Manor/Time Piece"
+      },
+      {
+        "name": "Queen Vanessa's Manor - Cellar",
+        "ref": "Yellow Firewall/Queen Vanessa's Manor/Cellar"
+      },
+      {
+        "name": "Queen Vanessa's Manor - Bedroom Chest",
+        "ref": "Yellow Firewall/Queen Vanessa's Manor/Bedroom Chest"
+      },
+      {
+        "name": "Queen Vanessa's Manor - Hall Chest",
+        "ref": "Yellow Firewall/Queen Vanessa's Manor/Hall Chest"
+      },
+      {
+        "name": "Queen Vanessa's Manor - Chandelier",
+        "ref": "Yellow Firewall/Queen Vanessa's Manor/Chandelier"
+      },
+      {
+        "name": "Act Completion (Mail Delivery Service)",
+        "ref": "Subcon Forest/Snatcher/Mail Delivery Service"
+      },
+      {
+        "name": "Act Completion (Your Contract has Expired)",
+        "ref": "Boss Arena Area/Boss Arena/Your Contract has Expired"
+      },
+      {
+        "name": "Act Completion (Time Rift - Pipe)",
+        "ref": "Subcon Time Rifts/Pipe/Time Rift"
+      },
+      {
+        "name": "Act Completion (Time Rift - Village)",
+        "ref": "Subcon Time Rifts/Village/Time Rift"
+      },
+      {
+        "name": "Act Completion (Time Rift - Sleepy Subcon)",
+        "ref": "Subcon Time Rifts/Sleepy Subcon/Time Rift"
+      },
+      {
+        "name": "Sleepy Subcon - Pages",
+        "ref": "Subcon Time Rifts/Sleepy Subcon/Pages"
+      },
+      {
+        "name": "Snatcher's Contracts (Mail Delivery Service, Queen Vanessa's Manor, Toilet of Doom)",
+        "ref": "Subcon Forest/Snatcher/Contracts"
+      },
+      {
+        "name": "Subcon Village - Ice Cube House",
+        "ref": "Subcon Forest/Tree Top Ice Cube/Yarn"
+      },
+      {
+        "name": "Subcon Village - Graveyard Ice Cube",
+        "ref": "Subcon Forest/Graveyard/Ice Cube"
+      },
+      {
+        "name": "Subcon Village - House Top",
+        "ref": "Subcon Forest/Graveyard/House Top"
+      },
+      {
+        "name": "Subcon Village - Ice Cube House",
+        "ref": "Subcon Forest/Ice Cube House/Relic"
+      },
+      {
+        "name": "Subcon Village - Snatcher Statue Chest",
+        "ref": "Behind Boss Firewall/Snatcher Statue Chest/Yarn"
+      },
+      {
+        "name": "Subcon Village - Stump Platform Chest",
+        "ref": "Subcon Forest/Stump Platform Chest/Yarn"
+      },
+      {
+        "name": "Subcon Forest - Giant Tree Climb",
+        "ref": "Subcon Forest/Giant Mushroom Climb/Don't Fall~"
+      },
+      {
+        "name": "Subcon Forest - Swamp Gravestone",
+        "ref": "Yellow Firewall/Swamp Gravestone/Yarn"
+      },
+      {
+        "name": "Subcon Forest - Swamp Near Well",
+        "ref": "Yellow Firewall/Swamp Near Well/Token"
+      },
+      {
+        "name": "Subcon Forest - Swamp Tree A",
+        "ref": "Yellow Firewall/Swamp Tree A/Yarn"
+      },
+      {
+        "name": "Subcon Forest - Swamp Tree B",
+        "ref": "Yellow Firewall/Swamp Tree B/Yarn"
+      },
+      {
+        "name": "Subcon Forest - Swamp Ice Wall",
+        "ref": "Yellow Firewall/Swamp Ice Wall/Yarn"
+      },
+      {
+        "name": "Subcon Forest - Swamp Treehouse",
+        "ref": "Yellow Firewall/Swamp Treehouse/Relic"
+      },
+      {
+        "name": "Subcon Forest - Swamp Tree Chest",
+        "ref": "Yellow Firewall/Swamp Tree Chest/Yarn"
+      },
+      {
+        "name": "Subcon Forest - Dweller Stump",
+        "ref": "Green Firewall/Dweller Stump/Yarn"
+      },
+      {
+        "name": "Subcon Forest - Dweller Floating Rocks",
+        "ref": "Green Firewall/Dweller Floating Rocks/Token"
+      },
+      {
+        "name": "Subcon Forest - Dweller Platforming Tree A",
+        "ref": "Green Firewall/Dweller Platforming Tree A/Yarn"
+      },
+      {
+        "name": "Subcon Forest - Dweller Platforming Tree B",
+        "ref": "Green Firewall/Dweller/Platforming Tree B"
+      },
+      {
+        "name": "Subcon Forest - Giant Time Piece",
+        "ref": "Green Firewall/Giant Time Piece/Relic"
+      },
+      {
+        "name": "Subcon Forest - Gallows",
+        "ref": "Green Firewall/Gallows/Relic"
+      },
+      {
+        "name": "Subcon Forest - Green and Purple Dweller Rocks",
+        "ref": "Green Firewall/Green and Purple Dweller Rocks/Yarn"
+      },
+      {
+        "name": "Subcon Forest - Dweller Shack",
+        "ref": "Green Firewall/Dweller/Shack"
+      },
+      {
+        "name": "Subcon Forest - Tall Tree Hookshot Swing",
+        "ref": "Green Firewall/Tall Tree Hookshot Swing/Yarn"
+      },
+      {
+        "name": "Subcon Forest - Burning House",
+        "ref": "Blue Firewall/Burning House/Yarn"
+      },
+      {
+        "name": "Subcon Forest - Burning Tree Climb",
+        "ref": "Blue Firewall/Burning Tree Climb/Yarn"
+      },
+      {
+        "name": "Subcon Forest - Burning Stump Chest",
+        "ref": "Blue Firewall/Burning Stump Chest/Token"
+      },
+      {
+        "name": "Subcon Forest - Burning Forest Treehouse",
+        "ref": "Blue Firewall/Burning Forest Treehouse/Relic"
+      },
+      {
+        "name": "Subcon Forest - Spider Bone Cage A",
+        "ref": "Blue Firewall/Spider Bone Cage A/Token"
+      },
+      {
+        "name": "Subcon Forest - Spider Bone Cage B",
+        "ref": "Blue Firewall/Spider Bone Cage B/Yarn"
+      },
+      {
+        "name": "Subcon Forest - Infinite Yarn Bush",
+        "ref": "Blue Firewall/Infinite Yarn Bush/Yarn"
+      },
+      {
+        "name": "Subcon Forest - Magnet Badge Bush",
+        "ref": "Green Firewall/Magnet Badge Bush/Badge"
+      },
+      {
+        "name": "Subcon Forest - Triple Spider Bounce",
+        "ref": "Blue Firewall/Triple Spider Bounce/Yarn"
+      },
+      {
+        "name": "Subcon Forest - Noose Treehouse",
+        "ref": "Blue Firewall/Noose Treehouse/Relic"
+      },
+      {
+        "name": "Subcon Forest - Ice Cube Shack",
+        "ref": "Yellow Firewall/Ice Cube Shack/Token"
+      },
+      {
+        "name": "Subcon Forest - Long Tree Climb Chest",
+        "ref": "Blue Firewall/Long Tree Climb Chest/Yarn"
+      },
+      {
+        "name": "Subcon Forest - Boss Arena Chest",
+        "ref": "Boss Arena Area/Boss Arena Chest/Yarn"
+      },
+      {
+        "name": "Subcon Forest - Manor Rooftop",
+        "ref": "Yellow Firewall/Queen Vanessa's Manor/Rooftop"
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "spaceship",
+        "x": 389,
+        "y": 767
+      }
+    ]
+  },
+  {
+    "name": "Chapter 4: Alpine Skyline",
+    "sections": [
+      {
+        "name": "Alpine Skyline - Goat Village: Below Hookpoint",
+        "ref": "Goat Village/Goat Village/Below Hookpoint"
+      },
+      {
+        "name": "Alpine Skyline - Goat Village: Hidden Branch",
+        "ref": "Goat Village/Goat Village/Hidden Branch"
+      },
+      {
+        "name": "Alpine Skyline - Goat Refinery",
+        "ref": "Alpine Skyline/Goat Refinery/Yarn"
+      },
+      {
+        "name": "Act Completion (The Birdhouse)",
+        "ref": "Birdhouse Zipline/Bird House/Time Piece"
+      },
+      {
+        "name": "Alpine Skyline - Bird Pass Fork",
+        "ref": "Birdhouse Zipline/Bird Pass Fork/Yarn"
+      },
+      {
+        "name": "Alpine Skyline - Yellow Band Hills",
+        "ref": "Birdhouse Zipline/Yellow Band Hills/Yarn"
+      },
+      {
+        "name": "Alpine Skyline - The Purrloined Village: Horned Stone",
+        "ref": "Birdhouse Zipline/Purrloined Village: Horned Stone/Token"
+      },
+      {
+        "name": "Alpine Skyline - The Purrloined Village: Chest Reward",
+        "ref": "Birdhouse Zipline/Purrloined Village: Chest Reward/Token"
+      },
+      {
+        "name": "Alpine Skyline - The Birdhouse: Triple Crow Chest",
+        "ref": "Birdhouse Zipline/Bird House/Triple Crow Chest"
+      },
+      {
+        "name": "Alpine Skyline - The Birdhouse: Dweller Platforms Relic",
+        "ref": "Birdhouse Zipline/Bird House/Dweller Platforms Relic"
+      },
+      {
+        "name": "Alpine Skyline - The Birdhouse: Brewing Crate House",
+        "ref": "Birdhouse Zipline/Bird House/Brewing Crate House"
+      },
+      {
+        "name": "Alpine Skyline - The Birdhouse: Hay Bale",
+        "ref": "Birdhouse Zipline/Bird House/Hay Bale"
+      },
+      {
+        "name": "Alpine Skyline - The Birdhouse: Alpine Crow Mini-Gauntlet",
+        "ref": "Birdhouse Zipline/Bird House/Alpine Crow Mini-Gauntlet"
+      },
+      {
+        "name": "Alpine Skyline - The Birdhouse: Outer Edge",
+        "ref": "Birdhouse Zipline/Bird House/Outer Edge"
+      },
+      {
+        "name": "Act Completion (The Lava Cake)",
+        "ref": "Lava Cake Zipline/Lava Cake/Time Piece"
+      },
+      {
+        "name": "Alpine Skyline - Mystifying Time Mesa: Zipline",
+        "ref": "Lava Cake Zipline/Mystifying Time Mesa: Zipline/Token"
+      },
+      {
+        "name": "Alpine Skyline - Mystifying Time Mesa: Gate Puzzle",
+        "ref": "Lava Cake Zipline/Mystifying Time Mesa: Gate Puzzle/Relic"
+      },
+      {
+        "name": "Alpine Skyline - Ember Summit",
+        "ref": "Lava Cake Zipline/Ember Summit/Yarn"
+      },
+      {
+        "name": "Alpine Skyline - The Lava Cake: Center Fence Cage",
+        "ref": "Lava Cake Zipline/Lava Cake/Center Fence Cage"
+      },
+      {
+        "name": "Alpine Skyline - The Lava Cake: Outer Island Chest",
+        "ref": "Lava Cake Zipline/Lava Cake/Outer Island Chest"
+      },
+      {
+        "name": "Alpine Skyline - The Lava Cake: Dweller Pillars",
+        "ref": "Lava Cake Zipline/Lava Cake/Dweller Pillars"
+      },
+      {
+        "name": "Alpine Skyline - The Lava Cake: Top Cake",
+        "ref": "Lava Cake Zipline/Lava Cake/Top Cake"
+      },
+      {
+        "name": "Act Completion (The Twilight Bell)",
+        "ref": "Twilight Bell Zipline/The Twilight Bell/Time Piece"
+      },
+      {
+        "name": "Alpine Skyline - The Twilight Path",
+        "ref": "Twilight Bell Zipline/The Twilight Path/Token"
+      },
+      {
+        "name": "Alpine Skyline - The Twilight Bell: Wide Purple Platform",
+        "ref": "Twilight Bell Zipline/The Twilight Bell/Wide Purple Platform"
+      },
+      {
+        "name": "Alpine Skyline - The Twilight Bell: Ice Platform",
+        "ref": "Twilight Bell Zipline/The Twilight Bell/Ice Platform"
+      },
+      {
+        "name": "Act Completion (The Windmill)",
+        "ref": "Windmill Zipline/The Windmill/Time Piece"
+      },
+      {
+        "name": "Alpine Skyline - Goat Outpost Horn",
+        "ref": "Windmill Zipline/Goat Outpost Horn/Yarn"
+      },
+      {
+        "name": "Alpine Skyline - Windy Passage",
+        "ref": "Windmill Zipline/Windy Passage/Yarn"
+      },
+      {
+        "name": "Alpine Skyline - The Windmill: Inside Pon Cluster",
+        "ref": "Windmill Zipline/The Windmill/Inside Pon Cluster"
+      },
+      {
+        "name": "Alpine Skyline - The Windmill: Entrance",
+        "ref": "Windmill Zipline/The Windmill/Entrance"
+      },
+      {
+        "name": "Alpine Skyline - The Windmill: Dropdown",
+        "ref": "Windmill Zipline/The Windmill/Dropdown"
+      },
+      {
+        "name": "Alpine Skyline - The Windmill: House Window",
+        "ref": "Windmill Zipline/The Windmill/House Window"
+      },
+      {
+        "name": "Act Completion (The Illness has Spread)",
+        "ref": "Alpine Skyline/The Illness has Spread/Time Piece"
+      },
+      {
+        "name": "Act Completion (Time Rift - The Twilight Bell)",
+        "ref": "Alpine Skyline - Time Rifts/The Twilight Bell (Rift)/Time Rift"
+      },
+      {
+        "name": "Act Completion (Time Rift - Curly Tail Trail)",
+        "ref": "Alpine Skyline - Time Rifts/Curly Tail Trail/Time Rift"
+      },
+      {
+        "name": "Act Completion (Time Rift - Alpine Skyline)",
+        "ref": "Alpine Skyline - Time Rifts/Alpine Skyline (Rift)/Time Rift"
+      },
+      {
+        "name": "Alpine Skyline (Rift) - Pages",
+        "ref": "Alpine Skyline - Time Rifts/Alpine Skyline (Rift)/Pages"
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "spaceship",
+        "x": 56,
+        "y": 573
+      }
+    ]
+  },
+  {
+    "name": "Chapter 6: The Arctic Cruise",
+    "sections": [
+      {
+        "name": "Act Completion (Bon Voyage!)",
+        "ref": "Bon Voyage!/Control Room/Bon Voyage!"
+      },
+      {
+        "name": "Bon Voyage! - Lamp Post Top",
+        "ref": "The Arctic Cruise/Bon Voyage!/Lamp Post Top/Relic"
+      },
+      {
+        "name": "Bon Voyage! - Mafia Cargo Ship",
+        "ref": "The Arctic Cruise/Bon Voyage!/Mafia Cargo Ship/Token"
+      },
+      {
+        "name": "Act Completion (Ship Shape)",
+        "ref": "The Arctic Cruise/Lost and Found/Ship Shape"
+      },
+      {
+        "name": "Tasksanity Checks",
+        "ref": "The Arctic Cruise/Lost and Found/Tasksanity Check"
+      },
+      {
+        "name": "Act Completion (Rock the Boat)",
+        "ref": "The Arctic Cruise/Rock the Boat/Post Captain Rescue/Time Piece"
+      },
+      {
+        "name": "Rock the Boat - Reception Room - Suitcase",
+        "ref": "The Arctic Cruise/Rock the Boat/Reception Room/Suitcase"
+      },
+      {
+        "name": "Rock the Boat - Reception Room - Under Desk",
+        "ref": "The Arctic Cruise/Rock the Boat/Reception Room/Under Desk"
+      },
+      {
+        "name": "Rock the Boat - Lamp Post",
+        "ref": "The Arctic Cruise/Rock the Boat/Lamp Post/Token"
+      },
+      {
+        "name": "Rock the Boat - Iceberg Top",
+        "ref": "The Arctic Cruise/Rock the Boat/Iceberg Top/Token"
+      },
+      {
+        "name": "Rock the Boat - Post Captain Rescue",
+        "ref": "The Arctic Cruise/Rock the Boat/Post Captain Rescue/Behind Iceberg"
+      },
+      {
+        "name": "Act Completion (Time Rift - Balcony)",
+        "ref": "The Arctic Cruise - Time Rifts/Balcony/Time Rift"
+      },
+      {
+        "name": "Act Completion (Time Rift - Deep Sea)",
+        "ref": "The Arctic Cruise - Time Rifts/Deep Sea/Time Rift"
+      },
+      {
+        "name": "Deep Sea - Pages (Starfish, Mini Castle, Urchins)",
+        "ref": "The Arctic Cruise - Time Rifts/Deep Sea/Pages (Starfish, Mini Castle, Urchins)"
+      },
+      {
+        "name": "Deep Sea - Pages (Other)",
+        "ref": "The Arctic Cruise - Time Rifts/Deep Sea/Pages (Other)"
+      },
+      {
+        "name": "The Arctic Cruise - Toilet",
+        "ref": "The Arctic Cruise/Cruise Ship/Toilet/Relic"
+      },
+      {
+        "name": "The Arctic Cruise - Bar",
+        "ref": "The Arctic Cruise/Cruise Ship/Bar/Token"
+      },
+      {
+        "name": "The Arctic Cruise - Dive Board Ledge",
+        "ref": "The Arctic Cruise/Cruise Ship/Dive Board Ledge/Token"
+      },
+      {
+        "name": "The Arctic Cruise - Top Balcony",
+        "ref": "The Arctic Cruise/Cruise Ship/Top Balcony/Token"
+      },
+      {
+        "name": "The Arctic Cruise - Octopus Room",
+        "ref": "The Arctic Cruise/Cruise Ship/Octopus Room/Relic"
+      },
+      {
+        "name": "The Arctic Cruise - Octopus Room Top",
+        "ref": "The Arctic Cruise/Cruise Ship/Octopus Room Top/Token"
+      },
+      {
+        "name": "The Arctic Cruise - Laundry Room",
+        "ref": "The Arctic Cruise/Cruise Ship/Laundry Room/Token"
+      },
+      {
+        "name": "The Arctic Cruise - Ship Side",
+        "ref": "The Arctic Cruise/Cruise Ship/Ship Side/Token"
+      },
+      {
+        "name": "The Arctic Cruise - Silver Ring",
+        "ref": "The Arctic Cruise/Cruise Ship/Silver Ring/Relic"
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "spaceship",
+        "x": 292,
+        "y": 510
+      }
+    ]
+  },
+  {
+    "name": "Chapter 7: Nyakuza Metro",
+    "sections": [
+      {
+        "name": "Act Completion (Nyakuza Metro Intro)",
+        "ref": "Nyakuza Metro/Nyakuza Metro Intro/Time Piece"
+      },
+      {
+        "name": "Nyakuza Metro - Main Station Dining Area",
+        "ref": "Nyakuza Metro/Main Station Dining Area/Rift Token"
+      },
+      {
+        "name": "Nyakuza Metro - Top of Ramen Shop",
+        "ref": "Nyakuza Metro/Top of the Ramen Shop/Rift Token"
+      },
+      {
+        "name": "Main Station Thug A",
+        "ref": "Nyakuza Shops/Main Station Thugs/Thug A"
+      },
+      {
+        "name": "Main Station Thug B",
+        "ref": "Nyakuza Shops/Main Station Thugs/Thug B"
+      },
+      {
+        "name": "Main Station Thug C",
+        "ref": "Nyakuza Shops/Main Station Thugs/Thug C"
+      },
+      {
+        "name": "Act Completion (Yellow Overpass Station)",
+        "ref": "Nyakuza Metro/Yellow Overpass Station/Time Piece"
+      },
+      {
+        "name": "Act Completion (Yellow Overpass Manhole)",
+        "ref": "Nyakuza Metro/Yellow Overpass Manhole/Time Piece"
+      },
+      {
+        "name": "Yellow Overpass Station - Brewing Crate",
+        "ref": "Nyakuza Metro/Yellow Overpass Station - Brewing Crate/Relic"
+      },
+      {
+        "name": "Yellow Overpass Station - Yellow Ticket Booth",
+        "ref": "Nyakuza Metro/Yellow Overpass Station/Yellow Metro Ticket"
+      },
+      {
+        "name": "Yellow Overpass Thug A",
+        "ref": "Nyakuza Shops/Yellow Overpass Thug A/Scammed"
+      },
+      {
+        "name": "Yellow Overpass Thug B",
+        "ref": "Nyakuza Shops/Yellow Overpass Thug B/Scammed"
+      },
+      {
+        "name": "Yellow Overpass Thug C",
+        "ref": "Nyakuza Shops/Yellow Overpass Thug C/Scammed"
+      },
+      {
+        "name": "Act Completion (Green Clean Station)",
+        "ref": "Nyakuza Metro/Green Clean Station/Time Piece"
+      },
+      {
+        "name": "Act Completion (Green Clean Manhole)",
+        "ref": "Nyakuza Metro/Green Clean Manhole/Time Piece"
+      },
+      {
+        "name": "Green Clean Station - Green Ticket Booth",
+        "ref": "Nyakuza Shops/Green Ticket Booth/Green Ticket"
+      },
+      {
+        "name": "Green Clean Station Thug A",
+        "ref": "Nyakuza Shops/Green Clean Thug A/Scammed"
+      },
+      {
+        "name": "Green Clean Station Thug B",
+        "ref": "Nyakuza Shops/Green Clean Thug B/Scammed"
+      },
+      {
+        "name": "Act Completion (Bluefin Tunnel)",
+        "ref": "Nyakuza Metro/Bluefin Tunnel/Time Piece"
+      },
+      {
+        "name": "Bluefin Tunnel - Cat Vacuum",
+        "ref": "Nyakuza Metro/Bluefin Tunnel - Cat Vacuum/Relic"
+      },
+      {
+        "name": "Bluefin Tunnel - Blue Ticket Booth",
+        "ref": "Nyakuza Shops/Blue Ticket Booth/Blue Ticket"
+      },
+      {
+        "name": "Bluefin Tunnel Thug",
+        "ref": "Nyakuza Shops/Bluefin Tunnel Thug/Scammed"
+      },
+      {
+        "name": "Act Completion (Pink Paw Station)",
+        "ref": "Nyakuza Metro/Pink Paw Station/Time Piece"
+      },
+      {
+        "name": "Act Completion (Pink Paw Manhole)",
+        "ref": "Nyakuza Metro/Pink Paw Manhole/Time Piece"
+      },
+      {
+        "name": "Pink Paw Station - Cat Vacuum",
+        "ref": "Nyakuza Metro/Pink Paw Station - Cat Vacuum/Rift Token"
+      },
+      {
+        "name": "Pink Paw Station - Behind Fan",
+        "ref": "Nyakuza Metro/Pink Paw Station - Behind Fan/Rift Token"
+      },
+      {
+        "name": "Pink Paw Station - Pink Ticket Booth",
+        "ref": "Nyakuza Shops/Pink Ticket Booth/Pink Ticket"
+      },
+      {
+        "name": "Pink Paw Station Thug",
+        "ref": "Nyakuza Shops/Pink Paw Station Thug/Scammed"
+      },
+      {
+        "name": "Act Completion (Rush Hour)",
+        "ref": "Finale/Rush Hour/Time Piece"
+      },
+      {
+        "name": "Act Completion (Time Rift - Rumbi Factory)",
+        "ref": "Nyakuza Metro - Time Rifts/Rumbi Factory/Time Rift"
+      },
+      {
+        "name": "Rumbi Factory - Pages",
+        "ref": "Nyakuza Metro - Time Rifts/Rumbi Factory/Pages"
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "spaceship",
+        "x": 657,
+        "y": 920
+      }
+    ]
+  }
+]
