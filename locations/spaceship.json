@@ -21,16 +21,16 @@
         ]
       },
       {
-        "name": "The Finale",
+        "name": "Chapter 5 - Time's End",
         "access_rules": [
           "@Time's End Logic/Can access The Finale"
         ],
         "sections": [
           {
-            "name": "Frozen Item"
+            "name": "The Finale - Frozen Item"
           },
           {
-            "name": "Time Piece",
+            "name": "Act Completion (The Finale)",
             "access_rules": [
               "dweller,hookshot",
               "@General Logic/Moderate,dweller"
