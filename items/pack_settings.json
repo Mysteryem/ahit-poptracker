@@ -7,25 +7,6 @@
     "initial_active_state": true
   },
   {
-    "name": "Default Map",
-    "type": "progressive",
-    "codes": "setting_default_map",
-    "allow_disabled": false,
-    "loop": true,
-    "stages": [
-      {
-        "codes": "setting_default_map_spaceship",
-        "img": "images/icons/Rumbi_square.png",
-        "inherit_codes": false
-      },
-      {
-        "codes": "setting_default_map_entrances",
-        "img": "images/icons/Telescope.png",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
     "name": "Show Higher Logic Difficulties",
     "type": "toggle",
     "img": "images/settings/expert_out_of_logic_48.png",

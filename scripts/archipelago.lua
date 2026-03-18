@@ -585,17 +585,8 @@ function changedMap(current_map, previous_map)
         end
     else
         if internal_map_name == nil then
-            print(string.format("Could not find map name %s; Setting to default map", current_map))
-            internal_map_name = "default"
-        end
-        if internal_map_name == "default" then
-            local default_map_setting_item = Tracker:FindObjectForCode("setting_default_map")
-            local current_stage = default_map_setting_item.CurrentStage
-            if current_stage == 1 then
-                internal_map_name = "Entrances"
-            else
-                internal_map_name = "Spaceship"
-            end
+            print(string.format("Could not find map name %s; Setting to Spaceship", current_map))
+            internal_map_name = "Spaceship"
         end
         Tracker:UiHint("ActivateTab", internal_map_name)
     end

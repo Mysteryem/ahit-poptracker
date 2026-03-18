@@ -1,5 +1,5 @@
 MAP_TAB_MAPPING = {
-    hub_spaceship = "default",
+    hub_spaceship = "Spaceship",
     timerift_water_spaceship_mail = "Spaceship",
     timerift_water_spaceship = "Spaceship",
     castle_mu = "Spaceship", -- The Finale

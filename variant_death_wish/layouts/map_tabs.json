@@ -4,11 +4,52 @@
     "tabs": [
       {
         "title": "Spaceship",
-        "icon": "images/icons/Rumbi.png",
+        "icon": "images/icons/RumbiAndTelescope.png",
         "content": {
-          "type": "map",
-          "maps": [
-            "spaceship"
+          "type": "tabbed",
+          "tabs": [
+            {
+              "title": "Both",
+              "icon": "images/icons/RumbiAndTelescope.png",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "spaceship",
+                  "entrances"
+                ]
+              }
+            },
+            {
+              "title": "Both (Alt.)",
+              "icon": "images/icons/RumbiAndTelescope.png",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "entrances",
+                  "spaceship"
+                ]
+              }
+            },
+            {
+              "title": "Locations",
+              "icon": "images/icons/Rumbi.png",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "spaceship"
+                ]
+              }
+            },
+            {
+              "title": "Entrances",
+              "icon": "images/icons/Telescope.png",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "entrances"
+                ]
+              }
+            }
           ]
         }
       },
@@ -118,16 +159,6 @@
           "type": "map",
           "maps": [
             "nyakuza"
-          ]
-        }
-      },
-      {
-        "title": "Entrances",
-        "icon": "images/icons/Telescope.png",
-        "content": {
-          "type": "map",
-          "maps": [
-            "entrances"
           ]
         }
       },
