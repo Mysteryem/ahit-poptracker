@@ -1,6 +1,28 @@
 {
     "versions": [
         {
+            "package_version": "1.8.0",
+            "download_url": "https://github.com/Mysteryem/ahit-poptracker/archive/refs/tags/v1.8.0.zip",
+            "sha256": "78cb72cf152a3613b6289e0f1c743f4e7fe162839555c3ede66530c0ac3a25db",
+            "changelog": [
+                "New:",
+                " - Connecting to a slot with Death Wish enabled, with the non-Death Wish variant of the pack loaded, will now tell the user to swap to the Death Wish variant of the pack",
+                " - Added Chapter locations to the Spaceship map as an overview.",
+                " - New map for Murder on the Owl Express",
+                " - New map for Picture Perfect and The Big Parade",
+                " - New map for Train Rush",
+                " - Add support for Shuffle Director Tokens (available in AP 0.6.7)",
+                " - Add out-of-logic Goofy Mafia picture in She Speedran from Outer Space",
+                "Changes:",
+                " - Combined the Spaceship and Entrances maps into a single tab that can display both maps side by side, or individually. This removes the option to choose the default map between Spaceship and Entrances.",
+                " - Rearranged the slot settings displayed in the Settings Popup",
+                "Fixes:",
+                " - Fix out-of-logic Train Rush Express Owls (Hit List/Camera Tourist) missing Hookshot requirement",
+                " - Fix out-of-logic Time Rift - Balcony Crows (Hit List/Camera Tourist) missing Hookshot requirement",
+                " - Fix out-of-logic Dead Bird Basement Moon Penguins (Camera Tourist) missing Hookshot requirement"
+            ]
+        },
+        {
             "package_version": "1.7.2",
             "download_url": "https://github.com/Mysteryem/ahit-poptracker/archive/refs/tags/v1.7.2.zip",
             "sha256": "25e96dc6d81f653a993aeb8792197965113222eb081c49552d59bb09d090bd78",
