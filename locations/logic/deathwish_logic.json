@@ -472,7 +472,7 @@
               "hookshot, @Cruise Logic/Can access Time Rift - Deep Sea",
               "@Death Wish/Contract - Rift Collapse: Alpine Skyline",
               // After the Dweller wall, so use the Time Piece's logic.
-              "[never], @Spaceship/Chapter 5 - Time's End/Time Piece"
+              "[never], @Spaceship/Chapter 5 - Time's End/Act Completion (The Finale)"
             ]
           },
           {
@@ -530,7 +530,7 @@
               "[never], @Alpine Logic/Can access central Alpine Area",
               "[never], @Alpine Logic/Can access Time Rift - The Twilight Bell",
               // After the Dweller wall, so use the Time Piece's logic.
-              "[never], @Spaceship/Chapter 5 - Time's End/Time Piece",
+              "[never], @Spaceship/Chapter 5 - Time's End/Act Completion (The Finale)",
               "[never], @Death Wish/Contract - The Illness has Speedrun"
             ]
           },
@@ -690,7 +690,7 @@
               "@Death Wish/Contract - No More Bad Guys",
               "[never], @Death Wish/Contract - Seal the Deal",
               // Also considers moderate logic to skip hookshot.
-              "[never], @Spaceship/Chapter 5 - Time's End/Time Piece"
+              "[never], @Spaceship/Chapter 5 - Time's End/Act Completion (The Finale)"
             ]
           }
         ]

@@ -232,7 +232,7 @@ LOCATION_MAPPING = {
     [2000313335] = "@Alpine Skyline - Time Rifts/Curly Tail Trail/Time Rift",
     [2000311777] = "@Alpine Skyline - Time Rifts/Alpine Skyline (Rift)/Time Rift",
 
-    [2000311872] = "@Spaceship/Chapter 5 - Time's End/Time Piece",
+    [2000311872] = "@Spaceship/Chapter 5 - Time's End/Act Completion (The Finale)",
     [2000311803] = "@Spaceship/Tour/Time Rift",
 
     [2000311520] = "@Bon Voyage!/Control Room/Bon Voyage!",
