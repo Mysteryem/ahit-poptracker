@@ -27,14 +27,14 @@
         ],
         "sections": [
           {
-            "name": "The Finale - Frozen Item"
-          },
-          {
             "name": "Act Completion (The Finale)",
             "access_rules": [
               "dweller,hookshot",
               "@General Logic/Moderate,dweller"
             ]
+          },
+          {
+            "name": "The Finale - Frozen Item"
           }
         ],
         "map_locations": [
